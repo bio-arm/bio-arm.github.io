@@ -1,0 +1,33 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SPLINTER
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SPLINTER/DESCRIPTION’ ... OK
+* preparing ‘SPLINTER’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette.Rmd’ using rmarkdown
+sh: line 1: pdfcrop: command not found
+sh: line 1: pdfcrop: command not found
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'vignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpN1wEQB/Rbuild2db727d82ff50/SPLINTER/vignettes/vignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See vignette.log for more info.
+--- failed re-building ‘vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

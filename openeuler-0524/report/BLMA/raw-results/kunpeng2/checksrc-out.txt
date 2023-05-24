@@ -1,0 +1,291 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BLMA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BLMA_1.25.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/BLMA.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘BLMA/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘BLMA’ version ‘1.25.0’
+* checking package namespace information ... OK
+* checking package dependencies ... NOTE
+Depends: includes the non-default packages:
+  'ROntoTools', 'GSA', 'PADOG', 'limma', 'graph', 'parallel',
+  'Biobase', 'metafor'
+Adding so many packages to the search path is excessive and importing
+selectively is preferable.
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘BLMA’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+addCLT: warning in pnorm(mean(x), 1/2, sqrt(1/(12 * n)), lower = TRUE):
+  partial argument match of 'lower' to 'lower.tail'
+additiveMethod: warning in pnorm(sum(x), n/2, sqrt(n/12), lower =
+  TRUE): partial argument match of 'lower' to 'lower.tail'
+bilevelAnalysisGeneset : <anonymous>: warning in topTable(fit2, adjust
+  = "none", sort.by = "logFC", number = nrow(d) * percent, p.value =
+  pCutoff): partial argument match of 'adjust' to 'adjust.method'
+bilevelAnalysisPathway : <anonymous>: warning in topTable(fit2, adjust
+  = "none", sort.by = "logFC", number = nrow(d) * percent, p.value =
+  pCutoff): partial argument match of 'adjust' to 'adjust.method'
+fisherMethod: warning in pchisq(-2 * sum(log(x)), df = 2 * length(x),
+  lower = FALSE): partial argument match of 'lower' to 'lower.tail'
+getStatistics: warning in topTable(fit2, adjust = "fdr", sort.by = "B",
+  number = Inf): partial argument match of 'adjust' to 'adjust.method'
+intraAnalysisGene : <anonymous>: warning in topTable(fit2, adjust =
+  "none", sort.by = "none", number = Inf): partial argument match of
+  'adjust' to 'adjust.method'
+intraAnalysisGene: warning in topTable(fit2, adjust = "none", sort.by =
+  "none", number = Inf): partial argument match of 'adjust' to
+  'adjust.method'
+calculateFC: no visible binding for global variable ‘m1i’
+calculateFC: no visible binding for global variable ‘sd1i’
+calculateFC: no visible binding for global variable ‘n1i’
+calculateFC: no visible binding for global variable ‘m2i’
+calculateFC: no visible binding for global variable ‘sd2i’
+calculateFC: no visible binding for global variable ‘n2i’
+calculateFC: no visible binding for global variable ‘yi’
+getStatistics: no visible binding for global variable ‘d’
+hierClustering: no visible binding for global variable ‘km’
+hierClustering: no visible global function definition for ‘clusGap’
+hierClustering: no visible global function definition for ‘maxSE’
+intraAnalysisGene: no visible binding for global variable ‘d’
+Undefined global functions or variables:
+  clusGap d km m1i m2i maxSE n1i n2i sd1i sd2i yi
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                          user system elapsed
+bilevelAnalysisGeneset 169.299  0.745 170.481
+getStatistics          130.319  0.758 131.345
+bilevelAnalysisPathway 100.248  0.304 100.835
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘runTests.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘BLMA.Rnw’... OK
+ OK
+* checking re-building of vignette outputs ... NOTE
+Error(s) in re-building vignettes:
+--- re-building ‘BLMA.Rnw’ using Sweave
+Loading required package: ROntoTools
+Loading required package: graph
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: boot
+Loading required package: KEGGREST
+Loading required package: KEGGgraph
+
+Attaching package: ‘KEGGgraph’
+
+The following object is masked from ‘package:graphics’:
+
+    plot
+
+The following object is masked from ‘package:base’:
+
+    plot
+
+Loading required package: Rgraphviz
+Loading required package: grid
+Loading required package: GSA
+Loading required package: PADOG
+Loading required package: KEGGdzPathwaysGEO
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+Loading required package: parallel
+Loading required package: metafor
+Loading required package: Matrix
+Loading required package: metadat
+Loading required package: numDeriv
+
+Loading the 'metafor' package (version 4.2-0). For an
+introduction to the package please type: help(metafor)
+
+Using cached pathway data. Database info:
+pathway          KEGG Pathway Database
+path             Release 73.0+/01-03, Jan 15
+                 Kanehisa Laboratories
+                 343,170 entries
+Default parameters detected. Using pre-parsed data.
+GSM426404, GSM426405, GSM426406, GSM426407, GSM426412
+GSM1376955, GSM1376956, GSM1376957, GSM1376958, GSM1376959, GSM1376960
+GSM822473, GSM822474, GSM822475, GSM822476, GSM822477
+GSM822478, GSM822479, GSM822480, GSM822481, GSM822482
+GSM822483, GSM822484, GSM822485, GSM822486, GSM822487
+GSM822488, GSM822489, GSM822490, GSM822491, GSM822492
+GSM1033427, GSM1033428, GSM1033429, GSM1033430, GSM1033431
+GSM1033432, GSM1033433, GSM1033434, GSM1033435, GSM1033436
+GSM1033437, GSM1033439, GSM1033440, GSM1033444, GSM1033445
+GSM1033446, GSM1033448, GSM1033449, GSM1033454, GSM1033456
+GSM1033458, GSM1033459, GSM1033460, GSM1033461, GSM1033462, GSM1033463
+GSM426404, GSM426405, GSM426406, GSM426407, GSM426412
+GSM1376955, GSM1376956, GSM1376957, GSM1376958, GSM1376959, GSM1376960
+GSM822473, GSM822474, GSM822475, GSM822476, GSM822477
+GSM822478, GSM822479, GSM822480, GSM822481, GSM822482
+GSM822483, GSM822484, GSM822485, GSM822486, GSM822487
+GSM822488, GSM822489, GSM822490, GSM822491, GSM822492
+GSM1033427, GSM1033428, GSM1033429, GSM1033430, GSM1033431
+GSM1033432, GSM1033433, GSM1033434, GSM1033435, GSM1033436
+GSM1033437, GSM1033439, GSM1033440, GSM1033444, GSM1033445
+GSM1033446, GSM1033448, GSM1033449, GSM1033454, GSM1033456
+GSM1033458, GSM1033459, GSM1033460, GSM1033461, GSM1033462, GSM1033463
+GSM426404, GSM426405, GSM426406, GSM426407, GSM426412
+GSM1376955, GSM1376956, GSM1376957, GSM1376958, GSM1376959, GSM1376960
+GSM822473, GSM822474, GSM822475, GSM822476, GSM822477
+GSM822478, GSM822479, GSM822480, GSM822481, GSM822482
+GSM822483, GSM822484, GSM822485, GSM822486, GSM822487
+GSM822488, GSM822489, GSM822490, GSM822491, GSM822492
+GSM1033427, GSM1033428, GSM1033429, GSM1033430, GSM1033431
+GSM1033432, GSM1033433, GSM1033434, GSM1033435, GSM1033436
+GSM1033437, GSM1033439, GSM1033440, GSM1033444, GSM1033445
+GSM1033446, GSM1033448, GSM1033449, GSM1033454, GSM1033456
+GSM1033458, GSM1033459, GSM1033460, GSM1033461, GSM1033462, GSM1033463
+Using cached pathway data. Database info:
+pathway          KEGG Pathway Database
+path             Release 73.0+/01-03, Jan 15
+                 Kanehisa Laboratories
+                 343,170 entries
+Default parameters detected. Using pre-parsed data.
+GSM426404, GSM426405, GSM426406, GSM426407, GSM426412
+GSM1376955, GSM1376956, GSM1376957, GSM1376958, GSM1376959, GSM1376960
+GSM822473, GSM822474, GSM822475, GSM822476, GSM822477
+GSM822478, GSM822479, GSM822480, GSM822481, GSM822482
+GSM822483, GSM822484, GSM822485, GSM822486, GSM822487
+GSM822488, GSM822489, GSM822490, GSM822491, GSM822492
+GSM1033427, GSM1033428, GSM1033429, GSM1033430, GSM1033431
+GSM1033432, GSM1033433, GSM1033434, GSM1033435, GSM1033436
+GSM1033437, GSM1033439, GSM1033440, GSM1033444, GSM1033445
+GSM1033446, GSM1033448, GSM1033449, GSM1033454, GSM1033456
+GSM1033458, GSM1033459, GSM1033460, GSM1033461, GSM1033462, GSM1033463
+Error: processing vignette 'BLMA.Rnw' failed with diagnostics:
+Error writing to connection:  No space left on device
+--- failed re-building ‘BLMA.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘BLMA.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 1 ERROR, 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/BLMA.Rcheck/00check.log’
+for details.
+

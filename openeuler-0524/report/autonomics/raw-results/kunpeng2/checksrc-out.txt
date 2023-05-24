@@ -1,0 +1,122 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:autonomics.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings autonomics_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘autonomics/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘autonomics’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘autonomics’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'normimpute'
+  ‘ref’ ‘pos’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                          user system elapsed
+read_rnaseq_counts      23.899  0.261  23.665
+filter_medoid           17.311  0.293  17.734
+explore_imputations     16.281  1.044  17.159
+pca                     17.053  0.084  17.196
+is_sig                  16.892  0.132  16.841
+fit_limma               12.447  0.055  12.439
+plot_detections         12.094  0.131  11.886
+read_somascan           11.553  0.259  11.883
+biplot_covariates       10.684  0.084  10.793
+summarize_fit           10.443  0.111  10.184
+read_rectangles          9.717  0.288  10.029
+read_metabolon           9.692  0.047   9.725
+plot_venn                7.413  0.032   7.373
+plot_features            7.430  0.011   7.459
+analyze                  6.877  0.187   7.048
+log2transform            6.779  0.110   6.747
+subtract_baseline        6.782  0.020   6.790
+explore_transformations  6.559  0.233   6.676
+plot_boxplots            6.617  0.048   6.675
+biplot_corrections       6.510  0.123   6.648
+plot_violins             6.454  0.023   6.489
+read_proteingroups       6.404  0.063   6.219
+sumexp_to_long_dt        5.936  0.040   5.598
+read_affymetrix          3.183  1.130  90.932
+download_data            2.537  0.627 393.517
+analysis                 2.757  0.227 486.531
+assert_is_valid_sumexp   2.119  0.076  27.799
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘using_autonomics.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 WARNING, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck/00check.log’
+for details.
+
+

@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GSgalgoR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GSgalgoR/DESCRIPTION’ ... OK
+* preparing ‘GSgalgoR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GSgalgoR.rmd’ using rmarkdown
+Quitting from lines 142-146 (GSgalgoR.rmd) 
+Error: processing vignette 'GSgalgoR.rmd' failed with diagnostics:
+there is no package called 'breastCancerUPP'
+--- failed re-building ‘GSgalgoR.rmd’
+
+--- re-building ‘GSgalgoR_callbacks.rmd’ using rmarkdown
+--- finished re-building ‘GSgalgoR_callbacks.rmd’
+
+SUMMARY: processing the following file failed:
+  ‘GSgalgoR.rmd’
+
+Error: Vignette re-building failed.
+Execution halted

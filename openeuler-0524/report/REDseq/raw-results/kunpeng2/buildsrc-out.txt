@@ -1,0 +1,94 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data REDseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘REDseq/DESCRIPTION’ ... OK
+* preparing ‘REDseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘REDseq.Rnw’ using Sweave
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: BSgenome.Celegans.UCSC.ce2
+Loading required package: BSgenome
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: rtracklayer
+Loading required package: multtest
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: ChIPpeakAnno
+No methods found in package ‘IRanges’ for requests: ‘%in%’, ‘rep.int’ when loading ‘REDseq’
+REmap is not specified, so the map distribution will not draw along with the assigned sequence distribution!
+Error: processing vignette 'REDseq.Rnw' failed with diagnostics:
+unable to run pdflatex on 'REDseq.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               [authoryear,round]{natbib}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘REDseq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘REDseq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

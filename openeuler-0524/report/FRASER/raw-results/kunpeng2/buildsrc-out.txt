@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FRASER
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FRASER/DESCRIPTION’ ... OK
+* preparing ‘FRASER’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘FRASER.Rnw’ using knitr
+The magick package is required to crop "figure/quick_fraser_guide-1.png" but not available.
+The magick package is required to crop "figure/filter_junctions-1.png" but not available.
+The magick package is required to crop "figure/sample_covariation-1.png" but not available.
+The magick package is required to crop "figure/covariation_after_fitting-1.png" but not available.
+The magick package is required to crop "figure/finding_candidates-1.png" but not available.
+The magick package is required to crop "figure/figure_findBestQ-1.png" but not available.
+The magick package is required to crop "figure/result_visualization-1.png" but not available.
+The magick package is required to crop "figure/result_visualization-2.png" but not available.
+The magick package is required to crop "figure/result_visualization-3.png" but not available.
+Error: processing vignette 'FRASER.Rnw' failed with diagnostics:
+unable to run pdflatex on 'FRASER.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘FRASER.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘FRASER.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

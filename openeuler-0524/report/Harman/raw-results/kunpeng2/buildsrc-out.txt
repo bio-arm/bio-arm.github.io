@@ -1,0 +1,40 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Harman
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Harman/DESCRIPTION’ ... OK
+* preparing ‘Harman’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘IntroductionToHarman.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-7-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-8-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-11-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-12-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-13-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-16-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-20-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-23-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-23-2.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-24-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-25-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpahTkrZ/Rbuild3e73a21bcacb6e/Harman/vignettes/IntroductionToHarman_files/figure-html/unnamed-chunk-27-1.png" but not available.
+Quitting from lines 239-244 (IntroductionToHarman.Rmd) 
+Error: processing vignette 'IntroductionToHarman.Rmd' failed with diagnostics:
+there is no package called 'affydata'
+--- failed re-building ‘IntroductionToHarman.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘IntroductionToHarman.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

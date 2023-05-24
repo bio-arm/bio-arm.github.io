@@ -1,0 +1,8 @@
+Package: ompBAM
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL ompBAM
+StartedAt: 2023-05-23 06:59:08 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:59:11 -0000 (Tue, 23 May 2023)
+EllapsedTime: 2.6 seconds
+RetCode: 0
+Status: OK

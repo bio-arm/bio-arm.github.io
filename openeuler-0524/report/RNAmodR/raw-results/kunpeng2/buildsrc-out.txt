@@ -1,0 +1,71 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RNAmodR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RNAmodR/DESCRIPTION’ ... OK
+* preparing ‘RNAmodR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RNAmodR.Rmd’ using rmarkdown
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58716d5ec3_2521'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f1d29958e03_2523'
+[W::bam_hdr_read] EOF marker is absent. The input is probably truncated
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525'
+[W::hts_idx_load3] The index file is older than the data file: /home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58716d5ec3_2521'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58716d5ec3_2521'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f1d29958e03_2523'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f1d29958e03_2523'
+[W::bam_hdr_read] EOF marker is absent. The input is probably truncated
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525'
+[W::hts_idx_load3] The index file is older than the data file: /home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525
+[E::bgzf_read] BGZF block offset 6762 set beyond block size 0
+[E::bgzf_read] BGZF block offset 53571 set beyond block size 0
+[E::bgzf_read] BGZF block offset 9508 set beyond block size 0
+[E::bgzf_read] BGZF block offset 562 set beyond block size 0
+[E::bgzf_read] BGZF block offset 53932 set beyond block size 0
+[E::bgzf_read] BGZF block offset 12622 set beyond block size 0
+[E::bgzf_read] BGZF block offset 21721 set beyond block size 0
+[E::bgzf_read] BGZF block offset 40245 set beyond block size 0
+[E::bgzf_read] BGZF block offset 43562 set beyond block size 0
+[E::bgzf_read] BGZF block offset 26003 set beyond block size 0
+[E::bgzf_read] BGZF block offset 22641 set beyond block size 0
+[E::bgzf_read] BGZF block offset 17248 set beyond block size 0
+[E::bgzf_read] BGZF block offset 46756 set beyond block size 0
+[E::bgzf_read_block] Failed to read BGZF block data at offset 33355694 expected 9094 bytes; hread returned 2112
+[E::bgzf_read] Read block operation failed with error 12 after 1 of 45 bytes
+[E::bgzf_read] BGZF block offset 59278 set beyond block size 0
+[E::bgzf_read] BGZF block offset 43015 set beyond block size 0
+[W::bam_hdr_read] EOF marker is absent. The input is probably truncated
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525'
+[W::hts_idx_load3] The index file is older than the data file: /home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58716d5ec3_2521'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f1d29958e03_2523'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58716d5ec3_2521'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f1d29958e03_2523'
+[E::idx_find_and_load] Could not retrieve index file for '/home/biocbuild/.cache/R/ExperimentHub/21f58744fa728_2525'
+Quitting from lines 242-251 (RNAmodR.Rmd) 
+Error: processing vignette 'RNAmodR.Rmd' failed with diagnostics:
+failed to load resource
+  name: EH2528
+  title: RNAmodR.Data.example.bud23.1
+  reason: 1 resources failed to download
+--- failed re-building ‘RNAmodR.Rmd’
+
+--- re-building ‘RNAmodR.creation.Rmd’ using rmarkdown
+--- finished re-building ‘RNAmodR.creation.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘RNAmodR.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

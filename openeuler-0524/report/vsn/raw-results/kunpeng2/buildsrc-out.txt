@@ -1,0 +1,54 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data vsn
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘vsn/DESCRIPTION’ ... OK
+* preparing ‘vsn’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘A-vsn.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/Rtmp9R7lHv/Rbuild379ad526edb36/vsn/vignettes/A-vsn_files/figure-html/nkid-scp-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp9R7lHv/Rbuild379ad526edb36/vsn/vignettes/A-vsn_files/figure-html/nkid-sdmean1-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp9R7lHv/Rbuild379ad526edb36/vsn/vignettes/A-vsn_files/figure-html/nkid-sdmean2-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp9R7lHv/Rbuild379ad526edb36/vsn/vignettes/A-vsn_files/figure-html/nkid-histM-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp9R7lHv/Rbuild379ad526edb36/vsn/vignettes/A-vsn_files/figure-html/lym-sdmean-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp9R7lHv/Rbuild379ad526edb36/vsn/vignettes/A-vsn_files/figure-html/lym-M-1.png" but not available.
+Quitting from lines 256-259 (A-vsn.Rmd) 
+Error: processing vignette 'A-vsn.Rmd' failed with diagnostics:
+there is no package called 'affydata'
+--- failed re-building ‘A-vsn.Rmd’
+
+--- re-building ‘C-likelihoodcomputations.Rnw’ using Sweave
+Error: processing vignette 'C-likelihoodcomputations.Rnw' failed with diagnostics:
+unable to run pdflatex on 'C-likelihoodcomputations.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘C-likelihoodcomputations.Rnw’
+
+--- re-building ‘D-convergence.Rnw’ using Sweave
+--- finished re-building ‘D-convergence.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘A-vsn.Rmd’ ‘C-likelihoodcomputations.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

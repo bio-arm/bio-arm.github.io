@@ -1,0 +1,140 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data appreci8R
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘appreci8R/DESCRIPTION’ ... OK
+* preparing ‘appreci8R’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘appreci8R.Rnw’ using Sweave
+
+
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP144.GRCh37’
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘XtraSNPlocs.Hsapiens.dbSNP144.GRCh37’
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘MafDb.1Kgenomes.phase3.hs37d5’
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘MafDb.ExAC.r1.0.hs37d5’
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘MafDb.gnomADex.r2.1.hs37d5’
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘appreci8R’
+0. Reading input
+1. Target filtration
+2. Normalize
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:appreci8R’:
+
+    normalize
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append, as.data.frame,
+    basename, cbind, colnames, dirname, do.call, duplicated, eval, evalq, get, grep,
+    grepl, intersect, is.unsorted, lapply, mapply, match, mget, order, paste, pmax,
+    pmax.int, pmin, pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: AnnotationDbi
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with 'browseVignettes()'. To cite
+    Bioconductor, see 'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: GenomicFeatures
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+3. Annotate
+'select()' returned 1:1 mapping between keys and columns
+Warning in valid.GenomicRanges.seqinfo(x, suggest.trim = TRUE) :
+  GRanges object contains 11 out-of-bound ranges located on sequences 10808, 10809, 10810,
+  and 18309. Note that ranges located on a sequence whose length is unknown (NA) or on a
+  circular sequence are not considered out-of-bound (use seqlengths() and isCircular() to
+  get the lengths and circularity flags of the underlying sequences). You can use trim() to
+  trim these ranges. See ?`trim,GenomicRanges-method` for more information.
+'select()' returned 1:1 mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+Warning in valid.GenomicRanges.seqinfo(x, suggest.trim = TRUE) :
+  GRanges object contains 11 out-of-bound ranges located on sequences 10808, 10809, 10810,
+  and 18309. Note that ranges located on a sequence whose length is unknown (NA) or on a
+  circular sequence are not considered out-of-bound (use seqlengths() and isCircular() to
+  get the lengths and circularity flags of the underlying sequences). You can use trim() to
+  trim these ranges. See ?`trim,GenomicRanges-method` for more information.
+4. Combine Output
+5. Evaluate Coverage and BQ
+6. Determine Extended Set of Characteristics (databases)
+-> Downloading databases 
+-> Pre-processing of the calls
+-> Check databases
+Getting info about the following rsIDs: rs2454206
+6. Determine Extended Set of Characteristics (prediction)
+7. Perform Final Filtration
+->  Consider Frequency and Base Quality
+->  Consider samples with the same call
+->  Consider samples with a call at the same position
+->  Consider background information
+->  Consider nr of databases
+->  Consider VAF when tolerated
+->  Consider VAF when high nr of samples
+->  Consider strand bias
+->  Consider hotspot list
+->  Perform final filtration
+Calculate Artifact Score
+Calculate Polymorphism Score
+Correct Scores
+->  Re-consider polymorphisms
+Error: processing vignette 'appreci8R.Rnw' failed with diagnostics:
+unable to run pdflatex on 'appreci8R.tex'
+LaTeX errors:
+! LaTeX Error: File `textpos.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               {amssymb}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘appreci8R.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘appreci8R.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,8 @@
+Package: Rhisat2
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL Rhisat2
+StartedAt: 2023-05-23 06:25:47 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:25:48 -0000 (Tue, 23 May 2023)
+EllapsedTime: 1.3 seconds
+RetCode: 1
+Status: ERROR

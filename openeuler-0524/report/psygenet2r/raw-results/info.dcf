@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/psygenet2r
+git_branch: devel
+git_last_commit: 1c2e336
+git_last_commit_date: 2023-05-19 16:53:05 -0000 (Fri, 19 May 2023)
+Package: psygenet2r
+Version: 1.33.3
+Maintainer: Alba Gutierrez-Sacristan
+MaintainerEmail: a.gutierrez.sacristan at gmail.com

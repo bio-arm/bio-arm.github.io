@@ -1,0 +1,80 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GPA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GPA/DESCRIPTION’ ... OK
+* preparing ‘GPA’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GPA-example.Rnw’ using Sweave
+Loading required package: Rcpp
+
+Attaching package: ‘GPA’
+
+The following object is masked from ‘package:stats’:
+
+    cov
+
+Info: Number of GWAS data: 2
+Info: Theoretically null distribution is used.
+Info: No annotation data is provided.
+Info: Lower bound for pi estimates is set to 1 / [number of SNPs].
+Info: Number of GWAS data: 2
+Info: Number of annotation data: 1
+Info: Theoretically null distribution is used.
+Info: Annotation data is provided.
+Info: SNPs will be prioritized using annotation data.
+Info: Lower bound for pi estimates is set to 1 / [number of SNPs].
+Info: Association mapping based on the global FDR control at level 0.2.
+Info: Association mapping based on the global FDR control at level 0.2.
+Info: Number of GWAS data: 2
+Info: Theoretically null distribution is used.
+Info: No annotation data is provided.
+Info: Fit the GPA model under H0 of the pleitropy test.
+Info: Lower bound for pi estimates is set to 1 / [number of SNPs].
+ 
+alpha: 0.595 0.544
+     ( 0.007 0.004 )
+GWAS combination: 00 10 01 11
+pi: 0.803 0.047 0.092 0.059
+  ( 0.003 0.003 0.003 0.003 )
+q: 
+Annotation #1:
+	    0.205 0.246 0.241 0.36
+	  ( 0.001 0.019 0.01 0.011 )
+ 
+Ratio of q over baseline (00):
+GWAS combination: 10 01 11
+Annotation #1:
+	    1.202 1.177 1.757
+	  ( 0.102 0.056 0.044 )
+Error: processing vignette 'GPA-example.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GPA-example.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.15 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GPA-example.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GPA-example.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

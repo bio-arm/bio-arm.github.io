@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CellTrails
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CellTrails/DESCRIPTION’ ... OK
+* preparing ‘CellTrails’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'vignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpTyubqN/Rbuild3be785377527a2/CellTrails/vignettes/vignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See vignette.log for more info.
+--- failed re-building ‘vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

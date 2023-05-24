@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Pviz
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Pviz/DESCRIPTION’ ... OK
+* preparing ‘Pviz’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Pviz.Rnw’ using knitr
+Error: processing vignette 'Pviz.Rnw' failed with diagnostics:
+unable to run pdflatex on 'Pviz.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.32 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘Pviz.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘Pviz.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

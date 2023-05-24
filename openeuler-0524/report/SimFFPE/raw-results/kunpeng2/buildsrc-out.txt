@@ -1,0 +1,133 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SimFFPE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SimFFPE/DESCRIPTION’ ... OK
+* preparing ‘SimFFPE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘SimFFPE.Rnw’ using Sweave
+Loading required package: Biostrings
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce,
+    anyDuplicated, aperm, append, as.data.frame,
+    basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl,
+    intersect, is.unsorted, lapply, mapply, match,
+    mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff,
+    sort, table, tapply, union, unique, unsplit,
+    which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+BAM filesize smaller than 1 gigabytes, calculate Phred quality score profile based on all reads.
+Get reads from BAM file in 10 regions.
+Using 1 thread(s).
+Using 2 thread(s) for simulation.
+Simulating FFPE reads on the chromosome 1...
+Generated 458 adjacent chimeric reads on chromosome 1.
+Generated 1338 distant chimeric reads on chromosome 1.
+Generated 14386 normal reads on chromosome 1.
+Simulating FFPE reads on the chromosome 2...
+Generated 432 adjacent chimeric reads on chromosome 2.
+Generated 1018 distant chimeric reads on chromosome 2.
+Generated 14390 normal reads on chromosome 2.
+Simulating FFPE reads on the chromosome 3...
+Generated 476 adjacent chimeric reads on chromosome 3.
+Generated 1332 distant chimeric reads on chromosome 3.
+Generated 14386 normal reads on chromosome 3.
+In totoal 1366 adjacent chimeric reads, 3688 distant chimeric reads, 43162 normal reads were generated.
+Alltogether 48216 reads were generated. 5054 reads (10.48%, adjusted by chimericProp) are artifact chimeric reads.
+Of all artifact chimeric reads, 1366 reads (27.03%, adjusted by sameChrProp * adjChimProp) are adjacent chimeric reads.
+Simulation done.
+Using 1 thread(s) for simulation.
+Simulating FFPE reads on the chromosome 1...
+Generated 150 adjacent chimeric reads on chromosome 1.
+Generated 436 distant chimeric reads on chromosome 1.
+Generated 4784 normal reads on chromosome 1.
+Simulating FFPE reads on the chromosome 2...
+Generated 134 adjacent chimeric reads on chromosome 2.
+Generated 332 distant chimeric reads on chromosome 2.
+Generated 4778 normal reads on chromosome 2.
+In totoal 284 adjacent chimeric reads, 768 distant chimeric reads, 9562 normal reads were generated.
+Alltogether 10614 reads were generated. 1052 reads (9.91%, adjusted by chimericProp) are artifact chimeric reads.
+Of all artifact chimeric reads, 284 reads (27%, adjusted by sameChrProp * adjChimProp) are adjacent chimeric reads.
+Simulation done.
+Using 1 thread(s) for simulation.
+Simulating FFPE reads on the chromosome 1...
+Generated 66 adjacent chimeric reads on chromosome 1.
+Generated 276 distant chimeric reads on chromosome 1.
+Generated 2698 normal reads on chromosome 1.
+Simulating FFPE reads on the chromosome 3...
+Generated 72 adjacent chimeric reads on chromosome 3.
+Generated 140 distant chimeric reads on chromosome 3.
+Generated 2416 normal reads on chromosome 3.
+Simulating FFPE reads on the chromosome 8...
+Generated 58 adjacent chimeric reads on chromosome 8.
+Generated 218 distant chimeric reads on chromosome 8.
+Generated 2010 normal reads on chromosome 8.
+In totoal 196 adjacent chimeric reads, 634 distant chimeric reads, 7124 normal reads were generated.
+Alltogether 7954 reads were generated. 830 reads (10.44%, adjusted by chimericProp) are artifact chimeric reads.
+Of all artifact chimeric reads, 196 reads (23.61%, adjusted by sameChrProp * adjChimProp) are adjacent chimeric reads.
+Simulation done.
+Error: processing vignette 'SimFFPE.Rnw' failed with diagnostics:
+unable to run pdflatex on 'SimFFPE.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘SimFFPE.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘SimFFPE.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

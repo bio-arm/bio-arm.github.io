@@ -1,0 +1,34 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL hpar
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘hpar’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Cannot connect to ExperimentHub server, using 'localHub=TRUE' instead
+Using 'localHub=TRUE'
+  If offline, please also see BiocManager vignette section on offline use
+Error: package or namespace load failed for ‘hpar’:
+ .onLoad failed in loadNamespace() for 'hpar', details:
+  call: FUN(X[[i]], ...)
+  error: ‘hpaCancer16.1’ not found in ExperimentHub
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/hpar’
+* restoring previous ‘/home/biocbuild/R/R-4.3.0/site-library/hpar’

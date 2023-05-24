@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data microbiomeDASim
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘microbiomeDASim/DESCRIPTION’ ... OK
+* preparing ‘microbiomeDASim’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘microbiomeDASim.Rnw’ using knitr
+Error: processing vignette 'microbiomeDASim.Rnw' failed with diagnostics:
+unable to run pdflatex on 'microbiomeDASim.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.29 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘microbiomeDASim.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘microbiomeDASim.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

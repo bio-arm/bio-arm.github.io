@@ -1,0 +1,40 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data bcSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘bcSeq/DESCRIPTION’ ... OK
+* preparing ‘bcSeq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘bcSeq.Rnw’ using knitr
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+Error: processing vignette 'bcSeq.Rnw' failed with diagnostics:
+unable to run pdflatex on 'bcSeq.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.27 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘bcSeq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘bcSeq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

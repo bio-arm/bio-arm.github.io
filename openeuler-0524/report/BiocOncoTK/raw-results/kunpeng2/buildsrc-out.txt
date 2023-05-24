@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BiocOncoTK
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BiocOncoTK/DESCRIPTION’ ... OK
+* preparing ‘BiocOncoTK’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘BiocOncoTK.Rmd’ using rmarkdown
+Quitting from lines 79-87 (BiocOncoTK.Rmd) 
+Error: processing vignette 'BiocOncoTK.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘BiocOncoTK.Rmd’
+
+--- re-building ‘curatedMSIData.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/RtmpACkRAI/Rbuild2e540c335e0648/BiocOncoTK/vignettes/curatedMSIData_files/figure-html/make2a-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpACkRAI/Rbuild2e540c335e0648/BiocOncoTK/vignettes/curatedMSIData_files/figure-html/make3a-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpACkRAI/Rbuild2e540c335e0648/BiocOncoTK/vignettes/curatedMSIData_files/figure-html/getms-1.png" but not available.
+--- finished re-building ‘curatedMSIData.Rmd’
+
+--- re-building ‘maptcga.Rmd’ using rmarkdown
+Quitting from lines 30-41 (maptcga.Rmd) 
+Error: processing vignette 'maptcga.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘maptcga.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘BiocOncoTK.Rmd’ ‘maptcga.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

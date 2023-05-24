@@ -1,0 +1,10 @@
+Package: qmtools
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:qmtools.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings qmtools_1.5.0.tar.gz
+StartedAt: 2023-05-23 16:33:30 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:33:39 -0000 (Tue, 23 May 2023)
+EllapsedTime: 9.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: qmtools.Rcheck
+Warnings: NA

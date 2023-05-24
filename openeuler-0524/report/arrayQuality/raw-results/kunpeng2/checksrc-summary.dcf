@@ -1,0 +1,10 @@
+Package: arrayQuality
+Version: 1.79.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:arrayQuality.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings arrayQuality_1.79.0.tar.gz
+StartedAt: 2023-05-23 15:22:35 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 15:23:17 -0000 (Tue, 23 May 2023)
+EllapsedTime: 42.1 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: arrayQuality.Rcheck
+Warnings: 1

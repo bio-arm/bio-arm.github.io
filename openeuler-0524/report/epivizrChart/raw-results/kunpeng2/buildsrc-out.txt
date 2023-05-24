@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data epivizrChart
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘epivizrChart/DESCRIPTION’ ... OK
+* preparing ‘epivizrChart’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘IntegrationWithIGVjs.Rmd’ using rmarkdown
+--- finished re-building ‘IntegrationWithIGVjs.Rmd’
+
+--- re-building ‘IntegrationWithShiny.Rmd’ using rmarkdown
+--- finished re-building ‘IntegrationWithShiny.Rmd’
+
+--- re-building ‘IntroToEpivizrChart.Rmd’ using rmarkdown
+Quitting from lines 351-354 (IntroToEpivizrChart.Rmd) 
+Error: processing vignette 'IntroToEpivizrChart.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘IntroToEpivizrChart.Rmd’
+
+--- re-building ‘VisualizeSumExp.Rmd’ using rmarkdown
+--- finished re-building ‘VisualizeSumExp.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘IntroToEpivizrChart.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

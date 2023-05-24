@@ -1,0 +1,8 @@
+Package: BiGGR
+Version: 1.37.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL BiGGR
+StartedAt: 2023-05-23 06:04:05 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:04:06 -0000 (Tue, 23 May 2023)
+EllapsedTime: 0.3 seconds
+RetCode: 1
+Status: ERROR

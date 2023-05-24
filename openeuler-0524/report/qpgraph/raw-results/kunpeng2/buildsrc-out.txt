@@ -1,0 +1,170 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data qpgraph
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘qpgraph/DESCRIPTION’ ... OK
+* preparing ‘qpgraph’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘eQTLnetworks.Rnw’ using Sweave
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘qpgraph’
+
+The following object is masked from ‘package:qtl’:
+
+    sim.cross
+
+Calculating pairwise (conditional) independence tests
+
+Estimating non-rejection rates with q=3
+
+Using exact likelihood ratio tests.
+Error: processing vignette 'eQTLnetworks.Rnw' failed with diagnostics:
+unable to run pdflatex on 'eQTLnetworks.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘eQTLnetworks.Rnw’
+
+--- re-building ‘qpTxRegNet.Rnw’ using Sweave
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: AnnotationDbi
+Loading required package: XML
+
+Attaching package: ‘XML’
+
+The following object is masked from ‘package:graph’:
+
+    addNode
+
+
+Using t tests for zero partial regression coefficients.
+Warning in .qpNrr(X, q, I, restrict.Q, fix.Q, nTests, alpha, pairup.i, pairup.j,  :
+  With p=100 and q=11 the estimated fraction of valid Q sets is 0.79. Increasing nTests from 100 to 126 in order to achieve the desired precision
+
+Using t tests for zero partial regression coefficients.
+Warning in .qpNrr(X, q, I, restrict.Q, fix.Q, nTests, alpha, pairup.i, pairup.j,  :
+  With p=100 and q=21 the estimated fraction of valid Q sets is 0.62. Increasing nTests from 100 to 160 in order to achieve the desired precision
+
+Using t tests for zero partial regression coefficients.
+Warning in .qpNrr(X, q, I, restrict.Q, fix.Q, nTests, alpha, pairup.i, pairup.j,  :
+  With p=100 and q=31 the estimated fraction of valid Q sets is 0.47. Increasing nTests from 100 to 210 in order to achieve the desired precision
+
+Using t tests for zero partial regression coefficients.
+Warning in .old_qpGraph(nrrMatrix, ...) :
+  The function call 'qpGraph()' using arguments 'threshold' or 'return.type' is being deprecated and will dissapear in the next release version. Please consult the help page of qpGraph().
+
+Attaching package: ‘Rgraphviz’
+
+The following object is masked from ‘package:annotate’:
+
+    toFile
+
+The following objects are masked from ‘package:IRanges’:
+
+    from, to
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    from, to
+
+Error: processing vignette 'qpTxRegNet.Rnw' failed with diagnostics:
+unable to run pdflatex on 'qpTxRegNet.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘qpTxRegNet.Rnw’
+
+--- re-building ‘qpgraphSimulate.Rnw’ using Sweave
+
+Attaching package: ‘qpgraph’
+
+The following object is masked from ‘package:qtl’:
+
+    sim.cross
+
+Error: processing vignette 'qpgraphSimulate.Rnw' failed with diagnostics:
+unable to run pdflatex on 'qpgraphSimulate.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘qpgraphSimulate.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘eQTLnetworks.Rnw’ ‘qpTxRegNet.Rnw’ ‘qpgraphSimulate.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

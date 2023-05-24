@@ -1,0 +1,8 @@
+Package: ReactomeContentService4R
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL ReactomeContentService4R
+StartedAt: 2023-05-23 06:09:29 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:09:36 -0000 (Tue, 23 May 2023)
+EllapsedTime: 7.1 seconds
+RetCode: 1
+Status: ERROR

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MetaNeighbor
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MetaNeighbor/DESCRIPTION’ ... OK
+* preparing ‘MetaNeighbor’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MetaNeighbor.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'MetaNeighbor.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpdN0aeO/Rbuild3f44d916f1e2cd/MetaNeighbor/vignettes/MetaNeighbor.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See MetaNeighbor.log for more info.
+--- failed re-building ‘MetaNeighbor.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘MetaNeighbor.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

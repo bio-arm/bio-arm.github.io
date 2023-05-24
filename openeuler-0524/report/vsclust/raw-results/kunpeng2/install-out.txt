@@ -1,0 +1,26 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL vsclust
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘vsclust’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o vsclust.so RcppExports.o vsclust_algo.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+/usr/bin/ld: i386:x86-64 architecture of input file `RcppExports.o' is incompatible with aarch64 output
+/usr/bin/ld: i386:x86-64 architecture of input file `vsclust_algo.o' is incompatible with aarch64 output
+/usr/bin/ld: RcppExports.o: unrecognized relocation type 0x4 in section `.text'
+/usr/bin/ld: is this version of the linker - (GNU Binutils) 2.37 - out of date ?
+/usr/bin/ld: final link failed: bad value
+collect2: error: ld returned 1 exit status
+make: *** [/home/biocbuild/R/R-4.3.0/share/make/shlib.mk:10: vsclust.so] Error 1
+ERROR: compilation failed for package ‘vsclust’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/vsclust’

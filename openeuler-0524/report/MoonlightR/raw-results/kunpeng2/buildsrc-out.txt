@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MoonlightR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MoonlightR/DESCRIPTION’ ... OK
+* preparing ‘MoonlightR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘HiveR’ is not available for package ‘MoonlightR’
+* removing ‘/tmp/RtmpVeQ4bv/Rinst3fba014c0c348/MoonlightR’
+      -----------------------------------
+ERROR: package installation failed

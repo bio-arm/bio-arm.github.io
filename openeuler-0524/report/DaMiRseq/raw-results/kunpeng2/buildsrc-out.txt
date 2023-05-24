@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DaMiRseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DaMiRseq/DESCRIPTION’ ... OK
+* preparing ‘DaMiRseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘plsVarSel’ is not available for package ‘DaMiRseq’
+* removing ‘/tmp/RtmpZvpHTr/Rinst3c5e20768f0f4f/DaMiRseq’
+      -----------------------------------
+ERROR: package installation failed

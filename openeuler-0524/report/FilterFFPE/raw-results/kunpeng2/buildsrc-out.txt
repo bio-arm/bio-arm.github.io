@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FilterFFPE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FilterFFPE/DESCRIPTION’ ... OK
+* preparing ‘FilterFFPE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘FilterFFPE.Rnw’ using Sweave
+Finding reads with supplementary alignments...
+Found 31 read names
+Excluding chimeric reads from real SVs...
+Filtering reads based on the number of shared breakpoints...
+26 read names remained.
+Filtering reads based on the existence and the length of short reverse complementary regions...
+11 read names remained and reported.
+Finding reads with supplementary alignments...
+Found 31 read names
+Excluding chimeric reads from real SVs...
+Filtering reads based on the number of shared breakpoints...
+26 read names remained.
+Filtering reads based on the existence and the length of short reverse complementary regions...
+11 read names remained and reported.
+Filtering 11 artifact chimeric reads and 33 PCR or optical duplicates of all chimeric reads from BAM file...
+Done.
+Error: processing vignette 'FilterFFPE.Rnw' failed with diagnostics:
+unable to run pdflatex on 'FilterFFPE.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘FilterFFPE.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘FilterFFPE.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

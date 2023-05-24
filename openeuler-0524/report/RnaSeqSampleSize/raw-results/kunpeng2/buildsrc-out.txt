@@ -1,0 +1,21 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RnaSeqSampleSize
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RnaSeqSampleSize/DESCRIPTION’ ... OK
+* preparing ‘RnaSeqSampleSize’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘RnaSeqSampleSizeData’ is not available for package ‘RnaSeqSampleSize’
+* removing ‘/tmp/RtmpA7hk1o/Rinst221fe10496314/RnaSeqSampleSize’
+      -----------------------------------
+ERROR: package installation failed

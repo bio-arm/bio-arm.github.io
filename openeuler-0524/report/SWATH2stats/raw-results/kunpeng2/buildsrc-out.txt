@@ -1,0 +1,165 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SWATH2stats
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SWATH2stats/DESCRIPTION’ ... OK
+* preparing ‘SWATH2stats’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SWATH2stats_example_script.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'SWATH2stats_example_script.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpzdpUB9/Rbuild2f6ca33dc6f16/SWATH2stats/vignettes/SWATH2stats_example_script.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See SWATH2stats_example_script.log for more info.
+--- failed re-building ‘SWATH2stats_example_script.Rmd’
+
+--- re-building ‘SWATH2stats_vignette.Rnw’ using Sweave
+Number of non-decoy identifiers: 262
+Number of decoy identifiers: 11
+Decoy rate: 0.0420
+assess_fdr_overall_testrun.pdf written to working folder
+
+assess_fdr_overall_testruntable.csv written to working folder
+
+The average FDR by run on assay level is 0.003
+
+The average FDR by run on peptide level is 0.004
+
+The average FDR by run on protein level is 0.078
+
+Individual run FDR qualities can be retrieved from assess_fdr_byrun_testrun .csv
+
+assess_fdr_byrun_testrun.csv reports written to working folder
+
+assess_fdr_byrun_testrun.pdf report plots written to working folder
+
+assess_fdr_byrun_testrun.pdf report plots written to working folder
+
+The average FDR by run on assay level is 0.003
+
+The average FDR by run on peptide level is 0.004
+
+The average FDR by run on protein level is 0.078
+
+Target assay FDR: 0.01
+
+Required overall m-score cutoff:0.01
+achieving assay FDR =0.0066
+
+Target peptide FDR:0.02
+
+Required overall m-score cutoff:0.01
+achieving peptide FDR =0.00905
+
+Target protein FDR:0.02
+
+Required overall m-score cutoff:0.00017783
+achieving protein FDR =0
+
+Dimension difference: 915, 0
+Treshold, peptides need to have been quantified in more conditions than: 4.8
+Fraction of peptides selected: 0.39
+Dimension difference: 1361, 0
+Target protein FDR:0.03
+
+Required overall m-score cutoff:0.00017783
+achieving protein FDR =0
+
+filter_mscore_fdr is filtering the data...
+
+-----------------------------------------------------------
+
+finding m-score cutoff to achieve desired protein FDR in protein master list..
+
+finding m-score cutoff to achieve desired global peptide FDR..
+
+Target peptide FDR:0.05
+
+Required overall m-score cutoff:0.01
+achieving peptide FDR =0.00905
+
+-------------------------------------------------------------
+
+Proteins selected: 
+Total proteins selected: 9
+Thereof target proteins: 9
+Thereof decoy proteins: 0
+
+Peptides mapping to these protein entries selected:
+Total mapping peptides: 232
+Thereof target peptides: 232
+Thereof decoy peptides: 0
+
+Total peptides selected from:
+Total peptides: 235
+Thereof target peptides: 235
+Thereof decoy peptides: 0
+
+-------------------------------------------------------------
+
+Individual run FDR quality of the peptides was not calculated
+as not every run contains a decoy.
+
+The decoys have been removed from the returned data
+
+Number of proteins detected: 10
+Protein identifiers: Protein6, Protein1, Protein7, Protein8, Protein2, Protein4
+Number of proteins detected that are supported by a proteotypic peptide: 8
+Number of proteotypic peptides detected: 121
+Number of proteins detected: 10
+Protein identifiers: Protein6, Protein1, Protein7, Protein8, Protein2, Protein4
+Before filtering: 
+  Number of proteins: 9
+  Number of peptides: 123
+
+Percentage of peptides removed: 70.73%
+
+After filtering: 
+  Number of proteins: 9
+  Number of peptides: 36
+
+Before filtering: 
+  Number of proteins: 9
+  Number of peptides: 36
+
+Percentage of peptides removed: 2.78%
+
+After filtering: 
+  Number of proteins: 8
+  Number of peptides: 35
+
+The library contains 6 transitions per precursor.
+                  
+The data table was transformed into a table containing one row per transition.
+Error: processing vignette 'SWATH2stats_vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'SWATH2stats_vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `authblk.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.5 \makeatletter
+                 ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘SWATH2stats_vignette.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘SWATH2stats_example_script.Rmd’ ‘SWATH2stats_vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

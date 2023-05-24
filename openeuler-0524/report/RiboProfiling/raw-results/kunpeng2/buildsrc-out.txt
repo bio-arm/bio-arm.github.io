@@ -1,0 +1,54 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RiboProfiling
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RiboProfiling/DESCRIPTION’ ... OK
+* preparing ‘RiboProfiling’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RiboProfiling.Rnw’ using knitr
+The magick package is required to crop "figure/riboSeqfromBam-1.png" but not available.
+The magick package is required to crop "figure/riboSeqfromBam-2.png" but not available.
+The magick package is required to crop "figure/riboSeqfromBam-3.png" but not available.
+The magick package is required to crop "figure/riboSeqfromBam-4.png" but not available.
+The magick package is required to crop "figure/riboSeqfromBam-5.png" but not available.
+The magick package is required to crop "figure/riboSeqfromBam-6.png" but not available.
+The magick package is required to crop "figure/riboSeqfromBam-7.png" but not available.
+The magick package is required to crop "figure/Hist_quick-1.png" but not available.
+The magick package is required to crop "figure/TSS_Cov-1.png" but not available.
+The magick package is required to crop "figure/CountReads-1.png" but not available.
+The magick package is required to crop "figure/CountReads-2.png" but not available.
+The magick package is required to crop "figure/CodonPCA-1.png" but not available.
+The magick package is required to crop "figure/CodonPCA-2.png" but not available.
+The magick package is required to crop "figure/CodonPCA-3.png" but not available.
+The magick package is required to crop "figure/CodonPCA-4.png" but not available.
+The magick package is required to crop "figure/CodonPCA-5.png" but not available.
+Error: processing vignette 'RiboProfiling.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RiboProfiling.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RiboProfiling.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘RiboProfiling.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

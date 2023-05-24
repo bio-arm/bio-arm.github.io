@@ -1,0 +1,10 @@
+Package: GOSemSim
+Version: 2.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GOSemSim.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GOSemSim_2.27.0.tar.gz
+StartedAt: 2023-05-23 16:26:07 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:26:20 -0000 (Tue, 23 May 2023)
+EllapsedTime: 13.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GOSemSim.Rcheck
+Warnings: NA

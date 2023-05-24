@@ -1,0 +1,10 @@
+Package: epivizrStandalone
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:epivizrStandalone.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings epivizrStandalone_1.29.0.tar.gz
+StartedAt: 2023-05-23 16:23:55 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:24:04 -0000 (Tue, 23 May 2023)
+EllapsedTime: 9.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: epivizrStandalone.Rcheck
+Warnings: NA

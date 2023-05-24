@@ -1,0 +1,10 @@
+Package: biodbNci
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data biodbNci
+StartedAt: 2023-05-23 08:18:08 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 08:52:29 -0000 (Tue, 23 May 2023)
+EllapsedTime: 2061.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: biodbNci_1.5.0.tar.gz
+PackageFileSize: 297.2 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

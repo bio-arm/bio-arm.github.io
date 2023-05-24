@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rcollectl
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Rcollectl/DESCRIPTION’ ... OK
+* preparing ‘Rcollectl’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Rcollectl.Rmd’ using rmarkdown
+Quitting from lines 115-136 (Rcollectl.Rmd) 
+Error: processing vignette 'Rcollectl.Rmd' failed with diagnostics:
+$ operator is invalid for atomic vectors
+--- failed re-building ‘Rcollectl.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Rcollectl.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

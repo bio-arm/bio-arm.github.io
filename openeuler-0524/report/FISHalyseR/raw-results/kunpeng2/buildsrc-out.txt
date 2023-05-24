@@ -1,0 +1,40 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FISHalyseR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FISHalyseR/DESCRIPTION’ ... OK
+* preparing ‘FISHalyseR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘FISHalyseR.Rnw’ using knitr
+Warning in in_dir(input_dir(), expr) :
+  You changed the working directory to /tmp/RtmpBhyeyX/Rinst3cf8c350477ad2/FISHalyseR/extdataSampleFISH.jpg (probably via setwd()). It will be restored to /tmp/RtmpBhyeyX/Rbuild3cf8c33a721836/FISHalyseR/vignettes. See the Note section in ?knitr::knit
+Error: processing vignette 'FISHalyseR.Rnw' failed with diagnostics:
+unable to run pdflatex on 'FISHalyseR.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.27 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘FISHalyseR.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘FISHalyseR.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

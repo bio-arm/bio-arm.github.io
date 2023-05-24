@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/CNVRanger
+git_branch: devel
+git_last_commit: e19cecd
+git_last_commit_date: 2023-05-20 16:57:03 -0000 (Sat, 20 May 2023)
+Package: CNVRanger
+Version: 1.17.2
+Maintainer: Ludwig Geistlinger
+MaintainerEmail: ludwig_geistlinger at hms.harvard.edu

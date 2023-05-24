@@ -1,0 +1,10 @@
+Package: ProteoMM
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ProteoMM.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ProteoMM_1.19.0.tar.gz
+StartedAt: 2023-05-23 16:33:21 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:33:34 -0000 (Tue, 23 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: ProteoMM.Rcheck
+Warnings: NA

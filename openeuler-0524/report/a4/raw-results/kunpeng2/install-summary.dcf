@@ -1,0 +1,8 @@
+Package: a4
+Version: 1.49.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL a4
+StartedAt: 2023-05-23 06:52:41 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:53:08 -0000 (Tue, 23 May 2023)
+EllapsedTime: 27.2 seconds
+RetCode: 0
+Status: OK

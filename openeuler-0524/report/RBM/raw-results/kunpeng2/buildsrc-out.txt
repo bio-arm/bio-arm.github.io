@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RBM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RBM/DESCRIPTION’ ... OK
+* preparing ‘RBM’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RBM.Rnw’ using Sweave
+Loading required package: limma
+Loading required package: marray
+Warning: Partial NA coefficients for 4 probe(s)
+Error: processing vignette 'RBM.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RBM.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.5 \usepackage
+               {underscore}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RBM.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘RBM.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

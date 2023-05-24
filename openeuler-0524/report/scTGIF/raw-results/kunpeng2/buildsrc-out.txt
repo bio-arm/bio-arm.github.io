@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scTGIF
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘scTGIF/DESCRIPTION’ ... OK
+* preparing ‘scTGIF’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+      -----------------------------------
+ERROR: dependency ‘schex’ is not available for package ‘scTGIF’
+* removing ‘/tmp/RtmpbHFT3F/Rinst286a559f7f8b6/scTGIF’
+      -----------------------------------
+ERROR: package installation failed

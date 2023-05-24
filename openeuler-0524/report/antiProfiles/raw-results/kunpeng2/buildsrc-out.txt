@@ -1,0 +1,81 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data antiProfiles
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘antiProfiles/DESCRIPTION’ ... OK
+* preparing ‘antiProfiles’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘antiProfiles.Rnw’ using Sweave
+Loading required package: antiProfiles
+Loading required package: matrixStats
+Loading required package: locfit
+locfit 1.5-9.7 	 2023-01-02
+Loading required package: antiProfilesData
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: RColorBrewer
+Getting sample indices
+Computing sds
+Computing ranges
+Computing tissue specificity
+Computing normal tissue outside ranges
+Making probe data frame
+Error: processing vignette 'antiProfiles.Rnw' failed with diagnostics:
+unable to run pdflatex on 'antiProfiles.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                [numbers]{natbib}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘antiProfiles.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘antiProfiles.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

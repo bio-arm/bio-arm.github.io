@@ -1,0 +1,36 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL RBioFormats
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘RBioFormats’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+trying URL 'https://downloads.openmicroscopy.org/bio-formats/6.12.0/artifacts/bioformats_package.jar'
+Warning in utils::download.file(bf_url, bf_jar, mode = "wb", quiet = FALSE) :
+  URL 'https://downloads.openmicroscopy.org/bio-formats/6.12.0/artifacts/bioformats_package.jar': status was 'SSL connect error'
+Warning in file.remove(bf_jar) :
+  cannot remove file '/home/biocbuild/.cache/R/RBioFormats/bioformats_package_6.12.0.jar', reason 'No such file or directory'
+Error: package or namespace load failed for ‘RBioFormats’:
+ .onLoad failed in loadNamespace() for 'RBioFormats', details:
+  call: NULL
+  error: Failed to download Bio-Formats Java library.
+  Check your internet connection and try again. Consider setting the environment variable R_DEFAULT_INTERNET_TIMEOUT to a value higher than 100.
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/RBioFormats’

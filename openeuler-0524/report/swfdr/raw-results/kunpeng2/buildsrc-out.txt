@@ -1,0 +1,51 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data swfdr
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘swfdr/DESCRIPTION’ ... OK
+* preparing ‘swfdr’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘swfdrQ.Rmd’ using rmarkdown
+Warning in has_utility("pdfcrop") :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'swfdrQ.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpJhEhK9/Rbuild2f7ca2a054278/swfdr/vignettes/swfdrQ.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See swfdrQ.log for more info.
+--- failed re-building ‘swfdrQ.Rmd’
+
+--- re-building ‘swfdrTutorial.Rmd’ using rmarkdown
+Warning in has_utility("pdfcrop") :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'swfdrTutorial.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpJhEhK9/Rbuild2f7ca2a054278/swfdr/vignettes/swfdrTutorial.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See swfdrTutorial.log for more info.
+--- failed re-building ‘swfdrTutorial.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘swfdrQ.Rmd’ ‘swfdrTutorial.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

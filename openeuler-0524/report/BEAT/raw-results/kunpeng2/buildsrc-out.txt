@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BEAT
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BEAT/DESCRIPTION’ ... OK
+* preparing ‘BEAT’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘BEAT.Rnw’ using Sweave
+Error: processing vignette 'BEAT.Rnw' failed with diagnostics:
+unable to run pdflatex on 'BEAT.tex'
+LaTeX errors:
+! LaTeX Error: File `esint.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.25 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘BEAT.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘BEAT.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

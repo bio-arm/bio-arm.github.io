@@ -1,0 +1,40 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data msa
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘msa/DESCRIPTION’ ... OK
+* preparing ‘msa’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘msa.Rnw’ using knitr
+Error: processing vignette 'msa.Rnw' failed with diagnostics:
+unable to run pdflatex on 'msa.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.27 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘msa.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘msa.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

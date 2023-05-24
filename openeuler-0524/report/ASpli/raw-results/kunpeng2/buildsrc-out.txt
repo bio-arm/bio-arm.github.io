@@ -1,0 +1,156 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ASpli
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ASpli/DESCRIPTION’ ... OK
+* preparing ‘ASpli’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ASpli.Rnw’ using Sweave
+Loading required package: parallel
+Loading required package: edgeR
+Loading required package: limma
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘ASpli’
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Import genomic features from the file as a GRanges object ... OK
+Prepare the 'metadata' data frame ... OK
+Make the TxDb object ... OK
+* Number of extracted Genes = 10
+* Number of extracted Exon Bins = 38
+* Number of extracted intron bins = 34
+* Number of extracted trascripts = 25
+* Number of extracted junctions = 23
+* Number of AS bins (not include external) = 17
+* Number of AS bins (include external) = 17
+* Classified as: 
+	ES bins = 1	(6%)
+	IR bins = 3	(18%)
+	Alt5'ss bins = 2	(12%)
+	Alt3'ss bins = 2	(12%)
+	Multiple AS bins = 9	(53%)
+	classified as:
+			ES bins = 1	(11%)
+			IR bins = 4	(44%)
+			Alt5'ss bins = 2	(22%)
+			Alt3'ss bins = 1	(11%)
+
+Correcting Io ends, this might take a while...
+Genome binning completed
+Summarizing Sample1
+ETA: 1 min
+Summarizing Sample2
+ETA: 1 min
+Summarizing Sample3
+ETA: 1 min
+Summarizing Sample4
+ETA: 0 min
+Summarizing Sample5
+ETA: 0 min
+Summarizing Sample6
+ETA: 0 min
+Junctions PJU completed
+Junctions PIR completed
+Junctions IR PIR completed
+Junctions AltSS PSI completed
+Junctions ES PSI completed
+Filtering genes:
+  Filtering by reads.
+  Filtering using control,treatment conditions
+  Filtering any condition with mean minimum value 10
+  Filtering by read density.
+  Filtering using control,treatment conditions
+  Filtering any condition with mean minimum value 0.05
+Filtering genes done
+Genes differential expression:
+  Contrast:-1control  1treatment  
+  Running GLM LRT
+Genes differential expression done
+Genes DE completed
+Bins DE completed
+Running junctionsPJU test
+Running junctionsPIR test
+Running irPIR test
+Running esPSI test
+Running altPSI test
+Generating graphs...
+sh: line 1: samtools: command not found
+sh: line 1: samtools: command not found
+sh: line 1: samtools: command not found
+sh: line 1: samtools: command not found
+sh: line 1: samtools: command not found
+sh: line 1: samtools: command not found
+sh: line 1: samtools: command not found
+sh: line 1: samtools: command not found
+Error: processing vignette 'ASpli.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ASpli.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building 'ASpli.Rnw'
+
+SUMMARY: processing the following file failed:
+  'ASpli.Rnw'
+
+Error: Vignette re-building failed.
+Execution halted

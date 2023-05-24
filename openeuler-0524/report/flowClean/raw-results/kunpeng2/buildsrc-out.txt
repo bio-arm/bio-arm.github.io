@@ -1,0 +1,133 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data flowClean
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘flowClean/DESCRIPTION’ ... OK
+* preparing ‘flowClean’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘flowClean.Rnw’ using Sweave
+Loading required package: flowCore
+Loading required package: lattice
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Warning: '.local' is deprecated.
+Use 'keyword' instead.
+See help("Deprecated")
+Warning: 'description<-' is deprecated.
+Use 'keyword<-' instead.
+See help("Deprecated")
+Error: processing vignette 'flowClean.Rnw' failed with diagnostics:
+unable to run pdflatex on 'flowClean.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 \usepackage
+                {times}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘flowClean.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘flowClean.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,10 @@
+Package: HDF5Array
+Version: 1.29.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HDF5Array.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HDF5Array_1.29.3.tar.gz
+StartedAt: 2023-05-23 16:26:33 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:26:41 -0000 (Tue, 23 May 2023)
+EllapsedTime: 8.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: HDF5Array.Rcheck
+Warnings: NA

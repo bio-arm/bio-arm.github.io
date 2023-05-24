@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data IFAA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘IFAA/DESCRIPTION’ ... OK
+* preparing ‘IFAA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* building the PDF package manual
+* creating vignettes ... ERROR
+--- re-building ‘IFAA.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'IFAA.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmpm0eBBm/Rbuild3eb63e2da1a16c/IFAA/vignettes/IFAA.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See IFAA.log for more info.
+--- failed re-building ‘IFAA.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘IFAA.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

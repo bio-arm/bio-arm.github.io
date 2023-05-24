@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ExperimentSubset
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ExperimentSubset/DESCRIPTION’ ... OK
+* preparing ‘ExperimentSubset’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘SpatialExperiment’ is not available for package ‘ExperimentSubset’
+* removing ‘/tmp/RtmpT4vBVf/Rinst3ce77f56646e01/ExperimentSubset’
+      -----------------------------------
+ERROR: package installation failed

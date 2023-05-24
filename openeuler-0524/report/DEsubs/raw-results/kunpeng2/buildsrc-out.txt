@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DEsubs
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DEsubs/DESCRIPTION’ ... OK
+* preparing ‘DEsubs’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘DEsubs.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'DEsubs.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmp4M8EIy/Rbuild3c957f17d93ccd/DEsubs/vignettes/DEsubs.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See DEsubs.log for more info.
+--- failed re-building ‘DEsubs.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘DEsubs.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

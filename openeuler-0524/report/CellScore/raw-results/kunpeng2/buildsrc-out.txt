@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CellScore
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CellScore/DESCRIPTION’ ... OK
+* preparing ‘CellScore’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘CellScoreVignette.Rnw’ using knitr
+Error: processing vignette 'CellScoreVignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'CellScoreVignette.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.33 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘CellScoreVignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘CellScoreVignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

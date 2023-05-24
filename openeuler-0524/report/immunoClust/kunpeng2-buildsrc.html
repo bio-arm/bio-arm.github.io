@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for immunoClust on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><B>[<A href="..#I">I</A>]</B></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-24 01:46:15 -0000 (Wed, 24 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4131</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for immunoClust on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the immunoClust package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/immunoClust.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>977</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">immunoClust</A>&nbsp;1.33.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/immunoClust">landing page</A>)</SPAN><BR>Till Soerensen<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-22&nbsp;17:00:18&nbsp;-0000&nbsp;(Mon,&nbsp;22&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/immunoClust</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">efec0d3</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:38:07&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: immunoClust</TD></TR>
+<TR><TD><B>Version</B>: 1.33.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data immunoClust</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-23 11:00:04 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-23 11:04:39 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 275.4 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data immunoClust
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘immunoClust/DESCRIPTION’ ... OK
+* preparing ‘immunoClust’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘immunoClust.Rnw’ using Sweave
+Loading required package: flowCore
+filtered from above:318
+filtered from below:0
+
+cluster 1(N=151) has 2 sub-cluster at 2 (9), ICL=151&lt;&gt;26
+split 1 into 2 clusters
+cluster 1(N=151) has 2 sub-cluster at 2 (9), ICL=0&lt;&gt;26
+Model Refinement takes 0.017 mins(max 1: 0.017)
+Fit Model 1 of (6/10) K=1-&gt;2 N=302
+EM 2 takes 0 mins, 5 iterations
+
+cluster 2(N=78) has 3 sub-cluster at 3 (7), ICL=92&lt;&gt;30
+split 2 into 3 clusters
+cluster 1(N=226) has 2 sub-cluster at 2 (5), ICL=44&lt;&gt;30
+split 1 into 2 clusters
+cluster 1(N=226) has 2 sub-cluster at 2 (5), ICL=0&lt;&gt;30
+Model Refinement takes 0.033 mins(max 1: 0.017)
+Fit Model 2 of (6/10) K=2-&gt;5 N=605
+EM 5 takes 0 mins, 13 iterations
+
+cluster 1(N=53) has 2 sub-cluster at 2 (7), ICL=47&lt;&gt;34
+split 1 into 2 clusters
+cluster 5(N=72) has 6 sub-cluster at 6 (38), ICL=30&lt;&gt;34
+cluster 4(N=62) has 2 sub-cluster at 2 (8), ICL=14&lt;&gt;34
+cluster 2(N=408) has 7 sub-cluster at 8 (17), ICL=8.2&lt;&gt;34
+cluster 3(N=18) has 2 sub-cluster at 2 (100), ICL=2.1&lt;&gt;34
+cluster 1(N=53) has 2 sub-cluster at 2 (7), ICL=0&lt;&gt;34
+Model Refinement takes 0.083 mins(max 2: 0.033)
+Fit Model 3 of (6/10) K=5-&gt;6 N=1210
+EM 6 takes 0 mins, 7 iterations
+
+cluster 4(N=51) has 2 sub-cluster at 2 (13), ICL=28&lt;&gt;37
+cluster 6(N=144) has 2 sub-cluster at 3 (7), ICL=23&lt;&gt;37
+cluster 5(N=132) has 4 sub-cluster at 4 (34), ICL=21&lt;&gt;37
+cluster 1(N=20) has 2 sub-cluster at 2 (5), ICL=17&lt;&gt;37
+cluster 2(N=76) has 3 sub-cluster at 3 (11), ICL=9&lt;&gt;37
+cluster 1(N=20) has 2 sub-cluster at 2 (5), ICL=0&lt;&gt;37
+Model Refinement takes 0.1 mins(max 3: 0.033)
+Fit Model 4 of (6/10) K=6-&gt;6 N=2420
+EM 6 takes 0.017 mins, 6 iterations
+
+cluster 5(N=244) has 2 sub-cluster at 2 (6), ICL=51&lt;&gt;41
+split 5 into 2 clusters
+cluster 1(N=60) has 2 sub-cluster at 2 (6), ICL=34&lt;&gt;41
+cluster 6(N=268) has 2 sub-cluster at 2 (8), ICL=27&lt;&gt;41
+cluster 4(N=105) has 7 sub-cluster at 7 (47), ICL=18&lt;&gt;41
+cluster 2(N=146) has 4 sub-cluster at 4 (18), ICL=16&lt;&gt;41
+cluster 3(N=1610) has 3 sub-cluster at 3 (11), ICL=4.6&lt;&gt;41
+cluster 1(N=60) has 2 sub-cluster at 2 (6), ICL=0&lt;&gt;41
+Model Refinement takes 0.17 mins(max 3: 0.067)
+Fit Model 5 of (6/10) K=6-&gt;7 N=4841
+EM 7 takes 0 mins, 5 iterations
+
+cluster 1(N=102) has 2 sub-cluster at 2 (7), ICL=71&lt;&gt;45
+split 1 into 2 clusters
+cluster 7(N=578) has 2 sub-cluster at 2 (11), ICL=26&lt;&gt;45
+cluster 6(N=33) has 2 sub-cluster at 2 (16), ICL=25&lt;&gt;45
+cluster 2(N=254) has 2 sub-cluster at 2 (7), ICL=24&lt;&gt;45
+cluster 4(N=204) has 2 sub-cluster at 2 (9), ICL=22&lt;&gt;45
+cluster 5(N=439) has 3 sub-cluster at 3 (19), ICL=17&lt;&gt;45
+cluster 1(N=102) has 2 sub-cluster at 2 (7), ICL=0&lt;&gt;45
+Model Refinement takes 0.2 mins(max 3: 0.083)
+Fit Model 6 of (6/10) K=7-&gt;8 N=9682
+EM 8 takes 0.017 mins, 8 iterations
+
+cluster 4(N=6478) has 3 sub-cluster at 3 (7), ICL=99&lt;&gt;48
+split 4 into 3 clusters
+cluster 3(N=557) has 3 sub-cluster at 3 (8), ICL=63&lt;&gt;48
+split 3 into 3 clusters
+cluster 8(N=1121) has 2 sub-cluster at 2 (9), ICL=49&lt;&gt;48
+split 8 into 2 clusters
+cluster 2(N=153) has 4 sub-cluster at 4 (17), ICL=42&lt;&gt;48
+cluster 5(N=392) has 3 sub-cluster at 3 (34), ICL=38&lt;&gt;48
+cluster 7(N=60) has 2 sub-cluster at 2 (9), ICL=30&lt;&gt;48
+cluster 6(N=908) has 3 sub-cluster at 3 (12), ICL=29&lt;&gt;48
+cluster 1(N=76) has 3 sub-cluster at 4 (12), ICL=4.8&lt;&gt;48
+cluster 1(N=76) has 3 sub-cluster at 4 (12), ICL=0&lt;&gt;48
+Model Refinement takes 0.25 mins(max 4: 0.083)
+Fit Model 7 of (6/10) K=8-&gt;13 N=9682
+EM 13 takes 0.017 mins, 8 iterations
+
+cluster 9(N=391) has 2 sub-cluster at 2 (8), ICL=37&lt;&gt;48
+cluster 11(N=60) has 2 sub-cluster at 2 (9), ICL=30&lt;&gt;48
+cluster 10(N=898) has 3 sub-cluster at 3 (9), ICL=29&lt;&gt;48
+cluster 2(N=122) has 3 sub-cluster at 3 (28), ICL=26&lt;&gt;48
+cluster 13(N=424) has 2 sub-cluster at 3 (5), ICL=19&lt;&gt;48
+cluster 5(N=90) has 2 sub-cluster at 2 (8), ICL=17&lt;&gt;48
+cluster 3(N=363) has 7 sub-cluster at 8 (28), ICL=14&lt;&gt;48
+cluster 4(N=180) has 4 sub-cluster at 4 (37), ICL=7.5&lt;&gt;48
+cluster 1(N=75) has 3 sub-cluster at 4 (10), ICL=4&lt;&gt;48
+cluster 8(N=307) has 2 sub-cluster at 2 (8), ICL=2.5&lt;&gt;48
+cluster 1(N=75) has 3 sub-cluster at 4 (10), ICL=0&lt;&gt;48
+Model Refinement takes 0.38 mins(max 6: 0.083)
+Fit Model 8 of (6/10) K=13-&gt;13 N=9682
+EM 13 takes 0.017 mins, 3 iterations
+
+Process completed at8
+
+Major Iteration (Trans) (6/4) takes 1.3 mins
+filtered from above:318
+filtered from below:0
+
+cluster 1(N=151) has 3 sub-cluster at 3 (5), ICL=137&lt;&gt;22
+split 1 into 3 clusters
+cluster 1(N=151) has 3 sub-cluster at 3 (5), ICL=0&lt;&gt;22
+Model Refinement takes 0.017 mins(max 1: 0.017)
+Fit Model 1 of (6/10) K=1-&gt;3 N=302
+EM 3 takes 0 mins, 10 iterations
+
+cluster 1(N=50) has 2 sub-cluster at 2 (5), ICL=62&lt;&gt;25
+split 1 into 2 clusters
+cluster 3(N=41) has 2 sub-cluster at 2 (100), ICL=44&lt;&gt;25
+split 3 into 2 clusters
+cluster 2(N=212) has 4 sub-cluster at 4 (17), ICL=30&lt;&gt;25
+split 2 into 4 clusters
+Model Refinement takes 0.05 mins(max 1: 0.017)
+Fit Model 2 of (6/10) K=3-&gt;8 N=605
+EM 7 takes 0 mins, 50 iterations
+
+cluster 6(N=64) has 2 sub-cluster at 2 (100), ICL=54&lt;&gt;28
+split 6 into 2 clusters
+cluster 2(N=48) has 3 sub-cluster at 3 (5), ICL=28&lt;&gt;28
+cluster 3(N=44) has 3 sub-cluster at 3 (16), ICL=19&lt;&gt;28
+cluster 4(N=259) has 6 sub-cluster at 7 (54), ICL=9.5&lt;&gt;28
+cluster 5(N=261) has 6 sub-cluster at 8 (28), ICL=6.3&lt;&gt;28
+cluster 2(N=48) has 3 sub-cluster at 3 (5), ICL=0&lt;&gt;28
+Model Refinement takes 0.067 mins(max 4: 0.033)
+Fit Model 3 of (6/10) K=7-&gt;8 N=1210
+EM 6 takes 0 mins, 12 iterations
+
+cluster 2(N=110) has 2 sub-cluster at 2 (6), ICL=66&lt;&gt;31
+split 2 into 2 clusters
+cluster 1(N=116) has 2 sub-cluster at 2 (5), ICL=39&lt;&gt;31
+split 1 into 2 clusters
+cluster 3(N=70) has 4 sub-cluster at 4 (31), ICL=30&lt;&gt;31
+cluster 6(N=138) has 5 sub-cluster at 6 (31), ICL=20&lt;&gt;31
+cluster 4(N=477) has 4 sub-cluster at 4 (22), ICL=3.2&lt;&gt;31
+cluster 1(N=116) has 2 sub-cluster at 2 (5), ICL=0&lt;&gt;31
+Model Refinement takes 0.13 mins(max 4: 0.033)
+Fit Model 4 of (6/10) K=6-&gt;8 N=2420
+EM 8 takes 0 mins, 13 iterations
+
+cluster 5(N=96) has 3 sub-cluster at 3 (9), ICL=53&lt;&gt;34
+split 5 into 3 clusters
+cluster 8(N=282) has 2 sub-cluster at 2 (6), ICL=28&lt;&gt;34
+cluster 3(N=127) has 7 sub-cluster at 7 (44), ICL=25&lt;&gt;34
+cluster 1(N=206) has 8 sub-cluster at 8 (47), ICL=23&lt;&gt;34
+cluster 4(N=109) has 2 sub-cluster at 2 (13), ICL=23&lt;&gt;34
+cluster 2(N=16) has 2 sub-cluster at 2 (100), ICL=3.3&lt;&gt;34
+cluster 1(N=206) has 8 sub-cluster at 8 (47), ICL=0&lt;&gt;34
+Model Refinement takes 0.2 mins(max 6: 0.05)
+Fit Model 5 of (6/10) K=8-&gt;10 N=4841
+EM 10 takes 0 mins, 10 iterations
+
+cluster 3(N=270) has 3 sub-cluster at 3 (22), ICL=49&lt;&gt;37
+split 3 into 3 clusters
+cluster 10(N=568) has 2 sub-cluster at 2 (10), ICL=33&lt;&gt;37
+cluster 2(N=32) has 2 sub-cluster at 2 (14), ICL=28&lt;&gt;37
+cluster 4(N=193) has 5 sub-cluster at 5 (31), ICL=24&lt;&gt;37
+cluster 6(N=83) has 4 sub-cluster at 4 (11), ICL=24&lt;&gt;37
+cluster 1(N=446) has 3 sub-cluster at 3 (10), ICL=14&lt;&gt;37
+cluster 5(N=155) has 5 sub-cluster at 5 (46), ICL=11&lt;&gt;37
+cluster 1(N=446) has 3 sub-cluster at 3 (10), ICL=0&lt;&gt;37
+Model Refinement takes 0.28 mins(max 8: 0.067)
+Fit Model 6 of (6/10) K=10-&gt;12 N=9682
+EM 12 takes 0.017 mins, 7 iterations
+
+cluster 8(N=158) has 2 sub-cluster at 2 (8), ICL=53&lt;&gt;40
+split 8 into 2 clusters
+cluster 2(N=60) has 4 sub-cluster at 4 (52), ICL=48&lt;&gt;40
+split 2 into 4 clusters
+cluster 6(N=391) has 2 sub-cluster at 2 (8), ICL=40&lt;&gt;40
+cluster 1(N=903) has 3 sub-cluster at 3 (8), ICL=32&lt;&gt;40
+cluster 12(N=1120) has 2 sub-cluster at 2 (18), ICL=28&lt;&gt;40
+cluster 9(N=77) has 2 sub-cluster at 2 (100), ICL=25&lt;&gt;40
+cluster 4(N=170) has 5 sub-cluster at 6 (36), ICL=22&lt;&gt;40
+cluster 3(N=211) has 7 sub-cluster at 8 (20), ICL=17&lt;&gt;40
+cluster 5(N=281) has 6 sub-cluster at 8 (65), ICL=10&lt;&gt;40
+cluster 7(N=307) has 6 sub-cluster at 7 (30), ICL=3.9&lt;&gt;40
+cluster 1(N=903) has 3 sub-cluster at 3 (8), ICL=0&lt;&gt;40
+Model Refinement takes 0.38 mins(max 10: 0.083)
+Fit Model 7 of (6/10) K=12-&gt;16 N=9682
+EM 14 takes 0.1 mins, 50 iterations
+
+cluster 1(N=905) has 2 sub-cluster at 2 (24), ICL=60&lt;&gt;40
+split 1 into 2 clusters
+cluster 14(N=1112) has 2 sub-cluster at 2 (9), ICL=46&lt;&gt;40
+split 14 into 2 clusters
+cluster 7(N=390) has 3 sub-cluster at 3 (34), ICL=41&lt;&gt;40
+split 7 into 3 clusters
+cluster 2(N=50) has 2 sub-cluster at 2 (100), ICL=41&lt;&gt;40
+split 2 into 2 clusters
+cluster 10(N=57) has 3 sub-cluster at 3 (18), ICL=27&lt;&gt;40
+cluster 5(N=189) has 4 sub-cluster at 4 (19), ICL=24&lt;&gt;40
+cluster 4(N=215) has 4 sub-cluster at 4 (35), ICL=20&lt;&gt;40
+cluster 11(N=74) has 2 sub-cluster at 2 (100), ICL=18&lt;&gt;40
+cluster 9(N=107) has 3 sub-cluster at 3 (25), ICL=14&lt;&gt;40
+cluster 6(N=269) has 6 sub-cluster at 8 (40), ICL=11&lt;&gt;40
+cluster 8(N=316) has 2 sub-cluster at 2 (8), ICL=9&lt;&gt;40
+cluster 1(N=905) has 2 sub-cluster at 2 (24), ICL=0&lt;&gt;40
+Model Refinement takes 0.37 mins(max 13: 0.083)
+Fit Model 8 of (6/10) K=14-&gt;19 N=9682
+EM 18 takes 0.1 mins, 50 iterations
+
+cluster 13(N=39) has 3 sub-cluster at 3 (11), ICL=27&lt;&gt;40
+cluster 12(N=107) has 5 sub-cluster at 5 (29), ICL=24&lt;&gt;40
+cluster 6(N=207) has 4 sub-cluster at 4 (25), ICL=21&lt;&gt;40
+cluster 10(N=108) has 6 sub-cluster at 6 (29), ICL=19&lt;&gt;40
+cluster 5(N=212) has 5 sub-cluster at 5 (23), ICL=17&lt;&gt;40
+cluster 7(N=255) has 7 sub-cluster at 8 (20), ICL=13&lt;&gt;40
+cluster 8(N=212) has 5 sub-cluster at 6 (50), ICL=12&lt;&gt;40
+cluster 9(N=148) has 7 sub-cluster at 7 (20), ICL=11&lt;&gt;40
+cluster 11(N=320) has 8 sub-cluster at 8 (39), ICL=8.2&lt;&gt;40
+cluster 14(N=74) has 2 sub-cluster at 2 (100), ICL=5.9&lt;&gt;40
+cluster 1(N=396) has 6 sub-cluster at 7 (34), ICL=2.7&lt;&gt;40
+cluster 1(N=396) has 6 sub-cluster at 7 (34), ICL=0&lt;&gt;40
+Model Refinement takes 0.47 mins(max 15: 0.083)
+Fit Model 9 of (6/10) K=18-&gt;18 N=9682
+EM 18 takes 0.1 mins, 50 iterations
+
+Process completed at9
+
+Major Iteration (Trans) (6/4) takes 2.3 mins
+Fit Model 1 of 10 with 2 clusters
+=&gt; results in  2 clusters
+Fit Model 2 of 10 with 9 clusters
+=&gt; results in  8 clusters
+Fit Model 3 of 10 with 23 clusters
+=&gt; results in  18 clusters
+Fit Model 4 of 10 with 23 clusters
+=&gt; results in  20 clusters
+Fit Model 5 of 10 with 23 clusters
+=&gt; results in  20 clusters
+Error: processing vignette &#x27;immunoClust.Rnw&#x27; failed with diagnostics:
+unable to run pdflatex on &#x27;immunoClust.tex&#x27;
+LaTeX errors:
+! LaTeX Error: File `framed.sty&#x27; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==&gt; Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘immunoClust.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘immunoClust.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

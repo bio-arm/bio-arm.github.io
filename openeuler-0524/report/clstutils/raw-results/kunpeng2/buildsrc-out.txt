@@ -1,0 +1,58 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data clstutils
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘clstutils/DESCRIPTION’ ... OK
+* preparing ‘clstutils’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘pplacerDemo.Rnw’ using Sweave
+Loading required package: clst
+Loading required package: rjson
+Loading required package: ape
+Error: processing vignette 'pplacerDemo.Rnw' failed with diagnostics:
+unable to run pdflatex on 'pplacerDemo.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.16 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘pplacerDemo.Rnw’
+
+--- re-building ‘refSet.Rnw’ using Sweave
+Error: processing vignette 'refSet.Rnw' failed with diagnostics:
+unable to run pdflatex on 'refSet.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.15 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘refSet.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘pplacerDemo.Rnw’ ‘refSet.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

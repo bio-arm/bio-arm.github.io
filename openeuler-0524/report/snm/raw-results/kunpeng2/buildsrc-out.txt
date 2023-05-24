@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data snm
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘snm/DESCRIPTION’ ... OK
+* preparing ‘snm’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘snm.Rnw’ using Sweave
+boundary (singular) fit: see help('isSingular')
+Error: processing vignette 'snm.Rnw' failed with diagnostics:
+unable to run pdflatex on 'snm.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                {vmargin}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘snm.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘snm.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

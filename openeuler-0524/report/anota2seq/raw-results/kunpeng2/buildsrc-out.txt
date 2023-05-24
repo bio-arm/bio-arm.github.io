@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data anota2seq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘anota2seq/DESCRIPTION’ ... OK
+* preparing ‘anota2seq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘anota2seq.Rnw’ using knitr
+sh: line 1: pdfcrop: command not found
+sh: line 1: pdfcrop: command not found
+sh: line 1: pdfcrop: command not found
+sh: line 1: pdfcrop: command not found
+sh: line 1: pdfcrop: command not found
+Error: processing vignette 'anota2seq.Rnw' failed with diagnostics:
+unable to run pdflatex on 'anota2seq.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘anota2seq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘anota2seq.Rnw’
+
+Error: Vignette re-building failed.
+In addition: Warning messages:
+1: In has_utility("pdfcrop") : pdfcrop not installed or not in PATH
+2: In system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+3: In system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+4: In system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+5: In system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+6: In system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+Execution halted

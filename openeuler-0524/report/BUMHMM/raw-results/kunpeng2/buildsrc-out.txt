@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BUMHMM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BUMHMM/DESCRIPTION’ ... OK
+* preparing ‘BUMHMM’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘BUMHMM.Rnw’ using knitr
+Warning in has_utility("pdfcrop") :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+Error: processing vignette 'BUMHMM.Rnw' failed with diagnostics:
+unable to run pdflatex on 'BUMHMM.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘BUMHMM.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘BUMHMM.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

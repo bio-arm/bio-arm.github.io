@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data infinityFlow
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘infinityFlow/DESCRIPTION’ ... OK
+* preparing ‘infinityFlow’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘raster’ is not available for package ‘infinityFlow’
+* removing ‘/tmp/RtmpS6dpVq/Rinst3ec2867dcac162/infinityFlow’
+      -----------------------------------
+ERROR: package installation failed

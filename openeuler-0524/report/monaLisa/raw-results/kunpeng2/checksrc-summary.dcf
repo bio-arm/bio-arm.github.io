@@ -1,0 +1,10 @@
+Package: monaLisa
+Version: 1.7.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:monaLisa.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings monaLisa_1.7.1.tar.gz
+StartedAt: 2023-05-23 16:30:08 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:30:20 -0000 (Tue, 23 May 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: monaLisa.Rcheck
+Warnings: NA

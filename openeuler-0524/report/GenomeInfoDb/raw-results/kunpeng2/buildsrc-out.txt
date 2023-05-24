@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GenomeInfoDb
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GenomeInfoDb/DESCRIPTION’ ... OK
+* preparing ‘GenomeInfoDb’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Accept-organism-for-GenomeInfoDb.Rmd’ using rmarkdown
+--- finished re-building ‘Accept-organism-for-GenomeInfoDb.Rmd’
+
+--- re-building ‘GenomeInfoDb.Rnw’ using knitr
+Error: processing vignette 'GenomeInfoDb.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GenomeInfoDb.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GenomeInfoDb.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GenomeInfoDb.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

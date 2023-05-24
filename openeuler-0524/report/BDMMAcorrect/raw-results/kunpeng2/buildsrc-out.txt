@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BDMMAcorrect
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BDMMAcorrect/DESCRIPTION’ ... OK
+* preparing ‘BDMMAcorrect’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Vignette.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Vignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpSl1oLB/Rbuild2e314c1d229fd7/BDMMAcorrect/vignettes/Vignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Vignette.log for more info.
+--- failed re-building ‘Vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

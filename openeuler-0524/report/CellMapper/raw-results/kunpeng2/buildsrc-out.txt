@@ -1,0 +1,62 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CellMapper
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CellMapper/DESCRIPTION’ ... OK
+* preparing ‘CellMapper’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘CellMapper.Rnw’ using Sweave
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: AnnotationHub
+Loading required package: BiocFileCache
+Loading required package: dbplyr
+Warning: replacing previous import ‘stats::var’ by ‘S4Vectors::var’ when loading ‘CellMapper’
+Warning: replacing previous import ‘stats::sd’ by ‘S4Vectors::sd’ when loading ‘CellMapper’
+see ?CellMapperData and browseVignettes('CellMapperData') for documentation
+loading from cache
+see ?CellMapperData and browseVignettes('CellMapperData') for documentation
+loading from cache
+* Running CellMapper with query gene(s) '2571'...
+
+see ?CellMapperData and browseVignettes('CellMapperData') for documentation
+loading from cache
+
+Error: processing vignette 'CellMapper.Rnw' failed with diagnostics:
+ chunk 12 
+Error : failed to load resource
+  name: EH171
+  title: Pre-processed microarray data from the Affymetrix HG-U133PlusV2 platform
+  reason: error in evaluating the argument 'x' in selecting a method for function 'get': error reading from connection
+
+--- failed re-building ‘CellMapper.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘CellMapper.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

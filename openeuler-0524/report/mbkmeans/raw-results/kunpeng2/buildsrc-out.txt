@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data mbkmeans
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘mbkmeans/DESCRIPTION’ ... OK
+* preparing ‘mbkmeans’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Vignette.Rmd’ using rmarkdown
+Quitting from lines 234-245 (Vignette.Rmd) 
+Error: processing vignette 'Vignette.Rmd' failed with diagnostics:
+no method or default for coercing "DelayedMatrix" to "SVT_SparseArray"
+--- failed re-building ‘Vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

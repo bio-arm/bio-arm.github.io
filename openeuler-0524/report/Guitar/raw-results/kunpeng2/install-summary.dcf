@@ -1,0 +1,8 @@
+Package: Guitar
+Version: 2.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL Guitar
+StartedAt: 2023-05-23 06:27:54 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:28:44 -0000 (Tue, 23 May 2023)
+EllapsedTime: 50.0 seconds
+RetCode: 0
+Status: OK

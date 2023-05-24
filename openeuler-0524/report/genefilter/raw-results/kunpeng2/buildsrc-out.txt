@@ -1,0 +1,49 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data genefilter
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘genefilter/DESCRIPTION’ ... OK
+* preparing ‘genefilter’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘howtogenefilter.Rmd’ using rmarkdown
+--- finished re-building ‘howtogenefilter.Rmd’
+
+--- re-building ‘howtogenefinder.Rmd’ using rmarkdown
+--- finished re-building ‘howtogenefinder.Rmd’
+
+--- re-building ‘independent_filtering_plots.Rnw’ using knitr
+The magick package is required to crop "figure/filter_volcano-1.png" but not available.
+The magick package is required to crop "figure/kappa-1.png" but not available.
+The magick package is required to crop "figure/rejection_plot-1.png" but not available.
+The magick package is required to crop "figure/filtered_R_plot-1.png" but not available.
+Error: processing vignette 'independent_filtering_plots.Rnw' failed with diagnostics:
+unable to run pdflatex on 'independent_filtering_plots.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘independent_filtering_plots.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘independent_filtering_plots.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

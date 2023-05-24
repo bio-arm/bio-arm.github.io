@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Director
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Director/DESCRIPTION’ ... OK
+* preparing ‘Director’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette.Rnw’ using Sweave
+Warning in makeSankey(tempList_v2) :
+  Sankeys do not produce loops. gene1 -> transc1 on line 12 of $reference has been renamed. For optimal figure, please break the loop of DrugX -> miR-B -> transc1 -> gene1 -> transc1 and rerun this function.
+Warning in makeSankey(tempList_v2) :
+  Sankeys do not produce loops. gene2 -> transc2 on line 13 of $reference has been renamed. For optimal figure, please break the loop of DrugX -> miR-A -> transc2 -> gene2 -> transc2 and rerun this function.
+Warning in makeSankey(tempList_v2) :
+  Sankeys do not produce loops. gene2 -> transc2 on line 13 of $reference has been renamed. For optimal figure, please break the loop of DrugX -> miR-B -> transc2 -> gene2 -> transc2 and rerun this function.
+Error: processing vignette 'vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               {ragged2e}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

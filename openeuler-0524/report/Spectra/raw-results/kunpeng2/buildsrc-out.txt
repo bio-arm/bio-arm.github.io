@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Spectra
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Spectra/DESCRIPTION’ ... OK
+* preparing ‘Spectra’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MsBackend.Rmd’ using rmarkdown
+--- finished re-building ‘MsBackend.Rmd’
+
+--- re-building ‘Spectra.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/plotspectra-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/plotspectra-label-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/plotspectra-label-int-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/plotspectraoverlay-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/plotspectramirror-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/plotspectramirror-ppm-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/unnamed-chunk-11-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/unnamed-chunk-12-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/unnamed-chunk-13-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/unnamed-chunk-15-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpICILOR/Rbuild2d4e86f5bec9b/Spectra/vignettes/Spectra_files/figure-html/unnamed-chunk-22-1.png" but not available.
+Quitting from lines 1095-1100 (Spectra.Rmd) 
+Error: processing vignette 'Spectra.Rmd' failed with diagnostics:
+there is no package called 'msdata'
+--- failed re-building ‘Spectra.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Spectra.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

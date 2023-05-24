@@ -1,0 +1,63 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BiocParallel
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BiocParallel/DESCRIPTION’ ... OK
+* preparing ‘BiocParallel’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Introduction_To_BiocParallel.Rmd’ using rmarkdown
+--- finished re-building ‘Introduction_To_BiocParallel.Rmd’
+
+--- re-building ‘Random_Numbers.Rmd’ using rmarkdown
+--- finished re-building ‘Random_Numbers.Rmd’
+
+--- re-building ‘BiocParallel_BatchtoolsParam.Rnw’ using knitr
+Error: processing vignette 'BiocParallel_BatchtoolsParam.Rnw' failed with diagnostics:
+unable to run pdflatex on 'BiocParallel_BatchtoolsParam.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘BiocParallel_BatchtoolsParam.Rnw’
+
+--- re-building ‘Errors_Logs_And_Debugging.Rnw’ using knitr
+Error: processing vignette 'Errors_Logs_And_Debugging.Rnw' failed with diagnostics:
+unable to run pdflatex on 'Errors_Logs_And_Debugging.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘Errors_Logs_And_Debugging.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘BiocParallel_BatchtoolsParam.Rnw’ ‘Errors_Logs_And_Debugging.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

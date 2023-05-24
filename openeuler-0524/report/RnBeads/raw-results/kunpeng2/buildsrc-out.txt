@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RnBeads
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RnBeads/DESCRIPTION’ ... OK
+* preparing ‘RnBeads’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RnBeads.Rnw’ using Sweave
+Error: processing vignette 'RnBeads.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RnBeads.tex'
+LaTeX errors:
+! LaTeX Error: File `vmargin.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.10 \usepackage
+                [american]{babel}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RnBeads.Rnw’
+
+--- re-building ‘RnBeads_Annotations.Rnw’ using Sweave
+Error: processing vignette 'RnBeads_Annotations.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RnBeads_Annotations.tex'
+LaTeX errors:
+! LaTeX Error: File `vmargin.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.10 \usepackage
+                [english,american]{babel}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RnBeads_Annotations.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘RnBeads.Rnw’ ‘RnBeads_Annotations.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

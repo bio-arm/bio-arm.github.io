@@ -1,0 +1,10 @@
+Package: beachmat
+Version: 2.17.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:beachmat.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings beachmat_2.17.2.tar.gz
+StartedAt: 2023-05-23 15:39:59 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 15:50:16 -0000 (Tue, 23 May 2023)
+EllapsedTime: 617.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: beachmat.Rcheck
+Warnings: NA

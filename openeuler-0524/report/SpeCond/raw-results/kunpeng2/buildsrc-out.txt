@@ -1,0 +1,101 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SpeCond
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SpeCond/DESCRIPTION’ ... OK
+* preparing ‘SpeCond’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SpeCond.Rnw’ using Sweave
+Loading required package: mclust
+Package 'mclust' version 6.0.0
+Type 'citation("mclust")' for citing this R package in publications.
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: fields
+Loading required package: spam
+Spam version 2.9-1 (2022-08-07) is loaded.
+Type 'help( Spam)' or 'demo( spam)' for a short introduction 
+and overview of this package.
+Help for individual functions is also obtained by adding the
+suffix '.spam' to the function name, e.g. 'help( chol.spam)'.
+
+Attaching package: ‘spam’
+
+The following objects are masked from ‘package:base’:
+
+    backsolve, forwardsolve
+
+Loading required package: viridis
+Loading required package: viridisLite
+
+Try help(fields) to get started.
+Loading required package: hwriter
+Loading required package: RColorBrewer
+The full result html page 'E_Example_SpeCond_results.html' will be created in the current directory '/tmp/RtmpvtvkGl'
+The directory 'E_General_Result' has been created.
+The index html page 'E_index_example_SpeCond_Results.html' will be created in the current directory: '/tmp/RtmpvtvkGl'
+The directory 'E_Single_result_pages' has been created.
+The full result html page 'S1_simulatedSpeCondData_results.html' will be created in the current directory '/tmp/RtmpvtvkGl'
+The directory 'S1_General_Result' has been created.
+The index html page 'S1_index_simulatedSpeCondData.html' will be created in the current directory: '/tmp/RtmpvtvkGl'
+The directory 'S1_Single_result_pages' has been created.
+The index html page 'S2_index_simulatedSpeCondData.html' will be created in the current directory: '/tmp/RtmpvtvkGl'
+The directory 'S2_Single_result_pages' has been created.
+The full result html page 'S2_simulatedSpeCondData_results.html' will be created in the current directory '/tmp/RtmpvtvkGl'
+The directory 'S2_General_Result' has been created.
+The index html page 'S3_index_simulatedSpeCondData.html' will be created in the current directory: '/tmp/RtmpvtvkGl'
+The directory 'S3_Single_result_pages' has been created.
+The full result html page 'S3_simulatedSpeCondData_results.html' will be created in the current directory '/tmp/RtmpvtvkGl'
+The directory 'S3_General_Result' has been created.
+Error: processing vignette 'SpeCond.Rnw' failed with diagnostics:
+unable to run pdflatex on 'SpeCond.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.8 \usepackage
+               {verbatim}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘SpeCond.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘SpeCond.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

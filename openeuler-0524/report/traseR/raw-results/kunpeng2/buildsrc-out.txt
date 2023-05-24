@@ -1,0 +1,98 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data traseR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘traseR/DESCRIPTION’ ... OK
+* preparing ‘traseR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘traseR.Rnw’ using Sweave
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: BSgenome.Hsapiens.UCSC.hg19
+Loading required package: BSgenome
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: rtracklayer
+There are  128094211 bp in the query region, accounting for  0.0421875469310327  of the genome.
+There are  573 traits in the analysis.
+There are  33 trait class in the analysis.
+100 traits have been tested!
+200 traits have been tested!
+300 traits have been tested!
+400 traits have been tested!
+500 traits have been tested!
+10 trait class have been tested!
+20 trait class have been tested!
+30 trait class have been tested!
+There are 573 traits in the test.
+The overall functional SNP enrichment test results are:
+The trait-associated SNP enrichment test results are:
+The trait-class-associated SNP enrichment test results are:
+Error: processing vignette 'traseR.Rnw' failed with diagnostics:
+unable to run pdflatex on 'traseR.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘traseR.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘traseR.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

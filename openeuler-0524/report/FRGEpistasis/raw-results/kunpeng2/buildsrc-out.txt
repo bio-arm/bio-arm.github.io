@@ -1,0 +1,53 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FRGEpistasis
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FRGEpistasis/DESCRIPTION’ ... OK
+* preparing ‘FRGEpistasis’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘FRGEpistasis.Rnw’ using Sweave
+Loading required package: MASS
+Loading required package: fda
+Loading required package: splines
+Loading required package: fds
+Loading required package: rainbow
+Loading required package: pcaPP
+Loading required package: RCurl
+Loading required package: deSolve
+
+Attaching package: ‘fda’
+
+The following object is masked from ‘package:graphics’:
+
+    matplot
+
+Error: processing vignette 'FRGEpistasis.Rnw' failed with diagnostics:
+unable to run pdflatex on 'FRGEpistasis.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.6 \usepackage
+               {Sweave}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘FRGEpistasis.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘FRGEpistasis.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

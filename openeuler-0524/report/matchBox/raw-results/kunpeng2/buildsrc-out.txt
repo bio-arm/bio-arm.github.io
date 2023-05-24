@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data matchBox
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘matchBox/DESCRIPTION’ ... OK
+* preparing ‘matchBox’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘matchBox.Rnw’ using Sweave
+Loading required package: matchBox
+Error: processing vignette 'matchBox.Rnw' failed with diagnostics:
+unable to run pdflatex on 'matchBox.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.20 \usepackage
+                {times}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘matchBox.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘matchBox.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

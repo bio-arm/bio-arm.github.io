@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MEAL
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MEAL/DESCRIPTION’ ... OK
+* preparing ‘MEAL’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MEAL.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Manhattan 1-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Manhattan 1-2.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Manhattan 2-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Volcano 1-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/QQ-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Plot_Features-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Plot_Features-2.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Regional plot 1-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/Regional plot 2-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/plotRDA-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmp1tQPLH/Rbuild3f38e36ffe83ff/MEAL/vignettes/MEAL_files/figure-html/plotRDA 2-1.png" but not available.
+--- finished re-building ‘MEAL.Rmd’
+
+--- re-building ‘caseExample.Rmd’ using rmarkdown
+Quitting from lines 41-48 (caseExample.Rmd) 
+Error: processing vignette 'caseExample.Rmd' failed with diagnostics:
+there is no package called 'brgedata'
+--- failed re-building ‘caseExample.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘caseExample.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

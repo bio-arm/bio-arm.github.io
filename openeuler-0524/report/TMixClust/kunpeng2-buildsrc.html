@@ -1,0 +1,538 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for TMixClust on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><B>[<A href="..#T">T</A>]</B></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-24 01:46:22 -0000 (Wed, 24 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4131</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for TMixClust on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the TMixClust package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/TMixClust.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>2075</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">TMixClust</A>&nbsp;1.23.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/TMixClust">landing page</A>)</SPAN><BR>Monica Golumbeanu<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-22&nbsp;17:00:18&nbsp;-0000&nbsp;(Mon,&nbsp;22&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/TMixClust</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">33cd0d4</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:55:56&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: TMixClust</TD></TR>
+<TR><TD><B>Version</B>: 1.23.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TMixClust</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-23 14:27:34 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-23 14:28:16 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 42.1 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TMixClust
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TMixClust/DESCRIPTION’ ... OK
+* preparing ‘TMixClust’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘TMixClust.Rnw’ using knitr
+Warning in has_utility(&quot;pdfcrop&quot;) :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+TMixClust              package:TMixClust               R Documentation
+
+_C_l_u_s_t_e_r_s _t_h_e _t_i_m_e _s_e_r_i_e_s _d_a_t_a _i_n _a _g_i_v_e_n _n_u_m_b_e_r _o_f _g_r_o_u_p_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     &#x27;TMixClust&#x27; is the central function of the package. It clusters
+     the given time series data into a specified number of clusters.
+
+_U_s_a_g_e:
+
+     TMixClust(time_series_df, time_points = seq_len(ncol(time_series_df)),
+       nb_clusters = 2, em_iter_max = 1000, mc_em_iter_max = 10,
+       em_ll_convergence = 0.001)
+     
+_A_r_g_u_m_e_n_t_s:
+
+time_series_df: data frame containing the time series. Each row is a
+          time series comprised of the time series name which is also
+          the row name, and the time series values at each time point.
+
+time_points: vector containing numeric values for the time points.
+          Default: &#x27;seq_len(ncol(time_series_df))&#x27;.
+
+nb_clusters: desired number of clusters
+
+em_iter_max: maximum number of iterations for the
+          expectation-maximization (EM) algorithm. Default: 1000.
+
+mc_em_iter_max: maximum number of iterations for Monte-Carlo
+          resampling. Default is 100.
+
+em_ll_convergence: convergence threshold for likelihood improvement.
+          Default is 0.001.
+
+_V_a_l_u_e:
+
+     list object with the following attributes:
+
+        • &#x27;em_gss_obj_list&#x27; object of class &#x27;gss&#x27; containing estimated
+          parameters of the mixed-effects model (see package vignette
+          for more details).
+
+        • &#x27;em_pi_k&#x27; vector containing the mixing coefficients
+          corresponding to each cluster
+
+        • &#x27;em_mat_post&#x27; matrix containing the posterior values for each
+          time series and cluster
+
+        • &#x27;em_cluster_assignment&#x27; vector with the clustering
+          attribution for each time series
+
+        • &#x27;el_ll&#x27; vector containing the log likelihood values at each
+          iteration in the EM algorithm
+
+        • &#x27;ts_data&#x27; the same as the input time series data-frame
+
+        • &#x27;ts_time_points&#x27; the same as the input time-points vector
+
+_A_u_t_h_o_r(_s):
+
+     Monica Golumbeanu, &lt;mailto:monica.golumbeanu@bsse.ethz.ch&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Golumbeanu M, Desfarges S, Hernandez C, Quadroni M, Rato S,
+     Mohammadi P, Telenti A, Beerenwinkel N, Ciuffi A. (2017) Dynamics
+     of Proteo-Transcriptomic Response to HIV-1 Infection.
+
+_E_x_a_m_p_l_e_s:
+
+     # Load the toy time series data provided with the TMixClust package
+     data(toy_data_df)
+     
+     # Cluster the toy data with default parameters
+     TMixClust_obj = TMixClust(toy_data_df)
+     
+
+generate_TMixClust_report      package:TMixClust       R Documentation
+
+_G_e_n_e_r_a_t_e_s _a _s_e_r_i_e_s _o_f _f_i_l_e_s _c_o_n_t_a_i_n_i_n_g _a _s_u_m_m_a_r_y _o_f _t_h_e _T_M_i_x_C_l_u_s_t
+_a_n_a_l_y_s_i_s _r_e_s_u_l_t_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     &#x27;generate_TMixClust_report&#x27;
+
+_U_s_a_g_e:
+
+     generate_TMixClust_report(TMixClust_object, report_folder = paste(getwd(),
+       &quot;/TMixClust_report/&quot;, sep = &quot;&quot;), data_color = &quot;#fd8d3c&quot;, x_label = &quot;time&quot;,
+       y_label = &quot;value&quot;)
+     
+_A_r_g_u_m_e_n_t_s:
+
+TMixClust_object: list object created by the &#x27;TMixClust&#x27; function (see
+          function &#x27;TMixClust&#x27;)
+
+report_folder: full path of the folder where the report files will be
+          saved. Default is TMixClust_report/ folder in current working
+          directory.
+
+data_color: color of the time series to be used when generating the
+          cluster plots. Default is orange.
+
+ x_label: label of the x axis for the cluster plots. Default is &quot;time&quot;
+
+ y_label: label of the y axis for the cluster plots. Default is &quot;value&quot;
+
+_V_a_l_u_e:
+
+     Produces a series of files containing information about the
+     clustering results and saves them in the provided folder location.
+     The folder contains the following:
+
+        • &#x27;log-lihelihood.txt&#x27; - file with the log likelihood values at
+          each iteration on separate lines
+
+        • &#x27;log-likelihood.pdf&#x27; - plot of log-likelihood at each
+          iteration
+
+        • &#x27;posterior.txt&#x27; - file with the posterior probabilities of
+          all the time-series for each cluster
+
+        • &#x27;estimated_curves/&#x27; - folder containing a number of files
+          equal to the number of clusters; each file has 4 lines
+          consisting of curve values and their confidence intervals
+          (first 3 lines) for a discrete time grid (last line).
+
+        • &#x27;clusters/&#x27; - folder containing a plot with the time series
+          in each cluster, a silhouette plot of the clustering
+          configuration, as well as, for each cluster, a file
+          containing the names of the time series in the respective
+          cluster and a file containing the names and time series
+          values for the time series in each cluster.
+
+_A_u_t_h_o_r(_s):
+
+     Monica Golumbeanu, &lt;mailto:monica.golumbeanu@bsse.ethz.ch&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Golumbeanu M, Desfarges S, Hernandez C, Quadroni M, Rato S,
+     Mohammadi P, Telenti A, Beerenwinkel N, Ciuffi A. (2017) Dynamics
+     of Proteo-Transcriptomic Response to HIV-1 Infection.
+
+_E_x_a_m_p_l_e_s:
+
+     ## Not run:
+     
+     # Load the toy time series data provided with the TMixClust package
+     data(toy_data_df)
+     
+     # Cluster the toy data with default parameters
+     TMixClust_obj = TMixClust(toy_data_df)
+     
+     # Generate a TMixClust report in the current working directory
+     generate_TMixClust_report(TMixClust_obj)
+     ## End(Not run)
+     
+
+get_time_series_df          package:TMixClust          R Documentation
+
+_E_x_t_r_a_c_t_s _a _t_i_m_e _s_e_r_i_e_s _d_a_t_a _f_r_a_m_e _f_r_o_m _a _t_e_x_t _f_i_l_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     &#x27;get_time_series_df&#x27; creates a data frame containing time series
+     data from a file.
+
+_U_s_a_g_e:
+
+     get_time_series_df(data_file)
+     
+_A_r_g_u_m_e_n_t_s:
+
+data_file: path to a tab-delimited text file containing the time series
+          data formatted such that each row contains a time-series
+          represented by its name (e.g. gene name, protein name, etc.)
+          and the values at each time point.
+
+_V_a_l_u_e:
+
+     A data frame containing the time series
+
+_A_u_t_h_o_r(_s):
+
+     Monica Golumbeanu, &lt;mailto:monica.golumbeanu@bsse.ethz.ch&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Golumbeanu M, Desfarges S, Hernandez C, Quadroni M, Rato S,
+     Mohammadi P, Telenti A, Beerenwinkel N, Ciuffi A. (2017) Dynamics
+     of Proteo-Transcriptomic Response to HIV-1 Infection.
+
+_E_x_a_m_p_l_e_s:
+
+     # Load a simulated toy time-series data provided with the package
+     toy_data_file = system.file(&quot;extdata&quot;, &quot;toy_time_series.txt&quot;,
+     package = &quot;TMixClust&quot;)
+     toy_data= get_time_series_df(toy_data_file)
+     
+     # Print the first lines of the resulting data frame
+     print(head(toy_data))
+     
+
+plot_time_series_df         package:TMixClust          R Documentation
+
+_P_l_o_t_s _a_l_l _t_h_e _t_i_m_e _s_e_r_i_e_s _s_t_o_r_e_d _i_n _a _d_a_t_a _f_r_a_m_e _o_b_j_e_c_t
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     &#x27;plot_time_series_df&#x27; allows the user to visualise the time series
+     from a given data set.
+
+_U_s_a_g_e:
+
+     plot_time_series_df(ts_df, time_points = seq_len(ncol(ts_df)),
+       data_color = &quot;#fd8d3c&quot;, x_label = &quot;time&quot;, y_label = &quot;value&quot;,
+       plot_title = &quot;Time series plot&quot;)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   ts_df: data frame containing on each row a time-series
+
+time_points: vector containing the values of the time points. Default:
+          &#x27;seq_len(ncol(time_series_df))&#x27;.
+
+data_color: color of the time series to be used for the plot. Default
+          is orange.
+
+ x_label: label of the x axis of the plot. Default is &quot;time&quot;
+
+ y_label: label of the y axis of the plot. Default is &quot;value&quot;
+
+plot_title: title of the plot. Default is &quot;Time series plot&quot;.
+
+_V_a_l_u_e:
+
+     Plots a figure with all the the time series in the data set
+
+_A_u_t_h_o_r(_s):
+
+     Monica Golumbeanu, &lt;mailto:monica.golumbeanu@bsse.ethz.ch&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Golumbeanu M, Desfarges S, Hernandez C, Quadroni M, Rato S,
+     Mohammadi P, Telenti A, Beerenwinkel N, Ciuffi A. (2017) Dynamics
+     of Proteo-Transcriptomic Response to HIV-1 Infection.
+
+_E_x_a_m_p_l_e_s:
+
+     # Load the toy time series data provided with the TMixClust package
+     data(toy_data_df)
+     
+     # Plot the time series
+     plot_time_series_df(toy_data_df)
+     
+
+plot_silhouette           package:TMixClust            R Documentation
+
+_G_e_n_e_r_a_t_e_s _a _s_i_l_h_o_u_e_t_t_e _p_l_o_t _f_o_r _a _g_i_v_e_n _c_l_u_s_t_e_r_i_n_g _c_o_n_f_i_g_u_r_a_t_i_o_n.
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     &#x27;plot_silhouette&#x27;
+
+_U_s_a_g_e:
+
+     plot_silhouette(TMixClust_object, sim_metric = &quot;euclidean&quot;,
+       sil_color = &quot;#bdbdbd&quot;)
+     
+_A_r_g_u_m_e_n_t_s:
+
+TMixClust_object: list object created by the &#x27;TMixClust&#x27; function (see
+          function &#x27;TMixClust&#x27;)
+
+sim_metric: character string taking one of the possible values:
+          &quot;euclidean&quot;, &quot;gower&quot; or &quot;manhattan&quot;. Default is &quot;euclidean&quot;.
+
+sil_color: color of the bars representing the silhouette widths on the
+          plot
+
+_V_a_l_u_e:
+
+     List object with the following components:
+
+        • &#x27;similarity_m&#x27; similarity matrix
+
+        • &#x27;silh&#x27; silhouette object
+
+     Renders a plot comprised of a set of barplots with the
+     distributions of silhouette coefficients for the data points in
+     each cluster. Each barplot has indicated on its right hand side
+     the total number of points in the corresponding cluster. The plot
+     also indicates with a dotted line, the overall average silhouette
+     width, whose value is specified at the bottom of the plot.
+
+_A_u_t_h_o_r(_s):
+
+     Monica Golumbeanu, &lt;mailto:monica.golumbeanu@bsse.ethz.ch&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Golumbeanu M, Desfarges S, Hernandez C, Quadroni M, Rato S,
+     Mohammadi P, Telenti A, Beerenwinkel N, Ciuffi A. (2017) Dynamics
+     of Proteo-Transcriptomic Response to HIV-1 Infection.
+
+_E_x_a_m_p_l_e_s:
+
+     # Load the TMixClust object associated to the toy time series data
+     # provided with the TMixClust package
+     data(best_clust_toy_obj)
+     
+     # Plot the silhouette for the clustering stored in the toy TMixClust object
+     plot_silhouette(best_clust_toy_obj)
+     
+
+analyse_stability          package:TMixClust           R Documentation
+
+_S_t_a_b_i_l_i_t_y _a_n_a_l_y_s_i_s, _c_l_u_s_t_e_r_i_n_g _e_v_a_l_u_a_t_i_o_n _a_n_d _o_p_t_i_m_a_l _s_o_l_u_t_i_o_n
+_s_e_l_e_c_t_i_o_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     &#x27;analyse_stability&#x27; Performs multiple clustering runs with
+     TMixClust, analyses the agreement between runs with the Rand index
+     and returns the clustering solution with the largest likelihood. A
+     plot of agreement probability between all the runs and the run
+     with the maximum likelihood is produced.
+
+_U_s_a_g_e:
+
+     analyse_stability(time_series_df, time_points = seq_len(ncol(time_series_df)),
+       nb_clusters = 2, em_iter_max = 1000, mc_em_iter_max = 10,
+       em_ll_convergence = 0.001, nb_clustering_runs = 3, nb_cores = 1)
+     
+_A_r_g_u_m_e_n_t_s:
+
+time_series_df: data frame containing the time series. Each row is a
+          time series comprised of the time series name which is also
+          the row name, and the time series values at each time point.
+
+time_points: vector containing numeric values for the time points.
+          Default: &#x27;seq_len(ncol(time_series_df))&#x27;.
+
+nb_clusters: desired number of clusters
+
+em_iter_max: maximum number of iterations for the
+          expectation-maximization (EM) algorithm. Default: 1000.
+
+mc_em_iter_max: maximum number of iterations for Monte-Carlo
+          resampling. Default is 10.
+
+em_ll_convergence: convergence threshold for likelihood improvement.
+          Default is 0.001.
+
+nb_clustering_runs: number of times the clustering procedure is
+          repeated on the input data. Default is 3.
+
+nb_cores: number of cores to be used to run the separate clustering
+          operations in parallel. Default is 1.
+
+_V_a_l_u_e:
+
+     TMixClust object with the highest likelihood. Renders a plot
+     showing the overall distribution of the Rand index, which allows
+     the user to assess clustering stability.
+
+_A_u_t_h_o_r(_s):
+
+     Monica Golumbeanu, &lt;mailto:monica.golumbeanu@bsse.ethz.ch&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Golumbeanu M, Desfarges S, Hernandez C, Quadroni M, Rato S,
+     Mohammadi P, Telenti A, Beerenwinkel N, Ciuffi A. (2017) Dynamics
+     of Proteo-Transcriptomic Response to HIV-1 Infection.
+
+_E_x_a_m_p_l_e_s:
+
+     # Load the toy time series data provided with the TMixClust package
+     data(toy_data_df)
+     
+     # Identify the most optimal clustering solution with 3 clusters
+     best_clust_obj = analyse_stability(toy_data_df, nb_clusters = 3,
+                                        nb_clustering_runs = 4, nb_cores = 1)
+     
+     # Plot the time series from each cluster
+     for (i in seq_len(3)) {
+         # Extract the time series in the current cluster and plot them
+         c_df=toy_data_df[which(best_clust_obj$em_cluster_assignment==i),]
+         plot_time_series_df(c_df, plot_title = paste(&quot;cluster&quot;,i))
+     }
+     
+
+Error: processing vignette &#x27;TMixClust.Rnw&#x27; failed with diagnostics:
+unable to run pdflatex on &#x27;TMixClust.tex&#x27;
+LaTeX errors:
+! LaTeX Error: File `framed.sty&#x27; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==&gt; Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘TMixClust.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘TMixClust.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

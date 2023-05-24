@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rgsepd
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rgsepd/DESCRIPTION’ ... OK
+* preparing ‘rgsepd’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘rgsepd.Rnw’ using knitr
+Error: processing vignette 'rgsepd.Rnw' failed with diagnostics:
+unable to run pdflatex on 'rgsepd.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.27 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘rgsepd.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘rgsepd.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

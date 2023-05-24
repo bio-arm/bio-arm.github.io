@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data IsoformSwitchAnalyzeR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘IsoformSwitchAnalyzeR/DESCRIPTION’ ... OK
+* preparing ‘IsoformSwitchAnalyzeR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘IsoformSwitchAnalyzeR.Rmd’ using rmarkdown
+Quitting from lines 1154-1158 (IsoformSwitchAnalyzeR.Rmd) 
+Error: processing vignette 'IsoformSwitchAnalyzeR.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘IsoformSwitchAnalyzeR.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘IsoformSwitchAnalyzeR.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

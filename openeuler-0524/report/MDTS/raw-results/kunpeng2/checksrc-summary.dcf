@@ -1,0 +1,10 @@
+Package: MDTS
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MDTS.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MDTS_1.21.0.tar.gz
+StartedAt: 2023-05-23 16:28:56 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:29:08 -0000 (Tue, 23 May 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MDTS.Rcheck
+Warnings: NA

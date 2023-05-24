@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data QuaternaryProd
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘QuaternaryProd/DESCRIPTION’ ... OK
+* preparing ‘QuaternaryProd’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘QuaternaryProdVignette.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'QuaternaryProdVignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpgekJ3t/Rbuild13f952019fe13/QuaternaryProd/vignettes/QuaternaryProdVignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See QuaternaryProdVignette.log for more info.
+--- failed re-building ‘QuaternaryProdVignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘QuaternaryProdVignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

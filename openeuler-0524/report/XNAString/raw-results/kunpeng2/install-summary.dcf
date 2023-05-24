@@ -1,0 +1,8 @@
+Package: XNAString
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL XNAString
+StartedAt: 2023-05-23 06:35:18 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:37:42 -0000 (Tue, 23 May 2023)
+EllapsedTime: 143.6 seconds
+RetCode: 0
+Status: OK

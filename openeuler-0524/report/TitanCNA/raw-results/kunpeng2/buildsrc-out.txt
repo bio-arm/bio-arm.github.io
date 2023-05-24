@@ -1,0 +1,144 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TitanCNA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TitanCNA/DESCRIPTION’ ... OK
+* preparing ‘TitanCNA’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘TitanCNA.Rnw’ using Sweave
+Warning: replacing previous import ‘GenomicRanges::shift’ by ‘data.table::shift’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘data.table::first’ by ‘dplyr::first’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘IRanges::desc’ by ‘dplyr::desc’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘IRanges::slice’ by ‘dplyr::slice’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘GenomeInfoDb::intersect’ by ‘dplyr::intersect’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘data.table::last’ by ‘dplyr::last’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘GenomicRanges::union’ by ‘dplyr::union’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘data.table::between’ by ‘dplyr::between’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘BiocGenerics::combine’ by ‘dplyr::combine’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘IRanges::collapse’ by ‘dplyr::collapse’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘GenomicRanges::setdiff’ by ‘dplyr::setdiff’ when loading ‘TitanCNA’
+Warning: replacing previous import ‘dplyr::select’ by ‘VariantAnnotation::select’ when loading ‘TitanCNA’
+titan: Loading data /tmp/Rtmp7Kiu1v/Rinst30bee6bd83b28/TitanCNA/extdata/test_alleleCounts_chr2.txt
+Reading GC and mappability files
+Slurping: /tmp/Rtmp7Kiu1v/Rinst30bee6bd83b28/TitanCNA/extdata/gc_chr2.wig
+Parsing: fixedStep chrom=2 start=1 step=1000 span=1000
+Sorting by decreasing chromosome size
+Slurping: /tmp/Rtmp7Kiu1v/Rinst30bee6bd83b28/TitanCNA/extdata/map_chr2.wig
+Parsing: fixedStep chrom=2 start=1 step=1000 span=1000
+Sorting by decreasing chromosome size
+Loading tumour file:/tmp/Rtmp7Kiu1v/Rinst30bee6bd83b28/TitanCNA/extdata/test_tum_chr2.wig
+Slurping: /tmp/Rtmp7Kiu1v/Rinst30bee6bd83b28/TitanCNA/extdata/test_tum_chr2.wig
+Parsing: fixedStep chrom=2 start=1 step=1000 span=1000
+Sorting by decreasing chromosome size
+Loading normal file:/tmp/Rtmp7Kiu1v/Rinst30bee6bd83b28/TitanCNA/extdata/test_norm_chr2.wig
+Slurping: /tmp/Rtmp7Kiu1v/Rinst30bee6bd83b28/TitanCNA/extdata/test_norm_chr2.wig
+Parsing: fixedStep chrom=2 start=1 step=1000 span=1000
+Sorting by decreasing chromosome size
+Warning in .replace_seqlevels_style(x_seqlevels, value) :
+  found more than one best sequence renaming map compatible with seqname style "NCBI" for this object, using the first one
+Warning in .replace_seqlevels_style(x_seqlevels, value) :
+  found more than one best sequence renaming map compatible with seqname style "NCBI" for this object, using the first one
+Warning in .replace_seqlevels_style(x_seqlevels, value) :
+  found more than one best sequence renaming map compatible with seqname style "NCBI" for this object, using the first one
+Warning in .replace_seqlevels_style(x_seqlevels, value) :
+  found more than one best sequence renaming map compatible with seqname style "NCBI" for this object, using the first one
+Correcting Tumour
+Applying filter on data...
+Correcting for GC bias...
+Correcting for mappability bias...
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Correcting Normal
+Applying filter on data...
+Correcting for GC bias...
+Correcting for mappability bias...
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Normalizing Tumour by Normal
+Removed Chrs: 
+titan: Running HMM...
+fwdBack: Iteration 1 chr: Warning: executing %dopar% sequentially: no parallel backend registered
+1 
+Using Coordinate Descent iteration 11 with Fval=-30484 and n=0.3982 (map), s=[0.0083,0.3770], phi=1.502
+fwdBack: loglik=-34148.6252
+fwdBack: priorN=0.3631
+fwdBack: priorS=-2.6669
+fwdBack: priorVar=-438.2997
+fwdBack: priorVarR=0.0000
+fwdBack: priorPhi=-1.0942
+fwdBack: priorPiG=60.3628
+fwdBack: priorPiZ=0.9808
+fwdBack: EM iteration 1 complete loglik=-34528.9793
+fwdBack: Elapsed time for iteration 1: 0.0576m
+fwdBack: Iteration 2 chr: 1 
+Using Coordinate Descent iteration 11 with Fval=-26825 and n=0.2536 (map), s=[0.0091,0.4330], phi=1.468
+fwdBack: loglik=-28970.7618
+fwdBack: priorN=0.1273
+fwdBack: priorS=-2.5336
+fwdBack: priorVar=-750.9110
+fwdBack: priorVarR=0.0000
+fwdBack: priorPhi=-1.2569
+fwdBack: priorPiG=60.3628
+fwdBack: priorPiZ=0.9808
+fwdBack: EM iteration 2 complete loglik=-29663.9925
+fwdBack: Elapsed time for iteration 2: 0.0588m
+fwdBack: Iteration 3 chr: 1 
+Using Coordinate Descent iteration 11 with Fval=-26067 and n=0.2117 (map), s=[0.0069,0.4527], phi=1.483
+fwdBack: loglik=-26339.2892
+fwdBack: priorN=0.0012
+fwdBack: priorS=-2.7968
+fwdBack: priorVar=-820.6423
+fwdBack: priorVarR=0.0000
+fwdBack: priorPhi=-1.1835
+fwdBack: priorPiG=60.3628
+fwdBack: priorPiZ=0.9808
+fwdBack: EM iteration 3 complete loglik=-27102.5671
+fwdBack: Elapsed time for iteration 3: 0.0589m
+fwdBack: Total elapsed time: 0.2829m
+outputTitanResults: Correcting results...
+outputTitanResults: Recomputing log-likelihood.
+titan: Running HMM...
+fwdBack: Iteration 1 chr: 1 
+Using Coordinate Descent iteration 11 with Fval=-22770 and n=0.2171 (fixed), s=[0.00,0.45], phi=1.483
+fwdBack: loglik=-35782.7369
+fwdBack: priorN=0.0000
+fwdBack: priorS=0.0000
+fwdBack: priorVar=-667.6668
+fwdBack: priorVarR=0.0000
+fwdBack: priorPhi=0.0000
+fwdBack: priorPiG=60.3628
+fwdBack: priorPiZ=0.9808
+fwdBack: EM iteration 1 complete loglik=-36389.0600
+fwdBack: Elapsed time for iteration 1: 0.0583m
+fwdBack: Total elapsed time: 0.0962m
+Error: processing vignette 'TitanCNA.Rnw' failed with diagnostics:
+unable to run pdflatex on 'TitanCNA.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               {amsmath, amsthm, latexsym}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘TitanCNA.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘TitanCNA.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data monocle
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘monocle/DESCRIPTION’ ... OK
+* preparing ‘monocle’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘monocle-vignette.Rnw’ using knitr
+Error: processing vignette 'monocle-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'monocle-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `sectsty.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.37 \sectionfont
+                 {\sffamily\bfseries\color{RoyalBlue}\sectionrule{0pt}{0pt}{...
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘monocle-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘monocle-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

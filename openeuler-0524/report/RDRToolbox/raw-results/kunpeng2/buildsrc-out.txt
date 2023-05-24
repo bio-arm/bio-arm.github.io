@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RDRToolbox
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RDRToolbox/DESCRIPTION’ ... OK
+* preparing ‘RDRToolbox’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘rgl’ is not available for package ‘RDRToolbox’
+* removing ‘/tmp/RtmpDZTKqZ/Rinst168014b11633b/RDRToolbox’
+      -----------------------------------
+ERROR: package installation failed

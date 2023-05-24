@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data NetSAM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘NetSAM/DESCRIPTION’ ... OK
+* preparing ‘NetSAM’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘NetSAM.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'NetSAM.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmp60UbtU/Rbuild3b1c3e030230/NetSAM/vignettes/NetSAM.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See NetSAM.log for more info.
+--- failed re-building ‘NetSAM.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘NetSAM.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,849 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for OmnipathR on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><B>[<A href="..#O">O</A>]</B></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-24 01:46:18 -0000 (Wed, 24 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4131</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for OmnipathR on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the OmnipathR package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/OmnipathR.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>1401</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">OmnipathR</A>&nbsp;3.9.3</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/OmnipathR">landing page</A>)</SPAN><BR>Denes Turei<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-22&nbsp;17:00:18&nbsp;-0000&nbsp;(Mon,&nbsp;22&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/OmnipathR</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">0181c62</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-05-22&nbsp;16:29:58&nbsp;-0000&nbsp;(Mon,&nbsp;22&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: OmnipathR</TD></TR>
+<TR><TD><B>Version</B>: 3.9.3</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data OmnipathR</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-23 12:04:30 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-23 12:41:42 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 2231.6 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data OmnipathR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘OmnipathR/DESCRIPTION’ ... OK
+* preparing ‘OmnipathR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘bioc_workshop.Rmd’ using rmarkdown
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:04:51] [INFO]    [OmnipathR] Initialized cache: `/home/biocbuild/.cache/OmnipathR`.
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Running on a build server, wiping cache.
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Cache is at `/home/biocbuild/.cache/OmnipathR`.
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Contains 1 files.
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Cache is locked: FALSE.
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:04:51] [SUCCESS] [OmnipathR] Removing all cache contents from `/home/biocbuild/.cache/OmnipathR`.
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Pandoc version: `3.1.2`.
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Reading JSON from `/tmp/RtmpEkUUML/Rinst56da5f5b03da/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Reading JSON from `/tmp/RtmpEkUUML/Rinst56da5f5b03da/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Reading JSON from `/tmp/RtmpEkUUML/Rinst56da5f5b03da/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Reading JSON from `/tmp/RtmpEkUUML/Rinst56da5f5b03da/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Cache locked: FALSE
+[2023-05-23 12:04:51] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:04:51] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:04:51] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:05:56] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-23 12:06:01] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic`
+Warning in for (i in seq_len(n)) { :
+  closing unused connection 4 (https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic)
+[2023-05-23 12:07:20] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:07:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:07:20] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:07:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:07:20] [INFO]    [OmnipathR] Cache item `8e1fed15bbe7704374f40d278e719e18b4a9d60f` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:07:20] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/8e1fed15bbe7704374f40d278e719e18b4a9d60f-1.rds`.
+[2023-05-23 12:07:20] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/8e1fed15bbe7704374f40d278e719e18b4a9d60f-1.rds`.
+[2023-05-23 12:07:20] [INFO]    [OmnipathR] Download ready [key=8e1fed15bbe7704374f40d278e719e18b4a9d60f, version=1]
+[2023-05-23 12:07:20] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:07:21] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:07:21] [INFO]    [OmnipathR] Cache item `8e1fed15bbe7704374f40d278e719e18b4a9d60f` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:07:27] [SUCCESS] [OmnipathR] Downloaded 125025 interactions.
+[2023-05-23 12:07:33] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:07:33] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:07:33] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:07:51] [INFO]    [OmnipathR] Cache item `a6f560033dff45b503a8016c14c974c4c04b5967` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/a6f560033dff45b503a8016c14c974c4c04b5967-1.rds`.
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/a6f560033dff45b503a8016c14c974c4c04b5967-1.rds`.
+[2023-05-23 12:07:51] [INFO]    [OmnipathR] Download ready [key=a6f560033dff45b503a8016c14c974c4c04b5967, version=1]
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:07:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:07:51] [INFO]    [OmnipathR] Cache item `a6f560033dff45b503a8016c14c974c4c04b5967` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:07:54] [SUCCESS] [OmnipathR] Downloaded 43269 enzyme-substrate relationships.
+[2023-05-23 12:07:55] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:07:55] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:07:55] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:08:29] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-23 12:08:34] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:08:58] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic` (attempt 2/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-23 12:09:03] [TRACE]   [OmnipathR] Attempt 3/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:10:45] [INFO]    [OmnipathR] Cache item `a7b21d9d80a3837a50268df16d168128fc1c6ede` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/a7b21d9d80a3837a50268df16d168128fc1c6ede-1.rds`.
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/a7b21d9d80a3837a50268df16d168128fc1c6ede-1.rds`.
+[2023-05-23 12:10:45] [INFO]    [OmnipathR] Download ready [key=a7b21d9d80a3837a50268df16d168128fc1c6ede, version=1]
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:10:45] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:10:45] [INFO]    [OmnipathR] Cache item `a7b21d9d80a3837a50268df16d168128fc1c6ede` version 1: status changed from `started` to `ready`.
+Warning in .External(ffi_new_data_frame, x, n, class, ...) :
+  closing unused connection 5 (https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic)
+Warning in vec_unique_count(data) :
+  closing unused connection 4 (https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic)
+[2023-05-23 12:10:51] [SUCCESS] [OmnipathR] Downloaded 81529 interactions.
+[2023-05-23 12:10:51] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/complexes?license=academic`
+[2023-05-23 12:10:51] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/complexes?license=academic`
+[2023-05-23 12:10:51] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/complexes?license=academic`
+[2023-05-23 12:11:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:11:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:11:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:11:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:11:51] [INFO]    [OmnipathR] Cache item `d562abda40303226daf98b436df9cb85eaeb2ef3` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:11:51] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/d562abda40303226daf98b436df9cb85eaeb2ef3-1.rds`.
+[2023-05-23 12:11:52] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/d562abda40303226daf98b436df9cb85eaeb2ef3-1.rds`.
+[2023-05-23 12:11:52] [INFO]    [OmnipathR] Download ready [key=d562abda40303226daf98b436df9cb85eaeb2ef3, version=1]
+[2023-05-23 12:11:52] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:11:52] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:11:52] [INFO]    [OmnipathR] Cache item `d562abda40303226daf98b436df9cb85eaeb2ef3` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:11:52] [SUCCESS] [OmnipathR] Downloaded 35459 protein complexes.
+[2023-05-23 12:11:54] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:11:54] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:11:54] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=UniProt_location&amp;license=academic`
+[2023-05-23 12:11:54] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=UniProt_location&amp;license=academic`
+[2023-05-23 12:11:54] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=UniProt_location&amp;license=academic`
+[2023-05-23 12:12:31] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:31] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:31] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:31] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:31] [INFO]    [OmnipathR] Cache item `f2e7cc5e753cd4e22d458171359dea86781ebae8` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:12:31] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/f2e7cc5e753cd4e22d458171359dea86781ebae8-1.rds`.
+[2023-05-23 12:12:32] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/f2e7cc5e753cd4e22d458171359dea86781ebae8-1.rds`.
+[2023-05-23 12:12:32] [INFO]    [OmnipathR] Download ready [key=f2e7cc5e753cd4e22d458171359dea86781ebae8, version=1]
+[2023-05-23 12:12:32] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:32] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:32] [INFO]    [OmnipathR] Cache item `f2e7cc5e753cd4e22d458171359dea86781ebae8` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:12:32] [SUCCESS] [OmnipathR] Downloaded 76260 annotation records.
+[2023-05-23 12:12:35] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:12:35] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:35] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=Uniprot_location&amp;license=academic`
+[2023-05-23 12:12:35] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=Uniprot_location&amp;license=academic`
+[2023-05-23 12:12:35] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=Uniprot_location&amp;license=academic`
+[2023-05-23 12:12:37] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:38] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:38] [INFO]    [OmnipathR] Cache item `07dc3ca232cbc620ab6be7d21a3a41bfc7b2d3e1` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:12:38] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/07dc3ca232cbc620ab6be7d21a3a41bfc7b2d3e1-1.rds`.
+[2023-05-23 12:12:38] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/07dc3ca232cbc620ab6be7d21a3a41bfc7b2d3e1-1.rds`.
+[2023-05-23 12:12:38] [INFO]    [OmnipathR] Download ready [key=07dc3ca232cbc620ab6be7d21a3a41bfc7b2d3e1, version=1]
+[2023-05-23 12:12:38] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:38] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:38] [INFO]    [OmnipathR] Cache item `07dc3ca232cbc620ab6be7d21a3a41bfc7b2d3e1` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:12:38] [SUCCESS] [OmnipathR] Downloaded 0 annotation records.
+[2023-05-23 12:12:38] [FATAL]   [OmnipathR] Downloading the entire annotations database is not allowed by default because of its huge size (&gt;1GB). If you really want to do that, you find static files at https://archive.omnipathdb.org/. However we recommend to query a set of proteins or a few resources, depending on your interest.
+[2023-05-23 12:12:41] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:12:41] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:41] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/f2e7cc5e753cd4e22d458171359dea86781ebae8-1.rds`.
+[2023-05-23 12:12:41] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=UniProt_location&amp;license=academic`
+[2023-05-23 12:12:41] [SUCCESS] [OmnipathR] Loaded 76260 annotation records from cache.
+[2023-05-23 12:12:44] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:12:44] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:44] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=HPA_tissue&amp;proteins=DLL1,MEIS2,PHOX2A,BACH1,KLF11,FOXO3,MEFV&amp;license=academic`
+[2023-05-23 12:12:44] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=HPA_tissue&amp;proteins=DLL1,MEIS2,PHOX2A,BACH1,KLF11,FOXO3,MEFV&amp;license=academic`
+[2023-05-23 12:12:44] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=HPA_tissue&amp;proteins=DLL1,MEIS2,PHOX2A,BACH1,KLF11,FOXO3,MEFV&amp;license=academic`
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:46] [INFO]    [OmnipathR] Cache item `92ead83eb455386da8cefb938ee16521d1b5f02d` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/92ead83eb455386da8cefb938ee16521d1b5f02d-1.rds`.
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/92ead83eb455386da8cefb938ee16521d1b5f02d-1.rds`.
+[2023-05-23 12:12:46] [INFO]    [OmnipathR] Download ready [key=92ead83eb455386da8cefb938ee16521d1b5f02d, version=1]
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:46] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:46] [INFO]    [OmnipathR] Cache item `92ead83eb455386da8cefb938ee16521d1b5f02d` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:12:46] [SUCCESS] [OmnipathR] Downloaded 3870 annotation records.
+[2023-05-23 12:12:50] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:12:50] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:50] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&amp;license=academic`
+[2023-05-23 12:12:50] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&amp;license=academic`
+[2023-05-23 12:12:50] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&amp;license=academic`
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:51] [INFO]    [OmnipathR] Cache item `48f6d1c796292ce438ca19de4baf3e99ff368b61` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/48f6d1c796292ce438ca19de4baf3e99ff368b61-1.rds`.
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/48f6d1c796292ce438ca19de4baf3e99ff368b61-1.rds`.
+[2023-05-23 12:12:51] [INFO]    [OmnipathR] Download ready [key=48f6d1c796292ce438ca19de4baf3e99ff368b61, version=1]
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:12:51] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:51] [INFO]    [OmnipathR] Cache item `48f6d1c796292ce438ca19de4baf3e99ff368b61` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:12:51] [SUCCESS] [OmnipathR] Downloaded 2487 annotation records.
+[2023-05-23 12:12:52] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/a7b21d9d80a3837a50268df16d168128fc1c6ede-1.rds`.
+[2023-05-23 12:12:52] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:12:58] [SUCCESS] [OmnipathR] Loaded 81529 interactions from cache.
+[2023-05-23 12:12:59] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:12:59] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:12:59] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/48f6d1c796292ce438ca19de4baf3e99ff368b61-1.rds`.
+[2023-05-23 12:12:59] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&amp;license=academic`
+[2023-05-23 12:12:59] [SUCCESS] [OmnipathR] Loaded 2487 annotation records from cache.
+[2023-05-23 12:13:00] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/intercell?license=academic`
+[2023-05-23 12:13:00] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/intercell?license=academic`
+[2023-05-23 12:13:00] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/intercell?license=academic`
+[2023-05-23 12:16:53] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:16:53] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:16:53] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:16:53] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:16:53] [INFO]    [OmnipathR] Cache item `88868f24833199a6a4a8e27980fa32cd50c1c600` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:16:53] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/88868f24833199a6a4a8e27980fa32cd50c1c600-1.rds`.
+[2023-05-23 12:16:56] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/88868f24833199a6a4a8e27980fa32cd50c1c600-1.rds`.
+[2023-05-23 12:16:56] [INFO]    [OmnipathR] Download ready [key=88868f24833199a6a4a8e27980fa32cd50c1c600, version=1]
+[2023-05-23 12:16:56] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:16:56] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:16:56] [INFO]    [OmnipathR] Cache item `88868f24833199a6a4a8e27980fa32cd50c1c600` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:16:57] [SUCCESS] [OmnipathR] Downloaded 332447 intercellular communication role records.
+[2023-05-23 12:17:00] [TRACE]   [OmnipathR] Bypassing call: `import_intercell_network(high_confidence = TRUE)`.
+[2023-05-23 12:17:00] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:17:00] [TRACE]   [OmnipathR] Bypassing call: `import_intercell_network()`.
+[2023-05-23 12:17:00] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:17:00] [TRACE]   [OmnipathR] Bypassing call: `filter_intercell_network(icn, ligand_receptor = TRUE, consensus_percentile = 30, `.
+[2023-05-23 12:17:00] [TRACE]   [OmnipathR] Bypassing call: `    loc_consensus_percentile = 50, simplify = TRUE)`.
+[2023-05-23 12:17:00] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:17:03] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:17:03] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:17:03] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/intercell_summary`
+[2023-05-23 12:17:03] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/intercell_summary`
+[2023-05-23 12:17:04] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/intercell_summary`
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:17:05] [INFO]    [OmnipathR] Cache item `4609206529e6ae997a8de976fe1277b3b74cc032` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/4609206529e6ae997a8de976fe1277b3b74cc032-1.rds`.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/4609206529e6ae997a8de976fe1277b3b74cc032-1.rds`.
+[2023-05-23 12:17:05] [INFO]    [OmnipathR] Download ready [key=4609206529e6ae997a8de976fe1277b3b74cc032, version=1]
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:17:05] [INFO]    [OmnipathR] Cache item `4609206529e6ae997a8de976fe1277b3b74cc032` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:17:05] [SUCCESS] [OmnipathR] Downloaded 1098 records.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Bypassing call: `translate_ids(d, uniprot_id = uniprot, genesymbol)`.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Bypassing call: `go_ontology_download()`.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Bypassing call: `relations_table_to_graph(go$rel_tbl_c2p)`.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] Bypassing call: `ontology_ensure_name(&quot;GO:0000022&quot;)`.
+[2023-05-23 12:17:05] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+--- finished re-building ‘bioc_workshop.Rmd’
+
+--- re-building ‘db_manager.Rmd’ using rmarkdown
+[2023-05-23 12:17:07] [INFO]    [OmnipathR] Loading database `UniProt-GeneSymbol table`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `(function (to, from = &quot;id&quot;, reviewed = TRUE, organism = 9606) `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `{`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    .slow_doctest()`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    From &lt;- To &lt;- NULL`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    strip_semicol &lt;- function(v) {`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        sub(&quot;;$&quot;, &quot;&quot;, v)`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    }`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    ids &lt;- c(.nse_ensure_str(!!enquo(to)), .nse_ensure_str(!!enquo(from)))`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    reviewed &lt;- if (&quot;trembl&quot; %in% ids) `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        FALSE`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    else if (&quot;swissprot&quot; %in% ids) `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        TRUE`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    else reviewed`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    to &lt;- .nse_ensure_str(!!enquo(to)) %&gt;% uniprot_id_type`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    from &lt;- .nse_ensure_str(!!enquo(from)) %&gt;% uniprot_id_type`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    reens &lt;- &quot;ENS[A-Z]+\\d+&quot;`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    to_ens &lt;- to == &quot;database(Ensembl)&quot;`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    from_ens &lt;- from == &quot;database(Ensembl)&quot;`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    log_trace(paste0(&quot;Creating ID mapping table from `%s` to `%s`, &quot;, `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        &quot;for organism %d (only reviewed: %s)&quot;), from, to, organism, `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        reviewed)`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    c(from, to) %&gt;% all_uniprots(reviewed = reviewed, organism = organism) %&gt;% `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        rename(From = 1, To = 2) %&gt;% mutate(From = strip_semicol(From), `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        To = strip_semicol(To)) %&gt;% separate_rows(From, sep = &quot;;&quot;) %&gt;% `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        separate_rows(To, sep = &quot;;&quot;) %&gt;% filter(!is.na(From) &amp; `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        !is.na(To)) %&gt;% {`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        if (from_ens) `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `            mutate(., From = str_extract(From, reens))`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        else .`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    } %&gt;% {`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        if (to_ens) `.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `            mutate(., To = str_extract(To, reens))`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `        else .`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `    } %&gt;% trim_and_distinct`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] Bypassing call: `})(to = &quot;genesymbol&quot;, organism = 9606L)`.
+[2023-05-23 12:17:07] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:17:07] [INFO]    [OmnipathR] Loaded database `UniProt-GeneSymbol table`.
+--- finished re-building ‘db_manager.Rmd’
+
+--- re-building ‘drug_targets.Rmd’ using rmarkdown
+[2023-05-23 12:17:18] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/a7b21d9d80a3837a50268df16d168128fc1c6ede-1.rds`.
+[2023-05-23 12:17:18] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:17:23] [SUCCESS] [OmnipathR] Loaded 81529 interactions from cache.
+The magick package is required to crop &quot;/tmp/RtmpEkUUML/Rbuild56da2bccd685/OmnipathR/vignettes/drug_targets_files/figure-html/unnamed-chunk-12-1.png&quot; but not available.
+--- finished re-building ‘drug_targets.Rmd’
+
+--- re-building ‘extra_attrs.Rmd’ using rmarkdown
+[2023-05-23 12:17:30] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:17:30] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:17:30] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:17:45] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-23 12:17:50] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:17:53] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic` (attempt 2/3); error: Empty reply from server
+[2023-05-23 12:17:58] [TRACE]   [OmnipathR] Attempt 3/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:20:21] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:20:21] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:20:21] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:20:21] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:20:21] [INFO]    [OmnipathR] Cache item `e9af339ce8e80bcec1a654822637ae3b71e035e2` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:20:21] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/e9af339ce8e80bcec1a654822637ae3b71e035e2-1.rds`.
+[2023-05-23 12:20:21] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/e9af339ce8e80bcec1a654822637ae3b71e035e2-1.rds`.
+[2023-05-23 12:20:22] [INFO]    [OmnipathR] Download ready [key=e9af339ce8e80bcec1a654822637ae3b71e035e2, version=1]
+[2023-05-23 12:20:22] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:20:22] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:20:22] [INFO]    [OmnipathR] Cache item `e9af339ce8e80bcec1a654822637ae3b71e035e2` version 1: status changed from `started` to `ready`.
+Warning: closing unused connection 4 (https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath,pathwayextra,kinaseextra,ligrecextra&amp;organisms=9606&amp;fields=extra_attrs,sources,references,curation_effort&amp;license=academic)
+[2023-05-23 12:20:22] [TRACE]   [OmnipathR] Converting JSON column `extra_attrs` to list.
+[2023-05-23 12:20:35] [SUCCESS] [OmnipathR] Downloaded 134282 interactions.
+[2023-05-23 12:28:24] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:28:24] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:28:24] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=UniProt_keyword&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:28:24] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=UniProt_keyword&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:28:24] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=UniProt_keyword&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:29:47] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:29:47] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:29:47] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:29:47] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:29:47] [INFO]    [OmnipathR] Cache item `0e2cc6ec8db9efe88661b213cfb09be72a32df7d` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:29:47] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/0e2cc6ec8db9efe88661b213cfb09be72a32df7d-1.rds`.
+[2023-05-23 12:29:48] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/0e2cc6ec8db9efe88661b213cfb09be72a32df7d-1.rds`.
+[2023-05-23 12:29:48] [INFO]    [OmnipathR] Download ready [key=0e2cc6ec8db9efe88661b213cfb09be72a32df7d, version=1]
+[2023-05-23 12:29:48] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:29:48] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:29:48] [INFO]    [OmnipathR] Cache item `0e2cc6ec8db9efe88661b213cfb09be72a32df7d` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:29:48] [SUCCESS] [OmnipathR] Downloaded 205690 annotation records.
+[2023-05-23 12:29:48] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic&amp;types=ubiquitination`
+[2023-05-23 12:29:48] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic&amp;types=ubiquitination`
+[2023-05-23 12:29:48] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic&amp;types=ubiquitination`
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:29:50] [INFO]    [OmnipathR] Cache item `4525739875a94da1bbc48b8fada15795d234adcc` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/4525739875a94da1bbc48b8fada15795d234adcc-1.rds`.
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/4525739875a94da1bbc48b8fada15795d234adcc-1.rds`.
+[2023-05-23 12:29:50] [INFO]    [OmnipathR] Download ready [key=4525739875a94da1bbc48b8fada15795d234adcc, version=1]
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:29:50] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:29:50] [INFO]    [OmnipathR] Cache item `4525739875a94da1bbc48b8fada15795d234adcc` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:29:50] [SUCCESS] [OmnipathR] Downloaded 70 enzyme-substrate relationships.
+--- finished re-building ‘extra_attrs.Rmd’
+
+--- re-building ‘nichenet.Rmd’ using rmarkdown
+--- finished re-building ‘nichenet.Rmd’
+
+--- re-building ‘omnipath_intro.Rmd’ using rmarkdown
+[2023-05-23 12:29:59] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:29:59] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:30:02] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:30:03] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:30:03] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=SignaLink3,PhosphoSite,SIGNOR&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:30:03] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=SignaLink3,PhosphoSite,SIGNOR&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:30:03] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=SignaLink3,PhosphoSite,SIGNOR&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:22] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:22] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:22] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:22] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:22] [INFO]    [OmnipathR] Cache item `5fc92405e5592146693f05f443dd80aec58163a5` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:31:22] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/5fc92405e5592146693f05f443dd80aec58163a5-1.rds`.
+[2023-05-23 12:31:23] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/5fc92405e5592146693f05f443dd80aec58163a5-1.rds`.
+[2023-05-23 12:31:23] [INFO]    [OmnipathR] Download ready [key=5fc92405e5592146693f05f443dd80aec58163a5, version=1]
+[2023-05-23 12:31:23] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:23] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:23] [INFO]    [OmnipathR] Cache item `5fc92405e5592146693f05f443dd80aec58163a5` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:31:27] [SUCCESS] [OmnipathR] Downloaded 64485 interactions.
+[2023-05-23 12:31:37] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:31:37] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:37] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=BioGRID,STRING&amp;datasets=pathwayextra&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:37] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=BioGRID,STRING&amp;datasets=pathwayextra&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:37] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=BioGRID,STRING&amp;datasets=pathwayextra&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:40] [INFO]    [OmnipathR] Cache item `5ef52c90ffa996b5425a92df0ae5e7d825269078` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/5ef52c90ffa996b5425a92df0ae5e7d825269078-1.rds`.
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/5ef52c90ffa996b5425a92df0ae5e7d825269078-1.rds`.
+[2023-05-23 12:31:40] [INFO]    [OmnipathR] Download ready [key=5ef52c90ffa996b5425a92df0ae5e7d825269078, version=1]
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:40] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:40] [INFO]    [OmnipathR] Cache item `5ef52c90ffa996b5425a92df0ae5e7d825269078` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:31:40] [SUCCESS] [OmnipathR] Downloaded 1532 interactions.
+[2023-05-23 12:31:41] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:31:41] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:42] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=PhosphoPoint,PhosphoSite&amp;datasets=kinaseextra&amp;organisms=10116&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:42] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=PhosphoPoint,PhosphoSite&amp;datasets=kinaseextra&amp;organisms=10116&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:42] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=PhosphoPoint,PhosphoSite&amp;datasets=kinaseextra&amp;organisms=10116&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:54] [INFO]    [OmnipathR] Cache item `5cd314c4201dd53ec320a9f10d9b55c017d6143d` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/5cd314c4201dd53ec320a9f10d9b55c017d6143d-1.rds`.
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/5cd314c4201dd53ec320a9f10d9b55c017d6143d-1.rds`.
+[2023-05-23 12:31:54] [INFO]    [OmnipathR] Download ready [key=5cd314c4201dd53ec320a9f10d9b55c017d6143d, version=1]
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:31:54] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:54] [INFO]    [OmnipathR] Cache item `5cd314c4201dd53ec320a9f10d9b55c017d6143d` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:31:54] [SUCCESS] [OmnipathR] Downloaded 6869 interactions.
+[2023-05-23 12:31:56] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:31:56] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:31:56] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=iTALK,Baccin2019&amp;datasets=ligrecextra&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:56] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=iTALK,Baccin2019&amp;datasets=ligrecextra&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:31:56] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=iTALK,Baccin2019&amp;datasets=ligrecextra&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:00] [INFO]    [OmnipathR] Cache item `76b8ee6c20a073a1d42974b1a19964fdd2720dc5` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/76b8ee6c20a073a1d42974b1a19964fdd2720dc5-1.rds`.
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/76b8ee6c20a073a1d42974b1a19964fdd2720dc5-1.rds`.
+[2023-05-23 12:32:00] [INFO]    [OmnipathR] Download ready [key=76b8ee6c20a073a1d42974b1a19964fdd2720dc5, version=1]
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:32:00] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:00] [INFO]    [OmnipathR] Cache item `76b8ee6c20a073a1d42974b1a19964fdd2720dc5` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:32:00] [SUCCESS] [OmnipathR] Downloaded 2834 interactions.
+[2023-05-23 12:32:02] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:32:02] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:02] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=DoRothEA&amp;datasets=dorothea&amp;organisms=9606&amp;dorothea_levels=A&amp;fields=evidences,sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:32:02] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=DoRothEA&amp;datasets=dorothea&amp;organisms=9606&amp;dorothea_levels=A&amp;fields=evidences,sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:32:02] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=DoRothEA&amp;datasets=dorothea&amp;organisms=9606&amp;dorothea_levels=A&amp;fields=evidences,sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:33] [INFO]    [OmnipathR] Cache item `6188267638afb6533911b8411bda12cf39f3b567` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/6188267638afb6533911b8411bda12cf39f3b567-1.rds`.
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/6188267638afb6533911b8411bda12cf39f3b567-1.rds`.
+[2023-05-23 12:32:33] [INFO]    [OmnipathR] Download ready [key=6188267638afb6533911b8411bda12cf39f3b567, version=1]
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:33] [INFO]    [OmnipathR] Cache item `6188267638afb6533911b8411bda12cf39f3b567` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:32:33] [TRACE]   [OmnipathR] Converting JSON column `evidences` to list.
+[2023-05-23 12:32:34] [TRACE]   [OmnipathR] Restricting interaction records to datasets: dorothea; and resources: DoRothEA
+[2023-05-23 12:32:35] [TRACE]   [OmnipathR] Filtering evidence columns: positive, negative, directed, undirected; to datasets: dorothea; and resources: DoRothEA
+[2023-05-23 12:32:55] [SUCCESS] [OmnipathR] Downloaded 6127 interactions.
+[2023-05-23 12:32:56] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:32:56] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:32:56] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=ORegAnno,DoRothEA&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:32:56] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=ORegAnno,DoRothEA&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:32:56] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=ORegAnno,DoRothEA&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort,dorothea_level&amp;license=academic`
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:24] [INFO]    [OmnipathR] Cache item `c379f6c4e64c654ffb321b3134d065934007cc0e` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/c379f6c4e64c654ffb321b3134d065934007cc0e-1.rds`.
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/c379f6c4e64c654ffb321b3134d065934007cc0e-1.rds`.
+[2023-05-23 12:33:24] [INFO]    [OmnipathR] Download ready [key=c379f6c4e64c654ffb321b3134d065934007cc0e, version=1]
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:24] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:24] [INFO]    [OmnipathR] Cache item `c379f6c4e64c654ffb321b3134d065934007cc0e` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:33:26] [SUCCESS] [OmnipathR] Downloaded 25339 interactions.
+[2023-05-23 12:33:28] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:33:28] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:28] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=miR2Disease,miRDeathDB&amp;datasets=mirnatarget&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:33:28] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=miR2Disease,miRDeathDB&amp;datasets=mirnatarget&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:33:28] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=miR2Disease,miRDeathDB&amp;datasets=mirnatarget&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:29] [INFO]    [OmnipathR] Cache item `6fb27ffb4d0e53df1451b4f323099eab4e7b60ae` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/6fb27ffb4d0e53df1451b4f323099eab4e7b60ae-1.rds`.
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/6fb27ffb4d0e53df1451b4f323099eab4e7b60ae-1.rds`.
+[2023-05-23 12:33:29] [INFO]    [OmnipathR] Download ready [key=6fb27ffb4d0e53df1451b4f323099eab4e7b60ae, version=1]
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:29] [INFO]    [OmnipathR] Cache item `6fb27ffb4d0e53df1451b4f323099eab4e7b60ae` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:33:29] [SUCCESS] [OmnipathR] Downloaded 0 interactions.
+[2023-05-23 12:33:29] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=small_molecule&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;sources=TRAMETINIB&amp;license=academic`
+[2023-05-23 12:33:29] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=small_molecule&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;sources=TRAMETINIB&amp;license=academic`
+[2023-05-23 12:33:29] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=small_molecule&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;sources=TRAMETINIB&amp;license=academic`
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:30] [INFO]    [OmnipathR] Cache item `c8829fb056a995e6935c4c5f23770852f8035247` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/c8829fb056a995e6935c4c5f23770852f8035247-1.rds`.
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/c8829fb056a995e6935c4c5f23770852f8035247-1.rds`.
+[2023-05-23 12:33:30] [INFO]    [OmnipathR] Download ready [key=c8829fb056a995e6935c4c5f23770852f8035247, version=1]
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:33:30] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:30] [INFO]    [OmnipathR] Cache item `c8829fb056a995e6935c4c5f23770852f8035247` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:33:30] [SUCCESS] [OmnipathR] Downloaded 0 interactions.
+[2023-05-23 12:33:32] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:33:32] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:32] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/a6f560033dff45b503a8016c14c974c4c04b5967-1.rds`.
+[2023-05-23 12:33:32] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:33:35] [SUCCESS] [OmnipathR] Loaded 43269 enzyme-substrate relationships from cache.
+[2023-05-23 12:33:35] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/a7b21d9d80a3837a50268df16d168128fc1c6ede-1.rds`.
+[2023-05-23 12:33:35] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:33:40] [SUCCESS] [OmnipathR] Loaded 81529 interactions from cache.
+[2023-05-23 12:33:42] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:33:42] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:33:43] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;resources=PhosphoSite,SIGNOR&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:33:43] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;resources=PhosphoSite,SIGNOR&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:33:43] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;resources=PhosphoSite,SIGNOR&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:34:01] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/enzsub?genesymbols=yes&amp;resources=PhosphoSite,SIGNOR&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-23 12:34:06] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/enzsub?genesymbols=yes&amp;resources=PhosphoSite,SIGNOR&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic`
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:30] [INFO]    [OmnipathR] Cache item `bce37a583e5f0da0390efc677c66c09007c26b09` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/bce37a583e5f0da0390efc677c66c09007c26b09-1.rds`.
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/bce37a583e5f0da0390efc677c66c09007c26b09-1.rds`.
+[2023-05-23 12:34:30] [INFO]    [OmnipathR] Download ready [key=bce37a583e5f0da0390efc677c66c09007c26b09, version=1]
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:30] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:30] [INFO]    [OmnipathR] Cache item `bce37a583e5f0da0390efc677c66c09007c26b09` version 1: status changed from `started` to `ready`.
+Warning in env :
+  closing unused connection 4 (https://omnipathdb.org/enzsub?genesymbols=yes&amp;resources=PhosphoSite,SIGNOR&amp;organisms=10090&amp;fields=sources,references,curation_effort&amp;license=academic)
+[2023-05-23 12:34:31] [SUCCESS] [OmnipathR] Downloaded 17826 enzyme-substrate relationships.
+[2023-05-23 12:34:33] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:34:33] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+Quitting from lines 493-515 (omnipath_intro.Rmd) 
+Error: processing vignette &#x27;omnipath_intro.Rmd&#x27; failed with diagnostics:
+cannot open the connection to &#x27;https://omnipathdb.org/resources&#x27;
+--- failed re-building ‘omnipath_intro.Rmd’
+
+--- re-building ‘paths.Rmd’ using rmarkdown
+[2023-05-23 12:34:39] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:34:39] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:39] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=TFcensus&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:34:39] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=TFcensus&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:34:39] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=TFcensus&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:34:42] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:42] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:43] [INFO]    [OmnipathR] Cache item `20f47c37df19181b9818be11b36773e366a53732` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/20f47c37df19181b9818be11b36773e366a53732-1.rds`.
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/20f47c37df19181b9818be11b36773e366a53732-1.rds`.
+[2023-05-23 12:34:43] [INFO]    [OmnipathR] Download ready [key=20f47c37df19181b9818be11b36773e366a53732, version=1]
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:43] [INFO]    [OmnipathR] Cache item `20f47c37df19181b9818be11b36773e366a53732` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:34:43] [SUCCESS] [OmnipathR] Downloaded 3099 annotation records.
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Looking up in cache: `https://static-content.springer.com/esm/art%3A10.1038%2Fnrg2538/MediaObjects/41576_2009_BFnrg2538_MOESM6_ESM.txt`.
+[2023-05-23 12:34:43] [INFO]    [OmnipathR] Cache record does not exist: `https://static-content.springer.com/esm/art%3A10.1038%2Fnrg2538/MediaObjects/41576_2009_BFnrg2538_MOESM6_ESM.txt`
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Could not find in cache, initiating download: `https://static-content.springer.com/esm/art%3A10.1038%2Fnrg2538/MediaObjects/41576_2009_BFnrg2538_MOESM6_ESM.txt`.
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:43] [INFO]    [OmnipathR] Cache item `c36e2a3cf4ebcaf5e345791be4cbd2eeb374ddf8` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/c36e2a3cf4ebcaf5e345791be4cbd2eeb374ddf8-1.rds`.
+[2023-05-23 12:34:43] [INFO]    [OmnipathR] Retrieving URL: `https://static-content.springer.com/esm/art%3A10.1038%2Fnrg2538/MediaObjects/41576_2009_BFnrg2538_MOESM6_ESM.txt`
+[2023-05-23 12:34:43] [TRACE]   [OmnipathR] Attempt 1/3: `https://static-content.springer.com/esm/art%3A10.1038%2Fnrg2538/MediaObjects/41576_2009_BFnrg2538_MOESM6_ESM.txt`
+[2023-05-23 12:34:45] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/c36e2a3cf4ebcaf5e345791be4cbd2eeb374ddf8-1.rds`.
+[2023-05-23 12:34:45] [INFO]    [OmnipathR] Download ready [key=c36e2a3cf4ebcaf5e345791be4cbd2eeb374ddf8, version=1]
+[2023-05-23 12:34:45] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:34:45] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:34:45] [INFO]    [OmnipathR] Cache item `c36e2a3cf4ebcaf5e345791be4cbd2eeb374ddf8` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:34:45] [SUCCESS] [OmnipathR] TF census (static-content.springer.com): downloaded 1987 records
+[2023-05-23 12:34:45] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B,C&amp;fields=sources,references,curation_effort,dorothea_level&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:34:45] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B,C&amp;fields=sources,references,curation_effort,dorothea_level&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:34:45] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=dorothea,tf_target,collectri&amp;organisms=9606&amp;dorothea_levels=A,B,C&amp;fields=sources,references,curation_effort,dorothea_level&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:36:19] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:36:19] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:36:19] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:36:19] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:36:19] [INFO]    [OmnipathR] Cache item `6a345040ad2eaef2ab94e12a1b14630e991963ba` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:36:19] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/6a345040ad2eaef2ab94e12a1b14630e991963ba-1.rds`.
+[2023-05-23 12:36:20] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/6a345040ad2eaef2ab94e12a1b14630e991963ba-1.rds`.
+[2023-05-23 12:36:20] [INFO]    [OmnipathR] Download ready [key=6a345040ad2eaef2ab94e12a1b14630e991963ba, version=1]
+[2023-05-23 12:36:20] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:36:20] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:36:20] [INFO]    [OmnipathR] Cache item `6a345040ad2eaef2ab94e12a1b14630e991963ba` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:36:26] [SUCCESS] [OmnipathR] Downloaded 117662 interactions.
+[2023-05-23 12:36:27] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:36:27] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:36:27] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=Ramilowski_location,UniProt_location,HPA_subcellular&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:36:27] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=Ramilowski_location,UniProt_location,HPA_subcellular&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:36:27] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=Ramilowski_location,UniProt_location,HPA_subcellular&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:38:58] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:38:58] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:38:58] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:38:58] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:38:58] [INFO]    [OmnipathR] Cache item `d22e19552744752ac693b8572b5e500433b4f65b` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:38:58] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/d22e19552744752ac693b8572b5e500433b4f65b-1.rds`.
+[2023-05-23 12:38:59] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/d22e19552744752ac693b8572b5e500433b4f65b-1.rds`.
+[2023-05-23 12:38:59] [INFO]    [OmnipathR] Download ready [key=d22e19552744752ac693b8572b5e500433b4f65b, version=1]
+[2023-05-23 12:38:59] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:38:59] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:38:59] [INFO]    [OmnipathR] Cache item `d22e19552744752ac693b8572b5e500433b4f65b` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:38:59] [SUCCESS] [OmnipathR] Downloaded 353573 annotation records.
+[2023-05-23 12:39:00] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/intercell?entity_types=protein&amp;parent=ligand&amp;topology=secreted&amp;license=academic`
+[2023-05-23 12:39:00] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/intercell?entity_types=protein&amp;parent=ligand&amp;topology=secreted&amp;license=academic`
+[2023-05-23 12:39:00] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/intercell?entity_types=protein&amp;parent=ligand&amp;topology=secreted&amp;license=academic`
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:02] [INFO]    [OmnipathR] Cache item `8b4df10feeee656d8460263705d94f8a1d129497` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/8b4df10feeee656d8460263705d94f8a1d129497-1.rds`.
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/8b4df10feeee656d8460263705d94f8a1d129497-1.rds`.
+[2023-05-23 12:39:02] [INFO]    [OmnipathR] Download ready [key=8b4df10feeee656d8460263705d94f8a1d129497, version=1]
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:02] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:02] [INFO]    [OmnipathR] Cache item `8b4df10feeee656d8460263705d94f8a1d129497` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:39:02] [SUCCESS] [OmnipathR] Downloaded 10040 intercellular communication role records.
+[2023-05-23 12:39:03] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/intercell?aspect=locational&amp;parent=secreted,plasma_membrane_transmembrane,plasma_membrane_peripheral&amp;license=academic`
+[2023-05-23 12:39:03] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/intercell?aspect=locational&amp;parent=secreted,plasma_membrane_transmembrane,plasma_membrane_peripheral&amp;license=academic`
+[2023-05-23 12:39:03] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/intercell?aspect=locational&amp;parent=secreted,plasma_membrane_transmembrane,plasma_membrane_peripheral&amp;license=academic`
+[2023-05-23 12:39:15] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:15] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:15] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:15] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:15] [INFO]    [OmnipathR] Cache item `9ecbbba7b7129c316d69501f7af5c2aced05a498` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:39:15] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/9ecbbba7b7129c316d69501f7af5c2aced05a498-1.rds`.
+[2023-05-23 12:39:16] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/9ecbbba7b7129c316d69501f7af5c2aced05a498-1.rds`.
+[2023-05-23 12:39:16] [INFO]    [OmnipathR] Download ready [key=9ecbbba7b7129c316d69501f7af5c2aced05a498, version=1]
+[2023-05-23 12:39:16] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:16] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:16] [INFO]    [OmnipathR] Cache item `9ecbbba7b7129c316d69501f7af5c2aced05a498` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:39:16] [SUCCESS] [OmnipathR] Downloaded 21862 intercellular communication role records.
+[2023-05-23 12:39:16] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/intercell?entity_types=protein&amp;parent=receptor&amp;topology=plasma_membrane_transmembrane&amp;license=academic`
+[2023-05-23 12:39:16] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/intercell?entity_types=protein&amp;parent=receptor&amp;topology=plasma_membrane_transmembrane&amp;license=academic`
+[2023-05-23 12:39:16] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/intercell?entity_types=protein&amp;parent=receptor&amp;topology=plasma_membrane_transmembrane&amp;license=academic`
+[2023-05-23 12:39:24] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:25] [INFO]    [OmnipathR] Cache item `958b54b673bc1257aa3dafe979574736ad7d4632` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/958b54b673bc1257aa3dafe979574736ad7d4632-1.rds`.
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/958b54b673bc1257aa3dafe979574736ad7d4632-1.rds`.
+[2023-05-23 12:39:25] [INFO]    [OmnipathR] Download ready [key=958b54b673bc1257aa3dafe979574736ad7d4632, version=1]
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:25] [INFO]    [OmnipathR] Cache item `958b54b673bc1257aa3dafe979574736ad7d4632` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:39:25] [SUCCESS] [OmnipathR] Downloaded 21455 intercellular communication role records.
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/9ecbbba7b7129c316d69501f7af5c2aced05a498-1.rds`.
+[2023-05-23 12:39:25] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/intercell?aspect=locational&amp;parent=secreted,plasma_membrane_transmembrane,plasma_membrane_peripheral&amp;license=academic`
+[2023-05-23 12:39:25] [SUCCESS] [OmnipathR] Loaded 21862 intercellular communication role records from cache.
+[2023-05-23 12:39:25] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/intercell?entity_types=protein&amp;topology=secreted&amp;causality=trans&amp;license=academic`
+[2023-05-23 12:39:25] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/intercell?entity_types=protein&amp;topology=secreted&amp;causality=trans&amp;license=academic`
+[2023-05-23 12:39:25] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/intercell?entity_types=protein&amp;topology=secreted&amp;causality=trans&amp;license=academic`
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:29] [INFO]    [OmnipathR] Cache item `f7af75e239c9ffc6d21bad01972722f2f0180e87` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/f7af75e239c9ffc6d21bad01972722f2f0180e87-1.rds`.
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/f7af75e239c9ffc6d21bad01972722f2f0180e87-1.rds`.
+[2023-05-23 12:39:29] [INFO]    [OmnipathR] Download ready [key=f7af75e239c9ffc6d21bad01972722f2f0180e87, version=1]
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:29] [INFO]    [OmnipathR] Cache item `f7af75e239c9ffc6d21bad01972722f2f0180e87` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:39:29] [SUCCESS] [OmnipathR] Downloaded 14602 intercellular communication role records.
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/9ecbbba7b7129c316d69501f7af5c2aced05a498-1.rds`.
+[2023-05-23 12:39:29] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/intercell?aspect=locational&amp;parent=secreted,plasma_membrane_transmembrane,plasma_membrane_peripheral&amp;license=academic`
+[2023-05-23 12:39:29] [SUCCESS] [OmnipathR] Loaded 21862 intercellular communication role records from cache.
+[2023-05-23 12:39:29] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/intercell?entity_types=protein&amp;topology=plasma_membrane_transmembrane&amp;causality=rec&amp;license=academic`
+[2023-05-23 12:39:29] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/intercell?entity_types=protein&amp;topology=plasma_membrane_transmembrane&amp;causality=rec&amp;license=academic`
+[2023-05-23 12:39:29] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/intercell?entity_types=protein&amp;topology=plasma_membrane_transmembrane&amp;causality=rec&amp;license=academic`
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:41] [INFO]    [OmnipathR] Cache item `72c58fa11451e57015edbfc8235d55d71f9d7362` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/72c58fa11451e57015edbfc8235d55d71f9d7362-1.rds`.
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/72c58fa11451e57015edbfc8235d55d71f9d7362-1.rds`.
+[2023-05-23 12:39:41] [INFO]    [OmnipathR] Download ready [key=72c58fa11451e57015edbfc8235d55d71f9d7362, version=1]
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:39:41] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:39:41] [INFO]    [OmnipathR] Cache item `72c58fa11451e57015edbfc8235d55d71f9d7362` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:39:42] [SUCCESS] [OmnipathR] Downloaded 26412 intercellular communication role records.
+[2023-05-23 12:39:42] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/9ecbbba7b7129c316d69501f7af5c2aced05a498-1.rds`.
+[2023-05-23 12:39:42] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/intercell?aspect=locational&amp;parent=secreted,plasma_membrane_transmembrane,plasma_membrane_peripheral&amp;license=academic`
+[2023-05-23 12:39:42] [SUCCESS] [OmnipathR] Loaded 21862 intercellular communication role records from cache.
+[2023-05-23 12:39:42] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:39:42] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:39:42] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;datasets=omnipath&amp;organisms=9606&amp;fields=sources,references,curation_effort&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:03] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:03] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:03] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:03] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:03] [INFO]    [OmnipathR] Cache item `4531fff8a97521fefd85568643520d934e90659c` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:41:03] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/4531fff8a97521fefd85568643520d934e90659c-1.rds`.
+[2023-05-23 12:41:04] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/4531fff8a97521fefd85568643520d934e90659c-1.rds`.
+[2023-05-23 12:41:04] [INFO]    [OmnipathR] Download ready [key=4531fff8a97521fefd85568643520d934e90659c, version=1]
+[2023-05-23 12:41:04] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:04] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:04] [INFO]    [OmnipathR] Cache item `4531fff8a97521fefd85568643520d934e90659c` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:41:05] [SUCCESS] [OmnipathR] Downloaded 30053 interactions.
+[2023-05-23 12:41:08] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:41:08] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:08] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:08] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:08] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=SignaLink_pathway&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:10] [INFO]    [OmnipathR] Cache item `6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8-1.rds`.
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8-1.rds`.
+[2023-05-23 12:41:10] [INFO]    [OmnipathR] Download ready [key=6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8, version=1]
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:10] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:10] [INFO]    [OmnipathR] Cache item `6061f30dac10cc2b0f8bcf13f7d870c3d69a0df8` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:41:10] [SUCCESS] [OmnipathR] Downloaded 1144 annotation records.
+[2023-05-23 12:41:12] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:41:12] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:12] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=SignaLink_function&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:12] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=SignaLink_function&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:12] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=SignaLink_function&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:13] [INFO]    [OmnipathR] Cache item `ec1ffe714d7618308311e03ab5d91a72b6ab30a3` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/ec1ffe714d7618308311e03ab5d91a72b6ab30a3-1.rds`.
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/ec1ffe714d7618308311e03ab5d91a72b6ab30a3-1.rds`.
+[2023-05-23 12:41:13] [INFO]    [OmnipathR] Download ready [key=ec1ffe714d7618308311e03ab5d91a72b6ab30a3, version=1]
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:13] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:13] [INFO]    [OmnipathR] Cache item `ec1ffe714d7618308311e03ab5d91a72b6ab30a3` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:41:14] [SUCCESS] [OmnipathR] Downloaded 1080 annotation records.
+[2023-05-23 12:41:15] [TRACE]   [OmnipathR] Bypassing call: `simplify_intercell_network(.)`.
+[2023-05-23 12:41:15] [TRACE]   [OmnipathR] This behaviour is intended for running R CMD check within limited time and is triggered solely by the user name. Please report if you see this anywhere outside of a Bioconductor build server.
+[2023-05-23 12:41:16] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:41:16] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:16] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=ORegAnno,PAZAR&amp;datasets=tf_target&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:16] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=ORegAnno,PAZAR&amp;datasets=tf_target&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:16] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&amp;resources=ORegAnno,PAZAR&amp;datasets=tf_target&amp;organisms=9606&amp;dorothea_levels=A,B&amp;fields=sources,references,curation_effort&amp;entity_types=protein&amp;license=academic`
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:17] [INFO]    [OmnipathR] Cache item `eb0c13fd817d7fa62717fa239f8a329e85dcac2e` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/eb0c13fd817d7fa62717fa239f8a329e85dcac2e-1.rds`.
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/eb0c13fd817d7fa62717fa239f8a329e85dcac2e-1.rds`.
+[2023-05-23 12:41:17] [INFO]    [OmnipathR] Download ready [key=eb0c13fd817d7fa62717fa239f8a329e85dcac2e, version=1]
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:17] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:17] [INFO]    [OmnipathR] Cache item `eb0c13fd817d7fa62717fa239f8a329e85dcac2e` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:41:18] [SUCCESS] [OmnipathR] Downloaded 322 interactions.
+[2023-05-23 12:41:21] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:41:21] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:21] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/f2e7cc5e753cd4e22d458171359dea86781ebae8-1.rds`.
+[2023-05-23 12:41:21] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=UniProt_location&amp;license=academic`
+[2023-05-23 12:41:21] [SUCCESS] [OmnipathR] Loaded 76260 annotation records from cache.
+[2023-05-23 12:41:24] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:41:24] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:24] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=kinase.com&amp;license=academic`
+[2023-05-23 12:41:24] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=kinase.com&amp;license=academic`
+[2023-05-23 12:41:24] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=kinase.com&amp;license=academic`
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:25] [INFO]    [OmnipathR] Cache item `422914ef8903d8480f1b9fbb47096e275567851d` version 1: status changed from `unknown` to `started`.
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] Exporting object to RDS: `/home/biocbuild/.cache/OmnipathR/422914ef8903d8480f1b9fbb47096e275567851d-1.rds`.
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] Exported RDS to `/home/biocbuild/.cache/OmnipathR/422914ef8903d8480f1b9fbb47096e275567851d-1.rds`.
+[2023-05-23 12:41:25] [INFO]    [OmnipathR] Download ready [key=422914ef8903d8480f1b9fbb47096e275567851d, version=1]
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-23 12:41:25] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:25] [INFO]    [OmnipathR] Cache item `422914ef8903d8480f1b9fbb47096e275567851d` version 1: status changed from `started` to `ready`.
+[2023-05-23 12:41:25] [SUCCESS] [OmnipathR] Downloaded 2029 annotation records.
+[2023-05-23 12:41:32] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:41:32] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:33] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/f2e7cc5e753cd4e22d458171359dea86781ebae8-1.rds`.
+[2023-05-23 12:41:33] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=UniProt_location&amp;license=academic`
+[2023-05-23 12:41:33] [SUCCESS] [OmnipathR] Loaded 76260 annotation records from cache.
+[2023-05-23 12:41:40] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-23 12:41:40] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-23 12:41:40] [TRACE]   [OmnipathR] Loaded data from RDS `/home/biocbuild/.cache/OmnipathR/422914ef8903d8480f1b9fbb47096e275567851d-1.rds`.
+[2023-05-23 12:41:40] [INFO]    [OmnipathR] Loaded from cache: `https://omnipathdb.org/annotations?resources=kinase.com&amp;license=academic`
+[2023-05-23 12:41:40] [SUCCESS] [OmnipathR] Loaded 2029 annotation records from cache.
+--- finished re-building ‘paths.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘omnipath_intro.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

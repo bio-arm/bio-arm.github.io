@@ -1,0 +1,33 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EpiTxDb
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EpiTxDb/DESCRIPTION’ ... OK
+* preparing ‘EpiTxDb’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘EpiTxDb-creation.Rmd’ using rmarkdown
+--- finished re-building ‘EpiTxDb-creation.Rmd’
+
+--- re-building ‘EpiTxDb.Rmd’ using rmarkdown
+Quitting from lines 66-68 (EpiTxDb.Rmd) 
+Error: processing vignette 'EpiTxDb.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘EpiTxDb.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘EpiTxDb.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SpatialFeatureExperiment
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SpatialFeatureExperiment/DESCRIPTION’ ... OK
+* preparing ‘SpatialFeatureExperiment’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependencies ‘sf’, ‘SpatialExperiment’, ‘spdep’, ‘terra’ are not available for package ‘SpatialFeatureExperiment’
+* removing ‘/tmp/RtmpN0A7T0/Rinst2d37d3bf71c94/SpatialFeatureExperiment’
+      -----------------------------------
+ERROR: package installation failed

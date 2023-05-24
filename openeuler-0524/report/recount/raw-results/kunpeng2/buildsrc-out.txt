@@ -1,0 +1,82 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data recount
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘recount/DESCRIPTION’ ... OK
+* preparing ‘recount’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘recount-quickstart.Rmd’ using rmarkdown
+trying URL 'http://duffel.rail.bio/recount/v2/SRP009615/rse_gene.Rdata'
+Content type 'binary/octet-stream' length 3130229 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+The magick package is required to crop "/tmp/RtmpLp0yne/Rbuild16b054d61f23d/recount/vignettes/recount-quickstart_files/figure-html/maplot-1.png" but not available.
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'SRP009615-results.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+The magick package is required to crop "/tmp/RtmpLp0yne/Rbuild16b054d61f23d/recount/vignettes/recount-quickstart_files/figure-html/make_report_real-1.png" but not available.
+Warning: stack imbalance in 'lazyLoadDBfetch', 185 then 193
+Quitting from lines 541-547 (recount-quickstart.Rmd) 
+Error: processing vignette 'recount-quickstart.Rmd' failed with diagnostics:
+BiocParallel errors
+  0 remote errors, element index: 
+  8 unevaluated and other errors
+  first remote error:
+
+--- failed re-building ‘recount-quickstart.Rmd’
+
+"/home/biocbuild/R/R-4.3.0/bin/Rscript" -e "library(rmarkdown); render('recount-quickstart.Rmd')"
+
+Attaching package: ‘BiocStyle’
+
+The following objects are masked from ‘package:rmarkdown’:
+
+    html_document, md_document, pdf_document
+
+
+
+processing file: recount-quickstart.Rmd
+
+  |                                                         
+  |                                                   |   0%
+  |                                                         
+  |.                                                  |   1%                   
+  |                                                         
+  |.                                                  |   2% (vignetteSetup)   
+  |                                                         
+  |..                                                 |   3%                   
+  |                                                         
+  |..                                                 |   4% (installDer)      
+  |                                                         
+  |...                                                |   5%                   
+  |                                                         
+  |...                                                |   6% (citation)        
+  |                                                         
+  |....                                               |   7%                   
+  |                                                         
+  |....                                               |   8% (ultraQuick)      
+ *** caught segfault ***
+address 0x311000006, cause 'memory not mapped'
+
+  |                                                         
+  |.....                                              |   9%                   
+  |                                                         
+  |.....                                              |  10% (er_analysis)     
+  |                                                         
+  |......                                             |  11%                   
+  |                                                         
+  |......                                             |  12% (install)         
+  |                                                         
+  |.......                                            |  13%                   
+  |                                                         
+  |.......                                            |  14% (start)           

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EDIRquery
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EDIRquery/DESCRIPTION’ ... OK
+* preparing ‘EDIRquery’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘EDIRquery.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'EDIRquery.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpyEFu1W/Rbuild3cce896ffabdf9/EDIRquery/vignettes/EDIRquery.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See EDIRquery.log for more info.
+--- failed re-building ‘EDIRquery.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘EDIRquery.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

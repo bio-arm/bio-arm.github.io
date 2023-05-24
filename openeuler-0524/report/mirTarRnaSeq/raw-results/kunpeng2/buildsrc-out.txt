@@ -1,0 +1,76 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data mirTarRnaSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘mirTarRnaSeq/DESCRIPTION’ ... OK
+* preparing ‘mirTarRnaSeq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘mirTarRnaSeq.Rmd’ using rmarkdown
+Warning in has_utility("pdfcrop") :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+trying URL 'https://zenodo.org/record/4615670/files/Mouse_miRanda.txt.gz'
+Content type 'application/octet-stream' length 2932105 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+trying URL 'https://zenodo.org/record/4615670/files/Mouse_miRanda.txt.gz'
+Content type 'application/octet-stream' length 2932105 bytes (2.8 MB)
+==================================================
+downloaded 2.8 MB
+
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'mirTarRnaSeq.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpBsQ92F/Rbuild3f5ff117d078d5/mirTarRnaSeq/vignettes/mirTarRnaSeq.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See mirTarRnaSeq.log for more info.
+--- failed re-building ‘mirTarRnaSeq.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘mirTarRnaSeq.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

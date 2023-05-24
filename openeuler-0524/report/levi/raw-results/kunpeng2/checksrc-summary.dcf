@@ -1,0 +1,10 @@
+Package: levi
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:levi.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings levi_1.19.0.tar.gz
+StartedAt: 2023-05-23 16:28:10 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:28:27 -0000 (Tue, 23 May 2023)
+EllapsedTime: 17.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: levi.Rcheck
+Warnings: NA

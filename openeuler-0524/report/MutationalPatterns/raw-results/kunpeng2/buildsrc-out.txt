@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MutationalPatterns
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MutationalPatterns/DESCRIPTION’ ... OK
+* preparing ‘MutationalPatterns’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Introduction_to_MutationalPatterns.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/combine_plot_spectrum-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/combine_plot_spectrum_2-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/plot_96_profile-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/plot_profile_heatmap-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/riverplot-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/unnamed-chunk-4-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/unnamed-chunk-5-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/plot_DBS_contexts-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/plot_main_DBS_contexts-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/plot_MBS_contexts-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpjqZdz6/Rbuild17253d5067a4/MutationalPatterns/vignettes/Introduction_to_MutationalPatterns_files/figure-html/estimate_rank-1.png" but not available.
+Quitting from lines 536-543 (Introduction_to_MutationalPatterns.Rmd) 
+Error: processing vignette 'Introduction_to_MutationalPatterns.Rmd' failed with diagnostics:
+there is no package called 'ccfindR'
+--- failed re-building ‘Introduction_to_MutationalPatterns.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Introduction_to_MutationalPatterns.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

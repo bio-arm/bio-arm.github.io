@@ -1,0 +1,8 @@
+Package: biomformat
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL biomformat
+StartedAt: 2023-05-23 06:06:42 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:06:54 -0000 (Tue, 23 May 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 0
+Status: OK

@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data UniProt.ws
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘UniProt.ws/DESCRIPTION’ ... OK
+* preparing ‘UniProt.ws’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘UniProt.ws.Rmd’ using rmarkdown
+Quitting from lines 62-63 (UniProt.ws.Rmd) 
+Error: processing vignette 'UniProt.ws.Rmd' failed with diagnostics:
+not all 'rnames' found or unique.
+--- failed re-building ‘UniProt.ws.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘UniProt.ws.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

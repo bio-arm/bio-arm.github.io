@@ -1,0 +1,10 @@
+Package: coMET
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data coMET
+StartedAt: 2023-05-23 09:01:44 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 09:07:33 -0000 (Tue, 23 May 2023)
+EllapsedTime: 348.5 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

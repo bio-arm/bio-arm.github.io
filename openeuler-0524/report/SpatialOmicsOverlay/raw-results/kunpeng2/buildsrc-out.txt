@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SpatialOmicsOverlay
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SpatialOmicsOverlay/DESCRIPTION’ ... OK
+* preparing ‘SpatialOmicsOverlay’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependencies ‘magick’, ‘RBioFormats’ are not available for package ‘SpatialOmicsOverlay’
+* removing ‘/tmp/RtmpiKDDK2/Rinst2d3e0514d1228/SpatialOmicsOverlay’
+      -----------------------------------
+ERROR: package installation failed

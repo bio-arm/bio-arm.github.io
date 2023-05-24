@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MantelCorr
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MantelCorr/DESCRIPTION’ ... OK
+* preparing ‘MantelCorr’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MantelCorrVignette.Rnw’ using Sweave
+Error: processing vignette 'MantelCorrVignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'MantelCorrVignette.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.14 \usepackage
+                {vmargin}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘MantelCorrVignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘MantelCorrVignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

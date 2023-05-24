@@ -1,0 +1,14 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL seqArchRplus
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+ERROR: dependencies ‘ggimage’, ‘magick’ are not available for package ‘seqArchRplus’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/seqArchRplus’

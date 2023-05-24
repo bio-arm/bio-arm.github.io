@@ -1,0 +1,774 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BiocHail
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BiocHail/DESCRIPTION’ ... OK
+* preparing ‘BiocHail’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘gwas_tut.Rmd’ using rmarkdown
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv
+
+  added / updated specs:
+    - python=3.8.13
+
+
+The following NEW packages will be INSTALLED:
+
+  _openmp_mutex      conda-forge/linux-aarch64::_openmp_mutex-4.5-2_gnu
+  bzip2              conda-forge/linux-aarch64::bzip2-1.0.8-hf897c2e_4
+  ca-certificates    conda-forge/linux-aarch64::ca-certificates-2023.5.7-hcefe29a_0
+  ld_impl_linux-aar~ conda-forge/linux-aarch64::ld_impl_linux-aarch64-2.40-h2d8c526_0
+  libffi             conda-forge/linux-aarch64::libffi-3.4.2-h3557bc0_5
+  libgcc-ng          conda-forge/linux-aarch64::libgcc-ng-12.2.0-h607ecd0_19
+  libgomp            conda-forge/linux-aarch64::libgomp-12.2.0-h607ecd0_19
+  libnsl             conda-forge/linux-aarch64::libnsl-2.0.0-hf897c2e_0
+  libsqlite          conda-forge/linux-aarch64::libsqlite-3.42.0-h194ca79_0
+  libuuid            conda-forge/linux-aarch64::libuuid-2.38.1-hb4cce97_0
+  libzlib            conda-forge/linux-aarch64::libzlib-1.2.13-h4e544f5_4
+  ncurses            conda-forge/linux-aarch64::ncurses-6.3-headf329_1
+  openssl            conda-forge/linux-aarch64::openssl-3.1.0-h31becfc_3
+  pip                conda-forge/noarch::pip-23.1.2-pyhd8ed1ab_0
+  python             conda-forge/linux-aarch64::python-3.8.13-h92ab765_0_cpython
+  readline           conda-forge/linux-aarch64::readline-8.2-h8fc344f_1
+  setuptools         conda-forge/noarch::setuptools-67.7.2-pyhd8ed1ab_0
+  sqlite             conda-forge/linux-aarch64::sqlite-3.42.0-h3b3482f_0
+  tk                 conda-forge/linux-aarch64::tk-8.6.12-hd8af866_0
+  wheel              conda-forge/noarch::wheel-0.40.0-pyhd8ed1ab_0
+  xz                 conda-forge/linux-aarch64::xz-5.2.6-h9cdd2b7_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv
+
+  added / updated specs:
+    - python=3.8.13
+
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  ca-certificates    conda-forge::ca-certificates-2023.5.7~ --> pkgs/main::ca-certificates-2023.01.10-hd43f75c_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.12.0
+  latest version: 23.3.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv
+
+  added / updated specs:
+    - pandas=1.3.5
+    - python=3.8.13
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    bottleneck-1.3.7           |   py38h50faf1d_0         113 KB  conda-forge
+    numexpr-2.8.4              |   py38h348c431_0         130 KB  conda-forge
+    numpy-1.24.3               |   py38he3f4005_0         5.8 MB  conda-forge
+    pandas-1.3.5               |   py38h337a648_0         9.4 MB
+    ------------------------------------------------------------
+                                           Total:        15.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  bottleneck         conda-forge/linux-aarch64::bottleneck-1.3.7-py38h50faf1d_0
+  libblas            conda-forge/linux-aarch64::libblas-3.9.0-16_linuxaarch64_openblas
+  libcblas           conda-forge/linux-aarch64::libcblas-3.9.0-16_linuxaarch64_openblas
+  libgfortran-ng     conda-forge/linux-aarch64::libgfortran-ng-12.2.0-he9431aa_19
+  libgfortran5       conda-forge/linux-aarch64::libgfortran5-12.2.0-hf695500_19
+  liblapack          conda-forge/linux-aarch64::liblapack-3.9.0-16_linuxaarch64_openblas
+  libopenblas        conda-forge/linux-aarch64::libopenblas-0.3.21-pthreads_h6cb6f83_3
+  libstdcxx-ng       conda-forge/linux-aarch64::libstdcxx-ng-12.2.0-hc13a102_19
+  numexpr            conda-forge/linux-aarch64::numexpr-2.8.4-py38h348c431_0
+  numpy              conda-forge/linux-aarch64::numpy-1.24.3-py38he3f4005_0
+  pandas             pkgs/main/linux-aarch64::pandas-1.3.5-py38h337a648_0
+  python-dateutil    conda-forge/noarch::python-dateutil-2.8.2-pyhd8ed1ab_0
+  python_abi         conda-forge/linux-aarch64::python_abi-3.8-3_cp38
+  pytz               conda-forge/noarch::pytz-2023.3-pyhd8ed1ab_0
+  six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0
+
+The following packages will be UPDATED:
+
+  ca-certificates    pkgs/main::ca-certificates-2023.01.10~ --> conda-forge::ca-certificates-2023.5.7-hcefe29a_0
+
+
+
+Downloading and Extracting Packages
+
+numpy-1.24.3         | 5.8 MB    |            |   0% 
+numpy-1.24.3         | 5.8 MB    |            |   0% 
+numpy-1.24.3         | 5.8 MB    | 1          |   2% 
+numpy-1.24.3         | 5.8 MB    | 7          |   8% 
+numpy-1.24.3         | 5.8 MB    | #2         |  13% 
+numpy-1.24.3         | 5.8 MB    | #9         |  20% 
+numpy-1.24.3         | 5.8 MB    | ##2        |  23% 
+numpy-1.24.3         | 5.8 MB    | ##5        |  26% 
+numpy-1.24.3         | 5.8 MB    | ##8        |  29% 
+numpy-1.24.3         | 5.8 MB    | ###7       |  38% 
+numpy-1.24.3         | 5.8 MB    | ####7      |  47% 
+numpy-1.24.3         | 5.8 MB    | ######     |  60% 
+numpy-1.24.3         | 5.8 MB    | ######6    |  66% 
+numpy-1.24.3         | 5.8 MB    | #######    |  70% 
+numpy-1.24.3         | 5.8 MB    | #######3   |  73% 
+numpy-1.24.3         | 5.8 MB    | #######5   |  76% 
+numpy-1.24.3         | 5.8 MB    | #######7   |  78% 
+numpy-1.24.3         | 5.8 MB    | #######9   |  80% 
+numpy-1.24.3         | 5.8 MB    | ########1  |  82% 
+numpy-1.24.3         | 5.8 MB    | ########3  |  84% 
+numpy-1.24.3         | 5.8 MB    | #########  |  90% 
+numpy-1.24.3         | 5.8 MB    | #########7 |  97% 
+numpy-1.24.3         | 5.8 MB    | #########9 | 100% 
+numpy-1.24.3         | 5.8 MB    | ########## | 100% 
+
+bottleneck-1.3.7     | 113 KB    |            |   0% 
+bottleneck-1.3.7     | 113 KB    | #4         |  14% 
+bottleneck-1.3.7     | 113 KB    | ##8        |  28% 
+bottleneck-1.3.7     | 113 KB    | ########## | 100% 
+bottleneck-1.3.7     | 113 KB    | ########## | 100% 
+
+pandas-1.3.5         | 9.4 MB    |            |   0% 
+pandas-1.3.5         | 9.4 MB    |            |   0% 
+pandas-1.3.5         | 9.4 MB    |            |   1% 
+pandas-1.3.5         | 9.4 MB    | 1          |   2% 
+pandas-1.3.5         | 9.4 MB    | 2          |   3% 
+pandas-1.3.5         | 9.4 MB    | 4          |   5% 
+pandas-1.3.5         | 9.4 MB    | 6          |   7% 
+pandas-1.3.5         | 9.4 MB    | 9          |   9% 
+pandas-1.3.5         | 9.4 MB    | #2         |  13% 
+pandas-1.3.5         | 9.4 MB    | #8         |  18% 
+pandas-1.3.5         | 9.4 MB    | ##2        |  23% 
+pandas-1.3.5         | 9.4 MB    | ##5        |  26% 
+pandas-1.3.5         | 9.4 MB    | ##9        |  29% 
+pandas-1.3.5         | 9.4 MB    | ###2       |  32% 
+pandas-1.3.5         | 9.4 MB    | ###6       |  36% 
+pandas-1.3.5         | 9.4 MB    | ###9       |  40% 
+pandas-1.3.5         | 9.4 MB    | ####6      |  47% 
+pandas-1.3.5         | 9.4 MB    | #####      |  50% 
+pandas-1.3.5         | 9.4 MB    | #####2     |  53% 
+pandas-1.3.5         | 9.4 MB    | #####4     |  55% 
+pandas-1.3.5         | 9.4 MB    | #####9     |  60% 
+pandas-1.3.5         | 9.4 MB    | ######2    |  63% 
+pandas-1.3.5         | 9.4 MB    | ######6    |  67% 
+pandas-1.3.5         | 9.4 MB    | ######9    |  69% 
+pandas-1.3.5         | 9.4 MB    | #######3   |  74% 
+pandas-1.3.5         | 9.4 MB    | #######7   |  77% 
+pandas-1.3.5         | 9.4 MB    | #######9   |  79% 
+pandas-1.3.5         | 9.4 MB    | ########1  |  82% 
+pandas-1.3.5         | 9.4 MB    | ########6  |  87% 
+pandas-1.3.5         | 9.4 MB    | ########9  |  89% 
+pandas-1.3.5         | 9.4 MB    | #########1 |  91% 
+pandas-1.3.5         | 9.4 MB    | #########2 |  93% 
+pandas-1.3.5         | 9.4 MB    | #########4 |  94% 
+pandas-1.3.5         | 9.4 MB    | #########5 |  96% 
+pandas-1.3.5         | 9.4 MB    | #########7 |  98% 
+pandas-1.3.5         | 9.4 MB    | #########9 |  99% 
+pandas-1.3.5         | 9.4 MB    | ########## | 100% 
+
+numexpr-2.8.4        | 130 KB    |            |   0% 
+numexpr-2.8.4        | 130 KB    | #2         |  12% 
+numexpr-2.8.4        | 130 KB    | ##4        |  25% 
+numexpr-2.8.4        | 130 KB    | ####9      |  49% 
+numexpr-2.8.4        | 130 KB    | ########## | 100% 
+numexpr-2.8.4        | 130 KB    | ########## | 100% 
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.12.0
+  latest version: 23.3.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+Collecting hail==0.2.108
+  Downloading hail-0.2.108-py3-none-any.whl (108.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.1/108.1 MB 882.9 kB/s eta 0:00:00
+Collecting ukbb_pan_ancestry==0.0.2
+  Downloading ukbb_pan_ancestry-0.0.2-py3-none-any.whl (13 kB)
+Collecting Deprecated<1.3,>=1.2.10 (from hail==0.2.108)
+  Downloading Deprecated-1.2.13-py2.py3-none-any.whl (9.6 kB)
+Collecting Jinja2==3.0.3 (from hail==0.2.108)
+  Downloading Jinja2-3.0.3-py3-none-any.whl (133 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.6/133.6 kB 4.0 MB/s eta 0:00:00
+Collecting PyJWT (from hail==0.2.108)
+  Downloading PyJWT-2.7.0-py3-none-any.whl (22 kB)
+Collecting aiohttp<4,>=3.8.1 (from hail==0.2.108)
+  Downloading aiohttp-3.8.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 14.7 MB/s eta 0:00:00
+Collecting aiohttp-session<2.13,>=2.7 (from hail==0.2.108)
+  Downloading aiohttp_session-2.12.0-py3-none-any.whl (12 kB)
+Collecting asyncinit<0.3,>=0.2.4 (from hail==0.2.108)
+  Downloading asyncinit-0.2.4-py3-none-any.whl (2.8 kB)
+Collecting avro<1.12,>=1.10 (from hail==0.2.108)
+  Downloading avro-1.11.1.tar.gz (84 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.2/84.2 kB 13.2 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting azure-identity<2,>=1.6.0 (from hail==0.2.108)
+  Downloading azure_identity-1.13.0-py3-none-any.whl (151 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.6/151.6 kB 18.8 MB/s eta 0:00:00
+Collecting azure-storage-blob<13,>=12.11.0 (from hail==0.2.108)
+  Downloading azure_storage_blob-12.16.0-py3-none-any.whl (387 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 388.0/388.0 kB 18.0 MB/s eta 0:00:00
+Collecting bokeh==1.4.0 (from hail==0.2.108)
+  Downloading bokeh-1.4.0.tar.gz (32.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 32.4/32.4 MB 1.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting boto3<2.0,>=1.17 (from hail==0.2.108)
+  Downloading boto3-1.26.138-py3-none-any.whl (135 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.6/135.6 kB 2.8 MB/s eta 0:00:00
+Collecting botocore<2.0,>=1.20 (from hail==0.2.108)
+  Downloading botocore-1.29.138-py3-none-any.whl (10.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 654.3 kB/s eta 0:00:00
+Collecting decorator<5 (from hail==0.2.108)
+  Downloading decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
+Collecting dill<0.4,>=0.3.1.1 (from hail==0.2.108)
+  Downloading dill-0.3.6-py3-none-any.whl (110 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.5/110.5 kB 1.5 MB/s eta 0:00:00
+Collecting frozenlist<2,>=1.3.1 (from hail==0.2.108)
+  Downloading frozenlist-1.3.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (162 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.2/162.2 kB 398.7 kB/s eta 0:00:00
+Collecting google-auth==2.14.1 (from hail==0.2.108)
+  Downloading google_auth-2.14.1-py2.py3-none-any.whl (175 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 175.4/175.4 kB 457.2 kB/s eta 0:00:00
+Collecting google-cloud-storage>=1.25.* (from hail==0.2.108)
+  Downloading google_cloud_storage-2.9.0-py2.py3-none-any.whl (113 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 113.5/113.5 kB 876.3 kB/s eta 0:00:00
+Collecting humanize<2,>=1.0.0 (from hail==0.2.108)
+  Downloading humanize-1.1.0-py3-none-any.whl (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.6/52.6 kB 659.9 kB/s eta 0:00:00
+Collecting hurry.filesize<1,>=0.9 (from hail==0.2.108)
+  Downloading hurry.filesize-0.9.tar.gz (2.8 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting janus<1.1,>=0.6 (from hail==0.2.108)
+  Downloading janus-1.0.0-py3-none-any.whl (6.9 kB)
+Collecting nest-asyncio<2,>=1.5.4 (from hail==0.2.108)
+  Downloading nest_asyncio-1.5.6-py3-none-any.whl (5.2 kB)
+Requirement already satisfied: numpy<2 in /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv/lib/python3.8/site-packages (from hail==0.2.108) (1.24.3)
+Collecting orjson<4,>=3.6.4 (from hail==0.2.108)
+  Downloading orjson-3.8.12-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (262 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 262.9/262.9 kB 5.3 MB/s eta 0:00:00
+Requirement already satisfied: pandas<1.5.0,>=1.3.0 in /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv/lib/python3.8/site-packages (from hail==0.2.108) (1.3.5)
+Collecting parsimonious<0.9 (from hail==0.2.108)
+  Downloading parsimonious-0.8.1.tar.gz (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.1/45.1 kB 7.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting plotly<5.11,>=5.5.0 (from hail==0.2.108)
+  Downloading plotly-5.10.0-py2.py3-none-any.whl (15.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 1.1 MB/s eta 0:00:00
+Collecting protobuf==3.20.2 (from hail==0.2.108)
+  Downloading protobuf-3.20.2-cp38-cp38-manylinux2014_aarch64.whl (918 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 918.3/918.3 kB 9.1 MB/s eta 0:00:00
+Collecting pyspark<3.2.0,>=3.1.1 (from hail==0.2.108)
+  Downloading pyspark-3.1.3.tar.gz (214.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 214.0/214.0 MB 1.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting python-json-logger<3,>=2.0.2 (from hail==0.2.108)
+  Downloading python_json_logger-2.0.7-py3-none-any.whl (8.1 kB)
+Collecting requests<3,>=2.25.1 (from hail==0.2.108)
+  Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 2.9 MB/s eta 0:00:00
+Collecting rich==12.6.0 (from hail==0.2.108)
+  Downloading rich-12.6.0-py3-none-any.whl (237 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 237.5/237.5 kB 7.1 MB/s eta 0:00:00
+Collecting scipy<1.10,>1.2 (from hail==0.2.108)
+  Downloading scipy-1.9.3-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (30.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 30.4/30.4 MB 1.2 MB/s eta 0:00:00
+Collecting sortedcontainers<3,>=2.4.0 (from hail==0.2.108)
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Collecting tabulate<1,>=0.8.9 (from hail==0.2.108)
+  Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+Collecting uvloop<1,>=0.16.0 (from hail==0.2.108)
+  Downloading uvloop-0.17.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (4.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 1.4 MB/s eta 0:00:00
+Collecting ukbb-common (from ukbb_pan_ancestry==0.0.2)
+  Downloading ukbb_common-0.1.2-py3-none-any.whl (33 kB)
+Requirement already satisfied: six>=1.5.2 in /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv/lib/python3.8/site-packages (from bokeh==1.4.0->hail==0.2.108) (1.16.0)
+Collecting PyYAML>=3.10 (from bokeh==1.4.0->hail==0.2.108)
+  Downloading PyYAML-6.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (721 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 721.7/721.7 kB 8.3 MB/s eta 0:00:00
+Requirement already satisfied: python-dateutil>=2.1 in /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv/lib/python3.8/site-packages (from bokeh==1.4.0->hail==0.2.108) (2.8.2)
+Collecting pillow>=4.0 (from bokeh==1.4.0->hail==0.2.108)
+  Downloading Pillow-9.5.0-cp38-cp38-manylinux_2_28_aarch64.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 1.3 MB/s eta 0:00:00
+Collecting packaging>=16.8 (from bokeh==1.4.0->hail==0.2.108)
+  Downloading packaging-23.1-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.9/48.9 kB 1.6 MB/s eta 0:00:00
+Collecting tornado>=4.3 (from bokeh==1.4.0->hail==0.2.108)
+  Downloading tornado-6.3.2-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (427 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.4/427.4 kB 7.9 MB/s eta 0:00:00
+Collecting cachetools<6.0,>=2.0.0 (from google-auth==2.14.1->hail==0.2.108)
+  Downloading cachetools-5.3.0-py3-none-any.whl (9.3 kB)
+Collecting pyasn1-modules>=0.2.1 (from google-auth==2.14.1->hail==0.2.108)
+  Downloading pyasn1_modules-0.3.0-py2.py3-none-any.whl (181 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.3/181.3 kB 3.9 MB/s eta 0:00:00
+Collecting rsa<5,>=3.1.4 (from google-auth==2.14.1->hail==0.2.108)
+  Downloading rsa-4.9-py3-none-any.whl (34 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2==3.0.3->hail==0.2.108)
+  Downloading MarkupSafe-2.1.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (26 kB)
+Collecting commonmark<0.10.0,>=0.9.0 (from rich==12.6.0->hail==0.2.108)
+  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 kB 4.2 MB/s eta 0:00:00
+Collecting pygments<3.0.0,>=2.6.0 (from rich==12.6.0->hail==0.2.108)
+  Downloading Pygments-2.15.1-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 1.5 MB/s eta 0:00:00
+Collecting typing-extensions<5.0,>=4.0.0 (from rich==12.6.0->hail==0.2.108)
+  Downloading typing_extensions-4.6.0-py3-none-any.whl (30 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4,>=3.8.1->hail==0.2.108)
+  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 4.0 MB/s eta 0:00:00
+Collecting charset-normalizer<4.0,>=2.0 (from aiohttp<4,>=3.8.1->hail==0.2.108)
+  Downloading charset_normalizer-3.1.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (192 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 193.0/193.0 kB 6.9 MB/s eta 0:00:00
+Collecting multidict<7.0,>=4.5 (from aiohttp<4,>=3.8.1->hail==0.2.108)
+  Downloading multidict-6.0.4-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (124 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.2/124.2 kB 10.5 MB/s eta 0:00:00
+Collecting async-timeout<5.0,>=4.0.0a3 (from aiohttp<4,>=3.8.1->hail==0.2.108)
+  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting yarl<2.0,>=1.0 (from aiohttp<4,>=3.8.1->hail==0.2.108)
+  Downloading yarl-1.9.2-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (263 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 263.2/263.2 kB 14.7 MB/s eta 0:00:00
+Collecting aiosignal>=1.1.2 (from aiohttp<4,>=3.8.1->hail==0.2.108)
+  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+Collecting azure-core<2.0.0,>=1.11.0 (from azure-identity<2,>=1.6.0->hail==0.2.108)
+  Downloading azure_core-1.26.4-py3-none-any.whl (173 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 173.9/173.9 kB 11.7 MB/s eta 0:00:00
+Collecting cryptography>=2.5 (from azure-identity<2,>=1.6.0->hail==0.2.108)
+  Downloading cryptography-40.0.2-cp36-abi3-manylinux_2_28_aarch64.whl (3.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 1.4 MB/s eta 0:00:00
+Collecting msal<2.0.0,>=1.20.0 (from azure-identity<2,>=1.6.0->hail==0.2.108)
+  Downloading msal-1.22.0-py2.py3-none-any.whl (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.0/90.0 kB 2.2 MB/s eta 0:00:00
+Collecting msal-extensions<2.0.0,>=0.3.0 (from azure-identity<2,>=1.6.0->hail==0.2.108)
+  Downloading msal_extensions-1.0.0-py2.py3-none-any.whl (19 kB)
+Collecting isodate>=0.6.1 (from azure-storage-blob<13,>=12.11.0->hail==0.2.108)
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 5.1 MB/s eta 0:00:00
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3<2.0,>=1.17->hail==0.2.108)
+  Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Collecting s3transfer<0.7.0,>=0.6.0 (from boto3<2.0,>=1.17->hail==0.2.108)
+  Downloading s3transfer-0.6.1-py3-none-any.whl (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.8/79.8 kB 7.3 MB/s eta 0:00:00
+Collecting urllib3<1.27,>=1.25.4 (from botocore<2.0,>=1.20->hail==0.2.108)
+  Downloading urllib3-1.26.15-py2.py3-none-any.whl (140 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.9/140.9 kB 4.4 MB/s eta 0:00:00
+Collecting wrapt<2,>=1.10 (from Deprecated<1.3,>=1.2.10->hail==0.2.108)
+  Downloading wrapt-1.15.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (81 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 81.7/81.7 kB 7.6 MB/s eta 0:00:00
+Collecting google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5 (from google-cloud-storage>=1.25.*->hail==0.2.108)
+  Downloading google_api_core-2.11.0-py3-none-any.whl (120 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 120.3/120.3 kB 10.6 MB/s eta 0:00:00
+Collecting google-cloud-core<3.0dev,>=2.3.0 (from google-cloud-storage>=1.25.*->hail==0.2.108)
+  Downloading google_cloud_core-2.3.2-py2.py3-none-any.whl (29 kB)
+Collecting google-resumable-media>=2.3.2 (from google-cloud-storage>=1.25.*->hail==0.2.108)
+  Downloading google_resumable_media-2.5.0-py2.py3-none-any.whl (77 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.7/77.7 kB 8.6 MB/s eta 0:00:00
+Requirement already satisfied: setuptools in /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv/lib/python3.8/site-packages (from hurry.filesize<1,>=0.9->hail==0.2.108) (67.7.2)
+Requirement already satisfied: pytz>=2017.3 in /home/biocbuild/.cache/R/basilisk/1.13.0/BiocHail/1.1.1/bsklenv/lib/python3.8/site-packages (from pandas<1.5.0,>=1.3.0->hail==0.2.108) (2023.3)
+Collecting tenacity>=6.2.0 (from plotly<5.11,>=5.5.0->hail==0.2.108)
+  Downloading tenacity-8.2.2-py3-none-any.whl (24 kB)
+Collecting py4j==0.10.9 (from pyspark<3.2.0,>=3.1.1->hail==0.2.108)
+  Downloading py4j-0.10.9-py2.py3-none-any.whl (198 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.6/198.6 kB 14.8 MB/s eta 0:00:00
+Collecting idna<4,>=2.5 (from requests<3,>=2.25.1->hail==0.2.108)
+  Downloading idna-3.4-py3-none-any.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 8.5 MB/s eta 0:00:00
+Collecting certifi>=2017.4.17 (from requests<3,>=2.25.1->hail==0.2.108)
+  Downloading certifi-2023.5.7-py3-none-any.whl (156 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.0/157.0 kB 13.2 MB/s eta 0:00:00
+Collecting cffi>=1.12 (from cryptography>=2.5->azure-identity<2,>=1.6.0->hail==0.2.108)
+  Downloading cffi-1.15.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (449 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 449.9/449.9 kB 18.6 MB/s eta 0:00:00
+Collecting googleapis-common-protos<2.0dev,>=1.56.2 (from google-api-core!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0,<3.0.0dev,>=1.31.5->google-cloud-storage>=1.25.*->hail==0.2.108)
+  Downloading googleapis_common_protos-1.59.0-py2.py3-none-any.whl (223 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.6/223.6 kB 17.1 MB/s eta 0:00:00
+Collecting google-crc32c<2.0dev,>=1.0 (from google-resumable-media>=2.3.2->google-cloud-storage>=1.25.*->hail==0.2.108)
+  Downloading google_crc32c-1.5.0-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (33 kB)
+Collecting portalocker<3,>=1.0 (from msal-extensions<2.0.0,>=0.3.0->azure-identity<2,>=1.6.0->hail==0.2.108)
+  Downloading portalocker-2.7.0-py2.py3-none-any.whl (15 kB)
+Collecting pyasn1<0.6.0,>=0.4.6 (from pyasn1-modules>=0.2.1->google-auth==2.14.1->hail==0.2.108)
+  Downloading pyasn1-0.5.0-py2.py3-none-any.whl (83 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.9/83.9 kB 14.2 MB/s eta 0:00:00
+Collecting pycparser (from cffi>=1.12->cryptography>=2.5->azure-identity<2,>=1.6.0->hail==0.2.108)
+  Downloading pycparser-2.21-py2.py3-none-any.whl (118 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.7/118.7 kB 17.7 MB/s eta 0:00:00
+Building wheels for collected packages: bokeh, avro, hurry.filesize, parsimonious, pyspark
+  Building wheel for bokeh (setup.py): started
+  Building wheel for bokeh (setup.py): finished with status 'done'
+  Created wheel for bokeh: filename=bokeh-1.4.0-py3-none-any.whl size=23689195 sha256=4b7169f3c7ae751ed6d8e06b237bc55e9b2e75948386373dfd32408cfdb72a29
+  Stored in directory: /home/biocbuild/.cache/pip/wheels/4a/79/96/e953cfb5c24da5e5e03eb1ecb280ca88dce65661fb4d38c7b5
+  Building wheel for avro (pyproject.toml): started
+  Building wheel for avro (pyproject.toml): finished with status 'done'
+  Created wheel for avro: filename=avro-1.11.1-py2.py3-none-any.whl size=116718 sha256=6daf868d096cc35c555a0384984f0b4d7034384e46aac8a4efd3d0c7f43c7987
+  Stored in directory: /home/biocbuild/.cache/pip/wheels/27/d5/22/e3641b9a6a2669624c1d515f942bf8187f03c5c2151e13a76e
+  Building wheel for hurry.filesize (setup.py): started
+  Building wheel for hurry.filesize (setup.py): finished with status 'done'
+  Created wheel for hurry.filesize: filename=hurry.filesize-0.9-py3-none-any.whl size=4116 sha256=c081a11638ac6ade6ad098a5dbaebe348e4212085e17ceb579af339940d12df9
+  Stored in directory: /home/biocbuild/.cache/pip/wheels/15/4b/2b/e1eaf7375b72542a9a3f3c3fa66b7098cc9e8048fe345deace
+  Building wheel for parsimonious (setup.py): started
+  Building wheel for parsimonious (setup.py): finished with status 'done'
+  Created wheel for parsimonious: filename=parsimonious-0.8.1-py3-none-any.whl size=42707 sha256=1752c85c0f3a592550f10c0ec97c7d18464b8d19d1677c8b8e417d06f43a78aa
+  Stored in directory: /home/biocbuild/.cache/pip/wheels/d8/af/19/fb896f509a437aca2dcf62583e84d7fb2cd5b628c1564a609c
+  Building wheel for pyspark (setup.py): started
+  Building wheel for pyspark (setup.py): finished with status 'done'
+  Created wheel for pyspark: filename=pyspark-3.1.3-py2.py3-none-any.whl size=214463469 sha256=7d2cc85d658756405eb3d1255a0e6338cf3500c53842d39f12b61c39835cb94e
+  Stored in directory: /home/biocbuild/.cache/pip/wheels/d1/b2/3a/d019c9382e6429910cef8ef0aae6a1970bfbbba13562590d70
+Successfully built bokeh avro hurry.filesize parsimonious pyspark
+Installing collected packages: sortedcontainers, py4j, commonmark, wrapt, uvloop, urllib3, typing-extensions, tornado, tenacity, tabulate, scipy, PyYAML, python-json-logger, pyspark, PyJWT, pygments, pycparser, pyasn1, protobuf, portalocker, pillow, parsimonious, packaging, orjson, nest-asyncio, multidict, MarkupSafe, jmespath, isodate, idna, hurry.filesize, humanize, google-crc32c, frozenlist, dill, decorator, charset-normalizer, certifi, cachetools, avro, attrs, asyncinit, async-timeout, yarl, rsa, rich, requests, pyasn1-modules, plotly, Jinja2, janus, googleapis-common-protos, google-resumable-media, Deprecated, cffi, botocore, aiosignal, s3transfer, google-auth, cryptography, bokeh, azure-core, aiohttp, google-api-core, boto3, azure-storage-blob, aiohttp-session, msal, google-cloud-core, msal-extensions, google-cloud-storage, azure-identity, hail, ukbb-common, ukbb_pan_ancestry
+Successfully installed Deprecated-1.2.13 Jinja2-3.0.3 MarkupSafe-2.1.2 PyJWT-2.7.0 PyYAML-6.0 aiohttp-3.8.4 aiohttp-session-2.12.0 aiosignal-1.3.1 async-timeout-4.0.2 asyncinit-0.2.4 attrs-23.1.0 avro-1.11.1 azure-core-1.26.4 azure-identity-1.13.0 azure-storage-blob-12.16.0 bokeh-1.4.0 boto3-1.26.138 botocore-1.29.138 cachetools-5.3.0 certifi-2023.5.7 cffi-1.15.1 charset-normalizer-3.1.0 commonmark-0.9.1 cryptography-40.0.2 decorator-4.4.2 dill-0.3.6 frozenlist-1.3.3 google-api-core-2.11.0 google-auth-2.14.1 google-cloud-core-2.3.2 google-cloud-storage-2.9.0 google-crc32c-1.5.0 google-resumable-media-2.5.0 googleapis-common-protos-1.59.0 hail-0.2.108 humanize-1.1.0 hurry.filesize-0.9 idna-3.4 isodate-0.6.1 janus-1.0.0 jmespath-1.0.1 msal-1.22.0 msal-extensions-1.0.0 multidict-6.0.4 nest-asyncio-1.5.6 orjson-3.8.12 packaging-23.1 parsimonious-0.8.1 pillow-9.5.0 plotly-5.10.0 portalocker-2.7.0 protobuf-3.20.2 py4j-0.10.9 pyasn1-0.5.0 pyasn1-modules-0.3.0 pycparser-2.21 pygments-2.15.1 pyspark-3.1.3 python-json-logger-2.0.7 requests-2.31.0 rich-12.6.0 rsa-4.9 s3transfer-0.6.1 scipy-1.9.3 sortedcontainers-2.4.0 tabulate-0.9.0 tenacity-8.2.2 tornado-6.3.2 typing-extensions-4.6.0 ukbb-common-0.1.2 ukbb_pan_ancestry-0.0.2 urllib3-1.26.15 uvloop-0.17.0 wrapt-1.15.0 yarl-1.9.2
+2023-05-23 08:19:07.061 WARN  NativeCodeLoader:60 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2023-05-23 08:19:07.984 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:07.988 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:07.992 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:07.996 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.000 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.004 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.008 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.012 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.016 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.020 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.023 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.062 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.066 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.070 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.074 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.080 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:19:08.088 ERROR SparkContext:94 - Error initializing SparkContext.
+java.net.BindException: Cannot assign requested address: Service 'sparkDriver' failed after 16 retries (on a random free port)! Consider explicitly setting the appropriate binding address for the service 'sparkDriver' (for example spark.driver.bindAddress for SparkDriver) to the correct binding address.
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Initializing Hail with default parameters...
+2023-05-23 08:20:02.941 WARN  SparkContext:69 - Another SparkContext is being constructed (or threw an exception in its constructor). This may indicate an error, since only one SparkContext should be running in this JVM (see SPARK-2243). The other SparkContext was created at:
+org.apache.spark.SparkContext.<init>(SparkContext.scala:85)
+is.hail.backend.spark.SparkBackend$.configureAndCreateSparkContext(SparkBackend.scala:148)
+is.hail.backend.spark.SparkBackend$.apply(SparkBackend.scala:230)
+is.hail.backend.spark.SparkBackend.apply(SparkBackend.scala)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+py4j.Gateway.invoke(Gateway.java:282)
+py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+py4j.commands.CallCommand.execute(CallCommand.java:79)
+py4j.GatewayConnection.run(GatewayConnection.java:238)
+java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-23 08:20:02.971 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.973 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.976 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.979 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.982 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.985 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.988 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.992 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.995 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:02.998 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.002 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.005 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.008 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.011 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.014 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.016 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.021 ERROR SparkContext:94 - Error initializing SparkContext.
+java.net.BindException: Cannot assign requested address: Service 'sparkDriver' failed after 16 retries (on a random free port)! Consider explicitly setting the appropriate binding address for the service 'sparkDriver' (for example spark.driver.bindAddress for SparkDriver) to the correct binding address.
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Quitting from lines 75-79 (gwas_tut.Rmd) 
+Error: processing vignette 'gwas_tut.Rmd' failed with diagnostics:
+py4j.protocol.Py4JJavaError: An error occurred while calling z:is.hail.backend.spark.SparkBackend.apply.
+<... omitted ...>a:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+See `reticulate::py_last_error()` for details
+--- failed re-building ‘gwas_tut.Rmd’
+
+--- re-building ‘large_t2t.Rmd’ using rmarkdown
+2023-05-23 08:20:03.106 WARN  SparkContext:69 - Another SparkContext is being constructed (or threw an exception in its constructor). This may indicate an error, since only one SparkContext should be running in this JVM (see SPARK-2243). The other SparkContext was created at:
+org.apache.spark.SparkContext.<init>(SparkContext.scala:85)
+is.hail.backend.spark.SparkBackend$.configureAndCreateSparkContext(SparkBackend.scala:148)
+is.hail.backend.spark.SparkBackend$.apply(SparkBackend.scala:230)
+is.hail.backend.spark.SparkBackend.apply(SparkBackend.scala)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+py4j.Gateway.invoke(Gateway.java:282)
+py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+py4j.commands.CallCommand.execute(CallCommand.java:79)
+py4j.GatewayConnection.run(GatewayConnection.java:238)
+java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-23 08:20:03.134 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.138 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.141 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.144 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.147 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.151 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.154 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.157 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.161 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.164 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.167 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.170 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.173 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.176 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.179 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.188 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.193 ERROR SparkContext:94 - Error initializing SparkContext.
+java.net.BindException: Cannot assign requested address: Service 'sparkDriver' failed after 16 retries (on a random free port)! Consider explicitly setting the appropriate binding address for the service 'sparkDriver' (for example spark.driver.bindAddress for SparkDriver) to the correct binding address.
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Initializing Hail with default parameters...
+2023-05-23 08:20:03.208 WARN  SparkContext:69 - Another SparkContext is being constructed (or threw an exception in its constructor). This may indicate an error, since only one SparkContext should be running in this JVM (see SPARK-2243). The other SparkContext was created at:
+org.apache.spark.SparkContext.<init>(SparkContext.scala:85)
+is.hail.backend.spark.SparkBackend$.configureAndCreateSparkContext(SparkBackend.scala:148)
+is.hail.backend.spark.SparkBackend$.apply(SparkBackend.scala:230)
+is.hail.backend.spark.SparkBackend.apply(SparkBackend.scala)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+py4j.Gateway.invoke(Gateway.java:282)
+py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+py4j.commands.CallCommand.execute(CallCommand.java:79)
+py4j.GatewayConnection.run(GatewayConnection.java:238)
+java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-23 08:20:03.234 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.237 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.240 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.243 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.286 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.289 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.291 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.294 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.297 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.300 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.303 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.306 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.309 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.312 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.315 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.317 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.322 ERROR SparkContext:94 - Error initializing SparkContext.
+java.net.BindException: Cannot assign requested address: Service 'sparkDriver' failed after 16 retries (on a random free port)! Consider explicitly setting the appropriate binding address for the service 'sparkDriver' (for example spark.driver.bindAddress for SparkDriver) to the correct binding address.
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Quitting from lines 69-79 (large_t2t.Rmd) 
+Error: processing vignette 'large_t2t.Rmd' failed with diagnostics:
+py4j.protocol.Py4JJavaError: An error occurred while calling z:is.hail.backend.spark.SparkBackend.apply.
+<... omitted ...>a:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+See `reticulate::py_last_error()` for details
+--- failed re-building ‘large_t2t.Rmd’
+
+--- re-building ‘ukbb.Rmd’ using rmarkdown
+2023-05-23 08:20:03.438 WARN  SparkContext:69 - Another SparkContext is being constructed (or threw an exception in its constructor). This may indicate an error, since only one SparkContext should be running in this JVM (see SPARK-2243). The other SparkContext was created at:
+org.apache.spark.SparkContext.<init>(SparkContext.scala:85)
+is.hail.backend.spark.SparkBackend$.configureAndCreateSparkContext(SparkBackend.scala:148)
+is.hail.backend.spark.SparkBackend$.apply(SparkBackend.scala:230)
+is.hail.backend.spark.SparkBackend.apply(SparkBackend.scala)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+py4j.Gateway.invoke(Gateway.java:282)
+py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+py4j.commands.CallCommand.execute(CallCommand.java:79)
+py4j.GatewayConnection.run(GatewayConnection.java:238)
+java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-23 08:20:03.465 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.468 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.471 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.474 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.477 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.479 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.482 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.485 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.488 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.491 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.493 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.496 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.499 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.502 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.505 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.508 WARN  Utils:69 - Service 'sparkDriver' could not bind on a random free port. You may check whether configuring an appropriate binding address.
+2023-05-23 08:20:03.512 ERROR SparkContext:94 - Error initializing SparkContext.
+java.net.BindException: Cannot assign requested address: Service 'sparkDriver' failed after 16 retries (on a random free port)! Consider explicitly setting the appropriate binding address for the service 'sparkDriver' (for example spark.driver.bindAddress for SparkDriver) to the correct binding address.
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:562)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:506)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:491)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:260)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:356)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Quitting from lines 41-45 (ukbb.Rmd) 
+Error: processing vignette 'ukbb.Rmd' failed with diagnostics:
+no ukbb_sumst in cache and cannot populate with download, try another method.
+--- failed re-building ‘ukbb.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘gwas_tut.Rmd’ ‘large_t2t.Rmd’ ‘ukbb.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

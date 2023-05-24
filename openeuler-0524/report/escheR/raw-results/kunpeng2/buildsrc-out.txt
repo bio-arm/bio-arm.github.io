@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data escheR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘escheR/DESCRIPTION’ ... OK
+* preparing ‘escheR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘SpatialExperiment’ is not available for package ‘escheR’
+* removing ‘/tmp/Rtmp2Tqk11/Rinst3ce1b2181219e2/escheR’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,128 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data mosaics
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘mosaics/DESCRIPTION’ ... OK
+* preparing ‘mosaics’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘mosaics-example.Rnw’ using Sweave
+Loading required package: Rcpp
+Use the provided BAM index file.
+Chromosome information is extracted from the BAM file.
+Info: reading the aligned read file and processing it into bin-level files...
+Info: done!
+Use the provided BAM index file.
+Chromosome information is extracted from the BAM file.
+Info: reading the aligned read file and processing it into bin-level files...
+Info: done!
+Info: reading and preprocessing bin-level data...
+Info: data contains only one chromosome.
+Info: done!
+
+Info: background estimation based on robust method of moment.
+Info: two-sample analysis (Input only).
+Info: use adaptive griding.
+Info: fitting background model...
+Warning in rlm.default(x, y, weights, method = method, wt.method = wt.method,  :
+  'rlm' failed to converge in 20 steps
+Info: done!
+Info: fitting one-signal-component model...
+Info: fitting two-signal-component model...
+Info: calculating BIC of fitted models...
+Info: done!
+Info: use two-signal-component model.
+Info: calculating posterior probabilities...
+Info: calling peaks...
+Info: done!
+Use the provided BAM index file.
+Info: done!
+Use the provided BAM index file.
+Chromosome information is extracted from the BAM file.
+Info: reading the aligned read file and processing it into bin-level files...
+Info: done!
+Use the provided BAM index file.
+Chromosome information is extracted from the BAM file.
+Info: reading the aligned read file and processing it into bin-level files...
+Info: done!
+Info: reading and preprocessing bin-level data...
+Info: data contains only one chromosome.
+Info: done!
+
+Info: background estimation based on robust method of moment.
+Info: two-sample analysis (Input only).
+Info: use adaptive griding.
+Info: fitting background model...
+Warning in rlm.default(x, y, weights, method = method, wt.method = wt.method,  :
+  'rlm' failed to converge in 20 steps
+Info: done!
+Info: fitting one-signal-component model...
+Info: fitting two-signal-component model...
+Info: calculating BIC of fitted models...
+Info: done!
+Info: initialize MOSAiCS-HMM using MOSAiCS peak calling results.
+Info: use two-signal-component model.
+Info: initializing HMM parameters...
+Info: estimating HMM parameters...
+Info: calculating BIC of fitted models...
+Info: done!
+Info: summarizing ChIP-seq data...
+Info: simulating background tags...
+Info: simulating ChIP tags for MOSAiCS...
+Info: simulating ChIP tags for MOSAiCS-HMM...
+Info: peak calling using posterior decoding.
+Info: calculating posterior probabilities...
+Info: calling peaks...
+Info: done!
+Info: Loading and processing ChIP sample file...
+Info: Single-end tag (SET) is assumed (PET=FALSE).
+Info: Average fragment length is set as 200 (fragLen=200).
+Info: Use the provided BAM index file.
+Info: Reading and processing aligned read file...
+Info: Processing and combining peak list and reads...
+Info: Calculating coverage...
+Info: Done!
+
+Info: Loading and processing matched control sample file...
+Info: Single-end tag (SET) is assumed (PET=FALSE).
+Info: Average fragment length is set as 200 (fragLen=200).
+Info: Use the provided BAM index file.
+Info: Reading and processing aligned read file...
+Info: Processing and combining peak list and reads...
+Info: Calculating coverage...
+Info: Done!
+
+Info: reading and preprocessing bin-level data...
+Info: assume that data contains only one chromosome
+Info: done!
+
+Error: processing vignette 'mosaics-example.Rnw' failed with diagnostics:
+unable to run pdflatex on 'mosaics-example.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.15 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘mosaics-example.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘mosaics-example.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

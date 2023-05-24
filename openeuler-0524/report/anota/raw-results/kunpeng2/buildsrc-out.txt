@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data anota
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘anota/DESCRIPTION’ ... OK
+* preparing ‘anota’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘anota.Rnw’ using Sweave
+Loading required package: qvalue
+Error: processing vignette 'anota.Rnw' failed with diagnostics:
+unable to run pdflatex on 'anota.tex'
+LaTeX errors:
+! LaTeX Error: File `isorot.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.10 \usepackage
+                {epsfig}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘anota.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘anota.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

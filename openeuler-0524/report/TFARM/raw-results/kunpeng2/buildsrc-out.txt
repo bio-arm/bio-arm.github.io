@@ -1,0 +1,52 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TFARM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TFARM/DESCRIPTION’ ... OK
+* preparing ‘TFARM’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘TFARM.Rnw’ using knitr
+Warning in has_utility("pdfcrop") :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+Error: processing vignette 'TFARM.Rnw' failed with diagnostics:
+unable to run pdflatex on 'TFARM.tex'
+LaTeX errors:
+! LaTeX Error: File `algorithm2e.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.35 \usepackage
+                {color}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘TFARM.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘TFARM.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

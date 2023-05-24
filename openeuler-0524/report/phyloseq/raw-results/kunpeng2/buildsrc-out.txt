@@ -1,0 +1,68 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data phyloseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘phyloseq/DESCRIPTION’ ... OK
+* preparing ‘phyloseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘phyloseq-FAQ.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-FAQ_files/figure-html/unnamed-chunk-2-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-FAQ_files/figure-html/unnamed-chunk-3-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-FAQ_files/figure-html/unnamed-chunk-3-2.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-FAQ_files/figure-html/unnamed-chunk-4-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-FAQ_files/figure-html/unnamed-chunk-4-2.png" but not available.
+--- finished re-building ‘phyloseq-FAQ.Rmd’
+
+--- re-building ‘phyloseq-analysis.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/richness_estimates0-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/richness_estimates-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GP-chl-tree-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/EntAbundPlot-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/entbarplot0-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPheatmap-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPheatmap-rename-axes-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/plot_sample_network-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/PCoAScree-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPfig5ax1213-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPfig5ax1213-2.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GP_UF_NMDS0-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPCAscree-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPCA1234-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPCA1234-2.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPCAspecplot0-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPCAspecplotTopo0-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPCAjitter0-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPtaxaplot0-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPdpcoa01-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPdpcoa02-1.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPdpcoa02-2.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/GPdpcoa02-3.png" but not available.
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-analysis_files/figure-html/unnamed-chunk-12-1.png" but not available.
+--- finished re-building ‘phyloseq-analysis.Rmd’
+
+--- re-building ‘phyloseq-basics.Rmd’ using rmarkdown
+YAML parse exception at line 2, column 6,
+while scanning a block scalar:
+did not find expected comment or line break
+Error: processing vignette 'phyloseq-basics.Rmd' failed with diagnostics:
+pandoc document conversion failed with error 64
+--- failed re-building ‘phyloseq-basics.Rmd’
+
+--- re-building ‘phyloseq-mixture-models.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/Rtmpqq14bA/Rbuilddd864ed16e2e/phyloseq/vignettes/phyloseq-mixture-models_files/figure-html/bar-plot-1.png" but not available.
+--- finished re-building ‘phyloseq-mixture-models.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘phyloseq-basics.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

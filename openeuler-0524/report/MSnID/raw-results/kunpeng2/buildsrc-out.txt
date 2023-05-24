@@ -1,0 +1,237 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MSnID
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MSnID/DESCRIPTION’ ... OK
+* preparing ‘MSnID’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘handling_mods.Rnw’ using Sweave
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Note, the anticipated/suggested columns in the
+peptide-to-spectrum matching results are:
+-----------------------------------------------
+accession
+calculatedMassToCharge
+chargeState
+experimentalMassToCharge
+isDecoy
+peptide
+spectrumFile
+spectrumID
+Reading from mzIdentMLs ...
+
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Detected extra chararacters in the peptide sequences!
+
+Peptides with no modifications in question were detected. 
+The correspoding identifications will be removed.
+
+
+Error: processing vignette 'handling_mods.Rnw' failed with diagnostics:
+ chunk 13 
+Error : Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+
+--- failed re-building ‘handling_mods.Rnw’
+
+--- re-building ‘msnid_vignette.Rnw’ using Sweave
+Note, the anticipated/suggested columns in the
+peptide-to-spectrum matching results are:
+-----------------------------------------------
+accession
+calculatedMassToCharge
+chargeState
+experimentalMassToCharge
+isDecoy
+peptide
+spectrumFile
+spectrumID
+Reading from mzIdentMLs ...
+
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning in type.convert.default(...) :
+  'as.is' should be specified by the caller; using TRUE
+Warning: The dot-dot notation (`..count..`) was deprecated in ggplot2 3.4.0.
+ℹ Please use `after_stat(count)` instead.
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: mzR
+Loading required package: ProtGenerics
+
+Attaching package: ‘ProtGenerics’
+
+The following object is masked from ‘package:MSnID’:
+
+    peptides
+
+The following object is masked from ‘package:stats’:
+
+    smooth
+
+
+This is MSnbase version 2.27.0 
+  Visit https://lgatto.github.io/MSnbase/ to get started.
+
+
+Attaching package: ‘MSnbase’
+
+The following object is masked _by_ ‘.GlobalEnv’:
+
+    msnset
+
+The following object is masked from ‘package:base’:
+
+    trimws
+
+Warning: Parameter 'fun' is deprecated. Please use 'method' instead
+Error: processing vignette 'msnid_vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'msnid_vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘msnid_vignette.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘handling_mods.Rnw’ ‘msnid_vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

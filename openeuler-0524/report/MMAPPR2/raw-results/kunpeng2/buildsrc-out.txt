@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MMAPPR2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MMAPPR2/DESCRIPTION’ ... OK
+* preparing ‘MMAPPR2’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MMAPPR2.Rmd’ using rmarkdown
+running: bash  -c "# Cooking show code to account for cases when samtools is not installed
+echo '#!/bin/bash' > /tmp/samtools
+chmod 755 /tmp/samtools"
+Quitting from lines 95-118 (MMAPPR2.Rmd) 
+Error: processing vignette 'MMAPPR2.Rmd' failed with diagnostics:
+invalid class "VEPFlags" object: Ensembl >=88 requires vep script  (not variant_effect_predictor.pl)
+--- failed re-building ‘MMAPPR2.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘MMAPPR2.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

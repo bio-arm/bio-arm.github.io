@@ -1,0 +1,712 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data diffcoexp
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘diffcoexp/DESCRIPTION’ ... OK
+* preparing ‘diffcoexp’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘diffcoexp.Rnw’ using Sweave
+cor                   package:WGCNA                    R Documentation
+
+_F_a_s_t _c_a_l_c_u_l_a_t_i_o_n_s _o_f _P_e_a_r_s_o_n _c_o_r_r_e_l_a_t_i_o_n.
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     These functions implements a faster calculation of (weighted)
+     Pearson correlation.
+
+     The speedup against the R's standard ‘cor’ function will be
+     substantial particularly if the input matrix only contains a small
+     number of missing data. If there are no missing data, or the
+     missing data are numerous, the speedup will be smaller.
+
+_U_s_a_g_e:
+
+     cor(x, y = NULL, 
+         use = "all.obs", 
+         method = c("pearson", "kendall", "spearman"),
+         weights.x = NULL,
+         weights.y = NULL,
+         quick = 0, 
+         cosine = FALSE, 
+         cosineX = cosine,
+         cosineY = cosine, 
+         drop = FALSE,
+         nThreads = 0, 
+         verbose = 0, indent = 0)
+     
+     corFast(x, y = NULL, 
+         use = "all.obs", 
+         quick = 0, nThreads = 0, 
+         verbose = 0, indent = 0)
+     
+     cor1(x, use = "all.obs", verbose = 0, indent = 0)
+     
+_A_r_g_u_m_e_n_t_s:
+
+       x: a numeric vector or a matrix. If ‘y’ is null, ‘x’ must be a
+          matrix.
+
+       y: a numeric vector or a matrix. If not given, correlations of
+          columns of ‘x’ will be calculated.
+
+     use: a character string specifying the handling of missing data.
+          The fast calculations currently support ‘"all.obs"’ and
+          ‘"pairwise.complete.obs"’; for other options, see R's
+          standard correlation function ‘cor’.  Abbreviations are
+          allowed.
+
+  method: a character string specifying the method to be used. Fast
+          calculations are currently available only for ‘"pearson"’.
+
+weights.x: optional observation weights for ‘x’. A matrix of the same
+          dimensions as ‘x’, containing non-negative weights. Only used
+          in fast calculations: ‘methods’ must be ‘"pearson"’ and ‘use’
+          must be one of ‘"all.obs", "pairwise.complete.obs"’.
+
+weights.y: optional observation weights for ‘y’. A matrix of the same
+          dimensions as ‘y’, containing non-negative weights. Only used
+          in fast calculations: ‘methods’ must be ‘"pearson"’ and ‘use’
+          must be one of ‘"all.obs", "pairwise.complete.obs"’.
+
+   quick: real number between 0 and 1 that controls the precision of
+          handling of missing data in the calculation of correlations.
+          See details.
+
+  cosine: logical: calculate cosine correlation? Only valid for
+          ‘method="pearson"’. Cosine correlation is similar to Pearson
+          correlation but the mean subtraction is not performed. The
+          result is the cosine of the angle(s) between (the columns of)
+          ‘x’ and ‘y’.
+
+ cosineX: logical: use the cosine calculation for ‘x’? This setting
+          does not affect ‘y’ and can be used to give a hybrid
+          cosine-standard correlation.
+
+ cosineY: logical: use the cosine calculation for ‘y’? This setting
+          does not affect ‘x’ and can be used to give a hybrid
+          cosine-standard correlation.
+
+    drop: logical: should the result be turned into a vector if it is
+          effectively one-dimensional?
+
+nThreads: non-negative integer specifying the number of parallel
+          threads to be used by certain parts of correlation
+          calculations.  This option only has an effect on systems on
+          which a POSIX thread library is available (which currently
+          includes Linux and Mac OSX, but excludes Windows). If zero,
+          the number of online processors will be used if it can be
+          determined dynamically, otherwise correlation calculations
+          will use 2 threads.  Note that this option does not affect
+          what is usually the most expensive part of the calculation,
+          namely the matrix multiplication. The matrix multiplication
+          is carried out by BLAS routines provided by R; these can be
+          sped up by installing a fast BLAS and making R use it.
+
+ verbose: Controls the level of verbosity. Values above zero will cause
+          a small amount of diagnostic messages to be printed.
+
+  indent: Indentation of printed diagnostic messages. Each unit above
+          zero adds two spaces.
+
+_D_e_t_a_i_l_s:
+
+     The fast calculations are currently implemented only for
+     ‘method="pearson"’ and ‘use’ either ‘"all.obs"’ or
+     ‘"pairwise.complete.obs"’.  The ‘corFast’ function is a wrapper
+     that calls the function ‘cor’. If the combination of ‘method’ and
+     ‘use’ is implemented by the fast calculations, the fast code is
+     executed; otherwise, R's own correlation ‘cor’ is executed.
+
+     The argument ‘quick’ specifies the precision of handling of
+     missing data. Zero will cause all calculations to be executed
+     precisely, which may be significantly slower than calculations
+     without missing data. Progressively higher values will speed up
+     the calculations but introduce progressively larger errors.
+     Without missing data, all column means and variances can be
+     pre-calculated before the covariances are calculated. When missing
+     data are present, exact calculations require the column means and
+     variances to be calculated for each covariance. The approximate
+     calculation uses the pre-calculated mean and variance and simply
+     ignores missing data in the covariance calculation. If the number
+     of missing data is high, the pre-calculated means and variances
+     may be very different from the actual ones, thus potentially
+     introducing large errors.  The ‘quick’ value times the number of
+     rows specifies the maximum difference in the number of missing
+     entries for mean and variance calculations on the one hand and
+     covariance on the other hand that will be tolerated before a
+     recalculation is triggered. The hope is that if only a few missing
+     data are treated approximately, the error introduced will be small
+     but the potential speedup can be significant.
+
+_V_a_l_u_e:
+
+     The matrix of the Pearson correlations of the columns of ‘x’ with
+     columns of ‘y’ if ‘y’ is given, and the correlations of the
+     columns of ‘x’ if ‘y’ is not given.
+
+_N_o_t_e:
+
+     The implementation uses the BLAS library matrix multiplication
+     function for the most expensive step of the calculation. Using a
+     tuned, architecture-specific BLAS may significantly improve the
+     performance of this function.
+
+     The values returned by the corFast function may differ from the
+     values returned by R's function ‘cor’ by rounding errors on the
+     order of 1e-15.
+
+_A_u_t_h_o_r(_s):
+
+     Peter Langfelder
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Peter Langfelder, Steve Horvath (2012) Fast R Functions for Robust
+     Correlations and Hierarchical Clustering.  Journal of Statistical
+     Software, 46(11), 1-17.  <https://www.jstatsoft.org/v46/i11/>
+
+_S_e_e _A_l_s_o:
+
+     R's standard Pearson correlation function ‘cor’.
+
+_E_x_a_m_p_l_e_s:
+
+     ## Test the speedup compared to standard function cor
+     
+     # Generate a random matrix with 200 rows and 1000 columns
+     
+     set.seed(10)
+     nrow = 100;
+     ncol = 500;
+     data = matrix(rnorm(nrow*ncol), nrow, ncol);
+     
+     ## First test: no missing data
+     
+     system.time( {corStd = stats::cor(data)} );
+     
+     system.time( {corFast = cor(data)} );
+     
+     all.equal(corStd, corFast)
+     
+     # Here R's standard correlation performs very well.
+     
+     # We now add a few missing entries.
+     
+     data[sample(nrow, 10), 1] = NA;
+     
+     # And test the correlations again...
+     
+     system.time( {corStd = stats::cor(data, use ='p')} );
+     
+     system.time( {corFast = cor(data, use = 'p')} );
+     
+     all.equal(corStd, corFast)
+     
+     # Here the R's standard correlation slows down considerably
+     # while corFast still retains it speed. Choosing
+     # higher ncol above will make the difference more pronounced.
+     
+
+p.adjust                 package:stats                 R Documentation
+
+_A_d_j_u_s_t _P-_v_a_l_u_e_s _f_o_r _M_u_l_t_i_p_l_e _C_o_m_p_a_r_i_s_o_n_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Given a set of p-values, returns p-values adjusted using one of
+     several methods.
+
+_U_s_a_g_e:
+
+     p.adjust(p, method = p.adjust.methods, n = length(p))
+     
+     p.adjust.methods
+     # c("holm", "hochberg", "hommel", "bonferroni", "BH", "BY",
+     #   "fdr", "none")
+     
+_A_r_g_u_m_e_n_t_s:
+
+       p: numeric vector of p-values (possibly with ‘NA’s).  Any other
+          R object is coerced by ‘as.numeric’.
+
+  method: correction method, a ‘character’ string.  Can be abbreviated.
+
+       n: number of comparisons, must be at least ‘length(p)’; only set
+          this (to non-default) when you know what you are doing!
+
+_D_e_t_a_i_l_s:
+
+     The adjustment methods include the Bonferroni correction
+     (‘"bonferroni"’) in which the p-values are multiplied by the
+     number of comparisons.  Less conservative corrections are also
+     included by Holm (1979) (‘"holm"’), Hochberg (1988)
+     (‘"hochberg"’), Hommel (1988) (‘"hommel"’), Benjamini & Hochberg
+     (1995) (‘"BH"’ or its alias ‘"fdr"’), and Benjamini & Yekutieli
+     (2001) (‘"BY"’), respectively.  A pass-through option (‘"none"’)
+     is also included.  The set of methods are contained in the
+     ‘p.adjust.methods’ vector for the benefit of methods that need to
+     have the method as an option and pass it on to ‘p.adjust’.
+
+     The first four methods are designed to give strong control of the
+     family-wise error rate.  There seems no reason to use the
+     unmodified Bonferroni correction because it is dominated by Holm's
+     method, which is also valid under arbitrary assumptions.
+
+     Hochberg's and Hommel's methods are valid when the hypothesis
+     tests are independent or when they are non-negatively associated
+     (Sarkar, 1998; Sarkar and Chang, 1997).  Hommel's method is more
+     powerful than Hochberg's, but the difference is usually small and
+     the Hochberg p-values are faster to compute.
+
+     The ‘"BH"’ (aka ‘"fdr"’) and ‘"BY"’ methods of Benjamini,
+     Hochberg, and Yekutieli control the false discovery rate, the
+     expected proportion of false discoveries amongst the rejected
+     hypotheses.  The false discovery rate is a less stringent
+     condition than the family-wise error rate, so these methods are
+     more powerful than the others.
+
+     Note that you can set ‘n’ larger than ‘length(p)’ which means the
+     unobserved p-values are assumed to be greater than all the
+     observed p for ‘"bonferroni"’ and ‘"holm"’ methods and equal to 1
+     for the other methods.
+
+_V_a_l_u_e:
+
+     A numeric vector of corrected p-values (of the same length as ‘p’,
+     with names copied from ‘p’).
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Benjamini, Y., and Hochberg, Y. (1995).  Controlling the false
+     discovery rate: a practical and powerful approach to multiple
+     testing.  _Journal of the Royal Statistical Society Series B_,
+     *57*, 289-300.  doi:10.1111/j.2517-6161.1995.tb02031.x
+     <https://doi.org/10.1111/j.2517-6161.1995.tb02031.x>.
+
+     Benjamini, Y., and Yekutieli, D. (2001).  The control of the false
+     discovery rate in multiple testing under dependency.  _Annals of
+     Statistics_, *29*, 1165-1188.  doi:10.1214/aos/1013699998
+     <https://doi.org/10.1214/aos/1013699998>.
+
+     Holm, S. (1979).  A simple sequentially rejective multiple test
+     procedure.  _Scandinavian Journal of Statistics_, *6*, 65-70.
+     <https://www.jstor.org/stable/4615733>.
+
+     Hommel, G. (1988).  A stagewise rejective multiple test procedure
+     based on a modified Bonferroni test.  _Biometrika_, *75*, 383-386.
+     doi:10.2307/2336190 <https://doi.org/10.2307/2336190>.
+
+     Hochberg, Y. (1988).  A sharper Bonferroni procedure for multiple
+     tests of significance.  _Biometrika_, *75*, 800-803.
+     doi:10.2307/2336325 <https://doi.org/10.2307/2336325>.
+
+     Shaffer, J. P. (1995).  Multiple hypothesis testing.  _Annual
+     Review of Psychology_, *46*, 561-584.
+     doi:10.1146/annurev.ps.46.020195.003021
+     <https://doi.org/10.1146/annurev.ps.46.020195.003021>.  (An
+     excellent review of the area.)
+
+     Sarkar, S. (1998).  Some probability inequalities for ordered MTP2
+     random variables: a proof of Simes conjecture.  _Annals of
+     Statistics_, *26*, 494-504.  doi:10.1214/aos/1028144846
+     <https://doi.org/10.1214/aos/1028144846>.
+
+     Sarkar, S., and Chang, C. K. (1997).  The Simes method for
+     multiple hypothesis testing with positively dependent test
+     statistics.  _Journal of the American Statistical Association_,
+     *92*, 1601-1608.  doi:10.2307/2965431
+     <https://doi.org/10.2307/2965431>.
+
+     Wright, S. P. (1992).  Adjusted P-values for simultaneous
+     inference.  _Biometrics_, *48*, 1005-1013.  doi:10.2307/2532694
+     <https://doi.org/10.2307/2532694>.  (Explains the adjusted P-value
+     approach.)
+
+_S_e_e _A_l_s_o:
+
+     ‘pairwise.*’ functions such as ‘pairwise.t.test’.
+
+_E_x_a_m_p_l_e_s:
+
+     require(graphics)
+     
+     set.seed(123)
+     x <- rnorm(50, mean = c(rep(0, 25), rep(3, 25)))
+     p <- 2*pnorm(sort(-abs(x)))
+     
+     round(p, 3)
+     round(p.adjust(p), 3)
+     round(p.adjust(p, "BH"), 3)
+     
+     ## or all of them at once (dropping the "fdr" alias):
+     p.adjust.M <- p.adjust.methods[p.adjust.methods != "fdr"]
+     p.adj    <- sapply(p.adjust.M, function(meth) p.adjust(p, meth))
+     p.adj.60 <- sapply(p.adjust.M, function(meth) p.adjust(p, meth, n = 60))
+     stopifnot(identical(p.adj[,"none"], p), p.adj <= p.adj.60)
+     round(p.adj, 3)
+     ## or a bit nicer:
+     noquote(apply(p.adj, 2, format.pval, digits = 3))
+     
+     
+     ## and a graphic:
+     matplot(p, p.adj, ylab="p.adjust(p, meth)", type = "l", asp = 1, lty = 1:6,
+             main = "P-value adjustments")
+     legend(0.7, 0.6, p.adjust.M, col = 1:6, lty = 1:6)
+     
+     ## Can work with NA's:
+     pN <- p; iN <- c(46, 47); pN[iN] <- NA
+     pN.a <- sapply(p.adjust.M, function(meth) p.adjust(pN, meth))
+     ## The smallest 20 P-values all affected by the NA's :
+     round((pN.a / p.adj)[1:20, ] , 4)
+     
+
+diffcoexp              package:diffcoexp               R Documentation
+
+_D_i_f_f_e_r_e_n_t_i_a_l _c_o-_e_x_p_r_e_s_s_i_o_n _a_n_a_l_y_s_i_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function identifies differentially coexpressed links (DCLs)
+     and differentially coexpressed genes (DCGs).
+
+_U_s_a_g_e:
+
+     diffcoexp(exprs.1, exprs.2, r.method = c("pearson", "kendall", "spearman")[1],
+       q.method = c("BH", "holm", "hochberg", "hommel", "bonferroni", "BY", "fdr",
+       "none")[1], rth = 0.5, qth = 0.1, r.diffth = 0.5, q.diffth = 0.1,
+       q.dcgth = 0.1)
+     
+_A_r_g_u_m_e_n_t_s:
+
+ exprs.1: a SummarizedExperiment, data frame or matrix for condition 1,
+          with gene IDs as rownames and sample IDs as column names.
+
+ exprs.2: a SummarizedExperiment, data frame or matrix for condition 2,
+          with gene IDs as rownames and sample IDs as column names.
+
+r.method: a character string specifying the method to be used to
+          calculate correlation coefficients. It is passed to the cor
+          function of the WGCNA package.
+
+q.method: a character string specifying the method for adjusting p
+          values. It is passed to the p.adjust function of the stats
+          package.
+
+     rth: the cutoff of absolute value of correlation coefficients;
+          must be within [0,1].
+
+     qth: the cutoff of q-value (adjusted p value); must be within
+          [0,1].
+
+r.diffth: the cutoff of absolute value of the difference between the
+          correlation coefficients of the two conditions; must be
+          within [0,1].
+
+q.diffth: the cutoff of q-value (adjusted p value) of the difference
+          between the correlation coefficients of the two conditions;
+          must be within [0,1].
+
+ q.dcgth: the cutoff of q-value (adjusted p value) of the genes
+          enriched in the differentilly correlated gene pairs between
+          the two conditions; must be within [0,1].
+
+_D_e_t_a_i_l_s:
+
+     diffcoexp function identifies differentially coexpressed links
+     (DCLs) and differentially coexpressed genes (DCGs). DCLs are gene
+     pairs with significantly different correlation coefficients under
+     two conditions (de la Fuente 2010, Jiang et al., 2016). DCGs are
+     genes with significantly more DCLs than by chance (Yu et al.,
+     2011, Jiang et al., 2016). It takes two gene expression matrices
+     or data frames under two conditions as input, calculates gene-gene
+     correlations under two conditions and compare them with Fisher's Z
+     transformation, filter the correlation with the rth and qth and
+     the correlation changes with r.diffth and q.diffth. It identifies
+     DCGs using binomial probability model (Jiang et al., 2016).
+
+     The main steps are as follows:
+
+     a). Correlation coefficients and p values of all gene pairs under
+     two conditions are calculated.
+
+     b). The difference between the correlation coefficients under two
+     conditions are calculated and the p value is calculated using
+     Fisher's Z-transformation.
+
+     c). p values are adjusted.
+
+     d). Gene pairs (links) coexpressed in at least one condition are
+     identified using the criteria that at least one of the correlation
+     coefficients under two conditions has absolute value greater than
+     the threshold rth and adjusted p value less than the threshold
+     qth. The links that meet the criteria are included in CLs.
+
+     e). Differentially coexpressed gene pairs (links) are identified
+     from CLs using the criteria that the absolute value of the
+     difference between the two correlation coefficients is greater the
+     threshold r.diffth and adjusted p value is less than the threshold
+     q.diffth. The links that meet the criteria are included in DCLs.
+
+     f). The DCLs are classified into three categories: "same signed",
+     "diff signed", or "switched opposites". "same signed" indicates
+     that the gene pair has same signed correlation coefficients under
+     both conditions. "diff signed" indicates that the gene pair has
+     oppositely signed correlation coefficients under two conditions
+     and only one of them meets the criteria that absolute correlation
+     coefficient is greater than the threshold rth and adjusted p value
+     less than the threshold qth. "switched opposites" indicates that
+     the gene pair has oppositely signed correlation coefficients under
+     two conditions and both of them meet the criteria that absolute
+     correlation coefficient is greater than the threshold rth and
+     adjusted p value less than the threshold qth.
+
+     g). All the genes in DCLs are tested for their enrichment of DCLs,
+     i.e, whether they have more DCLs than by chance using binomial
+     probability model (Jiang et al., 2016). Those with adjusted p
+     value less than the threshold q.dcgth are included in DCGs.
+
+_V_a_l_u_e:
+
+     a list of two data frames.
+
+     The DCGs data frame contains genes that contribute to
+     differentially correlated links (gene pairs) with q value less
+     than q.dcgth. It has the following columns:
+
+  ‘Gene’: Gene ID
+
+   ‘CLs’: Number of links with absolute correlation coefficient greater
+          than rth and q value less than qth in at least one condition
+
+  ‘DCLs’: Number of links that meet the criteria for CLs and the
+          criteria that absolute difference between the correlation
+          coefficients of the two condition is greater than r.diffth
+          and q value less than q.diffth
+
+‘DCL.same’: Number of subset of DCLs with same signed correlation
+          coefficients in both conditions
+
+‘DCL.diff’: Number of subset of DCLs with oppositely signed correlation
+          coefficients under two conditions but only one of them has
+          absolute correlation coefficient greater than rth and q value
+          less than qth
+
+‘DCL.switch’: Number of subset of DCLs with oppositely signed
+          correlation coefficients under two conditions and both of
+          them have absolute correlation coefficient greater than rth
+          and q value less than qth
+
+     ‘p’: p value of having >=DCLs given CLs
+
+     ‘q’: adjusted p value
+
+     The DCLs data frame contains the differentially correlated links
+     (gene pairs) that meet the criteria that at least one of their
+     correlation coefficients (cor.1 and/or cor.2) is greater than rth
+     with q value (q.1 and/or q.2) less than qth and the absolute value
+     of the difference between the correlation coefficients under two
+     conditions (cor.diff) is greater than r.diffth with q.diffcor less
+     than q.diffth. It has the following columns:
+
+‘Gene.1’: Gene ID
+
+‘Gene.2’: Gene ID
+
+ ‘cor.1’: correlation coefficients under condition 1
+
+ ‘cor.2’: correlation coefficients under condition 2
+
+‘cor.diff’: difference between correlation coefficients under condition
+          2 and condition 1
+
+   ‘p.1’: p value under null hypothesis that correlation coefficient
+          under condition 1 equals to zero
+
+   ‘p.2’: p value under null hypothesis that correlation coefficient
+          under condition 2 equals to zero
+
+‘p.diffcor’: p value under null hypothesis that difference between two
+          correlation coefficients under two conditions equals to zero
+          using Fisher's r-to-Z transformation
+
+   ‘q.1’: adjusted p value under null hypothesis that correlation
+          coefficient under condition 1 equals to zero
+
+   ‘q.2’: adjusted p value under null hypothesis that correlation
+          coefficient under condition 2 equals to zero
+
+‘q.diffcor’: adjusted p value under null hypothesis that the difference
+          between two correlation coefficients under two conditions
+          equals to zero using Fisher's r-to-Z transformation
+
+  ‘type’: can have value "same signed", "diff signed", or "switched
+          opposites". "same signed" indicates that the gene pair has
+          same signed correlation coefficients under both conditions.
+          "diff signed" indicates that the gene pair has oppositely
+          signed correlation coefficients under two conditions and only
+          one of them meets the criteria that absolute correlation
+          coefficient is greater than rth and q value less than qth.
+          "switched opposites" indicates that the gene pair has
+          oppositely signed correlation coefficients under two
+          conditions and both of them meet the criteria that absolute
+          correlation coefficient is greater than rth and q value less
+          than qth.
+
+_A_u_t_h_o_r(_s):
+
+     Wenbin Wei
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     1. de la Fuente A. From "differential expression" to "differential
+     networking" - identification of dysfunctional regulatory networks
+     in diseases. Trends in Genetics. 2010 Jul;26(7):326-33.
+
+     2. Jiang Z, Dong X, Li Z-G, He F, Zhang Z. Differential
+     Coexpression Analysis Reveals Extensive Rewiring of Arabidopsis
+     Gene Coexpression in Response to Pseudomonas syringae Infection.
+     Scientific Reports. 2016 Dec;6(1):35064.
+
+     3. Yu H, Liu B-H, Ye Z-Q, Li C, Li Y-X, Li Y-Y. Link-based
+     quantitative methods to identify differentially coexpressed genes
+     and gene pairs. BMC bioinformatics. 2011;12(1):315.
+
+_E_x_a_m_p_l_e_s:
+
+     data(gse4158part)
+     allowWGCNAThreads()
+     res=diffcoexp(exprs.1 = exprs.1, exprs.2 = exprs.2, r.method = "spearman")
+     #The results are a list of two data frames, one for differentially co-expressed
+     #links (DCLs, gene pairs) and one for differentially co-expressed genes (DCGs).
+     str(res)
+     
+
+Loading required package: WGCNA
+Loading required package: dynamicTreeCut
+Loading required package: fastcluster
+
+Attaching package: ‘fastcluster’
+
+The following object is masked from ‘package:stats’:
+
+    hclust
+
+
+
+Attaching package: ‘WGCNA’
+
+The following object is masked from ‘package:stats’:
+
+    cor
+
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Finished running comparecor.
+Finished running coexpr.
+13179 gene pairs remain after half thresholding.
+363 DCLs identified.
+15 DCGs identified.
+Error: processing vignette 'diffcoexp.Rnw' failed with diagnostics:
+unable to run pdflatex on 'diffcoexp.tex'
+LaTeX errors:
+! LaTeX Error: File `authblk.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.4 \title
+          {About \emph{diffcoexp}}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘diffcoexp.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘diffcoexp.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data cfTools
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘cfTools/DESCRIPTION’ ... OK
+* preparing ‘cfTools’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘cfTools-vignette.Rmd’ using rmarkdown
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... failed
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://repo.anaconda.com/pkgs/main/linux-aarch64/repodata.json>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+If your current network has https://www.anaconda.com blocked, please file
+a support request with your network engineering team.
+
+'https://repo.anaconda.com/pkgs/main/linux-aarch64'
+
+
+Quitting from lines 161-163 (cfTools-vignette.Rmd) 
+Error: processing vignette 'cfTools-vignette.Rmd' failed with diagnostics:
+Error creating conda environment '/home/biocbuild/.cache/R/basilisk/1.13.0/cfTools/1.1.0/my_env' [exit code 1]
+--- failed re-building ‘cfTools-vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘cfTools-vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scviR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘scviR/DESCRIPTION’ ... OK
+* preparing ‘scviR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘citeseq_tut.Rmd’ using rmarkdown
+trying URL 'https://mghp.osn.xsede.org/bir190004-bucket01/BiocScviR/pbmc_citeseq_5k10k.h5ad.gz'
+Content type 'application/octet-stream' length 51844928 bytes (49.4 MB)
+=================
+downloaded 16.9 MB
+
+Quitting from lines 43-48 (citeseq_tut.Rmd) 
+Error: processing vignette 'citeseq_tut.Rmd' failed with diagnostics:
+download from 'https://mghp.osn.xsede.org/bir190004-bucket01/BiocScviR/pbmc_citeseq_5k10k.h5ad.gz' failed
+--- failed re-building ‘citeseq_tut.Rmd’
+
+--- re-building ‘compch12.Rmd’ using rmarkdown
+trying URL 'https://mghp.osn.xsede.org/bir190004-bucket01/BiocScviR/ch12sce.rda'
+Content type 'application/octet-stream' length 58079368 bytes (55.4 MB)
+========
+downloaded 9.7 MB
+
+Quitting from lines 45-47 (compch12.Rmd) 
+Error: processing vignette 'compch12.Rmd' failed with diagnostics:
+download from 'https://mghp.osn.xsede.org/bir190004-bucket01/BiocScviR/ch12sce.rda' failed
+--- failed re-building ‘compch12.Rmd’
+
+--- re-building ‘scviR.Rmd’ using rmarkdown
+--- finished re-building ‘scviR.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘citeseq_tut.Rmd’ ‘compch12.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

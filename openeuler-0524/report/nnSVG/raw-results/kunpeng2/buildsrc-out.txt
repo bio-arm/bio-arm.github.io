@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data nnSVG
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘nnSVG/DESCRIPTION’ ... OK
+* preparing ‘nnSVG’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘SpatialExperiment’ is not available for package ‘nnSVG’
+* removing ‘/tmp/RtmpQb3W7G/Rinst41a56db281fa/nnSVG’
+      -----------------------------------
+ERROR: package installation failed

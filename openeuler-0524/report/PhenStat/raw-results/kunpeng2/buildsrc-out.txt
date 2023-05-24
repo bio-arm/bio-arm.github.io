@@ -1,0 +1,487 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data PhenStat
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘PhenStat/DESCRIPTION’ ... OK
+* preparing ‘PhenStat’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘PhenStat.Rnw’ using Sweave
+Warning:
+Dataset's column 'Assay.Date' has been renamed to 'Batch' and will be used for the batch effect modelling.
+
+Information:
+Dataset's 'Genotype' column has following values: '+/+', 'Sparc/Sparc'
+
+Information:
+Dataset's 'Sex' column has following value(s): 'Female', 'Male'
+
+Warning:
+Dataset's column 'Assay.Date' has been renamed to 'Batch' and will be used for the batch effect modelling.
+
+Information:
+Dataset's 'Genotype' column has following values: '+/+', 'Mysm1/+'
+
+Information:
+Dataset's 'Sex' column has following value(s): 'Female', 'Male'
+
+Warning:
+Dataset's column 'Assay.Date' has been renamed to 'Batch' and will be used for the batch effect modelling.
+
+Information:
+Dataset's 'Genotype' column has following values: '+/+', 'Mysm1/+'
+
+Information:
+Dataset's 'Sex' column has following value(s): 'Female', 'Male'
+
+Warning:
+Dataset's column 'Assay.Date' has been renamed to 'Batch' and will be used for the batch effect modelling.
+
+Warning:
+Dataset has been cleaned by filtering out records with genotype value other than test genotype 'Arid4a/Arid4a' or reference genotype '+/+'.
+
+Information:
+Dataset's 'Genotype' column has following values: '+/+', 'Arid4a/Arid4a'
+
+Information:
+Dataset's 'Sex' column has following value(s): 'Female', 'Male'
+
+Information:
+Dependent variable: 'Bone.Area'.
+
+Information:
+Perform all MM framework stages: startModel and finalModel.
+
+Information:
+Method: Mixed Model framework.
+
+Information:
+Equation: 'withoutWeight'.
+
+Information:
+Calculated values for model effects are: keep_Batch=TRUE, keep_EqualVariance=TRUE, keep_Weight=FALSE, keep_Sex=TRUE, keep_Interaction=FALSE.
+
+Information:
+Dependent variable: 'Bone.Area'.
+
+Information:
+Method: Mixed Model framework.
+
+Information:
+Equation: 'withoutWeight'.
+
+Information:
+Calculated values for model effects are: keep_Batch=TRUE, keep_EqualVariance=TRUE, keep_Weight=FALSE, keep_Sex=TRUE, keep_Interaction=FALSE.
+
+Information:
+Dependent variable: 'Bone.Area'.
+
+Information:
+Method: Mixed Model framework.
+
+Information:
+Equation: 'withoutWeight'.
+
+Information:
+Calculated values for model effects are: keep_Batch=TRUE, keep_EqualVariance=TRUE, keep_Weight=FALSE, keep_Sex=TRUE, keep_Interaction=FALSE.
+
+Information:
+User's values for model effects are: keep_Batch=TRUE, keep_EqualVariance=TRUE, keep_Weight=FALSE, keep_Sex=TRUE, keep_Interaction=TRUE.
+
+Warning:
+Calculated values differ from user defined values for model effects.
+
+
+Test for dependent variable:
+*** Bone.Area ***
+
+Method:
+*** Mixed Model framework ***
+
+----------------------------------------------------------------------------
+Model Output
+----------------------------------------------------------------------------
+Final fitted model: Bone.Area ~ Sex + Genotype:Sex
+Was batch significant? TRUE
+Was variance equal? TRUE
+Genotype p-value: 1.161054e-02
+Genotype by male effect: -2.436094e-01 +/- 2.506629e-01
+Genotype by female effect: -7.453442e-01 +/- 2.640284e-01
+Was there evidence of sexual dimorphism? yes (p-value 1.740753e-01)
+Genotype percentage change Female: -7.77%
+Genotype percentage change Male: -2.54%
+
+----------------------------------------------------------------------------
+Classification Tag
+----------------------------------------------------------------------------
+With phenotype threshold value 0.01 - no significant change
+
+----------------------------------------------------------------------------
+Model Output Summary
+----------------------------------------------------------------------------
+Information:
+Dataset's 'Genotype' column has following values: 'WT', 'het'
+
+Information:
+Dataset's 'Sex' column has following value(s): 'Female', 'Male'
+
+
+Data points containing 'Cholesterol' by batch levels:
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+|              |           WT |           WT |          het |          het |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+|        Batch |       Female |         Male |       Female |         Male |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2012-04-08 |            7 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-03-11 |            7 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-05-13 |            7 |            5 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-05-21 |            7 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-05-27 |            7 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-06-03 |            4 |            6 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-07-08 |            0 |            2 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-07-15 |            5 |            5 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-07-22 |            3 |            2 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-07-29 |            7 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-08-05 |            2 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-09-02 |            7 |            4 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-09-09 |            4 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-09-16 |            2 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-10-14 |            7 |            5 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-10-21 |            7 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-10-28 |            2 |            4 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-11-04 |            3 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-11-11 |            5 |            4 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-11-18 |            3 |            5 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-11-25 |            4 |            6 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2013-12-09 |            6 |            5 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-01-07 |            5 |            6 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-01-08 |            5 |            5 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-01-13 |            4 |            2 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-01-14 |            5 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-01-20 |            2 |            6 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-01-27 |            2 |            9 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-02-03 |            0 |            1 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+|   2014-02-17 |            6 |            4 |            3 |            4 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+|   2014-02-18 |            0 |            3 |            2 |            3 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-03-03 |            6 |            6 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-03-04 |            2 |            2 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-03-10 |            2 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-03-17 |            4 |            5 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-03-18 |            4 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-03-24 |            4 |            6 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-03-31 |            3 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-04-07 |            2 |            4 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+|   2014-04-14 |            0 |            4 |            4 |            3 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-04-28 |            4 |            6 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-05-05 |            2 |            3 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-05-12 |            9 |            9 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-05-20 |            3 |            1 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-05-26 |            3 |            4 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-06-10 |            1 |            7 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-06-16 |            8 |            8 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+| * 2014-06-23 |            3 |            4 |            0 |            0 |
+|  ----------- |  ----------- |  ----------- |  ----------- |  ----------- |
+* - removed record(s)
+
+Number of batch levels left: 3
+Records removed (reference genotype): 92% [exact : 91.8552036199095%]
+Records removed (test genotype): 0% [exact : 0%]
+
+Information:
+Dependent variable: 'Cholesterol'.
+
+Information:
+Perform all TF framework stages: startTFModel and finalTFModel.
+
+Information:
+Method: Time as Fixed Effect framework.
+
+Information:
+Equation: 'withWeight'.
+
+Information:
+Calculated values for model effects are: keepBatch=TRUE, keepEqualVariance=FALSE, keepWeight=TRUE, keepSex=FALSE, keepInteraction=TRUE.
+
+
+Test for dependent variable:
+*** Cholesterol ***
+
+Method:
+*** Time as Fixed Effect framework ***
+
+----------------------------------------------------------------------------
+Model Output
+----------------------------------------------------------------------------
+Final fitted model: Cholesterol ~ Sex + Genotype:Sex + Weight + Batch
+Was batch significant? TRUE
+Was variance equal? FALSE
+Genotype p-value: 4.899369e-05
+Genotype by male effect: -5.124292e-01 +/- 1.108359e-01
+Genotype by female effect: 2.717280e-02 +/- 1.223334e-01
+Was there evidence of sexual dimorphism? yes (p-value 2.330644e-03)
+Genotype percentage change Female: 1.25%
+Genotype percentage change Male: -23.52%
+
+----------------------------------------------------------------------------
+Classification Tag
+----------------------------------------------------------------------------
+With phenotype threshold value 0.01 - males only
+
+----------------------------------------------------------------------------
+Model Output Summary
+----------------------------------------------------------------------------
+Warning:
+Dataset's column 'Assay.Date' has been renamed to 'Batch' and will be used for the batch effect modelling.
+
+Information:
+Dataset's 'Genotype' column has following values: '+/+', 'Sparc/Sparc'
+
+Information:
+Dataset's 'Sex' column has following value(s): 'Female', 'Male'
+
+Information:
+Dependent variable: 'Lean.Mass'.
+
+Information:
+Method: Reference Ranges Plus framework with filtered dataset.
+
+
+Test for dependent variable:
+*** Lean.Mass ***
+
+Method:
+*** Reference Ranges Plus framework ***
+
+
+----------------------------------------------------------------------------
+Classification Tag
+----------------------------------------------------------------------------
+Not significant
+
+----------------------------------------------------------------------------
+Thresholds
+----------------------------------------------------------------------------
+
+----------------------------------------------------------------------------
+Count Matrices
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Warning:
+Dataset's column 'Assay.Date' has been renamed to 'Batch' and will be used for the batch effect modelling.
+
+Warning:
+Dataset has been cleaned by filtering out records with genotype value other than test genotype 'Aff3/Aff3' or reference genotype '+/+'.
+
+Warning:
+Dataset's 'Weight' column is missed.
+You can define 'dataset.colname.weight' argument to specify column for the weight effect modeling.
+
+Information:
+Dataset's 'Genotype' column has following values: '+/+', 'Aff3/Aff3'
+
+Information:
+Dataset's 'Sex' column has following value(s): 'Female', 'Male'
+
+Warning:
+Weight column is not present in the database.
+
+Information:
+Dependent variable: 'Thoracic.Processes'.
+
+Information:
+Method: Fisher Exact Test framework with filtered dataset.
+
+
+Test for dependent variable:
+*** Thoracic.Processes ***
+
+Method:
+*** Fisher Exact Test framework ***
+
+----------------------------------------------------------------------------
+Model Output ('*' highlights results with p-values less than threshold 0.01)
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------
+Classification Tag
+----------------------------------------------------------------------------
+With phenotype threshold value 0.01 - significant in males, females and in combined dataset
+
+----------------------------------------------------------------------------
+Count Matrices
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+Test for dependent variable:
+*** Lean.Mass ***
+
+Method:
+*** Mixed Model framework ***
+
+----------------------------------------------------------------------------
+Model Output
+----------------------------------------------------------------------------
+Final fitted model: Lean.Mass ~ Genotype + Sex + Weight
+Was batch significant? TRUE
+Was variance equal? FALSE
+Genotype p-value: 3.715089e-01
+Genotype effect: -2.914359e-01 +/- 3.304800e-01
+Was there evidence of sexual dimorphism? no (p-value 1.022353e-01)
+Genotype percentage change Female: -1.44%
+Genotype percentage change Male: -1.44%
+
+----------------------------------------------------------------------------
+Classification Tag
+----------------------------------------------------------------------------
+With phenotype threshold value 0.01 - no significant change
+
+----------------------------------------------------------------------------
+Model Output Summary
+----------------------------------------------------------------------------
+
+Test for dependent variable:
+*** Thoracic.Processes ***
+
+Method:
+*** Fisher Exact Test framework ***
+
+----------------------------------------------------------------------------
+Model Output ('*' highlights results with p-values less than threshold 0.01)
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------
+Classification Tag
+----------------------------------------------------------------------------
+With phenotype threshold value 0.01 - significant in males, females and in combined dataset
+
+----------------------------------------------------------------------------
+Count Matrices
+----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Error: processing vignette 'PhenStat.Rnw' failed with diagnostics:
+unable to run pdflatex on 'PhenStat.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.8 \usepackage
+               {url}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘PhenStat.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘PhenStat.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

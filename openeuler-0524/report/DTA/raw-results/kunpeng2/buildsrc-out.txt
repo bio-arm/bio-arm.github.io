@@ -1,0 +1,80 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DTA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DTA/DESCRIPTION’ ... OK
+* preparing ‘DTA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘DTA.Rnw’ using Sweave
+Loading required package: LSD
+Warning in model.matrix.default(mt, mf, contrasts) :
+  non-list contrasts argument ignored
+Warning in (c(0, 1, 0) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in (c(0, 0, 1) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in model.matrix.default(mt, mf, contrasts) :
+  non-list contrasts argument ignored
+Warning in (c(0, 1, 0) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in (c(0, 0, 1) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in model.matrix.default(mt, mf, contrasts) :
+  non-list contrasts argument ignored
+Warning in (c(0, 1, 0) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in (c(0, 0, 1) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in model.matrix.default(mt, mf, contrasts) :
+  non-list contrasts argument ignored
+Warning in (c(0, 1, 0) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in (c(0, 0, 1) %*% normalenvec) * normalenvec :
+  Recycling array of length 1 in array-vector arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Error: processing vignette 'DTA.Rnw' failed with diagnostics:
+unable to run pdflatex on 'DTA.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘DTA.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘DTA.Rnw’
+
+Error: Vignette re-building failed.
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Execution halted

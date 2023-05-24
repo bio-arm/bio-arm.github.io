@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ANCOMBC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ANCOMBC/DESCRIPTION’ ... OK
+* preparing ‘ANCOMBC’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+      -----------------------------------
+ERROR: dependency ‘energy’ is not available for package ‘ANCOMBC’
+* removing ‘/tmp/RtmpU88rhU/Rinst2e04b67c15c102/ANCOMBC’
+      -----------------------------------
+ERROR: package installation failed

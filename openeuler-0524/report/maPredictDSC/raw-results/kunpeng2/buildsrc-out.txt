@@ -1,0 +1,111 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data maPredictDSC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘maPredictDSC/DESCRIPTION’ ... OK
+* preparing ‘maPredictDSC’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘maPredictDSC.Rnw’ using Sweave
+Loading required package: MASS
+Loading required package: affy
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+Loading required package: gcrma
+Loading required package: ROC
+Loading required package: class
+Loading required package: e1071
+Loading required package: caret
+Loading required package: ggplot2
+Loading required package: lattice
+Loading required package: hgu133plus2.db
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:MASS’:
+
+    select
+
+Loading required package: org.Hs.eg.db
+
+
+Loading required package: ROCR
+Loading required package: LungCancerACvsSCCGEO
+Loading required package: parallel
+Warning: replacing previous import ‘AnnotationDbi::tail’ by ‘utils::tail’ when loading ‘hgu133plus2cdf’
+Warning: replacing previous import ‘AnnotationDbi::head’ by ‘utils::head’ when loading ‘hgu133plus2cdf’
+
+Error: processing vignette 'maPredictDSC.Rnw' failed with diagnostics:
+unable to run pdflatex on 'maPredictDSC.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 \usepackage
+                [authoryear,round]{natbib}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘maPredictDSC.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘maPredictDSC.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

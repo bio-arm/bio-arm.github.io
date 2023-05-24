@@ -1,0 +1,128 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RImmPort
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RImmPort/DESCRIPTION’ ... OK
+* preparing ‘RImmPort’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RImmPort_Article.Rmd’ using rmarkdown
+Study-class              package:RImmPort              R Documentation
+
+_S_t_u_d_y _c_l_a_s_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Study class
+
+_F_i_e_l_d_s:
+
+     'special_purpose' 'SpecialPurpose'
+
+     'interventions' 'Interventions'
+
+     'events' 'Events'
+
+     'findings' 'Findings'
+
+     'trial_design' 'TrialDesign'
+
+_E_x_a_m_p_l_e_s:
+
+     library(DBI)
+     library(sqldf)
+     studies_dir <- system.file("extdata", "ImmPortStudies", package = "RImmPort")
+     db_dir <- file.path(studies_dir, "Db")
+     sqlite_conn <- dbConnect(SQLite(), dbname=file.path(db_dir, "ImmPort.sqlite"))
+     setImmPortDataSource(sqlite_conn)
+     sdy139 <- getStudy("SDY139")
+     
+
+Demographics Domain          package:RImmPort          R Documentation
+
+_D_e_m_o_g_r_a_p_h_i_c_s _D_o_m_a_i_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The Demographics data of an ImmPort study is reformated to the
+     CDISC SDTM Demographics (DM) domain model, and is a list of 2 data
+     frames containing 1) Demographics data 'DM' and 2) any
+     supplemental Demographics data 'SUPP'
+
+
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'RImmPort_Article.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmplLWaDi/Rbuild207f63d5cddbb/RImmPort/vignettes/RImmPort_Article.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See RImmPort_Article.log for more info.
+--- failed re-building ‘RImmPort_Article.Rmd’
+
+--- re-building ‘RImmPort_QuickStart.Rmd’ using rmarkdown
+Study-class              package:RImmPort              R Documentation
+
+_S_t_u_d_y _c_l_a_s_s
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Study class
+
+_F_i_e_l_d_s:
+
+     'special_purpose' 'SpecialPurpose'
+
+     'interventions' 'Interventions'
+
+     'events' 'Events'
+
+     'findings' 'Findings'
+
+     'trial_design' 'TrialDesign'
+
+_E_x_a_m_p_l_e_s:
+
+     library(DBI)
+     library(sqldf)
+     studies_dir <- system.file("extdata", "ImmPortStudies", package = "RImmPort")
+     db_dir <- file.path(studies_dir, "Db")
+     sqlite_conn <- dbConnect(SQLite(), dbname=file.path(db_dir, "ImmPort.sqlite"))
+     setImmPortDataSource(sqlite_conn)
+     sdy139 <- getStudy("SDY139")
+     
+
+Demographics Domain          package:RImmPort          R Documentation
+
+_D_e_m_o_g_r_a_p_h_i_c_s _D_o_m_a_i_n
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The Demographics data of an ImmPort study is reformated to the
+     CDISC SDTM Demographics (DM) domain model, and is a list of 2 data
+     frames containing 1) Demographics data 'DM' and 2) any
+     supplemental Demographics data 'SUPP'
+
+
+Warning: call dbDisconnect() when finished working with a connection
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'RImmPort_QuickStart.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmplLWaDi/Rbuild207f63d5cddbb/RImmPort/vignettes/RImmPort_QuickStart.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See RImmPort_QuickStart.log for more info.
+--- failed re-building ‘RImmPort_QuickStart.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘RImmPort_Article.Rmd’ ‘RImmPort_QuickStart.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

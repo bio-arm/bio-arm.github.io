@@ -1,0 +1,78 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data dyebias
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘dyebias/DESCRIPTION’ ... OK
+* preparing ‘dyebias’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘dyebias-vignette.Rnw’ using Sweave
+Loading required package: limma
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: GEOquery
+Setting options('download.file.method.GEOquery'='auto')
+Setting options('GEOquery.inmemory.gpl'=FALSE)
+Warning in eval(expr, .GlobalEnv) : NAs introduced by coercion
+Warning in dyebias.estimate.iGSDBs(data.norm, is.balanced = FALSE, reference = "input",  :
+  Your design is unbalanced; make sure that this is really what you want!
+
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  Duplicated arguments cex = 0.2, cex.lab = 0.8 are disregarded
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  Duplicated arguments cex = 0.2, cex.lab = 0.8 are disregarded
+Error: processing vignette 'dyebias-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'dyebias-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.26 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘dyebias-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘dyebias-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

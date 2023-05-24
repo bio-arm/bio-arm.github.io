@@ -1,0 +1,131 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FlowSOM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FlowSOM/DESCRIPTION’ ... OK
+* preparing ‘FlowSOM’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘FlowSOM.Rnw’ using Sweave
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Thanks for using FlowSOM. From version 2.1.4 on, the scale 
+parameter in the FlowSOM function defaults to FALSE
+Plot FlowSOM trees
+Calculate t-SNE
+Plot cluster per metacluster distribution
+Plot heatmap
+Make tables
+Printing
+
+Attaching package: ‘flowCore’
+
+The following object is masked from ‘package:igraph’:
+
+    normalize
+
+Reading file /tmp/RtmpFBkCTq/Rinst3d3f06b37f37c/FlowSOM/extdata/68983.fcs
+
+Scaling the data
+
+Scaling the data
+
+Building SOM
+
+Mapping data to SOM
+
+Building MST
+
+Warning in PlotStars(fSOM, backgroundValues = cellTypes, backgroundColor = c("#FFFFFF00",  :
+  "backgroundColor" is deprecated, please use "backgroundColors" instead.
+Mapping file 1 of 10.
+Reading file ff_tmp1.fcs
+
+Scaling the data
+
+Mapping file 2 of 10.
+Reading file ff_tmp2.fcs
+
+Scaling the data
+
+Mapping file 3 of 10.
+Reading file ff_tmp3.fcs
+
+Scaling the data
+
+Mapping file 4 of 10.
+Reading file ff_tmp4.fcs
+
+Scaling the data
+
+Mapping file 5 of 10.
+Reading file ff_tmp5.fcs
+
+Scaling the data
+
+Mapping file 6 of 10.
+Reading file ff_tmp6.fcs
+
+Scaling the data
+
+Mapping file 7 of 10.
+Reading file ff_tmp7.fcs
+
+Scaling the data
+
+Mapping file 8 of 10.
+Reading file ff_tmp8.fcs
+
+Scaling the data
+
+Mapping file 9 of 10.
+Reading file ff_tmp9.fcs
+
+Scaling the data
+
+Mapping file 10 of 10.
+Reading file ff_tmp10.fcs
+
+Scaling the data
+
+Warning: Removed 2 rows containing missing values (`geom_point()`).
+Error: processing vignette 'FlowSOM.Rnw' failed with diagnostics:
+unable to run pdflatex on 'FlowSOM.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘FlowSOM.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘FlowSOM.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

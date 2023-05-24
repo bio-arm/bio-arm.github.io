@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data tweeDEseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘tweeDEseq/DESCRIPTION’ ... OK
+* preparing ‘tweeDEseq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘tweeDEseq.Rnw’ using Sweave
+
+Error: processing vignette 'tweeDEseq.Rnw' failed with diagnostics:
+ chunk 1 
+Error in library(tweeDEseqCountData) : 
+  there is no package called ‘tweeDEseqCountData’
+
+--- failed re-building ‘tweeDEseq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘tweeDEseq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

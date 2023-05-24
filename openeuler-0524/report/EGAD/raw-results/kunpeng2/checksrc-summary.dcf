@@ -1,0 +1,10 @@
+Package: EGAD
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EGAD.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EGAD_1.29.0.tar.gz
+StartedAt: 2023-05-23 16:23:34 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:23:46 -0000 (Tue, 23 May 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: EGAD.Rcheck
+Warnings: NA

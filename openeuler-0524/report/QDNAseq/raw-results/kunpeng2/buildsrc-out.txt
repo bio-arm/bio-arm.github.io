@@ -1,0 +1,361 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data QDNAseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘QDNAseq/DESCRIPTION’ ... OK
+* preparing ‘QDNAseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘QDNAseq.Rnw’ using Sweave
+EM algorithm started ... 
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+41158818530057219.965.1818964516408131437.4125.2818964513606776437.4103.9
+Calling iteration1:
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+optim results
+time: 0
+minimum: 16434.7586735379
+116434.7586728037-1.25415922071587-0.673939128822475-0.01638623430574610.2730839791629680.4668401458662780.9517543873265020.02188959094971620.01947135709673360.01897387020581710.02966922069819540.09451840643785120.105603114790554
+41173868533520219.965.2818964516408131437.4125.2818964513606776437.4103.9
+Calling iteration2:
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+optim results
+time: 0
+minimum: 16434.7586182298
+116434.7586161448-1.25353516568759-0.674068541905691-0.01639339738530460.2701488862288580.4618225713542530.9436011067476830.02180848937889910.01937767339268950.01888841501816660.02862336995867730.1105253535017930.127819091234282
+EM algorithm done ...
+
+Computing posterior probabilities for all segments ...
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Warning in allprior/tot :
+  Recycling array of length 1 in vector-array arithmetic is deprecated.
+  Use c() or as.vector() instead.
+
+Total time:0minutes
+
+Adjusting segmented data for cellularity ... 
+
+Cellularity sample1: 1
+
+Adjusting normalized data for cellularity ... 
+
+Cellularity sample1: 1
+
+1
+41199888754693220.166.8818964516408131437.4125.2818964513606776437.4103.9
+41200078921439220.168.1818964516408131437.4125.2818964513606776437.4103.9
+41200048921433220.168.1818964516408131437.4125.2818964513606776437.4103.9
+41200329188478220.170.2818964516408131437.4125.2818964513606776437.4103.9
+41200969188589220.170.2818964516408131437.4125.2818964513606776437.4103.9
+41201059188593220.170.2818964516408131437.4125.2818964513606776437.4103.9
+41201149188597220.170.2818964516408131437.4125.2818964513606776437.4103.9
+41201239188601220.170.2818964516408131437.4125.2818964513606776437.4103.9
+41201329188605220.170.2818964516408131437.4125.2818964513606776437.4103.9
+41201389188608220.170.2818964516408131437.4125.2818964513606776437.4103.9
+41201579255338220.170.7818964516408131437.4125.2818964513606776437.4103.9
+41205749255661220.170.7818964516408131437.4125.2818964513606776437.4103.9
+FINISHED!
+
+Total time:0minutes
+
+Error: processing vignette 'QDNAseq.Rnw' failed with diagnostics:
+unable to run pdflatex on 'QDNAseq.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘QDNAseq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘QDNAseq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

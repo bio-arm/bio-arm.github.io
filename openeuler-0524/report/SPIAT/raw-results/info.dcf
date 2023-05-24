@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/SPIAT
+git_branch: devel
+git_last_commit: 86ffd15
+git_last_commit_date: 2023-05-22 01:09:21 -0000 (Mon, 22 May 2023)
+Package: SPIAT
+Version: 1.3.1
+Maintainer: Yuzhou  Feng
+MaintainerEmail: yuzhou.feng at petermac.org

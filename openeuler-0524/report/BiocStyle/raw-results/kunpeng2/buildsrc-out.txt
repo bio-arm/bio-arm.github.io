@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BiocStyle
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BiocStyle/DESCRIPTION’ ... OK
+* preparing ‘BiocStyle’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘AuthoringRmdVignettes.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/RtmpAH0I7n/Rbuild2e69c9dfac32a/BiocStyle/vignettes/AuthoringRmdVignettes_files/figure-html/no-cap-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpAH0I7n/Rbuild2e69c9dfac32a/BiocStyle/vignettes/AuthoringRmdVignettes_files/figure-html/plot-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpAH0I7n/Rbuild2e69c9dfac32a/BiocStyle/vignettes/AuthoringRmdVignettes_files/figure-html/wide-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpAH0I7n/Rbuild2e69c9dfac32a/BiocStyle/vignettes/AuthoringRmdVignettes_files/figure-html/small-1.png" but not available.
+Warning: The label(s) non-existing-label not found
+--- finished re-building ‘AuthoringRmdVignettes.Rmd’
+
+--- re-building ‘LatexStyle2.Rnw’ using Sweave
+Error: processing vignette 'LatexStyle2.Rnw' failed with diagnostics:
+unable to run pdflatex on 'LatexStyle2.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘LatexStyle2.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘LatexStyle2.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

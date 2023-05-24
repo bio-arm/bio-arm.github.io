@@ -1,0 +1,218 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data VariantAnnotation
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘VariantAnnotation/DESCRIPTION’ ... OK
+* preparing ‘VariantAnnotation’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘VariantAnnotation.Rnw’ using Sweave
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm,
+    append, as.data.frame, basename, cbind, colnames, dirname,
+    do.call, duplicated, eval, evalq, get, grep, grepl,
+    intersect, is.unsorted, lapply, mapply, match, mget, order,
+    paste, pmax, pmax.int, pmin, pmin.int, rank, rbind,
+    rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit, which.max, which.min
+
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins,
+    colOrderStats, colProds, colQuantiles, colRanges, colRanks,
+    colSdDiffs, colSds, colSums2, colTabulates, colVarDiffs,
+    colVars, colWeightedMads, colWeightedMeans,
+    colWeightedMedians, colWeightedSds, colWeightedVars,
+    rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet, rowCollapse,
+    rowCounts, rowCummaxs, rowCummins, rowCumprods, rowCumsums,
+    rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps, rowMadDiffs,
+    rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs,
+    rowVars, rowWeightedMads, rowWeightedMeans,
+    rowWeightedMedians, rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomeInfoDb
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages
+    'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: Rsamtools
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘VariantAnnotation’
+
+The following object is masked from ‘package:base’:
+
+    tabulate
+
+Loading required package: BSgenome
+Loading required package: rtracklayer
+Warning: replacing previous import ‘utils::findMatches’ by ‘S4Vectors::findMatches’ when loading ‘SNPlocs.Hsapiens.dbSNP144.GRCh37’
+Loading required package: GenomicFeatures
+Loading required package: AnnotationDbi
+Warning in valid.GenomicRanges.seqinfo(x, suggest.trim = TRUE) :
+  GRanges object contains 2405 out-of-bound ranges located on
+  sequences 75253, 74357, 74359, 74360, 74361, 74362, 74363,
+  74358, 74364, 74365, 75254, 75259, 74368, 74369, 74366, 74367,
+  74370, 74372, 74373, 74374, 74375, 74378, 74377, 74380, 74381,
+  75262, 75263, 75265, 75266, 75268, 75269, 75271, 75273, 75276,
+  75281, 75282, 75283, 74389, 74383, 74384, 74385, 74386, 74387,
+  75287, 75288, 75286, 75289, 74390, 74391, 74392, 74393, 74394,
+  75291, 74395, 74396, 74397, 74398, 75302, 75304, 75305, and
+  75306. Note that ranges located on a sequence whose length is
+  unknown (NA) or on a circular sequence are not considered
+  out-of-bound (use seqlengths() and isCircular() to get the
+  lengths and circularity flags of the underlying sequences). You
+  can use trim() to trim these ranges. See
+  ?`trim,GenomicRanges-method` for more information.
+'select()' returned many:1 mapping between keys and columns
+Warning in valid.GenomicRanges.seqinfo(x, suggest.trim = TRUE) :
+  GRanges object contains 2405 out-of-bound ranges located on
+  sequences 75253, 74357, 74359, 74360, 74361, 74362, 74363,
+  74358, 74364, 74365, 75254, 75259, 74368, 74369, 74366, 74367,
+  74370, 74372, 74373, 74374, 74375, 74378, 74377, 74380, 74381,
+  75262, 75263, 75265, 75266, 75268, 75269, 75271, 75273, 75276,
+  75281, 75282, 75283, 74389, 74383, 74384, 74385, 74386, 74387,
+  75287, 75288, 75286, 75289, 74390, 74391, 74392, 74393, 74394,
+  75291, 74395, 74396, 74397, 74398, 75302, 75304, 75305, and
+  75306. Note that ranges located on a sequence whose length is
+  unknown (NA) or on a circular sequence are not considered
+  out-of-bound (use seqlengths() and isCircular() to get the
+  lengths and circularity flags of the underlying sequences). You
+  can use trim() to trim these ranges. See
+  ?`trim,GenomicRanges-method` for more information.
+Loading required package: RSQLite
+Warning: 228 keys not found in PolyPhen database: rs114264124 rs149209714 ... rs146628983 rs138319189
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:VariantAnnotation’:
+
+    expand
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+non-single nucleotide variations are set to NA
+[W::bcf_hdr_check_sanity] GL should be declared as Number=G
+non-single nucleotide variations are set to NA
+non-single nucleotide variations are set to NA
+Error: processing vignette 'VariantAnnotation.Rnw' failed with diagnostics:
+unable to run pdflatex on 'VariantAnnotation.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘VariantAnnotation.Rnw’
+
+--- re-building ‘filterVcf.Rnw’ using Sweave
+starting prefilter
+prefiltering 3791 records
+prefiltered to /tmp/RtmpqmKlK9/file372d94e9f1a26
+prefilter compressing and indexing ‘/tmp/RtmpqmKlK9/file372d94e9f1a26’
+starting filter
+filtering 48 records
+completed filtering
+Loading required package: BiocFileCache
+Loading required package: dbplyr
+
+Attaching package: ‘AnnotationHub’
+
+The following object is masked from ‘package:rtracklayer’:
+
+    hubUrl
+
+The following object is masked from ‘package:Biobase’:
+
+    cache
+
+
+Error: processing vignette 'filterVcf.Rnw' failed with diagnostics:
+ chunk 6 (label = mcf7regulatoryRegions) 
+Error : Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+
+--- failed re-building ‘filterVcf.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘VariantAnnotation.Rnw’ ‘filterVcf.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

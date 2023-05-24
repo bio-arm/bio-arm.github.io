@@ -1,0 +1,10 @@
+Package: HDTD
+Version: 1.35.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HDTD.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HDTD_1.35.1.tar.gz
+StartedAt: 2023-05-23 16:26:35 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 16:26:45 -0000 (Tue, 23 May 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: HDTD.Rcheck
+Warnings: NA

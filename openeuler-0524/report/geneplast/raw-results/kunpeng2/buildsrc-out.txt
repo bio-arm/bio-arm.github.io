@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data geneplast
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘geneplast/DESCRIPTION’ ... OK
+* preparing ‘geneplast’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘geneplast.Rmd’ using rmarkdown
+--- finished re-building ‘geneplast.Rmd’
+
+--- re-building ‘geneplast_Trefflich2019.Rmd’ using rmarkdown
+Quitting from lines 30-38 (geneplast_Trefflich2019.Rmd) 
+Error: processing vignette 'geneplast_Trefflich2019.Rmd' failed with diagnostics:
+there is no package called 'Fletcher2013b'
+--- failed re-building ‘geneplast_Trefflich2019.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘geneplast_Trefflich2019.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

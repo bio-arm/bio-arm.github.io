@@ -1,0 +1,75 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EBSeqHMM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EBSeqHMM/DESCRIPTION’ ... OK
+* preparing ‘EBSeqHMM’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘EBSeqHMM_vignette.Rnw’ using Sweave
+Loading required package: blockmodeling
+To cite package 'blockmodeling' in publications please use package
+citation and (at least) one of the articles:
+
+  Žiberna, Aleš (2007). Generalized blockmodeling of valued networks.
+  Social Networks 29(1), 105-126.
+
+  Žiberna, Aleš (2008). Direct and indirect approaches to blockmodeling
+  of valued networks in terms of regular equivalence. Journal of
+  Mathematical Sociology 32(1), 57–84.
+
+  Žiberna, Aleš (2014). Blockmodeling of multilevel networks. Social
+  Networks 39, 46–61. https://doi.org/10.1016/j.socnet.2014.04.002.
+
+  Žiberna, Aleš (2022).  Generalized and Classical Blockmodeling of
+  Valued Networks, R package version 1.1.4.
+  Cugmas, Marjan (2022).  Generalized and Classical Blockmodeling of
+  Valued Networks, R package version 1.1.4.
+
+To see these entries in BibTeX format, use 'format(<citation>,
+bibtex=TRUE)', or 'toBibtex(.)'.
+Loading required package: gplots
+
+Attaching package: ‘gplots’
+
+The following object is masked from ‘package:stats’:
+
+    lowess
+
+Loading required package: testthat
+
+Attaching package: ‘EBSeqHMM’
+
+The following object is masked from ‘package:EBSeq’:
+
+    f0
+
+Error: processing vignette 'EBSeqHMM_vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'EBSeqHMM_vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.5 \usepackage
+               {graphicx, graphics, epsfig,setspace,amsmath, amsthm}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘EBSeqHMM_vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘EBSeqHMM_vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

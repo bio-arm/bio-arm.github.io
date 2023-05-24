@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for rDGIdb on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><B>[<A href="..#R">R</A>]</B></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-24 01:46:19 -0000 (Wed, 24 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4131</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for rDGIdb on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the rDGIdb package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/rDGIdb.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>1630</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">rDGIdb</A>&nbsp;1.27.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/rDGIdb">landing page</A>)</SPAN><BR>Lars Bosshard<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-22&nbsp;17:00:18&nbsp;-0000&nbsp;(Mon,&nbsp;22&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/rDGIdb</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">24ef89b</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:48:17&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: rDGIdb</TD></TR>
+<TR><TD><B>Version</B>: 1.27.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rDGIdb</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-23 12:43:02 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-23 12:43:30 -0000 (Tue, 23 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 28.1 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rDGIdb
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rDGIdb/DESCRIPTION’ ... OK
+* preparing ‘rDGIdb’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette.Rnw’ using knitr
+Warning in has_utility(&quot;pdfcrop&quot;) :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2(&quot;pdfcrop&quot;, shQuote(c(x, x)), stdout = if (quiet) FALSE else &quot;&quot;) :
+  error in running command
+queryDGIdb               package:rDGIdb                R Documentation
+
+_Q_u_e_r_y _D_G_I_d_b _u_s_i_n_g _R
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Provides an interface to query DGIdb from within R using the DGIdb
+     API. The function is implemented to reflect the as good as
+     possible the web-interface.
+
+_U_s_a_g_e:
+
+     queryDGIdb(genes,
+             sourceDatabases = NULL,
+             geneCategories = NULL,
+             interactionTypes = NULL)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   genes: A character vector of genes for which drug interactions are
+          queried.
+
+sourceDatabases: A character vector of source databases to be queried.
+          To query all available databases, skip argument or use
+          &#x27;NULL&#x27;. To see available options, type &#x27;sourceDatabases()&#x27;.
+
+geneCategories: A character vector of gene categories to be queried. To
+          query for all gene categories, skip argument or use &#x27;NULL&#x27;.
+          To see available options, type &#x27;geneCategories()&#x27;.
+
+interactionTypes: A character vector of interaction types to be
+          queried. To query for all interaction types, skip argument or
+          use &#x27;NULL&#x27;. To see available options, type
+          &#x27;interactionTypes()&#x27;.
+
+_D_e_t_a_i_l_s:
+
+     Only the first argument (&#x27;genes&#x27;) is required, all other arguments
+     are optional. When optional arguments are not provided, the query
+     considers all available possibilities for optional arguments:
+     &#x27;sourceDatabases&#x27;, &#x27;geneCategories&#x27;, and &#x27;interactionTypes&#x27;.
+
+_V_a_l_u_e:
+
+     A S4 object of type &#x27;rDGIdbResult&#x27;.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr &lt;thomas.thurnherr@gmail.com&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     &#x27;rDGIdbResult&#x27;, &#x27;rDGIdbFilters&#x27;, &#x27;plotInteractionsBySource&#x27;
+
+_E_x_a_m_p_l_e_s:
+
+     genes &lt;- c(&quot;XYZA&quot;, &quot;TNF&quot;, &quot;IL6&quot;, &quot;IL8&quot;)
+     result &lt;- queryDGIdb(genes = genes)
+     
+     result &lt;- queryDGIdb(genes = genes,
+                     sourceDatabases = c(&quot;MyCancerGenome&quot;,&quot;TEND&quot;,&quot;TTD&quot;),
+                     geneCategories = &quot;CELL SURFACE&quot;,
+                     interactionTypes = c(&quot;activator&quot;,&quot;inhibitor&quot;))
+     
+
+rDGIdbFilters              package:rDGIdb              R Documentation
+
+_F_i_l_t_e_r _o_p_t_i_o_n_s _f_o_r _r_D_G_I_d_b _q_u_e_r_i_e_s.
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The gene categories, interaction types, and source databases
+     available to filter queries with &#x27;queryDGIdb&#x27;.
+
+_U_s_a_g_e:
+
+     geneCategories()
+     
+     interactionTypes()
+     
+     sourceDatabases()
+     
+_V_a_l_u_e:
+
+     &#x27;geneCategories&#x27; returns a character vector of available gene
+     categories which can be used to filter DGIdb queries with
+     &#x27;queryDGIdb&#x27;.
+
+     &#x27;interactionTypes&#x27; returns a character vector of available
+     interaction types which can be used to filter DGIdb queries with
+     &#x27;queryDGIdb&#x27;.
+
+     &#x27;sourceDatabases&#x27; returns a character vector of available source
+     databases which can be used to filter DGIdb queries with
+     &#x27;queryDGIdb&#x27;.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr &lt;thomas.thurnherr@gmail.com&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     &#x27;queryDGIdb&#x27;, &#x27;rDGIdbResult&#x27;, &#x27;plotInteractionsBySource&#x27;
+
+_E_x_a_m_p_l_e_s:
+
+     geneCategories()
+     interactionTypes()
+     sourceDatabases()
+     res &lt;- queryDGIdb(genes = &quot;AP1&quot;,
+                 interactionTypes = NULL,
+                 geneCategories = NULL,
+                 sourceDatabases = NULL)
+     
+
+rDGIdbResult              package:rDGIdb               R Documentation
+
+_R_e_s_u_l_t _o_b_j_e_c_t _o_f _a _r_D_G_I_d_b _q_u_e_r_y
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     S4 helper functions to access DGIdb results, formatted in a
+     similar way as result tables on the DGIdb web interface.
+
+_U_s_a_g_e:
+
+     ## S4 method for signature &#x27;rDGIdbResult&#x27;
+     resultSummary(object)
+     
+     ## S4 method for signature &#x27;rDGIdbResult&#x27;
+     detailedResults(object)
+     
+     ## S4 method for signature &#x27;rDGIdbResult&#x27;
+     byGene(object)
+     
+     ## S4 method for signature &#x27;rDGIdbResult&#x27;
+     searchTermSummary(object)
+     
+_A_r_g_u_m_e_n_t_s:
+
+  object: A &#x27;rDGIdbResult&#x27; object returned by &#x27;queryDGIdb&#x27;.
+
+_V_a_l_u_e:
+
+     &#x27;resultSummary&#x27; returns a &#x27;data.frame&#x27; that summarizes drug-gene
+     interactions by the source(s) that reported them.
+
+     &#x27;detailedResult&#x27; returns a &#x27;data.frame&#x27; with search terms matching
+     exactly one gene that has one or more drug interactions.
+
+     &#x27;byGene&#x27; returns a &#x27;data.frame&#x27; with drug interaction count and
+     druggable categories associated with each gene.
+
+     &#x27;searchTermSummary&#x27; returns a &#x27;data.frame&#x27; that summarizes the
+     attempt to map gene names supplied by the user to gene records in
+     DGIdb.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr &lt;thomas.thurnherr@gmail.com&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     &#x27;queryDGIdb&#x27;, &#x27;rDGIdbFilters&#x27;, &#x27;plotInteractionsBySource&#x27;
+
+_E_x_a_m_p_l_e_s:
+
+     genes &lt;- c(&quot;XYZA&quot;, &quot;TNF&quot;, &quot;IL6&quot;, &quot;IL8&quot;)
+     result &lt;- queryDGIdb(genes = genes)
+     resultSummary(result)
+     detailedResults(result)
+     byGene(result)
+     searchTermSummary(result)
+     
+
+plotInteractionsBySource        package:rDGIdb         R Documentation
+
+_I_n_t_e_r_a_c_t_i_o_n_s _b_y _s_o_u_r_c_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Creates a plot to visualize the number of interactions per source.
+
+_U_s_a_g_e:
+
+     plotInteractionsBySource(queryResult, ...)
+     
+_A_r_g_u_m_e_n_t_s:
+
+queryResult: A &#x27;rDGIdbResult&#x27; object obtained from &#x27;queryDGIdb&#x27;.
+
+     ...: Other arguments passed to barplot.
+
+_V_a_l_u_e:
+
+     A plot is created on the current graphics device.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr &lt;thomas.thurnherr@gmail.com&gt;
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     &#x27;rDGIdbResult&#x27;, &#x27;queryDGIdb&#x27;, &#x27;rDGIdbFilters&#x27;
+
+_E_x_a_m_p_l_e_s:
+
+     queryResult &lt;- queryDGIdb(&#x27;KRAS&#x27;)
+     plotInteractionsBySource(queryResult)
+     
+
+Error: processing vignette &#x27;vignette.Rnw&#x27; failed with diagnostics:
+unable to run pdflatex on &#x27;vignette.tex&#x27;
+LaTeX errors:
+! LaTeX Error: File `framed.sty&#x27; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==&gt; Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

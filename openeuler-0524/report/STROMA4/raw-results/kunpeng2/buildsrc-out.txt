@@ -1,0 +1,98 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data STROMA4
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘STROMA4/DESCRIPTION’ ... OK
+* preparing ‘STROMA4’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘STROMA4-vignette.Rnw’ using Sweave
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: BiocParallel
+Loading required package: cluster
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+--Assigning properties to expression data--
+--There are duplicated genes. Using most variable to collapse--
+----206 out of 297 total genes matching for D.stroma.property----
+----104 out of 567 total genes matching for B.stroma.property----
+----315 out of 458 total genes matching for T.stroma.property----
+----20 out of 27 total genes matching for E.stroma.property----
+--Assigning properties to expression data--
+--There are duplicated genes. Using most variable to collapse--
+----1064 out of 1105 total genes matching for MSL.property----
+----671 out of 710 total genes matching for M.property----
+----1146 out of 1205 total genes matching for LAR.property----
+----670 out of 705 total genes matching for IM.property----
+----449 out of 473 total genes matching for BL1.property----
+----269 out of 291 total genes matching for BL2.property----
+--Assigning properties to expression data--
+--There are duplicated genes. Using most variable to collapse--
+----206 out of 297 total genes matching for D.stroma.property----
+----1064 out of 1105 total genes matching for MSL.property----
+----671 out of 710 total genes matching for M.property----
+----104 out of 567 total genes matching for B.stroma.property----
+----1146 out of 1205 total genes matching for LAR.property----
+----670 out of 705 total genes matching for IM.property----
+----315 out of 458 total genes matching for T.stroma.property----
+----449 out of 473 total genes matching for BL1.property----
+----20 out of 27 total genes matching for E.stroma.property----
+----269 out of 291 total genes matching for BL2.property----
+Error: processing vignette 'STROMA4-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'STROMA4-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘STROMA4-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘STROMA4-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

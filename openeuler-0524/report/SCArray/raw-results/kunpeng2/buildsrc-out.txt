@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SCArray
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SCArray/DESCRIPTION’ ... OK
+* preparing ‘SCArray’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Overview.Rmd’ using rmarkdown
+--- finished re-building ‘Overview.Rmd’
+
+--- re-building ‘SCArray.Rmd’ using rmarkdown
+Quitting from lines 174-178 (SCArray.Rmd) 
+Error: processing vignette 'SCArray.Rmd' failed with diagnostics:
+no method or default for coercing "SC_GDSMatrix" to "SVT_SparseArray"
+--- failed re-building ‘SCArray.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘SCArray.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,49 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data phenomis
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘phenomis/DESCRIPTION’ ... OK
+* preparing ‘phenomis’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘phenomis-vignette.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/inspecting-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/correcting-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/correcting-2.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/final_check-1.png" but not available.
+Warning: ggrepel: 18 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/hypotesting-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/PCA-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/PCA-2.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/PCA-3.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/heatmap-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/plsda-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/biosigner-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_inspect-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_inspect-2.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_inspect-3.png" but not available.
+Warning: ggrepel: 4 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_limma-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_limma-2.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_plsda-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_plsda-2.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_biosign-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpTHWzow/Rbuildd6314cacded7/phenomis/vignettes/phenomis-vignette_files/figure-html/pms_biosign-2.png" but not available.
+Quitting from lines 672-674 (phenomis-vignette.Rmd) 
+Error: processing vignette 'phenomis-vignette.Rmd' failed with diagnostics:
+there is no package called 'CLL'
+--- failed re-building ‘phenomis-vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘phenomis-vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

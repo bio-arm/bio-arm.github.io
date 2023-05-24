@@ -1,0 +1,102 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SigCheck
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SigCheck/DESCRIPTION’ ... OK
+* preparing ‘SigCheck’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SigCheck.Rnw’ using Sweave
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: MLInterfaces
+Loading required package: Rcpp
+Loading required package: annotate
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: XML
+Loading required package: cluster
+Loading required package: e1071
+Loading required package: BiocParallel
+Loading required package: survival
+NOTE: 48923 values in 10152 features imputed (0.6265%).
+Warning: NOTE: 6 unmatched features in signature
+SigCheckObject 
+Type: Survival 
+Survival p-value: 3.9846e-05 
+Warning: NOTE: 6 unmatched features in signature
+Warning: NOTE: 6 unmatched features in signature
+Warning: NOTE: 6 unmatched features in signature
+Warning: NOTE: 6 unmatched features in signature
+Warning: NOTE: 6 unmatched features in signature
+NOTE: 48923 values in 10152 features imputed (0.6265%).
+Warning: NOTE: 6 unmatched features in signature
+SigCheckObject 
+Type: Classifier 
+Classifier performance: 0.62. Confusion matrix: 
+Warning:   'IS_BIOC_BUILD_MACHINE' environment variable detected, setting
+  BiocParallel workers to 4 (was 6)
+Error: processing vignette 'SigCheck.Rnw' failed with diagnostics:
+unable to run pdflatex on 'SigCheck.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘SigCheck.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘SigCheck.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

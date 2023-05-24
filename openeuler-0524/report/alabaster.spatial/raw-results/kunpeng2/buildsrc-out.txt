@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data alabaster.spatial
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘alabaster.spatial/DESCRIPTION’ ... OK
+* preparing ‘alabaster.spatial’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependency ‘SpatialExperiment’ is not available for package ‘alabaster.spatial’
+* removing ‘/tmp/Rtmpf0qyvC/Rinst2dfffe25250043/alabaster.spatial’
+      -----------------------------------
+ERROR: package installation failed

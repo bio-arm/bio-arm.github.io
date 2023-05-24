@@ -1,0 +1,52 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BEARscc
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BEARscc/DESCRIPTION’ ... OK
+* preparing ‘BEARscc’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘BEARscc.Rmd’ using rmarkdown
+Warning in has_utility("pdfcrop") :
+  pdfcrop not installed or not in PATH
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+sh: line 1: pdfcrop: command not found
+Warning in system2("pdfcrop", shQuote(c(x, x)), stdout = if (quiet) FALSE else "") :
+  error in running command
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'BEARscc.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpzKjX58/Rbuild2e39df75645309/BEARscc/vignettes/BEARscc.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See BEARscc.log for more info.
+--- failed re-building ‘BEARscc.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘BEARscc.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

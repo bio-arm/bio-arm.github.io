@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BatchQC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BatchQC/DESCRIPTION’ ... OK
+* preparing ‘BatchQC’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘BatchQCIntro.Rmd’ using rmarkdown
+Warning: The vignette title specified in \VignetteIndexEntry{} is different from the title in the YAML metadata. The former is "BatchQCIntro", and the latter is "BatchQC package Introduction". If that is intentional, you may set options(rmarkdown.html_vignette.check_title = FALSE) to suppress this check.
+--- finished re-building ‘BatchQCIntro.Rmd’
+
+--- re-building ‘BatchQC_examples.Rmd’ using rmarkdown
+Warning: The vignette title specified in \VignetteIndexEntry{} is different from the title in the YAML metadata. The former is "BatchQC_examples", and the latter is "BatchQC Examples". If that is intentional, you may set options(rmarkdown.html_vignette.check_title = FALSE) to suppress this check.
+--- finished re-building ‘BatchQC_examples.Rmd’
+
+--- re-building ‘BatchQC_usage_advanced.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'BatchQC_usage_advanced.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmponFotp/Rbuild2e272f161b86d2/BatchQC/vignettes/BatchQC_usage_advanced.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See BatchQC_usage_advanced.log for more info.
+--- failed re-building ‘BatchQC_usage_advanced.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘BatchQC_usage_advanced.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

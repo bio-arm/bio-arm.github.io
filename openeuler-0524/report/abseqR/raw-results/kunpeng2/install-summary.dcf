@@ -1,0 +1,8 @@
+Package: abseqR
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL abseqR
+StartedAt: 2023-05-23 06:40:53 -0000 (Tue, 23 May 2023)
+EndedAt: 2023-05-23 06:41:09 -0000 (Tue, 23 May 2023)
+EllapsedTime: 15.6 seconds
+RetCode: 0
+Status: OK

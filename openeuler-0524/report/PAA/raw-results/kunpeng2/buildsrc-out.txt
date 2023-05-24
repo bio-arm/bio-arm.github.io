@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data PAA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘PAA/DESCRIPTION’ ... OK
+* preparing ‘PAA’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘PAA_vignette.Rnw’ using Sweave
+Loading required package: Rcpp
+Warning in loadGPR(gpr.path = gpr, targets.path = targets2, array.type = "other",  :
+  The following columns were not imported: Description. If one of these columns is mandatory (see the loadGPR() documentation to check whether a column is mandatory) this may cause serious errors.
+batchFilter - number of features to discard: 0
+
+batchFilter.anova - number of features to discard: 0
+
+Found2batches
+Adjusting for1covariate(s) or covariate level(s)
+Standardizing Data across genes
+Fitting L/S model and finding priors
+Finding parametric adjustments
+Adjusting the Data
+
+row.numer: 9588
+col.numer: 40
+Error: processing vignette 'PAA_vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'PAA_vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘PAA_vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘PAA_vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

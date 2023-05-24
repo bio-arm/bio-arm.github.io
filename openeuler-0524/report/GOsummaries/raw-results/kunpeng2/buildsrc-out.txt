@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GOsummaries
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GOsummaries/DESCRIPTION’ ... OK
+* preparing ‘GOsummaries’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GOsummaries-basics.Rnw’ using Sweave
+This is vegan 2.6-4
+Warning: Please consider using the new package "gprofiler2". At the moment you are using a deprecated package relying on outdated data.
+  More information at https://biit.cs.ut.ee/gprofiler/page/r-new. Feel free to contact us at biit.support@ut.ee for further help.
+Warning: Please consider using the new package "gprofiler2". At the moment you are using a deprecated package relying on outdated data.
+  More information at https://biit.cs.ut.ee/gprofiler/page/r-new. Feel free to contact us at biit.support@ut.ee for further help.
+No id variables; using all as measure variables
+No id variables; using all as measure variables
+Error: processing vignette 'GOsummaries-basics.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GOsummaries-basics.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GOsummaries-basics.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GOsummaries-basics.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data biodb
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘biodb/DESCRIPTION’ ... OK
+* preparing ‘biodb’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘biodb.Rmd’ using rmarkdown
+--- finished re-building ‘biodb.Rmd’
+
+--- re-building ‘details.Rmd’ using rmarkdown
+--- finished re-building ‘details.Rmd’
+
+--- re-building ‘entries.Rmd’ using rmarkdown
+[WARNING] Citeproc: citation H not found
+--- finished re-building ‘entries.Rmd’
+
+--- re-building ‘new_connector.Rmd’ using rmarkdown
+Quitting from lines 420-422 (new_connector.Rmd) 
+Error: processing vignette 'new_connector.Rmd' failed with diagnostics:
+attempt to apply non-function
+--- failed re-building ‘new_connector.Rmd’
+
+--- re-building ‘new_entry_field.Rmd’ using rmarkdown
+--- finished re-building ‘new_entry_field.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘new_connector.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

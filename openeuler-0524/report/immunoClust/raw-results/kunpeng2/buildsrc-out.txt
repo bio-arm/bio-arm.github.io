@@ -1,0 +1,273 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data immunoClust
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘immunoClust/DESCRIPTION’ ... OK
+* preparing ‘immunoClust’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘immunoClust.Rnw’ using Sweave
+Loading required package: flowCore
+filtered from above:318
+filtered from below:0
+
+cluster 1(N=151) has 2 sub-cluster at 2 (9), ICL=151<>26
+split 1 into 2 clusters
+cluster 1(N=151) has 2 sub-cluster at 2 (9), ICL=0<>26
+Model Refinement takes 0.017 mins(max 1: 0.017)
+Fit Model 1 of (6/10) K=1->2 N=302
+EM 2 takes 0 mins, 5 iterations
+
+cluster 2(N=78) has 3 sub-cluster at 3 (7), ICL=92<>30
+split 2 into 3 clusters
+cluster 1(N=226) has 2 sub-cluster at 2 (5), ICL=44<>30
+split 1 into 2 clusters
+cluster 1(N=226) has 2 sub-cluster at 2 (5), ICL=0<>30
+Model Refinement takes 0.033 mins(max 1: 0.017)
+Fit Model 2 of (6/10) K=2->5 N=605
+EM 5 takes 0 mins, 13 iterations
+
+cluster 1(N=53) has 2 sub-cluster at 2 (7), ICL=47<>34
+split 1 into 2 clusters
+cluster 5(N=72) has 6 sub-cluster at 6 (38), ICL=30<>34
+cluster 4(N=62) has 2 sub-cluster at 2 (8), ICL=14<>34
+cluster 2(N=408) has 7 sub-cluster at 8 (17), ICL=8.2<>34
+cluster 3(N=18) has 2 sub-cluster at 2 (100), ICL=2.1<>34
+cluster 1(N=53) has 2 sub-cluster at 2 (7), ICL=0<>34
+Model Refinement takes 0.083 mins(max 2: 0.033)
+Fit Model 3 of (6/10) K=5->6 N=1210
+EM 6 takes 0 mins, 7 iterations
+
+cluster 4(N=51) has 2 sub-cluster at 2 (13), ICL=28<>37
+cluster 6(N=144) has 2 sub-cluster at 3 (7), ICL=23<>37
+cluster 5(N=132) has 4 sub-cluster at 4 (34), ICL=21<>37
+cluster 1(N=20) has 2 sub-cluster at 2 (5), ICL=17<>37
+cluster 2(N=76) has 3 sub-cluster at 3 (11), ICL=9<>37
+cluster 1(N=20) has 2 sub-cluster at 2 (5), ICL=0<>37
+Model Refinement takes 0.1 mins(max 3: 0.033)
+Fit Model 4 of (6/10) K=6->6 N=2420
+EM 6 takes 0.017 mins, 6 iterations
+
+cluster 5(N=244) has 2 sub-cluster at 2 (6), ICL=51<>41
+split 5 into 2 clusters
+cluster 1(N=60) has 2 sub-cluster at 2 (6), ICL=34<>41
+cluster 6(N=268) has 2 sub-cluster at 2 (8), ICL=27<>41
+cluster 4(N=105) has 7 sub-cluster at 7 (47), ICL=18<>41
+cluster 2(N=146) has 4 sub-cluster at 4 (18), ICL=16<>41
+cluster 3(N=1610) has 3 sub-cluster at 3 (11), ICL=4.6<>41
+cluster 1(N=60) has 2 sub-cluster at 2 (6), ICL=0<>41
+Model Refinement takes 0.17 mins(max 3: 0.067)
+Fit Model 5 of (6/10) K=6->7 N=4841
+EM 7 takes 0 mins, 5 iterations
+
+cluster 1(N=102) has 2 sub-cluster at 2 (7), ICL=71<>45
+split 1 into 2 clusters
+cluster 7(N=578) has 2 sub-cluster at 2 (11), ICL=26<>45
+cluster 6(N=33) has 2 sub-cluster at 2 (16), ICL=25<>45
+cluster 2(N=254) has 2 sub-cluster at 2 (7), ICL=24<>45
+cluster 4(N=204) has 2 sub-cluster at 2 (9), ICL=22<>45
+cluster 5(N=439) has 3 sub-cluster at 3 (19), ICL=17<>45
+cluster 1(N=102) has 2 sub-cluster at 2 (7), ICL=0<>45
+Model Refinement takes 0.2 mins(max 3: 0.083)
+Fit Model 6 of (6/10) K=7->8 N=9682
+EM 8 takes 0.017 mins, 8 iterations
+
+cluster 4(N=6478) has 3 sub-cluster at 3 (7), ICL=99<>48
+split 4 into 3 clusters
+cluster 3(N=557) has 3 sub-cluster at 3 (8), ICL=63<>48
+split 3 into 3 clusters
+cluster 8(N=1121) has 2 sub-cluster at 2 (9), ICL=49<>48
+split 8 into 2 clusters
+cluster 2(N=153) has 4 sub-cluster at 4 (17), ICL=42<>48
+cluster 5(N=392) has 3 sub-cluster at 3 (34), ICL=38<>48
+cluster 7(N=60) has 2 sub-cluster at 2 (9), ICL=30<>48
+cluster 6(N=908) has 3 sub-cluster at 3 (12), ICL=29<>48
+cluster 1(N=76) has 3 sub-cluster at 4 (12), ICL=4.8<>48
+cluster 1(N=76) has 3 sub-cluster at 4 (12), ICL=0<>48
+Model Refinement takes 0.25 mins(max 4: 0.083)
+Fit Model 7 of (6/10) K=8->13 N=9682
+EM 13 takes 0.017 mins, 8 iterations
+
+cluster 9(N=391) has 2 sub-cluster at 2 (8), ICL=37<>48
+cluster 11(N=60) has 2 sub-cluster at 2 (9), ICL=30<>48
+cluster 10(N=898) has 3 sub-cluster at 3 (9), ICL=29<>48
+cluster 2(N=122) has 3 sub-cluster at 3 (28), ICL=26<>48
+cluster 13(N=424) has 2 sub-cluster at 3 (5), ICL=19<>48
+cluster 5(N=90) has 2 sub-cluster at 2 (8), ICL=17<>48
+cluster 3(N=363) has 7 sub-cluster at 8 (28), ICL=14<>48
+cluster 4(N=180) has 4 sub-cluster at 4 (37), ICL=7.5<>48
+cluster 1(N=75) has 3 sub-cluster at 4 (10), ICL=4<>48
+cluster 8(N=307) has 2 sub-cluster at 2 (8), ICL=2.5<>48
+cluster 1(N=75) has 3 sub-cluster at 4 (10), ICL=0<>48
+Model Refinement takes 0.38 mins(max 6: 0.083)
+Fit Model 8 of (6/10) K=13->13 N=9682
+EM 13 takes 0.017 mins, 3 iterations
+
+Process completed at8
+
+Major Iteration (Trans) (6/4) takes 1.3 mins
+filtered from above:318
+filtered from below:0
+
+cluster 1(N=151) has 3 sub-cluster at 3 (5), ICL=137<>22
+split 1 into 3 clusters
+cluster 1(N=151) has 3 sub-cluster at 3 (5), ICL=0<>22
+Model Refinement takes 0.017 mins(max 1: 0.017)
+Fit Model 1 of (6/10) K=1->3 N=302
+EM 3 takes 0 mins, 10 iterations
+
+cluster 1(N=50) has 2 sub-cluster at 2 (5), ICL=62<>25
+split 1 into 2 clusters
+cluster 3(N=41) has 2 sub-cluster at 2 (100), ICL=44<>25
+split 3 into 2 clusters
+cluster 2(N=212) has 4 sub-cluster at 4 (17), ICL=30<>25
+split 2 into 4 clusters
+Model Refinement takes 0.05 mins(max 1: 0.017)
+Fit Model 2 of (6/10) K=3->8 N=605
+EM 7 takes 0 mins, 50 iterations
+
+cluster 6(N=64) has 2 sub-cluster at 2 (100), ICL=54<>28
+split 6 into 2 clusters
+cluster 2(N=48) has 3 sub-cluster at 3 (5), ICL=28<>28
+cluster 3(N=44) has 3 sub-cluster at 3 (16), ICL=19<>28
+cluster 4(N=259) has 6 sub-cluster at 7 (54), ICL=9.5<>28
+cluster 5(N=261) has 6 sub-cluster at 8 (28), ICL=6.3<>28
+cluster 2(N=48) has 3 sub-cluster at 3 (5), ICL=0<>28
+Model Refinement takes 0.067 mins(max 4: 0.033)
+Fit Model 3 of (6/10) K=7->8 N=1210
+EM 6 takes 0 mins, 12 iterations
+
+cluster 2(N=110) has 2 sub-cluster at 2 (6), ICL=66<>31
+split 2 into 2 clusters
+cluster 1(N=116) has 2 sub-cluster at 2 (5), ICL=39<>31
+split 1 into 2 clusters
+cluster 3(N=70) has 4 sub-cluster at 4 (31), ICL=30<>31
+cluster 6(N=138) has 5 sub-cluster at 6 (31), ICL=20<>31
+cluster 4(N=477) has 4 sub-cluster at 4 (22), ICL=3.2<>31
+cluster 1(N=116) has 2 sub-cluster at 2 (5), ICL=0<>31
+Model Refinement takes 0.13 mins(max 4: 0.033)
+Fit Model 4 of (6/10) K=6->8 N=2420
+EM 8 takes 0 mins, 13 iterations
+
+cluster 5(N=96) has 3 sub-cluster at 3 (9), ICL=53<>34
+split 5 into 3 clusters
+cluster 8(N=282) has 2 sub-cluster at 2 (6), ICL=28<>34
+cluster 3(N=127) has 7 sub-cluster at 7 (44), ICL=25<>34
+cluster 1(N=206) has 8 sub-cluster at 8 (47), ICL=23<>34
+cluster 4(N=109) has 2 sub-cluster at 2 (13), ICL=23<>34
+cluster 2(N=16) has 2 sub-cluster at 2 (100), ICL=3.3<>34
+cluster 1(N=206) has 8 sub-cluster at 8 (47), ICL=0<>34
+Model Refinement takes 0.2 mins(max 6: 0.05)
+Fit Model 5 of (6/10) K=8->10 N=4841
+EM 10 takes 0 mins, 10 iterations
+
+cluster 3(N=270) has 3 sub-cluster at 3 (22), ICL=49<>37
+split 3 into 3 clusters
+cluster 10(N=568) has 2 sub-cluster at 2 (10), ICL=33<>37
+cluster 2(N=32) has 2 sub-cluster at 2 (14), ICL=28<>37
+cluster 4(N=193) has 5 sub-cluster at 5 (31), ICL=24<>37
+cluster 6(N=83) has 4 sub-cluster at 4 (11), ICL=24<>37
+cluster 1(N=446) has 3 sub-cluster at 3 (10), ICL=14<>37
+cluster 5(N=155) has 5 sub-cluster at 5 (46), ICL=11<>37
+cluster 1(N=446) has 3 sub-cluster at 3 (10), ICL=0<>37
+Model Refinement takes 0.28 mins(max 8: 0.067)
+Fit Model 6 of (6/10) K=10->12 N=9682
+EM 12 takes 0.017 mins, 7 iterations
+
+cluster 8(N=158) has 2 sub-cluster at 2 (8), ICL=53<>40
+split 8 into 2 clusters
+cluster 2(N=60) has 4 sub-cluster at 4 (52), ICL=48<>40
+split 2 into 4 clusters
+cluster 6(N=391) has 2 sub-cluster at 2 (8), ICL=40<>40
+cluster 1(N=903) has 3 sub-cluster at 3 (8), ICL=32<>40
+cluster 12(N=1120) has 2 sub-cluster at 2 (18), ICL=28<>40
+cluster 9(N=77) has 2 sub-cluster at 2 (100), ICL=25<>40
+cluster 4(N=170) has 5 sub-cluster at 6 (36), ICL=22<>40
+cluster 3(N=211) has 7 sub-cluster at 8 (20), ICL=17<>40
+cluster 5(N=281) has 6 sub-cluster at 8 (65), ICL=10<>40
+cluster 7(N=307) has 6 sub-cluster at 7 (30), ICL=3.9<>40
+cluster 1(N=903) has 3 sub-cluster at 3 (8), ICL=0<>40
+Model Refinement takes 0.38 mins(max 10: 0.083)
+Fit Model 7 of (6/10) K=12->16 N=9682
+EM 14 takes 0.1 mins, 50 iterations
+
+cluster 1(N=905) has 2 sub-cluster at 2 (24), ICL=60<>40
+split 1 into 2 clusters
+cluster 14(N=1112) has 2 sub-cluster at 2 (9), ICL=46<>40
+split 14 into 2 clusters
+cluster 7(N=390) has 3 sub-cluster at 3 (34), ICL=41<>40
+split 7 into 3 clusters
+cluster 2(N=50) has 2 sub-cluster at 2 (100), ICL=41<>40
+split 2 into 2 clusters
+cluster 10(N=57) has 3 sub-cluster at 3 (18), ICL=27<>40
+cluster 5(N=189) has 4 sub-cluster at 4 (19), ICL=24<>40
+cluster 4(N=215) has 4 sub-cluster at 4 (35), ICL=20<>40
+cluster 11(N=74) has 2 sub-cluster at 2 (100), ICL=18<>40
+cluster 9(N=107) has 3 sub-cluster at 3 (25), ICL=14<>40
+cluster 6(N=269) has 6 sub-cluster at 8 (40), ICL=11<>40
+cluster 8(N=316) has 2 sub-cluster at 2 (8), ICL=9<>40
+cluster 1(N=905) has 2 sub-cluster at 2 (24), ICL=0<>40
+Model Refinement takes 0.37 mins(max 13: 0.083)
+Fit Model 8 of (6/10) K=14->19 N=9682
+EM 18 takes 0.1 mins, 50 iterations
+
+cluster 13(N=39) has 3 sub-cluster at 3 (11), ICL=27<>40
+cluster 12(N=107) has 5 sub-cluster at 5 (29), ICL=24<>40
+cluster 6(N=207) has 4 sub-cluster at 4 (25), ICL=21<>40
+cluster 10(N=108) has 6 sub-cluster at 6 (29), ICL=19<>40
+cluster 5(N=212) has 5 sub-cluster at 5 (23), ICL=17<>40
+cluster 7(N=255) has 7 sub-cluster at 8 (20), ICL=13<>40
+cluster 8(N=212) has 5 sub-cluster at 6 (50), ICL=12<>40
+cluster 9(N=148) has 7 sub-cluster at 7 (20), ICL=11<>40
+cluster 11(N=320) has 8 sub-cluster at 8 (39), ICL=8.2<>40
+cluster 14(N=74) has 2 sub-cluster at 2 (100), ICL=5.9<>40
+cluster 1(N=396) has 6 sub-cluster at 7 (34), ICL=2.7<>40
+cluster 1(N=396) has 6 sub-cluster at 7 (34), ICL=0<>40
+Model Refinement takes 0.47 mins(max 15: 0.083)
+Fit Model 9 of (6/10) K=18->18 N=9682
+EM 18 takes 0.1 mins, 50 iterations
+
+Process completed at9
+
+Major Iteration (Trans) (6/4) takes 2.3 mins
+Fit Model 1 of 10 with 2 clusters
+=> results in  2 clusters
+Fit Model 2 of 10 with 9 clusters
+=> results in  8 clusters
+Fit Model 3 of 10 with 23 clusters
+=> results in  18 clusters
+Fit Model 4 of 10 with 23 clusters
+=> results in  20 clusters
+Fit Model 5 of 10 with 23 clusters
+=> results in  20 clusters
+Error: processing vignette 'immunoClust.Rnw' failed with diagnostics:
+unable to run pdflatex on 'immunoClust.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘immunoClust.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘immunoClust.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

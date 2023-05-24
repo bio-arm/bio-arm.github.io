@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data zenith
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘zenith/DESCRIPTION’ ... OK
+* preparing ‘zenith’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+Loading required namespace: zenith
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘loading_genesets.Rmd’ using rmarkdown
+--- finished re-building ‘loading_genesets.Rmd’
+
+--- re-building ‘zenith.Rmd’ using rmarkdown
+Quitting from lines 35-73 (zenith.Rmd) 
+Error: processing vignette 'zenith.Rmd' failed with diagnostics:
+there is no package called 'tweeDEseqCountData'
+--- failed re-building ‘zenith.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘zenith.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

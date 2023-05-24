@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data biodbExpasy
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘biodbExpasy/DESCRIPTION’ ... OK
+* preparing ‘biodbExpasy’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘biodbExpasy.Rmd’ using rmarkdown
+Quitting from lines 69-71 (biodbExpasy.Rmd) 
+Error: processing vignette 'biodbExpasy.Rmd' failed with diagnostics:
+missing value where TRUE/FALSE needed
+--- failed re-building ‘biodbExpasy.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘biodbExpasy.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,37 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data maser
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘maser/DESCRIPTION’ ... OK
+* preparing ‘maser’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Introduction.Rmd’ using rmarkdown
+The magick package is required to crop "/tmp/RtmpMuOig7/Rbuild3f2d1a4b6c385d/maser/vignettes/Introduction_files/figure-html/unnamed-chunk-9-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpMuOig7/Rbuild3f2d1a4b6c385d/maser/vignettes/Introduction_files/figure-html/unnamed-chunk-10-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpMuOig7/Rbuild3f2d1a4b6c385d/maser/vignettes/Introduction_files/figure-html/unnamed-chunk-11-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpMuOig7/Rbuild3f2d1a4b6c385d/maser/vignettes/Introduction_files/figure-html/unnamed-chunk-13-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpMuOig7/Rbuild3f2d1a4b6c385d/maser/vignettes/Introduction_files/figure-html/unnamed-chunk-14-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpMuOig7/Rbuild3f2d1a4b6c385d/maser/vignettes/Introduction_files/figure-html/unnamed-chunk-15-1.png" but not available.
+The magick package is required to crop "/tmp/RtmpMuOig7/Rbuild3f2d1a4b6c385d/maser/vignettes/Introduction_files/figure-html/unnamed-chunk-16-1.png" but not available.
+--- finished re-building ‘Introduction.Rmd’
+
+--- re-building ‘Protein_mapping.Rmd’ using rmarkdown
+Quitting from lines 119-122 (Protein_mapping.Rmd) 
+Error: processing vignette 'Protein_mapping.Rmd' failed with diagnostics:
+Timeout was reached: [] SSL connection timeout
+--- failed re-building ‘Protein_mapping.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Protein_mapping.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

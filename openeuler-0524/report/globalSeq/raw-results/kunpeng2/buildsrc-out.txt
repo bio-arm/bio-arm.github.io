@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data globalSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘globalSeq/DESCRIPTION’ ... OK
+* preparing ‘globalSeq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘article.Rmd’ using rmarkdown
+--- finished re-building ‘article.Rmd’
+
+--- re-building ‘vignette.Rmd’ using rmarkdown
+--- finished re-building ‘vignette.Rmd’
+
+--- re-building ‘globalSeq.Rnw’ using knitr
+Error: processing vignette 'globalSeq.Rnw' failed with diagnostics:
+unable to run pdflatex on 'globalSeq.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.30 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘globalSeq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘globalSeq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

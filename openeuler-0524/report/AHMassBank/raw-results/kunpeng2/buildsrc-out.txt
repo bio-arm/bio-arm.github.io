@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AHMassBank
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘AHMassBank/DESCRIPTION’ ... OK
+* preparing ‘AHMassBank’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘creating-MassBank-CompDbs.Rmd’ using rmarkdown
+Quitting from lines 44-46 (creating-MassBank-CompDbs.Rmd) 
+Error: processing vignette 'creating-MassBank-CompDbs.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘creating-MassBank-CompDbs.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘creating-MassBank-CompDbs.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data odseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘odseq/DESCRIPTION’ ... OK
+* preparing ‘odseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘vignette.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'vignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpK1Xbb7/Rbuild4d851f442e99/odseq/vignettes/vignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See vignette.log for more info.
+--- failed re-building ‘vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
