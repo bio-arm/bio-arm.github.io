@@ -1,0 +1,10 @@
+Package: sarks
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:sarks.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings sarks_1.13.0.tar.gz
+StartedAt: 2023-05-25 04:47:44 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:47:58 -0000 (Thu, 25 May 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: sarks.Rcheck
+Warnings: NA

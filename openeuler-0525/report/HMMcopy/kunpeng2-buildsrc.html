@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for HMMcopy on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><B>[<A href="..#H">H</A>]</B></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-25 05:45:55 -0000 (Thu, 25 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4223</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for HMMcopy on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the HMMcopy package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/HMMcopy.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>931</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">HMMcopy</A>&nbsp;1.43.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/HMMcopy">landing page</A>)</SPAN><BR>Daniel Lai<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-24&nbsp;15:28:50&nbsp;-0000&nbsp;(Wed,&nbsp;24&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/HMMcopy</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">d3642f1</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:24:25&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: HMMcopy</TD></TR>
+<TR><TD><B>Version</B>: 1.43.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data HMMcopy</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-24 23:08:29 -0000 (Wed, 24 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-24 23:08:40 -0000 (Wed, 24 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 11.0 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data HMMcopy
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘HMMcopy/DESCRIPTION’ ... OK
+* preparing ‘HMMcopy’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘HMMcopy.Rnw’ using Sweave
+Warning in options(stringsAsFactors = TRUE) :
+  &#x27;options(stringsAsFactors = TRUE)&#x27; is deprecated and will be disabled
+Loading required package: data.table
+Applying filter on data...
+Correcting for GC bias...
+Correcting for mappability bias...
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique &#x27;x&#x27; values
+Warning in plotCorrection(normal_copy, pch = &quot;.&quot;) :
+  chr column is not a factor, converting to factor
+Applying filter on data...
+Correcting for GC bias...
+Correcting for mappability bias...
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique &#x27;x&#x27; values
+Warning in plotCorrection(tumour_copy, pch = &quot;.&quot;) :
+  chr column is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy) :
+  chr is not a factor, converting to factor
+Initialization
+EM iteration: 1 Log likelihood: -Inf
+Expectation
+Maximization
+EM iteration: 2 Log likelihood: 3723.38977598076
+Expectation
+Maximization
+EM iteration: 3 Log likelihood: 8651.17813251212
+Expectation
+Maximization
+EM iteration: 4 Log likelihood: 9776.42997349469
+Expectation
+Maximization
+EM iteration: 5 Log likelihood: 10073.1602591059
+Expectation
+Maximization
+EM iteration: 6 Log likelihood: 10155.0644113822
+Expectation
+Maximization
+EM iteration: 7 Log likelihood: 10175.7127889987
+Expectation
+Maximization
+EM iteration: 8 Log likelihood: 10181.1575769048
+Expectation
+Maximization
+EM iteration: 9 Log likelihood: 10183.4033459694
+Expectation
+Maximization
+EM iteration: 10 Log likelihood: 10184.3672316207
+Expectation
+Maximization
+Re-calculating latest responsibilties for output
+Optimal parameters found, segmenting and classifying
+Warning in HMMsegment(tumour_copy, getparam = TRUE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy, longseg_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy, newmu_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy, newmu_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(somatic_copy, newmu_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Error: processing vignette &#x27;HMMcopy.Rnw&#x27; failed with diagnostics:
+unable to run pdflatex on &#x27;HMMcopy.tex&#x27;
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty&#x27; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.8 \usepackage
+               {url}^^M
+!  ==&gt; Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘HMMcopy.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘HMMcopy.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

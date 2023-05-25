@@ -1,0 +1,10 @@
+Package: meshes
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:meshes.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings meshes_1.27.0.tar.gz
+StartedAt: 2023-05-25 04:40:02 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:40:15 -0000 (Thu, 25 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: meshes.Rcheck
+Warnings: NA

@@ -1,0 +1,64 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data semisup
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘semisup/DESCRIPTION’ ... OK
+* preparing ‘semisup’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘article.Rmd’ using rmarkdown
+Warning: The vignette title specified in \VignetteIndexEntry{} is different from the title in the YAML metadata. The former is "article frame", and the latter is "". If that is intentional, you may set options(rmarkdown.html_vignette.check_title = FALSE) to suppress this check.
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'article.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+--- finished re-building ‘article.Rmd’
+
+--- re-building ‘vignette.Rmd’ using rmarkdown
+Warning: The vignette title specified in \VignetteIndexEntry{} is different from the title in the YAML metadata. The former is "vignette frame", and the latter is "". If that is intentional, you may set options(rmarkdown.html_vignette.check_title = FALSE) to suppress this check.
+[WARNING] This document format requires a nonempty <title> element.
+  Defaulting to 'vignette.knit' as the title.
+  To specify a title, use 'title' in metadata or --metadata title="...".
+--- finished re-building ‘vignette.Rmd’
+
+--- re-building ‘semisup.Rnw’ using knitr
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Error: processing vignette 'semisup.Rnw' failed with diagnostics:
+unable to run pdflatex on 'semisup.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.30 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘semisup.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘semisup.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,10 @@
+Package: goSTAG
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:goSTAG.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings goSTAG_1.25.0.tar.gz
+StartedAt: 2023-05-25 04:36:46 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:36:57 -0000 (Thu, 25 May 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: goSTAG.Rcheck
+Warnings: NA

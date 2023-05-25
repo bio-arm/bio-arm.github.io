@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Anaquin
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Anaquin/DESCRIPTION’ ... OK
+* preparing ‘Anaquin’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Anaquin.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Anaquin.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpDcRoxB/Rbuild179bbce1db8cb/Anaquin/vignettes/Anaquin.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Anaquin.log for more info.
+--- failed re-building ‘Anaquin.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Anaquin.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

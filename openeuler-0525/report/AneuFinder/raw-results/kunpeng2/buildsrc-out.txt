@@ -1,0 +1,214 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AneuFinder
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘AneuFinder/DESCRIPTION’ ... OK
+* preparing ‘AneuFinder’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘AneuFinder.Rnw’ using knitr
+Aneufinder             package:AneuFinder              R Documentation
+
+_W_r_a_p_p_e_r _f_u_n_c_t_i_o_n _f_o_r _t_h_e '_A_n_e_u_F_i_n_d_e_r' _p_a_c_k_a_g_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     This function is an easy-to-use wrapper to bin the data, find
+     copy-number-variations, locate breakpoints, plot genomewide
+     heatmaps, distributions, profiles and karyograms.
+
+_U_s_a_g_e:
+
+     Aneufinder(inputfolder, outputfolder, configfile = NULL, numCPU = 1,
+       reuse.existing.files = TRUE, binsizes = 1e+06, stepsizes = binsizes,
+       variable.width.reference = NULL, reads.per.bin = NULL,
+       pairedEndReads = FALSE, assembly = NULL, chromosomes = NULL,
+       remove.duplicate.reads = TRUE, min.mapq = 10, blacklist = NULL,
+       use.bamsignals = FALSE, reads.store = FALSE, correction.method = NULL,
+       GC.BSgenome = NULL, method = c("edivisive"), strandseq = FALSE,
+       R = 10, sig.lvl = 0.1, eps = 0.01, max.time = 60, max.iter = 5000,
+       num.trials = 15, states = c("zero-inflation", paste0(0:10, "-somy")),
+       confint = NULL, refine.breakpoints = FALSE, hotspot.bandwidth = NULL,
+       hotspot.pval = 0.05, cluster.plots = TRUE)
+     
+_A_r_g_u_m_e_n_t_s:
+
+inputfolder: Folder with either BAM or BED files.
+
+outputfolder: Folder to output the results. If it does not exist it
+          will be created.
+
+configfile: A file specifying the parameters of this function (without
+          'inputfolder', 'outputfolder' and 'configfile'). Having the
+          parameters in a file can be handy if many samples with the
+          same parameter settings are to be run. If a 'configfile' is
+          specified, it will take priority over the command line
+          parameters.
+
+  numCPU: The numbers of CPUs that are used. Should not be more than
+          available on your machine.
+
+reuse.existing.files: A logical indicating whether or not existing
+          files in 'outputfolder' should be reused.
+
+binsizes: An integer vector with bin sizes. If more than one value is
+          given, output files will be produced for each bin size.
+
+stepsizes: A vector of step sizes the same length as 'binsizes'. Only
+          used for 'method="HMM"'.
+
+variable.width.reference: A BAM file that is used as reference to
+          produce variable width bins. See 'variableWidthBins' for
+          details.
+
+reads.per.bin: Approximate number of desired reads per bin. The bin
+          size will be selected accordingly. Output files are produced
+          for each value.
+
+pairedEndReads: Set to 'TRUE' if you have paired-end reads in your BAM
+          files (not implemented for BED files).
+
+assembly: Please see 'getChromInfoFromUCSC' for available assemblies.
+          Only necessary when importing BED files. BAM files are
+          handled automatically. Alternatively a data.frame with
+          columns 'chromosome' and 'length'.
+
+chromosomes: If only a subset of the chromosomes should be imported,
+          specify them here.
+
+remove.duplicate.reads: A logical indicating whether or not duplicate
+          reads should be removed.
+
+min.mapq: Minimum mapping quality when importing from BAM files. Set
+          'min.mapq=NA' to keep all reads.
+
+blacklist: A 'GRanges-class' or a bed(.gz) file with blacklisted
+          regions. Reads falling into those regions will be discarded.
+
+use.bamsignals: If 'TRUE' the 'bamsignals' package will be used for
+          binning. This gives a tremendous performance increase for the
+          binning step. 'reads.store' and 'calc.complexity' will be set
+          to 'FALSE' in this case.
+
+reads.store: Set 'reads.store=TRUE' to store read fragments as RData in
+          folder 'data' and as BED files in 'BROWSERFILES/data'. This
+          option will force 'use.bamsignals=FALSE'.
+
+correction.method: Correction methods to be used for the binned read
+          counts. Currently only ''GC''.
+
+GC.BSgenome: A 'BSgenome' object which contains the DNA sequence that
+          is used for the GC correction.
+
+  method: Any combination of 'c('HMM','dnacopy','edivisive')'. Option
+          'method='HMM'' uses a Hidden Markov Model as described in
+          doi:10.1186/s13059-016-0971-7 to call copy numbers. Option
+          ''dnacopy'' uses 'segment' from the 'DNAcopy' package to call
+          copy numbers similarly to the method proposed in
+          doi:10.1038/nmeth.3578, which gives more robust but less
+          sensitive results compared to the HMM. Option ''edivisive''
+          (DEFAULT) works like option ''dnacopy'' but uses the
+          'e.divisive' function from the 'ecp' package for
+          segmentation.
+
+strandseq: A logical indicating whether the data comes from Strand-seq
+          experiments. If 'TRUE', both strands carry information and
+          are treated separately.
+
+       R: method-edivisive: The maximum number of random permutations
+          to use in each iteration of the permutation test (see
+          'e.divisive'). Increase this value to increase accuracy on
+          the cost of speed.
+
+ sig.lvl: method-edivisive: The level at which to sequentially test if
+          a proposed change point is statistically significant (see
+          'e.divisive'). Increase this value to find more breakpoints.
+
+     eps: method-HMM: Convergence threshold for the Baum-Welch
+          algorithm.
+
+max.time: method-HMM: The maximum running time in seconds for the
+          Baum-Welch algorithm. If this time is reached, the Baum-Welch
+          will terminate after the current iteration finishes. Set
+          'max.time = -1' for no limit.
+
+max.iter: method-HMM: The maximum number of iterations for the
+          Baum-Welch algorithm. Set 'max.iter = -1' for no limit.
+
+num.trials: method-HMM: The number of trials to find a fit where state
+          'most.frequent.state' is most frequent. Each time, the HMM is
+          seeded with different random initial values.
+
+  states: method-HMM: A subset or all of
+          'c("zero-inflation","0-somy","1-somy","2-somy","3-somy","4-somy",...)'.
+          This vector defines the states that are used in the Hidden
+          Markov Model. The order of the entries must not be changed.
+
+ confint: Desired confidence interval for breakpoints. Set
+          'confint=NULL' to disable confidence interval estimation.
+          Confidence interval estimation will force 'reads.store=TRUE'.
+
+refine.breakpoints: A logical indicating whether breakpoints from the
+          HMM should be refined with read-level information.
+          'refine.breakpoints=TRUE' will force 'reads.store=TRUE'.
+
+hotspot.bandwidth: A vector the same length as 'binsizes' with
+          bandwidths for breakpoint hotspot detection (see 'hotspotter'
+          for further details). If 'NULL', the bandwidth will be chosen
+          automatically as the average distance between reads.
+
+hotspot.pval: P-value for breakpoint hotspot detection (see
+          'hotspotter' for further details). Set 'hotspot.pval = NULL'
+          to skip hotspot detection.
+
+cluster.plots: A logical indicating whether plots should be clustered
+          by similarity.
+
+_V_a_l_u_e:
+
+     'NULL'
+
+_A_u_t_h_o_r(_s):
+
+     Aaron Taudt
+
+_E_x_a_m_p_l_e_s:
+
+     ## Not run:
+     
+     ## The following call produces plots and genome browser files for all BAM files in "my-data-folder"
+     Aneufinder(inputfolder="my-data-folder", outputfolder="my-output-folder")
+     ## End(Not run)
+     
+
+Warning: ggrepel: 2 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+Error: processing vignette 'AneuFinder.Rnw' failed with diagnostics:
+unable to run pdflatex on 'AneuFinder.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘AneuFinder.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘AneuFinder.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,236 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EBSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EBSeq/DESCRIPTION’ ... OK
+* preparing ‘EBSeq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘EBSeq_Vignette.Rnw’ using Sweave
+Loading required package: blockmodeling
+To cite package 'blockmodeling' in publications please use package
+citation and (at least) one of the articles:
+
+  Žiberna, Aleš (2007). Generalized blockmodeling of valued networks.
+  Social Networks 29(1), 105-126.
+
+  Žiberna, Aleš (2008). Direct and indirect approaches to blockmodeling
+  of valued networks in terms of regular equivalence. Journal of
+  Mathematical Sociology 32(1), 57–84.
+
+  Žiberna, Aleš (2014). Blockmodeling of multilevel networks. Social
+  Networks 39, 46–61. https://doi.org/10.1016/j.socnet.2014.04.002.
+
+  Žiberna, Aleš (2022).  Generalized and Classical Blockmodeling of
+  Valued Networks, R package version 1.1.4.
+  Cugmas, Marjan (2022).  Generalized and Classical Blockmodeling of
+  Valued Networks, R package version 1.1.4.
+
+To see these entries in BibTeX format, use 'format(<citation>,
+bibtex=TRUE)', or 'toBibtex(.)'.
+Loading required package: gplots
+
+Attaching package: ‘gplots’
+
+The following object is masked from ‘package:stats’:
+
+    lowess
+
+Loading required package: testthat
+iteration 1 done 
+
+time 0.92 
+
+iteration 2 done 
+
+time 0.61 
+
+iteration 3 done 
+
+time 0.52 
+
+iteration 4 done 
+
+time 0.48 
+
+iteration 5 done 
+
+time 0.52 
+
+iteration 1 done 
+
+time 5.14 
+
+iteration 2 done 
+
+time 2.11 
+
+iteration 3 done 
+
+time 1.36 
+
+iteration 4 done 
+
+time 1.22 
+
+iteration 5 done 
+
+time 1.1 
+
+iteration 1 done 
+
+time 2.3 
+
+iteration 2 done 
+
+time 1.05 
+
+iteration 3 done 
+
+time 0.86 
+
+iteration 4 done 
+
+time 0.81 
+
+iteration 5 done 
+
+time 0.83 
+
+iteration 1 done 
+
+time 5.04 
+
+iteration 2 done 
+
+time 5.16 
+
+iteration 3 done 
+
+time 4.76 
+
+iteration 4 done 
+
+time 2.38 
+
+iteration 5 done 
+
+time 2.82 
+
+No Replicate - estimate phi 0.00386 
+
+iteration 1 done 
+
+time 0.41 
+
+iteration 2 done 
+
+time 0.27 
+
+iteration 3 done 
+
+time 0.27 
+
+iteration 4 done 
+
+time 0.23 
+
+iteration 5 done 
+
+time 0.22 
+
+No Replicate - estimate phi 0.01635 
+
+iteration 1 done 
+
+time 1.7 
+
+iteration 2 done 
+
+time 1.56 
+
+iteration 3 done 
+
+time 0.55 
+
+iteration 4 done 
+
+time 0.6 
+
+iteration 5 done 
+
+time 0.62 
+
+No Replicate - estimate phi 0.00314 
+
+iteration 1 done 
+
+time 2.88 
+
+iteration 2 done 
+
+time 1.51 
+
+iteration 3 done 
+
+time 0.98 
+
+iteration 4 done 
+
+time 0.82 
+
+iteration 5 done 
+
+time 0.92 
+
+No Replicate - estimate phi 0.0017 
+
+iteration 1 done 
+
+time 4.3 
+
+iteration 2 done 
+
+time 4.33 
+
+iteration 3 done 
+
+time 4.33 
+
+iteration 4 done 
+
+time 4.31 
+
+iteration 5 done 
+
+time 2.61 
+
+Error: processing vignette 'EBSeq_Vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'EBSeq_Vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.5 \usepackage
+               {graphicx, graphics, epsfig,setspace,amsmath, amsthm}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘EBSeq_Vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘EBSeq_Vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CytoDx
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CytoDx/DESCRIPTION’ ... OK
+* preparing ‘CytoDx’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘CytoDx_Vignette.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'CytoDx_Vignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpJNYL14/Rbuild25de606b3d90c8/CytoDx/vignettes/CytoDx_Vignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See CytoDx_Vignette.log for more info.
+--- failed re-building ‘CytoDx_Vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘CytoDx_Vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

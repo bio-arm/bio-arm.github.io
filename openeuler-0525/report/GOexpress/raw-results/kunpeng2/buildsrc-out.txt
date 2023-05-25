@@ -1,0 +1,260 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GOexpress
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GOexpress/DESCRIPTION’ ... OK
+* preparing ‘GOexpress’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GOexpress-UsersGuide.Rnw’ using Sweave
+Loading required package: grid
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+`geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  pseudoinverse used at 1.77
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  neighborhood radius 22.23
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  reciprocal condition number  1.8131e-16
+Warning in simpleLoess(y, x, w, span, degree = degree, parametric = parametric,  :
+  There are other near singularities as well. 1783.4
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  pseudoinverse used at 1.77
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  neighborhood radius 22.23
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  reciprocal condition number  1.8131e-16
+Warning in predLoess(object$y, object$x, newx = if (is.null(newdata)) object$x else if (is.data.frame(newdata)) as.matrix(model.frame(delete.response(terms(object)),  :
+  There are other near singularities as well. 1783.4
+Error: processing vignette 'GOexpress-UsersGuide.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GOexpress-UsersGuide.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GOexpress-UsersGuide.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GOexpress-UsersGuide.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

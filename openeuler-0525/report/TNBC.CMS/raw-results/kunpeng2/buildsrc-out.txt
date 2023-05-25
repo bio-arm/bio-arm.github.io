@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TNBC.CMS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TNBC.CMS/DESCRIPTION’ ... OK
+* preparing ‘TNBC.CMS’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘TNBC.CMS.rnw’ using knitr
+Error: processing vignette 'TNBC.CMS.rnw' failed with diagnostics:
+unable to run pdflatex on 'TNBC.CMS.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.33 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘TNBC.CMS.rnw’
+
+SUMMARY: processing the following file failed:
+  ‘TNBC.CMS.rnw’
+
+Error: Vignette re-building failed.
+Execution halted

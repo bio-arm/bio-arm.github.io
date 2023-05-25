@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data trigger
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘trigger/DESCRIPTION’ ... OK
+* preparing ‘trigger’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘trigger.Rnw’ using Sweave
+Loading required package: corpcor
+Loading required package: qtl
+Read 160000 items
+Error: processing vignette 'trigger.Rnw' failed with diagnostics:
+unable to run pdflatex on 'trigger.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {vmargin}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘trigger.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘trigger.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data yarn
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘yarn/DESCRIPTION’ ... OK
+* preparing ‘yarn’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘yarn.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'yarn.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmpi4FGox/Rbuild3003bd33062546/yarn/vignettes/yarn.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See yarn.log for more info.
+--- failed re-building ‘yarn.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘yarn.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

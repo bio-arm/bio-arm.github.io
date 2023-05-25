@@ -1,0 +1,361 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ArrayExpress
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ArrayExpress/DESCRIPTION’ ... OK
+* preparing ‘ArrayExpress’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ArrayExpress.Rnw’ using Sweave
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Downloading file: 1203aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1203aa.cel'
+Content type 'unknown' length 7317392 bytes (7.0 MB)
+==================================================
+Downloading file: E-MEXP-21-processed-data-2487199618.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/E-MEXP-21-processed-data-2487199618.txt'
+Content type 'unknown' length 1683750 bytes (1.6 MB)
+==================================================
+Downloading file: 1205aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1205aa.cel'
+Content type 'unknown' length 7340006 bytes (7.0 MB)
+==================================================
+Downloading file: 1202aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1202aa.cel'
+Content type 'unknown' length 7329097 bytes (7.0 MB)
+==================================================
+Downloading file: 1204aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1204aa.cel'
+Content type 'unknown' length 7343156 bytes (7.0 MB)
+==================================================
+Downloading file: E-MEXP-21-processed-data-2487199618.txt
+
+/tmp/RtmpipGlVP/E-MEXP-21-processed-data-2487199618.txt already exists, skipping.
+Downloading file: E-MEXP-21.idf.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/E-MEXP-21.idf.txt'
+Content type 'unknown' length 7299 bytes
+==================================================
+Downloading file: E-MEXP-21.sdrf.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/E-MEXP-21.sdrf.txt'
+Content type 'unknown' length 3791 bytes
+==================================================
+Downloading file: A-AFFY-32.adf.txt
+
+trying URL 'https://www.ebi.ac.uk/biostudies/files/A-AFFY-32/A-AFFY-32.adf.txt'
+Content type 'text/plain; charset=UTF-8' length 790789 bytes (772 KB)
+==================================================
+downloaded 772 KB
+
+Unpacking data files
+ArrayExpress: Reading pheno data from SDRF
+ArrayExpress: Reading data files
+Loading required package: pd.hu6800
+Attempting to obtain 'pd.hu6800' from BioConductor website.
+Checking to see if your internet connection works...
+trying URL 'https://bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hu6800_3.12.0.tar.gz'
+Content type 'application/x-gzip' length 4403663 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+* installing *source* package ‘pd.hu6800’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pd.hu6800)
+
+The downloaded source packages are in
+	‘/tmp/RtmpipGlVP/downloaded_packages’
+Loading required package: pd.hu6800
+Loading required package: Biostrings
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: RSQLite
+Loading required package: oligoClasses
+Welcome to oligoClasses version 1.63.0
+Loading required package: oligo
+================================================================================
+Welcome to oligo version 1.65.0
+================================================================================
+Loading required package: DBI
+Platform design info loaded.
+Read 48 items
+
+ E-MEXP-21  was successfully loaded into  ExpressionFeatureSet 
+
+Warning in file.remove(file.path(path, basename(mageFiles$processedFiles),  :
+  cannot remove file '/tmp/RtmpipGlVP/E-MEXP-21-processed-data-2487199618.txt', reason 'No such file or directory'
+Warning in file.remove(file.path(path, basename(mageFiles$rawArchive), fsep = sep)) :
+  cannot remove file '/tmp/RtmpipGlVP/1203aa.cel', reason 'No such file or directory'
+Warning in file.remove(file.path(path, basename(mageFiles$rawArchive), fsep = sep)) :
+  cannot remove file '/tmp/RtmpipGlVP/E-MEXP-21-processed-data-2487199618.txt', reason 'No such file or directory'
+Warning in file.remove(file.path(path, basename(mageFiles$rawArchive), fsep = sep)) :
+  cannot remove file '/tmp/RtmpipGlVP/1205aa.cel', reason 'No such file or directory'
+Warning in file.remove(file.path(path, basename(mageFiles$rawArchive), fsep = sep)) :
+  cannot remove file '/tmp/RtmpipGlVP/1202aa.cel', reason 'No such file or directory'
+Warning in file.remove(file.path(path, basename(mageFiles$rawArchive), fsep = sep)) :
+  cannot remove file '/tmp/RtmpipGlVP/1204aa.cel', reason 'No such file or directory'
+Warning in file.remove(file.path(path, basename(mageFiles$processedArchive),  :
+  cannot remove file '/tmp/RtmpipGlVP/E-MEXP-21-processed-data-2487199618.txt', reason 'No such file or directory'
+Downloading file: 30_v4_v4.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/30_v4_v4.gpr'
+Content type 'unknown' length 5350610 bytes (5.1 MB)
+==================================================
+Downloading file: 13_v3_v3.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/13_v3_v3.gpr'
+Content type 'unknown' length 5277770 bytes (5.0 MB)
+==================================================
+Downloading file: 31_v4_v4.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/31_v4_v4.gpr'
+Content type 'unknown' length 5264983 bytes (5.0 MB)
+==================================================
+Downloading file: 45_4_4.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/45_4_4.gpr'
+Content type 'unknown' length 5493312 bytes (5.2 MB)
+==================================================
+Downloading file: 47_3_4.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/47_3_4.gpr'
+Content type 'unknown' length 5335570 bytes (5.1 MB)
+==================================================
+Downloading file: 11_v4_v3.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/11_v4_v3.gpr'
+Content type 'unknown' length 5385618 bytes (5.1 MB)
+==================================================
+Downloading file: 46_3_3.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/46_3_3.gpr'
+Content type 'unknown' length 5304968 bytes (5.1 MB)
+==================================================
+Downloading file: 12_v4_v3.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/12_v4_v3.gpr'
+Content type 'unknown' length 5358829 bytes (5.1 MB)
+==================================================
+Downloading file: 29_v4_v4.gpr
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/29_v4_v4.gpr'
+Content type 'unknown' length 5344579 bytes (5.1 MB)
+==================================================
+Downloading file: E-MEXP-1870.idf.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/E-MEXP-1870.idf.txt'
+Content type 'unknown' length 17908 bytes (17 KB)
+==================================================
+Downloading file: E-MEXP-1870.sdrf.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/nfs/E-MEXP-/870/E-MEXP-1870/Files/E-MEXP-1870.sdrf.txt'
+Content type 'unknown' length 14207 bytes (13 KB)
+==================================================
+Downloading file: A-MEXP-1425.adf.txt
+
+trying URL 'https://www.ebi.ac.uk/biostudies/files/A-MEXP-1425/A-MEXP-1425.adf.txt'
+Content type 'text/plain; charset=UTF-8' length 768845 bytes (750 KB)
+==================================================
+downloaded 750 KB
+
+Unpacking data files
+Duplicates found in SDRF file
+Removed duplicates in SDRF file
+ArrayExpress: Reading pheno data from SDRF
+Warning: non-unique values when setting 'row.names': ‘11_v4_v3.gpr’, ‘12_v4_v3.gpr’, ‘13_v3_v3.gpr’, ‘29_v4_v4.gpr’, ‘30_v4_v4.gpr’, ‘31_v4_v4.gpr’, ‘45_4_4.gpr’, ‘46_3_3.gpr’, ‘47_3_4.gpr’
+Error in `.rowNamesDF<-`(x, value = value) : 
+  duplicate 'row.names' are not allowed
+Downloading file: 30_v4_v4.gpr
+
+/tmp/RtmpipGlVP/30_v4_v4.gpr already exists, skipping.
+Downloading file: 13_v3_v3.gpr
+
+/tmp/RtmpipGlVP/13_v3_v3.gpr already exists, skipping.
+Downloading file: 31_v4_v4.gpr
+
+/tmp/RtmpipGlVP/31_v4_v4.gpr already exists, skipping.
+Downloading file: 45_4_4.gpr
+
+/tmp/RtmpipGlVP/45_4_4.gpr already exists, skipping.
+Downloading file: 47_3_4.gpr
+
+/tmp/RtmpipGlVP/47_3_4.gpr already exists, skipping.
+Downloading file: 11_v4_v3.gpr
+
+/tmp/RtmpipGlVP/11_v4_v3.gpr already exists, skipping.
+Downloading file: 46_3_3.gpr
+
+/tmp/RtmpipGlVP/46_3_3.gpr already exists, skipping.
+Downloading file: 12_v4_v3.gpr
+
+/tmp/RtmpipGlVP/12_v4_v3.gpr already exists, skipping.
+Downloading file: 29_v4_v4.gpr
+
+/tmp/RtmpipGlVP/29_v4_v4.gpr already exists, skipping.
+Downloading file: E-MEXP-1870.idf.txt
+
+/tmp/RtmpipGlVP/E-MEXP-1870.idf.txt already exists, skipping.
+Downloading file: E-MEXP-1870.sdrf.txt
+
+/tmp/RtmpipGlVP/E-MEXP-1870.sdrf.txt already exists, skipping.
+Downloading file: A-MEXP-1425.adf.txt
+
+/tmp/RtmpipGlVP/A-MEXP-1425.adf.txt already exists, skipping.
+Unpacking data files
+Duplicates found in SDRF file
+Removed duplicates in SDRF file
+ArrayExpress: Reading pheno data from SDRF
+Warning: non-unique values when setting 'row.names': ‘11_v4_v3.gpr’, ‘12_v4_v3.gpr’, ‘13_v3_v3.gpr’, ‘29_v4_v4.gpr’, ‘30_v4_v4.gpr’, ‘31_v4_v4.gpr’, ‘45_4_4.gpr’, ‘46_3_3.gpr’, ‘47_3_4.gpr’
+Error in `.rowNamesDF<-`(x, value = value) : 
+  duplicate 'row.names' are not allowed
+Downloading file: 1203aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1203aa.cel'
+Content type 'unknown' length 7317392 bytes (7.0 MB)
+==================================================
+Downloading file: E-MEXP-21-processed-data-2487199618.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/E-MEXP-21-processed-data-2487199618.txt'
+Content type 'unknown' length 1683750 bytes (1.6 MB)
+==================================================
+Downloading file: 1205aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1205aa.cel'
+Content type 'unknown' length 7340006 bytes (7.0 MB)
+==================================================
+Downloading file: 1202aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1202aa.cel'
+Content type 'unknown' length 7329097 bytes (7.0 MB)
+==================================================
+Downloading file: 1204aa.cel
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/1204aa.cel'
+Content type 'unknown' length 7343156 bytes (7.0 MB)
+==================================================
+Downloading file: E-MEXP-21-processed-data-2487199618.txt
+
+/tmp/RtmpaRuUGO/Rbuild17a7487bdc3447/ArrayExpress/vignettes/E-MEXP-21-processed-data-2487199618.txt already exists, skipping.
+Downloading file: E-MEXP-21.idf.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/E-MEXP-21.idf.txt'
+Content type 'unknown' length 7299 bytes
+==================================================
+Downloading file: E-MEXP-21.sdrf.txt
+
+trying URL 'ftp://ftp.ebi.ac.uk/biostudies/fire/E-MEXP-/021/E-MEXP-21/Files/E-MEXP-21.sdrf.txt'
+Content type 'unknown' length 3791 bytes
+==================================================
+Downloading file: A-AFFY-32.adf.txt
+
+trying URL 'https://www.ebi.ac.uk/biostudies/files/A-AFFY-32/A-AFFY-32.adf.txt'
+Content type 'text/plain; charset=UTF-8' length 790789 bytes (772 KB)
+==================================================
+downloaded 772 KB
+
+Unpacking data files
+ArrayExpress: Reading pheno data from SDRF
+ArrayExpress: Reading data files
+Platform design info loaded.
+Read 48 items
+Read 31 items
+ArrayExpress: Reading pheno data from SDRF
+Warning in matrix(as.numeric(as.matrix(data.matrix[, procol == matrix.header[2,  :
+  NAs introduced by coercion
+Warning in eval(substitute(expr), data, enclos = parent.frame()) :
+  Cannot attach phenoData
+ArrayExpress: Reading feature metadata from ADF
+Warning in eval(substitute(expr), data, enclos = parent.frame()) :
+  Cannot attach feature data
+Read 48 items
+
+ E-MEXP-21  processed data was successfully loaded into  ExpressionSet 
+
+Error: processing vignette 'ArrayExpress.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ArrayExpress.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.10 \usepackage
+                {verbatim}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ArrayExpress.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘ArrayExpress.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

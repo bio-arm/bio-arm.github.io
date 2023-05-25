@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data nearBynding
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘nearBynding/DESCRIPTION’ ... OK
+* preparing ‘nearBynding’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘nearBynding.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'nearBynding.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpOKZGGK/Rbuild29b2e27d6abb3d/nearBynding/vignettes/nearBynding.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See nearBynding.log for more info.
+--- failed re-building ‘nearBynding.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘nearBynding.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

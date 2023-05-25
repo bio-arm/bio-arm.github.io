@@ -1,0 +1,74 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data universalmotif
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘universalmotif/DESCRIPTION’ ... OK
+* preparing ‘universalmotif’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Introduction.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Introduction.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpnDNftT/Rbuild2fc4106e28af97/universalmotif/vignettes/Introduction.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Introduction.log for more info.
+--- failed re-building ‘Introduction.Rmd’
+
+--- re-building ‘IntroductionToSequenceMotifs.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'IntroductionToSequenceMotifs.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpnDNftT/Rbuild2fc4106e28af97/universalmotif/vignettes/IntroductionToSequenceMotifs.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See IntroductionToSequenceMotifs.log for more info.
+--- failed re-building ‘IntroductionToSequenceMotifs.Rmd’
+
+--- re-building ‘MotifComparisonAndPvalues.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'MotifComparisonAndPvalues.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpnDNftT/Rbuild2fc4106e28af97/universalmotif/vignettes/MotifComparisonAndPvalues.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See MotifComparisonAndPvalues.log for more info.
+--- failed re-building ‘MotifComparisonAndPvalues.Rmd’
+
+--- re-building ‘MotifManipulation.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'MotifManipulation.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpnDNftT/Rbuild2fc4106e28af97/universalmotif/vignettes/MotifManipulation.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See MotifManipulation.log for more info.
+--- failed re-building ‘MotifManipulation.Rmd’
+
+--- re-building ‘SequenceSearches.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'SequenceSearches.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpnDNftT/Rbuild2fc4106e28af97/universalmotif/vignettes/SequenceSearches.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See SequenceSearches.log for more info.
+--- failed re-building ‘SequenceSearches.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘Introduction.Rmd’ ‘IntroductionToSequenceMotifs.Rmd’
+  ‘MotifComparisonAndPvalues.Rmd’ ‘MotifManipulation.Rmd’
+  ‘SequenceSearches.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

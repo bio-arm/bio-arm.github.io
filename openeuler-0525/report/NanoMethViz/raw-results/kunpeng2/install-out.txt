@@ -1,0 +1,17 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL NanoMethViz
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘NanoMethViz’ ...
+** using staged installation
+** libs
+Error: C++20 standard requested but CXX20 is not defined
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/NanoMethViz’

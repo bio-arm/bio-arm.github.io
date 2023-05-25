@@ -1,0 +1,10 @@
+Package: impute
+Version: 1.75.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:impute.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings impute_1.75.1.tar.gz
+StartedAt: 2023-05-25 04:38:10 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:38:21 -0000 (Thu, 25 May 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: impute.Rcheck
+Warnings: NA

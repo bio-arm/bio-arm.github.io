@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data metagenomeSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘metagenomeSeq/DESCRIPTION’ ... OK
+* preparing ‘metagenomeSeq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘fitTimeSeries.Rnw’ using knitr
+Error: processing vignette 'fitTimeSeries.Rnw' failed with diagnostics:
+unable to run pdflatex on 'fitTimeSeries.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.29 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘fitTimeSeries.Rnw’
+
+--- re-building ‘metagenomeSeq.Rnw’ using knitr
+Error: processing vignette 'metagenomeSeq.Rnw' failed with diagnostics:
+unable to run pdflatex on 'metagenomeSeq.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.29 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘metagenomeSeq.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘fitTimeSeries.Rnw’ ‘metagenomeSeq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

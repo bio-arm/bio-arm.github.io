@@ -1,0 +1,66 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DeMAND
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DeMAND/DESCRIPTION’ ... OK
+* preparing ‘DeMAND’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘DeMAND.Rnw’ using Sweave
+Loading required package: KernSmooth
+KernSmooth 2.23 loaded
+Copyright M. P. Wand 1997-2009
+An object of class demand
+Slot exp:
+	Expression data of 1577 features by 12 samples
+Slot anno:
+	Annotation of 1577 probes and 452 genes
+Slot network:
+	Interactome with 2684 nodes, 1577 edges
+Slot moa (head):
+	Empty
+Slot KLD (head):
+	Empty
+Pruning the network
+Keeping best probe per gene
+Make a null distribution for KL divergence.....
+Measure dysregulation of the interactions.....
+Estimate dysregulation of the genes.....
+An object of class demand
+Slot exp:
+	Expression data of 1577 features by 12 samples
+Slot anno:
+	Annotation of 1577 probes and 452 genes
+Slot network:
+	Interactome with 2684 nodes, 1577 edges
+Slot moa (head):
+Slot KLD (head):
+Error: processing vignette 'DeMAND.Rnw' failed with diagnostics:
+unable to run pdflatex on 'DeMAND.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.3 \usepackage
+               {hyperref}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘DeMAND.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘DeMAND.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

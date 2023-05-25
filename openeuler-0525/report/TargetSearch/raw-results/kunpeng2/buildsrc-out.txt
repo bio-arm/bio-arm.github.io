@@ -1,0 +1,56 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TargetSearch
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TargetSearch/DESCRIPTION’ ... OK
+* preparing ‘TargetSearch’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RICorrection.Rnw’ using knitr
+Error: processing vignette 'RICorrection.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RICorrection.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RICorrection.Rnw’
+
+--- re-building ‘TargetSearch.Rnw’ using knitr
+Error: processing vignette 'TargetSearch.Rnw' failed with diagnostics:
+unable to run pdflatex on 'TargetSearch.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘TargetSearch.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘RICorrection.Rnw’ ‘TargetSearch.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

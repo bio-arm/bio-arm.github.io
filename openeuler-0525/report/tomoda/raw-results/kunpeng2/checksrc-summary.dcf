@@ -1,0 +1,10 @@
+Package: tomoda
+Version: 1.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:tomoda.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings tomoda_1.11.0.tar.gz
+StartedAt: 2023-05-25 04:51:38 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:51:55 -0000 (Thu, 25 May 2023)
+EllapsedTime: 17.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: tomoda.Rcheck
+Warnings: NA

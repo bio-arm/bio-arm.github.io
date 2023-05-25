@@ -1,0 +1,59 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data mogsa
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘mogsa/DESCRIPTION’ ... OK
+* preparing ‘mogsa’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘moCluster-knitr.Rnw’ using knitr
+Error: processing vignette 'moCluster-knitr.Rnw' failed with diagnostics:
+unable to run pdflatex on 'moCluster-knitr.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘moCluster-knitr.Rnw’
+
+--- re-building ‘mogsa-knitr.Rnw’ using knitr
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Warning: 'mode(width)' differs between new and previous
+	 ==> NOT changing 'width'
+Error: processing vignette 'mogsa-knitr.Rnw' failed with diagnostics:
+unable to run pdflatex on 'mogsa-knitr.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘mogsa-knitr.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘moCluster-knitr.Rnw’ ‘mogsa-knitr.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,53 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AlpsNMR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘AlpsNMR/DESCRIPTION’ ... OK
+* preparing ‘AlpsNMR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Vig01-introduction-to-alpsnmr.Rmd’ using rmarkdown
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Vig01-introduction-to-alpsnmr.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpYHws2n/Rbuild1798fd7d9fec18/AlpsNMR/vignettes/Vig01-introduction-to-alpsnmr.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Vig01-introduction-to-alpsnmr.log for more info.
+--- failed re-building ‘Vig01-introduction-to-alpsnmr.Rmd’
+
+--- re-building ‘Vig01b-introduction-to-alpsnmr-old-api.Rmd’ using rmarkdown
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Vig01b-introduction-to-alpsnmr-old-api.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpYHws2n/Rbuild1798fd7d9fec18/AlpsNMR/vignettes/Vig01b-introduction-to-alpsnmr-old-api.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Vig01b-introduction-to-alpsnmr-old-api.log for more info.
+--- failed re-building ‘Vig01b-introduction-to-alpsnmr-old-api.Rmd’
+
+--- re-building ‘Vig02-handling-metadata-and-annotations.Rmd’ using rmarkdown
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Vig02-handling-metadata-and-annotations.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpYHws2n/Rbuild1798fd7d9fec18/AlpsNMR/vignettes/Vig02-handling-metadata-and-annotations.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Vig02-handling-metadata-and-annotations.log for more info.
+--- failed re-building ‘Vig02-handling-metadata-and-annotations.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘Vig01-introduction-to-alpsnmr.Rmd’
+  ‘Vig01b-introduction-to-alpsnmr-old-api.Rmd’
+  ‘Vig02-handling-metadata-and-annotations.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

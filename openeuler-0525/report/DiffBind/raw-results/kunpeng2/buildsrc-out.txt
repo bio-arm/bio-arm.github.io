@@ -1,0 +1,303 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DiffBind
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DiffBind/DESCRIPTION’ ... OK
+* preparing ‘DiffBind’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘DiffBind.Rnw’ using Sweave
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+ >>> DiffBind 3.11.0
+BT4741 BT474 ER Resistant Full-Media 1 bed
+BT4742 BT474 ER Resistant Full-Media 2 bed
+MCF71 MCF7 ER Responsive Full-Media 1 bed
+MCF72 MCF7 ER Responsive Full-Media 2 bed
+MCF73 MCF7 ER Responsive Full-Media 3 bed
+T47D1 T47D ER Responsive Full-Media 1 bed
+T47D2 T47D ER Responsive Full-Media 2 bed
+MCF7r1 MCF7 ER Resistant Full-Media 1 bed
+MCF7r2 MCF7 ER Resistant Full-Media 2 bed
+ZR751 ZR75 ER Responsive Full-Media 1 bed
+ZR752 ZR75 ER Responsive Full-Media 2 bed
+Computing results names...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+Replacing design and removing analysis.
+Computing results names...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Normalize edgeR with defaults...
+Analyzing...
+Generating report-based DBA object...
+Computing results names...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Genome detected: Hsapiens.UCSC.hg19
+Applying blacklist...
+Removed: 3 of 14102 intervals.
+Removed: 1 merged (of 3795) and 1 (of 2845) consensus.
+Genome detected: Hsapiens.UCSC.hg19
+Applying blacklist...
+Removed: 1 of 2845 intervals.
+Removed 1 (of 2845) consensus peaks.
+Computing results names...
+Normalize DESeq2 with defaults...
+Setting default contrast(s)...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Genome detected: Hsapiens.UCSC.hg19
+Applying blacklist...
+Removed: 3 of 14102 intervals.
+Master greylist: 69 ranges, 251391 bases
+Removed: 420 of 14099 intervals.
+Removed: 52 merged (of 3795) and 50 (of 2845) consensus.
+Genome detected: Hsapiens.UCSC.hg19
+Applying blacklist...
+Removed: 1 of 2845 intervals.
+Master greylist: 69 ranges, 251391 bases
+Removed: 50 of 2844 intervals.
+Removed 51 (of 2845) consensus peaks.
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+RLE_RiP All RLE DESeq2   
+RLE_RiP Gain RLE DESeq2   
+RLE_RiP Loss RLE DESeq2   
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+LIB_RiP All lib RiP   
+LIB_RiP Gain lib RiP   
+LIB_RiP Loss lib RiP   
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+RLE_BG All RLE background   
+RLE_BG Gain RLE background   
+RLE_BG Loss RLE background   
+Computing results names...
+Analyzing...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+Generating report-based DBA object...
+lib_full_DESeq2 NA lib BG DESeq2  
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+lib_RiP_edgeR NA lib RiP edgeR  
+Generating report-based DBA object...
+lib_RiP_DESeq2 NA lib RiP DESeq2  
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+RLE_RiP_edgeR NA RLE RiP edgeR  
+Generating report-based DBA object...
+RLE_RiP_DESeq2 NA RLE RiP DESeq2  
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+RLE_BG_edgeR NA RLE BG edgeR  
+Generating report-based DBA object...
+RLE_BG_DESeq2 NA RLE BG DESeq2  
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+TMM_RiP_edgeR NA TMM RiP edgeR  
+Generating report-based DBA object...
+TMM_RiP_DESeq2 NA TMM RiP DESeq2  
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+TMM_BG_edgeR NA TMM BG edgeR  
+Generating report-based DBA object...
+TMM_BG_DESeq2 NA TMM BG DESeq2  
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Generating report-based DBA object...
+loess_RiP_edgeR NA loess RiP edgeR  
+Generating report-based DBA object...
+loess_RiP_DESeq2 NA loess RiP DESeq2  
+Forming default model design and contrast(s)...
+Computing results names...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Forming default model design and contrast(s)...
+Computing results names...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Loading required package: xtable
+Add consensus: BT474 Resistant
+Add consensus: MCF7 Responsive
+Add consensus: T47D Responsive
+Add consensus: MCF7 Resistant
+Add consensus: ZR75 Responsive
+Add consensus: BT474
+Add consensus: MCF7
+Add consensus: T47D
+Add consensus: ZR75
+Add consensus: Resistant
+Add consensus: Responsive
+Error: processing vignette 'DiffBind.Rnw' failed with diagnostics:
+unable to run pdflatex on 'DiffBind.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘DiffBind.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘DiffBind.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

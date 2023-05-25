@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data epimutacions
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘epimutacions/DESCRIPTION’ ... OK
+* preparing ‘epimutacions’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘epimutacions.Rmd’ using rmarkdown
+Quitting from lines 693-696 (epimutacions.Rmd) 
+Error: processing vignette 'epimutacions.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘epimutacions.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘epimutacions.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

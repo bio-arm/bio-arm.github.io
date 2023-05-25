@@ -1,0 +1,226 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data gage
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘gage/DESCRIPTION’ ... OK
+* preparing ‘gage’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RNA-seqWorkflow.Rnw’ using Sweave
+Loading required package: gageData
+
+
+##############################################################################
+Pathview is an open source software package distributed under GNU General
+Public License version 3 (GPLv3). Details of GPLv3 is available at
+http://www.gnu.org/licenses/gpl-3.0.html. Particullary, users are required to
+formally cite the original Pathview paper (not just mention it) in publications
+or products. For details, do citation("pathview") within R.
+
+The pathview downloads and uses KEGG data. Non-academic uses may require a KEGG
+license agreement (details at http://www.kegg.jp/kegg/legal.html).
+##############################################################################
+Info: Downloading xml files for hsa03013, 1/1 pathways..
+Info: Downloading png files for hsa03013, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa03013.pathview.multi.png
+Info: Downloading xml files for hsa03008, 1/1 pathways..
+Info: Downloading png files for hsa03008, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa03008.pathview.multi.png
+Info: Downloading xml files for hsa04110, 1/1 pathways..
+Info: Downloading png files for hsa04110, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa04110.pathview.multi.png
+Info: Downloading xml files for hsa04610, 1/1 pathways..
+Info: Downloading png files for hsa04610, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa04610.pathview.multi.png
+Info: Downloading xml files for hsa04512, 1/1 pathways..
+Info: Downloading png files for hsa04512, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa04512.pathview.multi.png
+Info: Downloading xml files for hsa04510, 1/1 pathways..
+Info: Downloading png files for hsa04510, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa04510.pathview.multi.png
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa03013.deseq2.png
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa03008.deseq2.png
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa04110.deseq2.png
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:DESeq2’:
+
+    plotMA
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+Error: processing vignette 'RNA-seqWorkflow.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RNA-seqWorkflow.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                [pdftex]{graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RNA-seqWorkflow.Rnw’
+
+--- re-building ‘dataPrep.Rnw’ using Sweave
+Loading required package: AnnotationDbi
+Loading required package: org.Hs.eg.db
+
+'select()' returned 1:1 mapping between keys and columns
+--- finished re-building ‘dataPrep.Rnw’
+
+--- re-building ‘gage.Rnw’ using Sweave
+Gene ID type for 'human' is: 'EG'
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa04110.pathview.multi.png
+Info: Downloading xml files for hsa00020, 1/1 pathways..
+Info: Downloading png files for hsa00020, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa00020.pathview.multi.png
+'select()' returned 1:1 mapping between keys and columns
+Warning: reconcile groups sharing member nodes!
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa04110.pathview.multi.pdf
+Warning in .local(from, to, graph) :
+  edges replaced: ‘75|36’, ‘69|37’, ‘69|38’, ‘76|39’, ‘76|40’, ‘65|42’, ‘63|42’, ‘69|107’, ‘62|107’, ‘65|46’, ‘63|46’, ‘63|47’, ‘65|91’, ‘63|97’
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/RtmpB2eQNM/Rbuild2718a259cfeafc/gage/vignettes
+Info: Writing image file hsa00020.pathview.multi.pdf
+Warning: file stem ‘gage-heter.gage’ is not portable
+Error: processing vignette 'gage.Rnw' failed with diagnostics:
+unable to run pdflatex on 'gage.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                [pdftex]{graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘gage.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘RNA-seqWorkflow.Rnw’ ‘gage.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

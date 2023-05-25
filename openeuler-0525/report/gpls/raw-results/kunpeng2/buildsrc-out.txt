@@ -1,0 +1,40 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data gpls
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘gpls/DESCRIPTION’ ... OK
+* preparing ‘gpls’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘gpls.Rnw’ using Sweave
+Warning in model.response(mf, "numeric") :
+  using type = "numeric" with a factor response will be ignored
+Error: processing vignette 'gpls.Rnw' failed with diagnostics:
+unable to run pdflatex on 'gpls.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘gpls.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘gpls.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

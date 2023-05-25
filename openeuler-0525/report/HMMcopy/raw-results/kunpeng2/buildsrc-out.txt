@@ -1,0 +1,101 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data HMMcopy
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘HMMcopy/DESCRIPTION’ ... OK
+* preparing ‘HMMcopy’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘HMMcopy.Rnw’ using Sweave
+Warning in options(stringsAsFactors = TRUE) :
+  'options(stringsAsFactors = TRUE)' is deprecated and will be disabled
+Loading required package: data.table
+Applying filter on data...
+Correcting for GC bias...
+Correcting for mappability bias...
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in plotCorrection(normal_copy, pch = ".") :
+  chr column is not a factor, converting to factor
+Applying filter on data...
+Correcting for GC bias...
+Correcting for mappability bias...
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in plotCorrection(tumour_copy, pch = ".") :
+  chr column is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy) :
+  chr is not a factor, converting to factor
+Initialization
+EM iteration: 1 Log likelihood: -Inf
+Expectation
+Maximization
+EM iteration: 2 Log likelihood: 3723.38977598076
+Expectation
+Maximization
+EM iteration: 3 Log likelihood: 8651.17813251212
+Expectation
+Maximization
+EM iteration: 4 Log likelihood: 9776.42997349469
+Expectation
+Maximization
+EM iteration: 5 Log likelihood: 10073.1602591059
+Expectation
+Maximization
+EM iteration: 6 Log likelihood: 10155.0644113822
+Expectation
+Maximization
+EM iteration: 7 Log likelihood: 10175.7127889987
+Expectation
+Maximization
+EM iteration: 8 Log likelihood: 10181.1575769048
+Expectation
+Maximization
+EM iteration: 9 Log likelihood: 10183.4033459694
+Expectation
+Maximization
+EM iteration: 10 Log likelihood: 10184.3672316207
+Expectation
+Maximization
+Re-calculating latest responsibilties for output
+Optimal parameters found, segmenting and classifying
+Warning in HMMsegment(tumour_copy, getparam = TRUE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy, longseg_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy, newmu_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(tumour_copy, newmu_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Warning in HMMsegment(somatic_copy, newmu_param, verbose = FALSE) :
+  chr is not a factor, converting to factor
+Error: processing vignette 'HMMcopy.Rnw' failed with diagnostics:
+unable to run pdflatex on 'HMMcopy.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.8 \usepackage
+               {url}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘HMMcopy.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘HMMcopy.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,14 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL BioNAR
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+ERROR: dependency ‘synaptome.db’ is not available for package ‘BioNAR’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/BioNAR’

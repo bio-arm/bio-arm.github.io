@@ -1,0 +1,10 @@
+Package: edgeR
+Version: 3.43.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:edgeR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings edgeR_3.43.2.tar.gz
+StartedAt: 2023-05-25 04:33:41 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:33:57 -0000 (Thu, 25 May 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: edgeR.Rcheck
+Warnings: NA

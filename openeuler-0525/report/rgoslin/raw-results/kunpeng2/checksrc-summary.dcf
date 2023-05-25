@@ -1,0 +1,10 @@
+Package: rgoslin
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:rgoslin.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings rgoslin_1.5.0.tar.gz
+StartedAt: 2023-05-25 04:46:30 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:46:45 -0000 (Thu, 25 May 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: rgoslin.Rcheck
+Warnings: NA

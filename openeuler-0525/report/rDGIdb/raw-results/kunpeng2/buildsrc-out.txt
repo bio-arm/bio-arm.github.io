@@ -1,0 +1,281 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rDGIdb
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rDGIdb/DESCRIPTION’ ... OK
+* preparing ‘rDGIdb’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette.Rnw’ using knitr
+queryDGIdb               package:rDGIdb                R Documentation
+
+_Q_u_e_r_y _D_G_I_d_b _u_s_i_n_g _R
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Provides an interface to query DGIdb from within R using the DGIdb
+     API. The function is implemented to reflect the as good as
+     possible the web-interface.
+
+_U_s_a_g_e:
+
+     queryDGIdb(genes,
+             sourceDatabases = NULL,
+             geneCategories = NULL,
+             interactionTypes = NULL)
+     
+_A_r_g_u_m_e_n_t_s:
+
+   genes: A character vector of genes for which drug interactions are
+          queried.
+
+sourceDatabases: A character vector of source databases to be queried.
+          To query all available databases, skip argument or use
+          'NULL'. To see available options, type 'sourceDatabases()'.
+
+geneCategories: A character vector of gene categories to be queried. To
+          query for all gene categories, skip argument or use 'NULL'.
+          To see available options, type 'geneCategories()'.
+
+interactionTypes: A character vector of interaction types to be
+          queried. To query for all interaction types, skip argument or
+          use 'NULL'. To see available options, type
+          'interactionTypes()'.
+
+_D_e_t_a_i_l_s:
+
+     Only the first argument ('genes') is required, all other arguments
+     are optional. When optional arguments are not provided, the query
+     considers all available possibilities for optional arguments:
+     'sourceDatabases', 'geneCategories', and 'interactionTypes'.
+
+_V_a_l_u_e:
+
+     A S4 object of type 'rDGIdbResult'.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr <thomas.thurnherr@gmail.com>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     'rDGIdbResult', 'rDGIdbFilters', 'plotInteractionsBySource'
+
+_E_x_a_m_p_l_e_s:
+
+     genes <- c("XYZA", "TNF", "IL6", "IL8")
+     result <- queryDGIdb(genes = genes)
+     
+     result <- queryDGIdb(genes = genes,
+                     sourceDatabases = c("MyCancerGenome","TEND","TTD"),
+                     geneCategories = "CELL SURFACE",
+                     interactionTypes = c("activator","inhibitor"))
+     
+
+rDGIdbFilters              package:rDGIdb              R Documentation
+
+_F_i_l_t_e_r _o_p_t_i_o_n_s _f_o_r _r_D_G_I_d_b _q_u_e_r_i_e_s.
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     The gene categories, interaction types, and source databases
+     available to filter queries with 'queryDGIdb'.
+
+_U_s_a_g_e:
+
+     geneCategories()
+     
+     interactionTypes()
+     
+     sourceDatabases()
+     
+_V_a_l_u_e:
+
+     'geneCategories' returns a character vector of available gene
+     categories which can be used to filter DGIdb queries with
+     'queryDGIdb'.
+
+     'interactionTypes' returns a character vector of available
+     interaction types which can be used to filter DGIdb queries with
+     'queryDGIdb'.
+
+     'sourceDatabases' returns a character vector of available source
+     databases which can be used to filter DGIdb queries with
+     'queryDGIdb'.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr <thomas.thurnherr@gmail.com>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     'queryDGIdb', 'rDGIdbResult', 'plotInteractionsBySource'
+
+_E_x_a_m_p_l_e_s:
+
+     geneCategories()
+     interactionTypes()
+     sourceDatabases()
+     res <- queryDGIdb(genes = "AP1",
+                 interactionTypes = NULL,
+                 geneCategories = NULL,
+                 sourceDatabases = NULL)
+     
+
+rDGIdbResult              package:rDGIdb               R Documentation
+
+_R_e_s_u_l_t _o_b_j_e_c_t _o_f _a _r_D_G_I_d_b _q_u_e_r_y
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     S4 helper functions to access DGIdb results, formatted in a
+     similar way as result tables on the DGIdb web interface.
+
+_U_s_a_g_e:
+
+     ## S4 method for signature 'rDGIdbResult'
+     resultSummary(object)
+     
+     ## S4 method for signature 'rDGIdbResult'
+     detailedResults(object)
+     
+     ## S4 method for signature 'rDGIdbResult'
+     byGene(object)
+     
+     ## S4 method for signature 'rDGIdbResult'
+     searchTermSummary(object)
+     
+_A_r_g_u_m_e_n_t_s:
+
+  object: A 'rDGIdbResult' object returned by 'queryDGIdb'.
+
+_V_a_l_u_e:
+
+     'resultSummary' returns a 'data.frame' that summarizes drug-gene
+     interactions by the source(s) that reported them.
+
+     'detailedResult' returns a 'data.frame' with search terms matching
+     exactly one gene that has one or more drug interactions.
+
+     'byGene' returns a 'data.frame' with drug interaction count and
+     druggable categories associated with each gene.
+
+     'searchTermSummary' returns a 'data.frame' that summarizes the
+     attempt to map gene names supplied by the user to gene records in
+     DGIdb.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr <thomas.thurnherr@gmail.com>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     'queryDGIdb', 'rDGIdbFilters', 'plotInteractionsBySource'
+
+_E_x_a_m_p_l_e_s:
+
+     genes <- c("XYZA", "TNF", "IL6", "IL8")
+     result <- queryDGIdb(genes = genes)
+     resultSummary(result)
+     detailedResults(result)
+     byGene(result)
+     searchTermSummary(result)
+     
+
+plotInteractionsBySource        package:rDGIdb         R Documentation
+
+_I_n_t_e_r_a_c_t_i_o_n_s _b_y _s_o_u_r_c_e
+
+_D_e_s_c_r_i_p_t_i_o_n:
+
+     Creates a plot to visualize the number of interactions per source.
+
+_U_s_a_g_e:
+
+     plotInteractionsBySource(queryResult, ...)
+     
+_A_r_g_u_m_e_n_t_s:
+
+queryResult: A 'rDGIdbResult' object obtained from 'queryDGIdb'.
+
+     ...: Other arguments passed to barplot.
+
+_V_a_l_u_e:
+
+     A plot is created on the current graphics device.
+
+_A_u_t_h_o_r(_s):
+
+     Thomas Thurnherr <thomas.thurnherr@gmail.com>
+
+_R_e_f_e_r_e_n_c_e_s:
+
+     Wagner AH, Coffman AC, Ainscough BJ, Spies NC, Skidmore ZL,
+     Campbell KM, Krysiak K, Pan D, McMichael JF, Eldred JM, Walker JR,
+     Wilson RK, Mardis ER, Griffith M, Griffith OL. DGIdb 2.0: mining
+     clinically relevant drug-gene interactions. Nucleic Acids
+     Research. 2016 Jan 4;44(D1):D1036-44. doi:10.1093/nar/gkv1165.
+
+_S_e_e _A_l_s_o:
+
+     'rDGIdbResult', 'queryDGIdb', 'rDGIdbFilters'
+
+_E_x_a_m_p_l_e_s:
+
+     queryResult <- queryDGIdb('KRAS')
+     plotInteractionsBySource(queryResult)
+     
+
+Error: processing vignette 'vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

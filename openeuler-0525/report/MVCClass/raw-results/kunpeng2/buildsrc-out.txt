@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MVCClass
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MVCClass/DESCRIPTION’ ... OK
+* preparing ‘MVCClass’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MVCClass.Rnw’ using Sweave
+Error: processing vignette 'MVCClass.Rnw' failed with diagnostics:
+unable to run pdflatex on 'MVCClass.tex'
+LaTeX errors:
+! LaTeX Error: File `comment.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.18 \usepackage
+                {epsfig}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘MVCClass.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘MVCClass.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

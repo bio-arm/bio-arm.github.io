@@ -1,0 +1,143 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data annotate
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘annotate/DESCRIPTION’ ... OK
+* preparing ‘annotate’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GOusage.Rnw’ using Sweave
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: XML
+
+Attaching package: ‘graph’
+
+The following object is masked from ‘package:XML’:
+
+    addNode
+
+
+Attaching package: ‘Rgraphviz’
+
+The following object is masked from ‘package:annotate’:
+
+    toFile
+
+The following objects are masked from ‘package:IRanges’:
+
+    from, to
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    from, to
+
+Loading required package: org.Hs.eg.db
+
+
+
+Error: processing vignette 'GOusage.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GOusage.tex'
+LaTeX errors:
+! LaTeX Error: File `comment.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.18 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GOusage.Rnw’
+
+--- re-building ‘annotate.Rnw’ using Sweave
+--- finished re-building ‘annotate.Rnw’
+
+--- re-building ‘chromLoc.Rnw’ using Sweave
+--- finished re-building ‘chromLoc.Rnw’
+
+--- re-building ‘prettyOutput.Rnw’ using Sweave
+--- finished re-building ‘prettyOutput.Rnw’
+
+--- re-building ‘query.Rnw’ using Sweave
+Read 4 items
+Read 3298 items
+--- finished re-building ‘query.Rnw’
+
+--- re-building ‘useDataPkgs.Rnw’ using Sweave
+--- finished re-building ‘useDataPkgs.Rnw’
+
+--- re-building ‘useProbeInfo.Rnw’ using Sweave
+Loading required package: org.Rn.eg.db
+
+
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:grid’:
+
+    pattern
+
+The following object is masked from ‘package:graph’:
+
+    complement
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+--- finished re-building ‘useProbeInfo.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GOusage.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

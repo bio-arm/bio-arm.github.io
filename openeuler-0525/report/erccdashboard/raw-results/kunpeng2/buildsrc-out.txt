@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data erccdashboard
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘erccdashboard/DESCRIPTION’ ... OK
+* preparing ‘erccdashboard’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘erccdashboard.Rnw’ using Sweave
+Loading required package: ggplot2
+Loading required package: gridExtra
+Warning: Transformation introduced infinite values in continuous
+y-axis
+Warning: Transformation introduced infinite values in continuous
+y-axis
+Error: processing vignette 'erccdashboard.Rnw' failed with diagnostics:
+unable to run pdflatex on 'erccdashboard.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.5 \usepackage
+               {Sweave}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘erccdashboard.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘erccdashboard.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

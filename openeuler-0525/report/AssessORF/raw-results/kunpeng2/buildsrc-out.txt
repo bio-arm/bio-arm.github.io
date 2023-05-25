@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AssessORF
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘AssessORF/DESCRIPTION’ ... OK
+* preparing ‘AssessORF’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘UsingAssessORF.Rmd’ using rmarkdown
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'UsingAssessORF.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpS9xrjJ/Rbuild17acb93a0d2117/AssessORF/vignettes/UsingAssessORF.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See UsingAssessORF.log for more info.
+--- failed re-building ‘UsingAssessORF.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘UsingAssessORF.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

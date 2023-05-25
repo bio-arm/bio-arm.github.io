@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data kebabs
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘kebabs/DESCRIPTION’ ... OK
+* preparing ‘kebabs’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘kebabs.Rnw’ using knitr
+Error: processing vignette 'kebabs.Rnw' failed with diagnostics:
+unable to run pdflatex on 'kebabs.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.27 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘kebabs.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘kebabs.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

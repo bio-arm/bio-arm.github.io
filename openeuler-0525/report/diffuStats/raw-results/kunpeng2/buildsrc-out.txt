@@ -1,0 +1,102 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data diffuStats
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘diffuStats/DESCRIPTION’ ... OK
+* preparing ‘diffuStats’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘intro.Rmd’ using rmarkdown
+--- finished re-building ‘intro.Rmd’
+
+--- re-building ‘diffuStats.Rnw’ using Sweave
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Kernel not supplied. Computing regularised Laplacian kernel ...
+Done
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+Using supplied kernel matrix...
+X1: permuting scores...
+Permuting...
+X1: computing heatRank...
+All done
+Using supplied kernel matrix...
+X1: permuting scores...
+Permuting...
+X1: computing heatRank...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+All done
+Using supplied kernel matrix...
+Using supplied kernel matrix...
+X1: permuting scores...
+Permuting...
+X1: computing heatRank...
+All done
+Using supplied kernel matrix...
+X1: permuting scores...
+Permuting...
+X1: computing heatRank...
+All done
+Using supplied kernel matrix...
+All done
+Warning in wilcox.test.default(x = perf_mat[, met1], y = perf_mat[, met2],  :
+  cannot compute exact p-value with zeroes
+Warning in wilcox.test.default(x = perf_mat[, met1], y = perf_mat[, met2],  :
+  cannot compute exact confidence interval with zeroes
+Error: processing vignette 'diffuStats.Rnw' failed with diagnostics:
+unable to run pdflatex on 'diffuStats.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘diffuStats.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘diffuStats.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data restfulSE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘restfulSE/DESCRIPTION’ ... OK
+* preparing ‘restfulSE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘restfulSE.Rmd’ using rmarkdown
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'restfulSE.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmp6xn1hn/Rbuild2afe1225bba791/restfulSE/vignettes/restfulSE.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See restfulSE.log for more info.
+--- failed re-building ‘restfulSE.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘restfulSE.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

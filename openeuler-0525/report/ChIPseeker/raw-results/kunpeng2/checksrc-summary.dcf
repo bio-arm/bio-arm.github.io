@@ -1,0 +1,10 @@
+Package: ChIPseeker
+Version: 1.37.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ChIPseeker.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ChIPseeker_1.37.0.tar.gz
+StartedAt: 2023-05-25 04:30:03 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:30:10 -0000 (Thu, 25 May 2023)
+EllapsedTime: 7.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: ChIPseeker.Rcheck
+Warnings: NA

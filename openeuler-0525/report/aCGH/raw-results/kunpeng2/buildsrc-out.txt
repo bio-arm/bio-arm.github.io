@@ -1,0 +1,191 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data aCGH
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘aCGH/DESCRIPTION’ ... OK
+* preparing ‘aCGH’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘aCGH.Rnw’ using Sweave
+Loading required package: cluster
+Loading required package: survival
+Loading required package: multtest
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘aCGH’
+
+The following object is masked from ‘package:stats’:
+
+    heatmap
+
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in regularize.values(x, y, ties, missing(ties), na.rm = na.rm) :
+  collapsing to unique 'x' values
+Warning in `[.aCGH`(colorectal, , 1:3) :
+  subsetting the log2.ratios only
+Warning in min(indstretch[indstretch > indaber[m]]) :
+  no non-missing arguments to min; returning Inf
+Warning in min(indstretch[indstretch > indaber[m]]) :
+  no non-missing arguments to min; returning Inf
+Warning in min(indstretch[indstretch > indaber[m]]) :
+  no non-missing arguments to min; returning Inf
+Warning in max(indstretch[indstretch < indaber[m]]) :
+  no non-missing arguments to max; returning -Inf
+Warning in min(indstretch[indstretch > indaber[m]]) :
+  no non-missing arguments to min; returning Inf
+Warning in min(indstretch[indstretch > indaber[m]]) :
+  no non-missing arguments to min; returning Inf
+Warning in min(indstretch[indstretch > indaber[m]]) :
+  no non-missing arguments to min; returning Inf
+Warning in min(indstretch[indstretch > indaber[m]]) :
+  no non-missing arguments to min; returning Inf
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in (function (z, notch = FALSE, width = NULL, varwidth = FALSE,  :
+  some notches went outside hinges ('box'): maybe set notch=FALSE
+Warning in `[.aCGH`(colorectal, , age.na) :
+  subsetting the log2.ratios only
+Warning in `[.aCGH`(aCGH.obj, , !is.na(response)) :
+  subsetting the log2.ratios only
+Warning in `[.aCGH`(aCGH.obj, , !is.na(response)) :
+  subsetting the log2.ratios only
+Error: processing vignette 'aCGH.Rnw' failed with diagnostics:
+unable to run pdflatex on 'aCGH.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                [authoryear,round]{natbib}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘aCGH.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘aCGH.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

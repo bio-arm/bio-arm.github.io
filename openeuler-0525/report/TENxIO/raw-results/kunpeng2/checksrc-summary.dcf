@@ -1,0 +1,10 @@
+Package: TENxIO
+Version: 1.3.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TENxIO.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TENxIO_1.3.0.tar.gz
+StartedAt: 2023-05-25 04:51:19 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:51:28 -0000 (Thu, 25 May 2023)
+EllapsedTime: 9.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TENxIO.Rcheck
+Warnings: NA

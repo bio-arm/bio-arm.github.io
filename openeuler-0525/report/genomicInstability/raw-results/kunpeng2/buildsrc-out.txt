@@ -1,0 +1,187 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data genomicInstability
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘genomicInstability/DESCRIPTION’ ... OK
+* preparing ‘genomicInstability’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘genomicInstability.Rnw’ using Sweave
+Loading required package: checkmate
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following object is masked from ‘package:checkmate’:
+
+    anyMissing
+
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+The following object is masked from ‘package:checkmate’:
+
+    anyMissing
+
+Loading required package: AnnotationHub
+Loading required package: BiocFileCache
+Loading required package: dbplyr
+
+Attaching package: ‘AnnotationHub’
+
+The following object is masked from ‘package:Biobase’:
+
+    cache
+
+Bioconductor version 3.18 (BiocManager 1.30.20), R 4.3.0 (2023-04-21)
+Installing package(s) 'GSE103322'
+trying URL 'https://bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE103322_1.7.0.tar.gz'
+Content type 'application/x-gzip' length 224059 bytes (218 KB)
+==================================================
+downloaded 218 KB
+
+* installing *source* package ‘GSE103322’ ...
+** using staged installation
+** inst
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (GSE103322)
+
+The downloaded source packages are in
+	‘/tmp/RtmpGVOAE8/downloaded_packages’
+Old packages: 'DelayedArray'
+see ?GSE103322 and browseVignettes('GSE103322') for documentation
+loading from cache
+Generating the genesets from the genome information
+Computing the enrichment for the genesets in the expression matrix
+Generating the genesets from the genome information
+Computing the enrichment for the genesets in the expression matrix
+Computing null model
+Estimating the normalized enrichment scores
+Type 'citation("pROC")' for a citation.
+
+Attaching package: ‘pROC’
+
+The following objects are masked from ‘package:IRanges’:
+
+    cov, var
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    cov, var
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    var
+
+The following objects are masked from ‘package:stats’:
+
+    cov, smooth, var
+
+Setting levels: control = 0, case = 1
+Setting direction: controls < cases
+Error: processing vignette 'genomicInstability.Rnw' failed with diagnostics:
+unable to run pdflatex on 'genomicInstability.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.3 \usepackage
+               [hidelinks]{hyperref}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘genomicInstability.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘genomicInstability.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

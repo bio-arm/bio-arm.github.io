@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data dmrseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘dmrseq/DESCRIPTION’ ... OK
+* preparing ‘dmrseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘dmrseq.Rmd’ using rmarkdown
+Quitting from lines 543-548 (dmrseq.Rmd) 
+Error: processing vignette 'dmrseq.Rmd' failed with diagnostics:
+Annotation could not be retrieved.
+--- failed re-building ‘dmrseq.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘dmrseq.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

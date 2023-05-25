@@ -1,0 +1,168 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BgeeDB.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BgeeDB_2.27.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/BgeeDB.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘BgeeDB/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘BgeeDB’ version ‘2.27.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘BgeeDB’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘BgeeDB-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: makeTable
+> ### Title: Formats results of the enrichment test on anatomical structures.
+> ### Aliases: makeTable
+> 
+> ### ** Examples
+> 
+> {
++ bgee <- Bgee$new(species="Bos_taurus", dataType="rna_seq")
++ myTopAnatData <- loadTopAnatData(bgee, stage="UBERON:0000092")
++ geneList <- as.factor(c(rep(0, times=85), rep(1, times=15)))
++ names(geneList) <- c("ENSBTAG00000000011","ENSBTAG00000000014","ENSBTAG00000000016",
++                      "ENSBTAG00000000026","ENSBTAG00000000039","ENSBTAG00000000040",
++                      "ENSBTAG00000000042","ENSBTAG00000000050","ENSBTAG00000000056",
++                      "ENSBTAG00000000064","ENSBTAG00000000067","ENSBTAG00000000071",
++                      "ENSBTAG00000000072","ENSBTAG00000000080","ENSBTAG00000000081",
++                      "ENSBTAG00000000084","ENSBTAG00000000091","ENSBTAG00000000099",
++                      "ENSBTAG00000000111","ENSBTAG00000000123","ENSBTAG00000000132",
++                      "ENSBTAG00000000153","ENSBTAG00000000162","ENSBTAG00000000163",
++                      "ENSBTAG00000000169","ENSBTAG00000000179","ENSBTAG00000000197",
++                      "ENSBTAG00000000199","ENSBTAG00000000202","ENSBTAG00000000203",
++                      "ENSBTAG00000000204","ENSBTAG00000000213","ENSBTAG00000000215",
++                      "ENSBTAG00000000223","ENSBTAG00000000224","ENSBTAG00000000225",
++                      "ENSBTAG00000000236","ENSBTAG00000000250","ENSBTAG00000000251",
++                      "ENSBTAG00000000252","ENSBTAG00000000253","ENSBTAG00000000261",
++                      "ENSBTAG00000000274","ENSBTAG00000000277","ENSBTAG00000000279",
++                      "ENSBTAG00000000285","ENSBTAG00000000286","ENSBTAG00000000287",
++                      "ENSBTAG00000000289","ENSBTAG00000000297","ENSBTAG00000000305",
++                      "ENSBTAG00000000312","ENSBTAG00000000328","ENSBTAG00000000335",
++                      "ENSBTAG00000000341","ENSBTAG00000000343","ENSBTAG00000000354",
++                      "ENSBTAG00000000355","ENSBTAG00000000356","ENSBTAG00000000365",
++                      "ENSBTAG00000000372","ENSBTAG00000000379","ENSBTAG00000000380",
++                      "ENSBTAG00000000382","ENSBTAG00000000396","ENSBTAG00000000404",
++                      "ENSBTAG00000000405","ENSBTAG00000000406","ENSBTAG00000000411",
++                      "ENSBTAG00000000425","ENSBTAG00000000434","ENSBTAG00000000435",
++                      "ENSBTAG00000000438","ENSBTAG00000000448","ENSBTAG00000000451",
++                      "ENSBTAG00000000454","ENSBTAG00000000456","ENSBTAG00000000457",
++                      "ENSBTAG00000000459","ENSBTAG00000000462","ENSBTAG00000000469",
++                      "ENSBTAG00000000470","ENSBTAG00000000484","ENSBTAG00000000497",
++                      "ENSBTAG00000000501","ENSBTAG00000009707","ENSBTAG00000026266",
++                      "ENSBTAG00000021992","ENSBTAG00000005353","ENSBTAG00000005333",
++                      "ENSBTAG00000006424","ENSBTAG00000026972","ENSBTAG00000010799",
++                      "ENSBTAG00000010799","ENSBTAG00000014614","ENSBTAG00000014614",
++                      "ENSBTAG00000045757","ENSBTAG00000046332","ENSBTAG00000046332",
++                      "ENSBTAG00000008394")
++ myTopAnatObject <-  topAnat(myTopAnatData, geneList)
++ resFis <- runTest(myTopAnatObject, algorithm = 'elim', statistic = 'fisher')
++ ## Format results
++ tableOver <- makeTable(myTopAnatData, myTopAnatObject, resFis, 0.1)
++ }
+
+Querying Bgee to get release information...
+
+NOTE: the file describing Bgee species information for release 15_0 was found in the download directory /home/biocbuild/bbs-3.18-bioc/meat/BgeeDB.Rcheck. Data will not be redownloaded.
+
+API key built: 5c3ac1b211a93f28caae6a890338e3a907a0cda40daf37547bd42e96dfda03ff40485719e063703bbe4190ee86c4314707a1d27a5618e133fdab6b37810671b6
+
+Building URLs to retrieve organ relationships from Bgee.........
+   URL successfully built (https://bgee.org/bgee15_0/api/?page=r_package&action=get_anat_entity_relations&display_type=tsv&species_list=9913&attr_list=SOURCE_ID&attr_list=TARGET_ID&api_key=5c3ac1b211a93f28caae6a890338e3a907a0cda40daf37547bd42e96dfda03ff40485719e063703bbe4190ee86c4314707a1d27a5618e133fdab6b37810671b6&source=BgeeDB_R_package&source_version=2.27.0)
+   Submitting URL to Bgee webservice (can be long)
+   Got results from Bgee webservice. Files are written in "/home/biocbuild/bbs-3.18-bioc/meat/BgeeDB.Rcheck/Bos_taurus_Bgee_15_0"
+
+Building URLs to retrieve organ names from Bgee.................
+   URL successfully built (https://bgee.org/bgee15_0/api/?page=r_package&action=get_anat_entities&display_type=tsv&species_list=9913&attr_list=ID&attr_list=NAME&api_key=5c3ac1b211a93f28caae6a890338e3a907a0cda40daf37547bd42e96dfda03ff40485719e063703bbe4190ee86c4314707a1d27a5618e133fdab6b37810671b6&source=BgeeDB_R_package&source_version=2.27.0)
+   Submitting URL to Bgee webservice (can be long)
+   Got results from Bgee webservice. Files are written in "/home/biocbuild/bbs-3.18-bioc/meat/BgeeDB.Rcheck/Bos_taurus_Bgee_15_0"
+
+Building URLs to retrieve mapping of gene to organs from Bgee...
+   URL successfully built (https://bgee.org/bgee15_0/api/?page=r_package&action=get_expression_calls&display_type=tsv&species_list=9913&attr_list=GENE_ID&attr_list=ANAT_ENTITY_ID&api_key=5c3ac1b211a93f28caae6a890338e3a907a0cda40daf37547bd42e96dfda03ff40485719e063703bbe4190ee86c4314707a1d27a5618e133fdab6b37810671b6&source=BgeeDB_R_package&source_version=2.27.0&data_type=RNA_SEQ&data_qual=SILVER&stage_id=UBERON:0000092)
+   Submitting URL to Bgee webservice (can be long)
+Error in loadTopAnatData(bgee, stage = "UBERON:0000092") : 
+  File topAnat_GeneToAnatEntities_9913_PRESENCE_UBERON_0000092_RNA_SEQSILVER.tsv is truncated, there may be a temporary problem with the Bgee webservice, or there was an error in the parameters.
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ ERROR
+Running the tests in ‘tests/testthat.R’ failed.
+Last 13 lines of output:
+  Building DAG topology...................  (  549  Ontology terms and  994  relations. )
+  
+  Annotating nodes (Can be long)..........  (  95  genes annotated to the Ontology terms. )
+  [ FAIL 1 | WARN 5 | SKIP 0 | PASS 25 ]
+  
+  ══ Failed tests ════════════════════════════════════════════════════════════════
+  ── Error ('test_loadTopAnatData.R:6:3'): Loading of topAnatData files is working ──
+  Error in `loadTopAnatData(bgee, stage = "UBERON:0000092")`: File topAnat_GeneToAnatEntities_9913_PRESENCE_UBERON_0000092_RNA_SEQSILVER.tsv is truncated, there may be a temporary problem with the Bgee webservice, or there was an error in the parameters.
+  Backtrace:
+      ▆
+   1. └─BgeeDB::loadTopAnatData(bgee, stage = "UBERON:0000092") at test_loadTopAnatData.R:6:2
+  
+  [ FAIL 1 | WARN 5 | SKIP 0 | PASS 25 ]
+  Error: Test failures
+  Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘BgeeDB_Manual.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ...

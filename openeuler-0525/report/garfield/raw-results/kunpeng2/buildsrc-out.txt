@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data garfield
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘garfield/DESCRIPTION’ ... OK
+* preparing ‘garfield’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette.Rnw’ using knitr
+Error: processing vignette 'vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.30 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

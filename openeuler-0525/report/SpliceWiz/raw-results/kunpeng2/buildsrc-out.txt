@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SpliceWiz
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SpliceWiz/DESCRIPTION’ ... OK
+* preparing ‘SpliceWiz’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SW_Cookbook.Rmd’ using rmarkdown
+Quitting from lines 162-166 (SW_Cookbook.Rmd) 
+Error: processing vignette 'SW_Cookbook.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘SW_Cookbook.Rmd’
+
+--- re-building ‘SW_QuickStart.Rmd’ using rmarkdown
+Quitting from lines 309-316 (SW_QuickStart.Rmd) 
+Error: processing vignette 'SW_QuickStart.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘SW_QuickStart.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘SW_Cookbook.Rmd’ ‘SW_QuickStart.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

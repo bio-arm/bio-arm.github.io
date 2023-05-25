@@ -1,0 +1,36 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rsbml
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rsbml/DESCRIPTION’ ... OK
+* preparing ‘rsbml’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘rsbml’ ...
+** using staged installation
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for LIBSBML... no
+configure: error: Package requirements (libsbml >= 3.0.2) were not met:
+
+Package 'libsbml', required by 'virtual:world', not found
+
+Consider adjusting the PKG_CONFIG_PATH environment variable if you
+installed software in a non-standard prefix.
+
+Alternatively, you may set the environment variables LIBSBML_CFLAGS
+and LIBSBML_LIBS to avoid the need to call pkg-config.
+See the pkg-config man page for more details.
+ERROR: configuration failed for package ‘rsbml’
+* removing ‘/tmp/Rtmpi0zFC8/Rinst2bc29a28a0b48a/rsbml’
+      -----------------------------------
+ERROR: package installation failed

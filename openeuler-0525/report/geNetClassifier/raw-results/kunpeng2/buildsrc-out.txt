@@ -1,0 +1,77 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data geNetClassifier
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘geNetClassifier/DESCRIPTION’ ... OK
+* preparing ‘geNetClassifier’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘geNetClassifier-vignette.Rnw’ using Sweave
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: EBarrays
+Loading required package: lattice
+Loading required package: minet
+Coefficients for assignment: Minimum Probability to be assigned = 0.4(default).
+ Minimum difference between the probabilities of first and second most likely classes  = 0.16
+Warning in externalValidation.probMatrix(queryResult, leukemiasEset[, testSamples]$LeukemiaType,  :
+  The real data labels vector is not named, it will be assumed the labels are in order: the first label applies to the first predicted sample... 
+Coefficients for assignment: Minimum Probability to be assigned = 0.
+ Minimum difference between the probabilities of first and second most likely classes  = 0
+Coefficients for assignment: Minimum Probability to be assigned = 0.6.
+ Minimum difference between the probabilities of first and second most likely classes  = 0.2(default)
+Coefficients for assignment: Minimum Probability to be assigned = 0.4(default).
+ Minimum difference between the probabilities of first and second most likely classes  = 0.16
+The query contains 10 samples. 10 were assigned to a class resulting on a call rate of 100%. 
+
+Error: processing vignette 'geNetClassifier-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'geNetClassifier-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `authblk.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                {anysize}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘geNetClassifier-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘geNetClassifier-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

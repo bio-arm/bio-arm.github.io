@@ -1,0 +1,8 @@
+Package: r3Cseq
+Version: 1.47.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL r3Cseq
+StartedAt: 2023-05-24 19:11:05 -0000 (Wed, 24 May 2023)
+EndedAt: 2023-05-24 19:12:01 -0000 (Wed, 24 May 2023)
+EllapsedTime: 56.6 seconds
+RetCode: 0
+Status: OK

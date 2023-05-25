@@ -1,0 +1,10 @@
+Package: seqArchR
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:seqArchR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings seqArchR_1.5.0.tar.gz
+StartedAt: 2023-05-25 04:48:53 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:49:11 -0000 (Thu, 25 May 2023)
+EllapsedTime: 18.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: seqArchR.Rcheck
+Warnings: NA

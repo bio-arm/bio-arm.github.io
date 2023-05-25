@@ -1,0 +1,51 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scDblFinder
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘scDblFinder/DESCRIPTION’ ... OK
+* preparing ‘scDblFinder’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘computeDoubletDensity.Rmd’ using rmarkdown
+Quitting from lines 27-32 (computeDoubletDensity.Rmd) 
+Error: processing vignette 'computeDoubletDensity.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘computeDoubletDensity.Rmd’
+
+--- re-building ‘findDoubletClusters.Rmd’ using rmarkdown
+Quitting from lines 27-32 (findDoubletClusters.Rmd) 
+Error: processing vignette 'findDoubletClusters.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘findDoubletClusters.Rmd’
+
+--- re-building ‘introduction.Rmd’ using rmarkdown
+--- finished re-building ‘introduction.Rmd’
+
+--- re-building ‘recoverDoublets.Rmd’ using rmarkdown
+--- finished re-building ‘recoverDoublets.Rmd’
+
+--- re-building ‘scATAC.Rmd’ using rmarkdown
+--- finished re-building ‘scATAC.Rmd’
+
+--- re-building ‘scDblFinder.Rmd’ using rmarkdown
+--- finished re-building ‘scDblFinder.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘computeDoubletDensity.Rmd’ ‘findDoubletClusters.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

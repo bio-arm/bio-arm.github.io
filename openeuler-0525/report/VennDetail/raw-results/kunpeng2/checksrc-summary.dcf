@@ -1,0 +1,10 @@
+Package: VennDetail
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:VennDetail.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings VennDetail_1.17.0.tar.gz
+StartedAt: 2023-05-25 04:52:30 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:52:45 -0000 (Thu, 25 May 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: VennDetail.Rcheck
+Warnings: NA

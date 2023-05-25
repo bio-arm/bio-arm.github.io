@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data abseqR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘abseqR/DESCRIPTION’ ... OK
+* preparing ‘abseqR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘abseqR.Rmd’ using rmarkdown
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'abseqR.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpwBoitC/Rbuild17838f1ce6886d/abseqR/vignettes/abseqR.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See abseqR.log for more info.
+--- failed re-building ‘abseqR.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘abseqR.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

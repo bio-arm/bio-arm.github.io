@@ -1,0 +1,61 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ddPCRclust
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ddPCRclust/DESCRIPTION’ ... OK
+* preparing ‘ddPCRclust’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ddPCRclust.Rnw’ using Sweave
+rgeos version: 0.6-3, (SVN revision 696)
+ GEOS runtime version: 3.9.0-CAPI-1.16.2 
+ Please note that rgeos will be retired during October 2023,
+plan transition to sf or terra functions using GEOS at your earliest convenience.
+See https://r-spatial.org/r/2023/05/15/evolution4.html for details.
+ GEOS using OverlayNG
+ Linking to sp version: 1.6-0 
+ Polygon checking: TRUE 
+
+Warning: replacing previous import ‘flowCore::plot’ by ‘graphics::plot’ when loading ‘flowDensity’
+double positive detection failed.
+Switching the middle two double populations.
+
+Starting the flow Peaks analysis...
+
+    Task A: compute kmeans...
+
+        ...finished summarization at 0.037 sec
+
+    Task B: find peaks...
+finished at 0.065 sec
+
+
+Error: processing vignette 'ddPCRclust.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ddPCRclust.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ddPCRclust.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘ddPCRclust.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data partCNV
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘partCNV/DESCRIPTION’ ... OK
+* preparing ‘partCNV’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘partCNV_vignette.Rmd’ using rmarkdown
+Quitting from lines 83-84 (partCNV_vignette.Rmd) 
+Error: processing vignette 'partCNV_vignette.Rmd' failed with diagnostics:
+Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+--- failed re-building ‘partCNV_vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘partCNV_vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

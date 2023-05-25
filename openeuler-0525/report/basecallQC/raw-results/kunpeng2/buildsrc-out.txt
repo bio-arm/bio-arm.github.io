@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data basecallQC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘basecallQC/DESCRIPTION’ ... OK
+* preparing ‘basecallQC’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘basecallQC’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Error in dyn.load(file, DLLpath = DLLpath, ...) : 
+  unable to load shared object '/home/biocbuild/R/R-4.3.0/site-library/terra/libs/terra.so':
+  libgdal.so.33: cannot open shared object file: No such file or directory
+Calls: <Anonymous> ... namespaceImport -> loadNamespace -> library.dynam -> dyn.load
+Execution halted
+ERROR: lazy loading failed for package ‘basecallQC’
+* removing ‘/tmp/Rtmpq2XvpB/Rinst17b7d4146e9c34/basecallQC’
+      -----------------------------------
+ERROR: package installation failed

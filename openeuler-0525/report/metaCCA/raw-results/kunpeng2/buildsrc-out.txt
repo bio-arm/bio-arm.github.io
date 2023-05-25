@@ -1,0 +1,61 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data metaCCA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘metaCCA/DESCRIPTION’ ... OK
+* preparing ‘metaCCA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘metaCCA.Rnw’ using knitr
+Data sets in package 'metaCCA':
+
+N1 (testDataMetaCCA)    Number of individuals in study 1.
+N2 (testDataMetaCCA)    Number of individuals in study 2.
+S_XX_study1 (testDataMetaCCA)
+                        Correlations between 10 SNPs corresponding to
+                        the population underlying study 1.
+S_XX_study2 (testDataMetaCCA)
+                        Correlations between 10 SNPs corresponding to
+                        the population underlying study 2.
+S_XY_full_study1 (testDataMetaCCA)
+                        Univariate summary statistics of 10 traits
+                        across 1000 SNPs (study 1).
+S_XY_full_study2 (testDataMetaCCA)
+                        Univariate summary statistics of 10 traits
+                        across 1000 SNPs (study 2).
+S_XY_study1 (testDataMetaCCA)
+                        Univariate summary statistics of 10 traits
+                        across 10 SNPs (study 1).
+S_XY_study2 (testDataMetaCCA)
+                        Univariate summary statistics of 10 traits
+                        across 10 SNPs (study 2).
+
+Error: processing vignette 'metaCCA.Rnw' failed with diagnostics:
+unable to run pdflatex on 'metaCCA.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.27 \makeatletter
+                  ^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘metaCCA.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘metaCCA.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

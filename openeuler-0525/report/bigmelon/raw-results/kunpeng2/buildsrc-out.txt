@@ -1,0 +1,202 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data bigmelon
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘bigmelon/DESCRIPTION’ ... OK
+* preparing ‘bigmelon’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘bigmelon.Rnw’ using Sweave
+Loading required package: wateRmelon
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: methylumi
+Loading required package: scales
+Loading required package: reshape2
+Loading required package: ggplot2
+Loading required package: FDb.InfiniumMethylation.hg19
+Loading required package: GenomicFeatures
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: AnnotationDbi
+Loading required package: TxDb.Hsapiens.UCSC.hg19.knownGene
+Loading required package: org.Hs.eg.db
+
+Loading required package: minfi
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+The following object is masked from ‘package:Biobase’:
+
+    rowMedians
+
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: bumphunter
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: locfit
+locfit 1.5-9.7 	 2023-01-02
+Setting options('download.file.method.GEOquery'='auto')
+Setting options('GEOquery.inmemory.gpl'=FALSE)
+Loading required package: lumi
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+
+Attaching package: ‘lumi’
+
+The following objects are masked from ‘package:methylumi’:
+
+    estimateM, getHistory
+
+Loading required package: ROC
+Loading required package: IlluminaHumanMethylation450kanno.ilmn12.hg19
+Loading required package: illuminaio
+Loading required package: gdsfmt
+
+Attaching package: ‘bigmelon’
+
+The following object is masked from ‘package:wateRmelon’:
+
+    fot
+
+melon.gds doesn't exist, creating new file
+creating gdsfile...
+betas... 
+pvals... 
+methylated... 
+unmethylated... 
+fData... 
+pData... 
+qcdata... 
+finished creating gdsfile
+Directing 'rownames' to fData/TargetID by default, change with redirect.gds if incorrect.
+Directing 'colnames' to pData/sampleID by default, change with redirect.gds if incorrect.
+0 samples having1% of sites with a detection p-value greater than 0.05 were removed.
+Samples removed: 
+72 sites were remove as beadcount <3 in 5% of samples.
+40 sites having 1% of samples with a detection p-value greater than 0.05 were removed.
+melon.gds doesn't exist, creating new file
+creating gdsfile...
+betas... 
+pvals... 
+methylated... 
+unmethylated... 
+fData... 
+pData... 
+qcdata... 
+finished creating gdsfile
+Directing 'rownames' to fData/TargetID by default, change with redirect.gds if incorrect.
+Directing 'colnames' to pData/sampleID by default, change with redirect.gds if incorrect.
+0 samples having1% of sites with a detection p-value greater than 0.05 were removed.
+Samples removed: 
+72 sites were remove as beadcount <3 in 5% of samples.
+40 sites having 1% of samples with a detection p-value greater than 0.05 were removed.
+Error: processing vignette 'bigmelon.Rnw' failed with diagnostics:
+unable to run pdflatex on 'bigmelon.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘bigmelon.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘bigmelon.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,10 @@
+Package: GDSArray
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GDSArray.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GDSArray_1.21.0.tar.gz
+StartedAt: 2023-05-25 04:35:35 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:35:48 -0000 (Thu, 25 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GDSArray.Rcheck
+Warnings: NA

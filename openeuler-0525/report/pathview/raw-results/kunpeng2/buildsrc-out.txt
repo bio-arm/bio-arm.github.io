@@ -1,0 +1,167 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data pathview
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘pathview/DESCRIPTION’ ... OK
+* preparing ‘pathview’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘pathview.Rnw’ using Sweave
+
+##############################################################################
+Pathview is an open source software package distributed under GNU General
+Public License version 3 (GPLv3). Details of GPLv3 is available at
+http://www.gnu.org/licenses/gpl-3.0.html. Particullary, users are required to
+formally cite the original Pathview paper (not just mention it) in publications
+or products. For details, do citation("pathview") within R.
+
+The pathview downloads and uses KEGG data. Non-academic uses may require a KEGG
+license agreement (details at http://www.kegg.jp/kegg/legal.html).
+##############################################################################
+Info: Downloading xml files for hsa04110, 1/1 pathways..
+Info: Downloading png files for hsa04110, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa04110.gse16873.png
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa04110.gse16873.2layer.png
+'select()' returned 1:1 mapping between keys and columns
+Warning: reconcile groups sharing member nodes!
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa04110.gse16873.pdf
+'select()' returned 1:1 mapping between keys and columns
+Warning: reconcile groups sharing member nodes!
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa04110.gse16873.2layer.pdf
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa04110.gse16873.split.pdf
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa04110.gse16873.split.expanded.pdf
+Info: Downloading xml files for hsa00640, 1/1 pathways..
+Info: Downloading png files for hsa00640, 1/1 pathways..
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.gse16873.cpd.png
+Warning in .local(from, to, graph) :
+  edges replaced: ‘180|60’, ‘122|119’, ‘122|120’, ‘84|77’, ‘84|199’
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.gse16873.cpd.pdf
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.gse16873.cpd.3-2s.multi.png
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.gse16873.cpd.3-2s.match.multi.png
+Warning in .local(from, to, graph) :
+  edges replaced: ‘180|60’, ‘122|119’, ‘122|120’, ‘84|77’, ‘84|199’
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.gse16873.cpd.3-2s.multi.pdf
+Loading required package: org.Hs.eg.db
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.sel.genes.sel.cpd.png
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.sel.genes.cpd.png
+Note: "CAS Registry Number" has only 4643 unique IDs!
+Note: "ENSEMBLPROT" has only 21439 unique IDs!
+'select()' returned 1:many mapping between keys and columns
+Note: multiple compounds may map to a input ID, only the first one kept!
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.gene.ensprot.cpd.cas.png
+Note: multiple compounds may map to a input ID, only the first one kept!
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:1 mapping between keys and columns
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file hsa00640.gene.entrez.cpd.kc.png
+Info: Downloading xml files for eco00640, 1/1 pathways..
+Info: Downloading png files for eco00640, 1/1 pathways..
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file eco00640.eco.kegg.png
+Loading required namespace: org.EcK12.eg.db
+
+Info: Getting gene ID data from KEGG...
+Info: Done with data retrieval!
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file eco00640.eco.entrez.png
+Note: Only KEGG ortholog gene ID is supported, make sure it looks like "K01488"!
+Note: Mapping via KEGG gene ID (not Entrez) is supported for this species,
+it looks like "K01488"!
+Info: Downloading xml files for ko04112, 1/1 pathways..
+Info: Downloading png files for ko04112, 1/1 pathways..
+Info: Working in directory /tmp/Rtmp6Cqemb/Rbuild2a3cdd15c2ffc7/pathview/vignettes
+Info: Writing image file ko04112.ko.data.png
+Error: processing vignette 'pathview.Rnw' failed with diagnostics:
+unable to run pdflatex on 'pathview.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                [pdftex]{graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘pathview.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘pathview.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

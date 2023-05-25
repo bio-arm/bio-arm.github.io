@@ -1,0 +1,10 @@
+Package: deconvR
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:deconvR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings deconvR_1.7.0.tar.gz
+StartedAt: 2023-05-25 04:32:29 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:32:37 -0000 (Thu, 25 May 2023)
+EllapsedTime: 8.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: deconvR.Rcheck
+Warnings: NA

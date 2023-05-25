@@ -1,0 +1,213 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TCGAbiolinks.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TCGAbiolinks_2.29.3.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/TCGAbiolinks.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘TCGAbiolinks/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘TCGAbiolinks’ version ‘2.29.3’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘TCGAbiolinks’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  6.3Mb
+  sub-directories of 1Mb or more:
+    R      1.6Mb
+    data   4.5Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking LazyData ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking R/sysdata.rda ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘analysis.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘casestudy.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘classifiers.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘clinical.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘download_prepare.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘extension.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘index.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘mutation.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘query.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘stemness_score.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘subtypes.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘analysis.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.169   0.032   0.196 
+
+... incomplete output.  Crash?
+when running code in ‘casestudy.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.174   0.027   0.197 
+
+... incomplete output.  Crash?
+when running code in ‘classifiers.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.190   0.009   0.194 
+
+... incomplete output.  Crash?
+when running code in ‘clinical.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.184   0.020   0.200 
+
+... incomplete output.  Crash?
+when running code in ‘download_prepare.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.183   0.019   0.196 
+
+... incomplete output.  Crash?
+when running code in ‘extension.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.166   0.042   0.202 
+
+... incomplete output.  Crash?
+when running code in ‘index.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.180   0.024   0.199 
+
+... incomplete output.  Crash?
+when running code in ‘mutation.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.183   0.021   0.199 
+
+... incomplete output.  Crash?
+when running code in ‘query.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.159   0.042   0.198 
+
+... incomplete output.  Crash?
+when running code in ‘stemness_score.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.178   0.027   0.200 
+
+... incomplete output.  Crash?
+when running code in ‘subtypes.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.184   0.024   0.202 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 2 ERRORs, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/TCGAbiolinks.Rcheck/00check.log’
+for details.
+

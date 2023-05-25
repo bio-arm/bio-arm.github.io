@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data vsn
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘vsn/DESCRIPTION’ ... OK
+* preparing ‘vsn’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘A-vsn.Rmd’ using rmarkdown
+--- finished re-building ‘A-vsn.Rmd’
+
+--- re-building ‘C-likelihoodcomputations.Rnw’ using Sweave
+Error: processing vignette 'C-likelihoodcomputations.Rnw' failed with diagnostics:
+unable to run pdflatex on 'C-likelihoodcomputations.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘C-likelihoodcomputations.Rnw’
+
+--- re-building ‘D-convergence.Rnw’ using Sweave
+--- finished re-building ‘D-convergence.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘C-likelihoodcomputations.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

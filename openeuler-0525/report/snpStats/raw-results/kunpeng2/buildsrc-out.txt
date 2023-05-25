@@ -1,0 +1,166 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data snpStats
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘snpStats/DESCRIPTION’ ... OK
+* preparing ‘snpStats’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘Fst-vignette.Rnw’ using Sweave
+Loading required package: snpStats
+Loading required package: survival
+Loading required package: Matrix
+Error: processing vignette 'Fst-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'Fst-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.3 \usepackage
+               {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘Fst-vignette.Rnw’
+
+--- re-building ‘data-input-vignette.Rnw’ using Sweave
+Error: processing vignette 'data-input-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'data-input-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.3 \usepackage
+               {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘data-input-vignette.Rnw’
+
+--- re-building ‘differences.Rnw’ using Sweave
+Error: processing vignette 'differences.Rnw' failed with diagnostics:
+unable to run pdflatex on 'differences.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.3 ^^M
+       
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘differences.Rnw’
+
+--- re-building ‘imputation-vignette.Rnw’ using Sweave
+Error: processing vignette 'imputation-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'imputation-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.7 \usepackage
+               {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘imputation-vignette.Rnw’
+
+--- re-building ‘ld-vignette.Rnw’ using Sweave
+Error: processing vignette 'ld-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ld-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.7 \usepackage
+               {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ld-vignette.Rnw’
+
+--- re-building ‘pca-vignette.Rnw’ using Sweave
+Error: processing vignette 'pca-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'pca-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.6 \usepackage
+               {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘pca-vignette.Rnw’
+
+--- re-building ‘snpStats-vignette.Rnw’ using Sweave
+Error: processing vignette 'snpStats-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'snpStats-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.7 \usepackage
+               {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘snpStats-vignette.Rnw’
+
+--- re-building ‘tdt-vignette.Rnw’ using Sweave
+Warning in tdt.snp(data = pedData, snp.data = genotypes) :
+  211 misinheritances were detected
+Error: processing vignette 'tdt-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'tdt-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.7 \usepackage
+               {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘tdt-vignette.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘Fst-vignette.Rnw’ ‘data-input-vignette.Rnw’ ‘differences.Rnw’
+  ‘imputation-vignette.Rnw’ ‘ld-vignette.Rnw’ ‘pca-vignette.Rnw’
+  ‘snpStats-vignette.Rnw’ ‘tdt-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

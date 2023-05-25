@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SICtools
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SICtools/DESCRIPTION’ ... OK
+* preparing ‘SICtools’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SICtools.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'SICtools.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpCFD2o7/Rbuild2eb039791f6d7a/SICtools/vignettes/SICtools.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See SICtools.log for more info.
+--- failed re-building ‘SICtools.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘SICtools.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

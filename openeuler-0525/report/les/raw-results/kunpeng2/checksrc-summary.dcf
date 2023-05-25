@@ -1,0 +1,10 @@
+Package: les
+Version: 1.51.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:les.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings les_1.51.0.tar.gz
+StartedAt: 2023-05-25 04:39:02 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:39:15 -0000 (Thu, 25 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: les.Rcheck
+Warnings: NA

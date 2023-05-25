@@ -1,0 +1,10 @@
+Package: demuxSNP
+Version: 0.99.15
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:demuxSNP.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings demuxSNP_0.99.15.tar.gz
+StartedAt: 2023-05-25 04:32:48 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:32:59 -0000 (Thu, 25 May 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: demuxSNP.Rcheck
+Warnings: NA

@@ -1,0 +1,24 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL simpleSeg
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘simpleSeg’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Error in dyn.load(file, DLLpath = DLLpath, ...) : 
+  unable to load shared object '/home/biocbuild/R/R-4.3.0/site-library/terra/libs/terra.so':
+  libgdal.so.33: cannot open shared object file: No such file or directory
+Calls: <Anonymous> ... namespaceImport -> loadNamespace -> library.dynam -> dyn.load
+Execution halted
+ERROR: lazy loading failed for package ‘simpleSeg’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/simpleSeg’

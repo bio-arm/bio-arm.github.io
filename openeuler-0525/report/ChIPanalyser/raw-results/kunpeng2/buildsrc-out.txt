@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ChIPanalyser
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ChIPanalyser/DESCRIPTION’ ... OK
+* preparing ‘ChIPanalyser’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘ChIPanalyser.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'ChIPanalyser.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpZX9sGk/Rbuild256ad4475454cd/ChIPanalyser/vignettes/ChIPanalyser.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See ChIPanalyser.log for more info.
+--- failed re-building ‘ChIPanalyser.Rmd’
+
+--- re-building ‘GA_ChIPanalyser.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'GA_ChIPanalyser.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpZX9sGk/Rbuild256ad4475454cd/ChIPanalyser/vignettes/GA_ChIPanalyser.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See GA_ChIPanalyser.log for more info.
+--- failed re-building ‘GA_ChIPanalyser.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘ChIPanalyser.Rmd’ ‘GA_ChIPanalyser.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

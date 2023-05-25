@@ -1,0 +1,177 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ADaCGH2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ADaCGH2/DESCRIPTION’ ... OK
+* preparing ‘ADaCGH2’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ADaCGH2.Rnw’ using Sweave
+Loading required package: parallel
+Loading required package: ff
+Loading required package: bit
+
+Attaching package: ‘bit’
+
+The following object is masked from ‘package:base’:
+
+    xor
+
+Attaching package ff
+- getOption("fftempdir")=="/tmp/Rtmp2iThOA/ff"
+
+- getOption("ffextension")=="ff"
+
+- getOption("ffdrop")==TRUE
+
+- getOption("fffinonexit")==TRUE
+
+- getOption("ffpagesize")==65536
+
+- getOption("ffcaching")=="mmnoflush"  -- consider "ffeachflush" if your system stalls on large writes
+
+- getOption("ffbatchbytes")==16777216 -- consider a different value for tuning your system
+
+- getOption("ffmaxbytes")==536870912 -- consider a different value for tuning your system
+
+
+Attaching package: ‘ff’
+
+The following objects are masked from ‘package:utils’:
+
+    write.csv, write.csv2
+
+The following objects are masked from ‘package:base’:
+
+    is.factor, is.ordered
+
+Loading required package: GLAD
+
+######################################################################################
+
+Have fun with GLAD
+
+For smoothing it is possible to use either
+the AWS algorithm (Polzehl and Spokoiny, 2002,
+or the HaarSeg algorithm (Ben-Yaacov and Eldar, Bioinformatics,  2008,
+
+If you use the package with AWS, please cite:
+Hupe et al. (Bioinformatics, 2004, and Polzehl and Spokoiny (2002,
+
+If you use the package with HaarSeg, please cite:
+Hupe et al. (Bioinformatics, 2004, and (Ben-Yaacov and Eldar, Bioinformatics, 2008,
+
+For fast computation it is recommanded to use
+the daglad function with smoothfunc=haarseg
+
+######################################################################################
+
+New options are available in daglad: see help for details.
+
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Read 500 records
+Warning in cutFile(fnametxt, 1, 2, 3, sep = "\t", mc.cores = 2) :
+  Number of columns not specified. We guess they are 9
+Read 500 items
+Read 500 items
+Read 500 items
+Read 1 item
+Read 1 item
+Read 1 item
+Read 1 item
+Read 1 item
+Read 1 item
+Read 500 items
+Read 500 items
+Read 500 items
+Read 500 items
+Read 500 items
+Read 500 items
+Loading required package: limma
+Loading required package: snapCGH
+Loading required package: CGHregions
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: CGHbase
+Loading required package: marray
+Error: processing vignette 'ADaCGH2.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ADaCGH2.tex'
+LaTeX errors:
+! LaTeX Error: File `threeparttable.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {array}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ADaCGH2.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘ADaCGH2.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

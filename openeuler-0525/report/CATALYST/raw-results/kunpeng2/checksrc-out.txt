@@ -1,0 +1,169 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CATALYST.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CATALYST_1.25.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘CATALYST/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘CATALYST’ version ‘1.25.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘CATALYST’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+There are ::: calls to the package's namespace in its code. A package
+  almost never needs to use ::: for its own objects:
+  ‘.cluster_cols’
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking LazyData ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                   user system elapsed
+plotPbExprs      19.917  0.267  20.256
+plotMultiHeatmap 19.590  0.187  19.846
+plotDiffHeatmap  17.508  0.158  17.793
+plotDR           15.992  0.254  16.399
+sce2fcs          14.820  0.132  15.006
+plotExprHeatmap  14.666  0.100  14.821
+plotAbundances   10.245  0.312  10.759
+plotClusterExprs 10.187  0.277  10.670
+plotCodes        10.090  0.220  10.481
+clrDR             9.650  0.488  10.354
+pbMDS             9.653  0.338  10.237
+mergeClusters     9.509  0.440  10.189
+plotFreqHeatmap   9.778  0.091   9.903
+SCE-accessors     9.430  0.265   9.855
+cluster           7.992  0.404   8.556
+filterSCE         7.546  0.243   7.955
+compCytof         7.448  0.254   7.849
+plotMahal         7.594  0.052   7.675
+plotYields        6.863  0.076   6.964
+extractClusters   6.656  0.175   6.974
+computeSpillmat   6.424  0.273   6.818
+plotSpillmat      6.338  0.064   6.424
+runDR             6.153  0.055   6.222
+adaptSpillmat     5.852  0.168   6.136
+plotExprs         5.918  0.052   5.992
+plotScatter       5.919  0.043   5.994
+estCutoffs        5.549  0.239   5.889
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘differential.Rmd’ using ‘UTF-8’... OK
+  ‘preprocessing.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+Warning in readLines(tf) :
+  incomplete final line found on '/tmp/RtmpweWHeD/file33b6c54efe2eac'
+--- re-building ‘differential.Rmd’ using rmarkdown
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/delta-area-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotCounts-1-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotCounts-2-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/pbMDS-1-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/pbMDS-2-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/clrDR-1-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/clrDR-2-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotExprHeatmap-sample-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotExprHeatmap-cluster-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotExprHeatmap-both-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotMedExprs-1-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotMedExprs-2-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotMedExprs-3-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotMedExprs-4-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotClusterExprs-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotAbundances-1-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotAbundances-2-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotFreqHeatmap-complete-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotFreqHeatmap-minimal-1.png" but not available.
+Write Error
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/vign_test/CATALYST/vignettes/differential_files/figure-html/plotMultiHeatmap-1-1.png" but not available.
+Write
+
+SUMMARY: processing the following file failed:
+  ‘differential.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 2 ERRORs, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/00check.log’
+for details.
+

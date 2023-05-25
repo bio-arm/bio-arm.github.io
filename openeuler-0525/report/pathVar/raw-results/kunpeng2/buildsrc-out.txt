@@ -1,0 +1,53 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data pathVar
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘pathVar/DESCRIPTION’ ... OK
+* preparing ‘pathVar’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘pathVar.Rnw’ using Sweave
+Loading required package: ggplot2
+Loading required package: gridExtra
+`geom_smooth()` using formula = 'y ~ x'
+`geom_smooth()` using formula = 'y ~ x'
+`geom_smooth()` using formula = 'y ~ x'
+`geom_smooth()` using formula = 'y ~ x'
+`geom_smooth()` using formula = 'y ~ x'
+`geom_smooth()` using formula = 'y ~ x'
+Warning in melt(df) :
+  The melt generic in data.table has been passed a data.frame and will attempt to redirect to the relevant reshape2 method; please note that reshape2 is deprecated, and this redirection is now deprecated as well. To continue using melt methods from reshape2 while both libraries are attached, e.g. melt.list, you can prepend the namespace like reshape2::melt(df). In the next version, this warning will become an error.
+Using X1, X2 as id variables
+Warning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.
+ℹ Please use `after_stat(density)` instead.
+ℹ The deprecated feature was likely used in the pathVar package.
+  Please report the issue to the authors.
+Error: processing vignette 'pathVar.Rnw' failed with diagnostics:
+unable to run pdflatex on 'pathVar.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 \usepackage
+                [utf8x]{inputenc}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘pathVar.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘pathVar.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

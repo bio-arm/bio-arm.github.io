@@ -1,0 +1,10 @@
+Package: ExpressionAtlas
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ExpressionAtlas.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ExpressionAtlas_1.29.0.tar.gz
+StartedAt: 2023-05-25 04:34:29 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:34:41 -0000 (Thu, 25 May 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: ExpressionAtlas.Rcheck
+Warnings: NA

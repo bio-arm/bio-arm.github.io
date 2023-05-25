@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scTensor
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘scTensor/DESCRIPTION’ ... OK
+* preparing ‘scTensor’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+      -----------------------------------
+ERROR: dependency ‘schex’ is not available for package ‘scTensor’
+* removing ‘/tmp/Rtmpsatk9T/Rinst2e7f5d41441ebe/scTensor’
+      -----------------------------------
+ERROR: package installation failed

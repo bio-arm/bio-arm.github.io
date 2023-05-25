@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data M3C
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘M3C/DESCRIPTION’ ... OK
+* preparing ‘M3C’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘M3Cvignette.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'M3Cvignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmpzy1lN3/Rbuild28b19f542a6118/M3C/vignettes/M3Cvignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See M3Cvignette.log for more info.
+--- failed re-building ‘M3Cvignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘M3Cvignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

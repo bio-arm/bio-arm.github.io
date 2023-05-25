@@ -1,0 +1,52 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data LRBaseDbi
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘LRBaseDbi/DESCRIPTION’ ... OK
+* preparing ‘LRBaseDbi’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘LRBaseDbi.Rnw’ using Sweave
+LRBase.XXX.eg.db-type packages are deprecated since Bioconductor 3.14. Use AnnotationHub instead. For details, check the vignette of LRBaseDbi
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: BiocFileCache
+Loading required package: dbplyr
+
+Error: processing vignette 'LRBaseDbi.Rnw' failed with diagnostics:
+ chunk 2 
+Error : Corrupt Cache: index file
+  See AnnotationHub's TroubleshootingTheCache vignette section on corrupt cache
+  cache: /home/biocbuild/.cache/R/AnnotationHub
+  filename: annotationhub.index.rds
+
+--- failed re-building ‘LRBaseDbi.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘LRBaseDbi.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

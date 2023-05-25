@@ -1,0 +1,10 @@
+Package: graph
+Version: 1.79.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:graph.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings graph_1.79.0.tar.gz
+StartedAt: 2023-05-25 04:36:49 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:37:05 -0000 (Thu, 25 May 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: graph.Rcheck
+Warnings: NA

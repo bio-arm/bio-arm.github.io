@@ -1,0 +1,88 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data clusterSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘clusterSeq/DESCRIPTION’ ... OK
+* preparing ‘clusterSeq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘clusterSeq.Rnw’ using Sweave
+Loading required package: BiocParallel
+Loading required package: baySeq
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: abind
+Loading required package: parallel
+Bootstrapping distributions...
+done!
+K-means processing....done!
+Comparing clusterings..............done!
+Bootstrapping distributions...
+done!
+K-means processing....done!
+Comparing clusterings.....................done!
+.Warning in max(posts, na.rm = TRUE) :
+  no non-missing arguments to max; returning -Inf
+
+
+Error: processing vignette 'clusterSeq.Rnw' failed with diagnostics:
+unable to run pdflatex on 'clusterSeq.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘clusterSeq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘clusterSeq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

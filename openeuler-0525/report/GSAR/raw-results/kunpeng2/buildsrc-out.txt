@@ -1,0 +1,135 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GSAR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GSAR/DESCRIPTION’ ... OK
+* preparing ‘GSAR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GSAR.Rnw’ using Sweave
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:igraph’:
+
+    normalize, path, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: GSEABase
+Loading required package: annotate
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:MASS’:
+
+    select
+
+Loading required package: XML
+Loading required package: graph
+
+Attaching package: ‘graph’
+
+The following object is masked from ‘package:XML’:
+
+    addNode
+
+The following objects are masked from ‘package:igraph’:
+
+    degree, edges, intersection
+
+Loading required package: hgu95a.db
+Loading required package: org.Hs.eg.db
+
+
+
+Attaching package: ‘genefilter’
+
+The following object is masked from ‘package:MASS’:
+
+    area
+
+
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+Error: processing vignette 'GSAR.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GSAR.tex'
+LaTeX errors:
+! LaTeX Error: File `sectsty.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.37 \sectionfont
+                 {\sffamily\bfseries\color{BiocBlue}\sectionrule{0pt}{0pt}{-...
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GSAR.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GSAR.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

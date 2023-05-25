@@ -1,0 +1,10 @@
+Package: Path2PPI
+Version: 1.31.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Path2PPI.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Path2PPI_1.31.0.tar.gz
+StartedAt: 2023-05-25 04:43:40 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:43:53 -0000 (Thu, 25 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: Path2PPI.Rcheck
+Warnings: NA

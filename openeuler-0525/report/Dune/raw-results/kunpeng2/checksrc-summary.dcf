@@ -1,0 +1,10 @@
+Package: Dune
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Dune.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Dune_1.13.0.tar.gz
+StartedAt: 2023-05-25 04:33:36 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:33:50 -0000 (Thu, 25 May 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: Dune.Rcheck
+Warnings: NA

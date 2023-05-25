@@ -1,0 +1,10 @@
+Package: seqArchRplus
+Version: 1.1.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:seqArchRplus.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings seqArchRplus_1.1.2.tar.gz
+StartedAt: 2023-05-25 04:48:53 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:49:06 -0000 (Thu, 25 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: seqArchRplus.Rcheck
+Warnings: NA

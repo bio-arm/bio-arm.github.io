@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Linnorm
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Linnorm/DESCRIPTION’ ... OK
+* preparing ‘Linnorm’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Linnorm_User_Manual.Rmd’ using rmarkdown
+! LaTeX Error: File `titling.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Linnorm_User_Manual.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmptkIST2/Rbuild28a7f87f335872/Linnorm/vignettes/Linnorm_User_Manual.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Linnorm_User_Manual.log for more info.
+--- failed re-building ‘Linnorm_User_Manual.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Linnorm_User_Manual.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

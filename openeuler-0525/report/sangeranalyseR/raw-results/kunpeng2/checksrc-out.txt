@@ -1,0 +1,191 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:sangeranalyseR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings sangeranalyseR_1.11.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/sangeranalyseR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘sangeranalyseR/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘sangeranalyseR’ version ‘1.11.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ NOTE
+Depends: includes the non-default packages:
+  'stringr', 'ape', 'Biostrings', 'DECIPHER', 'parallel', 'reshape2',
+  'phangorn', 'sangerseqR', 'gridExtra', 'shiny', 'shinydashboard',
+  'shinyjs', 'data.table', 'plotly', 'DT', 'zeallot', 'excelR',
+  'shinycssloaders', 'ggdendro', 'shinyWidgets', 'openxlsx', 'tools',
+  'rmarkdown', 'knitr', 'seqinr', 'BiocStyle', 'logger'
+Adding so many packages to the search path is excessive and importing
+selectively is preferable.
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .travis.yml
+  docs/build/html/.buildinfo
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... WARNING
+Found the following file with a non-portable file name:
+  docs/wallpaperflare.com_wallpaper (1).jpg
+These are not fully portable file names.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+Found the following non-portable file paths:
+  sangeranalyseR/docs/build/html/_downloads/081987116457968e1b81ae1616525c7d/Sanger_contigs_unalignment.fa
+  sangeranalyseR/docs/build/html/_downloads/13b875bc704f73b8bd67dc07d86fc474/Sanger_contigs_alignment.fa
+  sangeranalyseR/docs/build/html/_downloads/144d09562ae5b2c7dc079e4bc2b33fb7/Sanger_contigs_alignment.fa
+  sangeranalyseR/docs/build/html/_downloads/165af37e8893cfdfa4dba91c44cd791b/Sanger_contigs_unalignment.fa
+  sangeranalyseR/docs/build/html/_downloads/345ac400befc4f176c75732770ec3fcb/Achl_RBNII384-13_contig.fa
+  sangeranalyseR/docs/build/html/_downloads/438c8bd47d93d92c65b35b613ef14739/Sanger_all_trimmed_reads.fa
+  sangeranalyseR/docs/build/html/_downloads/6211ea1e7e3ccc1fcc9b74b78224eab6/Achl_ACHLO006-09_reads_unalignment.fa
+  sangeranalyseR/docs/build/html/_downloads/67bcad64cca804ec2e14cc42d016c08f/Achl_ACHLO006-09_reads_alignment.fa
+  sangeranalyseR/docs/build/html/_downloads/81a7338101f110748cb72056d9975225/Sanger_all_trimmed_reads.fa
+  sangeranalyseR/docs/build/html/_downloads/95ef9378c1407481d69c3bf882a580bb/Achl_RBNII384-13_reads_unalignment.fa
+  sangeranalyseR/docs/build/html/_downloads/a664bed9cc5d32924dc2ce60f8c60554/Sanger_all_trimmed_reads.fa
+  sangeranalyseR/docs/build/html/_downloads/b608796fffaaa7335a7341cffc9a9db7/Achl_ACHLO006-09_contig.fa
+  sangeranalyseR/docs/build/html/_downloads/b6b18aa3e34c6ae0be86c3940972dd38/Sanger_contigs_alignment.fa
+  sangeranalyseR/docs/build/html/_downloads/eeb554b575ee5b29ef733dafbf876c36/Achl_RBNII384-13_reads_alignment.fa
+  sangeranalyseR/docs/build/html/_downloads/fef71e7b2e1e49c01df301435e972047/Sanger_contigs_unalignment.fa
+
+Tarballs are only required to store paths of up to 100 bytes and cannot
+store those of more than 256 bytes, with restrictions including to 100
+bytes for the final component.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘sangeranalyseR’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  8.5Mb
+  sub-directories of 1Mb or more:
+    data      2.2Mb
+    extdata   5.5Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... NOTE
+File
+  LICENSE
+is not mentioned in the DESCRIPTION file.
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in Makefiles ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking include directives in Makefiles ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘sangeranalyseR.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘sangeranalyseR.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.173   0.031   0.198 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 2 ERRORs, 1 WARNING, 4 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/sangeranalyseR.Rcheck/00check.log’
+for details.
+

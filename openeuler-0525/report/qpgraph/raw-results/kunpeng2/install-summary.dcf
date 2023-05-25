@@ -1,0 +1,8 @@
+Package: qpgraph
+Version: 2.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL qpgraph
+StartedAt: 2023-05-24 19:26:07 -0000 (Wed, 24 May 2023)
+EndedAt: 2023-05-24 19:27:26 -0000 (Wed, 24 May 2023)
+EllapsedTime: 78.7 seconds
+RetCode: 0
+Status: OK

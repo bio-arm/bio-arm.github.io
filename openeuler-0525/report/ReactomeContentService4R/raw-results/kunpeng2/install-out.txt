@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL ReactomeContentService4R
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘ReactomeContentService4R’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+Error: package or namespace load failed for ‘ReactomeContentService4R’:
+ .onAttach failed in attachNamespace() for 'ReactomeContentService4R', details:
+  call: curl::curl_fetch_memory(url, handle = handle)
+  error: Timeout was reached: [reactome.org] Connection timeout after 10001 ms
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/ReactomeContentService4R’

@@ -1,0 +1,8 @@
+Package: synapsis
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL synapsis
+StartedAt: 2023-05-24 19:26:42 -0000 (Wed, 24 May 2023)
+EndedAt: 2023-05-24 19:26:48 -0000 (Wed, 24 May 2023)
+EllapsedTime: 6.1 seconds
+RetCode: 0
+Status: OK

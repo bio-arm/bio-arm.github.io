@@ -1,0 +1,87 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CNORode
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CNORode/DESCRIPTION’ ... OK
+* preparing ‘CNORode’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘CNORode-vignette.Rnw’ using Sweave
+Bioconductor version 3.18 (BiocManager 1.30.20), R 4.3.0 (2023-04-21)
+Warning: package(s) not installed when version(s) same as or greater than
+  current; use `force = TRUE` to re-install: 'MEIGOR'
+Old packages: 'DelayedArray'
+Loading required package: CellNOptR
+Loading required package: RBGL
+Loading required package: graph
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm,
+    append, as.data.frame, basename, cbind, colnames, dirname,
+    do.call, duplicated, eval, evalq, get, grep, grepl,
+    intersect, is.unsorted, lapply, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, rank, rbind,
+    rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit, which.max, which.min
+
+Loading required package: RCurl
+Loading required package: Rgraphviz
+Loading required package: grid
+Loading required package: XML
+
+Attaching package: ‘XML’
+
+The following object is masked from ‘package:graph’:
+
+    addNode
+
+Loading required package: ggplot2
+Loading required package: rmarkdown
+Loading required package: genalg
+Loading required package: knitr
+
+Attaching package: ‘CNORode’
+
+The following object is masked from ‘package:stats’:
+
+    simulate
+
+Loading required namespace: MEIGOR
+Error: processing vignette 'CNORode-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'CNORode-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `authblk.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.15 \usepackage
+                [T1]{fontenc}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘CNORode-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘CNORode-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SMITE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SMITE/DESCRIPTION’ ... OK
+* preparing ‘SMITE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SMITE.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'SMITE.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpOuCkmv/Rbuild2ec75246704f29/SMITE/vignettes/SMITE.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See SMITE.log for more info.
+--- failed re-building ‘SMITE.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘SMITE.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

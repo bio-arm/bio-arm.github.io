@@ -1,0 +1,70 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL LowMACA
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘LowMACA’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Checking if clustalo is in the PATH...
+Warning in .ClustalChecks(ClustalCommand = "clustalo") :
+  Clustal Omega is not in the PATH:
+You can either change clustalo command using lmParams function or use the web service. See ?setup
+Checking perl installation...
+Checking perl modules XML::Simple and LWP...
+Can't locate XML/Simple.pm in @INC (you may need to install the XML::Simple module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5).
+BEGIN failed--compilation aborted.
+Warning in system(paste(perl, "-MXML::Simple -e 1"), intern = TRUE) :
+  running command '/usr/bin/perl -MXML::Simple -e 1' had status 2
+Warning in .PerlModuleChecks(stop = FALSE, perl = "perl") :
+  XML::Simple module for perl is not installed. 
+            If you don't want to install a local clustal omega and use the web service, XML::Simple is required
+
+Can't locate LWP.pm in @INC (you may need to install the LWP module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5).
+BEGIN failed--compilation aborted.
+Warning in system(paste(perl, "-MLWP -e 1"), intern = TRUE) :
+  running command '/usr/bin/perl -MLWP -e 1' had status 2
+Warning in .PerlModuleChecks(stop = FALSE, perl = "perl") :
+  LWP module for perl is not installed. 
+            If you don't want to install a local clustal omega and use the web service, LWP is required
+
+** testing if installed package can be loaded from final location
+Checking if clustalo is in the PATH...
+Warning in .ClustalChecks(ClustalCommand = "clustalo") :
+  Clustal Omega is not in the PATH:
+You can either change clustalo command using lmParams function or use the web service. See ?setup
+Checking perl installation...
+Checking perl modules XML::Simple and LWP...
+Can't locate XML/Simple.pm in @INC (you may need to install the XML::Simple module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5).
+BEGIN failed--compilation aborted.
+Warning in system(paste(perl, "-MXML::Simple -e 1"), intern = TRUE) :
+  running command '/usr/bin/perl -MXML::Simple -e 1' had status 2
+Warning in .PerlModuleChecks(stop = FALSE, perl = "perl") :
+  XML::Simple module for perl is not installed. 
+            If you don't want to install a local clustal omega and use the web service, XML::Simple is required
+
+Can't locate LWP.pm in @INC (you may need to install the LWP module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5).
+BEGIN failed--compilation aborted.
+Warning in system(paste(perl, "-MLWP -e 1"), intern = TRUE) :
+  running command '/usr/bin/perl -MLWP -e 1' had status 2
+Warning in .PerlModuleChecks(stop = FALSE, perl = "perl") :
+  LWP module for perl is not installed. 
+            If you don't want to install a local clustal omega and use the web service, LWP is required
+
+** testing if installed package keeps a record of temporary installation path
+* DONE (LowMACA)

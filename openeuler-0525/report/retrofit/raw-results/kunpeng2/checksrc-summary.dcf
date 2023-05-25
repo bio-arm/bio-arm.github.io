@@ -1,0 +1,10 @@
+Package: retrofit
+Version: 1.1.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:retrofit.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings retrofit_1.1.0.tar.gz
+StartedAt: 2023-05-25 04:46:28 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:46:44 -0000 (Thu, 25 May 2023)
+EllapsedTime: 15.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: retrofit.Rcheck
+Warnings: NA

@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CFAssay
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CFAssay/DESCRIPTION’ ... OK
+* preparing ‘CFAssay’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘cfassay.Rnw’ using Sweave
+Error: processing vignette 'cfassay.Rnw' failed with diagnostics:
+unable to run pdflatex on 'cfassay.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                [utf8]{inputenc}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘cfassay.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘cfassay.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

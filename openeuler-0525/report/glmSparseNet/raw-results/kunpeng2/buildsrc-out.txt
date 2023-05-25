@@ -1,0 +1,59 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data glmSparseNet
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘glmSparseNet/DESCRIPTION’ ... OK
+* preparing ‘glmSparseNet’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘example_brca_logistic.Rmd’ using rmarkdown
+Quitting from lines 54-57 (example_brca_logistic.Rmd) 
+Error: processing vignette 'example_brca_logistic.Rmd' failed with diagnostics:
+failed to load resource
+  name: EH596
+  title: BRCA_RNASeq2GeneNorm-20160128
+  reason: error in evaluating the argument 'x' in selecting a method for function 'get': error reading from connection
+--- failed re-building ‘example_brca_logistic.Rmd’
+
+--- re-building ‘example_brca_protein-protein-interactions_survival.Rmd’ using rmarkdown
+Quitting from lines 135-138 (example_brca_protein-protein-interactions_survival.Rmd) 
+Error: processing vignette 'example_brca_protein-protein-interactions_survival.Rmd' failed with diagnostics:
+failed to load resource
+  name: EH596
+  title: BRCA_RNASeq2GeneNorm-20160128
+  reason: error in evaluating the argument 'x' in selecting a method for function 'get': error reading from connection
+--- failed re-building ‘example_brca_protein-protein-interactions_survival.Rmd’
+
+--- re-building ‘example_brca_survival.Rmd’ using rmarkdown
+Quitting from lines 54-57 (example_brca_survival.Rmd) 
+Error: processing vignette 'example_brca_survival.Rmd' failed with diagnostics:
+failed to load resource
+  name: EH596
+  title: BRCA_RNASeq2GeneNorm-20160128
+  reason: error in evaluating the argument 'x' in selecting a method for function 'get': error reading from connection
+--- failed re-building ‘example_brca_survival.Rmd’
+
+--- re-building ‘example_prad_survival.Rmd’ using rmarkdown
+--- finished re-building ‘example_prad_survival.Rmd’
+
+--- re-building ‘example_skcm_survival.Rmd’ using rmarkdown
+--- finished re-building ‘example_skcm_survival.Rmd’
+
+--- re-building ‘separate2GroupsCox.Rmd’ using rmarkdown
+--- finished re-building ‘separate2GroupsCox.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘example_brca_logistic.Rmd’
+  ‘example_brca_protein-protein-interactions_survival.Rmd’
+  ‘example_brca_survival.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

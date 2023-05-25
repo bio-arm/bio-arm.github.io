@@ -1,0 +1,10 @@
+Package: BiocFileCache
+Version: 2.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BiocFileCache.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BiocFileCache_2.9.0.tar.gz
+StartedAt: 2023-05-25 03:36:44 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 03:52:52 -0000 (Thu, 25 May 2023)
+EllapsedTime: 968.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: BiocFileCache.Rcheck
+Warnings: NA

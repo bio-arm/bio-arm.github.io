@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data multiscan
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘multiscan/DESCRIPTION’ ... OK
+* preparing ‘multiscan’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘multiscan.Rnw’ using Sweave
+Error: processing vignette 'multiscan.Rnw' failed with diagnostics:
+unable to run pdflatex on 'multiscan.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.10 \usepackage
+                {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘multiscan.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘multiscan.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

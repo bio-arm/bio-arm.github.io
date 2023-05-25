@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data genefu
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘genefu/DESCRIPTION’ ... OK
+* preparing ‘genefu’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘genefu.Rmd’ using rmarkdown
+Quitting from lines 104-109 (genefu.Rmd) 
+Error: processing vignette 'genefu.Rmd' failed with diagnostics:
+there is no package called 'breastCancerUPP'
+--- failed re-building ‘genefu.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘genefu.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,91 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data beadarray
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘beadarray/DESCRIPTION’ ... OK
+* preparing ‘beadarray’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ImageProcessing.rnw’ using knitr
+Error: processing vignette 'ImageProcessing.rnw' failed with diagnostics:
+unable to run pdflatex on 'ImageProcessing.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ImageProcessing.rnw’
+
+--- re-building ‘beadarray.rnw’ using knitr
+Error: processing vignette 'beadarray.rnw' failed with diagnostics:
+unable to run pdflatex on 'beadarray.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘beadarray.rnw’
+
+--- re-building ‘beadlevel.rnw’ using knitr
+Error: processing vignette 'beadlevel.rnw' failed with diagnostics:
+unable to run pdflatex on 'beadlevel.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘beadlevel.rnw’
+
+--- re-building ‘beadsummary.rnw’ using knitr
+Error: processing vignette 'beadsummary.rnw' failed with diagnostics:
+unable to run pdflatex on 'beadsummary.tex'
+LaTeX errors:
+! LaTeX Error: File `framed.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.137 \definecolor
+                  {shadecolor}{RGB}{240,240,240}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘beadsummary.rnw’
+
+SUMMARY: processing the following files failed:
+  ‘ImageProcessing.rnw’ ‘beadarray.rnw’ ‘beadlevel.rnw’
+  ‘beadsummary.rnw’
+
+Error: Vignette re-building failed.
+Execution halted

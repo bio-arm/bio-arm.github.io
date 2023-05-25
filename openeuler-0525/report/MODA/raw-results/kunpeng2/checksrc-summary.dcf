@@ -1,0 +1,10 @@
+Package: MODA
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MODA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MODA_1.27.0.tar.gz
+StartedAt: 2023-05-25 04:41:12 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 04:41:24 -0000 (Thu, 25 May 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MODA.Rcheck
+Warnings: NA

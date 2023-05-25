@@ -1,0 +1,156 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:autonomics.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings autonomics_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘autonomics/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘autonomics’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘autonomics’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'normimpute'
+  ‘ref’ ‘pos’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                          user system elapsed
+read_rnaseq_counts      24.269  0.161  23.903
+filter_medoid           17.301  0.447  17.724
+pca                     17.232  0.056  17.324
+is_sig                  16.972  0.028  16.776
+explore_imputations     14.185  0.132  14.158
+plot_detections         13.036  0.116  12.807
+fit_limma               12.843  0.088  12.830
+read_somascan           12.030  0.107  12.111
+biplot_covariates       10.351  0.063  10.434
+read_rectangles         10.145  0.123  10.288
+summarize_fit            9.841  0.287   9.676
+read_metabolon          10.073  0.043  10.095
+explore_transformations  8.929  0.060   8.825
+plot_features            7.548  0.028   7.590
+plot_venn                7.408  0.059   7.391
+analyze                  6.805  0.271   7.053
+subtract_baseline        6.881  0.156   7.025
+plot_boxplots            6.966  0.012   6.987
+plot_violins             6.414  0.032   6.454
+read_proteingroups       6.378  0.028   6.161
+log2transform            5.979  0.044   5.847
+sumexp_to_long_dt        5.826  0.080   5.538
+biplot                   5.409  0.156   5.573
+biplot_corrections       5.376  0.124   5.509
+add_smiles               2.555  0.108   6.518
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘using_autonomics.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘using_autonomics.Rmd’ using rmarkdown
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck/vign_test/autonomics/vignettes/using_autonomics_files/figure-html/unnamed-chunk-2-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck/vign_test/autonomics/vignettes/using_autonomics_files/figure-html/unnamed-chunk-2-2.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck/vign_test/autonomics/vignettes/using_autonomics_files/figure-html/unnamed-chunk-2-3.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck/vign_test/autonomics/vignettes/using_autonomics_files/figure-html/unnamed-chunk-2-4.png" but not available.
+trying URL 'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161731/suppl//GSE161731_counts.csv.gz?tool=geoquery'
+Content type 'application/x-gzip' length 8347405 bytes (8.0 MB)
+==================================================
+downloaded 8.0 MB
+
+trying URL 'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161731/suppl//GSE161731_counts_key.csv.gz?tool=geoquery'
+Content type 'application/x-gzip' length 2443 bytes
+==================================================
+downloaded 2443 bytes
+
+trying URL 'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161731/suppl//GSE161731_key.csv.gz?tool=geoquery'
+Content type 'application/x-gzip' length 2398 bytes
+==================================================
+downloaded 2398 bytes
+
+trying URL 'https://ftp.ncbi.nlm.nih.gov/geo/series/GSE161nnn/GSE161731/suppl//GSE161731_xpr_nlcpm.csv.gz?tool=geoquery'
+Content type 'application/x-gzip' length 16839511 bytes (16.1 MB)
+=========================================
+downloaded 13.2 MB
+
+Quitting from lines 63-76 (using_autonomics.Rmd) 
+Error: processing vignette 'using_autonomics.Rmd' failed with diagnostics:
+Failed to download /tmp/Rtmp8EEtot/datasets/GSE161731/GSE161731_xpr_nlcpm.csv.gz!
+--- failed re-building ‘using_autonomics.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘using_autonomics.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR, 1 WARNING, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck/00check.log’
+for details.
+

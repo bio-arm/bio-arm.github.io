@@ -1,0 +1,74 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CNORfuzzy
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CNORfuzzy/DESCRIPTION’ ... OK
+* preparing ‘CNORfuzzy’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘CNORfuzzy-vignette.Rnw’ using Sweave
+Loading required package: CellNOptR
+Loading required package: RBGL
+Loading required package: graph
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm,
+    append, as.data.frame, basename, cbind, colnames, dirname,
+    do.call, duplicated, eval, evalq, get, grep, grepl,
+    intersect, is.unsorted, lapply, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, rank, rbind,
+    rownames, sapply, setdiff, sort, table, tapply, union,
+    unique, unsplit, which.max, which.min
+
+Loading required package: RCurl
+Loading required package: Rgraphviz
+Loading required package: grid
+Loading required package: XML
+
+Attaching package: ‘XML’
+
+The following object is masked from ‘package:graph’:
+
+    addNode
+
+Loading required package: ggplot2
+Loading required package: rmarkdown
+Loading required package: nloptr
+Error: processing vignette 'CNORfuzzy-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'CNORfuzzy-vignette.tex'
+LaTeX errors:
+! LaTeX Error: File `fullpage.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.7 \usepackage
+               {url, color}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘CNORfuzzy-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘CNORfuzzy-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

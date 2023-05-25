@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AlphaBeta
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘AlphaBeta/DESCRIPTION’ ... OK
+* preparing ‘AlphaBeta’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘AlphaBeta.Rmd’ using rmarkdown
+! LaTeX Error: File `framed.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'AlphaBeta.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmp9wGuJc/Rbuild1798412253ceea/AlphaBeta/vignettes/AlphaBeta.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See AlphaBeta.log for more info.
+--- failed re-building ‘AlphaBeta.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘AlphaBeta.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

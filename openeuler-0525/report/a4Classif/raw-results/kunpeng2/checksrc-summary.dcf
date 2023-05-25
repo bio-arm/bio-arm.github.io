@@ -1,0 +1,10 @@
+Package: a4Classif
+Version: 1.49.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:a4Classif.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings a4Classif_1.49.0.tar.gz
+StartedAt: 2023-05-25 02:53:13 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 02:55:19 -0000 (Thu, 25 May 2023)
+EllapsedTime: 126.2 seconds
+RetCode: 0
+Status: OK
+CheckDir: a4Classif.Rcheck
+Warnings: 0
