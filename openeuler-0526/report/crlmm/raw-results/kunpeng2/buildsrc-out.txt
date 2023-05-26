@@ -1,0 +1,111 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data crlmm
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘crlmm/DESCRIPTION’ ... OK
+* preparing ‘crlmm’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘AffyGW.Rnw’ using Sweave
+--- finished re-building ‘AffyGW.Rnw’
+
+--- re-building ‘CopyNumberOverview.Rnw’ using Sweave
+--- finished re-building ‘CopyNumberOverview.Rnw’
+
+--- re-building ‘IlluminaPreprocessCN.Rnw’ using Sweave
+--- finished re-building ‘IlluminaPreprocessCN.Rnw’
+
+--- re-building ‘Infrastructure.Rnw’ using Sweave
+--- finished re-building ‘Infrastructure.Rnw’
+
+--- re-building ‘genotyping.Rnw’ using Sweave
+Loading required package: oligoClasses
+Welcome to oligoClasses version 1.63.0
+Loading required package: preprocessCore
+No methods found in package ‘oligoClasses’ for request: ‘mean’ when loading ‘crlmm’
+Welcome to crlmm version 1.59.0
+
+Error: processing vignette 'genotyping.Rnw' failed with diagnostics:
+ chunk 2 (label = crlmm) 
+Error in library(hapmapsnp6) : there is no package called ‘hapmapsnp6’
+
+--- failed re-building ‘genotyping.Rnw’
+
+--- re-building ‘gtypeDownstream.Rnw’ using Sweave
+--- finished re-building ‘gtypeDownstream.Rnw’
+
+cp ../inst/scripts/AffyGW.pdf .
+cp ../inst/scripts/IlluminaPreprocessCN.pdf .
+cp ../inst/scripts/Infrastructure.pdf .
+cp ../inst/scripts/gtypeDownstream.pdf .
+cp ../inst/scripts/crlmmIllumina.pdf .
+"/home/biocbuild/R/R-4.3.0/bin/R" CMD pdflatex genotyping.tex
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./genotyping.tex
+LaTeX2e <2018-04-01> patch level 5
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/home/biocbuild/R/R-4.3.0/share/texmf/tex/latex/Sweave.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def)))
+No file genotyping.aux.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd))
+Runaway argument?
+! File ended while scanning use of \FancyVerbGetLine.
+<inserted text> 
+                \par 
+<*> genotyping.tex
+                  
+? 
+! Emergency stop.
+<inserted text> 
+                \par 
+<*> genotyping.tex
+                  
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on genotyping.log.
+make: *** [Makefile:10: vignettes] Error 1
+Error in tools::buildVignettes(dir = ".", tangle = TRUE) : 
+  running 'make' failed
+Execution halted

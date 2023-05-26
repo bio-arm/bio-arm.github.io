@@ -1,0 +1,10 @@
+Package: BumpyMatrix
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BumpyMatrix.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BumpyMatrix_1.9.0.tar.gz
+StartedAt: 2023-05-26 04:32:25 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:34:35 -0000 (Fri, 26 May 2023)
+EllapsedTime: 130.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: BumpyMatrix.Rcheck
+Warnings: NA

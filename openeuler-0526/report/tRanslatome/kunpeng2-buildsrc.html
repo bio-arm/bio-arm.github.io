@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for tRanslatome on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><B>[<A href="..#T">T</A>]</B></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-26 06:18:17 -0000 (Fri, 26 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4254</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for tRanslatome on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the tRanslatome package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/tRanslatome.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>2097</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">tRanslatome</A>&nbsp;1.39.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/tRanslatome">landing page</A>)</SPAN><BR>Toma Tebaldi <toma.tebaldi@unitn.it>, Erik Dassi<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-25&nbsp;13:29:39&nbsp;-0000&nbsp;(Thu,&nbsp;25&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/tRanslatome</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">9b69ddf</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:27:15&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: tRanslatome</TD></TR>
+<TR><TD><B>Version</B>: 1.39.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data tRanslatome</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-26 02:33:13 -0000 (Fri, 26 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-26 02:35:00 -0000 (Fri, 26 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 107.2 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data tRanslatome
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘tRanslatome/DESCRIPTION’ ... OK
+* preparing ‘tRanslatome’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘tRanslatome_package.Rnw’ using Sweave
+Loading required package: limma
+Loading required package: anota
+Loading required package: qvalue
+Loading required package: DESeq2
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: edgeR
+Loading required package: RankProd
+Loading required package: Rmpfr
+Loading required package: gmp
+
+Attaching package: ‘gmp’
+
+The following objects are masked from ‘package:base’:
+
+    %*%, apply, crossprod, matrix, tcrossprod
+
+C code of R package &#x27;Rmpfr&#x27;: GMP using 64 bits per limb
+
+
+Attaching package: ‘Rmpfr’
+
+The following object is masked from ‘package:gmp’:
+
+    outer
+
+The following objects are masked from ‘package:SummarizedExperiment’:
+
+    cbind, rbind
+
+The following objects are masked from ‘package:IRanges’:
+
+    cbind, pmax, pmin, rbind
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    cbind, rbind
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    cbind, pmax, pmin, rbind
+
+The following objects are masked from ‘package:stats’:
+
+    dbinom, dgamma, dnbinom, dnorm, dpois, dt, pnorm
+
+The following objects are masked from ‘package:base’:
+
+    cbind, pmax, pmin, rbind
+
+Loading required package: topGO
+Loading required package: graph
+Loading required package: GO.db
+Loading required package: AnnotationDbi
+
+Loading required package: SparseM
+
+Attaching package: ‘SparseM’
+
+The following object is masked from ‘package:base’:
+
+    backsolve
+
+
+groupGOTerms: 	GOBPTerm, GOMFTerm, GOCCTerm environments built.
+
+Attaching package: ‘topGO’
+
+The following object is masked from ‘package:IRanges’:
+
+    members
+
+Loading required package: org.Hs.eg.db
+
+Loading required package: GOSemSim
+GOSemSim v2.27.0  For help: https://yulab-smu.top/biomedical-knowledge-mining-book/
+
+If you use GOSemSim in published research, please cite:
+[36m-[39m Guangchuang Yu. Gene Ontology Semantic Similarity Analysis Using GOSemSim. In: Kidder B. (eds) Stem Cell Transcriptional Networks. Methods in Molecular Biology, 2020, 2117:207-215. Humana, New York, NY. doi:10.1007/978-1-0716-0301-7_11
+[36m-[39m Guangchuang Yu, Fei Li, Yide Qin, Xiaochen Bo, Yibo Wu, Shengqi Wang. GOSemSim: an R package for measuring semantic similarity among GO terms and gene products Bioinformatics 2010, 26(7):976-978. doi:10.1093/bioinformatics/btq064
+
+
+Loading required package: Heatplus
+Loading required package: gplots
+
+Attaching package: ‘gplots’
+
+The following object is masked from ‘package:IRanges’:
+
+    space
+
+The following object is masked from ‘package:S4Vectors’:
+
+    space
+
+The following object is masked from ‘package:stats’:
+
+    lowess
+
+Loading required package: plotrix
+
+Attaching package: ‘plotrix’
+
+The following object is masked from ‘package:gplots’:
+
+    plotCI
+
+
+Building most specific GOs .....
+	( 1788 GO terms found. )
+
+Build GO DAG topology ..........
+	( 1958 GO terms and 3225 relations. )
+
+Annotating nodes ...............
+	( 19518 genes annotated to the GO terms. )
+
+			 -- Elim Algorithm -- 
+
+		 the algorithm is scoring 175 nontrivial nodes
+		 parameters: 
+			 test statistic: fisher
+			 cutOff: 0.01
+
+	 Level 11:	3 nodes to be scored	(0 eliminated genes)
+
+	 Level 10:	7 nodes to be scored	(0 eliminated genes)
+
+	 Level 9:	13 nodes to be scored	(0 eliminated genes)
+
+	 Level 8:	21 nodes to be scored	(23 eliminated genes)
+
+	 Level 7:	30 nodes to be scored	(28 eliminated genes)
+
+	 Level 6:	33 nodes to be scored	(3045 eliminated genes)
+
+	 Level 5:	25 nodes to be scored	(3334 eliminated genes)
+
+	 Level 4:	20 nodes to be scored	(3360 eliminated genes)
+
+	 Level 3:	20 nodes to be scored	(12743 eliminated genes)
+
+	 Level 2:	2 nodes to be scored	(12743 eliminated genes)
+
+	 Level 1:	1 nodes to be scored	(12743 eliminated genes)
+
+Building most specific GOs .....
+	( 1788 GO terms found. )
+
+Build GO DAG topology ..........
+	( 1958 GO terms and 3225 relations. )
+
+Annotating nodes ...............
+	( 19518 genes annotated to the GO terms. )
+
+			 -- Elim Algorithm -- 
+
+		 the algorithm is scoring 180 nontrivial nodes
+		 parameters: 
+			 test statistic: fisher
+			 cutOff: 0.01
+
+	 Level 12:	1 nodes to be scored	(0 eliminated genes)
+
+	 Level 11:	6 nodes to be scored	(0 eliminated genes)
+
+	 Level 10:	11 nodes to be scored	(62 eliminated genes)
+
+	 Level 9:	12 nodes to be scored	(62 eliminated genes)
+
+	 Level 8:	24 nodes to be scored	(482 eliminated genes)
+
+	 Level 7:	28 nodes to be scored	(537 eliminated genes)
+
+	 Level 6:	29 nodes to be scored	(3055 eliminated genes)
+
+	 Level 5:	24 nodes to be scored	(3296 eliminated genes)
+
+	 Level 4:	22 nodes to be scored	(7505 eliminated genes)
+
+	 Level 3:	20 nodes to be scored	(7505 eliminated genes)
+
+	 Level 2:	2 nodes to be scored	(7505 eliminated genes)
+
+	 Level 1:	1 nodes to be scored	(7505 eliminated genes)
+preparing gene to GO mapping data...
+preparing IC data...
+preparing gene to GO mapping data...
+preparing IC data...
+Error: processing vignette &#x27;tRanslatome_package.Rnw&#x27; failed with diagnostics:
+unable to run pdflatex on &#x27;tRanslatome_package.tex&#x27;
+LaTeX errors:
+! LaTeX Error: File `isorot.sty&#x27; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.10 \usepackage
+                {epsfig}^^M
+!  ==&gt; Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘tRanslatome_package.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘tRanslatome_package.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

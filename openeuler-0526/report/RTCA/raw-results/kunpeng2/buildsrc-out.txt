@@ -1,0 +1,83 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RTCA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RTCA/DESCRIPTION’ ... OK
+* preparing ‘RTCA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘RTCAtransformation.Rnw’ using Sweave
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: RColorBrewer
+Loading required package: gtools
+Read 245 items
+Error: processing vignette 'RTCAtransformation.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RTCAtransformation.tex'
+LaTeX errors:
+! LaTeX Error: File `multirow.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 \usepackage
+                {url}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RTCAtransformation.Rnw’
+
+--- re-building ‘aboutRTCA.Rnw’ using Sweave
+Read 245 items
+Error: processing vignette 'aboutRTCA.Rnw' failed with diagnostics:
+unable to run pdflatex on 'aboutRTCA.tex'
+LaTeX errors:
+! LaTeX Error: File `multirow.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 \usepackage
+                {url}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘aboutRTCA.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘RTCAtransformation.Rnw’ ‘aboutRTCA.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

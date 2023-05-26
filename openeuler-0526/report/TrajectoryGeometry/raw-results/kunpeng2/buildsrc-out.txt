@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TrajectoryGeometry
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TrajectoryGeometry/DESCRIPTION’ ... OK
+* preparing ‘TrajectoryGeometry’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘TrajectoryGeometry’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘TrajectoryGeometry’
+* removing ‘/tmp/Rtmp2Gav6o/Rinst16568d328fc8f4/TrajectoryGeometry’
+      -----------------------------------
+ERROR: package installation failed

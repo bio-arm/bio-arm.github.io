@@ -1,0 +1,197 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BadRegionFinder
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BadRegionFinder/DESCRIPTION’ ... OK
+* preparing ‘BadRegionFinder’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘BadRegionFinder.Rnw’ using Sweave
+Determine Coverage
+Sample Test2_454
+Sample Test2_ion
+Determine target bases
+Combine Information
+Chromosome: 1
+Chromosome: 2
+Chromosome: 3
+Chromosome: 4
+Chromosome: 5
+Chromosome: 6
+Chromosome: 7
+Chromosome: 8
+Chromosome: 9
+Chromosome: 10
+Chromosome: 11
+Chromosome: 12
+Chromosome: 13
+Chromosome: 14
+Chromosome: 15
+Chromosome: 16
+Chromosome: 17
+Chromosome: 18
+Chromosome: 19
+Chromosome: 20
+Chromosome: 21
+Chromosome: 22
+Chromosome: X
+Chromosome: Y
+Chromosome: MT
+Analyzing Chromosome 1
+Analyzing Chromosome 2
+Analyzing Chromosome 3
+Analyzing Chromosome 4
+Analyzing Chromosome 5
+Analyzing Chromosome 6
+Analyzing Chromosome 7
+Analyzing Chromosome 8
+Analyzing Chromosome 9
+Analyzing Chromosome 10
+Analyzing Chromosome 11
+Analyzing Chromosome 12
+Analyzing Chromosome 13
+Analyzing Chromosome 14
+Analyzing Chromosome 15
+Analyzing Chromosome 16
+Analyzing Chromosome 17
+Analyzing Chromosome 18
+Analyzing Chromosome 19
+Analyzing Chromosome 20
+Analyzing Chromosome 21
+Analyzing Chromosome 22
+Analyzing Chromosome 23
+Analyzing Chromosome 24
+Analyzing Chromosome 25
+Analyze Chromosome 1
+Analyze Chromosome 2
+Analyze Chromosome 3
+Analyze Chromosome 4
+Analyze Chromosome 5
+Analyze Chromosome 6
+Analyze Chromosome 7
+Analyze Chromosome 8
+Analyze Chromosome 9
+Analyze Chromosome 10
+Analyze Chromosome 11
+Analyze Chromosome 12
+Analyze Chromosome 13
+Analyze Chromosome 14
+Analyze Chromosome 15
+Analyze Chromosome 16
+Analyze Chromosome 17
+Analyze Chromosome 18
+Analyze Chromosome 19
+Analyze Chromosome 20
+Analyze Chromosome 21
+Analyze Chromosome 22
+Analyze Chromosome 23
+Analyze Chromosome 24
+Analyze Chromosome 25
+Warning: Ensembl will soon enforce the use of https.
+Ensure the 'host' argument includes "https://"
+Analyzing Chromosome 1
+Analyzing Chromosome 2
+Analyzing Chromosome 3
+Analyzing Chromosome 4
+Analyzing Chromosome 5
+Analyzing Chromosome 6
+Analyzing Chromosome 7
+Analyzing Chromosome 8
+Analyzing Chromosome 9
+Analyzing Chromosome 10
+Analyzing Chromosome 11
+Analyzing Chromosome 12
+Analyzing Chromosome 13
+Analyzing Chromosome 14
+Analyzing Chromosome 15
+Analyzing Chromosome 16
+Analyzing Chromosome 17
+Analyzing Chromosome 18
+Analyzing Chromosome 19
+Analyzing Chromosome 20
+Analyzing Chromosome 21
+Analyzing Chromosome 22
+Analyzing Chromosome 23
+Analyzing Chromosome 24
+Analyzing Chromosome 25
+Analyzing Chromosome 1
+Analyzing Chromosome 2
+Warning: Ensembl will soon enforce the use of https.
+Ensure the 'host' argument includes "https://"
+Analyzing Chromosome 3
+Analyzing Chromosome 4
+Analyzing Chromosome 5
+Analyzing Chromosome 6
+Analyzing Chromosome 7
+Analyzing Chromosome 8
+Analyzing Chromosome 9
+Analyzing Chromosome 10
+Analyzing Chromosome 11
+Analyzing Chromosome 12
+Analyzing Chromosome 13
+Analyzing Chromosome 14
+Analyzing Chromosome 15
+Analyzing Chromosome 16
+Analyzing Chromosome 17
+Analyzing Chromosome 18
+Analyzing Chromosome 19
+Analyzing Chromosome 20
+Analyzing Chromosome 21
+Analyzing Chromosome 22
+Analyzing Chromosome 23
+Analyzing Chromosome 24
+Analyzing Chromosome 25
+Analyzing Chromosome 2
+Analyzing Chromosome 3
+Analyzing Chromosome 4
+Analyzing Chromosome 5
+Analyzing Chromosome 6
+Analyzing Chromosome 7
+Analyzing Chromosome 8
+Analyzing Chromosome 9
+Analyzing Chromosome 10
+Analyzing Chromosome 11
+Analyzing Chromosome 12
+Analyzing Chromosome 13
+Analyzing Chromosome 14
+Analyzing Chromosome 15
+Analyzing Chromosome 16
+Analyzing Chromosome 17
+Analyzing Chromosome 18
+Analyzing Chromosome 19
+Analyzing Chromosome 20
+Analyzing Chromosome 21
+Analyzing Chromosome 22
+Analyzing Chromosome 23
+Analyzing Chromosome 24
+Analyzing Chromosome 25
+Error: processing vignette 'BadRegionFinder.Rnw' failed with diagnostics:
+unable to run pdflatex on 'BadRegionFinder.tex'
+LaTeX errors:
+! LaTeX Error: File `textpos.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               {amssymb}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘BadRegionFinder.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘BadRegionFinder.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

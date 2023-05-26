@@ -1,0 +1,80 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FunChIP
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FunChIP/DESCRIPTION’ ... OK
+* preparing ‘FunChIP’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘FunChIP.Rnw’ using Sweave
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call, duplicated,
+    eval, evalq, get, grep, grepl, intersect, is.unsorted, lapply, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int, rank, rbind,
+    rownames, sapply, setdiff, sort, table, tapply, union, unique, unsplit,
+    which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Warning in cluster.GRange(object, parallel, num.cores, n.clust, seeds, shift.peak,  :
+  no value for shift.peak provided. Both results with no registration and
+             results with registration provided
+Warning in cluster.GRange(object, parallel, num.cores, n.clust, seeds, shift.peak,  :
+  no value for shift.peak provided. Both results with no registration and
+             results with registration provided
+Warning in plot_row_data(object, summit_here = NULL, line.plot, index, shift = FALSE,  :
+  No smoothing information. Row data are plot
+Error: processing vignette 'FunChIP.Rnw' failed with diagnostics:
+unable to run pdflatex on 'FunChIP.tex'
+LaTeX errors:
+! LaTeX Error: File `algorithm2e.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                {color}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘FunChIP.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘FunChIP.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

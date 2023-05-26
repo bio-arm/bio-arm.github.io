@@ -1,0 +1,10 @@
+Package: casper
+Version: 2.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:casper.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings casper_2.35.0.tar.gz
+StartedAt: 2023-05-26 04:35:03 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:35:19 -0000 (Fri, 26 May 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: casper.Rcheck
+Warnings: NA

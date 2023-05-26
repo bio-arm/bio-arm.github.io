@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data restfulSE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘restfulSE/DESCRIPTION’ ... OK
+* preparing ‘restfulSE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘restfulSE.Rmd’ using rmarkdown
+! Undefined control sequence.
+<argument> ...talling package(s) \textquotesingle 
+                                                  {}restfulSEData\textquotes...
+l.182 ...esingle{}restfulSEData\textquotesingle{}}
+
+Error: processing vignette 'restfulSE.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmprwsur8/Rbuild11f565508a2a59/restfulSE/vignettes/restfulSE.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See restfulSE.log for more info.
+--- failed re-building ‘restfulSE.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘restfulSE.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,51 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BaseSpaceR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BaseSpaceR/DESCRIPTION’ ... OK
+* preparing ‘BaseSpaceR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘BaseSpaceR.Rnw’ using Sweave
+Loading required package: RCurl
+Loading required package: RJSONIO
+BaseSpaceR version 1.45.0, ?BaseSpaceR for help
+Warning in app$initializeAuth(...) :
+  Initialization for the device failed!
+  HTTP code:       401 
+  Server message:  Invalid or unknown 'client_id'. 
+Use showResponse() method to print the response body.
+Warning in x$initializeAuth(...) :
+  Initialization for the device failed!
+  HTTP code:       401 
+  Server message:  Invalid or unknown 'client_id'. 
+Use showResponse() method to print the response body.
+Error: processing vignette 'BaseSpaceR.Rnw' failed with diagnostics:
+unable to run pdflatex on 'BaseSpaceR.tex'
+LaTeX errors:
+! LaTeX Error: File `sectsty.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {caption}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘BaseSpaceR.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘BaseSpaceR.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

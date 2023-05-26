@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data IMPCdata
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘IMPCdata/DESCRIPTION’ ... OK
+* preparing ‘IMPCdata’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘IMPCdata.Rnw’ using Sweave
+Error: processing vignette 'IMPCdata.Rnw' failed with diagnostics:
+unable to run pdflatex on 'IMPCdata.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.8 \usepackage
+               {url}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘IMPCdata.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘IMPCdata.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

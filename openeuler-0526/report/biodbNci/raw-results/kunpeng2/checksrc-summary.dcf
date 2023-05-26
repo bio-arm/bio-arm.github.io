@@ -1,0 +1,10 @@
+Package: biodbNci
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:biodbNci.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings biodbNci_1.5.0.tar.gz
+StartedAt: 2023-05-26 04:09:24 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:11:06 -0000 (Fri, 26 May 2023)
+EllapsedTime: 101.8 seconds
+RetCode: 0
+Status: OK
+CheckDir: biodbNci.Rcheck
+Warnings: 0

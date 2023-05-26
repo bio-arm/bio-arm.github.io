@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL flowWorkspace
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘flowWorkspace’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c R_API.cpp -o R_API.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c R_GatingHierarchy.cpp -o R_GatingHierarchy.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c R_GatingSet.cpp -o R_GatingSet.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c cytoframeAPI.cpp -o cytoframeAPI.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c cytosetAPI.cpp -o cytosetAPI.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c getDescendants.cpp -o getDescendants.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c getPopStats.cpp -o getPopStats.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c getSingleCellExpression.cpp -o getSingleCellExpression.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c h5_error_r_handler.cpp -o h5_error_r_handler.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c setCounts.cpp -o setCounts.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o flowWorkspace.so R_API.o R_GatingHierarchy.o R_GatingSet.o cpp11.o cytoframeAPI.o cytosetAPI.o getDescendants.o getPopStats.o getSingleCellExpression.o h5_error_r_handler.o setCounts.o /home/biocbuild/R/R-4.3.0/site-library/cytolib/lib/libcytolib.a /home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/lib/libhdf5_cpp.a /home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/lib/libhdf5.a -lcrypto -lcurl -lsz -laec -lz -ldl -lm -L/home/biocbuild/R/R-4.3.0/lib -lRlapack -L/home/biocbuild/R/R-4.3.0/lib -lRblas -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/site-library/00LOCK-flowWorkspace/00new/flowWorkspace/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (flowWorkspace)

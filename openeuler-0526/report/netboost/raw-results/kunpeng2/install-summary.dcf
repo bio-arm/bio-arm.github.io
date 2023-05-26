@@ -1,0 +1,8 @@
+Package: netboost
+Version: 2.9.5
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL netboost
+StartedAt: 2023-05-25 19:36:46 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 19:37:30 -0000 (Thu, 25 May 2023)
+EllapsedTime: 44.3 seconds
+RetCode: 1
+Status: ERROR

@@ -1,0 +1,26 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL cytomapper
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘cytomapper’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Error in dyn.load(file, DLLpath = DLLpath, ...) : 
+  unable to load shared object '/home/biocbuild/R/R-4.3.0/site-library/terra/libs/terra.so':
+  libgdal.so.33: cannot open shared object file: No such file or directory
+Calls: <Anonymous> ... namespaceImport -> loadNamespace -> library.dynam -> dyn.load
+Execution halted
+ERROR: lazy loading failed for package ‘cytomapper’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/cytomapper’
+* restoring previous ‘/home/biocbuild/R/R-4.3.0/site-library/cytomapper’

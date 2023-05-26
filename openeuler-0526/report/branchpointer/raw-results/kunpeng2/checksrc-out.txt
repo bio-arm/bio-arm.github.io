@@ -1,0 +1,1568 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:branchpointer.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings branchpointer_1.27.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/branchpointer.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘branchpointer/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘branchpointer’ version ‘1.27.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘branchpointer’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  5.3Mb
+  sub-directories of 1Mb or more:
+    R         4.1Mb
+    extdata   1.1Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking R/sysdata.rda ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                             user system elapsed
+plotBranchpointWindow       5.500  0.132   5.656
+makeBranchpointWindowForSNP 2.455  0.267   8.110
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘branchpointer.Rnw’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+LaTeX errors found:
+! Undefined control sequence.
+l.1 \Rdcontents
+               {\R{} topics documented:}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.1 \Rdcontents{\R
+                  {} topics documented:}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.2 \inputencoding
+                  {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.3 \HeaderA
+            {exonsToIntrons}{Convert exon annotation GRanges to intron locat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.4 \keyword
+            {internal}{exonsToIntrons}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.34 \inputencoding
+                   {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.35 \HeaderA
+             {getBranchpointSequence}{Get branchpoint sequence features Gets...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.36 \keyword
+             {internal}{getBranchpointSequence}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.69 ...to use in parallelisation (default = \code
+                                                  {1})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.83 \inputencoding
+                   {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.84 \HeaderA
+             {getCanonical3SS}{Get locations of the first five AG 3' splice ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.85 \keyword
+             {internal}{getCanonical3SS}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.113 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.114 \HeaderA
+              {getExonDists}{Get the closest 3' and 5' exons}{getExonDists}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.115 \keyword
+              {internal}{getExonDists}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.150 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.151 \HeaderA
+              {getPPT}{Get the best polypyramidine tract}{getPPT}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.152 \keyword
+              {internal}{getPPT}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.179 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.180 \HeaderA
+              {getQueryLoc}{Find the closest 3' and 5' exons to a branchpoin...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.181 \keyword
+              {internal}{getQueryLoc}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.199 ...ode{queryType}] type of query file (\code
+                                                  {"SNP"} or \code{"region"})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.199 ...type of query file (\code{"SNP"} or \code
+                                                  {"region"})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.217 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.218 \HeaderA
+              {gtfToExons}{Convert GTF file to exon location file}{gtfToExons}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.251 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.252 \HeaderA
+              {makeBranchpointWindowForExons}{Make branchpoint window region...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.269 ... match in the exon annotation file (\code
+                                                  {"gene\_id"},
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.270 \code
+           {"transcript\_id"}, or \code{"exon\_id"})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.270 \code{"transcript\_id"}, or \code
+                                       {"exon\_id"})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.291 ...ndowForExons("ENSG00000139618.14", "gene_
+                                                  id", exons)
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.294 \end{ExampleCode}
+                       
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.296 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.297 \HeaderA
+              {makeBranchpointWindowForSNP}{Makes a branchpointer formatted ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.339 mart.snp <- biomaRt::useMart("ENSEMBL_
+                                            MART_SNP", dataset="hsapiens_snp...
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.341 \end{ExampleCode}
+                       
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.343 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.344 \HeaderA
+              {plotBranchpointWindow}{Plots branchpointer predictions}{plotB...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.389 querySNPFile <- system.file("extdata","SNP_
+                                                 example.txt", package = "br...
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.396 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.397 \HeaderA
+              {plotStructure}{Plots transcript structures}{plotStructure}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.398 \keyword
+              {internal}{plotStructure}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.416 ...cripts}] which transcripts to plot (\code
+                                                  {"overlapping"} or \code{"...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.416 ...ts to plot (\code{"overlapping"} or \code
+                                                  {"withExon"})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.417 \code
+           {"overlapping"} will plot all transcripts overlapping the exon,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.418 whereas \code
+                   {"withExon"} will plot all transcripts containing the exon.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.429 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.430 \HeaderA
+              {predictBranchpoints}{Predict branchpoint probability scores}{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.462 ...o use in parallelisation (default = \code
+                                                  {1})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.484 querySNPFile <- system.file("extdata","SNP_
+                                                 example.txt", package = "br...
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.487 \end{ExampleCode}
+                       
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.489 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.490 \HeaderA
+              {predictionsToSummary}{Convert SNP branchpoint predictions acr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.513 (default = \code
+                      {0.52})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.517 a SNP (default = \code
+                            {0.15})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Missing $ inserted.
+<inserted text> 
+                $
+l.536 querySNPFile <- system.file("extdata","SNP_
+                                                 example.txt", package = "br...
+! Missing $ inserted.
+<inserted text> 
+                $
+l.539 
+      
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.543 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.544 \HeaderA
+              {readQueryFile}{Read a query file}{readQueryFile}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+* checking PDF version of manual without index ... ERROR
+* DONE
+
+Status: 1 ERROR, 1 WARNING, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/branchpointer.Rcheck/00check.log’
+for details.
+

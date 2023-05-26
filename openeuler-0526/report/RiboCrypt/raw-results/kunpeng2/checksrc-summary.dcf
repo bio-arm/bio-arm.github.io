@@ -1,0 +1,10 @@
+Package: RiboCrypt
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:RiboCrypt.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings RiboCrypt_1.7.0.tar.gz
+StartedAt: 2023-05-26 04:54:24 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:54:34 -0000 (Fri, 26 May 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: RiboCrypt.Rcheck
+Warnings: NA

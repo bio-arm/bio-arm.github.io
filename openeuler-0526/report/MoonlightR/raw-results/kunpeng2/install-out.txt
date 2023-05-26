@@ -1,0 +1,14 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL MoonlightR
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+ERROR: dependency ‘HiveR’ is not available for package ‘MoonlightR’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/MoonlightR’

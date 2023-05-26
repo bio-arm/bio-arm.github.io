@@ -1,0 +1,87 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rmelting
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rmelting/DESCRIPTION’ ... OK
+* preparing ‘rmelting’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+Loading required namespace: rmelting
+* saving partial Rd database
+* creating vignettes ... ERROR
+--- re-building ‘Tutorial.Rmd’ using rmarkdown_notangle
+WARNING : 
+ The formula of Marmur, Doty, Chester and Marshak is originally established at a given ionic strength : Na = 0 M, Mg = 0.0015 M, Tris = 0.01 M and k = 0.05 M
+WARNING : 
+ The formula of Marmur, Doty, Chester and Marshak is originally established at a given ionic strength : Na = 0 M, Mg = 0.0015 M, Tris = 0.01 M and k = 0.05 M
+WARNING : 
+ The internal loop model san04 has not been tested with experimental values.
+WARNING : 
+ The internal loop model san04 has not been tested with experimental values.
+WARNING : 
+ The parameters for AT closing base pair are missing. The results can lose accuracy.
+WARNING : 
+ The long bulge loop model san04 has not been tested with experimental values.
+WARNING : 
+ The long bulge loop model tur06 has not been tested with experimental values.
+WARNING : 
+ The long bulge loop model tur06 has not been tested with experimental values.
+WARNING : 
+ The long bulge loop model san04 has not been tested with experimental values.
+WARNING : 
+ The long bulge loop model san04 has not been tested with experimental values.
+WARNING : 
+ The long bulge loop model tur06 has not been tested with experimental values.
+WARNING : 
+ The long bulge loop model tur06 has not been tested with experimental values.
+WARNING : 
+ The sodium correction of Santalucia et al. (1996) is not reliable for sodium concentrations inferior to 0.1M.
+WARNING : 
+ The sodium correction of Schildkraut Lifson (1965) is applicable for sodium concentrations between 0.01 and 0.2 M.
+WARNING : 
+ The sodium correction of Zhi-Jie Tan et al. (2007) is originally established for RNA duplexes.
+WARNING : 
+ The magnesium correction of Zhi-Jie Tan et al. (2007) is originally established for RNA duplexes.
+WARNING : 
+ The magnesium correction of Zhi-Jie Tan et al. (2007)is originally established for RNA or DNA duplexes.
+WARNING : 
+ The magnesium correction of Zhi-Jie Tan et al. (2007)is originally established for RNA or DNA duplexes.
+WARNING : 
+ The magnesium correction of Zhi-Jie Tan et al. (2007)is originally established for RNA or DNA duplexes.
+WARNING : 
+ The current DMSO corrections has not been tested with experimenta values.
+WARNING : 
+ The current DMSO corrections has not been tested with experimenta values.
+WARNING : 
+ The current DMSO corrections has not been tested with experimenta values.
+WARNING : 
+ The current DMSO corrections has not been tested with experimenta values.
+WARNING : 
+ The current DMSO corrections has not been tested with experimenta values.
+WARNING : 
+ The current formamide correction has not been tested with experimental values.
+WARNING : 
+ The current formamide correction has not been tested with experimental values.
+WARNING : 
+ The current formamide correction has not been tested with experimental values.
+! LaTeX Error: File `wrapfig.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'Tutorial.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmpp679Gr/Rbuild128d8256a1efa2/rmelting/vignettes/Tutorial.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Tutorial.log for more info.
+--- failed re-building ‘Tutorial.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Tutorial.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

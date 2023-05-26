@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data multiOmicsViz
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘multiOmicsViz/DESCRIPTION’ ... OK
+* preparing ‘multiOmicsViz’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘multiOmicsViz.Rnw’ using Sweave
+Error: processing vignette 'multiOmicsViz.Rnw' failed with diagnostics:
+unable to run pdflatex on 'multiOmicsViz.tex'
+LaTeX errors:
+! LaTeX Error: File `sectsty.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {caption}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘multiOmicsViz.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘multiOmicsViz.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

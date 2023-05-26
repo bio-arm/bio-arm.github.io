@@ -1,0 +1,8 @@
+Package: RTNduals
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL RTNduals
+StartedAt: 2023-05-25 19:47:39 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 19:48:23 -0000 (Thu, 25 May 2023)
+EllapsedTime: 43.6 seconds
+RetCode: 0
+Status: OK

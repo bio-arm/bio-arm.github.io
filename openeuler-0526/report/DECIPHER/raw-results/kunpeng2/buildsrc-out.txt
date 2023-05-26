@@ -1,0 +1,163 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DECIPHER
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DECIPHER/DESCRIPTION’ ... OK
+* preparing ‘DECIPHER’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ArtOfAlignmentInR.Rnw’ using Sweave
+Loading required package: Biostrings
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: RSQLite
+Loading required package: parallel
+Error: processing vignette 'ArtOfAlignmentInR.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ArtOfAlignmentInR.tex'
+LaTeX errors:
+! LaTeX Error: File `wrapfig.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {cite}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ArtOfAlignmentInR.Rnw’
+
+--- re-building ‘ClassifySequences.Rnw’ using Sweave
+Warning in par(p) : argument 1 does not name a graphical parameter
+--- finished re-building ‘ClassifySequences.Rnw’
+
+--- re-building ‘ClusteringSequences.Rnw’ using Sweave
+Error: processing vignette 'ClusteringSequences.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ClusteringSequences.tex'
+LaTeX errors:
+! LaTeX Error: File `wrapfig.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {cite}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ClusteringSequences.Rnw’
+
+--- re-building ‘DECIPHERing.Rnw’ using Sweave
+--- finished re-building ‘DECIPHERing.Rnw’
+
+--- re-building ‘DesignMicroarray.Rnw’ using Sweave
+--- finished re-building ‘DesignMicroarray.Rnw’
+
+--- re-building ‘DesignPrimers.Rnw’ using Sweave
+--- finished re-building ‘DesignPrimers.Rnw’
+
+--- re-building ‘DesignProbes.Rnw’ using Sweave
+--- finished re-building ‘DesignProbes.Rnw’
+
+--- re-building ‘DesignSignatures.Rnw’ using Sweave
+--- finished re-building ‘DesignSignatures.Rnw’
+
+--- re-building ‘FindChimeras.Rnw’ using Sweave
+--- finished re-building ‘FindChimeras.Rnw’
+
+--- re-building ‘FindingGenes.Rnw’ using Sweave
+Warning: call dbDisconnect() when finished working with a connection
+--- finished re-building ‘FindingGenes.Rnw’
+
+--- re-building ‘FindingNonCodingRNAs.Rnw’ using Sweave
+--- finished re-building ‘FindingNonCodingRNAs.Rnw’
+
+--- re-building ‘GrowingTrees.Rnw’ using Sweave
+Error: processing vignette 'GrowingTrees.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GrowingTrees.tex'
+LaTeX errors:
+! LaTeX Error: File `wrapfig.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {cite}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GrowingTrees.Rnw’
+
+--- re-building ‘RepeatRepeat.Rnw’ using Sweave
+Error: processing vignette 'RepeatRepeat.Rnw' failed with diagnostics:
+unable to run pdflatex on 'RepeatRepeat.tex'
+LaTeX errors:
+! LaTeX Error: File `wrapfig.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {cite}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘RepeatRepeat.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘ArtOfAlignmentInR.Rnw’ ‘ClusteringSequences.Rnw’ ‘GrowingTrees.Rnw’
+  ‘RepeatRepeat.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

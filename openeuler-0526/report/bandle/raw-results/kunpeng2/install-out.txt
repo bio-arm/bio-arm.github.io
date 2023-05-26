@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL bandle
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘bandle’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c Bessel2ndKind.cpp -o Bessel2ndKind.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c dmvtCpp.cpp -o dmvtCpp.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c leapfrogGPcpp.cpp -o leapfrogGPcpp.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c pg_sample.cpp -o pg_sample.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o bandle.so Bessel2ndKind.o RcppExports.o dmvtCpp.o leapfrogGPcpp.o pg_sample.o -fopenmp -L/home/biocbuild/R/R-4.3.0/lib -lRlapack -L/home/biocbuild/R/R-4.3.0/lib -lRblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/site-library/00LOCK-bandle/00new/bandle/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function from function ‘posteriorEstimates’ in package ‘bandle’
+Creating a generic function from function ‘bandleJoint’ in package ‘bandle’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bandle)

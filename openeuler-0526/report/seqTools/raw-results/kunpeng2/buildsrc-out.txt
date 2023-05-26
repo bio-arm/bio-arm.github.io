@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data seqTools
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘seqTools/DESCRIPTION’ ... OK
+* preparing ‘seqTools’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘seqTools.Rnw’ using Sweave
+Loading required package: zlibbioc
+--- finished re-building ‘seqTools.Rnw’
+
+--- re-building ‘seqTools_qual_report.Rnw’ using Sweave
+Error: processing vignette 'seqTools_qual_report.Rnw' failed with diagnostics:
+unable to run pdflatex on 'seqTools_qual_report.tex'
+LaTeX errors:
+! LaTeX Error: File `sectsty.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.23 \usepackage
+                {hyperref}                       % Working links, should be ...
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘seqTools_qual_report.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘seqTools_qual_report.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

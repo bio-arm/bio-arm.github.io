@@ -1,0 +1,289 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data annmap
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘annmap/DESCRIPTION’ ... OK
+* preparing ‘annmap’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘INSTALL.Rnw’ using Sweave
+--- finished re-building ‘INSTALL.Rnw’
+
+--- re-building ‘annmap.Rnw’ using Sweave
+--- finished re-building ‘annmap.Rnw’
+
+--- re-building ‘cookbook.Rnw’ using Sweave
+--- finished re-building ‘cookbook.Rnw’
+
+/home/biocbuild/R/R-4.3.0/bin/R --vanilla --verbose < ../inst/cookbook/delia.R
+'verbose' and 'quietly' are both true; being verbose then ..
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/methods/libs/methods.so") ...
+
+R version 4.3.0 (2023-04-21) -- "Already Tomorrow"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+'verbose' and 'quietly' are both true; being verbose then ..
+'verbose' and 'quietly' are both true; being verbose then ..
+Garbage collection 1 = 0+0+1 (level 2) ... 
+12.5 Mbytes of cons cells used (35%)
+3.2 Mbytes of vectors used (5%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/utils/libs/utils.so") ...
+'verbose' and 'quietly' are both true; being verbose then ..
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/grDevices/libs/grDevices.so") ...
+'verbose' and 'quietly' are both true; being verbose then ..
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/graphics/libs/graphics.so") ...
+'verbose' and 'quietly' are both true; being verbose then ..
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/stats/libs/stats.so") ...
+ ending setup_Rmainloop(): R_Interactive = 0 {main.c}
+ >R_ReplConsole(): before "for(;;)" {main.c}
+> # This script builds the cookbook if the correct DB name is set up
+> # Or else does nothing, and leaves the PDF where it is...
+> #
+> # http://bit.ly/delia_smith
+> 
+> library( "annmap" )
+Loading required package: GenomicRanges
+Loading required package: stats4
+Garbage collection 2 = 1+0+1 (level 0) ... 
+19.2 Mbytes of cons cells used (54%)
+5.4 Mbytes of vectors used (8%)
+Loading required package: BiocGenerics
+Garbage collection 3 = 2+0+1 (level 0) ... 
+22.2 Mbytes of cons cells used (62%)
+6.2 Mbytes of vectors used (10%)
+Garbage collection 4 = 3+0+1 (level 0) ... 
+24.2 Mbytes of cons cells used (68%)
+6.8 Mbytes of vectors used (11%)
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/libs/S4Vectors.so") ...
+Garbage collection 5 = 4+0+1 (level 0) ... 
+27.9 Mbytes of cons cells used (78%)
+7.6 Mbytes of vectors used (12%)
+Garbage collection 6 = 5+0+1 (level 0) ... 
+30.7 Mbytes of cons cells used (86%)
+8.2 Mbytes of vectors used (13%)
+Garbage collection 7 = 5+1+1 (level 1) ... 
+32.0 Mbytes of cons cells used (90%)
+8.0 Mbytes of vectors used (12%)
+Garbage collection 8 = 5+1+2 (level 2) ... 
+32.2 Mbytes of cons cells used (43%)
+8.0 Mbytes of vectors used (12%)
+Garbage collection 9 = 6+1+2 (level 0) ... 
+32.4 Mbytes of cons cells used (44%)
+8.1 Mbytes of vectors used (13%)
+Garbage collection 10 = 7+1+2 (level 0) ... 
+37.6 Mbytes of cons cells used (51%)
+9.3 Mbytes of vectors used (14%)
+Garbage collection 11 = 8+1+2 (level 0) ... 
+44.9 Mbytes of cons cells used (60%)
+11.0 Mbytes of vectors used (17%)
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/IRanges/libs/IRanges.so") ...
+Garbage collection 12 = 9+1+2 (level 0) ... 
+58.5 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 13 = 10+1+2 (level 0) ... 
+58.9 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 14 = 11+1+2 (level 0) ... 
+58.9 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 15 = 12+1+2 (level 0) ... 
+58.9 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 16 = 13+1+2 (level 0) ... 
+59.5 Mbytes of cons cells used (80%)
+14.6 Mbytes of vectors used (23%)
+Garbage collection 17 = 13+2+2 (level 1) ... 
+64.9 Mbytes of cons cells used (87%)
+16.5 Mbytes of vectors used (26%)
+Garbage collection 18 = 13+2+3 (level 2) ... 
+65.7 Mbytes of cons cells used (46%)
+16.0 Mbytes of vectors used (25%)
+Loading required package: GenomeInfoDb
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/bitops/libs/bitops.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/RCurl/libs/RCurl.so") ...
+Garbage collection 19 = 14+2+3 (level 0) ... 
+88.0 Mbytes of cons cells used (62%)
+21.6 Mbytes of vectors used (34%)
+Garbage collection 20 = 15+2+3 (level 0) ... 
+95.8 Mbytes of cons cells used (68%)
+23.7 Mbytes of vectors used (37%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/tools/libs/tools.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/XVector/libs/XVector.so") ...
+Garbage collection 21 = 16+2+3 (level 0) ... 
+105.8 Mbytes of cons cells used (75%)
+26.2 Mbytes of vectors used (41%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/GenomicRanges/libs/GenomicRanges.so") ...
+Garbage collection 22 = 17+2+3 (level 0) ... 
+118.4 Mbytes of cons cells used (84%)
+29.4 Mbytes of vectors used (46%)
+Garbage collection 23 = 17+3+3 (level 1) ... 
+128.9 Mbytes of cons cells used (91%)
+31.8 Mbytes of vectors used (50%)
+Garbage collection 24 = 17+3+4 (level 2) ... 
+129.9 Mbytes of cons cells used (47%)
+31.9 Mbytes of vectors used (50%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/grid/libs/grid.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/matrixStats/libs/matrixStats.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/Biobase/libs/Biobase.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/XML/libs/XML.so") ...
+Garbage collection 25 = 18+3+4 (level 0) ... 
+148.2 Mbytes of cons cells used (53%)
+36.3 Mbytes of vectors used (57%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/bit/libs/bit.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/bit64/libs/bit64.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/rlang/libs/rlang.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/cli/libs/cli.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/vctrs/libs/vctrs.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/RSQLite/libs/RSQLite.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/fastmap/libs/fastmap.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/cachem/libs/cachem.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/png/libs/png.so") ...
+Garbage collection 26 = 19+3+4 (level 0) ... 
+162.6 Mbytes of cons cells used (59%)
+39.7 Mbytes of vectors used (62%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/Biostrings/libs/Biostrings.so") ...
+Garbage collection 27 = 20+3+4 (level 0) ... 
+179.4 Mbytes of cons cells used (65%)
+43.8 Mbytes of vectors used (68%)
+Garbage collection 28 = 20+4+4 (level 1) ... 
+191.6 Mbytes of cons cells used (69%)
+46.6 Mbytes of vectors used (73%)
+Garbage collection 29 = 21+4+4 (level 0) ... 
+202.2 Mbytes of cons cells used (73%)
+49.2 Mbytes of vectors used (77%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/splines/libs/splines.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/lattice/libs/lattice.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/Matrix/libs/Matrix.so") ...
+Garbage collection 30 = 22+4+4 (level 0) ... 
+214.2 Mbytes of cons cells used (77%)
+52.1 Mbytes of vectors used (81%)
+Garbage collection 31 = 22+5+4 (level 1) ... 
+222.9 Mbytes of cons cells used (80%)
+54.3 Mbytes of vectors used (85%)
+Garbage collection 32 = 22+5+5 (level 2) ... 
+228.0 Mbytes of cons cells used (49%)
+55.8 Mbytes of vectors used (67%)
+Garbage collection 33 = 23+5+5 (level 0) ... 
+246.4 Mbytes of cons cells used (53%)
+63.4 Mbytes of vectors used (76%)
+Garbage collection 34 = 24+5+5 (level 0) ... 
+265.0 Mbytes of cons cells used (57%)
+67.1 Mbytes of vectors used (81%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/survival/libs/survival.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/genefilter/libs/genefilter.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/parallel/libs/parallel.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/BiocParallel/libs/BiocParallel.so") ...
+Garbage collection 35 = 24+5+6 (level 2) ... 
+275.7 Mbytes of cons cells used (59%)
+67.1 Mbytes of vectors used (67%)
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/Rsamtools/libs/Rsamtools.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/site-library/RMySQL/libs/RMySQL.so") ...
+now dyn.load("/home/biocbuild/R/R-4.3.0/library/digest/libs/digest.so") ...
+There were 30 warnings (use warnings() to see them)
+> 
+> data = tryCatch( annmapConnect( "hs-test" ), error=function(e) { FALSE } )
+Using /home/biocbuild/.annmap as our configuration directory.
+> if( length( data ) == 1 ) {
++ 	# The here's one I prepared earlier shortcut
++ 	message( "Cannot find datasource 'hs-test', I'm not going to build the cookbook." )
++ } else {
++ 	message( "Generating cookbook..." )
++ 	# First, we'll disconnect, so the Rnw gets a fresh start
++ 	annmapDisconnect()
++ 	
++ 	current.path = getwd()
++ 	path <- file.path( getwd(), "..", "inst/cookbook" )
++ 	setwd( path )
++ 	# Parse the Rnw
++ 	library(tools)
++ 	utils::Sweave( 'cookbook.Rnw' )
++ 
++ 	# Generate the PDF
++ 	texi2dvi( 'cookbook.tex', pdf=T, clean=T )
++ 
++ 	# Copy it to the docs
++ 	file.copy( 'cookbook.pdf', file.path( path, '../..', 'vignettes' ), overwrite=T )
++ 
++ 	# cleanup
++ 	unlink( 'cookbook.pdf' )
++ 	unlink( 'cookbook.tex' )
++ 	unlink( 'bridge1.png' )
++ 	unlink( 'bridge2.png' )
++ 	unlink( 'bridge3.png' )
++ 	unlink( 'bridge4.png' )
++ 	unlink( 'bridge5.png' )
++ 	unlink( 'gviz1.png' )
++ 	unlink( 'fig1.pdf' )
++ 	unlink( 'fig2.pdf' )
++ 	unlink( 'fig3.pdf' )
++ 	unlink( 'fig4.pdf' )
++ 	unlink( 'fig5.pdf' )
++ 	unlink( 'fig6.pdf' )
++ 	unlink( 'fig7.pdf' )
++ 	unlink( 'fig8.pdf' )
++ 	unlink( 'fig9.pdf' )
++ 	unlink( 'fig10.pdf' )
++ 
++ 	setwd( current.path )
++ }
+Cannot find datasource 'hs-test', I'm not going to build the cookbook.
+> 
+> 
+texi2dvi --pdf annmap.tex
+make: texi2dvi: No such file or directory
+make: *** [Makefile:8: pdf] Error 127
+Error in tools::buildVignettes(dir = ".", tangle = TRUE) : 
+  running 'make' failed
+Execution halted

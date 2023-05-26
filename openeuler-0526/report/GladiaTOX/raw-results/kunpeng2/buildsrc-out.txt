@@ -1,0 +1,40 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GladiaTOX
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GladiaTOX/DESCRIPTION’ ... OK
+* preparing ‘GladiaTOX’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GladiaTOX.Rmd’ using rmarkdown
+
+Quitting from lines 292-295 [unnamed-chunk-20] (GladiaTOX.Rmd)
+Error: processing vignette 'GladiaTOX.Rmd' failed with diagnostics:
+unable to run pdflatex on '230525_HCS_QC_ASID2.tex'
+LaTeX errors:
+! LaTeX Error: File `makebox.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.13 \usepackage
+                {float}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GladiaTOX.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘GladiaTOX.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

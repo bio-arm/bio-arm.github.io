@@ -1,0 +1,10 @@
+Package: GeneOverlap
+Version: 1.37.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GeneOverlap.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GeneOverlap_1.37.0.tar.gz
+StartedAt: 2023-05-26 04:42:09 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:42:21 -0000 (Fri, 26 May 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GeneOverlap.Rcheck
+Warnings: NA

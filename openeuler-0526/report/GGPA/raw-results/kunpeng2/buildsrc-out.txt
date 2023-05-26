@@ -1,0 +1,99 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GGPA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GGPA/DESCRIPTION’ ... OK
+* preparing ‘GGPA’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GGPA-example.Rnw’ using Sweave
+Loading required package: GGally
+Loading required package: ggplot2
+Registered S3 method overwritten by 'GGally':
+  method from   
+  +.gg   ggplot2
+Loading required package: network
+
+‘network’ 1.18.1 (2023-01-24), part of the Statnet Project
+* ‘news(package="network")’ for changes since last version
+* ‘citation("network")’ for citation information
+* ‘https://statnet.org’ for help, support, and other information
+
+Loading required package: sna
+Loading required package: statnet.common
+
+Attaching package: ‘statnet.common’
+
+The following objects are masked from ‘package:base’:
+
+    attr, order
+
+sna: Tools for Social Network Analysis
+Version 2.7-1 created on 2023-01-24.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+Loading required package: scales
+Loading required package: matrixStats
+Warning in plot.window(...) : "size" is not a graphical parameter
+Warning in plot.xy(xy, type, ...) : "size" is not a graphical parameter
+Warning in axis(side = side, at = at, labels = labels, ...) :
+  "size" is not a graphical parameter
+Warning in axis(side = side, at = at, labels = labels, ...) :
+  "size" is not a graphical parameter
+Warning in box(...) : "size" is not a graphical parameter
+Warning in title(...) : "size" is not a graphical parameter
+Info: Uniform prior will be used for the phenotype graph in the estimation.
+Info: Number of GWAS data: 7
+Info: Some SNPs have p-values close to zero.
+Info: Number of SNPs with p-values close to zero: 234
+Info: p-values for these SNPs are set to 1e-10
+
+Burn in iterations...
+
+Burn-in iteration: 100 / 200
+The last 100 iter= 0.2 min, Est. Time to go= 0.2 min
+Burn-in iteration: 200 / 200
+The last 100 iter= 0.2 min, Est. Time to go= 0 min
+
+Main MCMC iterations...
+
+Burn-in iteration: 100 / 200
+The last 100 iter= 0.2 min, Est. Time to go= 0.2 min
+Burn-in iteration: 200 / 200
+The last 100 iter= 0.2 min, Est. Time to go= 0 min
+Info: Association mapping for each phenotype.
+Info: Association mapping based on the global FDR control at level 0.1.
+Info: Association mapping for specified i & j phenotype pair.
+Info: Association mapping based on the global FDR control at level 0.1.
+Error: processing vignette 'GGPA-example.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GGPA-example.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.16 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GGPA-example.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GGPA-example.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

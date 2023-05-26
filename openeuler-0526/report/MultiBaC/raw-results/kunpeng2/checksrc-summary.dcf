@@ -1,0 +1,10 @@
+Package: MultiBaC
+Version: 1.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MultiBaC.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MultiBaC_1.11.0.tar.gz
+StartedAt: 2023-05-26 04:49:23 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:49:38 -0000 (Fri, 26 May 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MultiBaC.Rcheck
+Warnings: NA

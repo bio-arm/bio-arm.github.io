@@ -1,0 +1,10 @@
+Package: netSmooth
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:netSmooth.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings netSmooth_1.21.0.tar.gz
+StartedAt: 2023-05-26 04:50:03 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:50:33 -0000 (Fri, 26 May 2023)
+EllapsedTime: 30.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: netSmooth.Rcheck
+Warnings: NA

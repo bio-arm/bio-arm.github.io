@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data infinityFlow
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘infinityFlow/DESCRIPTION’ ... OK
+* preparing ‘infinityFlow’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘infinityFlow’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Error in dyn.load(file, DLLpath = DLLpath, ...) : 
+  unable to load shared object '/home/biocbuild/R/R-4.3.0/site-library/terra/libs/terra.so':
+  libgdal.so.33: cannot open shared object file: No such file or directory
+Calls: <Anonymous> ... namespaceImport -> loadNamespace -> library.dynam -> dyn.load
+Execution halted
+ERROR: lazy loading failed for package ‘infinityFlow’
+* removing ‘/tmp/RtmphzogLt/Rinstf436b2ff9684f/infinityFlow’
+      -----------------------------------
+ERROR: package installation failed

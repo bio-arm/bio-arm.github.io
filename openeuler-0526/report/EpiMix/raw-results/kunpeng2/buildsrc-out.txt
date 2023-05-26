@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EpiMix
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EpiMix/DESCRIPTION’ ... OK
+* preparing ‘EpiMix’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Methylation_Modeling.Rmd’ using rmarkdown
+trying URL 'https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/core_K27ac/jointModel/final/E096_18_core_K27ac_hg38lift_mnemonics.bed.gz'
+Content type 'application/x-gzip' length 3835377 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.Merge_methylation__humanmethylation27__jhu_usc_edu__Level_3__within_bioassay_data_set_function__data.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 152968396 bytes (145.9 MB)
+==================================================
+downloaded 145.9 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.Merge_methylation__humanmethylation450__jhu_usc_edu__Level_3__within_bioassay_data_set_function__data.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 51525820 bytes (49.1 MB)
+==================================================
+downloaded 49.1 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.Merge_transcriptome__agilentg4502a_07_3__unc_edu__Level_3__unc_lowess_normalization_gene_level__data.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 36996192 bytes (35.3 MB)
+==================================================
+downloaded 35.3 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.miRseq_Preprocess.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 2663096 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+Warning in doTryCatch(return(expr), name, parentenv, handler) :
+  "offest" is not a graphical parameter
+
+Quitting from lines 465-484 [unnamed-chunk-32] (Methylation_Modeling.Rmd)
+Error: processing vignette 'Methylation_Modeling.Rmd' failed with diagnostics:
+error in evaluating the argument 'x' in selecting a method for function 'mcols': Failed to connect to egg2.wustl.edu port 443 after 129764 ms: Connection timed out
+--- failed re-building ‘Methylation_Modeling.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Methylation_Modeling.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

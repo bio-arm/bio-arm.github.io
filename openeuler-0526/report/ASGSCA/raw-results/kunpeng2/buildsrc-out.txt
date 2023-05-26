@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ASGSCA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ASGSCA/DESCRIPTION’ ... OK
+* preparing ‘ASGSCA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ASGSCA.Rnw’ using Sweave
+Error: processing vignette 'ASGSCA.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ASGSCA.tex'
+LaTeX errors:
+! LaTeX Error: File `multirow.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.16 \usepackage
+                {Sweave}%^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ASGSCA.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘ASGSCA.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

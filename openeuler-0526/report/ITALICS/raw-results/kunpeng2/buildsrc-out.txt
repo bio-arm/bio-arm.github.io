@@ -1,0 +1,137 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ITALICS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ITALICS/DESCRIPTION’ ... OK
+* preparing ‘ITALICS’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ITALICS.Rnw’ using Sweave
+Loading required package: ITALICS
+Loading required package: GLAD
+
+######################################################################################
+
+Have fun with GLAD
+
+For smoothing it is possible to use either
+the AWS algorithm (Polzehl and Spokoiny, 2002,
+or the HaarSeg algorithm (Ben-Yaacov and Eldar, Bioinformatics,  2008,
+
+If you use the package with AWS, please cite:
+Hupe et al. (Bioinformatics, 2004, and Polzehl and Spokoiny (2002,
+
+If you use the package with HaarSeg, please cite:
+Hupe et al. (Bioinformatics, 2004, and (Ben-Yaacov and Eldar, Bioinformatics, 2008,
+
+For fast computation it is recommanded to use
+the daglad function with smoothfunc=haarseg
+
+######################################################################################
+
+New options are available in daglad: see help for details.
+
+Loading required package: ITALICSData
+Loading required package: oligo
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: oligoClasses
+Welcome to oligoClasses version 1.63.0
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: Biostrings
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: XVector
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+================================================================================
+Welcome to oligo version 1.65.0
+================================================================================
+Loading required package: affxparser
+Loading required package: pd.mapping50k.xba240
+Loading required package: RSQLite
+Loading required package: DBI
+Welcome to ITALICS 
+#################################################################################################
+# This implementation of the ITALICS algorithm was developped for bioconductor 
+# This implementation is sligthly different 
+ than the original one which is available at : 
+# http://xfer.curie.fr/get/Zsx2xwOnH2l/ITALICSData_0.0.2.tar.gz 
+ and# http://xfer.curie.fr/get/diXljlXCEev/ITALICS_0.1.0.tar.gz 
+#################################################################################################
+# The two main functions of the package are ITALICS and trainITALICS
+ # ITALICS : See the help of the ITALICS function (?ITALICS) or read the vignette vignette to see how to normalize 
+# using ITALICS.
+# 
+# trainITALICS : See the help of the trainITALICS function (?trainITALICS)
+#################################################################################################
+
+In function OutliersGNL: Inconsistency for smoothing values vs. GNL status has been corrected)
+Error: processing vignette 'ITALICS.Rnw' failed with diagnostics:
+unable to run pdflatex on 'ITALICS.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.16 \usepackage
+                {verbatim}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘ITALICS.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘ITALICS.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

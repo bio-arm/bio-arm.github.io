@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for annmap on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><B>[<A href="..#A">A</A>]</B></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-26 06:18:03 -0000 (Fri, 26 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4254</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for annmap on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the annmap package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/annmap.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>65</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">annmap</A>&nbsp;1.43.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/annmap">landing page</A>)</SPAN><BR>Chris Wirth<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-25&nbsp;13:29:39&nbsp;-0000&nbsp;(Thu,&nbsp;25&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/annmap</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">b907bc6</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:23:14&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: annmap</TD></TR>
+<TR><TD><B>Version</B>: 1.43.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data annmap</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-25 20:05:24 -0000 (Thu, 25 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-25 20:06:06 -0000 (Thu, 25 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 42.1 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data annmap
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘annmap/DESCRIPTION’ ... OK
+* preparing ‘annmap’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘INSTALL.Rnw’ using Sweave
+--- finished re-building ‘INSTALL.Rnw’
+
+--- re-building ‘annmap.Rnw’ using Sweave
+--- finished re-building ‘annmap.Rnw’
+
+--- re-building ‘cookbook.Rnw’ using Sweave
+--- finished re-building ‘cookbook.Rnw’
+
+/home/biocbuild/R/R-4.3.0/bin/R --vanilla --verbose &lt; ../inst/cookbook/delia.R
+&#x27;verbose&#x27; and &#x27;quietly&#x27; are both true; being verbose then ..
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/methods/libs/methods.so&quot;) ...
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&#x27;verbose&#x27; and &#x27;quietly&#x27; are both true; being verbose then ..
+&#x27;verbose&#x27; and &#x27;quietly&#x27; are both true; being verbose then ..
+Garbage collection 1 = 0+0+1 (level 2) ... 
+12.5 Mbytes of cons cells used (35%)
+3.2 Mbytes of vectors used (5%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/utils/libs/utils.so&quot;) ...
+&#x27;verbose&#x27; and &#x27;quietly&#x27; are both true; being verbose then ..
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/grDevices/libs/grDevices.so&quot;) ...
+&#x27;verbose&#x27; and &#x27;quietly&#x27; are both true; being verbose then ..
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/graphics/libs/graphics.so&quot;) ...
+&#x27;verbose&#x27; and &#x27;quietly&#x27; are both true; being verbose then ..
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/stats/libs/stats.so&quot;) ...
+ ending setup_Rmainloop(): R_Interactive = 0 {main.c}
+ &gt;R_ReplConsole(): before &quot;for(;;)&quot; {main.c}
+&gt; # This script builds the cookbook if the correct DB name is set up
+&gt; # Or else does nothing, and leaves the PDF where it is...
+&gt; #
+&gt; # http://bit.ly/delia_smith
+&gt; 
+&gt; library( &quot;annmap&quot; )
+Loading required package: GenomicRanges
+Loading required package: stats4
+Garbage collection 2 = 1+0+1 (level 0) ... 
+19.2 Mbytes of cons cells used (54%)
+5.4 Mbytes of vectors used (8%)
+Loading required package: BiocGenerics
+Garbage collection 3 = 2+0+1 (level 0) ... 
+22.2 Mbytes of cons cells used (62%)
+6.2 Mbytes of vectors used (10%)
+Garbage collection 4 = 3+0+1 (level 0) ... 
+24.2 Mbytes of cons cells used (68%)
+6.8 Mbytes of vectors used (11%)
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/libs/S4Vectors.so&quot;) ...
+Garbage collection 5 = 4+0+1 (level 0) ... 
+27.9 Mbytes of cons cells used (78%)
+7.6 Mbytes of vectors used (12%)
+Garbage collection 6 = 5+0+1 (level 0) ... 
+30.7 Mbytes of cons cells used (86%)
+8.2 Mbytes of vectors used (13%)
+Garbage collection 7 = 5+1+1 (level 1) ... 
+32.0 Mbytes of cons cells used (90%)
+8.0 Mbytes of vectors used (12%)
+Garbage collection 8 = 5+1+2 (level 2) ... 
+32.2 Mbytes of cons cells used (43%)
+8.0 Mbytes of vectors used (12%)
+Garbage collection 9 = 6+1+2 (level 0) ... 
+32.4 Mbytes of cons cells used (44%)
+8.1 Mbytes of vectors used (13%)
+Garbage collection 10 = 7+1+2 (level 0) ... 
+37.6 Mbytes of cons cells used (51%)
+9.3 Mbytes of vectors used (14%)
+Garbage collection 11 = 8+1+2 (level 0) ... 
+44.9 Mbytes of cons cells used (60%)
+11.0 Mbytes of vectors used (17%)
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/IRanges/libs/IRanges.so&quot;) ...
+Garbage collection 12 = 9+1+2 (level 0) ... 
+58.5 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 13 = 10+1+2 (level 0) ... 
+58.9 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 14 = 11+1+2 (level 0) ... 
+58.9 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 15 = 12+1+2 (level 0) ... 
+58.9 Mbytes of cons cells used (79%)
+14.4 Mbytes of vectors used (22%)
+Garbage collection 16 = 13+1+2 (level 0) ... 
+59.5 Mbytes of cons cells used (80%)
+14.6 Mbytes of vectors used (23%)
+Garbage collection 17 = 13+2+2 (level 1) ... 
+64.9 Mbytes of cons cells used (87%)
+16.5 Mbytes of vectors used (26%)
+Garbage collection 18 = 13+2+3 (level 2) ... 
+65.7 Mbytes of cons cells used (46%)
+16.0 Mbytes of vectors used (25%)
+Loading required package: GenomeInfoDb
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/bitops/libs/bitops.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/RCurl/libs/RCurl.so&quot;) ...
+Garbage collection 19 = 14+2+3 (level 0) ... 
+88.0 Mbytes of cons cells used (62%)
+21.6 Mbytes of vectors used (34%)
+Garbage collection 20 = 15+2+3 (level 0) ... 
+95.8 Mbytes of cons cells used (68%)
+23.7 Mbytes of vectors used (37%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/tools/libs/tools.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/XVector/libs/XVector.so&quot;) ...
+Garbage collection 21 = 16+2+3 (level 0) ... 
+105.8 Mbytes of cons cells used (75%)
+26.2 Mbytes of vectors used (41%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/GenomicRanges/libs/GenomicRanges.so&quot;) ...
+Garbage collection 22 = 17+2+3 (level 0) ... 
+118.4 Mbytes of cons cells used (84%)
+29.4 Mbytes of vectors used (46%)
+Garbage collection 23 = 17+3+3 (level 1) ... 
+128.9 Mbytes of cons cells used (91%)
+31.8 Mbytes of vectors used (50%)
+Garbage collection 24 = 17+3+4 (level 2) ... 
+129.9 Mbytes of cons cells used (47%)
+31.9 Mbytes of vectors used (50%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/grid/libs/grid.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/matrixStats/libs/matrixStats.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/Biobase/libs/Biobase.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/XML/libs/XML.so&quot;) ...
+Garbage collection 25 = 18+3+4 (level 0) ... 
+148.2 Mbytes of cons cells used (53%)
+36.3 Mbytes of vectors used (57%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/bit/libs/bit.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/bit64/libs/bit64.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/rlang/libs/rlang.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/cli/libs/cli.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/vctrs/libs/vctrs.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/RSQLite/libs/RSQLite.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/fastmap/libs/fastmap.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/cachem/libs/cachem.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/png/libs/png.so&quot;) ...
+Garbage collection 26 = 19+3+4 (level 0) ... 
+162.6 Mbytes of cons cells used (59%)
+39.7 Mbytes of vectors used (62%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/Biostrings/libs/Biostrings.so&quot;) ...
+Garbage collection 27 = 20+3+4 (level 0) ... 
+179.4 Mbytes of cons cells used (65%)
+43.8 Mbytes of vectors used (68%)
+Garbage collection 28 = 20+4+4 (level 1) ... 
+191.6 Mbytes of cons cells used (69%)
+46.6 Mbytes of vectors used (73%)
+Garbage collection 29 = 21+4+4 (level 0) ... 
+202.2 Mbytes of cons cells used (73%)
+49.2 Mbytes of vectors used (77%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/splines/libs/splines.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/lattice/libs/lattice.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/Matrix/libs/Matrix.so&quot;) ...
+Garbage collection 30 = 22+4+4 (level 0) ... 
+214.2 Mbytes of cons cells used (77%)
+52.1 Mbytes of vectors used (81%)
+Garbage collection 31 = 22+5+4 (level 1) ... 
+222.9 Mbytes of cons cells used (80%)
+54.3 Mbytes of vectors used (85%)
+Garbage collection 32 = 22+5+5 (level 2) ... 
+228.0 Mbytes of cons cells used (49%)
+55.8 Mbytes of vectors used (67%)
+Garbage collection 33 = 23+5+5 (level 0) ... 
+246.4 Mbytes of cons cells used (53%)
+63.4 Mbytes of vectors used (76%)
+Garbage collection 34 = 24+5+5 (level 0) ... 
+265.0 Mbytes of cons cells used (57%)
+67.1 Mbytes of vectors used (81%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/survival/libs/survival.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/genefilter/libs/genefilter.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/parallel/libs/parallel.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/BiocParallel/libs/BiocParallel.so&quot;) ...
+Garbage collection 35 = 24+5+6 (level 2) ... 
+275.7 Mbytes of cons cells used (59%)
+67.1 Mbytes of vectors used (67%)
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/Rsamtools/libs/Rsamtools.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/site-library/RMySQL/libs/RMySQL.so&quot;) ...
+now dyn.load(&quot;/home/biocbuild/R/R-4.3.0/library/digest/libs/digest.so&quot;) ...
+There were 30 warnings (use warnings() to see them)
+&gt; 
+&gt; data = tryCatch( annmapConnect( &quot;hs-test&quot; ), error=function(e) { FALSE } )
+Using /home/biocbuild/.annmap as our configuration directory.
+&gt; if( length( data ) == 1 ) {
++ 	# The here&#x27;s one I prepared earlier shortcut
++ 	message( &quot;Cannot find datasource &#x27;hs-test&#x27;, I&#x27;m not going to build the cookbook.&quot; )
++ } else {
++ 	message( &quot;Generating cookbook...&quot; )
++ 	# First, we&#x27;ll disconnect, so the Rnw gets a fresh start
++ 	annmapDisconnect()
++ 	
++ 	current.path = getwd()
++ 	path &lt;- file.path( getwd(), &quot;..&quot;, &quot;inst/cookbook&quot; )
++ 	setwd( path )
++ 	# Parse the Rnw
++ 	library(tools)
++ 	utils::Sweave( &#x27;cookbook.Rnw&#x27; )
++ 
++ 	# Generate the PDF
++ 	texi2dvi( &#x27;cookbook.tex&#x27;, pdf=T, clean=T )
++ 
++ 	# Copy it to the docs
++ 	file.copy( &#x27;cookbook.pdf&#x27;, file.path( path, &#x27;../..&#x27;, &#x27;vignettes&#x27; ), overwrite=T )
++ 
++ 	# cleanup
++ 	unlink( &#x27;cookbook.pdf&#x27; )
++ 	unlink( &#x27;cookbook.tex&#x27; )
++ 	unlink( &#x27;bridge1.png&#x27; )
++ 	unlink( &#x27;bridge2.png&#x27; )
++ 	unlink( &#x27;bridge3.png&#x27; )
++ 	unlink( &#x27;bridge4.png&#x27; )
++ 	unlink( &#x27;bridge5.png&#x27; )
++ 	unlink( &#x27;gviz1.png&#x27; )
++ 	unlink( &#x27;fig1.pdf&#x27; )
++ 	unlink( &#x27;fig2.pdf&#x27; )
++ 	unlink( &#x27;fig3.pdf&#x27; )
++ 	unlink( &#x27;fig4.pdf&#x27; )
++ 	unlink( &#x27;fig5.pdf&#x27; )
++ 	unlink( &#x27;fig6.pdf&#x27; )
++ 	unlink( &#x27;fig7.pdf&#x27; )
++ 	unlink( &#x27;fig8.pdf&#x27; )
++ 	unlink( &#x27;fig9.pdf&#x27; )
++ 	unlink( &#x27;fig10.pdf&#x27; )
++ 
++ 	setwd( current.path )
++ }
+Cannot find datasource &#x27;hs-test&#x27;, I&#x27;m not going to build the cookbook.
+&gt; 
+&gt; 
+texi2dvi --pdf annmap.tex
+make: texi2dvi: No such file or directory
+make: *** [Makefile:8: pdf] Error 127
+Error in tools::buildVignettes(dir = &quot;.&quot;, tangle = TRUE) : 
+  running &#x27;make&#x27; failed
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

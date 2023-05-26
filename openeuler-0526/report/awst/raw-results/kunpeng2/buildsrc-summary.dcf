@@ -1,0 +1,10 @@
+Package: awst
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data awst
+StartedAt: 2023-05-25 20:15:51 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 20:16:50 -0000 (Thu, 25 May 2023)
+EllapsedTime: 59.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: awst_1.9.0.tar.gz
+PackageFileSize: 369.4 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

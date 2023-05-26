@@ -1,0 +1,135 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data piano
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘piano/DESCRIPTION’ ... OK
+* preparing ‘piano’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Running_gene-set_analysis_with_piano.Rmd’ using rmarkdown
+--- finished re-building ‘Running_gene-set_analysis_with_piano.Rmd’
+
+--- re-building ‘piano-vignette.Rnw’ using Sweave
+Loading data in text file...
+...done
+Loading setup file...
+...done
+Text file data: No normalization performed.
+
+Creating annotation...
+...done
+Removing unmapped probes...
+..done
+Warning in runQC(myArrayData) :
+  can not run rnaDeg: argument arrayData does not contain dataRaw
+Warning in runQC(myArrayData) :
+  can not run nuseRle: argument arrayData does not contain dataRaw
+Generating normalized data distribution plot...
+...done
+Generating normalized data boxplot...
+dev.new(): using pdf(file="Rplots1.pdf")
+...done
+Generating PCA...
+...done
+dev.new(): using pdf(file="Rplots2.pdf")
+dev.new(): using pdf(file="Rplots3.pdf")
+dev.new(): using pdf(file="Rplots4.pdf")
+dev.new(): using pdf(file="Rplots5.pdf")
+Generating PCA...
+...done
+dev.new(): using pdf(file="Rplots6.pdf")
+dev.new(): using pdf(file="Rplots7.pdf")
+dev.new(): using pdf(file="Rplots8.pdf")
+dev.new(): using pdf(file="Rplots9.pdf")
+Generating PCA...
+...done
+dev.new(): using pdf(file="Rplots10.pdf")
+dev.new(): using pdf(file="Rplots11.pdf")
+dev.new(): using pdf(file="Rplots12.pdf")
+dev.new(): using pdf(file="Rplots13.pdf")
+Fitting linear models...
+...done
+Generating Venn diagrams...
+dev.new(): using pdf(file="Rplots14.pdf")
+dev.new(): using pdf(file="Rplots15.pdf")
+...done
+Calculating p-values for contrast aerobic_Clim - anaerobic_Clim...
+...done
+Calculating p-values for contrast aerobic_Nlim - anaerobic_Nlim...
+...done
+Generating heatmap...
+dev.new(): using pdf(file="Rplots16.pdf")
+dev.new(): using pdf(file="Rplots17.pdf")
+...done
+Generating merged polar plot...
+dev.new(): using pdf(file="Rplots18.pdf")
+...done
+Generating separate polar plots...
+dev.new(): using pdf(file="Rplots19.pdf")
+dev.new(): using pdf(file="Rplots20.pdf")
+...done
+Generating polar plot legend...
+dev.new(): using pdf(file="Rplots21.pdf")
+...done
+Generating volcano plot...
+dev.new(): using pdf(file="Rplots22.pdf")
+dev.new(): using pdf(file="Rplots23.pdf")
+...done
+Running gene set analysis:
+Final gene/gene-set association: 4 genes and 4 gene sets
+  Details:
+  Calculating gene set statistics from 4 out of 4 gene-level statistics
+  Using all 4 gene-level statistics for significance estimation
+  Removed 0 genes from GSC due to lack of matching gene statistics
+  Removed 0 gene sets containing no genes after gene removal
+  Removed additionally 0 gene sets not matching the size limits
+  Loaded additional information for 0 gene sets
+Running gene set analysis:
+Final gene/gene-set association: 643 genes and 163 gene sets
+  Details:
+  Calculating gene set statistics from 643 out of 5705 gene-level statistics
+  Removed 0 genes from GSC due to lack of matching gene statistics
+  Removed 0 gene sets containing no genes after gene removal
+  Removed additionally 656 gene sets not matching the size limits
+  Loaded additional information for 0 gene sets
+-------------------------------------------------------------------------------
+
+  A newer function 'networkPlot2()' with the same purpose is now available!
+
+-------------------------------------------------------------------------------
+
+
+Error: processing vignette 'piano-vignette.Rnw' failed with diagnostics:
+unable to run pdflatex on 'piano-vignette.tex'
+LaTeX errors:
+! Package babel Error: Unknown option `swedish'. Either you misspelled it
+(babel)                or the language definition file swedish.ldf was not foun
+d.
+
+See the babel package documentation for explanation.
+! LaTeX Error: File `tocloft.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.18 \usepackage
+                {hyperref}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘piano-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘piano-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

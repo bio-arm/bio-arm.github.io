@@ -1,0 +1,99 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MethylSeekR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MethylSeekR/DESCRIPTION’ ... OK
+* preparing ‘MethylSeekR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MethylSeekR.Rnw’ using Sweave
+Loading required package: rtracklayer
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: parallel
+Loading required package: mhsmm
+Loading required package: mvtnorm
+Loading required package: BSgenome
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+reading methylome data
+Read 200000 records
+reading SNP table
+Read 11750 records
+removing SNPs
+11604 (6.2%) CpGs removed
+determining alpha distribution for chromosome: chr22
+training PMD-HMM on chromosome chr22
+performing viterbi segmentation
+creating GRanges object
+determining alpha distribution for chromosome: chr22
+calculating false discovery rate
+removing PMDs for randomization
+identifying UMRs and LMRs
+Error: processing vignette 'MethylSeekR.Rnw' failed with diagnostics:
+unable to run pdflatex on 'MethylSeekR.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.3 \setlength
+              {\parskip}{0.7ex plus0.1ex minus0.1ex}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘MethylSeekR.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘MethylSeekR.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

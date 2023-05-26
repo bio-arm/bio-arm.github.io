@@ -1,0 +1,24 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RDRToolbox
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RDRToolbox/DESCRIPTION’ ... OK
+* preparing ‘RDRToolbox’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘RDRToolbox’ ...
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘RDRToolbox’
+* removing ‘/tmp/RtmpEI1wEv/Rinst11e817281394a2/RDRToolbox’
+      -----------------------------------
+ERROR: package installation failed

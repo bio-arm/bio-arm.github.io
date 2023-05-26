@@ -1,0 +1,10 @@
+Package: m6Aboost
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:m6Aboost.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings m6Aboost_1.7.0.tar.gz
+StartedAt: 2023-05-26 04:46:08 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:46:19 -0000 (Fri, 26 May 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: m6Aboost.Rcheck
+Warnings: NA

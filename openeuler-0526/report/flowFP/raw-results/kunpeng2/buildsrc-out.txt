@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data flowFP
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘flowFP/DESCRIPTION’ ... OK
+* preparing ‘flowFP’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘flowFP_HowTo.Rnw’ using Sweave
+Loading required package: flowCore
+Loading required package: flowViz
+Loading required package: lattice
+Error: processing vignette 'flowFP_HowTo.Rnw' failed with diagnostics:
+unable to run pdflatex on 'flowFP_HowTo.tex'
+LaTeX errors:
+! LaTeX Error: File `comment.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.15 \usepackage
+                {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘flowFP_HowTo.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘flowFP_HowTo.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

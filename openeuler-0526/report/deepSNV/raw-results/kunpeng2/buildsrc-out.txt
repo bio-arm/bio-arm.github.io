@@ -1,0 +1,59 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data deepSNV
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘deepSNV/DESCRIPTION’ ... OK
+* preparing ‘deepSNV’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘shearwaterML.Rmd’ using rmarkdown
+--- finished re-building ‘shearwaterML.Rmd’
+
+--- re-building ‘deepSNV.Rnw’ using knitr
+Error: processing vignette 'deepSNV.Rnw' failed with diagnostics:
+unable to run pdflatex on 'deepSNV.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.54 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘deepSNV.Rnw’
+
+--- re-building ‘shearwater.Rnw’ using knitr
+Error: processing vignette 'shearwater.Rnw' failed with diagnostics:
+unable to run pdflatex on 'shearwater.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.54 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘shearwater.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘deepSNV.Rnw’ ‘shearwater.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,8 @@
+Package: Rbowtie
+Version: 1.41.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL Rbowtie
+StartedAt: 2023-05-25 18:55:40 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 18:57:50 -0000 (Thu, 25 May 2023)
+EllapsedTime: 129.2 seconds
+RetCode: 0
+Status: OK

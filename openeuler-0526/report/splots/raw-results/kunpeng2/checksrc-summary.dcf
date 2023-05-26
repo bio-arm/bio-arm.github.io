@@ -1,0 +1,10 @@
+Package: splots
+Version: 1.67.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:splots.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings splots_1.67.3.tar.gz
+StartedAt: 2023-05-26 04:58:25 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:58:41 -0000 (Fri, 26 May 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: splots.Rcheck
+Warnings: NA

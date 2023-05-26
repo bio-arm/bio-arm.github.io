@@ -1,0 +1,1130 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:consensusSeekeR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings consensusSeekeR_1.29.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/consensusSeekeR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘consensusSeekeR/DESCRIPTION’ ... OK
+* this is package ‘consensusSeekeR’ version ‘1.29.0’
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘consensusSeekeR’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘consensusSeekeR.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘consensusSeekeR.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.179   0.023   0.196 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+LaTeX errors found:
+! Undefined control sequence.
+l.1 \Rdcontents
+               {\R{} topics documented:}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.1 \Rdcontents{\R
+                  {} topics documented:}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.2 \inputencoding
+                  {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.3 \HeaderA
+            {consensusSeekeR-package}{consensusSeekeR: Detection of consensu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.4 \aliasA
+           {consensusSeekeR}{consensusSeekeR-package}{consensusSeekeR}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.5 \keyword
+            {package}{consensusSeekeR-package}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment SeeAlso undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.27 \item{} \code
+                  {\LinkA{readNarrowPeakFile}{readNarrowPeakFile}} for extra...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.27 \item{} \code{\LinkA
+                         {readNarrowPeakFile}{readNarrowPeakFile}} for extra...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.29 \item{} \code
+                  {\LinkA{findConsensusPeakRegions}{findConsensusPeakRegions...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.29 \item{} \code{\LinkA
+                         {findConsensusPeakRegions}{findConsensusPeakRegions...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: \begin{document} ended by \end{SeeAlso}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.35 \inputencoding
+                   {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.36 \HeaderA
+             {A549\_NR3C1\_CFQ\_NarrowPeaks\_partial}{}{A549.Rul.NR3C1.Rul.C...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.37 \keyword
+             {datasets}{A549\_NR3C1\_CFQ\_NarrowPeaks\_partial}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Format undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.54 A \code
+            {GRanges} containing one entry per site. The ranges are
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.56 \code
+          {A549\_NR3C1\_CFQ\_Peaks\_partial}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: \begin{document} ended by \end{Format}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Details undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Details}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Source undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Source}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment References undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{References}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment SeeAlso undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.82 \item{} \code
+                  {\LinkA{A549\_NR3C1\_CFQ\_Peaks\_partial}{A549.Rul.NR3C1.R...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.82 \item{} \code{\LinkA
+                         {A549\_NR3C1\_CFQ\_Peaks\_partial}{A549.Rul.NR3C1.R...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.84 \item{} \code
+                  {\LinkA{findConsensusPeakRegions}{findConsensusPeakRegions...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.84 \item{} \code{\LinkA
+                         {findConsensusPeakRegions}{findConsensusPeakRegions...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: \begin{document} ended by \end{SeeAlso}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! You can't use `macro parameter character #' in vertical mode.
+l.94 #
+      # Loading datasets
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.94 ##
+        Loading datasets
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.95 data(A549_
+               NR3C1_CFQ_NarrowPeaks_partial)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.99 
+     
+! You can't use `macro parameter character #' in vertical mode.
+l.100 #
+       # Assigning experiment name to each row of the dataset.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.100 ##
+         Assigning experiment name to each row of the dataset.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.101 #
+       # NarrowPeak and Peak datasets from the same experiment must
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.101 ##
+         NarrowPeak and Peak datasets from the same experiment must
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.102 #
+       # have identical names.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.102 ##
+         have identical names.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.103 names(A549_
+                 NR3C1_CFQ_NarrowPeaks_partial) <- rep("NR3C1_CFQ",
+! Missing $ inserted.
+<inserted text> 
+                $
+l.111 
+      
+! You can't use `macro parameter character #' in vertical mode.
+l.112 #
+       # Calculating consensus regions for chromosome 3
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.112 ##
+         Calculating consensus regions for chromosome 3
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.113 #
+       # with a default region size of 300 bp (2 * extendingSize)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.113 ##
+         with a default region size of 300 bp (2 * extendingSize)
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.114 #
+       # which is extended to include all genomic regions for the closest
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.114 ##
+         which is extended to include all genomic regions for the closest
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.115 #
+       # peak to the median position of all peaks included in the region (for
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.115 ##
+         peak to the median position of all peaks included in the region (for
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.116 #
+       # each experiment).
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.116 ##
+         each experiment).
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.117 #
+       # Peaks from both experiments must be present in a region to
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.117 ##
+         Peaks from both experiments must be present in a region to
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.118 #
+       # be retained as a consensus region.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in horizontal mode.
+l.118 ##
+         be retained as a consensus region.
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.121     narrowPeaks = c(A549_
+                               NR3C1_CFQ_NarrowPeaks_partial,
+! Missing $ inserted.
+<inserted text> 
+                $
+l.131 
+      
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.134 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.135 \HeaderA
+              {findConsensusPeakRegions}{Extract regions sharing features in...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.172 \item[\code{narrowPeaks}] a \code
+                                       {GRanges} containing
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.174 for all analyzed experiments. All \code
+                                             {GRanges} entries must
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.176 the called peak. All \code
+                                {GRanges} entries must also
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.178 \code
+           {peaks} entry must have an associated \code{narrowPeaks} entry.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.178 ...eaks} entry must have an associated \code
+                                                  {narrowPeaks} entry.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.179 A \code
+             {GRanges} entry is associated to a \code{narrowPeaks} entry by
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.179 ...e{GRanges} entry is associated to a \code
+                                                  {narrowPeaks} entry by
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.182 \item[\code{peaks}] a \code
+                                 {GRanges} containing called peaks of signal
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.184 for all analyzed experiments. All \code
+                                             {GRanges} entries must
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.186 peak. All \code
+                     {GRanges} entries must
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.188 \code
+           {peaks} entry must have an associated \code{narrowPeaks} entry. A
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.188 ...eaks} entry must have an associated \code
+                                                  {narrowPeaks} entry. A
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.189 \code
+           {GRanges} entry is associated to a \code{narrowPeaks} entry by ha...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.189 ...e{GRanges} entry is associated to a \code
+                                                  {narrowPeaks} entry by having
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.192 \item[\code{chrInfo}] a \code
+                                   {Seqinfo} containing the name and the len...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.194 \code
+           {Seqinfo} will be analyzed.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.196 \item[\code{extendingSize}] a \code
+                                         {numeric} value indicating the size...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.199 equal to twice the value of the \code
+                                           {extendingSize} parameter.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.200 The size of the \code
+                           {extendingSize} must be a positive integer.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.203 \item[\code{expandToFitPeakRegion}] a \code
+                                                 {logical} indicating if the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.204 which is set by the \code
+                               {extendingSize} parameter is extended to include
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.207 ...sidered for the extension. Default: \code
+                                                  {FALSE}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.209 \item[\code{shrinkToFitPeakRegion}] a \code
+                                                 {logical} indicating if the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.210 which is set by the \code
+                               {extendingSize} parameter is shrinked to
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.212 ...than the consensus region. Default: \code
+                                                  {FALSE}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.214 \item[\code{minNbrExp}] a positive \code
+                                              {numeric} or a positive \code{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.214 ...sitive \code{numeric} or a positive \code
+                                                  {integer}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.218 in the \code
+                  {narrowPeaks} and \code{peaks} parameters. Default = 1.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.218 in the \code{narrowPeaks} and \code
+                                         {peaks} parameters. Default = 1.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.220 \item[\code{nbrThreads}] a \code
+                                      {numeric} or a \code{integer} indicati...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.220 ...{nbrThreads}] a \code{numeric} or a \code
+                                                  {integer} indicating the
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.221 ... of threads to use in parallel. The \code
+                                                  {nbrThreads} must be a
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: \begin{document} ended by \end{ldescription}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Arguments}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Value undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.227 an \code
+              {list} of \code{class} "consensusRanges" containing :
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.227 an \code{list} of \code
+                             {class} "consensusRanges" containing :
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.230 \item{} \code
+                   {call} the matched call.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.231 \item{} \code
+                   {consensusRanges} a \code{GRanges} containing the
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.231 \item{} \code{consensusRanges} a \code
+                                            {GRanges} containing the
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: \begin{document} ended by \end{Value}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Author undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Author}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Examples undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ExampleCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! You can't use `macro parameter character #' in vertical mode.
+l.245 #
+       # Loading datasets
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.245 ##
+         Loading datasets
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.246 data(A549_
+                CTCF_MYN_NarrowPeaks_partial)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.250 
+      
+! You can't use `macro parameter character #' in vertical mode.
+l.251 #
+       # Assigning experiment name "CTCF_MYJ" to first experiment
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.251 ##
+         Assigning experiment name "CTCF_MYJ" to first experiment
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.251 ## Assigning experiment name "CTCF_
+                                         MYJ" to first experiment
+! Missing $ inserted.
+<inserted text> 
+                $
+l.256 
+      
+! You can't use `macro parameter character #' in vertical mode.
+l.257 #
+       # Assigning experiment name "CTCF_MYN" to second experiment
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.257 ##
+         Assigning experiment name "CTCF_MYN" to second experiment
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.257 ## Assigning experiment name "CTCF_
+                                         MYN" to second experiment
+! Missing $ inserted.
+<inserted text> 
+                $
+l.262 
+      
+! You can't use `macro parameter character #' in vertical mode.
+l.263 #
+       # Only choromsome 1 is going to be analysed
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.263 ##
+         Only choromsome 1 is going to be analysed
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.266 #
+       # Find consensus regions with both experiments
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.266 ##
+         Find consensus regions with both experiments
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.268     narrowPeaks = c(A549_
+                               CTCF_MYJ_NarrowPeaks_partial,
+! Missing $ inserted.
+<inserted text> 
+                $
+l.278 
+      
+! You can't use `macro parameter character #' in vertical mode.
+l.279 #
+       # Print 2 first consensus regions
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! You can't use `macro parameter character #' in vertical mode.
+l.279 ##
+         Print 2 first consensus regions
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.281 
+      
+! LaTeX Error: \begin{document} ended by \end{ExampleCode}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Examples}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.284 \inputencoding
+                    {utf8}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.285 \HeaderA
+              {findConsensusPeakRegionsForOneChrom}{Extract regions sharing ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.286 \keyword
+              {internal}{findConsensusPeakRegionsForOneChrom}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Environment Description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Usage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: \begin{document} ended by \end{Usage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment Arguments undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Environment ldescription undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.310 \item[\code{chrName}] a \code
+                                   {character}, the name of the chromosome t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.312 \item[\code{allPeaks}] a \code
+                                    {GRanges} containing all peaks from all ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.315 \item[\code{allNarrowPeaks}] a \code
+                                          {GRanges} containing all narrow pe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.318 \item[\code{extendingSize}] a \code
+                                         {numeric} value indicating the size...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.321 twice the value of the \code
+                                  {extendingSize} parameter. The size of
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.322 the \code
+               {extendingSize} must be a positive integer. Default = 250.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.324 \item[\code{expandToFitPeakRegion}] a \code
+                                                 {logical} indicating if the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.325 the \code
+               {extendingSize} parameter is extended to include all narrow peak
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.331 \item[\code{shrinkToFitPeakRegion}] a \code
+                                                 {logical} indicating if the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.332 by the \code
+                  {extendingSize} parameter is shrinked to fit the narrow
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.335 \item[\code{minNbrExp}] a \code
+                                     {numeric} indicating the minimum number...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! Undefined control sequence.
+l.338 of files present in the \code
+                                   {narrowPeakFiles} parameter. Default = 1.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+! Undefined control sequence.
+l.340 \item[\code{chrList}] a \code
+                                   {Seqinfo} containing the name and the len...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+* checking PDF version of manual without index ... ERROR
+Re-running with no redirection of stdout/stderr.
+Hmm ... looks like a package
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 2 ERRORs, 1 WARNING
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/consensusSeekeR.Rcheck/00check.log’
+for details.
+

@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rCGH
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rCGH/DESCRIPTION’ ... OK
+* preparing ‘rCGH’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘rCGH.Rnw’ using knitr
+Error: processing vignette 'rCGH.Rnw' failed with diagnostics:
+unable to run pdflatex on 'rCGH.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.35 \usepackage
+                [utf8]{inputenc}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘rCGH.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘rCGH.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,10 @@
+Package: EnrichedHeatmap
+Version: 1.31.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EnrichedHeatmap.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EnrichedHeatmap_1.31.0.tar.gz
+StartedAt: 2023-05-26 04:40:03 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:40:24 -0000 (Fri, 26 May 2023)
+EllapsedTime: 20.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: EnrichedHeatmap.Rcheck
+Warnings: NA

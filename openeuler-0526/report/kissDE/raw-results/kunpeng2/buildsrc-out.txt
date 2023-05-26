@@ -1,0 +1,56 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data kissDE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘kissDE/DESCRIPTION’ ... OK
+* preparing ‘kissDE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘kissDE.rnw’ using Sweave
+Pre-processing the data...
+Trying to fit models on data...
+This can be a time-consuming step, so do not hesitate to have 
+    a look at the very well-written vignette !
+Computing pvalues...
+Computing size of the effect and last cutoffs...
+Pre-processing the data...
+Trying to fit models on data...
+This can be a time-consuming step, so do not hesitate to have 
+    a look at the very well-written vignette !
+Computing pvalues...
+Computing size of the effect and last cutoffs...
+Pre-processing the data...
+Trying to fit models on data...
+This can be a time-consuming step, so do not hesitate to have 
+    a look at the very well-written vignette !
+Computing pvalues...
+Computing size of the effect and last cutoffs...
+Error: processing vignette 'kissDE.rnw' failed with diagnostics:
+unable to run pdflatex on 'kissDE.tex'
+LaTeX errors:
+! LaTeX Error: File `multirow.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 \usepackage
+                {amsmath}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘kissDE.rnw’
+
+SUMMARY: processing the following file failed:
+  ‘kissDE.rnw’
+
+Error: Vignette re-building failed.
+Execution halted

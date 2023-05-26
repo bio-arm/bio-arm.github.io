@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data psichomics
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘psichomics/DESCRIPTION’ ... OK
+* preparing ‘psichomics’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘AS_events_preparation.Rmd’ using rmarkdown
+--- finished re-building ‘AS_events_preparation.Rmd’
+
+--- re-building ‘CLI_tutorial.Rmd’ using rmarkdown
+
+Quitting from lines 76-84 [TCGA options] (CLI_tutorial.Rmd)
+Error: processing vignette 'CLI_tutorial.Rmd' failed with diagnostics:
+Timeout was reached: [firebrowse.org] Resolving timed out after 10000 milliseconds
+--- failed re-building ‘CLI_tutorial.Rmd’
+
+--- re-building ‘GUI_tutorial.Rmd’ using rmarkdown
+--- finished re-building ‘GUI_tutorial.Rmd’
+
+--- re-building ‘custom_data.Rmd’ using rmarkdown
+--- finished re-building ‘custom_data.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘CLI_tutorial.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

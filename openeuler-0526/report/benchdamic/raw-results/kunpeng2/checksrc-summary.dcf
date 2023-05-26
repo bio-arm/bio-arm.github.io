@@ -1,0 +1,10 @@
+Package: benchdamic
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:benchdamic.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings benchdamic_1.7.0.tar.gz
+StartedAt: 2023-05-26 03:47:26 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:27:26 -0000 (Fri, 26 May 2023)
+EllapsedTime: 2400.1 seconds
+RetCode: None
+Status: TIMEOUT
+CheckDir: benchdamic.Rcheck
+Warnings: NA

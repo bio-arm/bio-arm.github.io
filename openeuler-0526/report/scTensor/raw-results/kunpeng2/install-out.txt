@@ -1,0 +1,14 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL scTensor
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+ERROR: dependency ‘schex’ is not available for package ‘scTensor’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/scTensor’

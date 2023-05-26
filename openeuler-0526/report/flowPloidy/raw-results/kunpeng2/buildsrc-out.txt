@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data flowPloidy
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘flowPloidy/DESCRIPTION’ ... OK
+* preparing ‘flowPloidy’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘flowPloidy-gettingStarted.Rmd’ using rmarkdown
+! LaTeX Error: File `sourcecodepro.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'flowPloidy-gettingStarted.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpevOEs2/Rbuilddda6b7ccdbceb/flowPloidy/vignettes/flowPloidy-gettingStarted.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See flowPloidy-gettingStarted.log for more info.
+--- failed re-building ‘flowPloidy-gettingStarted.Rmd’
+
+--- re-building ‘histogram-tour.Rmd’ using rmarkdown
+! LaTeX Error: File `sourcecodepro.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'histogram-tour.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpevOEs2/Rbuilddda6b7ccdbceb/flowPloidy/vignettes/histogram-tour.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See histogram-tour.log for more info.
+--- failed re-building ‘histogram-tour.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘flowPloidy-gettingStarted.Rmd’ ‘histogram-tour.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,71 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data chromDraw
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘chromDraw/DESCRIPTION’ ... OK
+* preparing ‘chromDraw’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘chromDraw.Rnw’ using Sweave
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Error: processing vignette 'chromDraw.Rnw' failed with diagnostics:
+unable to run pdflatex on 'chromDraw.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.21 \usepackage
+                [lined,ruled]{algorithm2e}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘chromDraw.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘chromDraw.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

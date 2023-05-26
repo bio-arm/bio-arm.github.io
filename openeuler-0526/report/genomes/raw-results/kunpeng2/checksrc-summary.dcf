@@ -1,0 +1,10 @@
+Package: genomes
+Version: 3.31.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:genomes.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings genomes_3.31.0.tar.gz
+StartedAt: 2023-05-26 04:42:24 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:42:36 -0000 (Fri, 26 May 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: genomes.Rcheck
+Warnings: NA

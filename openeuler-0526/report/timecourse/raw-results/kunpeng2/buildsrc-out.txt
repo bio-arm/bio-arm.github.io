@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data timecourse
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘timecourse/DESCRIPTION’ ... OK
+* preparing ‘timecourse’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘timecourse.Rnw’ using Sweave
+Loading required package: MASS
+Error: processing vignette 'timecourse.Rnw' failed with diagnostics:
+unable to run pdflatex on 'timecourse.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.17 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘timecourse.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘timecourse.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

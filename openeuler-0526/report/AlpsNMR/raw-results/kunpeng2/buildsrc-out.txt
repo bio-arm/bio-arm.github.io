@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AlpsNMR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘AlpsNMR/DESCRIPTION’ ... OK
+* preparing ‘AlpsNMR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Vig01-introduction-to-alpsnmr.Rmd’ using rmarkdown
+! LaTeX Error: Command \textquotesingle unavailable in encoding T1.
+
+Error: processing vignette 'Vig01-introduction-to-alpsnmr.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpPekrZj/Rbuild3e883c1a7efd43/AlpsNMR/vignettes/Vig01-introduction-to-alpsnmr.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Vig01-introduction-to-alpsnmr.log for more info.
+--- failed re-building ‘Vig01-introduction-to-alpsnmr.Rmd’
+
+--- re-building ‘Vig01b-introduction-to-alpsnmr-old-api.Rmd’ using rmarkdown
+! LaTeX Error: Command \textasciigrave unavailable in encoding T1.
+
+Error: processing vignette 'Vig01b-introduction-to-alpsnmr-old-api.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpPekrZj/Rbuild3e883c1a7efd43/AlpsNMR/vignettes/Vig01b-introduction-to-alpsnmr-old-api.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Vig01b-introduction-to-alpsnmr-old-api.log for more info.
+--- failed re-building ‘Vig01b-introduction-to-alpsnmr-old-api.Rmd’
+
+--- re-building ‘Vig02-handling-metadata-and-annotations.Rmd’ using rmarkdown
+Warning: LaTeX Warning: You have requested package `/home/biocbuild/R/R-4.3.0/site-librar
+Warning: y/BiocStyle/resources/tex/Bioconductor',
+Warning:                but the package provides `Bioconductor'.
+--- finished re-building ‘Vig02-handling-metadata-and-annotations.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘Vig01-introduction-to-alpsnmr.Rmd’
+  ‘Vig01b-introduction-to-alpsnmr-old-api.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

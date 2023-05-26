@@ -1,0 +1,8 @@
+Package: DNAcopy
+Version: 1.75.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL DNAcopy
+StartedAt: 2023-05-25 18:51:16 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 18:51:26 -0000 (Thu, 25 May 2023)
+EllapsedTime: 10.4 seconds
+RetCode: 0
+Status: OK

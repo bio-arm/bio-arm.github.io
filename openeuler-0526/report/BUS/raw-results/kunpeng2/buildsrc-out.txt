@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BUS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BUS/DESCRIPTION’ ... OK
+* preparing ‘BUS’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘bus.rnw’ using Sweave
+Loading required package: minet
+This is a 'gene-trait' case. If a discrete trait data is tested, each element in 'trait' should be a really 'integer'.
+Error: processing vignette 'bus.rnw' failed with diagnostics:
+unable to run pdflatex on 'bus.tex'
+LaTeX errors:
+! LaTeX Error: File `subfigure.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               {multirow}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘bus.rnw’
+
+SUMMARY: processing the following file failed:
+  ‘bus.rnw’
+
+Error: Vignette re-building failed.
+Execution halted

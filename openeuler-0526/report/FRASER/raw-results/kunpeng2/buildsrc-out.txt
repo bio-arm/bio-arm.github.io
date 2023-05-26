@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FRASER
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FRASER/DESCRIPTION’ ... OK
+* preparing ‘FRASER’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘FRASER.Rnw’ using knitr
+Error: processing vignette 'FRASER.Rnw' failed with diagnostics:
+unable to run pdflatex on 'FRASER.tex'
+LaTeX errors:
+! LaTeX Error: File `tocbibind.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.45 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘FRASER.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘FRASER.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

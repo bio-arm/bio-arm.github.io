@@ -1,0 +1,10 @@
+Package: GSAR
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GSAR
+StartedAt: 2023-05-25 22:54:59 -0000 (Thu, 25 May 2023)
+EndedAt: 2023-05-25 23:03:57 -0000 (Thu, 25 May 2023)
+EllapsedTime: 537.9 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

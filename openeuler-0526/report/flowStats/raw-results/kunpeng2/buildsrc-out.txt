@@ -1,0 +1,119 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data flowStats
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘flowStats/DESCRIPTION’ ... OK
+* preparing ‘flowStats’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GettingStartedWithFlowStats.Rnw’ using Sweave
+Warning: replacing previous import ‘flowViz::contour’ by ‘graphics::contour’ when loading ‘flowStats’
+As part of improvements to flowWorkspace, some behavior of
+GatingSet objects has changed. For details, please read the section
+titled "The cytoframe and cytoset classes" in the package vignette:
+
+  vignette("flowWorkspace-Introduction", "flowWorkspace")
+Loading required package: ggplot2
+Loading required package: ncdfFlow
+Loading required package: BH
+Loading required package: scales
+done!
+Loading required package: ggridges
+Loading required package: gridExtra
+Picking joint bandwidth of 0.311
+Picking joint bandwidth of 0.131
+Picking joint bandwidth of 0.26
+Picking joint bandwidth of 0.157
+Warning in rep(sig, length = 2) :
+  'x' is NULL so the result will be NULL
+done!
+cloning the gatingSet...
+Normalize CD4+CD8+
+normalizing sample 1
+normalizing sample 2
+normalizing sample 3
+normalizing sample 4
+normalizing sample 5
+normalizing sample 6
+normalizing sample 7
+normalizing sample 8
+normalizing sample 9
+normalizing sample 11
+normalizing sample 12
+normalizing sample 13
+normalizing sample 14
+normalizing sample 15
+normalizing sample 16
+normalizing sample 1
+normalizing sample 2
+normalizing sample 3
+normalizing sample 4
+normalizing sample 5
+normalizing sample 6
+normalizing sample 7
+normalizing sample 8
+normalizing sample 9
+normalizing sample 11
+normalizing sample 12
+normalizing sample 13
+normalizing sample 14
+normalizing sample 15
+normalizing sample 16
+done!
+Normalize CD4+CD8-
+Normalize CD4-CD8+
+Normalize CD4-CD8-
+Picking joint bandwidth of 0.311
+Picking joint bandwidth of 0.131
+Picking joint bandwidth of 0.272
+Picking joint bandwidth of 0.157
+done!
+Picking joint bandwidth of 0.125
+cloning the gatingSet...
+Normalize CD4+CD8-CD69
+normalizing sample 1
+normalizing sample 2
+normalizing sample 3
+normalizing sample 4
+normalizing sample 5
+normalizing sample 6
+normalizing sample 7
+normalizing sample 8
+normalizing sample 9
+normalizing sample 11
+normalizing sample 12
+normalizing sample 13
+normalizing sample 14
+normalizing sample 15
+normalizing sample 16
+done!
+Picking joint bandwidth of 0.125
+Error: processing vignette 'GettingStartedWithFlowStats.Rnw' failed with diagnostics:
+unable to run pdflatex on 'GettingStartedWithFlowStats.tex'
+LaTeX errors:
+! LaTeX Error: File `comment.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.15 \usepackage
+                {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GettingStartedWithFlowStats.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GettingStartedWithFlowStats.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

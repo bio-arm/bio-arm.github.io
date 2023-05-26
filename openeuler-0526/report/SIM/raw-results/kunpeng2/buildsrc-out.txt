@@ -1,0 +1,129 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SIM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SIM/DESCRIPTION’ ... OK
+* preparing ‘SIM’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SIM.Rnw’ using Sweave
+Loading required package: quantreg
+Loading required package: SparseM
+
+Attaching package: ‘SparseM’
+
+The following object is masked from ‘package:base’:
+
+    backsolve
+
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Warning in switch(stain, gneg = "grey100", gpos25 = "grey90", gpos50 = "grey70",  :
+  EXPR is a "factor", treated as integer.
+ Consider using 'switch(as.character( * ), ...)' instead.
+Error: processing vignette 'SIM.Rnw' failed with diagnostics:
+unable to run pdflatex on 'SIM.tex'
+LaTeX errors:
+! LaTeX Error: File `a4wide.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.6 \usepackage
+               [T1]{fontenc}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘SIM.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘SIM.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

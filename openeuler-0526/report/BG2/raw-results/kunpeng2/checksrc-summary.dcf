@@ -1,0 +1,10 @@
+Package: BG2
+Version: 1.1.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BG2.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BG2_1.1.0.tar.gz
+StartedAt: 2023-05-26 03:47:27 -0000 (Fri, 26 May 2023)
+EndedAt: 2023-05-26 04:24:06 -0000 (Fri, 26 May 2023)
+EllapsedTime: 2198.8 seconds
+RetCode: 0
+Status: OK
+CheckDir: BG2.Rcheck
+Warnings: 0
