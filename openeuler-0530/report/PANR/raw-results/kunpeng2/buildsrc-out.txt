@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data PANR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘PANR/DESCRIPTION’ ... OK
+* preparing ‘PANR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘PANR-Vignette.Rnw’ using Sweave
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Error: processing vignette 'PANR-Vignette.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'PANR-Vignette.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `layouts.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.12 \usepackage
+                {bm}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘PANR-Vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘PANR-Vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

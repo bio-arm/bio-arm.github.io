@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data spatialHeatmap
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘spatialHeatmap/DESCRIPTION’ ... OK
+* preparing ‘spatialHeatmap’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘spatialHeatmap’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘svg’ in package ‘spatialHeatmap’
+Creating a new generic function for ‘match’ in package ‘spatialHeatmap’
+ERROR: lazy loading failed for package ‘spatialHeatmap’
+* removing ‘/tmp/Rtmp6kS6Ef/Rinst641c42d1d89af/spatialHeatmap’
+      -----------------------------------
+ERROR: package installation failed

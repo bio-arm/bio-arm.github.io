@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data zenith
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘zenith/DESCRIPTION’ ... OK
+* preparing ‘zenith’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘zenith’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+Loading required namespace: zenith
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+/home/biocbuild/R/R-4.3.0/bin/INSTALL: line 34: 466690 Done                    echo 'tools:::.install_packages()'
+     466691 Killed                  | R_DEFAULT_PACKAGES= LC_COLLATE=C "${R_HOME}/bin/R" $myArgs --no-echo --args ${args}
+      -----------------------------------
+ERROR: package installation failed

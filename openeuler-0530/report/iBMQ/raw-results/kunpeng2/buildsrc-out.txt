@@ -1,0 +1,71 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data iBMQ
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘iBMQ/DESCRIPTION’ ... OK
+* preparing ‘iBMQ’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘iBMQ.Rnw’ using Sweave
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: ggplot2
+Warning in data.frame(as.numeric(res1), as.numeric(res2), as.numeric(res3),  :
+  NAs introduced by coercion
+Warning in data.frame(as.numeric(res1), as.numeric(res2), as.numeric(res3),  :
+  NAs introduced by coercion
+Warning in data.frame(as.numeric(res1), as.numeric(res2), as.numeric(res3),  :
+  NAs introduced by coercion
+Warning: Removed 445 rows containing missing values (`geom_point()`).
+Error: processing vignette 'iBMQ.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'iBMQ.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `ulem.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.17 \usepackage
+                {graphicx}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘iBMQ.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘iBMQ.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

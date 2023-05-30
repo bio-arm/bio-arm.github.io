@@ -1,0 +1,24 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data optimalFlow
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘optimalFlow/DESCRIPTION’ ... OK
+* preparing ‘optimalFlow’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘optimalFlow’ ...
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘optimalFlow’
+* removing ‘/tmp/Rtmpk73cHK/Rinstd93b15b603b5/optimalFlow’
+      -----------------------------------
+ERROR: package installation failed

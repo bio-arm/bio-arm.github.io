@@ -1,0 +1,37 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TFBSTools
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TFBSTools/DESCRIPTION’ ... OK
+* preparing ‘TFBSTools’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘TFBSTools’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c matrixAlignerDynamic.c -o matrixAlignerDynamic.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c R_init_TFBSTools.c -o R_init_TFBSTools.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o TFBSTools.so matrixAlignerDynamic.o R_init_TFBSTools.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpKYEPSb/Rinst698b19a9e6c9/00LOCK-TFBSTools/00new/TFBSTools/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘seqLogo’ in package ‘TFBSTools’
+Creating a generic function for ‘colSums’ from package ‘base’ in package ‘TFBSTools’
+Creating a generic function for ‘rowSums’ from package ‘base’ in package ‘TFBSTools’
+ERROR: lazy loading failed for package ‘TFBSTools’
+* removing ‘/tmp/RtmpKYEPSb/Rinst698b19a9e6c9/TFBSTools’
+      -----------------------------------
+ERROR: package installation failed

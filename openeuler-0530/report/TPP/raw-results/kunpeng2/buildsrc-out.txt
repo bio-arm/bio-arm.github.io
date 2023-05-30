@@ -1,0 +1,73 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TPP
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TPP/DESCRIPTION’ ... OK
+* preparing ‘TPP’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘NPARC_analysis_of_TPP_TR_data.Rnw’ using knitr
+Error: processing vignette 'NPARC_analysis_of_TPP_TR_data.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'NPARC_analysis_of_TPP_TR_data.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `forloop.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.35 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘NPARC_analysis_of_TPP_TR_data.Rnw’
+
+--- re-building ‘TPP_introduction_1D.Rnw’ using knitr
+Error: processing vignette 'TPP_introduction_1D.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'TPP_introduction_1D.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `forloop.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.35 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘TPP_introduction_1D.Rnw’
+
+--- re-building ‘TPP_introduction_2D.Rnw’ using knitr
+Error: processing vignette 'TPP_introduction_2D.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'TPP_introduction_2D.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `forloop.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.35 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘TPP_introduction_2D.Rnw’
+
+SUMMARY: processing the following files failed:
+  ‘NPARC_analysis_of_TPP_TR_data.Rnw’ ‘TPP_introduction_1D.Rnw’
+  ‘TPP_introduction_2D.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

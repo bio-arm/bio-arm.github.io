@@ -1,0 +1,17 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data speckle
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘speckle/DESCRIPTION’ ... OK
+* preparing ‘speckle’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘speckle.Rmd’ using rmarkdown

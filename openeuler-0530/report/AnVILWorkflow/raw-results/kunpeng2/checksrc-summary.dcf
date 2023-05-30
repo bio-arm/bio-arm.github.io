@@ -1,0 +1,10 @@
+Package: AnVILWorkflow
+Version: 1.1.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AnVILWorkflow.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AnVILWorkflow_1.1.2.tar.gz
+StartedAt: 2023-05-29 20:09:46 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 20:10:54 -0000 (Mon, 29 May 2023)
+EllapsedTime: 68.4 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: AnVILWorkflow.Rcheck
+Warnings: NA

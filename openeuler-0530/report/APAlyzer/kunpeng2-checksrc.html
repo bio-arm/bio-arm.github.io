@@ -1,0 +1,474 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for APAlyzer on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><B>[<A href="..#A">A</A>]</B></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-30 06:14:21 -0000 (Tue, 30 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4299</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for APAlyzer on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the APAlyzer package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/APAlyzer.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>81</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">APAlyzer</A>&nbsp;1.15.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/APAlyzer">landing page</A>)</SPAN><BR>Ruijia Wang<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-29&nbsp;06:19:52&nbsp;-0000&nbsp;(Mon,&nbsp;29&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/APAlyzer</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">2a27d1e</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;15:11:42&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: APAlyzer</TD></TR>
+<TR><TD><B>Version</B>: 1.15.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:APAlyzer.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings APAlyzer_1.15.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-29 20:10:15 -0000 (Mon, 29 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-29 20:18:53 -0000 (Mon, 29 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 517.7 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: APAlyzer.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:APAlyzer.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings APAlyzer_1.15.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/APAlyzer.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘APAlyzer/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘APAlyzer’ version ‘1.15.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+  .travis.yml
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘APAlyzer’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... NOTE
+File
+  LICENSE
+is not mentioned in the DESCRIPTION file.
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... WARNING
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... WARNING
+&#x27;library&#x27; or &#x27;require&#x27; call not declared from: ‘HybridMTest’
+&#x27;library&#x27; or &#x27;require&#x27; call to ‘HybridMTest’ in package code.
+  Please use :: or requireNamespace() instead.
+  See section &#x27;Suggested packages&#x27; in the &#x27;Writing R Extensions&#x27; manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... NOTE
+prepare_Rd: download_testbam.Rd:7-8: Dropping empty section \arguments
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘APAlyzer-Ex.R’ failed
+The error most likely occurred in:
+
+&gt; base::assign(&quot;.ptime&quot;, proc.time(), pos = &quot;CheckExEnv&quot;)
+&gt; ### Name: GENEXP_CDS
+&gt; ### Title: GENEXP_CDS, count reads mapped to CDS regions and calculate TPM
+&gt; ###   for coding gene
+&gt; ### Aliases: GENEXP_CDS
+&gt; 
+&gt; ### ** Examples
+&gt; 
+&gt; ## count reads mapped to CDS regions and calculate TPM for each gene
+&gt; ## using forward sequencing
+&gt;     library(&quot;TBX20BamSubset&quot;)
+Loading required package: Rsamtools
+Loading required package: GenomeInfoDb
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+&gt;     library(&quot;Rsamtools&quot;)
+&gt;     library(&quot;GenomicAlignments&quot;)
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+&gt;     library(&quot;GenomicFeatures&quot;)
+Loading required package: AnnotationDbi
+&gt;     library(&quot;org.Mm.eg.db&quot;)
+
+&gt;     flsall = getBamFileList()
+&gt;     extpath = system.file(&quot;extdata&quot;, &quot;mm9.chr19.refGene.R.DB&quot;, package=&quot;APAlyzer&quot;)
+&gt;     txdb = loadDb(extpath, packageName=&#x27;GenomicFeatures&#x27;)
+&gt;     IDDB = org.Mm.eg.db
+&gt;     CDSdbraw = REFCDS(txdb,IDDB)
+&#x27;select()&#x27; returned many:1 mapping between keys and columns
+&gt;     DFGENEraw = GENEXP_CDS(CDSdbraw, flsall, Strandtype=&quot;forward&quot;)
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘runTests.R’/home/biocbuild/R/R-4.3.0/bin/BATCH: line 60: 542964 Killed                  ${R_HOME}/bin/R -f ${in} ${opts} ${R_BATCH_OPTIONS} &gt; ${out} 2&gt;&amp;1
+
+ ERROR
+Running the tests in ‘tests/runTests.R’ failed.
+Last 13 lines of output:
+  [1] TRUE
+  &gt; require(&quot;DESeq2&quot;) || stop(&quot;unable to load Package:DESeq2&quot;)
+  Loading required package: DESeq2
+  [1] TRUE
+  &gt; require(&quot;SummarizedExperiment&quot;) || stop(&quot;unable to load Package:SummarizedExperiment&quot;)
+  [1] TRUE
+  &gt; require(&quot;Rsubread&quot;) || stop(&quot;unable to load Package:Rsubread&quot;)
+  Loading required package: Rsubread
+  [1] TRUE
+  &gt; require(&quot;stats&quot;) || stop(&quot;unable to load Package:stats&quot;)
+  [1] TRUE
+  &gt; require(&quot;testthat&quot;) || stop(&quot;unable to load testthat&quot;)
+  Loading required package: testthat
+  [1] TRUE
+  &gt; test_check(&quot;APAlyzer&quot;)
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘APAlyzer.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+  ...
+--- re-building ‘APAlyzer.Rmd’ using rmarkdown
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 3 ERRORs, 2 WARNINGs, 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/APAlyzer.Rcheck/00check.log’
+for details.
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">APAlyzer.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL APAlyzer
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘APAlyzer’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (APAlyzer)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename fail">APAlyzer.Rcheck/tests/runTests.Rout.fail</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; require(&quot;APAlyzer&quot;) || stop(&quot;unable to load Package:APAlyzer&quot;)
+Loading required package: APAlyzer
+[1] TRUE
+&gt; require(&quot;GenomicRanges&quot;) || stop(&quot;unable to load Package:GenomicRanges&quot;)
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: &#x27;S4Vectors&#x27;
+
+The following object is masked from &#x27;package:utils&#x27;:
+
+    findMatches
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+[1] TRUE
+&gt; require(&quot;GenomicFeatures&quot;) || stop(&quot;unable to load Package:GenomicFeatures&quot;)
+Loading required package: GenomicFeatures
+Loading required package: AnnotationDbi
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+[1] TRUE
+&gt; require(&quot;GenomicAlignments&quot;) || stop(&quot;unable to load Package:GenomicAlignments&quot;)
+Loading required package: GenomicAlignments
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: &#x27;matrixStats&#x27;
+
+The following objects are masked from &#x27;package:Biobase&#x27;:
+
+    anyMissing, rowMedians
+
+
+Attaching package: &#x27;MatrixGenerics&#x27;
+
+The following objects are masked from &#x27;package:matrixStats&#x27;:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+The following object is masked from &#x27;package:Biobase&#x27;:
+
+    rowMedians
+
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: &#x27;Biostrings&#x27;
+
+The following object is masked from &#x27;package:base&#x27;:
+
+    strsplit
+
+Loading required package: Rsamtools
+[1] TRUE
+&gt; require(&quot;DESeq2&quot;) || stop(&quot;unable to load Package:DESeq2&quot;)
+Loading required package: DESeq2
+[1] TRUE
+&gt; require(&quot;SummarizedExperiment&quot;) || stop(&quot;unable to load Package:SummarizedExperiment&quot;)
+[1] TRUE
+&gt; require(&quot;Rsubread&quot;) || stop(&quot;unable to load Package:Rsubread&quot;)
+Loading required package: Rsubread
+[1] TRUE
+&gt; require(&quot;stats&quot;) || stop(&quot;unable to load Package:stats&quot;)
+[1] TRUE
+&gt; require(&quot;testthat&quot;) || stop(&quot;unable to load testthat&quot;)
+Loading required package: testthat
+[1] TRUE
+&gt; test_check(&quot;APAlyzer&quot;)
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">APAlyzer.Rcheck/APAlyzer-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>APABox</TD><TD style="text-align: right;">0.532</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">0.575</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>APAVolcano</TD><TD style="text-align: right;">1.604</TD><TD style="text-align: right;">0.120</TD><TD style="text-align: right;">1.726</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>APAdiff</TD><TD style="text-align: right;">1.040</TD><TD style="text-align: right;">0.071</TD><TD style="text-align: right;">1.118</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

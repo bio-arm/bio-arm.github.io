@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SCnorm
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SCnorm/DESCRIPTION’ ... OK
+* preparing ‘SCnorm’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SCnorm.Rnw’ using knitr
+Error in parse(text = code, keep.source = FALSE) : 
+  <text>:12:19: unexpected symbol
+11:                   PrintProgressPlots = TRUE
+12:                   FilterCellNum
+                      ^
+Warning in highr::hilight(x, format, prompt = options$prompt, markup = opts$markup) :
+  the syntax of the source code is invalid; the fallback mode is used
+Error: processing vignette 'SCnorm.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'SCnorm.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `moreverb.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.35 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘SCnorm.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘SCnorm.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

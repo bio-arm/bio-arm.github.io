@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DMRScan
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DMRScan/DESCRIPTION’ ... OK
+* preparing ‘DMRScan’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘DMRScan_vignette.Rmd’ using rmarkdown
+YAML parse exception at line 10, column 0:
+did not find expected <document start>
+Error: processing vignette 'DMRScan_vignette.Rmd' failed with diagnostics:
+pandoc document conversion failed with error 64
+--- failed re-building ‘DMRScan_vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘DMRScan_vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

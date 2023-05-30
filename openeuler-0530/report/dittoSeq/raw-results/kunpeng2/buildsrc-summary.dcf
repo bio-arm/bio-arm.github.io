@@ -1,0 +1,10 @@
+Package: dittoSeq
+Version: 1.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data dittoSeq
+StartedAt: 2023-05-29 11:48:38 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 12:28:39 -0000 (Mon, 29 May 2023)
+EllapsedTime: 2400.7 seconds
+RetCode: None
+Status: TIMEOUT
+PackageFile: None
+PackageFileSize: NA

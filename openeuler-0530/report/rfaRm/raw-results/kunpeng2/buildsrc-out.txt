@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rfaRm
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rfaRm/DESCRIPTION’ ... OK
+* preparing ‘rfaRm’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘rfaRm.Rmd’ using rmarkdown
+
+Quitting from lines 61-65 [unnamed-chunk-1] (rfaRm.Rmd)
+Error: processing vignette 'rfaRm.Rmd' failed with diagnostics:
+package or namespace load failed for 'rfaRm':
+ .onLoad failed in loadNamespace() for 'rfaRm', details:
+  call: open.connection(x, "rb")
+  error: Timeout was reached: [rfam.org] SSL connection timeout
+--- failed re-building ‘rfaRm.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘rfaRm.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

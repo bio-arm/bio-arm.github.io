@@ -1,0 +1,125 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SC3
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SC3/DESCRIPTION’ ... OK
+* preparing ‘SC3’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SC3.Rmd’ using rmarkdown
+starting worker pid=202844 on localhost:11815 at 17:28:40.549
+starting worker pid=202843 on localhost:11815 at 17:28:40.549
+starting worker pid=202845 on localhost:11815 at 17:28:40.552
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+loaded SC3 and set parent environment
+Loading required package: foreach
+Loading required package: rngtools
+loaded SC3 and set parent environment
+Loading required package: foreach
+Loading required package: rngtools
+loaded SC3 and set parent environment
+Loading required package: foreach
+Loading required package: rngtools
+starting worker pid=203025 on localhost:11815 at 17:28:56.843
+starting worker pid=203024 on localhost:11815 at 17:28:56.848
+starting worker pid=203023 on localhost:11815 at 17:28:56.850
+starting worker pid=203028 on localhost:11815 at 17:28:56.851
+starting worker pid=203027 on localhost:11815 at 17:28:56.861
+starting worker pid=203026 on localhost:11815 at 17:28:56.861
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+loaded SC3 and set parent environment
+loaded SC3 and set parent environment
+Loading required package: foreach
+Loading required package: foreach
+Loading required package: rngtools
+Loading required package: rngtools
+loaded SC3 and set parent environment
+Loading required package: foreach
+loaded SC3 and set parent environment
+Loading required package: foreach
+Loading required package: rngtools
+Loading required package: rngtools
+loaded SC3 and set parent environment
+Loading required package: foreach
+Loading required package: rngtools
+loaded SC3 and set parent environment
+Loading required package: foreach
+Loading required package: rngtools
+starting worker pid=203128 on localhost:11815 at 17:29:08.193
+starting worker pid=203130 on localhost:11815 at 17:29:08.193
+starting worker pid=203139 on localhost:11815 at 17:29:08.193
+starting worker pid=203154 on localhost:11815 at 17:29:08.193
+starting worker pid=203138 on localhost:11815 at 17:29:08.194
+starting worker pid=203131 on localhost:11815 at 17:29:08.195
+starting worker pid=203132 on localhost:11815 at 17:29:08.196
+starting worker pid=203141 on localhost:11815 at 17:29:08.199
+starting worker pid=203122 on localhost:11815 at 17:29:08.202
+starting worker pid=203134 on localhost:11815 at 17:29:08.203
+starting worker pid=203136 on localhost:11815 at 17:29:08.207
+starting worker pid=203137 on localhost:11815 at 17:29:08.208
+starting worker pid=203127 on localhost:11815 at 17:29:08.210
+starting worker pid=203146 on localhost:11815 at 17:29:08.213
+starting worker pid=203156 on localhost:11815 at 17:29:08.216
+starting worker pid=203143 on localhost:11815 at 17:29:08.217
+starting worker pid=203123 on localhost:11815 at 17:29:08.234
+starting worker pid=203153 on localhost:11815 at 17:29:08.235
+starting worker pid=203121 on localhost:11815 at 17:29:08.240
+starting worker pid=203140 on localhost:11815 at 17:29:08.241
+starting worker pid=203147 on localhost:11815 at 17:29:08.241
+starting worker pid=203135 on localhost:11815 at 17:29:08.241
+starting worker pid=203125 on localhost:11815 at 17:29:08.244
+starting worker pid=203133 on localhost:11815 at 17:29:08.246
+starting worker pid=203124 on localhost:11815 at 17:29:08.251
+starting worker pid=203129 on localhost:11815 at 17:29:08.251
+starting worker pid=203126 on localhost:11815 at 17:29:08.253
+starting worker pid=203145 on localhost:11815 at 17:29:08.257
+starting worker pid=203144 on localhost:11815 at 17:29:08.272
+starting worker pid=203150 on localhost:11815 at 17:29:08.273
+starting worker pid=203142 on localhost:11815 at 17:29:08.284
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3
+Loading required package: SC3

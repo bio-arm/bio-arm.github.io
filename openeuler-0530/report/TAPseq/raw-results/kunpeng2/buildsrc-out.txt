@@ -1,0 +1,24 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TAPseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TAPseq/DESCRIPTION’ ... OK
+* preparing ‘TAPseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘tapseq_primer_design.Rmd’ using rmarkdown
+
+Quitting from lines 91-93 [unnamed-chunk-5] (tapseq_primer_design.Rmd)
+Error: processing vignette 'tapseq_primer_design.Rmd' failed with diagnostics:
+wrong args for environment subassignment
+--- failed re-building ‘tapseq_primer_design.Rmd’
+
+--- re-building ‘tapseq_target_genes.Rmd’ using rmarkdown

@@ -1,0 +1,10 @@
+Package: KinSwingR
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data KinSwingR
+StartedAt: 2023-05-29 14:10:51 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 14:11:22 -0000 (Mon, 29 May 2023)
+EllapsedTime: 31.0 seconds
+RetCode: 0
+Status: OK
+PackageFile: KinSwingR_1.19.0.tar.gz
+PackageFileSize: 561.4 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

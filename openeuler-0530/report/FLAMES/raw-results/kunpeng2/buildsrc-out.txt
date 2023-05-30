@@ -1,0 +1,33 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FLAMES
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FLAMES/DESCRIPTION’ ... OK
+* preparing ‘FLAMES’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘FLAMES_vignette.Rmd’ using rmarkdown
+ERROR: Unable to locate a modulefile for 'minimap2'
+which: no minimap2 in (/home/biocbuild/R/R-4.3.0/bin:/home/biocbuild/.local/bin:/home/biocbuild/bin:/home/biocbuild/.local/bin:/home/biocbuild/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lib64/openmpi/bin)
+ERROR: Unable to locate a modulefile for 'minimap2'
+which: no minimap2 in (/home/biocbuild/R/R-4.3.0/bin:/home/biocbuild/.local/bin:/home/biocbuild/bin:/home/biocbuild/.local/bin:/home/biocbuild/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/lib64/openmpi/bin)
+
+Quitting from lines 85-93 [unnamed-chunk-2] (FLAMES_vignette.Rmd)
+Error: processing vignette 'FLAMES_vignette.Rmd' failed with diagnostics:
+missing value where TRUE/FALSE needed
+--- failed re-building ‘FLAMES_vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘FLAMES_vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

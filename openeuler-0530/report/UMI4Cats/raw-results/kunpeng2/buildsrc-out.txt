@@ -1,0 +1,29 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data UMI4Cats
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘UMI4Cats/DESCRIPTION’ ... OK
+* preparing ‘UMI4Cats’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘UMI4Cats.Rmd’ using rmarkdown
+186 reads; of these:
+  186 (100.00%) were unpaired; of these:
+    23 (12.37%) aligned 0 times
+    154 (82.80%) aligned exactly 1 time
+    9 (4.84%) aligned >1 times
+87.63% overall alignment rate
+98 reads; of these:
+  98 (100.00%) were unpaired; of these:
+    17 (17.35%) aligned 0 times
+    78 (79.59%) aligned exactly 1 time
+    3 (3.06%) aligned >1 times
+82.65% overall alignment rate

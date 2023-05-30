@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data transcriptR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘transcriptR/DESCRIPTION’ ... OK
+* preparing ‘transcriptR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘transcriptR’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+ERROR: loading failed
+* removing ‘/tmp/Rtmp2DqZhI/Rinst6b4274fd4bfd3/transcriptR’
+      -----------------------------------
+ERROR: package installation failed

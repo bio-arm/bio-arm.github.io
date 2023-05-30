@@ -1,0 +1,17 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SpatialCPie
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SpatialCPie/DESCRIPTION’ ... OK
+* preparing ‘SpatialCPie’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SpatialCPie.Rmd’ using rmarkdown

@@ -1,0 +1,20 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data imcRtools
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘imcRtools/DESCRIPTION’ ... OK
+* preparing ‘imcRtools’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+ERROR: dependencies ‘sf’, ‘concaveman’ are not available for package ‘imcRtools’
+* removing ‘/tmp/RtmpUPPeEs/Rinst3e86a87c239b54/imcRtools’
+      -----------------------------------
+ERROR: package installation failed

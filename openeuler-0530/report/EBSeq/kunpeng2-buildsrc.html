@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - BUILD results for EBSeq on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><B>[<A href="..#E">E</A>]</B></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-30 06:14:25 -0000 (Tue, 30 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4299</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">BUILD results for EBSeq on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the EBSeq package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/EBSeq.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>602</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc selected">BUILD</TD><TD class="STAGE checksrc">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">EBSeq</A>&nbsp;1.41.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/EBSeq">landing page</A>)</SPAN><BR>Ning Leng<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-29&nbsp;06:19:52&nbsp;-0000&nbsp;(Mon,&nbsp;29&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/EBSeq</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">d59fa58</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:27:13&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc selected"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc"><SPAN class="glyph skipped">skipped</SPAN></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: EBSeq</TD></TR>
+<TR><TD><B>Version</B>: 1.41.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EBSeq</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-29 11:56:58 -0000 (Mon, 29 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-29 11:58:27 -0000 (Mon, 29 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 89.1 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>PackageFile</B>: None</TD></TR>
+<TR><TD><B>PackageFileSize</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EBSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EBSeq/DESCRIPTION’ ... OK
+* preparing ‘EBSeq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘EBSeq_Vignette.Rnw’ using Sweave
+Loading required package: blockmodeling
+To cite package &#x27;blockmodeling&#x27; in publications please use package
+citation and (at least) one of the articles:
+
+  Žiberna, Aleš (2007). Generalized blockmodeling of valued networks.
+  Social Networks 29(1), 105-126.
+
+  Žiberna, Aleš (2008). Direct and indirect approaches to blockmodeling
+  of valued networks in terms of regular equivalence. Journal of
+  Mathematical Sociology 32(1), 57–84.
+
+  Žiberna, Aleš (2014). Blockmodeling of multilevel networks. Social
+  Networks 39, 46–61. https://doi.org/10.1016/j.socnet.2014.04.002.
+
+  Žiberna, Aleš (2022).  Generalized and Classical Blockmodeling of
+  Valued Networks, R package version 1.1.4.
+  Cugmas, Marjan (2022).  Generalized and Classical Blockmodeling of
+  Valued Networks, R package version 1.1.4.
+
+To see these entries in BibTeX format, use &#x27;format(&lt;citation&gt;,
+bibtex=TRUE)&#x27;, or &#x27;toBibtex(.)&#x27;.
+Loading required package: gplots
+
+Attaching package: ‘gplots’
+
+The following object is masked from ‘package:stats’:
+
+    lowess
+
+Loading required package: testthat
+iteration 1 done 
+
+time 0.91 
+
+iteration 2 done 
+
+time 0.6 
+
+iteration 3 done 
+
+time 0.51 
+
+iteration 4 done 
+
+time 0.47 
+
+iteration 5 done 
+
+time 0.51 
+
+iteration 1 done 
+
+time 5 
+
+iteration 2 done 
+
+time 2.05 
+
+iteration 3 done 
+
+time 1.33 
+
+iteration 4 done 
+
+time 1.22 
+
+iteration 5 done 
+
+time 1.07 
+
+iteration 1 done 
+
+time 2.31 
+
+iteration 2 done 
+
+time 1.04 
+
+iteration 3 done 
+
+time 0.85 
+
+iteration 4 done 
+
+time 0.81 
+
+iteration 5 done 
+
+time 0.82 
+
+iteration 1 done 
+
+time 5.02 
+
+iteration 2 done 
+
+time 5.09 
+
+iteration 3 done 
+
+time 4.73 
+
+iteration 4 done 
+
+time 2.35 
+
+iteration 5 done 
+
+time 2.81 
+
+No Replicate - estimate phi 0.00386 
+
+iteration 1 done 
+
+time 0.4 
+
+iteration 2 done 
+
+time 0.27 
+
+iteration 3 done 
+
+time 0.26 
+
+iteration 4 done 
+
+time 0.22 
+
+iteration 5 done 
+
+time 0.24 
+
+No Replicate - estimate phi 0.01635 
+
+iteration 1 done 
+
+time 1.73 
+
+iteration 2 done 
+
+time 1.56 
+
+iteration 3 done 
+
+time 0.56 
+
+iteration 4 done 
+
+time 0.6 
+
+iteration 5 done 
+
+time 0.62 
+
+No Replicate - estimate phi 0.00314 
+
+iteration 1 done 
+
+time 2.89 
+
+iteration 2 done 
+
+time 1.52 
+
+iteration 3 done 
+
+time 0.99 
+
+iteration 4 done 
+
+time 0.82 
+
+iteration 5 done 
+
+time 0.93 
+
+No Replicate - estimate phi 0.0017 
+
+iteration 1 done 
+
+time 4.38 
+
+iteration 2 done 
+
+time 4.36 
+
+iteration 3 done 
+
+time 4.35 
+
+iteration 4 done 
+
+time 4.31 
+
+iteration 5 done 
+
+time 2.41 
+
+Error: processing vignette &#x27;EBSeq_Vignette.Rnw&#x27; failed with diagnostics:
+Running &#x27;texi2dvi&#x27; on &#x27;EBSeq_Vignette.tex&#x27; failed.
+LaTeX errors:
+! LaTeX Error: File `moreverb.sty&#x27; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.10 \usepackage
+                {Sweave}^^M
+!  ==&gt; Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘EBSeq_Vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘EBSeq_Vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+</PRE>
+</DIV></BODY>
+</HTML>

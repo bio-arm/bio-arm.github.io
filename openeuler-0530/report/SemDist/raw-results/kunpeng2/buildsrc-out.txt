@@ -1,0 +1,503 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SemDist
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SemDist/DESCRIPTION’ ... OK
+* preparing ‘SemDist’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘introduction.rnw’ using Sweave
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: GO.db
+
+Loading required package: annotate
+Loading required package: XML
+Getting true IAs
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+Calculating RU, MI
+
+Getting true IAs
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+Calculating RU, MI
+
+Working on data for file: /tmp/RtmpJl1k9s/Rinst5ce8d355ec6d9/SemDist/extdata/MFO_PREDS_TEST.txt
+
+Getting true terms
+
+Getting true IAs
+
+Now working on threshold: 0.95
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 10.0537744342887, MI: 1.24450581070304
+
+Now working on threshold: 0.9
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 9.43488433943007, MI: 1.90438819980418
+
+Now working on threshold: 0.85
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 8.87230607236529, MI: 2.43042794675168
+
+Now working on threshold: 0.8
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 8.47489605506715, MI: 3.22678524999358
+
+Now working on threshold: 0.75
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 8.22335297346735, MI: 3.96628348443481
+
+Now working on threshold: 0.7
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 7.71961299047681, MI: 4.85629255591759
+
+Now working on threshold: 0.65
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 7.2200044238661, MI: 6.0098180845365
+
+Now working on threshold: 0.6
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 6.84314834777473, MI: 7.47794158858785
+
+Now working on threshold: 0.55
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 6.28555707245137, MI: 10.1515907153763
+
+Now working on threshold: 0.5
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 5.61598381150819, MI: 15.0450912028459
+
+Now working on threshold: 0.45
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 5.00711519147839, MI: 22.3539915496098
+
+Now working on threshold: 0.4
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 4.31210874430507, MI: 36.670308442448
+
+Now working on threshold: 0.35
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 3.63802606810064, MI: 56.7762339186203
+
+Now working on threshold: 0.3
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.90873607104053, MI: 90.9779318548042
+
+Now working on threshold: 0.25
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.27714481009132, MI: 124.574015216105
+
+Now working on threshold: 0.2
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.09678013814739, MI: 137.855149226555
+
+Now working on threshold: 0.15
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.0862687770842, MI: 138.345526472614
+
+Now working on threshold: 0.0999999999999999
+
+Getting sequence predicted terms.
+
+Now working on threshold: 0.05
+
+Getting sequence predicted terms.
+
+Working on data for file: /tmp/RtmpJl1k9s/Rinst5ce8d355ec6d9/SemDist/extdata/MFO_PREDS_TEST.txt
+
+Getting true terms
+
+Getting true IAs
+
+Now working on threshold: 0.95
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 10.0537744342887, MI: 1.24450581070304
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.9
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 9.43488433943007, MI: 1.90438819980418
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.85
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 8.87230607236529, MI: 2.43042794675168
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.8
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 8.47489605506715, MI: 3.22678524999358
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.75
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 8.22335297346735, MI: 3.96628348443481
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.7
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 7.71961299047681, MI: 4.85629255591759
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.65
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 7.2200044238661, MI: 6.0098180845365
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.6
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 6.84314834777473, MI: 7.47794158858785
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.55
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 6.28555707245137, MI: 10.1515907153763
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.5
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 5.61598381150819, MI: 15.0450912028459
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.45
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 5.00711519147839, MI: 22.3539915496098
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.4
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 4.31210874430507, MI: 36.670308442448
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.35
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 3.63802606810064, MI: 56.7762339186203
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.3
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.90873607104053, MI: 90.9779318548042
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.25
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.27714481009132, MI: 124.574015216105
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.2
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.09678013814739, MI: 137.855149226555
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.15
+
+Getting sequence predicted terms.
+
+Getting IA values for predicted terms.
+
+Doing the same for the intersect.
+
+RU: 2.0862687770842, MI: 138.345526472614
+
+Warning in answers$Wprecision[answers$threshold == thresh] <- Wprecision :
+  number of items to replace is not a multiple of replacement length
+Now working on threshold: 0.0999999999999999
+
+Getting sequence predicted terms.
+
+Now working on threshold: 0.05
+
+Getting sequence predicted terms.
+
+Error: processing vignette 'introduction.rnw' failed with diagnostics:
+Running 'texi2dvi' on 'introduction.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `cleveref.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.7 \usepackage
+               {natbib}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘introduction.rnw’
+
+SUMMARY: processing the following file failed:
+  ‘introduction.rnw’
+
+Error: Vignette re-building failed.
+Execution halted

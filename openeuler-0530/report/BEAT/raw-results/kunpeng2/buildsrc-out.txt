@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BEAT
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BEAT/DESCRIPTION’ ... OK
+* preparing ‘BEAT’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘BEAT.Rnw’ using Sweave
+Error: processing vignette 'BEAT.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'BEAT.tex' failed.
+LaTeX errors:
+!pdfTeX error: pdflatex (file esint10.pfb): cannot open Type 1 font file for re
+ading
+ ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘BEAT.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘BEAT.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

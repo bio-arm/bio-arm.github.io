@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SIAMCAT
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SIAMCAT/DESCRIPTION’ ... OK
+* preparing ‘SIAMCAT’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SIAMCAT_confounder.Rmd’ using rmarkdown
+--- finished re-building ‘SIAMCAT_confounder.Rmd’
+
+--- re-building ‘SIAMCAT_holdout.Rmd’ using rmarkdown
+--- finished re-building ‘SIAMCAT_holdout.Rmd’
+
+--- re-building ‘SIAMCAT_meta.Rmd’ using rmarkdown

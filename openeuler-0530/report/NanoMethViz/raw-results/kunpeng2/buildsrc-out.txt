@@ -1,0 +1,24 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data NanoMethViz
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘NanoMethViz/DESCRIPTION’ ... OK
+* preparing ‘NanoMethViz’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘NanoMethViz’ ...
+** using staged installation
+** libs
+Error: C++20 standard requested but CXX20 is not defined
+* removing ‘/tmp/RtmpXI8CFI/Rinst9271143bd356/NanoMethViz’
+      -----------------------------------
+ERROR: package installation failed

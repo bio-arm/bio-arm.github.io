@@ -1,0 +1,516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for AnnotationDbi on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><B>[<A href="..#A">A</A>]</B></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-05-30 06:14:21 -0000 (Tue, 30 May 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4299</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for AnnotationDbi on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the AnnotationDbi package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/AnnotationDbi.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>67</B>/2197</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">AnnotationDbi</A>&nbsp;1.63.1</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/AnnotationDbi">landing page</A>)</SPAN><BR>Bioconductor Package Maintainer<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-05-29&nbsp;06:19:52&nbsp;-0000&nbsp;(Mon,&nbsp;29&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/AnnotationDbi</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">f754ee6</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-05-02&nbsp;00:21:41&nbsp;-0000&nbsp;(Tue,&nbsp;02&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: AnnotationDbi</TD></TR>
+<TR><TD><B>Version</B>: 1.63.1</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AnnotationDbi.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AnnotationDbi_1.63.1.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-05-29 20:05:54 -0000 (Mon, 29 May 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-05-29 20:11:08 -0000 (Mon, 29 May 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 314.2 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: AnnotationDbi.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AnnotationDbi.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AnnotationDbi_1.63.1.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/AnnotationDbi.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘AnnotationDbi/DESCRIPTION’ ... OK
+* this is package ‘AnnotationDbi’ version ‘1.63.1’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘AnnotationDbi’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  8.3Mb
+  sub-directories of 1Mb or more:
+    R         1.0Mb
+    extdata   6.0Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Unexported object imported by a &#x27;:::&#x27; call: ‘BiocGenerics:::testPackage’
+  See the note in ?`:::` about the use of this operator.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+createORGANISMSeeds: no visible global function definition for
+  ‘makeAnnDbMapSeeds’
+Undefined global functions or variables:
+  makeAnnDbMapSeeds
+* checking Rd files ... WARNING
+checkRd: (5) AnnDbObj-class.Rd:58-61: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:64-68: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:71-75: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:78-89: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:92-96: \item in \describe must have non-empty label
+checkRd: (5) Bimap.Rd:79-82: \item in \describe must have non-empty label
+checkRd: (5) Bimap.Rd:84-87: \item in \describe must have non-empty label
+checkRd: (-1) inpIDMapper.Rd:91: Escaped LaTeX specials: \#
+checkRd: (-1) inpIDMapper.Rd:95: Escaped LaTeX specials: \#
+checkRd: (-1) inpIDMapper.Rd:99: Escaped LaTeX specials: \#
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘AnnotationDbi-Ex.R’ failed
+The error most likely occurred in:
+
+&gt; base::assign(&quot;.ptime&quot;, proc.time(), pos = &quot;CheckExEnv&quot;)
+&gt; ### Name: AnnDbPkg-checker
+&gt; ### Title: Check the SQL data contained in an SQLite-based annotation
+&gt; ###   package
+&gt; ### Aliases: AnnDbPkg-checker checkMAPCOUNTS
+&gt; ### Keywords: utilities
+&gt; 
+&gt; ### ** Examples
+&gt; 
+&gt;   checkMAPCOUNTS(&quot;org.Sc.sgd.db&quot;)
+Loading required package: org.Sc.sgd.db
+
+Counting mapped keys for map org.Sc.sgdALIAS:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdALIAS&quot;] = 4468
+  - count1 = 4468 (0.011 s)
+  - count2 = 4468 (0.011 s)
+  - count3 = 4468 (0.097 s)
+Counting mapped keys for map org.Sc.sgdCHR:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdCHR&quot;] = 8061
+  - count1 = 8061 (0.035 s)
+  - count2 = 8061 (0.014 s)
+  - count3 = 8061 (0.065 s)
+Counting mapped keys for map org.Sc.sgdCHRLENGTHS:
+  - length(map) = 17
+  - MAPCOUNTS[&quot;org.Sc.sgdCHRLENGTHS&quot;] = 17
+  - count1 = 17 (0.001 s)
+  - count2 = 17 (0 s)
+  - count3 = 17 (0 s)
+Counting mapped keys for map org.Sc.sgdCHRLOC:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdCHRLOC&quot;] = 7993
+  - count1 = 7993 (0.01 s)
+  - count2 = 7993 (0.015 s)
+  - count3 = 7993 (0.075 s)
+Counting mapped keys for map org.Sc.sgdCHRLOCEND:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdCHRLOCEND&quot;] = 7993
+  - count1 = 7993 (0.009 s)
+  - count2 = 7993 (0.015 s)
+  - count3 = 7993 (0.072 s)
+Counting mapped keys for map org.Sc.sgdCOMMON2ORF:
+  - length(map) = 12361
+  - MAPCOUNTS[&quot;org.Sc.sgdCOMMON2ORF&quot;] = 12361
+  - count1 = 12361 (0.016 s)
+  - count2 = 12361 (0.027 s)
+  - count3 = 12361 (0.121 s)
+Counting mapped keys for map org.Sc.sgdDESCRIPTION:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdDESCRIPTION&quot;] = 8052
+  - count1 = 8052 (0.009 s)
+  - count2 = 8052 (0.016 s)
+  - count3 = 8052 (0.076 s)
+Counting mapped keys for map org.Sc.sgdENSEMBL:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdENSEMBL&quot;] = 5798
+  - count1 = 5798 (0.01 s)
+  - count2 = 5798 (0.01 s)
+  - count3 = 5798 (0.06 s)
+Counting mapped keys for map org.Sc.sgdENSEMBL2ORF:
+  - length(map) = 5804
+  - MAPCOUNTS[&quot;org.Sc.sgdENSEMBL2ORF&quot;] = 5804
+  - count1 = 5804 (0.009 s)
+  - count2 = 5804 (0.013 s)
+  - count3 = 5804 (0.059 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLPROT:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdENSEMBLPROT&quot;] = 5798
+  - count1 = 5798 (0.01 s)
+  - count2 = 5798 (0.01 s)
+  - count3 = 5798 (0.062 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLPROT2ORF:
+  - length(map) = 5804
+  - MAPCOUNTS[&quot;org.Sc.sgdENSEMBLPROT2ORF&quot;] = 5804
+  - count1 = 5804 (0.009 s)
+  - count2 = 5804 (0.013 s)
+  - count3 = 5804 (0.055 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLTRANS:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdENSEMBLTRANS&quot;] = 5798
+  - count1 = 5798 (0.008 s)
+  - count2 = 5798 (0.01 s)
+  - count3 = 5798 (0.063 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLTRANS2ORF:
+  - length(map) = 5804
+  - MAPCOUNTS[&quot;org.Sc.sgdENSEMBLTRANS2ORF&quot;] = 5804
+  - count1 = 5804 (0.009 s)
+  - count2 = 5804 (0.014 s)
+  - count3 = 5804 (0.057 s)
+Counting mapped keys for map org.Sc.sgdENTREZID:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdENTREZID&quot;] = 6453
+  - count1 = 6453 (0.007 s)
+  - count2 = 6453 (0.011 s)
+  - count3 = 6453 (0.066 s)
+Counting mapped keys for map org.Sc.sgdENZYME:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdENZYME&quot;] = 981
+  - count1 = 981 (0.006 s)
+  - count2 = 981 (0.005 s)
+  - count3 = 981 (0.048 s)
+Counting mapped keys for map org.Sc.sgdENZYME2ORF:
+  - length(map) = 561
+  - MAPCOUNTS[&quot;org.Sc.sgdENZYME2ORF&quot;] = 561
+  - count1 = 561 (0.005 s)
+  - count2 = 561 (0.005 s)
+  - count3 = 561 (0.065 s)
+Counting mapped keys for map org.Sc.sgdGENENAME:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdGENENAME&quot;] = 5463
+  - count1 = 5463 (0.018 s)
+  - count2 = 5463 (0.01 s)
+  - count3 = 5463 (0.063 s)
+Counting mapped keys for map org.Sc.sgdGO:
+  - length(map) = 8061
+  - MAPCOUNTS[&quot;org.Sc.sgdGO&quot;] = 6436
+  - count1 = 6436 (0.06 s)
+  - count2 = 6436 (0.009 s)
+  - count3 = 6436 (1.965 s)
+Counting mapped keys for map org.Sc.sgdGO2ALLORFS:
+  - length(map) = 8705
+  - MAPCOUNTS[&quot;org.Sc.sgdGO2ALLORFS&quot;] = 8705
+  - count1 = 8705 (0.783 s)
+  - count2 = 8705 (1.004 s)
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘AnnotationDbi_unit_tests.R’/home/biocbuild/R/R-4.3.0/bin/BATCH: line 60: 517633 Killed                  ${R_HOME}/bin/R -f ${in} ${opts} ${R_BATCH_OPTIONS} &gt; ${out} 2&gt;&amp;1
+
+ ERROR
+Running the tests in ‘tests/AnnotationDbi_unit_tests.R’ failed.
+Last 13 lines of output:
+  &#x27;select()&#x27; returned 1:many mapping between keys and columns
+  &#x27;select()&#x27; returned many:1 mapping between keys and columns
+  
+  &#x27;select()&#x27; returned 1:1 mapping between keys and columns
+  &#x27;select()&#x27; returned many:many mapping between keys and columns
+  &#x27;select()&#x27; returned 1:1 mapping between keys and columns
+  &#x27;select()&#x27; returned 1:1 mapping between keys and columns
+  &#x27;select()&#x27; returned 1:many mapping between keys and columns
+  &#x27;select()&#x27; returned 1:1 mapping between keys and columns
+  &#x27;select()&#x27; returned 1:1 mapping between keys and columns
+  &#x27;select()&#x27; returned 1:1 mapping between keys and columns
+  &#x27;select()&#x27; returned 1:many mapping between keys and columns
+  Loading required package: reactome.db
+  &#x27;select()&#x27; returned 1:many mapping between keys and columns
+  &#x27;select()&#x27; returned 1:1 mapping between keys and columns
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘AnnotationDbi.Rnw’ using ‘UTF-8’... OK
+  ‘IntroToAnnotationPackages.Rnw’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+  ...
+--- re-building ‘AnnotationDbi.Rnw’ using knitr
+--- finished re-building ‘AnnotationDbi.Rnw’
+
+--- re-building ‘IntroToAnnotationPackages.Rnw’ using knitr
+SUMMARY: processing the following file failed:
+  ‘IntroToAnnotationPackages.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 3 ERRORs, 1 WARNING, 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/AnnotationDbi.Rcheck/00check.log’
+for details.
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">AnnotationDbi.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL AnnotationDbi
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘AnnotationDbi’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘packageName’ in package ‘AnnotationDbi’
+Creating a generic function for ‘ls’ from package ‘base’ in package ‘AnnotationDbi’
+Creating a generic function for ‘eapply’ from package ‘base’ in package ‘AnnotationDbi’
+Creating a generic function for ‘exists’ from package ‘base’ in package ‘AnnotationDbi’
+Creating a generic function for ‘sample’ from package ‘base’ in package ‘AnnotationDbi’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (AnnotationDbi)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename fail">AnnotationDbi.Rcheck/tests/AnnotationDbi_unit_tests.Rout.fail</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; require(&quot;AnnotationDbi&quot;) || stop(&quot;unable to load AnnotationDbi package&quot;)
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: &#x27;S4Vectors&#x27;
+
+The following object is masked from &#x27;package:utils&#x27;:
+
+    findMatches
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    I, expand.grid, unname
+
+[1] TRUE
+&gt; 
+&gt; AnnotationDbi:::.test()
+Loading required package: org.Hs.eg.db
+
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+Loading required package: RSQLite
+Loading required package: org.At.tair.db
+
+Loading required package: org.Sc.sgd.db
+
+Loading required package: GO.db
+
+Loading required package: hgu95av2.db
+&#x27;select()&#x27; returned many:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned many:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned many:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned many:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+Warning: You have selected the following columns that can have a many to one
+  relationship with the primary key: ACCNUM, ALIAS, ENSEMBL,
+  ENSEMBLPROT, ENSEMBLTRANS, ENZYME, EVIDENCE, EVIDENCEALL, GO, GOALL,
+  IPI, MAP, OMIM, ONTOLOGY, ONTOLOGYALL, PATH, PFAM, PMID, PROSITE,
+  REFSEQ, UCSCKG, UNIPROT . Because you have selected more than a few
+  such columns there is a risk that this selection may balloon up into
+  a very large result as the number of rows returned multiplies
+  accordingly. To experience smaller/more manageable results and faster
+  retrieval times, you might want to consider selecting these columns
+  separately.
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned many:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned many:1 mapping between keys and columns
+
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned many:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+Loading required package: reactome.db
+&#x27;select()&#x27; returned 1:many mapping between keys and columns
+&#x27;select()&#x27; returned 1:1 mapping between keys and columns
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">AnnotationDbi.Rcheck/AnnotationDbi-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>AnnDbObj-class</TD><TD style="text-align: right;">0.517</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">0.645</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

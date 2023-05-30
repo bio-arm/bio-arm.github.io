@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data hipathia
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘hipathia/DESCRIPTION’ ... OK
+* preparing ‘hipathia’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘hipathia-vignette.Rmd’ using rmarkdown
+! LaTeX Error: Command \textasciigrave unavailable in encoding T1.
+
+Error: processing vignette 'hipathia-vignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmp3XkUnV/Rbuild3e5249134fc7a5/hipathia/vignettes/hipathia-vignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See hipathia-vignette.log for more info.
+--- failed re-building ‘hipathia-vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘hipathia-vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

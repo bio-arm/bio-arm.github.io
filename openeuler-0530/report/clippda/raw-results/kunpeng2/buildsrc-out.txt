@@ -1,0 +1,26 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data clippda
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘clippda/DESCRIPTION’ ... OK
+* preparing ‘clippda’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘clippda’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘clippda’
+* removing ‘/tmp/RtmpXhlWPM/Rinst3acbc929380421/clippda’
+      -----------------------------------
+ERROR: package installation failed

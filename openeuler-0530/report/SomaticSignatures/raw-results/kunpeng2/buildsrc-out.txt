@@ -1,0 +1,26 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SomaticSignatures
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SomaticSignatures/DESCRIPTION’ ... OK
+* preparing ‘SomaticSignatures’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SomaticSignatures’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘SomaticSignatures’
+* removing ‘/tmp/RtmpV49twZ/Rinst631b9ad43ab0/SomaticSignatures’
+      -----------------------------------
+ERROR: package installation failed

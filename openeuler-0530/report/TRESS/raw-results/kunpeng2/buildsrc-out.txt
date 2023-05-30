@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TRESS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TRESS/DESCRIPTION’ ... OK
+* preparing ‘TRESS’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘TRESS.Rmd’ using rmarkdown
+
+Quitting from lines 746-757 [unnamed-chunk-21] (TRESS.Rmd)
+Error: processing vignette 'TRESS.Rmd' failed with diagnostics:
+'data' must be of a vector type, was 'NULL'
+--- failed re-building ‘TRESS.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘TRESS.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

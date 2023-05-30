@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data iCheck
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘iCheck/DESCRIPTION’ ... OK
+* preparing ‘iCheck’:
+* checking DESCRIPTION meta-information ... OK
+* checking whether ‘INDEX’ is up-to-date ... NO
+* use ‘--force’ to remove the existing ‘INDEX’
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘iCheck’ ...
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘RSQLite’ for request: ‘dbListFields’ when loading ‘lumi’
+ERROR: lazy loading failed for package ‘iCheck’
+* removing ‘/tmp/RtmpG5Bovb/Rinst3e70ef332bc46d/iCheck’
+      -----------------------------------
+ERROR: package installation failed

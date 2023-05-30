@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data cnvGSA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘cnvGSA/DESCRIPTION’ ... OK
+* preparing ‘cnvGSA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘cnvGSA-vignette.Rnw’ using Sweave
+Error: processing vignette 'cnvGSA-vignette.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'cnvGSA-vignette.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `vmargin.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.7 	\setpapersize
+                  {USletter}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘cnvGSA-vignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘cnvGSA-vignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

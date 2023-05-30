@@ -1,0 +1,148 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data TCC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘TCC/DESCRIPTION’ ... OK
+* preparing ‘TCC’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘TCC.Rnw’ using Sweave
+Loading required package: DESeq2
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: edgeR
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:DESeq2’:
+
+    plotMA
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+Loading required package: baySeq
+Loading required package: abind
+Loading required package: parallel
+Loading required package: ROC
+
+Attaching package: ‘TCC’
+
+The following object is masked from ‘package:edgeR’:
+
+    calcNormFactors
+
+TCC::INFO: Calculating normalization factors using DEGES
+TCC::INFO: (iDEGES pipeline : tmm - [ edger - tmm ] X 3 )
+TCC::INFO: Done.
+TCC::INFO: Identifying DE genes using edger ...
+TCC::INFO: Done.
+TCC::INFO: Calculating normalization factors using DEGES
+TCC::INFO: (iDEGES pipeline : tmm - [ bayseq - tmm ] X 1 )
+TCC::INFO: Done.
+Finding priors...done.
+Finding posterior likelihoods...Length of priorReps:0
+Length of priorSubset:1000
+Length of subset:1000
+Length of postRows:1000
+Analysing part 1 of 1
+Preparing data....................................................done.
+Estimating likelihoods......done!
+done.
+TCC::INFO: Calculating normalization factors using DEGES
+TCC::INFO: (iDEGES pipeline : tmm - [ edger - tmm ] X 1 )
+TCC::INFO: Done.
+TCC::INFO: Calculating normalization factors using DEGES
+TCC::INFO: (iDEGES pipeline : tmm - [ edger - tmm ] X 3 )
+TCC::INFO: Done.
+TCC::INFO: Calculating normalization factors using DEGES
+TCC::INFO: (iDEGES pipeline : deseq2 - [ deseq2 - deseq2 ] X 1 )
+TCC::INFO: Done.
+converting counts to integer mode
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+converting counts to integer mode

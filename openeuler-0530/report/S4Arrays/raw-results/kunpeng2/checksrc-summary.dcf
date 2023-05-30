@@ -1,0 +1,10 @@
+Package: S4Arrays
+Version: 1.1.4
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:S4Arrays.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings S4Arrays_1.1.4.tar.gz
+StartedAt: 2023-05-29 21:00:00 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 21:00:15 -0000 (Mon, 29 May 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: S4Arrays.Rcheck
+Warnings: NA

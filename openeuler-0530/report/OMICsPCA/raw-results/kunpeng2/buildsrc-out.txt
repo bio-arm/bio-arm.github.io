@@ -1,0 +1,25 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data OMICsPCA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘OMICsPCA/DESCRIPTION’ ... OK
+* preparing ‘OMICsPCA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘OMICsPCA’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘OMICsPCA’
+* removing ‘/tmp/RtmpXFkPdI/Rinstc8814a75edb1/OMICsPCA’
+      -----------------------------------
+ERROR: package installation failed

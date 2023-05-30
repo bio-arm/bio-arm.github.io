@@ -1,0 +1,25 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data traviz
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘traviz/DESCRIPTION’ ... OK
+* preparing ‘traviz’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘traviz’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘traviz’
+* removing ‘/tmp/RtmpLGG4bQ/Rinst6b9a01a40af4/traviz’
+      -----------------------------------
+ERROR: package installation failed

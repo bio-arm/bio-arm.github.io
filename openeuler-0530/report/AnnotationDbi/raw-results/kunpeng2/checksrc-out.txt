@@ -1,0 +1,258 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AnnotationDbi.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AnnotationDbi_1.63.1.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/AnnotationDbi.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘AnnotationDbi/DESCRIPTION’ ... OK
+* this is package ‘AnnotationDbi’ version ‘1.63.1’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘AnnotationDbi’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  8.3Mb
+  sub-directories of 1Mb or more:
+    R         1.0Mb
+    extdata   6.0Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Unexported object imported by a ':::' call: ‘BiocGenerics:::testPackage’
+  See the note in ?`:::` about the use of this operator.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+createORGANISMSeeds: no visible global function definition for
+  ‘makeAnnDbMapSeeds’
+Undefined global functions or variables:
+  makeAnnDbMapSeeds
+* checking Rd files ... WARNING
+checkRd: (5) AnnDbObj-class.Rd:58-61: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:64-68: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:71-75: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:78-89: \item in \describe must have non-empty label
+checkRd: (5) AnnDbObj-class.Rd:92-96: \item in \describe must have non-empty label
+checkRd: (5) Bimap.Rd:79-82: \item in \describe must have non-empty label
+checkRd: (5) Bimap.Rd:84-87: \item in \describe must have non-empty label
+checkRd: (-1) inpIDMapper.Rd:91: Escaped LaTeX specials: \#
+checkRd: (-1) inpIDMapper.Rd:95: Escaped LaTeX specials: \#
+checkRd: (-1) inpIDMapper.Rd:99: Escaped LaTeX specials: \#
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘AnnotationDbi-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: AnnDbPkg-checker
+> ### Title: Check the SQL data contained in an SQLite-based annotation
+> ###   package
+> ### Aliases: AnnDbPkg-checker checkMAPCOUNTS
+> ### Keywords: utilities
+> 
+> ### ** Examples
+> 
+>   checkMAPCOUNTS("org.Sc.sgd.db")
+Loading required package: org.Sc.sgd.db
+
+Counting mapped keys for map org.Sc.sgdALIAS:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdALIAS"] = 4468
+  - count1 = 4468 (0.011 s)
+  - count2 = 4468 (0.011 s)
+  - count3 = 4468 (0.097 s)
+Counting mapped keys for map org.Sc.sgdCHR:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdCHR"] = 8061
+  - count1 = 8061 (0.035 s)
+  - count2 = 8061 (0.014 s)
+  - count3 = 8061 (0.065 s)
+Counting mapped keys for map org.Sc.sgdCHRLENGTHS:
+  - length(map) = 17
+  - MAPCOUNTS["org.Sc.sgdCHRLENGTHS"] = 17
+  - count1 = 17 (0.001 s)
+  - count2 = 17 (0 s)
+  - count3 = 17 (0 s)
+Counting mapped keys for map org.Sc.sgdCHRLOC:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdCHRLOC"] = 7993
+  - count1 = 7993 (0.01 s)
+  - count2 = 7993 (0.015 s)
+  - count3 = 7993 (0.075 s)
+Counting mapped keys for map org.Sc.sgdCHRLOCEND:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdCHRLOCEND"] = 7993
+  - count1 = 7993 (0.009 s)
+  - count2 = 7993 (0.015 s)
+  - count3 = 7993 (0.072 s)
+Counting mapped keys for map org.Sc.sgdCOMMON2ORF:
+  - length(map) = 12361
+  - MAPCOUNTS["org.Sc.sgdCOMMON2ORF"] = 12361
+  - count1 = 12361 (0.016 s)
+  - count2 = 12361 (0.027 s)
+  - count3 = 12361 (0.121 s)
+Counting mapped keys for map org.Sc.sgdDESCRIPTION:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdDESCRIPTION"] = 8052
+  - count1 = 8052 (0.009 s)
+  - count2 = 8052 (0.016 s)
+  - count3 = 8052 (0.076 s)
+Counting mapped keys for map org.Sc.sgdENSEMBL:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdENSEMBL"] = 5798
+  - count1 = 5798 (0.01 s)
+  - count2 = 5798 (0.01 s)
+  - count3 = 5798 (0.06 s)
+Counting mapped keys for map org.Sc.sgdENSEMBL2ORF:
+  - length(map) = 5804
+  - MAPCOUNTS["org.Sc.sgdENSEMBL2ORF"] = 5804
+  - count1 = 5804 (0.009 s)
+  - count2 = 5804 (0.013 s)
+  - count3 = 5804 (0.059 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLPROT:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdENSEMBLPROT"] = 5798
+  - count1 = 5798 (0.01 s)
+  - count2 = 5798 (0.01 s)
+  - count3 = 5798 (0.062 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLPROT2ORF:
+  - length(map) = 5804
+  - MAPCOUNTS["org.Sc.sgdENSEMBLPROT2ORF"] = 5804
+  - count1 = 5804 (0.009 s)
+  - count2 = 5804 (0.013 s)
+  - count3 = 5804 (0.055 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLTRANS:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdENSEMBLTRANS"] = 5798
+  - count1 = 5798 (0.008 s)
+  - count2 = 5798 (0.01 s)
+  - count3 = 5798 (0.063 s)
+Counting mapped keys for map org.Sc.sgdENSEMBLTRANS2ORF:
+  - length(map) = 5804
+  - MAPCOUNTS["org.Sc.sgdENSEMBLTRANS2ORF"] = 5804
+  - count1 = 5804 (0.009 s)
+  - count2 = 5804 (0.014 s)
+  - count3 = 5804 (0.057 s)
+Counting mapped keys for map org.Sc.sgdENTREZID:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdENTREZID"] = 6453
+  - count1 = 6453 (0.007 s)
+  - count2 = 6453 (0.011 s)
+  - count3 = 6453 (0.066 s)
+Counting mapped keys for map org.Sc.sgdENZYME:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdENZYME"] = 981
+  - count1 = 981 (0.006 s)
+  - count2 = 981 (0.005 s)
+  - count3 = 981 (0.048 s)
+Counting mapped keys for map org.Sc.sgdENZYME2ORF:
+  - length(map) = 561
+  - MAPCOUNTS["org.Sc.sgdENZYME2ORF"] = 561
+  - count1 = 561 (0.005 s)
+  - count2 = 561 (0.005 s)
+  - count3 = 561 (0.065 s)
+Counting mapped keys for map org.Sc.sgdGENENAME:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdGENENAME"] = 5463
+  - count1 = 5463 (0.018 s)
+  - count2 = 5463 (0.01 s)
+  - count3 = 5463 (0.063 s)
+Counting mapped keys for map org.Sc.sgdGO:
+  - length(map) = 8061
+  - MAPCOUNTS["org.Sc.sgdGO"] = 6436
+  - count1 = 6436 (0.06 s)
+  - count2 = 6436 (0.009 s)
+  - count3 = 6436 (1.965 s)
+Counting mapped keys for map org.Sc.sgdGO2ALLORFS:
+  - length(map) = 8705
+  - MAPCOUNTS["org.Sc.sgdGO2ALLORFS"] = 8705
+  - count1 = 8705 (0.783 s)
+  - count2 = 8705 (1.004 s)
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘AnnotationDbi_unit_tests.R’/home/biocbuild/R/R-4.3.0/bin/BATCH: line 60: 517633 Killed                  ${R_HOME}/bin/R -f ${in} ${opts} ${R_BATCH_OPTIONS} > ${out} 2>&1
+
+ ERROR
+Running the tests in ‘tests/AnnotationDbi_unit_tests.R’ failed.
+Last 13 lines of output:
+  'select()' returned 1:many mapping between keys and columns
+  'select()' returned many:1 mapping between keys and columns
+  
+  'select()' returned 1:1 mapping between keys and columns
+  'select()' returned many:many mapping between keys and columns
+  'select()' returned 1:1 mapping between keys and columns
+  'select()' returned 1:1 mapping between keys and columns
+  'select()' returned 1:many mapping between keys and columns
+  'select()' returned 1:1 mapping between keys and columns
+  'select()' returned 1:1 mapping between keys and columns
+  'select()' returned 1:1 mapping between keys and columns
+  'select()' returned 1:many mapping between keys and columns
+  Loading required package: reactome.db
+  'select()' returned 1:many mapping between keys and columns
+  'select()' returned 1:1 mapping between keys and columns
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘AnnotationDbi.Rnw’ using ‘UTF-8’... OK
+  ‘IntroToAnnotationPackages.Rnw’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+  ...
+--- re-building ‘AnnotationDbi.Rnw’ using knitr
+--- finished re-building ‘AnnotationDbi.Rnw’
+
+--- re-building ‘IntroToAnnotationPackages.Rnw’ using knitr
+SUMMARY: processing the following file failed:
+  ‘IntroToAnnotationPackages.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 3 ERRORs, 1 WARNING, 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/AnnotationDbi.Rcheck/00check.log’
+for details.
+

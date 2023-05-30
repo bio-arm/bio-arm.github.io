@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data YAPSA
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘YAPSA/DESCRIPTION’ ... OK
+* preparing ‘YAPSA’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘YAPSA’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+Found more than one class "atomicVector" in cache; using the first, from namespace 'Matrix'
+Also defined by ‘Rmpfr’
+ERROR: lazy loading failed for package ‘YAPSA’
+* removing ‘/tmp/RtmpxfIJ81/Rinst71b806dbefcb3/YAPSA’
+      -----------------------------------
+ERROR: package installation failed

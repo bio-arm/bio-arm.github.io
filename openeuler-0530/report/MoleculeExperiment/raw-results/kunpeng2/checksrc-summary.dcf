@@ -1,0 +1,10 @@
+Package: MoleculeExperiment
+Version: 1.1.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MoleculeExperiment.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MoleculeExperiment_1.1.1.tar.gz
+StartedAt: 2023-05-29 20:53:06 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 20:53:17 -0000 (Mon, 29 May 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MoleculeExperiment.Rcheck
+Warnings: NA

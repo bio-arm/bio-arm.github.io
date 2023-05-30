@@ -1,0 +1,27 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data NormqPCR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘NormqPCR/DESCRIPTION’ ... OK
+* preparing ‘NormqPCR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘NormqPCR’ ...
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘NormqPCR’
+* removing ‘/tmp/Rtmp3u9w0l/Rinstb4c03be8445b/NormqPCR’
+      -----------------------------------
+ERROR: package installation failed

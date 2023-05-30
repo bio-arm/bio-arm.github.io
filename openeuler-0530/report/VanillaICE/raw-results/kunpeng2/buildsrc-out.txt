@@ -1,0 +1,35 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data VanillaICE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘VanillaICE/DESCRIPTION’ ... OK
+* preparing ‘VanillaICE’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘VanillaICE’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c rinit.c -o rinit.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c viterbi.c -o viterbi.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o VanillaICE.so rinit.o viterbi.o -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpG5Xfof/Rinst6eada1884842f/00LOCK-VanillaICE/00new/VanillaICE/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘oligoClasses’ for request: ‘mean’ when loading ‘crlmm’
+Creating a new generic function for ‘distance’ in package ‘VanillaICE’
+ERROR: lazy loading failed for package ‘VanillaICE’
+* removing ‘/tmp/RtmpG5Xfof/Rinst6eada1884842f/VanillaICE’
+      -----------------------------------
+ERROR: package installation failed

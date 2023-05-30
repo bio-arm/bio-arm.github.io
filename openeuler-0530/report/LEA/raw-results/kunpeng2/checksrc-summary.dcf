@@ -1,0 +1,10 @@
+Package: LEA
+Version: 3.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:LEA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings LEA_3.13.1.tar.gz
+StartedAt: 2023-05-29 20:50:17 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 20:50:30 -0000 (Mon, 29 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: LEA.Rcheck
+Warnings: NA

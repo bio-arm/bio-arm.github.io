@@ -1,0 +1,214 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data topGO
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘topGO/DESCRIPTION’ ... OK
+* preparing ‘topGO’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘topGO.Rnw’ using Sweave
+
+Loading required package: xtable
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call, duplicated, eval,
+    evalq, get, grep, grepl, intersect, is.unsorted, lapply, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, rank, rbind, rownames, sapply,
+    setdiff, sort, table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: graph
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with 'browseVignettes()'. To cite
+    Bioconductor, see 'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: GO.db
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: SparseM
+
+Attaching package: ‘SparseM’
+
+The following object is masked from ‘package:base’:
+
+    backsolve
+
+
+groupGOTerms: 	GOBPTerm, GOMFTerm, GOCCTerm environments built.
+
+Attaching package: ‘topGO’
+
+The following object is masked from ‘package:IRanges’:
+
+    members
+
+Loading required package: org.Hs.eg.db
+
+
+
+Building most specific GOs .....
+Warning in result_fetch(res@ptr, n = n) :
+  SQL statements must be issued with dbExecute() or dbSendStatement() instead of dbGetQuery() or dbSendQuery().
+	( 1667 GO terms found. )
+
+Build GO DAG topology ..........
+	( 4334 GO terms and 9615 relations. )
+
+Annotating nodes ...............
+	( 315 genes annotated to the GO terms. )
+
+			 -- Classic Algorithm -- 
+
+		 the algorithm is scoring 890 nontrivial nodes
+		 parameters: 
+			 test statistic: fisher
+
+			 -- Classic Algorithm -- 
+
+		 the algorithm is scoring 978 nontrivial nodes
+		 parameters: 
+			 test statistic: ks
+			 score order: increasing
+
+			 -- Elim Algorithm -- 
+
+		 the algorithm is scoring 978 nontrivial nodes
+		 parameters: 
+			 test statistic: ks
+			 cutOff: 0.01
+			 score order: increasing
+
+	 Level 15:	1 nodes to be scored	(0 eliminated genes)
+
+	 Level 14:	1 nodes to be scored	(0 eliminated genes)
+
+	 Level 13:	6 nodes to be scored	(0 eliminated genes)
+
+	 Level 12:	15 nodes to be scored	(25 eliminated genes)
+
+	 Level 11:	30 nodes to be scored	(25 eliminated genes)
+
+	 Level 10:	57 nodes to be scored	(36 eliminated genes)
+
+	 Level 9:	87 nodes to be scored	(55 eliminated genes)
+
+	 Level 8:	125 nodes to be scored	(107 eliminated genes)
+
+	 Level 7:	158 nodes to be scored	(131 eliminated genes)
+
+	 Level 6:	168 nodes to be scored	(157 eliminated genes)
+
+	 Level 5:	158 nodes to be scored	(166 eliminated genes)
+
+	 Level 4:	104 nodes to be scored	(200 eliminated genes)
+
+	 Level 3:	51 nodes to be scored	(200 eliminated genes)
+
+	 Level 2:	16 nodes to be scored	(225 eliminated genes)
+
+	 Level 1:	1 nodes to be scored	(225 eliminated genes)
+Loading required package: Rgraphviz
+Loading required package: grid
+
+Attaching package: ‘grid’
+
+The following object is masked from ‘package:topGO’:
+
+    depth
+
+
+Attaching package: ‘Rgraphviz’
+
+The following objects are masked from ‘package:IRanges’:
+
+    from, to
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    from, to
+
+
+Building most specific GOs .....
+	( 109 GO terms found. )
+
+Build GO DAG topology ..........
+	( 226 GO terms and 298 relations. )
+
+Annotating nodes ...............
+	( 86 genes annotated to the GO terms. )
+Loading required package: multtest
+
+Building most specific GOs .....
+	( 7680 GO terms found. )
+
+Build GO DAG topology ..........
+	( 11520 GO terms and 25882 relations. )
+
+Annotating nodes ...............
+	( 3884 genes annotated to the GO terms. )
+
+			 -- Classic Algorithm -- 
+
+		 the algorithm is scoring 4023 nontrivial nodes
+		 parameters: 
+			 test statistic: Fisher test
+
+			 -- Classic Algorithm -- 
+
+		 the algorithm is scoring 5813 nontrivial nodes
+		 parameters: 
+			 test statistic: KS tests
+			 score order: increasing
+
+			 -- Weight Algorithm -- 
+
+		 The algorithm is scoring 4023 nontrivial nodes
+		 parameters: 
+			 test statistic: Fisher test : ratio
+
+	 Level 17:	1 nodes to be scored.
+
+	 Level 16:	7 nodes to be scored.
+
+	 Level 15:	24 nodes to be scored.
+
+	 Level 14:	39 nodes to be scored.
+
+	 Level 13:	86 nodes to be scored.
+
+	 Level 12:	138 nodes to be scored.
+
+	 Level 11:	253 nodes to be scored.
+
+	 Level 10:	404 nodes to be scored.

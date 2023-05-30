@@ -1,0 +1,10 @@
+Package: msPurity
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data msPurity
+StartedAt: 2023-05-29 15:25:04 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 15:36:52 -0000 (Mon, 29 May 2023)
+EllapsedTime: 707.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: msPurity_1.27.0.tar.gz
+PackageFileSize: 11.24 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

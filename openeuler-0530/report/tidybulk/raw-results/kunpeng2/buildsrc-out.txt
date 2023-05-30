@@ -1,0 +1,54 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data tidybulk
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘tidybulk/DESCRIPTION’ ... OK
+* preparing ‘tidybulk’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to process help pages
+* building the PDF package manual
+* creating vignettes ... ERROR
+--- re-building ‘comparison_with_base_R.Rmd’ using knitr
+Warning in file.info(x, extra_cols = FALSE) :
+  expanded path length 17197 would be too long for
+<style type="text/css">
+.r {
+  max-width: 2800px;!important
+  margin-left: auto;
+  margin-right: auto;
+  padding=0px;!important 
+  margin-right=10px;!important 
+}
+pre{
+	padding-left:20px;
+}
+.column-left{
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.column-right{
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+</style>
+ <!-- badges: start -->
+<p><a href="https://www.tidyverse.org/lifecycle/#maturing"><img src="https://img.shields.io/badge/lifecycle-maturing-blue.svg" alt="Lifecycle:maturing" /></a></p>
+  <!-- badges: end -->
+<!---
+
+[![Build Status](https://travis-ci.org/stemangiola/tidybulk.svg?branch=master)](https://travis-ci.org/stemangiola/tidybulk) [![Coverage Status](https://coveralls.io/repos/github/stemangiola/tidybulk/badge.svg?branch=master)](https://coveralls.io/github/stemangiola/tidybulk?branch=master)
+
+-->
+<p>In this article we show some examples of the differences in coding between tidybulk/tidyverse and base R. W [... truncated]
+--- finished re-building ‘comparison_with_base_R.Rmd’
+
+--- re-building ‘introduction.Rmd’ using knitr

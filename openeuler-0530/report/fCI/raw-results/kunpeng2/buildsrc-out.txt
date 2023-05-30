@@ -1,0 +1,26 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data fCI
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘fCI/DESCRIPTION’ ... OK
+* preparing ‘fCI’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘fCI’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+ERROR: lazy loading failed for package ‘fCI’
+* removing ‘/tmp/RtmphjPJEu/Rinst3c4c6916dd063e/fCI’
+      -----------------------------------
+ERROR: package installation failed

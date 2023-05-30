@@ -1,0 +1,10 @@
+Package: GEWIST
+Version: 1.45.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GEWIST
+StartedAt: 2023-05-29 12:56:34 -0000 (Mon, 29 May 2023)
+EndedAt: 2023-05-29 13:00:06 -0000 (Mon, 29 May 2023)
+EllapsedTime: 212.3 seconds
+RetCode: 0
+Status: OK
+PackageFile: GEWIST_1.45.0.tar.gz
+PackageFileSize: 375.7 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

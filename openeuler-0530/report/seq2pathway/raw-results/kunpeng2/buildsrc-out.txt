@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data seq2pathway
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘seq2pathway/DESCRIPTION’ ... OK
+* preparing ‘seq2pathway’:
+* checking DESCRIPTION meta-information ... OK
+* checking whether ‘INDEX’ is up-to-date ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘seq2pathwaypackage.Rnw’ using Sweave
+
+Warning: replacing previous import ‘WGCNA::cor’ by ‘stats::cor’ when loading ‘seq2pathway’
+Error: processing vignette 'seq2pathwaypackage.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'seq2pathwaypackage.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `sidecap.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               {float}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘seq2pathwaypackage.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘seq2pathwaypackage.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
