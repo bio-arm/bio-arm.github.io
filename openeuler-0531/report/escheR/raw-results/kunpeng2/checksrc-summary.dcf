@@ -1,0 +1,10 @@
+Package: escheR
+Version: 1.1.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:escheR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings escheR_1.1.1.tar.gz
+StartedAt: 2023-05-30 23:05:32 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 23:05:45 -0000 (Tue, 30 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: escheR.Rcheck
+Warnings: NA

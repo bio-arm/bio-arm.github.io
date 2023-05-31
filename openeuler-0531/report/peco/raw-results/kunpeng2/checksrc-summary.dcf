@@ -1,0 +1,10 @@
+Package: peco
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:peco.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings peco_1.13.0.tar.gz
+StartedAt: 2023-05-30 23:18:57 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 23:19:16 -0000 (Tue, 30 May 2023)
+EllapsedTime: 19.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: peco.Rcheck
+Warnings: NA

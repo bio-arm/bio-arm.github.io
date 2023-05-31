@@ -1,0 +1,33 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data geva
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘geva/DESCRIPTION’ ... OK
+* preparing ‘geva’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘geva.Rmd’ using rmarkdown
+Warning in Sys.setlocale("LC_TIME", "English_United States") :
+  OS reports request to set locale to "English_United States" cannot be honored
+! LaTeX Error: File `biblatex.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'geva.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/Rtmp69sGZI/Rbuild27d8407d5b65a7/geva/vignettes/geva.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See geva.log for more info.
+--- failed re-building ‘geva.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘geva.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

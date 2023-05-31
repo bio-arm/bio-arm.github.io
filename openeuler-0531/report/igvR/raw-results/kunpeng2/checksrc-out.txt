@@ -1,0 +1,158 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:igvR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings igvR_1.21.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/igvR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘igvR/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘igvR’ version ‘1.21.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘igvR’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is 21.8Mb
+  sub-directories of 1Mb or more:
+    browserCode  14.9Mb
+    extdata       6.3Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking include directives in Makefiles ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... WARNING
+Found ‘inst/doc/makefile’: should be ‘Makefile’ and will be ignored
+* checking running R code from vignettes ...
+  ‘v00.basicIntro.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘v01.stockGenome.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘v02.customGenome.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘v03.ctcfChIP.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘v04.pairedEnd.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘v05.ucscTableBrowser.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘v06.annotationHub.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘v07.gwas.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘v00.basicIntro.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.174   0.027   0.196 
+
+... incomplete output.  Crash?
+when running code in ‘v01.stockGenome.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.177   0.023   0.195 
+
+... incomplete output.  Crash?
+when running code in ‘v02.customGenome.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.168   0.033   0.195 
+
+... incomplete output.  Crash?
+when running code in ‘v03.ctcfChIP.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.166   0.035   0.196 
+
+... incomplete output.  Crash?
+when running code in ‘v04.pairedEnd.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.188   0.020   0.202 
+
+... incomplete output.  Crash?
+when running code in ‘v05.ucscTableBrowser.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.160   0.041   0.196 
+
+... incomplete output.  Crash?
+when running code in ‘v06.annotationHub.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.166   0.031   0.193 
+
+... incomplete output.  Crash?
+when running code in ‘v07.gwas.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.181   0.019   0.195 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+* checking PDF version of manual without index ... ERROR
+* DONE
+
+Status: 2 ERRORs, 2 WARNINGs, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/igvR.Rcheck/00check.log’
+for details.
+

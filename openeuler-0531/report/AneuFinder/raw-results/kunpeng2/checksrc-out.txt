@@ -1,0 +1,106 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AneuFinder.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AneuFinder_1.29.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/AneuFinder.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘AneuFinder/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘AneuFinder’ version ‘1.29.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘AneuFinder’ can be installed ... OK
+* used C++ compiler: ‘g++ (GCC) 10.3.1’
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+Aneufinder: multiple local function definitions for ‘parallel.helper’
+  with different formal arguments
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... NOTE
+Note: information on .o files is not available
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                            user system elapsed
+refineBreakpoints         76.001  0.506  76.695
+simulateReads             70.195  2.950  74.081
+heatmapAneuploidies       64.241  0.255  64.644
+correctGC                 37.951  3.293  41.858
+plotHeterogeneity         40.849  0.208  41.148
+heatmapGenomewideClusters 37.293  0.123  37.500
+karyotypeMeasures         31.519  0.068  31.658
+heatmapGenomewide         31.273  0.084  31.504
+annotateBreakpoints       20.738  0.719  22.062
+getBreakpoints            16.760  0.112  16.909
+consensusSegments         11.817  0.036  11.881
+getSCEcoordinates          8.636  0.515   9.574
+subsetByCNVprofile         7.879  0.119   8.029
+findCNVs.strandseq         6.926  0.063   7.004
+variableWidthBins          6.317  0.064   6.397
+loadFromFiles              6.287  0.012   6.314
+findCNVs                   5.538  0.172   5.722
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘AneuFinder.Rnw’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 2 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/AneuFinder.Rcheck/00check.log’
+for details.
+
+

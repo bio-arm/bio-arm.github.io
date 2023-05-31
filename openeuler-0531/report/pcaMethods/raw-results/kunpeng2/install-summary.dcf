@@ -1,0 +1,8 @@
+Package: pcaMethods
+Version: 1.93.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL pcaMethods
+StartedAt: 2023-05-30 13:08:11 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:08:36 -0000 (Tue, 30 May 2023)
+EllapsedTime: 24.8 seconds
+RetCode: 0
+Status: OK

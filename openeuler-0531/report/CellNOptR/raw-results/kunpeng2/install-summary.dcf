@@ -1,0 +1,8 @@
+Package: CellNOptR
+Version: 1.47.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL CellNOptR
+StartedAt: 2023-05-30 13:33:13 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:33:34 -0000 (Tue, 30 May 2023)
+EllapsedTime: 20.7 seconds
+RetCode: 0
+Status: OK

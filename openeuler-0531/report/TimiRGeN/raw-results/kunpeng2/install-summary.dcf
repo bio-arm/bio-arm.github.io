@@ -1,0 +1,8 @@
+Package: TimiRGeN
+Version: 1.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL TimiRGeN
+StartedAt: 2023-05-30 13:45:52 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:46:50 -0000 (Tue, 30 May 2023)
+EllapsedTime: 57.9 seconds
+RetCode: 0
+Status: OK

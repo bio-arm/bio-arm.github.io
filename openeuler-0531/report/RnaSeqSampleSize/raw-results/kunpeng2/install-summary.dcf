@@ -1,0 +1,8 @@
+Package: RnaSeqSampleSize
+Version: 2.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL RnaSeqSampleSize
+StartedAt: 2023-05-30 13:56:53 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:58:18 -0000 (Tue, 30 May 2023)
+EllapsedTime: 85.6 seconds
+RetCode: 0
+Status: OK

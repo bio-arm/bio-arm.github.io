@@ -1,0 +1,8 @@
+Package: qrqc
+Version: 1.55.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL qrqc
+StartedAt: 2023-05-30 13:41:28 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:41:29 -0000 (Tue, 30 May 2023)
+EllapsedTime: 1.0 seconds
+RetCode: 1
+Status: ERROR

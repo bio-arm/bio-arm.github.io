@@ -1,0 +1,32 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data qckitfastq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘qckitfastq/DESCRIPTION’ ... OK
+* preparing ‘qckitfastq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette-qckitfastq.Rmd’ using rmarkdown
+! LaTeX Error: File `tabu.sty' not found.
+
+! Emergency stop.
+<read *> 
+
+Error: processing vignette 'vignette-qckitfastq.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmphCUwsw/Rbuild2c5126411e8d7/qckitfastq/vignettes/vignette-qckitfastq.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See vignette-qckitfastq.log for more info.
+--- failed re-building ‘vignette-qckitfastq.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘vignette-qckitfastq.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

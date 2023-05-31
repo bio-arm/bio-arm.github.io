@@ -1,0 +1,10 @@
+Package: scmap
+Version: 1.23.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scmap
+StartedAt: 2023-05-30 19:57:33 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 19:58:56 -0000 (Tue, 30 May 2023)
+EllapsedTime: 83.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: scmap_1.23.3.tar.gz
+PackageFileSize: 2.214 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

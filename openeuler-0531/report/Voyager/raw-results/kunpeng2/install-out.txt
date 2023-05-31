@@ -1,0 +1,14 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL Voyager
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+ERROR: dependencies ‘SpatialFeatureExperiment’, ‘spdep’ are not available for package ‘Voyager’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/Voyager’

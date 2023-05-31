@@ -1,0 +1,70 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL flowCore
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘flowCore’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c FastLogicle.cpp -o FastLogicle.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c Hyperlog.cpp -o Hyperlog.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c Logicle.cpp -o Logicle.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c biexponential.cpp -o biexponential.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c convertRawBytes.cpp -o convertRawBytes.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c fcsTextParse.cpp -o fcsTextParse.o
+In file included from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/bind/mem_fn.hpp:25,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/mem_fn.hpp:22,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/function/detail/prologue.hpp:18,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/function.hpp:30,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/detail/find_iterator.hpp:18,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/find_iterator.hpp:24,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/iter_find.hpp:27,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/split.hpp:16,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string.hpp:23,
+                 from fcsTextParse.cpp:9:
+/home/biocbuild/R/R-4.3.0/library/BH/include/boost/get_pointer.hpp:48:40: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   48 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from /usr/include/c++/10.3.1/bits/locale_conv.h:41,
+                 from /usr/include/c++/10.3.1/locale:43,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/classification.hpp:15,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/trim.hpp:23,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string.hpp:19,
+                 from fcsTextParse.cpp:9:
+/usr/include/c++/10.3.1/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c hyperlogTransform.cpp -o hyperlogTransform.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c inPolygon.cpp -o inPolygon.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c inPolytope.cpp -o inPolytope.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c logicleTransform.cpp -o logicleTransform.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c poly_centroid.cpp -o poly_centroid.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c sortBytes.cpp -o sortBytes.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c uint2double.cpp -o uint2double.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/cytolib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include' -I/usr/local/include    -fPIC  -g -O2  -c zeroin.cpp -o zeroin.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o flowCore.so FastLogicle.o Hyperlog.o Logicle.o biexponential.o convertRawBytes.o cpp11.o fcsTextParse.o hyperlogTransform.o inPolygon.o inPolytope.o logicleTransform.o poly_centroid.o sortBytes.o uint2double.o zeroin.o /home/biocbuild/R/R-4.3.0/site-library/cytolib/lib/libcytolib.a -L/home/biocbuild/R/R-4.3.0/lib -lR
+if [ `uname -s` = 'Darwin' ]; then install_name_tool -change /usr/local/clang4/lib/libc++.1.dylib /usr/lib/libc++.1.dylib flowCore.so; fi
+installing to /home/biocbuild/R/R-4.3.0/site-library/00LOCK-flowCore/00new/flowCore/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (flowCore)

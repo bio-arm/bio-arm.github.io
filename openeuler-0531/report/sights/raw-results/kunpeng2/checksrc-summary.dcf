@@ -1,0 +1,10 @@
+Package: sights
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:sights.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings sights_1.27.0.tar.gz
+StartedAt: 2023-05-30 23:25:21 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 23:25:34 -0000 (Tue, 30 May 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: sights.Rcheck
+Warnings: NA

@@ -1,0 +1,8 @@
+Package: rfaRm
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL rfaRm
+StartedAt: 2023-05-30 13:51:41 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:53:55 -0000 (Tue, 30 May 2023)
+EllapsedTime: 134.3 seconds
+RetCode: 1
+Status: ERROR

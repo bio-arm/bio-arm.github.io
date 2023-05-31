@@ -1,0 +1,61 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rBiopaxParser
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rBiopaxParser/DESCRIPTION’ ... OK
+* preparing ‘rBiopaxParser’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘rBiopaxParserVignette.Rnw’ using Sweave
+Loading required package: data.table
+Added protein with ID: proteinid_A
+Added physicalEntityParticipant with ID: PEPid_A
+Added BiochemicalReaction with ID: BCRid_A
+Added protein with ID: proteinid_B
+Added physicalEntityParticipant with ID: PEPid_B
+Added BiochemicalReaction with ID: BCRid_B
+Added protein with ID: proteinid_C
+Added physicalEntityParticipant with ID: PEPid_C
+Added BiochemicalReaction with ID: BCRid_C
+Added protein with ID: proteinid_D
+Added physicalEntityParticipant with ID: PEPid_D
+Added BiochemicalReaction with ID: BCRid_D
+Added protein with ID: proteinid_E
+Added physicalEntityParticipant with ID: PEPid_E
+Added BiochemicalReaction with ID: BCRid_E
+Added Control with ID: control_1
+Added Control with ID: control_2
+Added Control with ID: control_3
+Added Control with ID: control_4
+Added Pathway with ID: pwid1
+Added Pathway with ID: pwid2
+Added Pathway with ID: pwid3
+Error: processing vignette 'rBiopaxParserVignette.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'rBiopaxParserVignette.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `tocloft.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.10 \usepackage
+                {hyperref}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘rBiopaxParserVignette.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘rBiopaxParserVignette.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

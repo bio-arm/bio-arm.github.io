@@ -1,0 +1,10 @@
+Package: CNORdt
+Version: 1.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CNORdt.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CNORdt_1.43.0.tar.gz
+StartedAt: 2023-05-30 23:00:42 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 23:00:53 -0000 (Tue, 30 May 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: CNORdt.Rcheck
+Warnings: NA

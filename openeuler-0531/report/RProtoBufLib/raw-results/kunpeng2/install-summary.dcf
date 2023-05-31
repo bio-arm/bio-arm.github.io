@@ -1,0 +1,8 @@
+Package: RProtoBufLib
+Version: 2.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL RProtoBufLib
+StartedAt: 2023-05-30 13:03:57 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:11:06 -0000 (Tue, 30 May 2023)
+EllapsedTime: 428.6 seconds
+RetCode: 0
+Status: OK

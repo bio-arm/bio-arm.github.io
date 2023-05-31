@@ -1,0 +1,136 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:beer.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings beer_1.5.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/beer.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘beer/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘beer’ version ‘1.5.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘beer’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+           user system elapsed
+brew     37.755  1.777  61.299
+beadsRR  20.045  2.496   9.643
+runEdgeR  6.184  1.447  23.350
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘spelling.R’
+  Running ‘testthat.R’
+ ERROR
+Running the tests in ‘tests/testthat.R’ failed.
+Last 13 lines of output:
+  Error in saveRDS(jags_run, file.path(tmp.dir, paste0(sample, ".rds"))): error writing to connection
+  
+  Backtrace:
+      ▆
+   1. └─beer::brew(sim_data, beadsRR = TRUE) at test-plotHelpers.R:53:4
+   2.   ├─progressr::with_progress(...)
+   3.   └─beer::beadsRR(...)
+   4.     └─beer:::.beadsRRBeer(object, BPPARAM = BPPARAM, ...)
+   5.       ├─BiocParallel::bplapply(...)
+   6.       └─BiocParallel::bplapply(...)
+   7.         └─BiocParallel:::.bpinit(...)
+  
+  [ FAIL 1 | WARN 0 | SKIP 3 | PASS 61 ]
+  Error: Test failures
+  Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘beer.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+  ...
+--- re-building ‘beer.Rmd’ using rmarkdown
+
+Quitting from lines 127-138 [beer] (beer.Rmd)
+Error: processing vignette 'beer.Rmd' failed with diagnostics:
+BiocParallel errors
+  3 remote errors, element index: 1, 3, 5
+  3 unevaluated and other errors
+  first remote error:
+Error in saveRDS(jags_run, file.path(tmp.dir, paste0(sample, ".rds"))): error writing to connection
+
+--- failed re-building ‘beer.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘beer.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 3 ERRORs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/beer.Rcheck/00check.log’
+for details.
+

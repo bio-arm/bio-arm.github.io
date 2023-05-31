@@ -1,0 +1,8 @@
+Package: yarn
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL yarn
+StartedAt: 2023-05-30 13:56:21 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:57:25 -0000 (Tue, 30 May 2023)
+EllapsedTime: 63.7 seconds
+RetCode: 0
+Status: OK

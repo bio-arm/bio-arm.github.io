@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data gemma.R
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘gemma.R/DESCRIPTION’ ... OK
+* preparing ‘gemma.R’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘gemma.R.Rmd’ using rmarkdown
+
+Quitting from lines 90-99 [unnamed-chunk-3] (gemma.R.Rmd)
+Error: processing vignette 'gemma.R.Rmd' failed with diagnostics:
+error in evaluating the argument 'x' in selecting a method for function 'head': `select()` doesn't handle lists.
+--- failed re-building ‘gemma.R.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘gemma.R.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

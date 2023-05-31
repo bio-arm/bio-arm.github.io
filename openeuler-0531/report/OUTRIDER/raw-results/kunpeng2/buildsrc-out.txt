@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data OUTRIDER
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘OUTRIDER/DESCRIPTION’ ... OK
+* preparing ‘OUTRIDER’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘OUTRIDER.Rnw’ using knitr
+Error: processing vignette 'OUTRIDER.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'OUTRIDER.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `tocbibind.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.43 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘OUTRIDER.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘OUTRIDER.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

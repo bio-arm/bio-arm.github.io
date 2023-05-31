@@ -1,0 +1,8 @@
+Package: planttfhunter
+Version: 1.1.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL planttfhunter
+StartedAt: 2023-05-30 13:13:59 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:14:36 -0000 (Tue, 30 May 2023)
+EllapsedTime: 36.7 seconds
+RetCode: 0
+Status: OK

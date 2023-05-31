@@ -1,0 +1,10 @@
+Package: fgsea
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data fgsea
+StartedAt: 2023-05-30 16:36:36 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 16:51:33 -0000 (Tue, 30 May 2023)
+EllapsedTime: 897.6 seconds
+RetCode: 0
+Status: OK
+PackageFile: fgsea_1.27.0.tar.gz
+PackageFileSize: 4.779 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

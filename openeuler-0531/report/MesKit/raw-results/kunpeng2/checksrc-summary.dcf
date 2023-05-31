@@ -1,0 +1,10 @@
+Package: MesKit
+Version: 1.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MesKit.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MesKit_1.11.0.tar.gz
+StartedAt: 2023-05-30 23:13:35 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 23:13:51 -0000 (Tue, 30 May 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MesKit.Rcheck
+Warnings: NA

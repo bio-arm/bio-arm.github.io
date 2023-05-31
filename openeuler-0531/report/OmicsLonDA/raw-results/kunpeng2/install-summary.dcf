@@ -1,0 +1,8 @@
+Package: OmicsLonDA
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL OmicsLonDA
+StartedAt: 2023-05-30 13:19:43 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:20:04 -0000 (Tue, 30 May 2023)
+EllapsedTime: 21.0 seconds
+RetCode: 1
+Status: ERROR

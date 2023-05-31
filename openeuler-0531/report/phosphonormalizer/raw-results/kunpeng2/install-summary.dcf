@@ -1,0 +1,8 @@
+Package: phosphonormalizer
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL phosphonormalizer
+StartedAt: 2023-05-30 13:07:18 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:07:38 -0000 (Tue, 30 May 2023)
+EllapsedTime: 20.0 seconds
+RetCode: 0
+Status: OK

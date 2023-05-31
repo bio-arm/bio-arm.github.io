@@ -1,0 +1,10 @@
+Package: Dino
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Dino.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Dino_1.7.0.tar.gz
+StartedAt: 2023-05-30 23:03:56 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 23:04:11 -0000 (Tue, 30 May 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: Dino.Rcheck
+Warnings: NA

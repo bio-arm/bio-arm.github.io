@@ -1,0 +1,10 @@
+Package: OncoSimulR
+Version: 4.3.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data OncoSimulR
+StartedAt: 2023-05-30 18:42:40 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 18:50:08 -0000 (Tue, 30 May 2023)
+EllapsedTime: 447.8 seconds
+RetCode: 0
+Status: OK
+PackageFile: OncoSimulR_4.3.0.tar.gz
+PackageFileSize: 7.35 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

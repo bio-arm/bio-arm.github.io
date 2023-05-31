@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CNVrd2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CNVrd2/DESCRIPTION’ ... OK
+* preparing ‘CNVrd2’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘CNVrd2.Rnw’ using knitr
+[W::bcf_hdr_check_sanity] GL should be declared as Number=G
+Error: processing vignette 'CNVrd2.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'CNVrd2.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `relsize.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.60 \usepackage
+                {listings}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘CNVrd2.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘CNVrd2.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data hierinf
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘hierinf/DESCRIPTION’ ... OK
+* preparing ‘hierinf’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘vignette-hierinf.Rnw’ using knitr
+Error: processing vignette 'vignette-hierinf.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'vignette-hierinf.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `epic.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.59 \usepackage
+                {natbib}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘vignette-hierinf.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘vignette-hierinf.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

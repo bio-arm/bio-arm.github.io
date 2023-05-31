@@ -1,0 +1,10 @@
+Package: clippda
+Version: 1.51.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data clippda
+StartedAt: 2023-05-30 15:27:07 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 15:28:55 -0000 (Tue, 30 May 2023)
+EllapsedTime: 108.2 seconds
+RetCode: 0
+Status: OK
+PackageFile: clippda_1.51.0.tar.gz
+PackageFileSize: 1.479 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

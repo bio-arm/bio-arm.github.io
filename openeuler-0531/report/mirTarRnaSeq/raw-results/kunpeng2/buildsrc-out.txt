@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data mirTarRnaSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘mirTarRnaSeq/DESCRIPTION’ ... OK
+* preparing ‘mirTarRnaSeq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘mirTarRnaSeq.Rmd’ using rmarkdown
+! LaTeX Error: Command \textasciigrave unavailable in encoding T1.
+
+Error: processing vignette 'mirTarRnaSeq.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpzA1fL4/Rbuild2a189939e5faab/mirTarRnaSeq/vignettes/mirTarRnaSeq.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See mirTarRnaSeq.log for more info.
+--- failed re-building ‘mirTarRnaSeq.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘mirTarRnaSeq.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,71 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data projectR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘projectR/DESCRIPTION’ ... OK
+* preparing ‘projectR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘projectR.Rmd’ using rmarkdown
+trying URL 'https://cloud.r-project.org/src/contrib/countrycode_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 518837 bytes (506 KB)
+==================================================
+downloaded 506 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ontologyIndex_2.11.tar.gz'
+Content type 'application/x-gzip' length 1540904 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+* installing *source* package ‘countrycode’ ...
+** package ‘countrycode’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (countrycode)
+* installing *source* package ‘ontologyIndex’ ...
+** package ‘ontologyIndex’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ontologyIndex)
+
+The downloaded source packages are in
+	'/tmp/RtmpyicomI/downloaded_packages'
+
+Quitting from lines 21-26 [unnamed-chunk-1] (projectR.Rmd)
+Error: processing vignette 'projectR.Rmd' failed with diagnostics:
+error in running command
+--- failed re-building ‘projectR.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘projectR.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

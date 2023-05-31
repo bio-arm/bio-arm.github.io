@@ -1,0 +1,8 @@
+Package: derfinder
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL derfinder
+StartedAt: 2023-05-30 13:36:04 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 13:37:06 -0000 (Tue, 30 May 2023)
+EllapsedTime: 62.5 seconds
+RetCode: 0
+Status: OK

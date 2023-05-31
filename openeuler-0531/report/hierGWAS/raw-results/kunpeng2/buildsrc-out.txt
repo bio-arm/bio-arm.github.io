@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data hierGWAS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘hierGWAS/DESCRIPTION’ ... OK
+* preparing ‘hierGWAS’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘hierGWAS.Rnw’ using Sweave
+Testing the global null hypothesis..
+The global null hypothesis was rejected
+Testing a subset..
+The null hypothesis of the subset was rejected
+Testing the hierarchy of the subset..
+Tested a group with 500 SNPs.
+The group is significant.
+Testing the children of the group:
+Child 1 with 224 SNPs and child 2 with 276
+Error: processing vignette 'hierGWAS.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'hierGWAS.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `tocbibind.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.14 ^^M
+        
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘hierGWAS.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘hierGWAS.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

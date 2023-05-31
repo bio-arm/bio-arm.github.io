@@ -1,0 +1,10 @@
+Package: TADCompare
+Version: 1.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TADCompare.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TADCompare_1.11.0.tar.gz
+StartedAt: 2023-05-30 23:27:53 -0000 (Tue, 30 May 2023)
+EndedAt: 2023-05-30 23:28:09 -0000 (Tue, 30 May 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TADCompare.Rcheck
+Warnings: NA
