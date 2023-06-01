@@ -1,0 +1,26 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL Voyager
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘Voyager’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+Error in dyn.load(file, DLLpath = DLLpath, ...) : 
+  unable to load shared object '/home/biocbuild/R/R-4.3.0/site-library/units/libs/units.so':
+  libudunits2.so: cannot open shared object file: No such file or directory
+Calls: <Anonymous> ... asNamespace -> loadNamespace -> library.dynam -> dyn.load
+Execution halted
+ERROR: lazy loading failed for package ‘Voyager’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/Voyager’
+* restoring previous ‘/home/biocbuild/R/R-4.3.0/site-library/Voyager’

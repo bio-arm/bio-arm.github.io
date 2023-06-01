@@ -1,0 +1,102 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ATACseqQC.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ATACseqQC_1.25.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/ATACseqQC.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘ATACseqQC/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘ATACseqQC’ version ‘1.25.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘ATACseqQC’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is 12.4Mb
+  sub-directories of 1Mb or more:
+    extdata  12.1Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... ERROR
+Loading this package had a fatal error status code 1
+Loading log:
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Error: package or namespace load failed for ‘ATACseqQC’:
+ .onLoad failed in loadNamespace() for 'HDF5Array', details:
+  call: .read_counter(locked_path)
+  error: length(counter) == 1L is not TRUE
+In addition: Warning messages:
+1: In close.connection(con) :
+  Problem closing connection:  No space left on device
+2: In close.connection(con) :
+  Problem closing connection:  No space left on device
+Execution halted
+* DONE
+
+Status: 1 ERROR, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/ATACseqQC.Rcheck/00check.log’
+for details.
+

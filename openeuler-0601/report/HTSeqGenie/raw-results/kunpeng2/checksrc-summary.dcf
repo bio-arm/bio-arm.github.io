@@ -1,0 +1,10 @@
+Package: HTSeqGenie
+Version: 4.31.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HTSeqGenie.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HTSeqGenie_4.31.0.tar.gz
+StartedAt: 2023-06-01 02:34:47 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:35:03 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: HTSeqGenie.Rcheck
+Warnings: NA

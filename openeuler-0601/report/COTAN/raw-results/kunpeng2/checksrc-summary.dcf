@@ -1,0 +1,10 @@
+Package: COTAN
+Version: 2.1.4
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:COTAN.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings COTAN_2.1.4.tar.gz
+StartedAt: 2023-06-01 02:24:16 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:24:30 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: COTAN.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: MantelCorr
+Version: 1.71.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MantelCorr.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MantelCorr_1.71.0.tar.gz
+StartedAt: 2023-06-01 02:37:47 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:37:59 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MantelCorr.Rcheck
+Warnings: NA

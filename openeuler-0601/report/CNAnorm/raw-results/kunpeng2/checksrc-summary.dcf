@@ -1,0 +1,10 @@
+Package: CNAnorm
+Version: 1.47.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CNAnorm.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CNAnorm_1.47.1.tar.gz
+StartedAt: 2023-06-01 02:22:44 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:22:57 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 13.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: CNAnorm.Rcheck
+Warnings: NA

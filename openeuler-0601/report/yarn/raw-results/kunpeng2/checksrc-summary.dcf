@@ -1,0 +1,10 @@
+Package: yarn
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:yarn.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings yarn_1.27.0.tar.gz
+StartedAt: 2023-06-01 02:55:42 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:55:53 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 10.7 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: yarn.Rcheck
+Warnings: NA

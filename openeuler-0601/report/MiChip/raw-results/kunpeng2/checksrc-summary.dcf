@@ -1,0 +1,10 @@
+Package: MiChip
+Version: 1.55.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MiChip.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MiChip_1.55.0.tar.gz
+StartedAt: 2023-06-01 02:39:29 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:39:41 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MiChip.Rcheck
+Warnings: NA

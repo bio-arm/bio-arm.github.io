@@ -1,0 +1,10 @@
+Package: GeomxTools
+Version: 3.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GeomxTools.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GeomxTools_3.5.0.tar.gz
+StartedAt: 2023-06-01 02:32:20 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:32:34 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GeomxTools.Rcheck
+Warnings: NA

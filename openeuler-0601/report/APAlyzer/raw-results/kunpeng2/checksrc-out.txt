@@ -1,0 +1,236 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:APAlyzer.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings APAlyzer_1.15.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/APAlyzer.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘APAlyzer/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘APAlyzer’ version ‘1.15.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+  .travis.yml
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘APAlyzer’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... NOTE
+File
+  LICENSE
+is not mentioned in the DESCRIPTION file.
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... WARNING
+'library' or 'require' call not declared from: ‘HybridMTest’
+'library' or 'require' call to ‘HybridMTest’ in package code.
+  Please use :: or requireNamespace() instead.
+  See section 'Suggested packages' in the 'Writing R Extensions' manual.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+.GTF2LE: no visible binding for global variable ‘group_name’
+.GTF2refUTRraw: no visible binding for global variable ‘GENEID’
+.annotatePASRegion: no visible global function definition for
+  ‘queryHits’
+APABox: no visible binding for global variable ‘APAreg’
+APABox: no visible binding for global variable ‘RED’
+APAVolcano: no visible binding for global variable ‘APAreg’
+APAVolcano: no visible binding for global variable ‘color’
+PASEXP_IPA: no visible global function definition for ‘Print’
+ThreeMostPairBam: no visible global function definition for ‘Print’
+download_testbam: no visible global function definition for
+  ‘download.file’
+Undefined global functions or variables:
+  APAreg GENEID Print RED color download.file group_name queryHits
+Consider adding
+  importFrom("utils", "download.file")
+to your NAMESPACE file.
+* checking Rd files ... NOTE
+prepare_Rd: download_testbam.Rd:7-8: Dropping empty section \arguments
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘APAlyzer-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: PASEXP_3UTR
+> ### Title: PASEXP_3UTR, calculate relative expression of aUTR and cUTR
+> ###   regions
+> ### Aliases: PASEXP_3UTR
+> 
+> ### ** Examples
+> 
+> ## count reads mapped to 3'UTR APA regions and
+> ## calculate relative expression of aUTR and cUTR regions
+> ## using forward sequencing
+>     library("TBX20BamSubset")
+Loading required package: Rsamtools
+Loading required package: GenomeInfoDb
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+>     library("Rsamtools")
+>     library("GenomicAlignments")
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+> 	library("repmis")
+>     flsall = getBamFileList()
+> 	URL="https://github.com/RJWANGbioinfo/PAS_reference_RData/blob/master/"
+> 	file="mm9_REF.RData"
+> 	source_data(paste0(URL,file,"?raw=True"))
+Downloading data from: https://github.com/RJWANGbioinfo/PAS_reference_RData/blob/master/mm9_REF.RData?raw=True 
+
+Warning in writeBin(content(request, type = "raw"), temp_file) :
+  problem writing to connection
+SHA-1 hash of the downloaded data file is:
+da39a3ee5e6b4b0d3255bfef95601890afd80709
+Error in load(data, envir = envir, ...) : empty (zero-byte) input file
+Calls: source_data -> load
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘APAlyzer.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘APAlyzer.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.174   0.030   0.199 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+* checking PDF version of manual without index ... ERROR
+* DONE
+
+Status: 3 ERRORs, 2 WARNINGs, 4 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/APAlyzer.Rcheck/00check.log’
+for details.
+

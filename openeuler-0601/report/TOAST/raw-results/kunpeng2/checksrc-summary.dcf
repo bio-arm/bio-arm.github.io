@@ -1,0 +1,10 @@
+Package: TOAST
+Version: 1.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TOAST.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TOAST_1.15.0.tar.gz
+StartedAt: 2023-06-01 02:53:58 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:54:10 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TOAST.Rcheck
+Warnings: NA

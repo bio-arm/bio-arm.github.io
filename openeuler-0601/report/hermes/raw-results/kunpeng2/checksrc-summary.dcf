@@ -1,0 +1,10 @@
+Package: hermes
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:hermes.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings hermes_1.5.0.tar.gz
+StartedAt: 2023-06-01 02:34:11 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:34:30 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 19.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: hermes.Rcheck
+Warnings: NA

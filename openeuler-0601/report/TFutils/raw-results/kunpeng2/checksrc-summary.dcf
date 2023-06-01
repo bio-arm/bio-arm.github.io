@@ -1,0 +1,10 @@
+Package: TFutils
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TFutils.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TFutils_1.21.0.tar.gz
+StartedAt: 2023-06-01 02:53:42 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:53:55 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TFutils.Rcheck
+Warnings: NA

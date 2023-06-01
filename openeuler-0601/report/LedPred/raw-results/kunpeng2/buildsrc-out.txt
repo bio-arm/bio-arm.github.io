@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data LedPred
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘LedPred/DESCRIPTION’ ... OK
+* preparing ‘LedPred’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘LedPred.Rnw’ using Sweave
+Loading required package: e1071
+The legacy packages maptools, rgdal, and rgeos, underpinning this package
+will retire shortly. Please refer to R-spatial evolution reports on
+https://r-spatial.org/r/2023/05/15/evolution4.html for details.
+This package is now running under evolution status 0 
+Error: processing vignette 'LedPred.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'LedPred.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `todonotes.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.11 \usepackage
+                {listings}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘LedPred.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘LedPred.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

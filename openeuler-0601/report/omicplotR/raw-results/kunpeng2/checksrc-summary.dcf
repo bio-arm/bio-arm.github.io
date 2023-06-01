@@ -1,0 +1,10 @@
+Package: omicplotR
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:omicplotR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings omicplotR_1.21.0.tar.gz
+StartedAt: 2023-06-01 02:42:56 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:43:12 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: omicplotR.Rcheck
+Warnings: NA

@@ -1,0 +1,8 @@
+Package: MsCoreUtils
+Version: 1.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL MsCoreUtils
+StartedAt: 2023-05-31 17:02:46 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-05-31 17:04:12 -0000 (Wed, 31 May 2023)
+EllapsedTime: 85.6 seconds
+RetCode: 0
+Status: OK

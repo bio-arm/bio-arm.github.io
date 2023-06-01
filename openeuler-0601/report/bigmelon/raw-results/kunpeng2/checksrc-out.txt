@@ -1,0 +1,282 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:bigmelon.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings bigmelon_1.27.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/bigmelon.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘bigmelon/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘bigmelon’ version ‘1.27.0’
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘bigmelon’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Package listed in more than one of Depends, Imports, Suggests, Enhances:
+  ‘BiocGenerics’
+A package should be listed in only one of these fields.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... NOTE
+Problems with news in ‘NEWS’:
+  Cannot process chunk/lines:
+    1.1.14 Added gdsfmt method for estimating Cell Counts, added an experimental normalisation methodology, which involves storing raw intensities as ranks and performing re-ranking steps down-stream with computed quantiles. 
+  Cannot process chunk/lines:
+    0.99.4  Commit to Github from svn
+  Cannot process chunk/lines:
+    0.1.2	app2gds simple data appending function
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘bigmelon-Ex.R’ failed
+The error occurred in:
+
+
+R version 4.3.0 (2023-04-21) -- "Already Tomorrow"
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> pkgname <- "bigmelon"
+> source(file.path(R.home("share"), "R", "examples-header.R"))
+> options(warn = 1)
+> base::assign(".ExTimings", "bigmelon-Ex.timings", pos = 'CheckExEnv')
+> base::cat("name\tuser\tsystem\telapsed\n", file=base::get(".ExTimings", pos = 'CheckExEnv'))
+> base::assign(".format_ptime",
++ function(x) {
++   if(!is.na(x[4L])) x[1L] <- x[1L] + x[4L]
++   if(!is.na(x[5L])) x[2L] <- x[2L] + x[5L]
++   options(OutDec = '.')
++   format(x[1L:3L], digits = 7L)
++ },
++ pos = 'CheckExEnv')
+> 
+> ### * </HEADER>
+> library('bigmelon')
+Loading required package: wateRmelon
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: limma
+
+Attaching package: ‘limma’
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    plotMA
+
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: methylumi
+Loading required package: scales
+Loading required package: reshape2
+Loading required package: ggplot2
+Loading required package: FDb.InfiniumMethylation.hg19
+Loading required package: GenomicFeatures
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: AnnotationDbi
+Loading required package: TxDb.Hsapiens.UCSC.hg19.knownGene
+Loading required package: org.Hs.eg.db
+
+Loading required package: minfi
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+The following object is masked from ‘package:Biobase’:
+
+    rowMedians
+
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: bumphunter
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Loading required package: locfit
+locfit 1.5-9.7 	 2023-01-02
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error: package or namespace load failed for ‘minfi’:
+ .onLoad failed in loadNamespace() for 'HDF5Array', details:
+  call: .read_counter(locked_path)
+  error: length(counter) == 1L is not TRUE
+Error: package ‘minfi’ could not be loaded
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘bigmelon.Rnw’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘bigmelon.Rnw’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.167   0.039   0.201 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 3 ERRORs, 2 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/bigmelon.Rcheck/00check.log’
+for details.
+

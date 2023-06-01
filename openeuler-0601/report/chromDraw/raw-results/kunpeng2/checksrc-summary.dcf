@@ -1,0 +1,10 @@
+Package: chromDraw
+Version: 2.31.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:chromDraw.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings chromDraw_2.31.0.tar.gz
+StartedAt: 2023-06-01 02:21:55 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:22:04 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 9.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: chromDraw.Rcheck
+Warnings: NA

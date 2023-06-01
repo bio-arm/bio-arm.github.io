@@ -1,0 +1,10 @@
+Package: vbmp
+Version: 1.69.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:vbmp.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings vbmp_1.69.0.tar.gz
+StartedAt: 2023-06-01 02:55:09 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:55:20 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: vbmp.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: PureCN
+Version: 2.7.5
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:PureCN.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings PureCN_2.7.5.tar.gz
+StartedAt: 2023-06-01 02:45:42 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:46:02 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 20.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: PureCN.Rcheck
+Warnings: NA

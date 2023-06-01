@@ -1,0 +1,10 @@
+Package: BiocWorkflowTools
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BiocWorkflowTools.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BiocWorkflowTools_1.27.0.tar.gz
+StartedAt: 2023-06-01 02:18:39 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:18:52 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: BiocWorkflowTools.Rcheck
+Warnings: NA

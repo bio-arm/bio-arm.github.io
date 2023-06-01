@@ -1,0 +1,10 @@
+Package: flowCHIC
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:flowCHIC.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings flowCHIC_1.35.0.tar.gz
+StartedAt: 2023-06-01 02:30:12 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:30:27 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: flowCHIC.Rcheck
+Warnings: NA

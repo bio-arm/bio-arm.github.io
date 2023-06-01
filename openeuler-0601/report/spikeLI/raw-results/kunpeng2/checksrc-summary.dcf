@@ -1,0 +1,10 @@
+Package: spikeLI
+Version: 2.61.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:spikeLI.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings spikeLI_2.61.0.tar.gz
+StartedAt: 2023-06-01 02:52:17 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:52:30 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: spikeLI.Rcheck
+Warnings: NA

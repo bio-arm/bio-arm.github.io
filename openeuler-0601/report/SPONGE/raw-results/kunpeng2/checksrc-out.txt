@@ -1,0 +1,322 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:SPONGE.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings SPONGE_1.23.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/SPONGE.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘SPONGE/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘SPONGE’ version ‘1.23.0’
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .idea
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... WARNING
+Found the following files with non-portable file names:
+  spongEffects_logo/Endprodukt_Schrift rechts.png
+  spongEffects_logo/Endprodukt_Schrift unten.png
+  spongEffects_logo/SpongEffekt_Endprodukt_Logo alleinstehend.png
+These are not fully portable file names.
+See section ‘Package structure’ in the ‘Writing R Extensions’ manual.
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘SPONGE’ can be installed ... WARNING
+Found the following significant warnings:
+  Note: next used in wrong context: no loop is visible 
+  Warning: replacing previous import ‘biomaRt::select’ by ‘dplyr::select’ when loading ‘SPONGE’
+  Warning: replacing previous import ‘Biobase::combine’ by ‘dplyr::combine’ when loading ‘SPONGE’
+  Warning: replacing previous import ‘cvms::font’ by ‘ggpubr::font’ when loading ‘SPONGE’
+  Warning: replacing previous import ‘ggplot2::margin’ by ‘randomForest::margin’ when loading ‘SPONGE’
+  Warning: replacing previous import ‘dplyr::combine’ by ‘randomForest::combine’ when loading ‘SPONGE’
+  Warning: replacing previous import ‘Biobase::exprs’ by ‘rlang::exprs’ when loading ‘SPONGE’
+  Warning: replacing previous import ‘rlang::exprs’ by ‘Biobase::exprs’ when loading ‘SPONGE’
+See ‘/home/biocbuild/bbs-3.18-bioc/meat/SPONGE.Rcheck/00install.out’ for details.
+Information on the location(s) of code generating the ‘Note’s can be
+obtained by re-running with environment variable R_KEEP_PKG_SOURCE set
+to ‘yes’.
+* checking installed package size ... NOTE
+  installed size is  8.0Mb
+  sub-directories of 1Mb or more:
+    data   7.7Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Authors@R field gives persons with no role:
+  Fabio Boniolo
+  Azim Dehghani Amirabad
+  Dennis Kostka
+  Marcel H. Schulz
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking LazyData ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘SPONGE.Rmd’ using ‘UTF-8’... failed to complete the test
+  ‘spongEffects.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘SPONGE.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.175   0.032   0.201 
+
+... incomplete output.  Crash?
+when running code in ‘spongEffects.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.176   0.023   0.194 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 2 ERRORs, 2 WARNINGs, 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/SPONGE.Rcheck/00check.log’
+for details.
+

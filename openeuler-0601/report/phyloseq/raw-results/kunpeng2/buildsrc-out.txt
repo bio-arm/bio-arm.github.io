@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data phyloseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘phyloseq/DESCRIPTION’ ... OK
+* preparing ‘phyloseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘phyloseq-FAQ.Rmd’ using rmarkdown
+--- finished re-building ‘phyloseq-FAQ.Rmd’
+
+--- re-building ‘phyloseq-analysis.Rmd’ using rmarkdown
+--- finished re-building ‘phyloseq-analysis.Rmd’
+
+--- re-building ‘phyloseq-basics.Rmd’ using rmarkdown
+YAML parse exception at line 2, column 6,
+while scanning a block scalar:
+did not find expected comment or line break
+Error: processing vignette 'phyloseq-basics.Rmd' failed with diagnostics:
+pandoc document conversion failed with error 64
+--- failed re-building ‘phyloseq-basics.Rmd’
+
+--- re-building ‘phyloseq-mixture-models.Rmd’ using rmarkdown
+--- finished re-building ‘phyloseq-mixture-models.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘phyloseq-basics.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

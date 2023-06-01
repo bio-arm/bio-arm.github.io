@@ -1,0 +1,37 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Glimma
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Glimma/DESCRIPTION’ ... OK
+* preparing ‘Glimma’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘DESeq2.Rmd’ using rmarkdown
+--- finished re-building ‘DESeq2.Rmd’
+
+--- re-building ‘limma_edger.Rmd’ using rmarkdown
+--- finished re-building ‘limma_edger.Rmd’
+
+--- re-building ‘single_cell_edger.Rmd’ using rmarkdown
+
+Quitting from lines 42-49 [unnamed-chunk-2] (single_cell_edger.Rmd)
+Error: processing vignette 'single_cell_edger.Rmd' failed with diagnostics:
+failed to load resource
+  name: AH73905
+  title: Ensembl 97 EnsDb for Mus musculus
+  reason: database disk image is malformed
+--- failed re-building ‘single_cell_edger.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘single_cell_edger.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

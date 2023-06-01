@@ -1,0 +1,10 @@
+Package: ceRNAnetsim
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ceRNAnetsim
+StartedAt: 2023-05-31 19:10:08 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-05-31 19:16:49 -0000 (Wed, 31 May 2023)
+EllapsedTime: 400.6 seconds
+RetCode: 0
+Status: OK
+PackageFile: ceRNAnetsim_1.13.0.tar.gz
+PackageFileSize: 2.932 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

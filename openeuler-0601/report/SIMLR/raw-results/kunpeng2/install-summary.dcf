@@ -1,0 +1,8 @@
+Package: SIMLR
+Version: 1.27.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL SIMLR
+StartedAt: 2023-05-31 17:04:45 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-05-31 17:05:27 -0000 (Wed, 31 May 2023)
+EllapsedTime: 41.4 seconds
+RetCode: 0
+Status: OK

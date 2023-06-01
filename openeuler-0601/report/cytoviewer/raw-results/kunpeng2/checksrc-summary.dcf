@@ -1,0 +1,10 @@
+Package: cytoviewer
+Version: 1.1.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:cytoviewer.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings cytoviewer_1.1.0.tar.gz
+StartedAt: 2023-06-01 02:25:17 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:25:32 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 14.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: cytoviewer.Rcheck
+Warnings: NA

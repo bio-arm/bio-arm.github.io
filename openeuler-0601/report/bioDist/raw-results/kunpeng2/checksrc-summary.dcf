@@ -1,0 +1,10 @@
+Package: bioDist
+Version: 1.73.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:bioDist.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings bioDist_1.73.0.tar.gz
+StartedAt: 2023-06-01 02:18:54 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:19:04 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: bioDist.Rcheck
+Warnings: NA

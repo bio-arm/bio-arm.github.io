@@ -1,0 +1,8 @@
+Package: banocc
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL banocc
+StartedAt: 2023-05-31 17:13:27 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-05-31 17:13:56 -0000 (Wed, 31 May 2023)
+EllapsedTime: 28.9 seconds
+RetCode: 0
+Status: OK

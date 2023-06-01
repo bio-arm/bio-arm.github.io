@@ -1,0 +1,10 @@
+Package: ClassifyR
+Version: 3.5.4
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ClassifyR
+StartedAt: 2023-05-31 19:19:25 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-05-31 19:21:11 -0000 (Wed, 31 May 2023)
+EllapsedTime: 105.8 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

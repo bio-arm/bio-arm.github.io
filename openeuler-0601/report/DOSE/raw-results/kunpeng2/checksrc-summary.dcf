@@ -1,0 +1,10 @@
+Package: DOSE
+Version: 3.27.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DOSE.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DOSE_3.27.1.tar.gz
+StartedAt: 2023-06-01 02:27:25 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:27:46 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 21.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: DOSE.Rcheck
+Warnings: NA

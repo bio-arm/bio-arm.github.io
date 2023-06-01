@@ -1,0 +1,10 @@
+Package: CellTrails
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CellTrails.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CellTrails_1.19.0.tar.gz
+StartedAt: 2023-06-01 02:21:06 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:21:21 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: CellTrails.Rcheck
+Warnings: NA

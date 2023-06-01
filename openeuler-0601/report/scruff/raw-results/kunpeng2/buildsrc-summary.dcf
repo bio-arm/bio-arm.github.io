@@ -1,0 +1,10 @@
+Package: scruff
+Version: 1.19.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scruff
+StartedAt: 2023-05-31 23:48:33 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-06-01 00:28:34 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 2400.7 seconds
+RetCode: None
+Status: TIMEOUT
+PackageFile: None
+PackageFileSize: NA

@@ -1,0 +1,10 @@
+Package: TFEA.ChIP
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TFEA.ChIP.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TFEA.ChIP_1.21.0.tar.gz
+StartedAt: 2023-06-01 02:53:39 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:53:54 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TFEA.ChIP.Rcheck
+Warnings: NA

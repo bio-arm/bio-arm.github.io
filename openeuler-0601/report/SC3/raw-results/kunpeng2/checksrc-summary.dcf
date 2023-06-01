@@ -1,0 +1,10 @@
+Package: SC3
+Version: 1.29.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:SC3.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings SC3_1.29.3.tar.gz
+StartedAt: 2023-06-01 02:49:30 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:49:43 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: SC3.Rcheck
+Warnings: NA

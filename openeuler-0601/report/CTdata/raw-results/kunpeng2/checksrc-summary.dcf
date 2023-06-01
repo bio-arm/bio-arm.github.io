@@ -1,0 +1,10 @@
+Package: CTdata
+Version: 1.1.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CTdata.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CTdata_1.1.1.tar.gz
+StartedAt: 2023-06-01 02:24:47 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:25:03 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: CTdata.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: MSstats
+Version: 4.9.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MSstats.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MSstats_4.9.1.tar.gz
+StartedAt: 2023-06-01 02:41:18 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:41:48 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 29.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MSstats.Rcheck
+Warnings: NA

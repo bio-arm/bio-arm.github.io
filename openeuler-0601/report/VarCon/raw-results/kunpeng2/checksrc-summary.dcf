@@ -1,0 +1,10 @@
+Package: VarCon
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:VarCon.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings VarCon_1.9.0.tar.gz
+StartedAt: 2023-06-01 02:54:58 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:55:13 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: VarCon.Rcheck
+Warnings: NA

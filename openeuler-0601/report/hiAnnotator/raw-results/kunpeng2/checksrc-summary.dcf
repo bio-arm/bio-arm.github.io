@@ -1,0 +1,10 @@
+Package: hiAnnotator
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:hiAnnotator.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings hiAnnotator_1.35.0.tar.gz
+StartedAt: 2023-06-01 02:34:14 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:34:28 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 14.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: hiAnnotator.Rcheck
+Warnings: NA

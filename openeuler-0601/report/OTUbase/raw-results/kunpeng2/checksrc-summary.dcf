@@ -1,0 +1,10 @@
+Package: OTUbase
+Version: 1.51.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:OTUbase.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings OTUbase_1.51.0.tar.gz
+StartedAt: 2023-06-01 02:43:34 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:43:48 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: OTUbase.Rcheck
+Warnings: NA

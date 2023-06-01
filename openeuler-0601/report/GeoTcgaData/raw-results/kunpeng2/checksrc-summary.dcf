@@ -1,0 +1,10 @@
+Package: GeoTcgaData
+Version: 2.1.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GeoTcgaData.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GeoTcgaData_2.1.0.tar.gz
+StartedAt: 2023-06-01 02:32:26 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:32:38 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GeoTcgaData.Rcheck
+Warnings: NA

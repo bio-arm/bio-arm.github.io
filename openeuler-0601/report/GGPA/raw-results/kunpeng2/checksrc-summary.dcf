@@ -1,0 +1,10 @@
+Package: GGPA
+Version: 1.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GGPA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GGPA_1.13.1.tar.gz
+StartedAt: 2023-06-01 02:32:35 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:32:48 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GGPA.Rcheck
+Warnings: NA

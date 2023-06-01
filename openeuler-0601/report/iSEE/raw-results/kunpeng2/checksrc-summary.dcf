@@ -1,0 +1,10 @@
+Package: iSEE
+Version: 2.13.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:iSEE.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings iSEE_2.13.2.tar.gz
+StartedAt: 2023-06-01 02:36:15 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:36:32 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: iSEE.Rcheck
+Warnings: NA

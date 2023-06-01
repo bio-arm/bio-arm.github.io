@@ -1,0 +1,10 @@
+Package: normalize450K
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:normalize450K.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings normalize450K_1.29.0.tar.gz
+StartedAt: 2023-06-01 02:42:31 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:42:46 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: normalize450K.Rcheck
+Warnings: NA

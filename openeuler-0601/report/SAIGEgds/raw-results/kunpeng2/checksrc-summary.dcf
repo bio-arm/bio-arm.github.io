@@ -1,0 +1,10 @@
+Package: SAIGEgds
+Version: 2.1.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:SAIGEgds.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings SAIGEgds_2.1.1.tar.gz
+StartedAt: 2023-06-01 02:49:20 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:49:36 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: SAIGEgds.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: CNVRanger
+Version: 1.17.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CNVRanger.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CNVRanger_1.17.3.tar.gz
+StartedAt: 2023-06-01 02:23:03 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:23:13 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: CNVRanger.Rcheck
+Warnings: NA

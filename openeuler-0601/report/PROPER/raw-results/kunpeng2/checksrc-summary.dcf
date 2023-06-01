@@ -1,0 +1,10 @@
+Package: PROPER
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:PROPER.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings PROPER_1.33.0.tar.gz
+StartedAt: 2023-06-01 02:45:22 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:45:45 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 22.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: PROPER.Rcheck
+Warnings: NA

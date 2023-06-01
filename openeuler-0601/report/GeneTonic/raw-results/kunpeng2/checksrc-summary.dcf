@@ -1,0 +1,10 @@
+Package: GeneTonic
+Version: 2.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GeneTonic.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GeneTonic_2.5.0.tar.gz
+StartedAt: 2023-06-01 02:31:47 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:32:04 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 17.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GeneTonic.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: DTA
+Version: 2.47.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DTA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DTA_2.47.0.tar.gz
+StartedAt: 2023-06-01 02:27:51 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:28:07 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: DTA.Rcheck
+Warnings: NA

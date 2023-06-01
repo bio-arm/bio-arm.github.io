@@ -1,0 +1,10 @@
+Package: TCGAbiolinks
+Version: 2.29.4
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TCGAbiolinks.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TCGAbiolinks_2.29.4.tar.gz
+StartedAt: 2023-06-01 02:53:32 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:53:59 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 27.3 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TCGAbiolinks.Rcheck
+Warnings: NA

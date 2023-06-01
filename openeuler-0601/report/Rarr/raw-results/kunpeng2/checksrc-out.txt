@@ -1,0 +1,163 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Rarr.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Rarr_1.1.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/Rarr.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘Rarr/DESCRIPTION’ ... OK
+* this is package ‘Rarr’ version ‘1.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  inst/extdata/zarr_examples/column-first/boolean.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/float16.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/float32.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/float64.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/int16.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/int32.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/int64.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/int8.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/string.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/uint16.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/uint32.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/uint64.zarr/.zarray
+  inst/extdata/zarr_examples/column-first/uint8.zarr/.zarray
+  inst/extdata/zarr_examples/compression/bzip2.zarr/.zarray
+  inst/extdata/zarr_examples/compression/lz4.zarr/.zarray
+  inst/extdata/zarr_examples/compression/lzma.zarr/.zarray
+  inst/extdata/zarr_examples/compression/zlib.zarr/.zarray
+  inst/extdata/zarr_examples/fill-values/double-inf.zarr/.zarray
+  inst/extdata/zarr_examples/fill-values/double-neginf.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/float16.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/float32.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/float64.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/int16.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/int32.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/int64.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/int8.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/string.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/uint32.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/uint64.zarr/.zarray
+  inst/extdata/zarr_examples/row-first/uint8.zarr/.zarray
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘Rarr’ can be installed ... OK
+* used C compiler: ‘gcc (GCC) 10.3.1’
+* checking installed package size ... NOTE
+  installed size is  8.6Mb
+  sub-directories of 1Mb or more:
+    libs   7.4Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... WARNING
+Rarr-package.Rd: Sections \title, and \name must exist and be unique in Rd files
+compressors.Rd: Sections \title, and \name must exist and be unique in Rd files
+create_empty_zarr_array.Rd: Sections \title, and \name must exist and be unique in Rd files
+dot-compress_and_write_chunk.Rd: Sections \title, and \name must exist and be unique in Rd files
+dot-create_replace_call.Rd: Sections \title, and \name must exist and be unique in Rd files
+dot-decompress_chunk.Rd: Sections \title, and \name must exist and be unique in Rd files
+dot-format_chunk.Rd: Sections \title, and \name must exist and be unique in Rd files
+dot-get_credentials.Rd: Sections \title, and \name must exist and be unique in Rd files
+dot-normalize_array_path.Rd: Sections \title, and \name must exist and be unique in Rd files
+dot-parse_datatype.Rd: Sections \title, and \name must exist and be unique in Rd files
+get_chunk_size.Rd: Sections \title, and \name must exist and be unique in Rd files
+read_array_metadata.Rd: Sections \title, and \name must exist and be unique in Rd files
+read_chunk.Rd: Sections \title, and \name must exist and be unique in Rd files
+read_zarr_array.Rd: Sections \title, and \name must exist and be unique in Rd files
+update_fill_value.Rd: Sections \title, and \name must exist and be unique in Rd files
+update_zarr_array.Rd: Sections \title, and \name must exist and be unique in Rd files
+write_zarr_array.Rd: Sections \title, and \name must exist and be unique in Rd files
+zarr_overview.Rd: Sections \title, and \name must exist and be unique in Rd files
+problems found in ‘Rarr-package.Rd’, ‘compressors.Rd’, ‘create_empty_zarr_array.Rd’, ‘dot-compress_and_write_chunk.Rd’, ‘dot-create_replace_call.Rd’, ‘dot-decompress_chunk.Rd’, ‘dot-format_chunk.Rd’, ‘dot-get_credentials.Rd’, ‘dot-normalize_array_path.Rd’, ‘dot-parse_datatype.Rd’, ‘get_chunk_size.Rd’, ‘read_array_metadata.Rd’, ‘read_chunk.Rd’, ‘read_zarr_array.Rd’, ‘update_fill_value.Rd’, ‘update_zarr_array.Rd’, ‘write_zarr_array.Rd’, ‘zarr_overview.Rd’
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in shell scripts ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... NOTE
+GNU make is a SystemRequirements.
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking include directives in Makefiles ... OK
+* checking compiled code ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘Rarr.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘Rarr.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.171   0.031   0.197 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+* checking PDF version of manual without index ... ERROR
+* DONE
+
+Status: 2 ERRORs, 2 WARNINGs, 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/Rarr.Rcheck/00check.log’
+for details.
+

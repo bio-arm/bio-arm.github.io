@@ -1,0 +1,10 @@
+Package: DelayedRandomArray
+Version: 1.9.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DelayedRandomArray.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DelayedRandomArray_1.9.1.tar.gz
+StartedAt: 2023-06-01 02:26:01 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:26:18 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 17.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: DelayedRandomArray.Rcheck
+Warnings: NA

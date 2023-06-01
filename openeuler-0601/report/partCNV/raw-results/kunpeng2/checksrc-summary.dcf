@@ -1,0 +1,10 @@
+Package: partCNV
+Version: 0.99.10
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:partCNV.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings partCNV_0.99.10.tar.gz
+StartedAt: 2023-06-01 02:43:55 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:44:06 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: partCNV.Rcheck
+Warnings: NA

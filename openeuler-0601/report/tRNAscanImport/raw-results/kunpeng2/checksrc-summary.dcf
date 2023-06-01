@@ -1,0 +1,10 @@
+Package: tRNAscanImport
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:tRNAscanImport.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings tRNAscanImport_1.21.0.tar.gz
+StartedAt: 2023-06-01 02:54:35 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:54:45 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: tRNAscanImport.Rcheck
+Warnings: NA

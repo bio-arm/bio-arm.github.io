@@ -1,0 +1,122 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data decoupleR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘decoupleR/DESCRIPTION’ ... OK
+* preparing ‘decoupleR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘decoupleR.Rmd’ using rmarkdown
+--- finished re-building ‘decoupleR.Rmd’
+
+--- re-building ‘pw_bk.Rmd’ using rmarkdown
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:07] [INFO]    [OmnipathR] Initialized cache: `/home/biocbuild/.cache/OmnipathR`.
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Running on a build server, wiping cache.
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Cache is at `/home/biocbuild/.cache/OmnipathR`.
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Contains 1 files.
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Cache is locked: FALSE.
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/.cache/OmnipathR/cache.json` (encoding: UTF-8).
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:07] [SUCCESS] [OmnipathR] Removing all cache contents from `/home/biocbuild/.cache/OmnipathR`.
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Pandoc version: `3.1.2`.
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/R/R-4.3.0/site-library/OmnipathR/db/db_def.json` (encoding: UTF-8).
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/R/R-4.3.0/site-library/OmnipathR/internal/magic_bytes.json` (encoding: UTF-8).
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/R/R-4.3.0/site-library/OmnipathR/internal/urls.json` (encoding: UTF-8).
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:07] [TRACE]   [OmnipathR] Reading JSON from `/home/biocbuild/R/R-4.3.0/site-library/OmnipathR/internal/id_types.json` (encoding: UTF-8).
+[2023-05-31 19:47:08] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:08] [TRACE]   [OmnipathR] Cache locked: FALSE
+[2023-05-31 19:47:09] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-31 19:47:09] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:12] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-31 19:47:12] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:47:12] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:47:12] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:47:12] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:52:59] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/annotations?resources=PROGENy&license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 19:53:04] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:54:03] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/annotations?resources=PROGENy&license=academic` (attempt 2/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 19:54:08] [TRACE]   [OmnipathR] Attempt 3/3: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+Warning in for (definition in definitions) { :
+  closing unused connection 4 (https://omnipathdb.org/annotations?resources=PROGENy&license=academic)
+[2023-05-31 19:55:33] [ERROR]   [OmnipathR] Failed to download `https://omnipathdb.org/annotations?resources=PROGENy&license=academic` (attempt 3/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+
+Quitting from lines 101-103 [progeny] (pw_bk.Rmd)
+Error: processing vignette 'pw_bk.Rmd' failed with diagnostics:
+OpenSSL SSL_read: Connection reset by peer, errno 104
+--- failed re-building ‘pw_bk.Rmd’
+
+--- re-building ‘pw_sc.Rmd’ using rmarkdown
+Warning in for (i in ind) init <- forceAndCall(2, f, init, x[[i]]) :
+  closing unused connection 5 (https://omnipathdb.org/annotations?resources=PROGENy&license=academic)
+[2023-05-31 19:55:41] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-31 19:55:41] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:55:43] [TRACE]   [OmnipathR] Reading JSON from `https://omnipathdb.org/resources` (encoding: UTF-8).
+[2023-05-31 19:55:43] [TRACE]   [OmnipathR] JSON validation successful: TRUE
+[2023-05-31 19:55:43] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:55:43] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:55:43] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:55:55] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/annotations?resources=PROGENy&license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 19:56:00] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:56:15] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/annotations?resources=PROGENy&license=academic` (attempt 2/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 19:56:20] [TRACE]   [OmnipathR] Attempt 3/3: `https://omnipathdb.org/annotations?resources=PROGENy&license=academic`
+[2023-05-31 19:56:36] [ERROR]   [OmnipathR] Failed to download `https://omnipathdb.org/annotations?resources=PROGENy&license=academic` (attempt 3/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+
+Quitting from lines 78-80 [progeny] (pw_sc.Rmd)
+Error: processing vignette 'pw_sc.Rmd' failed with diagnostics:
+OpenSSL SSL_read: Connection reset by peer, errno 104
+--- failed re-building ‘pw_sc.Rmd’
+
+--- re-building ‘tf_bk.Rmd’ using rmarkdown
+[2023-05-31 19:56:36] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 19:56:36] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 19:56:36] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 19:57:38] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 19:57:43] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 19:58:04] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic` (attempt 2/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 19:58:09] [TRACE]   [OmnipathR] Attempt 3/3: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+Warning in .Internal(readBin(con, what, n, size, signed, swap)) :
+  closing unused connection 8 (https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic)
+Warning in .Internal(readBin(con, what, n, size, signed, swap)) :
+  closing unused connection 5 (https://omnipathdb.org/annotations?resources=PROGENy&license=academic)
+Warning in .Internal(readBin(con, what, n, size, signed, swap)) :
+  closing unused connection 4 (https://omnipathdb.org/annotations?resources=PROGENy&license=academic)
+[2023-05-31 19:58:33] [ERROR]   [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic` (attempt 3/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+
+Quitting from lines 109-111 [collectri] (tf_bk.Rmd)
+Error: processing vignette 'tf_bk.Rmd' failed with diagnostics:
+OpenSSL SSL_read: Connection reset by peer, errno 104
+--- failed re-building ‘tf_bk.Rmd’
+
+--- re-building ‘tf_sc.Rmd’ using rmarkdown
+[2023-05-31 19:58:34] [INFO]    [OmnipathR] Cache record does not exist: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 19:58:34] [INFO]    [OmnipathR] Retrieving URL: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 19:58:34] [TRACE]   [OmnipathR] Attempt 1/3: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 20:00:07] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic` (attempt 1/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 20:00:12] [TRACE]   [OmnipathR] Attempt 2/3: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 20:04:03] [WARN]    [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic` (attempt 2/3); error: OpenSSL SSL_read: Connection reset by peer, errno 104
+[2023-05-31 20:04:08] [TRACE]   [OmnipathR] Attempt 3/3: `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic`
+[2023-05-31 20:04:14] [ERROR]   [OmnipathR] Failed to download `https://omnipathdb.org/interactions?genesymbols=yes&datasets=collectri&organisms=9606&dorothea_levels=A,B&fields=evidences,sources,references,curation_effort&license=academic` (attempt 3/3); error: Empty reply from server
+
+Quitting from lines 86-88 [collectri] (tf_sc.Rmd)
+Error: processing vignette 'tf_sc.Rmd' failed with diagnostics:
+Empty reply from server
+--- failed re-building ‘tf_sc.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘pw_bk.Rmd’ ‘pw_sc.Rmd’ ‘tf_bk.Rmd’ ‘tf_sc.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

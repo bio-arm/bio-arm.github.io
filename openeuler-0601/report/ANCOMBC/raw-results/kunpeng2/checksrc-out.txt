@@ -1,0 +1,135 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ANCOMBC.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ANCOMBC_2.3.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/ANCOMBC.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘ANCOMBC/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘ANCOMBC’ version ‘2.3.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘ANCOMBC’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+               user system elapsed
+ancombc2     41.987  0.283  42.332
+ancom        24.980  0.619  25.642
+ancombc      19.454  0.276  19.758
+secom_linear  1.362  0.093  22.375
+secom_dist    1.269  0.012  20.940
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘ANCOM.Rmd’ using ‘UTF-8’... OK
+  ‘ANCOMBC.Rmd’ using ‘UTF-8’... OK
+  ‘ANCOMBC2.Rmd’ using ‘UTF-8’... OK
+  ‘SECOM.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘ANCOM.Rmd’ using rmarkdown
+--- finished re-building ‘ANCOM.Rmd’
+
+--- re-building ‘ANCOMBC.Rmd’ using rmarkdown
+--- finished re-building ‘ANCOMBC.Rmd’
+
+--- re-building ‘ANCOMBC2.Rmd’ using rmarkdown
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+Write Error
+
+Quitting from lines 1045-1074 [unnamed-chunk-27] (ANCOMBC2.Rmd)
+Error: processing vignette 'ANCOMBC2.Rmd' failed with diagnostics:
+Cluster setup failed. 2 of 2 workers failed to connect.
+--- failed re-building ‘ANCOMBC2.Rmd’
+
+
+SUMMARY: processing the following file failed:
+  ‘ANCOMBC2.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... ERROR
+Rd conversion errors:
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Error in writeLines(x, con, useBytes = TRUE, ...) : 
+  Error writing to connection:  No space left on device
+* DONE
+
+Status: 2 ERRORs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/ANCOMBC.Rcheck/00check.log’
+for details.
+

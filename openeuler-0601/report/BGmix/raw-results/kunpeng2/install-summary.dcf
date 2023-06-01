@@ -1,0 +1,8 @@
+Package: BGmix
+Version: 1.61.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL BGmix
+StartedAt: 2023-05-31 16:57:57 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-05-31 16:58:09 -0000 (Wed, 31 May 2023)
+EllapsedTime: 12.0 seconds
+RetCode: 1
+Status: ERROR

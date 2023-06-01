@@ -1,0 +1,10 @@
+Package: DirichletMultinomial
+Version: 1.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DirichletMultinomial.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DirichletMultinomial_1.43.0.tar.gz
+StartedAt: 2023-06-01 02:26:52 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:27:06 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 14.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: DirichletMultinomial.Rcheck
+Warnings: NA

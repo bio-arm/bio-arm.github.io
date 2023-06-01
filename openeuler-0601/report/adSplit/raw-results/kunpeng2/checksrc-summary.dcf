@@ -1,0 +1,10 @@
+Package: adSplit
+Version: 1.71.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:adSplit.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings adSplit_1.71.0.tar.gz
+StartedAt: 2023-06-01 01:43:46 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 01:54:14 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 628.0 seconds
+RetCode: 0
+Status: OK
+CheckDir: adSplit.Rcheck
+Warnings: 0

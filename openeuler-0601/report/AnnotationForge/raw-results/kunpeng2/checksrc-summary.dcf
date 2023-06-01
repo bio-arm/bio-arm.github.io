@@ -1,0 +1,10 @@
+Package: AnnotationForge
+Version: 1.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AnnotationForge.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AnnotationForge_1.43.0.tar.gz
+StartedAt: 2023-06-01 02:01:51 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:07:46 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 354.6 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: AnnotationForge.Rcheck
+Warnings: 1

@@ -1,0 +1,10 @@
+Package: OmicCircos
+Version: 1.39.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:OmicCircos.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings OmicCircos_1.39.0.tar.gz
+StartedAt: 2023-06-01 02:42:54 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:43:09 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: OmicCircos.Rcheck
+Warnings: NA

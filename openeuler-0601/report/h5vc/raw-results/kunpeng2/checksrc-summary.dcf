@@ -1,0 +1,10 @@
+Package: h5vc
+Version: 2.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:h5vc.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings h5vc_2.35.0.tar.gz
+StartedAt: 2023-06-01 02:33:54 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:34:09 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: h5vc.Rcheck
+Warnings: NA

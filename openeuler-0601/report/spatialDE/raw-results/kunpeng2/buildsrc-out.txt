@@ -1,0 +1,33 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data spatialDE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘spatialDE/DESCRIPTION’ ... OK
+* preparing ‘spatialDE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘spatialDE.Rmd’ using rmarkdown
+WARNING: ignoring environment value of R_HOME
+WARNING: ignoring environment value of R_HOME
+Warning in for (v in val) { :
+  closing unused connection 5 (<-localhost:11488)
+WARNING: ignoring environment value of R_HOME
+
+Quitting from lines 142-147 [run-spatialDE] (spatialDE.Rmd)
+Error: processing vignette 'spatialDE.Rmd' failed with diagnostics:
+one node produced an error: object '.set_fake_tqdm' not found
+--- failed re-building ‘spatialDE.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘spatialDE.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

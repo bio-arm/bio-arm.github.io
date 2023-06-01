@@ -1,0 +1,10 @@
+Package: ASGSCA
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ASGSCA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ASGSCA_1.35.0.tar.gz
+StartedAt: 2023-06-01 02:13:39 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:18:09 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 269.9 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: ASGSCA.Rcheck
+Warnings: NA

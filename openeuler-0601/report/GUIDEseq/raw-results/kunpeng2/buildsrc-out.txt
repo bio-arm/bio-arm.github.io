@@ -1,0 +1,602 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GUIDEseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GUIDEseq/DESCRIPTION’ ... OK
+* preparing ‘GUIDEseq’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘GUIDEseq.Rnw’ using Sweave
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+computing coverage for plus strand ...
+computing coverage for minus strand ...
+call peaks ...
+finding local max for chromosome: chr13
+Loading required package: BSgenome
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: rtracklayer
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Remove duplicate reads ...
+
+Peak calling ...
+
+computing coverage for plus strand ...
+computing coverage for minus strand ...
+call peaks ...
+finding local max for chromosome: chr13
+combine plus and minus peaks ... 
+
+keep peaks not in merged.gr but present in both peaks1 and peaks2
+
+offtarget analysis ...
+
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Warning in searchHits(gRNAs = gRNAs1, PAM = PAM, PAM.pattern = PAM.pattern,  :
+  No matching found, please check your input sequence, and make
+            sure you are using the right genome. You can also alter your 
+            search criteria such as increasing max.mismatch!
+Add sequence depth information. 
+
+Get the number of unique UMIs for each offtarget. 
+
+Please check output file in directory bowtie2.HEK293_site4_chr13.sort_HEK239_site4min1window20step20distance40
+
+Error: processing vignette 'GUIDEseq.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'GUIDEseq.tex' failed.
+LaTeX errors:
+! Missing \endcsname inserted.
+<to be read again> 
+                   \IeC 
+l.631 \bibitem{Rodríguez et al., 2021}
+                                       Rodríguez TC, Dadafarin S, Pratt HE,...
+! Emergency stop.
+<to be read again> 
+                   \IeC 
+l.631 \bibitem{Rodríguez et al., 2021}
+                                       Rodríguez TC, Dadafarin S, Pratt HE,...
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘GUIDEseq.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘GUIDEseq.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

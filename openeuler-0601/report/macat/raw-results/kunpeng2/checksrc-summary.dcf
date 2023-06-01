@@ -1,0 +1,10 @@
+Package: macat
+Version: 1.75.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:macat.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings macat_1.75.0.tar.gz
+StartedAt: 2023-06-01 02:37:31 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:37:40 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 9.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: macat.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: Rsubread
+Version: 2.15.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rsubread
+StartedAt: 2023-05-31 23:24:30 -0000 (Wed, 31 May 2023)
+EndedAt: 2023-06-01 00:04:30 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 2400.5 seconds
+RetCode: None
+Status: TIMEOUT
+PackageFile: None
+PackageFileSize: NA

@@ -1,0 +1,10 @@
+Package: SIAMCAT
+Version: 2.5.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SIAMCAT
+StartedAt: 2023-06-01 00:02:22 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 00:06:47 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 264.4 seconds
+RetCode: 0
+Status: OK
+PackageFile: SIAMCAT_2.5.1.tar.gz
+PackageFileSize: 18.76 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

@@ -1,0 +1,10 @@
+Package: MetaboAnnotation
+Version: 1.5.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MetaboAnnotation.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MetaboAnnotation_1.5.1.tar.gz
+StartedAt: 2023-06-01 02:38:37 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:38:56 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 18.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MetaboAnnotation.Rcheck
+Warnings: NA

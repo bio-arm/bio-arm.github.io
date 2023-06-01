@@ -1,0 +1,10 @@
+Package: dittoSeq
+Version: 1.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:dittoSeq.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings dittoSeq_1.13.1.tar.gz
+StartedAt: 2023-06-01 02:27:07 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:27:23 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: dittoSeq.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: atena
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:atena.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings atena_1.7.0.tar.gz
+StartedAt: 2023-06-01 02:16:07 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:16:17 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 10.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: atena.Rcheck
+Warnings: NA

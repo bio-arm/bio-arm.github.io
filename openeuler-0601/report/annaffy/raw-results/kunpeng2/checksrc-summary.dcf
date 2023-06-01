@@ -1,0 +1,10 @@
+Package: annaffy
+Version: 1.73.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:annaffy.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings annaffy_1.73.0.tar.gz
+StartedAt: 2023-06-01 01:58:54 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 02:01:39 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 165.2 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: annaffy.Rcheck
+Warnings: 1
