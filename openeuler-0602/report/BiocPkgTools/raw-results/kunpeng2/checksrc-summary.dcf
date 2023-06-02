@@ -1,0 +1,10 @@
+Package: BiocPkgTools
+Version: 1.19.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BiocPkgTools.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BiocPkgTools_1.19.1.tar.gz
+StartedAt: 2023-06-02 02:19:29 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:19:39 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 10.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: BiocPkgTools.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: enhancerHomologSearch
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:enhancerHomologSearch.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings enhancerHomologSearch_1.7.0.tar.gz
+StartedAt: 2023-06-02 02:27:54 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:28:10 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: enhancerHomologSearch.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: appreci8R
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:appreci8R.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings appreci8R_1.19.0.tar.gz
+StartedAt: 2023-06-02 01:48:31 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:00:45 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 734.0 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: appreci8R.Rcheck
+Warnings: 1

@@ -1,0 +1,10 @@
+Package: MungeSumstats
+Version: 1.9.6
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MungeSumstats
+StartedAt: 2023-06-01 22:18:11 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 22:19:33 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 82.1 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

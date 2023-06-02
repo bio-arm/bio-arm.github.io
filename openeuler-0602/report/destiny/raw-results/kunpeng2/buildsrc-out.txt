@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data destiny
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘destiny/DESCRIPTION’ ... OK
+* preparing ‘destiny’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘DPT.Rmd’ using rmarkdown
+--- finished re-building ‘DPT.Rmd’
+
+--- re-building ‘Diffusion-Map-recap.Rmd’ using rmarkdown
+--- finished re-building ‘Diffusion-Map-recap.Rmd’
+
+--- re-building ‘Diffusion-Maps.Rmd’ using rmarkdown
+--- finished re-building ‘Diffusion-Maps.Rmd’
+
+--- re-building ‘Gene-Relevance.Rmd’ using rmarkdown
+
+Quitting from lines 130-135 [unnamed-chunk-14] (Gene-Relevance.Rmd)
+Error: processing vignette 'Gene-Relevance.Rmd' failed with diagnostics:
+Timeout was reached: [www.uniprot.org] SSL connection timeout
+--- failed re-building ‘Gene-Relevance.Rmd’
+
+--- re-building ‘Global-Sigma.Rmd’ using rmarkdown
+--- finished re-building ‘Global-Sigma.Rmd’
+
+--- re-building ‘tidyverse.Rmd’ using rmarkdown
+--- finished re-building ‘tidyverse.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Gene-Relevance.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

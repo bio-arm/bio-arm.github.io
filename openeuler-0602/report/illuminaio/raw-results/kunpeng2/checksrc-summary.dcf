@@ -1,0 +1,10 @@
+Package: illuminaio
+Version: 0.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:illuminaio.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings illuminaio_0.43.0.tar.gz
+StartedAt: 2023-06-02 02:33:37 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:33:50 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: illuminaio.Rcheck
+Warnings: NA

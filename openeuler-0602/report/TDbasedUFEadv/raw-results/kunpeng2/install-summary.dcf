@@ -1,0 +1,8 @@
+Package: TDbasedUFEadv
+Version: 1.1.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL TDbasedUFEadv
+StartedAt: 2023-06-01 17:36:14 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:36:51 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 36.8 seconds
+RetCode: 0
+Status: OK

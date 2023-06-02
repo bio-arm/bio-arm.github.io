@@ -1,0 +1,10 @@
+Package: BiocCheck
+Version: 1.37.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BiocCheck.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BiocCheck_1.37.1.tar.gz
+StartedAt: 2023-06-02 02:19:17 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:19:27 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: BiocCheck.Rcheck
+Warnings: NA

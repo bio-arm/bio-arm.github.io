@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data factR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘factR/DESCRIPTION’ ... OK
+* preparing ‘factR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘factR.Rmd’ using rmarkdown
+trying URL 'ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz'
+Content type 'unknown' length 28542432 bytes (27.2 MB)
+==================================================
+
+Quitting from lines 196-200 [import.gencode] (factR.Rmd)
+Error: processing vignette 'factR.Rmd' failed with diagnostics:
+cannot open URL 'ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz'
+--- failed re-building ‘factR.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘factR.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

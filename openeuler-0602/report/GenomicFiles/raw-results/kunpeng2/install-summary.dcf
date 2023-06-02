@@ -1,0 +1,8 @@
+Package: GenomicFiles
+Version: 1.37.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL GenomicFiles
+StartedAt: 2023-06-01 17:09:00 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:10:00 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 60.0 seconds
+RetCode: 0
+Status: OK

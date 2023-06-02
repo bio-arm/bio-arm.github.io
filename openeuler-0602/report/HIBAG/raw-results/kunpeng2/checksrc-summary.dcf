@@ -1,0 +1,10 @@
+Package: HIBAG
+Version: 1.37.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HIBAG.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HIBAG_1.37.1.tar.gz
+StartedAt: 2023-06-02 02:32:39 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:32:52 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: HIBAG.Rcheck
+Warnings: NA

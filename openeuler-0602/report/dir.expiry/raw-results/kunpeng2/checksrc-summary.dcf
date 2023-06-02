@@ -1,0 +1,10 @@
+Package: dir.expiry
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:dir.expiry.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings dir.expiry_1.9.0.tar.gz
+StartedAt: 2023-06-02 02:26:53 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:27:04 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: dir.expiry.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: Biostrings
+Version: 2.69.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Biostrings.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Biostrings_2.69.1.tar.gz
+StartedAt: 2023-06-02 02:20:09 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:20:26 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 17.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: Biostrings.Rcheck
+Warnings: NA

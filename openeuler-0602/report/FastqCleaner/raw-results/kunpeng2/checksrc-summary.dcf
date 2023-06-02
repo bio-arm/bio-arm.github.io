@@ -1,0 +1,10 @@
+Package: FastqCleaner
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:FastqCleaner.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings FastqCleaner_1.19.0.tar.gz
+StartedAt: 2023-06-02 02:28:50 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:29:00 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: FastqCleaner.Rcheck
+Warnings: NA

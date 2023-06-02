@@ -1,0 +1,618 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BioNAR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BioNAR_1.3.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/BioNAR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘BioNAR/DESCRIPTION’ ... OK
+* this is package ‘BioNAR’ version ‘1.3.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ...Warning: unable to access index for repository https://CRAN.R-project.org/src/contrib:
+  download from 'https://CRAN.R-project.org/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/bioc/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/bioc/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/annotation/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/annotation/src/contrib/PACKAGES' failed
+Warning: unable to access index for repository https://bioconductor.org/packages/3.17/data/experiment/src/contrib:
+  download from 'https://bioconductor.org/packages/3.17/data/experiment/src/contrib/PACKAGES' failed
+ OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘BioNAR’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  6.7Mb
+  sub-directories of 1Mb or more:
+    extdata   6.1Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... NONE
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘BioNAR_overview.Rmd’ using ‘UTF-8’... failed to complete the test
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘BioNAR_overview.Rmd’
+  ...
+> proc.time()
+   user  system elapsed 
+  0.165   0.033   0.192 
+
+... incomplete output.  Crash?
+
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+* checking PDF version of manual without index ... ERROR
+Re-running with no redirection of stdout/stderr.
+Hmm ... looks like a package
+Converting parsed Rd's to LaTeX Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+.Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+Warning in close.connection(con) :
+  Problem closing connection:  No space left on device
+
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/BioNAR.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/FitDegree.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/PPI_Presynaptic.csv.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/PPI_Presynaptic.gml.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/PresynAn.csv.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/SCH_flatfile.csv.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/addEdgeAtts.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateGOont.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateGeneNames.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateGoBP.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateGoCC.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateGoMF.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateInterpro.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotatePresynaptic.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateSCHanno.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateTopOntoOVG.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/annotateVertex.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/applpMatrixToGraph.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/buildConsensusMatrix.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/buildFromSynaptomeByEntrez.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/buildFromSynaptomeGeneTable.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/buildNetwork.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcAllClustering.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcBridgeness.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcCentrality.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcCentralityExternalDistances.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcCentralityInternalDistances.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcClustering.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcDiseasePairs.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcEntropy.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcMembership.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcReclusterMatrix.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/calcSparsness.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/clusterORA.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/clusteringSummary.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/degreeBinnedGDAs.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/diseasome.rda.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/escapeAnnotation.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/evalCentralitySignificance.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/findLCC.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/fitSigmoid.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/flatfile.go.BP.csv.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/flatfile.go.CC.csv.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/flatfile.go.MF.csv.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/flatfile_human_gene2HDO.csv.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getAnnotationList.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getAnnotationVertexList.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getBridgeness.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getCentralityMatrix.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getClusterSubgraphByID.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getClustering.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getCommunityGraph.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getDType.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getDiseases.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getEntropy.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getEntropyRate.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getGraphCentralityECDF.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getIDs.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getRandomGraphCentrality.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/getRobustness.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/gofs.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/law-class.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/layoutByCluster.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/layoutByRecluster.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/makeConsensusMatrix.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/normModularity.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/permute.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/plotBridgeness.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/plotEntropy.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/plotRatio.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/plotSigmoid.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/prepareGDA.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/recluster.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/removeVertexTerm.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/runPermDisease.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/sampleDegBinnedGDA.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/sampleGraphClust.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/summaryStats.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/unescapeAnnotation.tex’ lacks a header: skipping
+Warning in .pkg2tex(files, outfile, internals = internals, asChapter = FALSE,  :
+  file ‘/tmp/Rtmpp6X6bK/ltxf7d7718a02240/zeroNA.tex’ lacks a header: skipping
+Warning in close.connection(out) :
+  Problem closing connection:  No space left on device
+Creating pdf output from LaTeX ...
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./Rd2.tex
+LaTeX2e <2018-04-01> patch level 5
+)fclose: No space left on device
+
+! Emergency stop.
+<*> Rd2.tex
+           
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on Rd2.log.
+Error in texi2dvi(file = file, pdf = TRUE, clean = clean, quiet = quiet,  : 
+  unable to run pdflatex on 'Rd2.tex'
+
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./Rd2.tex
+LaTeX2e <2018-04-01> patch level 5
+)fclose: No space left on device
+
+! Emergency stop.
+<*> Rd2.tex
+           
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on Rd2.log.
+Error in texi2dvi(file = file, pdf = TRUE, clean = clean, quiet = quiet,  : 
+  unable to run pdflatex on 'Rd2.tex'
+
+Error in running tools::texi2pdf()
+You may want to clean up by 'rm -Rf /tmp/RtmpmkSCO5/Rd2pdff72dc13b5a9b3'
+* DONE
+
+Status: 2 ERRORs, 1 WARNING, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/BioNAR.Rcheck/00check.log’
+for details.
+

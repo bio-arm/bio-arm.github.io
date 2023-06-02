@@ -1,0 +1,8 @@
+Package: a4Preproc
+Version: 1.49.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL a4Preproc
+StartedAt: 2023-06-01 16:49:02 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 16:49:37 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 35.1 seconds
+RetCode: 0
+Status: OK

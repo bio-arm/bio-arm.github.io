@@ -1,0 +1,10 @@
+Package: MassSpecWavelet
+Version: 1.67.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MassSpecWavelet
+StartedAt: 2023-06-01 21:39:01 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 21:40:04 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 63.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: MassSpecWavelet_1.67.0.tar.gz
+PackageFileSize: 1.913 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

@@ -1,0 +1,10 @@
+Package: GOpro
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GOpro.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GOpro_1.27.0.tar.gz
+StartedAt: 2023-06-02 02:31:31 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:31:44 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 13.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GOpro.Rcheck
+Warnings: NA

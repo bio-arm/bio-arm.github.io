@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data trena
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘trena/DESCRIPTION’ ... OK
+* preparing ‘trena’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘trena’ ...
+** using staged installation
+** R
+Error in parse(...) : 
+  /tmp/RtmpD5QxH6/Rbuildcc28439052455/trena/R/EnsembleSolver.R:20:29: unexpected ')'
+19:                                       )
+20:                             )
+                                ^
+ERROR: unable to collate and parse R files for package ‘trena’
+* removing ‘/tmp/RtmpD5QxH6/Rinstcc284695be77/trena’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,10 @@
+Package: pram
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:pram.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings pram_1.17.0.tar.gz
+StartedAt: 2023-06-02 02:43:10 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:43:22 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: pram.Rcheck
+Warnings: NA

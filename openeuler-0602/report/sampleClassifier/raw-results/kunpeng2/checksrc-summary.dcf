@@ -1,0 +1,10 @@
+Package: sampleClassifier
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:sampleClassifier.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings sampleClassifier_1.25.0.tar.gz
+StartedAt: 2023-06-02 02:47:16 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:47:32 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: sampleClassifier.Rcheck
+Warnings: NA

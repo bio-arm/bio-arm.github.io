@@ -1,0 +1,8 @@
+Package: MAIT
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL MAIT
+StartedAt: 2023-06-01 17:29:26 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:30:37 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 70.9 seconds
+RetCode: 0
+Status: OK

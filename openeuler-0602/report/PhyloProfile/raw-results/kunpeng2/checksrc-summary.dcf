@@ -1,0 +1,10 @@
+Package: PhyloProfile
+Version: 1.15.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:PhyloProfile.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings PhyloProfile_1.15.2.tar.gz
+StartedAt: 2023-06-02 02:42:31 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:42:54 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 23.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: PhyloProfile.Rcheck
+Warnings: NA

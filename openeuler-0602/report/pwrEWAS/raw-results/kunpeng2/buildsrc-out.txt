@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data pwrEWAS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘pwrEWAS/DESCRIPTION’ ... OK
+* preparing ‘pwrEWAS’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘pwrEWAS.Rmd’ using rmarkdown
+! Undefined control sequence.
+\LT@array ->\global \let \caption@opt@@longtable 
+                                                 \@undefined \def \captionse...
+l.226 ...width - 2\tabcolsep) * \real{0.8182}}@{}}
+
+Error: processing vignette 'pwrEWAS.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmpZqlPIF/Rbuild734f37ff93c53/pwrEWAS/vignettes/pwrEWAS.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See pwrEWAS.log for more info.
+--- failed re-building ‘pwrEWAS.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘pwrEWAS.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

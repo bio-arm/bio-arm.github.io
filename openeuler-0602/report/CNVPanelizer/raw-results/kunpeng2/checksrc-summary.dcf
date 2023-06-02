@@ -1,0 +1,10 @@
+Package: CNVPanelizer
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CNVPanelizer.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CNVPanelizer_1.33.0.tar.gz
+StartedAt: 2023-06-02 02:23:42 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:24:05 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 23.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: CNVPanelizer.Rcheck
+Warnings: NA

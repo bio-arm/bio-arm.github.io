@@ -1,0 +1,10 @@
+Package: TCC
+Version: 1.41.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TCC.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TCC_1.41.0.tar.gz
+StartedAt: 2023-06-02 02:51:54 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:52:08 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TCC.Rcheck
+Warnings: NA

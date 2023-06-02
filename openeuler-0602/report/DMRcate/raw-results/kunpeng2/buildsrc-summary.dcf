@@ -1,0 +1,10 @@
+Package: DMRcate
+Version: 2.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DMRcate
+StartedAt: 2023-06-01 20:09:44 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 20:22:28 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 763.3 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

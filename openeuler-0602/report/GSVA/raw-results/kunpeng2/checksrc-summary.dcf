@@ -1,0 +1,10 @@
+Package: GSVA
+Version: 1.49.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GSVA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GSVA_1.49.1.tar.gz
+StartedAt: 2023-06-02 02:32:15 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:32:25 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: GSVA.Rcheck
+Warnings: NA

@@ -1,0 +1,8 @@
+Package: Maaslin2
+Version: 1.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL Maaslin2
+StartedAt: 2023-06-01 17:22:46 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:22:47 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 1.0 seconds
+RetCode: 1
+Status: ERROR

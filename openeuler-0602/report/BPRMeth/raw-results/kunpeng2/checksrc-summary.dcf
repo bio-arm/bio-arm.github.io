@@ -1,0 +1,10 @@
+Package: BPRMeth
+Version: 1.27.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BPRMeth.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BPRMeth_1.27.1.tar.gz
+StartedAt: 2023-06-02 02:20:35 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:20:49 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 13.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: BPRMeth.Rcheck
+Warnings: NA

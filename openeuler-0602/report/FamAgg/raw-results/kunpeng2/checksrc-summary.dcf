@@ -1,0 +1,10 @@
+Package: FamAgg
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:FamAgg.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings FamAgg_1.29.0.tar.gz
+StartedAt: 2023-06-02 02:28:44 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:28:56 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: FamAgg.Rcheck
+Warnings: NA

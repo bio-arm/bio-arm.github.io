@@ -1,0 +1,10 @@
+Package: MetaboSignal
+Version: 1.31.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MetaboSignal.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MetaboSignal_1.31.1.tar.gz
+StartedAt: 2023-06-02 02:36:36 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:36:48 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MetaboSignal.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: IsoformSwitchAnalyzeR
+Version: 2.1.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:IsoformSwitchAnalyzeR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings IsoformSwitchAnalyzeR_2.1.2.tar.gz
+StartedAt: 2023-06-02 02:34:23 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:34:34 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: IsoformSwitchAnalyzeR.Rcheck
+Warnings: NA

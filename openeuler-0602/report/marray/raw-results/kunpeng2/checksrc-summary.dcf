@@ -1,0 +1,10 @@
+Package: marray
+Version: 1.79.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:marray.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings marray_1.79.0.tar.gz
+StartedAt: 2023-06-02 02:35:47 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:36:01 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: marray.Rcheck
+Warnings: NA

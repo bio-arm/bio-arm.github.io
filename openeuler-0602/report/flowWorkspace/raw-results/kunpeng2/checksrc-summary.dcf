@@ -1,0 +1,10 @@
+Package: flowWorkspace
+Version: 4.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:flowWorkspace.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings flowWorkspace_4.13.0.tar.gz
+StartedAt: 2023-06-02 02:29:36 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:29:48 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: flowWorkspace.Rcheck
+Warnings: NA

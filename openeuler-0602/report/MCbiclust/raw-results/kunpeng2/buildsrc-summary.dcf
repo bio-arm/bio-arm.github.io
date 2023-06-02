@@ -1,0 +1,10 @@
+Package: MCbiclust
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MCbiclust
+StartedAt: 2023-06-01 21:41:50 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 21:43:31 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 101.2 seconds
+RetCode: 0
+Status: OK
+PackageFile: MCbiclust_1.25.0.tar.gz
+PackageFileSize: 6.289 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

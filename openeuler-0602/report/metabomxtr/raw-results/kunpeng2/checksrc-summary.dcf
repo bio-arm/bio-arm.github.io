@@ -1,0 +1,10 @@
+Package: metabomxtr
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:metabomxtr.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings metabomxtr_1.35.0.tar.gz
+StartedAt: 2023-06-02 02:36:35 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:36:46 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: metabomxtr.Rcheck
+Warnings: NA

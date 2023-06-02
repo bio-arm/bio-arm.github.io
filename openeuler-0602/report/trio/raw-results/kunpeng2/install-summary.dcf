@@ -1,0 +1,8 @@
+Package: trio
+Version: 3.39.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL trio
+StartedAt: 2023-06-01 17:26:30 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:27:05 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 34.8 seconds
+RetCode: 0
+Status: OK

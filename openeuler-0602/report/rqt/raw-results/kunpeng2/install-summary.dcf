@@ -1,0 +1,8 @@
+Package: rqt
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL rqt
+StartedAt: 2023-06-01 17:31:30 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:32:08 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 38.3 seconds
+RetCode: 0
+Status: OK

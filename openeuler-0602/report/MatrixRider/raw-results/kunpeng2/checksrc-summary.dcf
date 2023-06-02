@@ -1,0 +1,10 @@
+Package: MatrixRider
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:MatrixRider.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings MatrixRider_1.33.0.tar.gz
+StartedAt: 2023-06-02 02:36:01 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:36:12 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 11.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: MatrixRider.Rcheck
+Warnings: NA

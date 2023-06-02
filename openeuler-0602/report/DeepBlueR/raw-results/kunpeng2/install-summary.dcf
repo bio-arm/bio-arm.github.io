@@ -1,0 +1,8 @@
+Package: DeepBlueR
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL DeepBlueR
+StartedAt: 2023-06-01 17:17:33 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:18:24 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 51.2 seconds
+RetCode: 1
+Status: ERROR

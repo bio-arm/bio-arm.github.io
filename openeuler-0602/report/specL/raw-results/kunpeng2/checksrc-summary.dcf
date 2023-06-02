@@ -1,0 +1,10 @@
+Package: specL
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:specL.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings specL_1.35.0.tar.gz
+StartedAt: 2023-06-02 02:50:14 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:50:35 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 21.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: specL.Rcheck
+Warnings: NA

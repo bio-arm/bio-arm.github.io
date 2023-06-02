@@ -1,0 +1,10 @@
+Package: CrispRVariants
+Version: 1.29.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CrispRVariants.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CrispRVariants_1.29.1.tar.gz
+StartedAt: 2023-06-02 02:24:59 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:25:26 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 27.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: CrispRVariants.Rcheck
+Warnings: NA

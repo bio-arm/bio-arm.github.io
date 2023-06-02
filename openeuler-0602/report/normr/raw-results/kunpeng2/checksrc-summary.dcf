@@ -1,0 +1,10 @@
+Package: normr
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:normr.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings normr_1.27.0.tar.gz
+StartedAt: 2023-06-02 02:40:24 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:40:36 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: normr.Rcheck
+Warnings: NA

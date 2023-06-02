@@ -1,0 +1,10 @@
+Package: PADOG
+Version: 1.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:PADOG.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings PADOG_1.43.0.tar.gz
+StartedAt: 2023-06-02 02:41:31 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:41:39 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 8.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: PADOG.Rcheck
+Warnings: NA

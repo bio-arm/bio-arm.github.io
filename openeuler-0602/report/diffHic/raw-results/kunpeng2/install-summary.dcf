@@ -1,0 +1,8 @@
+Package: diffHic
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL diffHic
+StartedAt: 2023-06-01 17:07:55 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:10:51 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 176.1 seconds
+RetCode: 0
+Status: OK

@@ -1,0 +1,8 @@
+Package: SpatialFeatureExperiment
+Version: 1.3.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL SpatialFeatureExperiment
+StartedAt: 2023-06-01 17:11:28 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:11:44 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 15.7 seconds
+RetCode: 1
+Status: ERROR

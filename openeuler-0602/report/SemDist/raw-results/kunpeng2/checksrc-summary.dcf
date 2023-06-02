@@ -1,0 +1,10 @@
+Package: SemDist
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:SemDist.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings SemDist_1.35.0.tar.gz
+StartedAt: 2023-06-02 02:48:31 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:49:17 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 46.3 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: SemDist.Rcheck
+Warnings: NA

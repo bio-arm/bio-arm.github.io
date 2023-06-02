@@ -1,0 +1,10 @@
+Package: msmsTests
+Version: 1.39.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data msmsTests
+StartedAt: 2023-06-01 22:13:36 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 22:14:42 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 66.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: msmsTests_1.39.0.tar.gz
+PackageFileSize: 534.1 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

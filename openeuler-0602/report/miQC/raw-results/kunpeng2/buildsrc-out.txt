@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data miQC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘miQC/DESCRIPTION’ ... OK
+* preparing ‘miQC’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘miQC.Rmd’ using rmarkdown
+
+Quitting from lines 278-284 [unnamed-chunk-18] (miQC.Rmd)
+Error: processing vignette 'miQC.Rmd' failed with diagnostics:
+failed to load resource
+  name: AH73905
+  title: Ensembl 97 EnsDb for Mus musculus
+  reason: database disk image is malformed
+--- failed re-building ‘miQC.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘miQC.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

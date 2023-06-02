@@ -1,0 +1,10 @@
+Package: rCGH
+Version: 1.31.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:rCGH.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings rCGH_1.31.0.tar.gz
+StartedAt: 2023-06-02 02:44:45 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:44:59 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: rCGH.Rcheck
+Warnings: NA

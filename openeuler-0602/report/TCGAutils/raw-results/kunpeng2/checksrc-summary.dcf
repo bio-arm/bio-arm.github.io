@@ -1,0 +1,10 @@
+Package: TCGAutils
+Version: 1.21.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TCGAutils.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TCGAutils_1.21.3.tar.gz
+StartedAt: 2023-06-02 02:51:57 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:52:09 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 12.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: TCGAutils.Rcheck
+Warnings: NA

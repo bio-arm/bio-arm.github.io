@@ -1,0 +1,10 @@
+Package: nullranges
+Version: 1.7.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:nullranges.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings nullranges_1.7.2.tar.gz
+StartedAt: 2023-06-02 02:40:30 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:40:46 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 16.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: nullranges.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: basilisk.utils
+Version: 1.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:basilisk.utils.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings basilisk.utils_1.13.1.tar.gz
+StartedAt: 2023-06-02 02:18:15 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:18:28 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 13.0 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: basilisk.utils.Rcheck
+Warnings: NA

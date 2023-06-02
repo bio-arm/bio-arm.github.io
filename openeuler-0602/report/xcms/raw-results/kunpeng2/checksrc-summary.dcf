@@ -1,0 +1,10 @@
+Package: xcms
+Version: 3.99.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:xcms.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings xcms_3.99.2.tar.gz
+StartedAt: 2023-06-02 02:54:29 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:55:00 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 31.4 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: xcms.Rcheck
+Warnings: NA

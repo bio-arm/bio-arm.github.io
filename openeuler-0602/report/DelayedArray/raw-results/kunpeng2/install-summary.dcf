@@ -1,0 +1,8 @@
+Package: DelayedArray
+Version: 0.27.4
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL DelayedArray
+StartedAt: 2023-06-01 16:56:03 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 16:56:44 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 41.6 seconds
+RetCode: 0
+Status: OK

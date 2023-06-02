@@ -1,0 +1,10 @@
+Package: AnnotationHub
+Version: 3.9.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AnnotationHub
+StartedAt: 2023-06-01 18:16:05 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 18:32:32 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 987.5 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

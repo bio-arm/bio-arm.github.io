@@ -1,0 +1,10 @@
+Package: zenith
+Version: 1.3.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:zenith.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings zenith_1.3.0.tar.gz
+StartedAt: 2023-06-02 02:54:39 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:54:51 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 12.3 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: zenith.Rcheck
+Warnings: NA

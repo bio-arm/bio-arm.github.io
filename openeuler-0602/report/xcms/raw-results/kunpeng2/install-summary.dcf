@@ -1,0 +1,8 @@
+Package: xcms
+Version: 3.99.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL xcms
+StartedAt: 2023-06-01 17:25:55 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:28:11 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 136.3 seconds
+RetCode: 0
+Status: OK

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL MsDataHub
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘MsDataHub’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘MsDataHub’:
+ .onLoad failed in loadNamespace() for 'MsDataHub', details:
+  call: readRDS(.db_index_file(x))
+  error: error reading from connection
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/MsDataHub’
+* restoring previous ‘/home/biocbuild/R/R-4.3.0/site-library/MsDataHub’

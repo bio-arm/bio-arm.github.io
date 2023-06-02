@@ -1,0 +1,10 @@
+Package: fcScan
+Version: 1.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:fcScan.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings fcScan_1.15.0.tar.gz
+StartedAt: 2023-06-02 02:28:56 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:29:11 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 15.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: fcScan.Rcheck
+Warnings: NA

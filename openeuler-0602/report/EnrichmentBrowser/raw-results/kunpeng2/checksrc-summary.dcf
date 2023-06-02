@@ -1,0 +1,10 @@
+Package: EnrichmentBrowser
+Version: 2.31.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EnrichmentBrowser.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EnrichmentBrowser_2.31.1.tar.gz
+StartedAt: 2023-06-02 02:27:57 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:28:08 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 10.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: EnrichmentBrowser.Rcheck
+Warnings: NA

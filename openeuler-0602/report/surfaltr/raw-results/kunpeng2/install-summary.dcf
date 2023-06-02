@@ -1,0 +1,8 @@
+Package: surfaltr
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL surfaltr
+StartedAt: 2023-06-01 17:19:15 -0000 (Thu, 01 Jun 2023)
+EndedAt: 2023-06-01 17:19:39 -0000 (Thu, 01 Jun 2023)
+EllapsedTime: 24.3 seconds
+RetCode: 0
+Status: OK

@@ -1,0 +1,10 @@
+Package: flowCore
+Version: 2.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:flowCore.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings flowCore_2.13.0.tar.gz
+StartedAt: 2023-06-02 02:29:14 -0000 (Fri, 02 Jun 2023)
+EndedAt: 2023-06-02 02:29:28 -0000 (Fri, 02 Jun 2023)
+EllapsedTime: 14.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: flowCore.Rcheck
+Warnings: NA
