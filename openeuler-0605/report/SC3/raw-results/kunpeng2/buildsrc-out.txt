@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SC3
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SC3/DESCRIPTION’ ... OK
+* preparing ‘SC3’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SC3’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c cppFunctions.cpp -o cppFunctions.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o SC3.so RcppExports.o cppFunctions.o -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpwTKbAg/Rinst1166f3c4de43e/00LOCK-SC3/00new/SC3/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘SC3’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpwTKbAg/Rinst1166f3c4de43e/00LOCK-SC3/00new/SC3/libs/SC3.so':
+  /tmp/RtmpwTKbAg/Rinst1166f3c4de43e/00LOCK-SC3/00new/SC3/libs/SC3.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpwTKbAg/Rinst1166f3c4de43e/SC3’
+      -----------------------------------
+ERROR: package installation failed

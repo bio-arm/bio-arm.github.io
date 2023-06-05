@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GenomicAlignments
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GenomicAlignments/DESCRIPTION’ ... OK
+* preparing ‘GenomicAlignments’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GenomicAlignments’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I/usr/local/include    -fPIC  -g -O2  -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I/usr/local/include    -fPIC  -g -O2  -c R_init_GenomicAlignments.c -o R_init_GenomicAlignments.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I/usr/local/include    -fPIC  -g -O2  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I/usr/local/include    -fPIC  -g -O2  -c cigar_utils.c -o cigar_utils.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I/usr/local/include    -fPIC  -g -O2  -c coordinate_mapping_methods.c -o coordinate_mapping_methods.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I/usr/local/include    -fPIC  -g -O2  -c encodeOverlaps_methods.c -o encodeOverlaps_methods.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GenomicAlignments.so IRanges_stubs.o R_init_GenomicAlignments.o S4Vectors_stubs.o cigar_utils.o coordinate_mapping_methods.o encodeOverlaps_methods.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpmvTrDz/Rinst3c79e078c17219/00LOCK-GenomicAlignments/00new/GenomicAlignments/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GenomicAlignments’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpmvTrDz/Rinst3c79e078c17219/00LOCK-GenomicAlignments/00new/GenomicAlignments/libs/GenomicAlignments.so':
+  /tmp/RtmpmvTrDz/Rinst3c79e078c17219/00LOCK-GenomicAlignments/00new/GenomicAlignments/libs/GenomicAlignments.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpmvTrDz/Rinst3c79e078c17219/GenomicAlignments’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MsCoreUtils
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MsCoreUtils/DESCRIPTION’ ... OK
+* preparing ‘MsCoreUtils’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘MsCoreUtils’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c between.c -o between.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c closest.c -o closest.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c impNeighbourAvg.c -o impNeighbourAvg.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c join.c -o join.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c localMaxima.c -o localMaxima.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c maxi.c -o maxi.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c sumi.c -o sumi.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c which.c -o which.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o MsCoreUtils.so between.o closest.o impNeighbourAvg.o init.o join.o localMaxima.o maxi.o sumi.o which.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpVgYNAM/Rinst3eeca23385d230/00LOCK-MsCoreUtils/00new/MsCoreUtils/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘MsCoreUtils’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpVgYNAM/Rinst3eeca23385d230/00LOCK-MsCoreUtils/00new/MsCoreUtils/libs/MsCoreUtils.so':
+  /tmp/RtmpVgYNAM/Rinst3eeca23385d230/00LOCK-MsCoreUtils/00new/MsCoreUtils/libs/MsCoreUtils.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpVgYNAM/Rinst3eeca23385d230/MsCoreUtils’
+      -----------------------------------
+ERROR: package installation failed

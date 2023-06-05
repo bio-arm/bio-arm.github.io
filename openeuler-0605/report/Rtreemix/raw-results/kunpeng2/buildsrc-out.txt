@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rtreemix
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Rtreemix/DESCRIPTION’ ... OK
+* preparing ‘Rtreemix’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘Rtreemix’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c Rtreemix.cc -o Rtreemix.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c Rtreemix_patch.cc -o Rtreemix_patch.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c WrapGraph.cc -o WrapGraph.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c cfunctions.cc -o cfunctions.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c kmeans.cc -o kmeans.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c max_weight_branch.cc -o max_weight_branch.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c mtree.cc -o mtree.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c mtreemix.cc -o mtreemix.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c replaceleda.cc -o replaceleda.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o Rtreemix.so Rtreemix.o Rtreemix_patch.o WrapGraph.o cfunctions.o kmeans.o max_weight_branch.o mtree.o mtreemix.o replaceleda.o -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmplBn0GA/Rinst1073c27b34dcb/00LOCK-Rtreemix/00new/Rtreemix/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘Rtreemix’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmplBn0GA/Rinst1073c27b34dcb/00LOCK-Rtreemix/00new/Rtreemix/libs/Rtreemix.so':
+  /tmp/RtmplBn0GA/Rinst1073c27b34dcb/00LOCK-Rtreemix/00new/Rtreemix/libs/Rtreemix.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmplBn0GA/Rinst1073c27b34dcb/Rtreemix’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,113 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:IMPCdata.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings IMPCdata_1.37.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/IMPCdata.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘IMPCdata/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘IMPCdata’ version ‘1.37.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘IMPCdata’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                  user system elapsed
+getIMPCDataset   0.189  0.007 143.721
+getPhenCenters   0.173  0.021  44.684
+getAlleles       0.093  0.001  16.230
+getPipelines     0.073  0.016   9.864
+getProcedures    0.073  0.016  12.833
+getParameters    0.082  0.003  10.353
+getGenes         0.073  0.008   9.852
+printGenes       0.063  0.016  18.559
+printAlleles     0.070  0.008  10.654
+printParameters  0.076  0.000  13.295
+printPipelines   0.067  0.009  15.115
+printProcedures  0.072  0.003  13.852
+getIMPCTable     0.052  0.002  15.643
+getStrains       0.039  0.009   9.625
+printStrains     0.026  0.012   7.841
+printPhenCenters 0.025  0.000   8.361
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘IMPCdata.Rnw’... OK
+ OK
+* checking re-building of vignette outputs ... NOTE
+Error(s) in re-building vignettes:
+  ...
+--- re-building ‘IMPCdata.Rnw’ using Sweave
+Warning in file(con, "r") :
+  URL 'https://www.ebi.ac.uk/mi/impc/solr/experiment/select?q=phenotyping_center:%22NA%22&rows=0&wt=json&facet=true&facet.mincount=1&facet.limit=-1&facet.field=pipeline_stable_id': status was 'SSL connect error'
+
+Error: processing vignette 'IMPCdata.Rnw' failed with diagnostics:
+ chunk 3 
+Error in file(con, "r") : 
+  cannot open the connection to 'https://www.ebi.ac.uk/mi/impc/solr/experiment/select?q=phenotyping_center:%22NA%22&rows=0&wt=json&facet=true&facet.mincount=1&facet.limit=-1&facet.field=pipeline_stable_id'
+
+--- failed re-building ‘IMPCdata.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘IMPCdata.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/IMPCdata.Rcheck/00check.log’
+for details.
+
+

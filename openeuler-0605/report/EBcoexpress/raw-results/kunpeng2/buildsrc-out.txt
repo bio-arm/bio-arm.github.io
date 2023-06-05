@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EBcoexpress
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EBcoexpress/DESCRIPTION’ ... OK
+* preparing ‘EBcoexpress’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘EBcoexpress’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c EBcoexpress.c -o EBcoexpress.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o EBcoexpress.so EBcoexpress.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpngdHpG/Rinst3b9d3b57ef1e15/00LOCK-EBcoexpress/00new/EBcoexpress/libs
+** R
+** data
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘EBcoexpress’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpngdHpG/Rinst3b9d3b57ef1e15/00LOCK-EBcoexpress/00new/EBcoexpress/libs/EBcoexpress.so':
+  /tmp/RtmpngdHpG/Rinst3b9d3b57ef1e15/00LOCK-EBcoexpress/00new/EBcoexpress/libs/EBcoexpress.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpngdHpG/Rinst3b9d3b57ef1e15/EBcoexpress’
+      -----------------------------------
+ERROR: package installation failed

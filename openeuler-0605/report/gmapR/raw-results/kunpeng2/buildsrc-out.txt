@@ -1,0 +1,34 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data gmapR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘gmapR/DESCRIPTION’ ... OK
+* preparing ‘gmapR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘gmapR’ ...
+** using staged installation
+** libs
+cd gstruct/; \
+        CFLAGS="-g -O3" \
+./configure --enable-static --disable-shared \
+            --prefix=/tmp/Rtmp3EiZpj/Rbuild3cc6e842aa79bd/gmapR/src/../inst/usr --includedir=/tmp/Rtmp3EiZpj/Rbuild3cc6e842aa79bd/gmapR/src/../inst/usr/include/gstruct \
+            --libdir=/tmp/Rtmp3EiZpj/Rbuild3cc6e842aa79bd/gmapR/src/../inst/usr/lib \
+            --with-samtools-lib=/tmp/Rtmp3EiZpj/Rbuild3cc6e842aa79bd/gmapR/src/samtools \
+	    --disable-maintainer-mode \
+                    --disable-binaries
+/bin/sh: line 2: ./configure: Permission denied
+make: *** [Makefile:54: gstruct/Makefile] Error 126
+ERROR: compilation failed for package ‘gmapR’
+* removing ‘/tmp/Rtmp3EiZpj/Rinst3cc6e8da4fe3a/gmapR’
+      -----------------------------------
+ERROR: package installation failed

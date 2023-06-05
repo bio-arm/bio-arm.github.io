@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CiteFuse
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CiteFuse/DESCRIPTION’ ... OK
+* preparing ‘CiteFuse’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘CiteFuse’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c backend.cpp -o backend.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c lr2propr.cpp -o lr2propr.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o CiteFuse.so RcppExports.o backend.o lr2propr.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpQEpJ4Q/Rinst3ab1f363340ee9/00LOCK-CiteFuse/00new/CiteFuse/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘CiteFuse’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpQEpJ4Q/Rinst3ab1f363340ee9/00LOCK-CiteFuse/00new/CiteFuse/libs/CiteFuse.so':
+  /tmp/RtmpQEpJ4Q/Rinst3ab1f363340ee9/00LOCK-CiteFuse/00new/CiteFuse/libs/CiteFuse.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpQEpJ4Q/Rinst3ab1f363340ee9/CiteFuse’
+      -----------------------------------
+ERROR: package installation failed

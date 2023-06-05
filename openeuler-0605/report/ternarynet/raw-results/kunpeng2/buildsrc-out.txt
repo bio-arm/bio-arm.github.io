@@ -1,0 +1,49 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ternarynet
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ternarynet/DESCRIPTION’ ... OK
+* preparing ‘ternarynet’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ternarynet’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c array.c -o array.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c gn.c -o gn.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c gn_Rwrap.c -o gn_Rwrap.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c tnetfit.cc -o tnetfit.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c tnetfuncs.cc -o tnetfuncs.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c tnetpost.cc -o tnetpost.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c util.c -o util.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ternarynet.so array.o gn.o gn_Rwrap.o init.o tnetfit.o tnetfuncs.o tnetpost.o util.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp5qJvG3/Rinst4cd8369dfa9f2/00LOCK-ternarynet/00new/ternarynet/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ternarynet’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp5qJvG3/Rinst4cd8369dfa9f2/00LOCK-ternarynet/00new/ternarynet/libs/ternarynet.so':
+  /tmp/Rtmp5qJvG3/Rinst4cd8369dfa9f2/00LOCK-ternarynet/00new/ternarynet/libs/ternarynet.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp5qJvG3/Rinst4cd8369dfa9f2/ternarynet’
+      -----------------------------------
+ERROR: package installation failed

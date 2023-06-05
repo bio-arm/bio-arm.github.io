@@ -1,0 +1,10 @@
+Package: AffyRNADegradation
+Version: 1.47.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AffyRNADegradation.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AffyRNADegradation_1.47.0.tar.gz
+StartedAt: 2023-06-04 12:38:10 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 12:39:27 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 77.1 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: AffyRNADegradation.Rcheck
+Warnings: NA

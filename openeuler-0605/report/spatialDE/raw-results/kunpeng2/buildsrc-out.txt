@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data spatialDE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘spatialDE/DESCRIPTION’ ... OK
+* preparing ‘spatialDE’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘spatialDE’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpIx052u/Rinst422073f6ce859/spatialDE’
+      -----------------------------------
+ERROR: package installation failed

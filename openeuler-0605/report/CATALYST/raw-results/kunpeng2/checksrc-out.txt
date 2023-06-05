@@ -1,0 +1,134 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CATALYST.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CATALYST_1.25.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘CATALYST/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘CATALYST’ version ‘1.25.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘CATALYST’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+There are ::: calls to the package's namespace in its code. A package
+  almost never needs to use ::: for its own objects:
+  ‘.cluster_cols’
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking LazyData ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                   user system elapsed
+plotMultiHeatmap 20.186  0.128  20.353
+plotPbExprs      19.025  0.040  19.100
+plotDiffHeatmap  17.769  0.036  17.850
+plotDR           15.801  0.068  15.894
+sce2fcs          14.566  0.068  14.663
+plotExprHeatmap  13.931  0.031  13.993
+plotCodes        10.811  0.064  10.898
+plotClusterExprs  9.887  0.024   9.933
+plotAbundances    9.852  0.035   9.909
+mergeClusters     9.778  0.071   9.874
+clrDR             9.430  0.148   9.596
+plotFreqHeatmap   9.486  0.052   9.556
+pbMDS             9.305  0.060   9.385
+SCE-accessors     9.145  0.083   9.248
+filterSCE         8.655  0.044   8.716
+cluster           7.930  0.052   7.997
+compCytof         7.471  0.012   7.498
+plotMahal         7.408  0.020   7.444
+plotSpillmat      7.323  0.056   7.396
+extractClusters   6.889  0.028   6.931
+estCutoffs        6.525  0.044   6.584
+computeSpillmat   6.396  0.020   6.432
+runDR             5.905  0.016   5.928
+adaptSpillmat     5.826  0.048   5.885
+plotScatter       5.818  0.044   5.874
+plotYields        5.384  0.004   5.402
+plotExprs         5.100  0.000   5.113
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ ERROR
+Running the tests in ‘tests/testthat.R’ failed.
+Last 13 lines of output:
+      anyMissing, rowMedians
+  
+  > 
+  > test_check("CATALYST")
+  [ FAIL 2 | WARN 20 | SKIP 0 | PASS 739 ]
+  
+  ══ Failed tests ════════════════════════════════════════════════════════════════
+  ── Failure ('test_plotting-differential.R:84:5'): pbMDS() - by = 'sample_id' ───
+  `p <- pbMDS(filterSCE(x0, !sample_id %in% s))` produced warnings.
+  ── Failure ('test_plotting-differential.R:97:5'): pbMDS() - by = 'cluster_id' ──
+  `p <- pbMDS(y, by = "cluster_id", k = k)` produced warnings.
+  
+  [ FAIL 2 | WARN 20 | SKIP 0 | PASS 739 ]
+  Error: Test failures
+  Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘differential.Rmd’ using ‘UTF-8’... OK
+  ‘preprocessing.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/CATALYST.Rcheck/00check.log’
+for details.
+

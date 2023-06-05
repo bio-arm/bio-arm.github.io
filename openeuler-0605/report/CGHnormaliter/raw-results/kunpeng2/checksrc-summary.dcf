@@ -1,0 +1,10 @@
+Package: CGHnormaliter
+Version: 1.55.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CGHnormaliter.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CGHnormaliter_1.55.0.tar.gz
+StartedAt: 2023-06-04 14:16:24 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 14:20:32 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 248.4 seconds
+RetCode: 0
+Status: OK
+CheckDir: CGHnormaliter.Rcheck
+Warnings: 0

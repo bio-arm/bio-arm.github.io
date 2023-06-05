@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data VariantFiltering
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘VariantFiltering/DESCRIPTION’ ... OK
+* preparing ‘VariantFiltering’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘VariantFiltering’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I/usr/local/include    -fPIC  -g -O2  -c Biostrings_stubs.c -o Biostrings_stubs.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I/usr/local/include    -fPIC  -g -O2  -c R_init_VariantFiltering.c -o R_init_VariantFiltering.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I/usr/local/include    -fPIC  -g -O2  -c methods-WeightMatrix.c -o methods-WeightMatrix.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o VariantFiltering.so Biostrings_stubs.o R_init_VariantFiltering.o methods-WeightMatrix.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpbxY7D6/Rinst568c3105ee0a8/00LOCK-VariantFiltering/00new/VariantFiltering/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for 'VariantFiltering' in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpbxY7D6/Rinst568c3105ee0a8/00LOCK-VariantFiltering/00new/VariantFiltering/libs/VariantFiltering.so':
+  /tmp/RtmpbxY7D6/Rinst568c3105ee0a8/00LOCK-VariantFiltering/00new/VariantFiltering/libs/VariantFiltering.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpbxY7D6/Rinst568c3105ee0a8/VariantFiltering’
+      -----------------------------------
+ERROR: package installation failed

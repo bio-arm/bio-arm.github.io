@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/BioNERO
+git_branch: devel
+git_last_commit: 6f0c087
+git_last_commit_date: 2023-06-01 16:59:06 -0000 (Thu, 01 Jun 2023)
+Package: BioNERO
+Version: 1.9.2
+Maintainer: Fabricio Almeida-Silva
+MaintainerEmail: fabricio_almeidasilva at hotmail.com

@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/beachmat
+git_branch: devel
+git_last_commit: b017ae6
+git_last_commit_date: 2023-06-01 17:30:54 -0000 (Thu, 01 Jun 2023)
+Package: beachmat
+Version: 2.17.5
+Maintainer: Aaron Lun
+MaintainerEmail: infinite.monkeys.with.keyboards at gmail.com

@@ -1,0 +1,10 @@
+Package: gcatest
+Version: 2.1.6
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data gcatest
+StartedAt: 2023-06-04 08:44:01 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 08:44:30 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 29.0 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

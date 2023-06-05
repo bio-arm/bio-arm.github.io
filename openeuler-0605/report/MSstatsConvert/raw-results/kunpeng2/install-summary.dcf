@@ -1,0 +1,8 @@
+Package: MSstatsConvert
+Version: 1.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL MSstatsConvert
+StartedAt: 2023-06-04 05:31:35 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:31:48 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 12.4 seconds
+RetCode: 0
+Status: OK

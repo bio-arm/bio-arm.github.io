@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FastqCleaner
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FastqCleaner/DESCRIPTION’ ... OK
+* preparing ‘FastqCleaner’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘FastqCleaner’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include/ -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include/ -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp_GC_content.cpp -o cpp_GC_content.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include/ -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp_base_content.cpp -o cpp_base_content.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include/ -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp_check_quality_threshold.cpp -o cpp_check_quality_threshold.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include/ -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp_create_stringvec.cpp -o cpp_create_stringvec.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include/ -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp_which_true.cpp -o cpp_which_true.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o FastqCleaner.so RcppExports.o cpp_GC_content.o cpp_base_content.o cpp_check_quality_threshold.o cpp_create_stringvec.o cpp_which_true.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpux2KC9/Rinst3bf3796243f8d6/00LOCK-FastqCleaner/00new/FastqCleaner/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘FastqCleaner’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpux2KC9/Rinst3bf3796243f8d6/00LOCK-FastqCleaner/00new/FastqCleaner/libs/FastqCleaner.so':
+  /tmp/Rtmpux2KC9/Rinst3bf3796243f8d6/00LOCK-FastqCleaner/00new/FastqCleaner/libs/FastqCleaner.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpux2KC9/Rinst3bf3796243f8d6/FastqCleaner’
+      -----------------------------------
+ERROR: package installation failed

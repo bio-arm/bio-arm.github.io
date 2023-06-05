@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data diffuStats
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘diffuStats/DESCRIPTION’ ... OK
+* preparing ‘diffuStats’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘diffuStats’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c diffuse_parallel.cpp -o diffuse_parallel.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o diffuStats.so RcppExports.o diffuse_parallel.o init.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpw2dRwd/Rinst3b7765704ee0d3/00LOCK-diffuStats/00new/diffuStats/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘diffuStats’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpw2dRwd/Rinst3b7765704ee0d3/00LOCK-diffuStats/00new/diffuStats/libs/diffuStats.so':
+  /tmp/Rtmpw2dRwd/Rinst3b7765704ee0d3/00LOCK-diffuStats/00new/diffuStats/libs/diffuStats.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpw2dRwd/Rinst3b7765704ee0d3/diffuStats’
+      -----------------------------------
+ERROR: package installation failed

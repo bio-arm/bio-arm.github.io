@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data vsn
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘vsn/DESCRIPTION’ ... OK
+* preparing ‘vsn’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘vsn’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c vsn.c -o vsn.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c vsn2.c -o vsn2.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o vsn.so init.o vsn.o vsn2.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp74UzKz/Rinst5712461fa792f/00LOCK-vsn/00new/vsn/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘vsn’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp74UzKz/Rinst5712461fa792f/00LOCK-vsn/00new/vsn/libs/vsn.so':
+  /tmp/Rtmp74UzKz/Rinst5712461fa792f/00LOCK-vsn/00new/vsn/libs/vsn.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp74UzKz/Rinst5712461fa792f/vsn’
+      -----------------------------------
+ERROR: package installation failed

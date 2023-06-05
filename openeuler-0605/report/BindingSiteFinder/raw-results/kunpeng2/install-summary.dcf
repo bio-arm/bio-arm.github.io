@@ -1,0 +1,8 @@
+Package: BindingSiteFinder
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL BindingSiteFinder
+StartedAt: 2023-06-04 05:56:17 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:57:30 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 73.3 seconds
+RetCode: 0
+Status: OK

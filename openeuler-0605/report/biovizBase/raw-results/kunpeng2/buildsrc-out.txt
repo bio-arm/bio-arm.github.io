@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data biovizBase
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘biovizBase/DESCRIPTION’ ... OK
+* preparing ‘biovizBase’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘biovizBase’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c R_init_biovizBase.c -o R_init_biovizBase.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c bin_offsets.c -o bin_offsets.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o biovizBase.so R_init_biovizBase.o bin_offsets.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpWL1rbP/Rinst3a57517eff9d92/00LOCK-biovizBase/00new/biovizBase/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for 'biovizBase' in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpWL1rbP/Rinst3a57517eff9d92/00LOCK-biovizBase/00new/biovizBase/libs/biovizBase.so':
+  /tmp/RtmpWL1rbP/Rinst3a57517eff9d92/00LOCK-biovizBase/00new/biovizBase/libs/biovizBase.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpWL1rbP/Rinst3a57517eff9d92/biovizBase’
+      -----------------------------------
+ERROR: package installation failed

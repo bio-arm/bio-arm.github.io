@@ -1,0 +1,10 @@
+Package: supraHex
+Version: 1.39.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:supraHex.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings supraHex_1.39.0.tar.gz
+StartedAt: 2023-06-05 00:57:30 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 00:58:58 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 88.1 seconds
+RetCode: 0
+Status: OK
+CheckDir: supraHex.Rcheck
+Warnings: 0

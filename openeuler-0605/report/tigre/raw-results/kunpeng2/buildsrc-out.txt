@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data tigre
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘tigre/DESCRIPTION’ ... OK
+* preparing ‘tigre’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘tigre’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c miscCFunctions.c -o miscCFunctions.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o tigre.so miscCFunctions.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpihR03u/Rinst4e11d2d7124de/00LOCK-tigre/00new/tigre/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘tigre’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpihR03u/Rinst4e11d2d7124de/00LOCK-tigre/00new/tigre/libs/tigre.so':
+  /tmp/RtmpihR03u/Rinst4e11d2d7124de/00LOCK-tigre/00new/tigre/libs/tigre.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpihR03u/Rinst4e11d2d7124de/tigre’
+      -----------------------------------
+ERROR: package installation failed

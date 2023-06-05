@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scran
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘scran/DESCRIPTION’ ... OK
+* preparing ‘scran’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘scran’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c choose_effect_size.cpp -o choose_effect_size.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c combine_rho.cpp -o combine_rho.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c compute_blocked_stats.cpp -o compute_blocked_stats.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c compute_residual_stats.cpp -o compute_residual_stats.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c compute_rho_null.cpp -o compute_rho_null.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c cyclone_scores.cpp -o cyclone_scores.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c overlap_exprs.cpp -o overlap_exprs.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/beachmat/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/site-library/dqrng/include' -I'/home/biocbuild/R/R-4.3.0/site-library/scuttle/include' -I/usr/local/include    -fPIC  -g -O2  -c rand_custom.cpp -o rand_custom.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o scran.so RcppExports.o choose_effect_size.o combine_rho.o compute_blocked_stats.o compute_residual_stats.o compute_rho_null.o cyclone_scores.o overlap_exprs.o rand_custom.o -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpHZqZca/Rinst3a7d917c33736/00LOCK-scran/00new/scran/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘scran’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpHZqZca/Rinst3a7d917c33736/00LOCK-scran/00new/scran/libs/scran.so':
+  /tmp/RtmpHZqZca/Rinst3a7d917c33736/00LOCK-scran/00new/scran/libs/scran.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpHZqZca/Rinst3a7d917c33736/scran’
+      -----------------------------------
+ERROR: package installation failed

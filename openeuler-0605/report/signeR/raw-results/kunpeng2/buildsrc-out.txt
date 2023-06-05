@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data signeR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘signeR/DESCRIPTION’ ... OK
+* preparing ‘signeR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘signeR’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c fuzzy.cpp -o fuzzy.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c gibbs_2.cpp -o gibbs_2.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c signeR_init.c -o signeR_init.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o signeR.so RcppExports.o fuzzy.o gibbs_2.o signeR_init.o -Wl,-S -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpmO1FtQ/Rinst3f5c52e5727d3/00LOCK-signeR/00new/signeR/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘signeR’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpmO1FtQ/Rinst3f5c52e5727d3/00LOCK-signeR/00new/signeR/libs/signeR.so':
+  /tmp/RtmpmO1FtQ/Rinst3f5c52e5727d3/00LOCK-signeR/00new/signeR/libs/signeR.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpmO1FtQ/Rinst3f5c52e5727d3/signeR’
+      -----------------------------------
+ERROR: package installation failed

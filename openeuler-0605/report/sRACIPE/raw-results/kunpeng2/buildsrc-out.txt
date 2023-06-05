@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data sRACIPE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘sRACIPE/DESCRIPTION’ ... OK
+* preparing ‘sRACIPE’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘sRACIPE’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c generateThresholds.cpp -o generateThresholds.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c header.cpp -o header.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c simulateGRC.cpp -o simulateGRC.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c steppers.cpp -o steppers.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o sRACIPE.so RcppExports.o generateThresholds.o header.o simulateGRC.o steppers.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpsbm2AJ/Rinst471ef12224a8c/00LOCK-sRACIPE/00new/sRACIPE/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘sRACIPE’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpsbm2AJ/Rinst471ef12224a8c/00LOCK-sRACIPE/00new/sRACIPE/libs/sRACIPE.so':
+  /tmp/Rtmpsbm2AJ/Rinst471ef12224a8c/00LOCK-sRACIPE/00new/sRACIPE/libs/sRACIPE.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpsbm2AJ/Rinst471ef12224a8c/sRACIPE’
+      -----------------------------------
+ERROR: package installation failed

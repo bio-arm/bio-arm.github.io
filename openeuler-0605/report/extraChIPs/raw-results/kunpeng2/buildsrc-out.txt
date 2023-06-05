@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data extraChIPs
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘extraChIPs/DESCRIPTION’ ... OK
+* preparing ‘extraChIPs’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘extraChIPs’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c FMStable.c -o FMStable.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o extraChIPs.so FMStable.o init.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpp7PgUK/Rinst3beeb896b70b2/00LOCK-extraChIPs/00new/extraChIPs/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for 'extraChIPs' in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpp7PgUK/Rinst3beeb896b70b2/00LOCK-extraChIPs/00new/extraChIPs/libs/extraChIPs.so':
+  /tmp/Rtmpp7PgUK/Rinst3beeb896b70b2/00LOCK-extraChIPs/00new/extraChIPs/libs/extraChIPs.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpp7PgUK/Rinst3beeb896b70b2/extraChIPs’
+      -----------------------------------
+ERROR: package installation failed

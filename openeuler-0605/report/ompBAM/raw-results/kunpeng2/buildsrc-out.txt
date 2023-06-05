@@ -1,0 +1,29 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ompBAM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ompBAM/DESCRIPTION’ ... OK
+* preparing ‘ompBAM’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘ompBAM-API-Docs.Rmd’ using rmarkdown
+
+Quitting from lines 75-76 [unnamed-chunk-6] (ompBAM-API-Docs.Rmd)
+Error: processing vignette 'ompBAM-API-Docs.Rmd' failed with diagnostics:
+Could not find tools necessary to compile a package
+Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
+--- failed re-building ‘ompBAM-API-Docs.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘ompBAM-API-Docs.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

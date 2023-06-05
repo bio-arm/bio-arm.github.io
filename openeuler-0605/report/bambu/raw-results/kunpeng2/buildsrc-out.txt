@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data bambu
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘bambu/DESCRIPTION’ ... OK
+* preparing ‘bambu’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘bambu’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c em.cpp -o em.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o bambu.so RcppExports.o em.o -llapack -lblas -lgfortran -lm -fopenmp -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpq6FUiy/Rinst2cf02d546312b0/00LOCK-bambu/00new/bambu/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘bambu’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpq6FUiy/Rinst2cf02d546312b0/00LOCK-bambu/00new/bambu/libs/bambu.so':
+  /tmp/Rtmpq6FUiy/Rinst2cf02d546312b0/00LOCK-bambu/00new/bambu/libs/bambu.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpq6FUiy/Rinst2cf02d546312b0/bambu’
+      -----------------------------------
+ERROR: package installation failed

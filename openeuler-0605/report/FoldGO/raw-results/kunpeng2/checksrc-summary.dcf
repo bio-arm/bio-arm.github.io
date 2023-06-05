@@ -1,0 +1,10 @@
+Package: FoldGO
+Version: 1.19.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:FoldGO.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings FoldGO_1.19.0.tar.gz
+StartedAt: 2023-06-04 16:59:52 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 17:02:50 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 178.3 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: FoldGO.Rcheck
+Warnings: NA

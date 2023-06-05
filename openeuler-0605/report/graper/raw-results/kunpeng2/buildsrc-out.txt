@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data graper
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘graper/DESCRIPTION’ ... OK
+* preparing ‘graper’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘graper’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c fit_graper.cpp -o fit_graper.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o graper.so RcppExports.o fit_graper.o -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpZHicwG/Rinst3cda812ab88b9/00LOCK-graper/00new/graper/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘graper’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpZHicwG/Rinst3cda812ab88b9/00LOCK-graper/00new/graper/libs/graper.so':
+  /tmp/RtmpZHicwG/Rinst3cda812ab88b9/00LOCK-graper/00new/graper/libs/graper.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpZHicwG/Rinst3cda812ab88b9/graper’
+      -----------------------------------
+ERROR: package installation failed

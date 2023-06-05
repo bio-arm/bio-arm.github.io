@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data basilisk
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘basilisk/DESCRIPTION’ ... OK
+* preparing ‘basilisk’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘basilisk’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpBGwUS0/Rinst2cf8493045be32/basilisk’
+      -----------------------------------
+ERROR: package installation failed

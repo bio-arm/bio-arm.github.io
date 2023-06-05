@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data HiCDCPlus
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘HiCDCPlus/DESCRIPTION’ ... OK
+* preparing ‘HiCDCPlus’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘HiCDCPlus’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c straw.cpp -o straw.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o HiCDCPlus.so RcppExports.o straw.o -lz -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpJgMLMd/Rinst3d18ed1fe6ce9a/00LOCK-HiCDCPlus/00new/HiCDCPlus/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘HiCDCPlus’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpJgMLMd/Rinst3d18ed1fe6ce9a/00LOCK-HiCDCPlus/00new/HiCDCPlus/libs/HiCDCPlus.so':
+  /tmp/RtmpJgMLMd/Rinst3d18ed1fe6ce9a/00LOCK-HiCDCPlus/00new/HiCDCPlus/libs/HiCDCPlus.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpJgMLMd/Rinst3d18ed1fe6ce9a/HiCDCPlus’
+      -----------------------------------
+ERROR: package installation failed

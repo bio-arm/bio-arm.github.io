@@ -1,0 +1,10 @@
+Package: doppelgangR
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:doppelgangR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings doppelgangR_1.29.0.tar.gz
+StartedAt: 2023-06-04 16:01:58 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 16:10:46 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 527.8 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: doppelgangR.Rcheck
+Warnings: NA

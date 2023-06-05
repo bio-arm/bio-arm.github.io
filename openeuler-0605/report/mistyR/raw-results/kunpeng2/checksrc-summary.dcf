@@ -1,0 +1,10 @@
+Package: mistyR
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:mistyR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings mistyR_1.9.0.tar.gz
+StartedAt: 2023-06-04 20:10:07 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 20:20:56 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 648.9 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: mistyR.Rcheck
+Warnings: NA

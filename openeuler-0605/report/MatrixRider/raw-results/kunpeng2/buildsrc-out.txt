@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MatrixRider
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MatrixRider/DESCRIPTION’ ... OK
+* preparing ‘MatrixRider’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘MatrixRider’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I/usr/local/include    -fPIC  -g -O2  -c Biostring_stubs.c -o Biostring_stubs.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I/usr/local/include    -fPIC  -g -O2  -c CuTest.c -o CuTest.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I/usr/local/include    -fPIC  -g -O2  -c R_init_MatrixRider.c -o R_init_MatrixRider.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I/usr/local/include    -fPIC  -g -O2  -c RunCuTest.c -o RunCuTest.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I/usr/local/include    -fPIC  -g -O2  -c XVector_stubs.c -o XVector_stubs.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/IRanges/include' -I'/home/biocbuild/R/R-4.3.0/site-library/XVector/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Biostrings/include' -I'/home/biocbuild/R/R-4.3.0/site-library/S4Vectors/include' -I/usr/local/include    -fPIC  -g -O2  -c matrix_rider.c -o matrix_rider.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o MatrixRider.so Biostring_stubs.o CuTest.o R_init_MatrixRider.o RunCuTest.o XVector_stubs.o matrix_rider.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpe43MGH/Rinst3e4b266f29d47a/00LOCK-MatrixRider/00new/MatrixRider/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘MatrixRider’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpe43MGH/Rinst3e4b266f29d47a/00LOCK-MatrixRider/00new/MatrixRider/libs/MatrixRider.so':
+  /tmp/Rtmpe43MGH/Rinst3e4b266f29d47a/00LOCK-MatrixRider/00new/MatrixRider/libs/MatrixRider.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpe43MGH/Rinst3e4b266f29d47a/MatrixRider’
+      -----------------------------------
+ERROR: package installation failed

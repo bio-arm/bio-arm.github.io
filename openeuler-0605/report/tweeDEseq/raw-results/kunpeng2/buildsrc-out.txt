@@ -1,0 +1,49 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data tweeDEseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘tweeDEseq/DESCRIPTION’ ... OK
+* preparing ‘tweeDEseq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘tweeDEseq’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c cov_wt_C.c -o cov_wt_C.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init_tweeDEseq.c -o init_tweeDEseq.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c loglikGlm.c -o loglikGlm.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c logprobs.c -o logprobs.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c permtest.c -o permtest.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c probs.c -o probs.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c zhu2.c -o zhu2.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c zhu3.c -o zhu3.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o tweeDEseq.so cov_wt_C.o init_tweeDEseq.o loglikGlm.o logprobs.o permtest.o probs.o zhu2.o zhu3.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpng869L/Rinst518c7132750e5/00LOCK-tweeDEseq/00new/tweeDEseq/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘tweeDEseq’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpng869L/Rinst518c7132750e5/00LOCK-tweeDEseq/00new/tweeDEseq/libs/tweeDEseq.so':
+  /tmp/Rtmpng869L/Rinst518c7132750e5/00LOCK-tweeDEseq/00new/tweeDEseq/libs/tweeDEseq.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpng869L/Rinst518c7132750e5/tweeDEseq’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,111 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Voyager.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Voyager_1.3.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/Voyager.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘Voyager/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘Voyager’ version ‘1.3.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘Voyager’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking R/sysdata.rda ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                         user system elapsed
+calculateMultivariate 197.523  0.578 201.462
+calculateBivariate     26.579  0.518  29.539
+clusterVariograms      13.831  0.072  16.269
+plotGeometry            9.431  0.144  14.208
+moranPlot               8.475  0.194  10.987
+plotVariogram           8.383  0.056  11.338
+ElbowPlot               7.341  1.047  12.874
+plotCellBin2D           6.867  0.221  56.671
+plotCrossVariogramMap   6.134  0.104   9.100
+plotSpatialFeature      5.964  0.060   8.333
+plotCrossVariogram      5.816  0.064   9.518
+plotLocalResult         5.630  0.068   9.193
+plotCorrelogram         5.247  0.072   7.584
+plotColDataFreqpoly     5.130  0.059   8.404
+plotColDataHistogram    4.922  0.044   7.799
+plotVariogramMap        4.890  0.064   8.466
+calculateUnivariate     4.551  0.172   8.478
+getParams               3.955  0.072   6.520
+spatialReducedDim       3.965  0.056   6.771
+plotColGraph            3.851  0.060   6.781
+moranBounds             3.420  0.048   5.791
+plotDimLoadings         3.291  0.083   6.181
+multispati_rsp          3.251  0.075   7.049
+clusterMoranPlot        3.126  0.035   5.532
+clusterCorrelograms     2.874  0.080   5.500
+plotMoranMC             2.817  0.096   5.635
+listw2sparse            2.785  0.052   5.140
+colFeatureData          2.700  0.072   6.199
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘overview.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: OK
+

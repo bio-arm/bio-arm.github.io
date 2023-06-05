@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data HilbertVis
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘HilbertVis/DESCRIPTION’ ... OK
+* preparing ‘HilbertVis’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘HilbertVis’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c hilbert.c -o hilbert.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c make_wiggle_vector.c -o make_wiggle_vector.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c shrink_vector.c -o shrink_vector.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o HilbertVis.so hilbert.o make_wiggle_vector.o shrink_vector.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpkByUbM/Rinst3d20b8360395b0/00LOCK-HilbertVis/00new/HilbertVis/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘HilbertVis’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpkByUbM/Rinst3d20b8360395b0/00LOCK-HilbertVis/00new/HilbertVis/libs/HilbertVis.so':
+  /tmp/RtmpkByUbM/Rinst3d20b8360395b0/00LOCK-HilbertVis/00new/HilbertVis/libs/HilbertVis.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpkByUbM/Rinst3d20b8360395b0/HilbertVis’
+      -----------------------------------
+ERROR: package installation failed

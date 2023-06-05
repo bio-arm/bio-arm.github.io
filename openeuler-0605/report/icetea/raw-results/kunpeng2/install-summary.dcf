@@ -1,0 +1,8 @@
+Package: icetea
+Version: 1.19.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL icetea
+StartedAt: 2023-06-04 05:54:20 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:55:28 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 67.9 seconds
+RetCode: 0
+Status: OK

@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data snifter
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘snifter/DESCRIPTION’ ... OK
+* preparing ‘snifter’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘snifter’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpcWdxvA/Rinst40fc04eaaa7b6/snifter’
+      -----------------------------------
+ERROR: package installation failed

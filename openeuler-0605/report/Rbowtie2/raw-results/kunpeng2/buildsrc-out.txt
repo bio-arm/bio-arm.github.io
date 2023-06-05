@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rbowtie2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Rbowtie2/DESCRIPTION’ ... OK
+* preparing ‘Rbowtie2’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Rbowtie2-Introduction.Rmd’ using rmarkdown
+sh: line 1: /tmp/RtmpfY5PD7/Rinst7cf51714dc4a/Rbowtie2/AdapterRemoval: Permission denied
+
+Quitting from lines 82-89 [idad] (Rbowtie2-Introduction.Rmd)
+Error: processing vignette 'Rbowtie2-Introduction.Rmd' failed with diagnostics:
+cannot open the connection
+--- failed re-building ‘Rbowtie2-Introduction.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Rbowtie2-Introduction.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

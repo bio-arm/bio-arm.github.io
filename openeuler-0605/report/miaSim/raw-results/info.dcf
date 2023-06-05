@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/miaSim
+git_branch: devel
+git_last_commit: f656454
+git_last_commit_date: 2023-06-02 14:04:06 -0000 (Fri, 02 Jun 2023)
+Package: miaSim
+Version: 1.7.2
+Maintainer: Yagmur Simsek
+MaintainerEmail: yagmur.simsek.98 at gmail.com

@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data HiCDOC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘HiCDOC/DESCRIPTION’ ... OK
+* preparing ‘HiCDOC’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘HiCDOC’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c constrainedClustering.cpp -o constrainedClustering.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c parseHiCFile.cpp -o parseHiCFile.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o HiCDOC.so RcppExports.o constrainedClustering.o parseHiCFile.o -lz -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpZKVhZk/Rinst3d19953b5e28d5/00LOCK-HiCDOC/00new/HiCDOC/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘HiCDOC’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpZKVhZk/Rinst3d19953b5e28d5/00LOCK-HiCDOC/00new/HiCDOC/libs/HiCDOC.so':
+  /tmp/RtmpZKVhZk/Rinst3d19953b5e28d5/00LOCK-HiCDOC/00new/HiCDOC/libs/HiCDOC.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpZKVhZk/Rinst3d19953b5e28d5/HiCDOC’
+      -----------------------------------
+ERROR: package installation failed

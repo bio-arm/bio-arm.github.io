@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data openCyto
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘openCyto/DESCRIPTION’ ... OK
+* preparing ‘openCyto’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘openCyto’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++17
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c Hungarian.cpp -o Hungarian.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c misc.cpp -o misc.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c rlm.cpp -o rlm.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c solve_LSAP.cpp -o solve_LSAP.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c unlockNamespace.cpp -o unlockNamespace.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o openCyto.so Hungarian.o cpp11.o misc.o rlm.o solve_LSAP.o unlockNamespace.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpI4SrHv/Rinst3f74d669c7497b/00LOCK-openCyto/00new/openCyto/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘openCyto’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpI4SrHv/Rinst3f74d669c7497b/00LOCK-openCyto/00new/openCyto/libs/openCyto.so':
+  /tmp/RtmpI4SrHv/Rinst3f74d669c7497b/00LOCK-openCyto/00new/openCyto/libs/openCyto.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpI4SrHv/Rinst3f74d669c7497b/openCyto’
+      -----------------------------------
+ERROR: package installation failed

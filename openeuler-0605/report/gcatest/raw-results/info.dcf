@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/gcatest
+git_branch: devel
+git_last_commit: f74e6e0
+git_last_commit_date: 2023-05-25 21:31:41 -0000 (Thu, 25 May 2023)
+Package: gcatest
+Version: 2.1.6
+Maintainer: Alejandro Ochoa
+MaintainerEmail: alejandro.ochoa at duke.edu

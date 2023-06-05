@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data matter
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘matter/DESCRIPTION’ ... OK
+* preparing ‘matter’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘matter’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c altrep.cpp -o altrep.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.cpp -o init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c matterExports.cpp -o matterExports.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o matter.so altrep.o init.o matterExports.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpU9D682/Rinst3e4bf45de6d5f5/00LOCK-matter/00new/matter/libs
+** R
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘apply’ in package ‘matter’
+Creating a new generic function for ‘scale’ in package ‘matter’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘matter’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpU9D682/Rinst3e4bf45de6d5f5/00LOCK-matter/00new/matter/libs/matter.so':
+  /tmp/RtmpU9D682/Rinst3e4bf45de6d5f5/00LOCK-matter/00new/matter/libs/matter.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpU9D682/Rinst3e4bf45de6d5f5/matter’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,8 @@
+Package: gcatest
+Version: 2.1.6
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL gcatest
+StartedAt: 2023-06-04 05:30:24 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:30:55 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 31.1 seconds
+RetCode: 0
+Status: OK

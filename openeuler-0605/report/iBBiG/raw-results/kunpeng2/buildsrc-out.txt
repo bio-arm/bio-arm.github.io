@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data iBBiG
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘iBBiG/DESCRIPTION’ ... OK
+* preparing ‘iBBiG’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘iBBiG’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c R_init_iBBiG.c -o R_init_iBBiG.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c iBBiG.c -o iBBiG.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o iBBiG.so R_init_iBBiG.o iBBiG.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpXITfMb/Rinst3d3a65789016b9/00LOCK-iBBiG/00new/iBBiG/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘iBBiG’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpXITfMb/Rinst3d3a65789016b9/00LOCK-iBBiG/00new/iBBiG/libs/iBBiG.so':
+  /tmp/RtmpXITfMb/Rinst3d3a65789016b9/00LOCK-iBBiG/00new/iBBiG/libs/iBBiG.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpXITfMb/Rinst3d3a65789016b9/iBBiG’
+      -----------------------------------
+ERROR: package installation failed

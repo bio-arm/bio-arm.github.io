@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data selectKSigs
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘selectKSigs/DESCRIPTION’ ... OK
+* preparing ‘selectKSigs’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘selectKSigs’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c EMalgorithm.cpp -o EMalgorithm.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c convertFromToVector.cpp -o convertFromToVector.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o selectKSigs.so EMalgorithm.o RcppExports.o convertFromToVector.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpBnJPgc/Rinst3b3c75864d223/00LOCK-selectKSigs/00new/selectKSigs/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘selectKSigs’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpBnJPgc/Rinst3b3c75864d223/00LOCK-selectKSigs/00new/selectKSigs/libs/selectKSigs.so':
+  /tmp/RtmpBnJPgc/Rinst3b3c75864d223/00LOCK-selectKSigs/00new/selectKSigs/libs/selectKSigs.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpBnJPgc/Rinst3b3c75864d223/selectKSigs’
+      -----------------------------------
+ERROR: package installation failed

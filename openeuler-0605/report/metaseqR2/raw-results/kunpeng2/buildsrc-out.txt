@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data metaseqR2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘metaseqR2/DESCRIPTION’ ... OK
+* preparing ‘metaseqR2’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘metaseqR2’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pval.c -o pval.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o metaseqR2.so pval.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpBl6hiD/Rinst3e776279e9af40/00LOCK-metaseqR2/00new/metaseqR2/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘metaseqR2’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpBl6hiD/Rinst3e776279e9af40/00LOCK-metaseqR2/00new/metaseqR2/libs/metaseqR2.so':
+  /tmp/RtmpBl6hiD/Rinst3e776279e9af40/00LOCK-metaseqR2/00new/metaseqR2/libs/metaseqR2.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpBl6hiD/Rinst3e776279e9af40/metaseqR2’
+      -----------------------------------
+ERROR: package installation failed

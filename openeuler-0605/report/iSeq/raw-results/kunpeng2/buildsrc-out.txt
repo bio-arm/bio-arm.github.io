@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data iSeq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘iSeq/DESCRIPTION’ ... OK
+* preparing ‘iSeq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘iSeq’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c iSeq.c -o iSeq.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o iSeq.so iSeq.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpg4iBzN/Rinst3dd7fa68c23330/00LOCK-iSeq/00new/iSeq/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘iSeq’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpg4iBzN/Rinst3dd7fa68c23330/00LOCK-iSeq/00new/iSeq/libs/iSeq.so':
+  /tmp/Rtmpg4iBzN/Rinst3dd7fa68c23330/00LOCK-iSeq/00new/iSeq/libs/iSeq.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpg4iBzN/Rinst3dd7fa68c23330/iSeq’
+      -----------------------------------
+ERROR: package installation failed

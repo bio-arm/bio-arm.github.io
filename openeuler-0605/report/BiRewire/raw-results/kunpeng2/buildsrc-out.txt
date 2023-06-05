@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BiRewire
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BiRewire/DESCRIPTION’ ... OK
+* preparing ‘BiRewire’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘BiRewire’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c BiRewire.c -o BiRewire.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c interface.c -o interface.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o BiRewire.so BiRewire.o interface.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpfOKFaK/Rinst3a579d7b43b76a/00LOCK-BiRewire/00new/BiRewire/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘BiRewire’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpfOKFaK/Rinst3a579d7b43b76a/00LOCK-BiRewire/00new/BiRewire/libs/BiRewire.so':
+  /tmp/RtmpfOKFaK/Rinst3a579d7b43b76a/00LOCK-BiRewire/00new/BiRewire/libs/BiRewire.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpfOKFaK/Rinst3a579d7b43b76a/BiRewire’
+      -----------------------------------
+ERROR: package installation failed

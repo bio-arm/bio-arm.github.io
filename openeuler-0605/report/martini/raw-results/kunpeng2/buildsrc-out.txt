@@ -1,0 +1,49 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data martini
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘martini/DESCRIPTION’ ... OK
+* preparing ‘martini’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘martini’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I/usr/local/include   -std=c++11 -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -DBGZF_CACHE -I./lib `/home/biocbuild/R/R-4.3.0/bin/Rscript -e "Rcpp:::CxxFlags()"` -DEIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fopenmp -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I/usr/local/include   -std=c++11 -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -DBGZF_CACHE -I./lib `/home/biocbuild/R/R-4.3.0/bin/Rscript -e "Rcpp:::CxxFlags()"` -DEIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fopenmp -fPIC  -g -O2  -c mincut.cpp -o mincut.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I/usr/local/include   -std=c++11 -fopenmp -D_USE_KNETFILE -D_FILE_OFFSET_BITS=64 -U_FORTIFY_SOURCE -DBGZF_CACHE -I./lib `/home/biocbuild/R/R-4.3.0/bin/Rscript -e "Rcpp:::CxxFlags()"` -DEIGEN_PERMANENTLY_DISABLE_STUPID_WARNINGS -fopenmp -fPIC  -g -O2  -c lib/maxflow/maxflow.cpp -o lib/maxflow/maxflow.o
+ar -crus libmaxflow.a lib/maxflow/maxflow.o
+cp -r lib/maxflow "/tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/00LOCK-martini/00new/martini/include"
+mkdir -p "/tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/00LOCK-martini/00new/martini/usrlib"
+cp libmaxflow.a "/tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/00LOCK-martini/00new/martini/usrlib"
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o martini.so RcppExports.o mincut.o -pthread -fopenmp /tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/00LOCK-martini/00new/martini/usrlib/libmaxflow.a -fopenmp -pthread -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/00LOCK-martini/00new/martini/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘martini’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/00LOCK-martini/00new/martini/libs/martini.so':
+  /tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/00LOCK-martini/00new/martini/libs/martini.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp2p5yqi/Rinst3e3b787a1b843c/martini’
+      -----------------------------------
+ERROR: package installation failed

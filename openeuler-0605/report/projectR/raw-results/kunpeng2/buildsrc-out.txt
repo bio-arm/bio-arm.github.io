@@ -1,0 +1,83 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data projectR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘projectR/DESCRIPTION’ ... OK
+* preparing ‘projectR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘projectR.Rmd’ using rmarkdown
+trying URL 'https://cloud.r-project.org/src/contrib/ttservice_0.3.5.tar.gz'
+Content type 'application/x-gzip' length 3165 bytes
+==================================================
+downloaded 3165 bytes
+
+* installing *source* package ‘ttservice’ ...
+** package ‘ttservice’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ttservice)
+
+The downloaded source packages are in
+	'/tmp/RtmpLxKcn2/downloaded_packages'
+trying URL 'https://cloud.r-project.org/src/contrib/mvtnorm_1.2-1.tar.gz'
+Content type 'application/x-gzip' length 663563 bytes (648 KB)
+==================================================
+downloaded 648 KB
+
+* installing *source* package ‘mvtnorm’ ...
+** package ‘mvtnorm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using Fortran compiler: ‘GNU Fortran (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2  -c C_FORTRAN_interface.c -o C_FORTRAN_interface.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2  -c lpmvnorm.c -o lpmvnorm.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2  -c ltMatrices.c -o ltMatrices.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2  -c miwa.c -o miwa.o
+gfortran  -fPIC  -g -O2  -c mvt.f -o mvt.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2  -c mvtnorm-init.c -o mvtnorm-init.o
+gfortran  -fPIC  -g -O2  -c tvpack.f -o tvpack.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o mvtnorm.so C_FORTRAN_interface.o lpmvnorm.o ltMatrices.o miwa.o mvt.o mvtnorm-init.o tvpack.o -llapack -lblas -lgfortran -lm -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/library/00LOCK-mvtnorm/00new/mvtnorm/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mvtnorm)
+
+The downloaded source packages are in
+	'/tmp/RtmpLxKcn2/downloaded_packages'
+
+Quitting from lines 21-26 [unnamed-chunk-1] (projectR.Rmd)
+Error: processing vignette 'projectR.Rmd' failed with diagnostics:
+error in running command
+--- failed re-building ‘projectR.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘projectR.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

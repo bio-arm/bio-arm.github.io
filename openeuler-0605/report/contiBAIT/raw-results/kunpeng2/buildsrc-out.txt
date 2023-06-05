@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data contiBAIT
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘contiBAIT/DESCRIPTION’ ... OK
+* preparing ‘contiBAIT’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘contiBAIT’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c buildLinkageGroups.cpp -o buildLinkageGroups.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c computeSim.cpp -o computeSim.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c orderContigsGreedy.cpp -o orderContigsGreedy.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o contiBAIT.so buildLinkageGroups.o computeSim.o orderContigsGreedy.o -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpNfm8ie/Rinst3af9f231cb1bdb/00LOCK-contiBAIT/00new/contiBAIT/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘contiBAIT’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpNfm8ie/Rinst3af9f231cb1bdb/00LOCK-contiBAIT/00new/contiBAIT/libs/contiBAIT.so':
+  /tmp/RtmpNfm8ie/Rinst3af9f231cb1bdb/00LOCK-contiBAIT/00new/contiBAIT/libs/contiBAIT.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpNfm8ie/Rinst3af9f231cb1bdb/contiBAIT’
+      -----------------------------------
+ERROR: package installation failed

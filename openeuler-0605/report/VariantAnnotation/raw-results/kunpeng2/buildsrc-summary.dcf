@@ -1,0 +1,10 @@
+Package: VariantAnnotation
+Version: 1.47.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data VariantAnnotation
+StartedAt: 2023-06-04 12:17:32 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 12:18:55 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 83.1 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

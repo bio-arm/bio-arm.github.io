@@ -1,0 +1,59 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SeqArray
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SeqArray/DESCRIPTION’ ... OK
+* preparing ‘SeqArray’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SeqArray’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c ConvGDS2VCF.cpp -o ConvGDS2VCF.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c ConvToGDS.cpp -o ConvToGDS.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c ConvVCF2GDS.cpp -o ConvVCF2GDS.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c FileMerge.cpp -o FileMerge.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c GetData.cpp -o GetData.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c Index.cpp -o Index.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c LinkSNPRelate.cpp -o LinkSNPRelate.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c Methods.cpp -o Methods.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c R_SeqArray.c -o R_SeqArray.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c ReadBySample.cpp -o ReadBySample.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c ReadByUnit.cpp -o ReadByUnit.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c ReadByVariant.cpp -o ReadByVariant.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c SeqArray.cpp -o SeqArray.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c pkg_test.cpp -o pkg_test.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c samtools_ext.c -o samtools_ext.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSING_R -I'/home/biocbuild/R/R-4.3.0/site-library/gdsfmt/include' -I/usr/local/include    -fPIC  -g -O2  -c vectorization.c -o vectorization.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o SeqArray.so ConvGDS2VCF.o ConvToGDS.o ConvVCF2GDS.o FileMerge.o GetData.o Index.o LinkSNPRelate.o Methods.o R_SeqArray.o ReadBySample.o ReadByUnit.o ReadByVariant.o SeqArray.o pkg_test.o samtools_ext.o vectorization.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpZ6qcaO/Rinst3bfb653bc9116/00LOCK-SeqArray/00new/SeqArray/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘SeqArray’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpZ6qcaO/Rinst3bfb653bc9116/00LOCK-SeqArray/00new/SeqArray/libs/SeqArray.so':
+  /tmp/RtmpZ6qcaO/Rinst3bfb653bc9116/00LOCK-SeqArray/00new/SeqArray/libs/SeqArray.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpZ6qcaO/Rinst3bfb653bc9116/SeqArray’
+      -----------------------------------
+ERROR: package installation failed

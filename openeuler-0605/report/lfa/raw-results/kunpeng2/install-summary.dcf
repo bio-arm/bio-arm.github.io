@@ -1,0 +1,8 @@
+Package: lfa
+Version: 2.1.10
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL lfa
+StartedAt: 2023-06-04 05:28:46 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:29:21 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 35.7 seconds
+RetCode: 0
+Status: OK

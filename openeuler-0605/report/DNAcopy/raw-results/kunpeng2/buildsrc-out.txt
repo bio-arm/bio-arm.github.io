@@ -1,0 +1,58 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DNAcopy
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DNAcopy/DESCRIPTION’ ... OK
+* preparing ‘DNAcopy’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘DNAcopy’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using Fortran compiler: ‘GNU Fortran (GCC) 10.3.1’
+gfortran  -fPIC  -g -O2  -c cbsWtstats.f -o cbsWtstats.o
+gfortran  -fPIC  -g -O2  -c cbststats.f -o cbststats.o
+gfortran  -fPIC  -g -O2  -c changepoints-wtd.f -o changepoints-wtd.o
+gfortran  -fPIC  -g -O2  -c changepoints.f -o changepoints.o
+gfortran  -fPIC  -g -O2  -c esegment.f -o esegment.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c flchoose.c -o flchoose.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c fphyper.c -o fphyper.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c fpnorm.c -o fpnorm.o
+gfortran  -fPIC  -g -O2  -c getbdry.f -o getbdry.o
+gfortran  -fPIC  -g -O2  -c prune.f -o prune.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c rshared.c -o rshared.o
+gfortran  -fPIC  -g -O2  -c segmentp.f -o segmentp.o
+gfortran  -fPIC  -g -O2  -c smoothCNA.f -o smoothCNA.o
+gfortran  -fPIC  -g -O2  -c tailprobs.f -o tailprobs.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o DNAcopy.so cbsWtstats.o cbststats.o changepoints-wtd.o changepoints.o esegment.o flchoose.o fphyper.o fpnorm.o getbdry.o prune.o rshared.o segmentp.o smoothCNA.o tailprobs.o -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp74Nhzf/Rinst3b8dad5484f8b5/00LOCK-DNAcopy/00new/DNAcopy/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘DNAcopy’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp74Nhzf/Rinst3b8dad5484f8b5/00LOCK-DNAcopy/00new/DNAcopy/libs/DNAcopy.so':
+  /tmp/Rtmp74Nhzf/Rinst3b8dad5484f8b5/00LOCK-DNAcopy/00new/DNAcopy/libs/DNAcopy.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp74Nhzf/Rinst3b8dad5484f8b5/DNAcopy’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for frma on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><B>[<A href="..#F">F</A>]</B></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-05 06:02:59 -0000 (Mon, 05 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for frma on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the frma package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/frma.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>733</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">frma</A>&nbsp;1.53.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/frma">landing page</A>)</SPAN><BR>Matthew N. McCall<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-03&nbsp;10:56:11&nbsp;-0000&nbsp;(Sat,&nbsp;03&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/frma</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">d127acf</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;13:50:01&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: frma</TD></TR>
+<TR><TD><B>Version</B>: 1.53.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:frma.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings frma_1.53.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-04 17:00:23 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-04 17:05:11 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 288.4 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: frma.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:frma.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings frma_1.53.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/frma.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘frma/DESCRIPTION’ ... OK
+* this is package ‘frma’ version ‘1.53.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘frma’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Package listed in more than one of Depends, Imports, Suggests, Enhances:
+  ‘Biobase’
+A package should be listed in only one of these fields.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+GNUSE: no visible binding for global variable ‘median’
+GNUSE: no visible binding for global variable ‘quantile’
+GNUSE: no visible global function definition for ‘boxplot’
+barcode: no visible global function definition for ‘pnorm’
+batchFit: no visible global function definition for ‘median’
+coerce&lt;-,frmaExpressionSet-ExpressionSet: no visible global function
+  definition for ‘slot&lt;-’
+coerce&lt;-,frmaExpressionSet-ExpressionSet: no visible global function
+  definition for ‘slot’
+randomeffects&lt;-,frmaExpressionSet: no visible global function
+  definition for ‘validObject’
+residuals&lt;-,frmaExpressionSet: no visible global function definition
+  for ‘validObject’
+se.exprs&lt;-,ExpressionSet: no visible global function definition for
+  ‘validObject’
+se.exprs&lt;-,frmaExpressionSet: no visible global function definition for
+  ‘validObject’
+weights&lt;-,frmaExpressionSet: no visible global function definition for
+  ‘validObject’
+Undefined global functions or variables:
+  boxplot median pnorm quantile slot slot&lt;- validObject
+Consider adding
+  importFrom(&quot;graphics&quot;, &quot;boxplot&quot;)
+  importFrom(&quot;methods&quot;, &quot;slot&quot;, &quot;slot&lt;-&quot;, &quot;validObject&quot;)
+  importFrom(&quot;stats&quot;, &quot;median&quot;, &quot;pnorm&quot;, &quot;quantile&quot;)
+to your NAMESPACE file (and ensure that your DESCRIPTION Imports field
+contains &#x27;methods&#x27;).
+* checking Rd files ... NOTE
+checkRd: (-1) frma.Rd:19: Escaped LaTeX specials: \_ \_
+checkRd: (-1) frma.Rd:20: Escaped LaTeX specials: \_ \_ \_
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘frma-Ex.R’ failed
+The error most likely occurred in:
+
+&gt; base::assign(&quot;.ptime&quot;, proc.time(), pos = &quot;CheckExEnv&quot;)
+&gt; ### Name: GNUSE
+&gt; ### Title: GNUSE
+&gt; ### Aliases: GNUSE
+&gt; ### Keywords: manip
+&gt; 
+&gt; ### ** Examples
+&gt; 
+&gt;   library(frma)
+&gt;   library(frmaExampleData)
+&gt;   data(AffyBatchExample)
+&gt;   object &lt;- frma(AffyBatchExample)
+also installing the dependencies ‘openssl’, ‘httr’, ‘KEGGREST’, ‘AnnotationDbi’
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/openssl_2.0.6.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1206602 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/httr_1.4.6.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 157621 bytes (153 KB)
+==================================================
+downloaded 153 KB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/KEGGREST_1.41.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 21824 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationDbi_1.63.1.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 4359401 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133acdf_2.18.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1732200 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+* installing *source* package ‘openssl’ ...
+** package ‘openssl’ successfully unpacked and MD5 sums checked
+** using staged installation
+ERROR: &#x27;configure&#x27; exists but is not executable -- see the &#x27;R Installation and Administration Manual&#x27;
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/openssl’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘openssl’ had non-zero exit status
+ERROR: dependency ‘openssl’ is not available for package ‘httr’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/httr’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘httr’ had non-zero exit status
+ERROR: dependency ‘httr’ is not available for package ‘KEGGREST’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/KEGGREST’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘KEGGREST’ had non-zero exit status
+ERROR: dependency ‘KEGGREST’ is not available for package ‘AnnotationDbi’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/AnnotationDbi’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘AnnotationDbi’ had non-zero exit status
+ERROR: dependency ‘AnnotationDbi’ is not available for package ‘hgu133acdf’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/hgu133acdf’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘hgu133acdf’ had non-zero exit status
+
+The downloaded source packages are in
+	‘/tmp/RtmpqPRT2A/downloaded_packages’
+Error in getCdfInfo(object) : 
+  Could not obtain CDF environment, problems encountered:
+Specified environment does not contain HG-U133A
+Library - package hgu133acdf not installed
+Library - package hgu133acdf not installed
+Calls: frma ... rma.background.correct -&gt; pm -&gt; pm -&gt; .local -&gt; getCdfInfo
+Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘frma.Rnw’... failed
+ ERROR
+Errors in running code in vignettes:
+when running code in ‘frma.Rnw’
+  ...
+
+The downloaded source packages are in
+	‘/tmp/RtmpGd7x4f/downloaded_packages’
+
+  When sourcing ‘frma.R’:
+Error: Could not obtain CDF environment, problems encountered:
+Specified environment does not contain HG-U133A
+Library - package hgu133acdf not installed
+Library - package hgu133acdf not installed
+Execution halted
+
+* checking re-building of vignette outputs ... NOTE
+Error(s) in re-building vignettes:
+--- re-building ‘frma.Rnw’ using Sweave
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+also installing the dependencies ‘openssl’, ‘httr’, ‘KEGGREST’, ‘AnnotationDbi’
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/openssl_2.0.6.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1206602 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/httr_1.4.6.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 157621 bytes (153 KB)
+==================================================
+downloaded 153 KB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/KEGGREST_1.41.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 21824 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationDbi_1.63.1.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 4359401 bytes (4.2 MB)
+==================================================
+downloaded 4.2 MB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133acdf_2.18.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1732200 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+* installing *source* package ‘openssl’ ...
+** package ‘openssl’ successfully unpacked and MD5 sums checked
+** using staged installation
+ERROR: &#x27;configure&#x27; exists but is not executable -- see the &#x27;R Installation and Administration Manual&#x27;
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/openssl’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘openssl’ had non-zero exit status
+ERROR: dependency ‘openssl’ is not available for package ‘httr’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/httr’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘httr’ had non-zero exit status
+ERROR: dependency ‘httr’ is not available for package ‘KEGGREST’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/KEGGREST’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘KEGGREST’ had non-zero exit status
+ERROR: dependency ‘KEGGREST’ is not available for package ‘AnnotationDbi’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/AnnotationDbi’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘AnnotationDbi’ had non-zero exit status
+ERROR: dependency ‘AnnotationDbi’ is not available for package ‘hgu133acdf’
+* removing ‘/tmp/RtmpE6tKG1/RLIBS_ea0a74968fc39/hgu133acdf’
+Warning in install.packages(cdfname, lib = lib, repos = repositories(),  :
+  installation of package ‘hgu133acdf’ had non-zero exit status
+
+The downloaded source packages are in
+	‘/tmp/RtmpM84gs1/downloaded_packages’
+
+Error: processing vignette &#x27;frma.Rnw&#x27; failed with diagnostics:
+ chunk 3 
+Error in getCdfInfo(object) : 
+  Could not obtain CDF environment, problems encountered:
+Specified environment does not contain HG-U133A
+Library - package hgu133acdf not installed
+Library - package hgu133acdf not installed
+
+--- failed re-building ‘frma.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘frma.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 2 ERRORs, 4 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/frma.Rcheck/00check.log’
+for details.
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">frma.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL frma
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘frma’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (frma)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">frma.Rcheck/frma-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

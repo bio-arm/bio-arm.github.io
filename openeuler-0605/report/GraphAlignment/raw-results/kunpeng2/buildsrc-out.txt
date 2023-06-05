@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GraphAlignment
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GraphAlignment/DESCRIPTION’ ... OK
+* preparing ‘GraphAlignment’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GraphAlignment’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GA_alloc.c -o GA_alloc.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GA_matrix.c -o GA_matrix.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GA_matrix_R.c -o GA_matrix_R.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GA_message.c -o GA_message.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GA_vector.c -o GA_vector.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GA_vector_R.c -o GA_vector_R.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GraphAlignment.c -o GraphAlignment.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c lap.c -o lap.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GraphAlignment.so GA_alloc.o GA_matrix.o GA_matrix_R.o GA_message.o GA_vector.o GA_vector_R.o GraphAlignment.o lap.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpTwaElA/Rinst3cdc522bbcbcb5/00LOCK-GraphAlignment/00new/GraphAlignment/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GraphAlignment’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpTwaElA/Rinst3cdc522bbcbcb5/00LOCK-GraphAlignment/00new/GraphAlignment/libs/GraphAlignment.so':
+  /tmp/RtmpTwaElA/Rinst3cdc522bbcbcb5/00LOCK-GraphAlignment/00new/GraphAlignment/libs/GraphAlignment.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpTwaElA/Rinst3cdc522bbcbcb5/GraphAlignment’
+      -----------------------------------
+ERROR: package installation failed

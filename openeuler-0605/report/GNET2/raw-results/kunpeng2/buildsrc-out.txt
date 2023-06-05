@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GNET2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GNET2/DESCRIPTION’ ... OK
+* preparing ‘GNET2’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GNET2’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c gnet_rcpp.cpp -o gnet_rcpp.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GNET2.so RcppExports.o gnet_rcpp.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpinmRD0/Rinst3cccbd53d99704/00LOCK-GNET2/00new/GNET2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GNET2’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpinmRD0/Rinst3cccbd53d99704/00LOCK-GNET2/00new/GNET2/libs/GNET2.so':
+  /tmp/RtmpinmRD0/Rinst3cccbd53d99704/00LOCK-GNET2/00new/GNET2/libs/GNET2.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpinmRD0/Rinst3cccbd53d99704/GNET2’
+      -----------------------------------
+ERROR: package installation failed

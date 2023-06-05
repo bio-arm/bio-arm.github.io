@@ -1,0 +1,499 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:miaViz.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings miaViz_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘miaViz/DESCRIPTION’ ... OK
+* this is package ‘miaViz’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘miaViz’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                       user system elapsed
+plotTree             83.786  1.353  85.314
+plotPrevalence       13.465  0.563  14.056
+plotAbundanceDensity 12.419  1.346  24.153
+plotAbundance        11.229  0.439  11.693
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘miaViz.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘miaViz.Rmd’ using rmarkdown
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-3-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-5-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-7-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-8-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-9-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-10-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-11-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot1-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot2-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot3-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot4-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-15-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-17-1.png" but not available.
+The magick package is required to crop "/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-22-1.png" but not available.
+trying URL 'https://cloud.r-project.org/src/contrib/credentials_1.3.2.tar.gz'
+Content type 'application/x-gzip' length 230070 bytes (224 KB)
+==================================================
+downloaded 224 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gitcreds_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 62569 bytes (61 KB)
+==================================================
+downloaded 61 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/httr2_0.2.3.tar.gz'
+Content type 'application/x-gzip' length 123376 bytes (120 KB)
+==================================================
+downloaded 120 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/ini_0.3.1.tar.gz'
+Content type 'application/x-gzip' length 3488 bytes
+==================================================
+downloaded 3488 bytes
+
+trying URL 'https://cloud.r-project.org/src/contrib/gert_1.9.2.tar.gz'
+Content type 'application/x-gzip' length 121088 bytes (118 KB)
+==================================================
+downloaded 118 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/gh_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 41214 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/downlit_0.4.2.tar.gz'
+Content type 'application/x-gzip' length 37039 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/xopen_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 11221 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/brew_1.0-8.tar.gz'
+Content type 'application/x-gzip' length 73562 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/usethis_2.1.6.tar.gz'
+Content type 'application/x-gzip' length 342349 bytes (334 KB)
+==================================================
+downloaded 334 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/miniUI_0.1.1.1.tar.gz'
+Content type 'application/x-gzip' length 97958 bytes (95 KB)
+==================================================
+downloaded 95 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pkgbuild_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 43739 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/pkgdown_2.0.7.tar.gz'
+Content type 'application/x-gzip' length 871465 bytes (851 KB)
+==================================================
+downloaded 851 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/profvis_0.3.8.tar.gz'
+Content type 'application/x-gzip' length 149012 bytes (145 KB)
+==================================================
+downloaded 145 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rcmdcheck_1.4.0.tar.gz'
+Content type 'application/x-gzip' length 73522 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/remotes_2.4.2.tar.gz'
+Content type 'application/x-gzip' length 152540 bytes (148 KB)
+==================================================
+downloaded 148 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/roxygen2_7.2.3.tar.gz'
+Content type 'application/x-gzip' length 279442 bytes (272 KB)
+==================================================
+downloaded 272 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/rversions_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 42135 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/sessioninfo_1.2.2.tar.gz'
+Content type 'application/x-gzip' length 170924 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/urlchecker_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 13340 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/devtools_2.4.5.tar.gz'
+Content type 'application/x-gzip' length 374718 bytes (365 KB)
+==================================================
+downloaded 365 KB
+
+* installing *source* package ‘credentials’ ...
+** package ‘credentials’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (credentials)
+* installing *source* package ‘gitcreds’ ...
+** package ‘gitcreds’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gitcreds)
+* installing *source* package ‘httr2’ ...
+** package ‘httr2’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (httr2)
+* installing *source* package ‘ini’ ...
+** package ‘ini’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ini)
+* installing *source* package ‘downlit’ ...
+** package ‘downlit’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (downlit)
+* installing *source* package ‘xopen’ ...
+** package ‘xopen’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (xopen)
+* installing *source* package ‘brew’ ...
+** package ‘brew’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (brew)
+* installing *source* package ‘miniUI’ ...
+** package ‘miniUI’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (miniUI)
+* installing *source* package ‘pkgbuild’ ...
+** package ‘pkgbuild’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pkgbuild)
+* installing *source* package ‘profvis’ ...
+** package ‘profvis’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pause.c -o pause.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c profvis-init.c -o profvis-init.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o profvis.so pause.o profvis-init.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-profvis/00new/profvis/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘profvis’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-profvis/00new/profvis/libs/profvis.so':
+  /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-profvis/00new/profvis/libs/profvis.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/profvis’
+* installing *source* package ‘remotes’ ...
+** package ‘remotes’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (remotes)
+* installing *source* package ‘rversions’ ...
+** package ‘rversions’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rversions)
+* installing *source* package ‘sessioninfo’ ...
+** package ‘sessioninfo’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sessioninfo)
+* installing *source* package ‘urlchecker’ ...
+** package ‘urlchecker’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (urlchecker)
+* installing *source* package ‘gert’ ...
+** package ‘gert’ successfully unpacked and MD5 sums checked
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/gert’
+* installing *source* package ‘gh’ ...
+** package ‘gh’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gh)
+* installing *source* package ‘pkgdown’ ...
+** package ‘pkgdown’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pkgdown)
+* installing *source* package ‘rcmdcheck’ ...
+** package ‘rcmdcheck’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rcmdcheck)
+* installing *source* package ‘roxygen2’ ...
+** package ‘roxygen2’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2  -c escapeExamples.cpp -o escapeExamples.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2  -c isComplete.cpp -o isComplete.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2  -c leadingSpaces.cpp -o leadingSpaces.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2  -c parser2.cpp -o parser2.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2  -c wrapUsage.cpp -o wrapUsage.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o roxygen2.so cpp11.o escapeExamples.o isComplete.o leadingSpaces.o parser2.o wrapUsage.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-roxygen2/00new/roxygen2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘roxygen2’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-roxygen2/00new/roxygen2/libs/roxygen2.so':
+  /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-roxygen2/00new/roxygen2/libs/roxygen2.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/roxygen2’
+ERROR: dependency ‘gert’ is not available for package ‘usethis’
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/usethis’
+ERROR: dependencies ‘usethis’, ‘profvis’, ‘roxygen2’ are not available for package ‘devtools’
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/devtools’
+
+The downloaded source packages are in
+	'/tmp/Rtmp2xNkdq/downloaded_packages'
+
+Quitting from lines 333-339 [unnamed-chunk-24] (miaViz.Rmd)
+Error: processing vignette 'miaViz.Rmd' failed with diagnostics:
+there is no package called 'devtools'
+--- failed re-building ‘miaViz.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘miaViz.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/00check.log’
+for details.
+

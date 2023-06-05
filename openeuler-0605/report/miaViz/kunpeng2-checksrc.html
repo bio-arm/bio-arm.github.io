@@ -1,0 +1,752 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for miaViz on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><B>[<A href="..#M">M</A>]</B></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-05 06:03:03 -0000 (Mon, 05 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for miaViz on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the miaViz package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/miaViz.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>1202</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">miaViz</A>&nbsp;1.9.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/miaViz">landing page</A>)</SPAN><BR>Tuomas Borman<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-03&nbsp;10:56:11&nbsp;-0000&nbsp;(Sat,&nbsp;03&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/miaViz</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">f8ea3b8</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;15:28:01&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: miaViz</TD></TR>
+<TR><TD><B>Version</B>: 1.9.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:miaViz.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings miaViz_1.9.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-04 19:52:23 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-04 20:05:03 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 760.0 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: miaViz.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:miaViz.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings miaViz_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘miaViz/DESCRIPTION’ ... OK
+* this is package ‘miaViz’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘miaViz’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                       user system elapsed
+plotTree             83.786  1.353  85.314
+plotPrevalence       13.465  0.563  14.056
+plotAbundanceDensity 12.419  1.346  24.153
+plotAbundance        11.229  0.439  11.693
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘miaViz.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘miaViz.Rmd’ using rmarkdown
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-3-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-5-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-7-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-8-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-9-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-10-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-11-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot1-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot2-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot3-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/plot4-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-15-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-17-1.png&quot; but not available.
+The magick package is required to crop &quot;/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/vign_test/miaViz/vignettes/miaViz_files/figure-html/unnamed-chunk-22-1.png&quot; but not available.
+trying URL &#x27;https://cloud.r-project.org/src/contrib/credentials_1.3.2.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 230070 bytes (224 KB)
+==================================================
+downloaded 224 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/gitcreds_0.1.2.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 62569 bytes (61 KB)
+==================================================
+downloaded 61 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/httr2_0.2.3.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 123376 bytes (120 KB)
+==================================================
+downloaded 120 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/ini_0.3.1.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 3488 bytes
+==================================================
+downloaded 3488 bytes
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/gert_1.9.2.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 121088 bytes (118 KB)
+==================================================
+downloaded 118 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/gh_1.4.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 41214 bytes (40 KB)
+==================================================
+downloaded 40 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/downlit_0.4.2.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 37039 bytes (36 KB)
+==================================================
+downloaded 36 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/xopen_1.0.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 11221 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/brew_1.0-8.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 73562 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/usethis_2.1.6.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 342349 bytes (334 KB)
+==================================================
+downloaded 334 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/miniUI_0.1.1.1.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 97958 bytes (95 KB)
+==================================================
+downloaded 95 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/pkgbuild_1.4.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 43739 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/pkgdown_2.0.7.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 871465 bytes (851 KB)
+==================================================
+downloaded 851 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/profvis_0.3.8.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 149012 bytes (145 KB)
+==================================================
+downloaded 145 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/rcmdcheck_1.4.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 73522 bytes (71 KB)
+==================================================
+downloaded 71 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/remotes_2.4.2.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 152540 bytes (148 KB)
+==================================================
+downloaded 148 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/roxygen2_7.2.3.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 279442 bytes (272 KB)
+==================================================
+downloaded 272 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/rversions_2.1.2.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 42135 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/sessioninfo_1.2.2.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 170924 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/urlchecker_1.0.1.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 13340 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/devtools_2.4.5.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 374718 bytes (365 KB)
+==================================================
+downloaded 365 KB
+
+* installing *source* package ‘credentials’ ...
+** package ‘credentials’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (credentials)
+* installing *source* package ‘gitcreds’ ...
+** package ‘gitcreds’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gitcreds)
+* installing *source* package ‘httr2’ ...
+** package ‘httr2’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (httr2)
+* installing *source* package ‘ini’ ...
+** package ‘ini’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ini)
+* installing *source* package ‘downlit’ ...
+** package ‘downlit’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (downlit)
+* installing *source* package ‘xopen’ ...
+** package ‘xopen’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (xopen)
+* installing *source* package ‘brew’ ...
+** package ‘brew’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (brew)
+* installing *source* package ‘miniUI’ ...
+** package ‘miniUI’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (miniUI)
+* installing *source* package ‘pkgbuild’ ...
+** package ‘pkgbuild’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pkgbuild)
+* installing *source* package ‘profvis’ ...
+** package ‘profvis’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pause.c -o pause.o
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c profvis-init.c -o profvis-init.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o profvis.so pause.o profvis-init.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-profvis/00new/profvis/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘profvis’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object &#x27;/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-profvis/00new/profvis/libs/profvis.so&#x27;:
+  /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-profvis/00new/profvis/libs/profvis.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/profvis’
+* installing *source* package ‘remotes’ ...
+** package ‘remotes’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (remotes)
+* installing *source* package ‘rversions’ ...
+** package ‘rversions’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rversions)
+* installing *source* package ‘sessioninfo’ ...
+** package ‘sessioninfo’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sessioninfo)
+* installing *source* package ‘urlchecker’ ...
+** package ‘urlchecker’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (urlchecker)
+* installing *source* package ‘gert’ ...
+** package ‘gert’ successfully unpacked and MD5 sums checked
+** using staged installation
+ERROR: &#x27;configure&#x27; exists but is not executable -- see the &#x27;R Installation and Administration Manual&#x27;
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/gert’
+* installing *source* package ‘gh’ ...
+** package ‘gh’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gh)
+* installing *source* package ‘pkgdown’ ...
+** package ‘pkgdown’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pkgdown)
+* installing *source* package ‘rcmdcheck’ ...
+** package ‘rcmdcheck’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rcmdcheck)
+* installing *source* package ‘roxygen2’ ...
+** package ‘roxygen2’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c escapeExamples.cpp -o escapeExamples.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c isComplete.cpp -o isComplete.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c leadingSpaces.cpp -o leadingSpaces.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c parser2.cpp -o parser2.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c wrapUsage.cpp -o wrapUsage.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o roxygen2.so cpp11.o escapeExamples.o isComplete.o leadingSpaces.o parser2.o wrapUsage.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-roxygen2/00new/roxygen2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘roxygen2’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object &#x27;/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-roxygen2/00new/roxygen2/libs/roxygen2.so&#x27;:
+  /tmp/RtmpEcPW9k/RLIBS_1a638c26479379/00LOCK-roxygen2/00new/roxygen2/libs/roxygen2.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/roxygen2’
+ERROR: dependency ‘gert’ is not available for package ‘usethis’
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/usethis’
+ERROR: dependencies ‘usethis’, ‘profvis’, ‘roxygen2’ are not available for package ‘devtools’
+* removing ‘/tmp/RtmpEcPW9k/RLIBS_1a638c26479379/devtools’
+
+The downloaded source packages are in
+	&#x27;/tmp/Rtmp2xNkdq/downloaded_packages&#x27;
+
+Quitting from lines 333-339 [unnamed-chunk-24] (miaViz.Rmd)
+Error: processing vignette &#x27;miaViz.Rmd&#x27; failed with diagnostics:
+there is no package called &#x27;devtools&#x27;
+--- failed re-building ‘miaViz.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘miaViz.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/miaViz.Rcheck/00check.log’
+for details.
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">miaViz.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL miaViz
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘miaViz’ ...
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (miaViz)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">miaViz.Rcheck/tests/testthat.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(testthat)
+&gt; library(miaViz)
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: &#x27;MatrixGenerics&#x27;
+
+The following objects are masked from &#x27;package:matrixStats&#x27;:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: &#x27;S4Vectors&#x27;
+
+The following object is masked from &#x27;package:utils&#x27;:
+
+    findMatches
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+
+Attaching package: &#x27;Biobase&#x27;
+
+The following object is masked from &#x27;package:MatrixGenerics&#x27;:
+
+    rowMedians
+
+The following objects are masked from &#x27;package:matrixStats&#x27;:
+
+    anyMissing, rowMedians
+
+Loading required package: TreeSummarizedExperiment
+Loading required package: SingleCellExperiment
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: &#x27;Biostrings&#x27;
+
+The following object is masked from &#x27;package:base&#x27;:
+
+    strsplit
+
+Loading required package: mia
+Loading required package: MultiAssayExperiment
+Loading required package: ggplot2
+Loading required package: ggraph
+&gt; 
+&gt; test_check(&quot;miaViz&quot;)
+[ FAIL 0 | WARN 9 | SKIP 1 | PASS 130 ]
+
+══ Skipped tests ═══════════════════════════════════════════════════════════════
+• Skip these tests until miaTime/SEtools/BiocGenerics::rowSums issue is fixed. (1)
+
+[ FAIL 0 | WARN 9 | SKIP 1 | PASS 130 ]
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+114.465   2.127 116.813 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">miaViz.Rcheck/miaViz-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>plotAbundance</TD><TD style="text-align: right;">11.229</TD><TD style="text-align: right;"> 0.439</TD><TD style="text-align: right;">11.693</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotAbundanceDensity</TD><TD style="text-align: right;">12.419</TD><TD style="text-align: right;"> 1.346</TD><TD style="text-align: right;">24.153</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotColTile</TD><TD style="text-align: right;">1.712</TD><TD style="text-align: right;">0.129</TD><TD style="text-align: right;">1.844</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotDMN</TD><TD style="text-align: right;">0.197</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">0.225</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotGraph</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotPrevalence</TD><TD style="text-align: right;">13.465</TD><TD style="text-align: right;"> 0.563</TD><TD style="text-align: right;">14.056</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotSeries</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotTree</TD><TD style="text-align: right;">83.786</TD><TD style="text-align: right;"> 1.353</TD><TD style="text-align: right;">85.314</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>treeData</TD><TD style="text-align: right;">0.689</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.691</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

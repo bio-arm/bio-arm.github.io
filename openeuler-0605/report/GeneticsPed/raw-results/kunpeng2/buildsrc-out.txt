@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GeneticsPed
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GeneticsPed/DESCRIPTION’ ... OK
+* preparing ‘GeneticsPed’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GeneticsPed’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using Fortran compiler: ‘GNU Fortran (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c ainverse.cc -o ainverse.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c eibd.cc -o eibd.o
+gfortran  -fPIC  -g -O2  -c ggmatmult.f -o ggmatmult.o
+gfortran  -fPIC  -g -O2  -c gpi.f -o gpi.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c inbreed.cc -o inbreed.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c inverseAdditive.cc -o inverseAdditive.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c meuwissen.cc -o meuwissen.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pedSort.cc -o pedSort.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pedtemplate.cc -o pedtemplate.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c register.cc -o register.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c sargolzaei.c -o sargolzaei.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c sortped.cc -o sortped.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GeneticsPed.so ainverse.o eibd.o ggmatmult.o gpi.o inbreed.o inverseAdditive.o meuwissen.o pedSort.o pedtemplate.o register.o sargolzaei.o sortped.o -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpnkdnAG/Rinst3c70f6441a319c/00LOCK-GeneticsPed/00new/GeneticsPed/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GeneticsPed’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpnkdnAG/Rinst3c70f6441a319c/00LOCK-GeneticsPed/00new/GeneticsPed/libs/GeneticsPed.so':
+  /tmp/RtmpnkdnAG/Rinst3c70f6441a319c/00LOCK-GeneticsPed/00new/GeneticsPed/libs/GeneticsPed.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpnkdnAG/Rinst3c70f6441a319c/GeneticsPed’
+      -----------------------------------
+ERROR: package installation failed

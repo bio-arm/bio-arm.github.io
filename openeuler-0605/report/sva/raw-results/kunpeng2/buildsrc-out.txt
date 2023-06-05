@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data sva
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘sva/DESCRIPTION’ ... OK
+* preparing ‘sva’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘sva’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c sva.c -o sva.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o sva.so sva.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpt4zIPy/Rinst4b4ff427ca1b/00LOCK-sva/00new/sva/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘sva’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpt4zIPy/Rinst4b4ff427ca1b/00LOCK-sva/00new/sva/libs/sva.so':
+  /tmp/Rtmpt4zIPy/Rinst4b4ff427ca1b/00LOCK-sva/00new/sva/libs/sva.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpt4zIPy/Rinst4b4ff427ca1b/sva’
+      -----------------------------------
+ERROR: package installation failed

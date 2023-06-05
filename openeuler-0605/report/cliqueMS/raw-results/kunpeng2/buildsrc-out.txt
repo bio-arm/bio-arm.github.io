@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data cliqueMS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘cliqueMS/DESCRIPTION’ ... OK
+* preparing ‘cliqueMS’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘cliqueMS’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c findAnnotationR.cpp -o findAnnotationR.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c findCliquesR.cpp -o findCliquesR.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c findIsotopesR.cpp -o findIsotopesR.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o cliqueMS.so RcppExports.o findAnnotationR.o findCliquesR.o findIsotopesR.o -fopenmp -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpxgAnwk/Rinst3ab54b1c6c323f/00LOCK-cliqueMS/00new/cliqueMS/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘cliqueMS’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpxgAnwk/Rinst3ab54b1c6c323f/00LOCK-cliqueMS/00new/cliqueMS/libs/cliqueMS.so':
+  /tmp/RtmpxgAnwk/Rinst3ab54b1c6c323f/00LOCK-cliqueMS/00new/cliqueMS/libs/cliqueMS.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpxgAnwk/Rinst3ab54b1c6c323f/cliqueMS’
+      -----------------------------------
+ERROR: package installation failed

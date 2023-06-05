@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CNORfuzzy
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CNORfuzzy/DESCRIPTION’ ... OK
+* preparing ‘CNORfuzzy’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘CNORfuzzy’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c simulatorT1.c -o simulatorT1.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o CNORfuzzy.so simulatorT1.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpo7i8eS/Rinst3ac8ee7b244b3d/00LOCK-CNORfuzzy/00new/CNORfuzzy/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘CNORfuzzy’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpo7i8eS/Rinst3ac8ee7b244b3d/00LOCK-CNORfuzzy/00new/CNORfuzzy/libs/CNORfuzzy.so':
+  /tmp/Rtmpo7i8eS/Rinst3ac8ee7b244b3d/00LOCK-CNORfuzzy/00new/CNORfuzzy/libs/CNORfuzzy.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpo7i8eS/Rinst3ac8ee7b244b3d/CNORfuzzy’
+      -----------------------------------
+ERROR: package installation failed

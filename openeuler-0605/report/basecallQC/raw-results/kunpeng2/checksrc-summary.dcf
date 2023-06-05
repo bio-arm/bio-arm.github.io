@@ -1,0 +1,10 @@
+Package: basecallQC
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:basecallQC.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings basecallQC_1.25.0.tar.gz
+StartedAt: 2023-06-04 13:13:17 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 13:23:24 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 606.9 seconds
+RetCode: 0
+Status: OK
+CheckDir: basecallQC.Rcheck
+Warnings: 0

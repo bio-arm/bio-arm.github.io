@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data garfield
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘garfield/DESCRIPTION’ ... OK
+* preparing ‘garfield’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘garfield’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c garfield_init.c -o garfield_init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c garfield_perm.cpp -o garfield_perm.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c garfield_prep.cpp -o garfield_prep.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o garfield.so garfield_init.o garfield_perm.o garfield_prep.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpvXMeot/Rinst3c338852bb354/00LOCK-garfield/00new/garfield/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘garfield’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpvXMeot/Rinst3c338852bb354/00LOCK-garfield/00new/garfield/libs/garfield.so':
+  /tmp/RtmpvXMeot/Rinst3c338852bb354/00LOCK-garfield/00new/garfield/libs/garfield.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpvXMeot/Rinst3c338852bb354/garfield’
+      -----------------------------------
+ERROR: package installation failed

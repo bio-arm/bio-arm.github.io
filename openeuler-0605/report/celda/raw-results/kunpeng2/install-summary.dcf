@@ -1,0 +1,8 @@
+Package: celda
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL celda
+StartedAt: 2023-06-04 06:12:50 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 06:14:42 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 112.0 seconds
+RetCode: 0
+Status: OK

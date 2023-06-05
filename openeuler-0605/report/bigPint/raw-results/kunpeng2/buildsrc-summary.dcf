@@ -1,0 +1,10 @@
+Package: bigPint
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data bigPint
+StartedAt: 2023-06-04 07:10:51 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 07:11:46 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 55.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: bigPint_1.17.0.tar.gz
+PackageFileSize: 5.59 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

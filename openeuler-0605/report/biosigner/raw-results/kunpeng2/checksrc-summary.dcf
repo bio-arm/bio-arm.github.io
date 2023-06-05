@@ -1,0 +1,10 @@
+Package: biosigner
+Version: 1.29.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:biosigner.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings biosigner_1.29.2.tar.gz
+StartedAt: 2023-06-04 13:36:23 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 13:46:34 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 610.8 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: biosigner.Rcheck
+Warnings: NA

@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data zellkonverter
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘zellkonverter/DESCRIPTION’ ... OK
+* preparing ‘zellkonverter’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘zellkonverter’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/Rtmpxz27P5/Rinst596e5259e75a0/zellkonverter’
+      -----------------------------------
+ERROR: package installation failed

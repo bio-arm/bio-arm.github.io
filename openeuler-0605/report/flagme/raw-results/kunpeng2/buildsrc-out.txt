@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data flagme
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘flagme/DESCRIPTION’ ... OK
+* preparing ‘flagme’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘flagme’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c dp.c -o dp.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pearson.c -o pearson.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o flagme.so dp.o init.o pearson.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpsQKWFb/Rinst3c068499fb51e/00LOCK-flagme/00new/flagme/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘flagme’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpsQKWFb/Rinst3c068499fb51e/00LOCK-flagme/00new/flagme/libs/flagme.so':
+  /tmp/RtmpsQKWFb/Rinst3c068499fb51e/00LOCK-flagme/00new/flagme/libs/flagme.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpsQKWFb/Rinst3c068499fb51e/flagme’
+      -----------------------------------
+ERROR: package installation failed

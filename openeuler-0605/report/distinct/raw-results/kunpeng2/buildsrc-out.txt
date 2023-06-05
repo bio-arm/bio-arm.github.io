@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data distinct
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘distinct/DESCRIPTION’ ... OK
+* preparing ‘distinct’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘distinct’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rfast/include' -I/usr/local/include    -fPIC  -g -O2  -c Perm.cpp -o Perm.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rfast/include' -I/usr/local/include    -fPIC  -g -O2  -c Perm_covariates.cpp -o Perm_covariates.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rfast/include' -I/usr/local/include    -fPIC  -g -O2  -c Perm_covariates_parallel.cpp -o Perm_covariates_parallel.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rfast/include' -I/usr/local/include    -fPIC  -g -O2  -c Perm_parallel.cpp -o Perm_parallel.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rfast/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o distinct.so Perm.o Perm_covariates.o Perm_covariates_parallel.o Perm_parallel.o RcppExports.o -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpqhNorO/Rinst3b815421b807ab/00LOCK-distinct/00new/distinct/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘distinct’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpqhNorO/Rinst3b815421b807ab/00LOCK-distinct/00new/distinct/libs/distinct.so':
+  /tmp/RtmpqhNorO/Rinst3b815421b807ab/00LOCK-distinct/00new/distinct/libs/distinct.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpqhNorO/Rinst3b815421b807ab/distinct’
+      -----------------------------------
+ERROR: package installation failed

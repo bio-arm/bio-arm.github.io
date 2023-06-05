@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MOGAMUN
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MOGAMUN/DESCRIPTION’ ... OK
+* preparing ‘MOGAMUN’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘MOGAMUN_Vignette.Rmd’ using knitr
+
+Quitting from lines 227-232 [end] (MOGAMUN_Vignette.Rmd)
+Error: processing vignette 'MOGAMUN_Vignette.Rmd' failed with diagnostics:
+'>=' only defined for equally-sized data frames
+--- failed re-building ‘MOGAMUN_Vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘MOGAMUN_Vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

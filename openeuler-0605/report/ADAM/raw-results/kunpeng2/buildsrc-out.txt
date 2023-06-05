@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ADAM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ADAM/DESCRIPTION’ ... OK
+* preparing ‘ADAM’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ADAM’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c MakeBootstrap.cpp -o MakeBootstrap.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ADAM.so MakeBootstrap.o RcppExports.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpc0Ex63/Rinst2c930c139e99c0/00LOCK-ADAM/00new/ADAM/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ADAM’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpc0Ex63/Rinst2c930c139e99c0/00LOCK-ADAM/00new/ADAM/libs/ADAM.so':
+  /tmp/Rtmpc0Ex63/Rinst2c930c139e99c0/00LOCK-ADAM/00new/ADAM/libs/ADAM.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpc0Ex63/Rinst2c930c139e99c0/ADAM’
+      -----------------------------------
+ERROR: package installation failed

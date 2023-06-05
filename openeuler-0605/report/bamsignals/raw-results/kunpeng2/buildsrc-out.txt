@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data bamsignals
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘bamsignals/DESCRIPTION’ ... OK
+* preparing ‘bamsignals’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘bamsignals’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/zlibbioc/include' -I/usr/local/include    -fPIC  -g -O2  -c CountSignals.cpp -o CountSignals.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/zlibbioc/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/zlibbioc/include' -I/usr/local/include    -fPIC  -g -O2  -c bamsignals.cpp -o bamsignals.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I'/home/biocbuild/R/R-4.3.0/site-library/zlibbioc/include' -I/usr/local/include    -fPIC  -g -O2  -c bamsignals_init.c -o bamsignals_init.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o bamsignals.so CountSignals.o RcppExports.o bamsignals.o bamsignals_init.o /home/biocbuild/R/R-4.3.0/site-library/Rhtslib/usrlib/libhts.a -lcurl -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp4tiVXY/Rinst2cf0da2456923c/00LOCK-bamsignals/00new/bamsignals/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘bamsignals’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp4tiVXY/Rinst2cf0da2456923c/00LOCK-bamsignals/00new/bamsignals/libs/bamsignals.so':
+  /tmp/Rtmp4tiVXY/Rinst2cf0da2456923c/00LOCK-bamsignals/00new/bamsignals/libs/bamsignals.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp4tiVXY/Rinst2cf0da2456923c/bamsignals’
+      -----------------------------------
+ERROR: package installation failed

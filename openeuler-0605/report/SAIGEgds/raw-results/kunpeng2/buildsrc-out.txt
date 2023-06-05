@@ -1,0 +1,49 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SAIGEgds
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SAIGEgds/DESCRIPTION’ ... OK
+* preparing ‘SAIGEgds’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SAIGEgds’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c SPATest.cpp -o SPATest.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c saige_fitnull.cpp -o saige_fitnull.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c saige_main.cpp -o saige_main.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c saige_misc.cpp -o saige_misc.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c vec_ext_avx2.cpp -o vec_ext_avx2.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c vec_ext_avx512bw.cpp -o vec_ext_avx512bw.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c vec_ext_def.cpp -o vec_ext_def.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DARMA_64BIT_WORD=1 -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I/usr/local/include    -fPIC  -g -O2  -c vectorization.cpp -o vectorization.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o SAIGEgds.so SPATest.o saige_fitnull.o saige_main.o saige_misc.o vec_ext_avx2.o vec_ext_avx512bw.o vec_ext_def.o vectorization.o -lm -llapack -lblas -lgfortran -lm -lgcc -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpKSGnAT/Rinst10fc5225d8140/00LOCK-SAIGEgds/00new/SAIGEgds/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘SAIGEgds’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpKSGnAT/Rinst10fc5225d8140/00LOCK-SAIGEgds/00new/SAIGEgds/libs/SAIGEgds.so':
+  /tmp/RtmpKSGnAT/Rinst10fc5225d8140/00LOCK-SAIGEgds/00new/SAIGEgds/libs/SAIGEgds.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpKSGnAT/Rinst10fc5225d8140/SAIGEgds’
+      -----------------------------------
+ERROR: package installation failed

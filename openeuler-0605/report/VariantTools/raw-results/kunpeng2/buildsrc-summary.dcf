@@ -1,0 +1,10 @@
+Package: VariantTools
+Version: 1.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data VariantTools
+StartedAt: 2023-06-04 12:18:11 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 12:19:51 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 100.2 seconds
+RetCode: 0
+Status: OK
+PackageFile: VariantTools_1.43.0.tar.gz
+PackageFileSize: 5.96 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

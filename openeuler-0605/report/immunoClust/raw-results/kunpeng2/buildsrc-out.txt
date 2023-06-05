@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data immunoClust
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘immunoClust/DESCRIPTION’ ... OK
+* preparing ‘immunoClust’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘immunoClust’ ...
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmppJ0dju/Rinst3d4f322d999ff0/immunoClust’
+      -----------------------------------
+ERROR: package installation failed

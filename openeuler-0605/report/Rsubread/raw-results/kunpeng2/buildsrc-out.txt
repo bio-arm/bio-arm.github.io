@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rsubread
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Rsubread/DESCRIPTION’ ... OK
+* preparing ‘Rsubread’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘Rsubread’ ...
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpKBTR2S/Rinst100382e25100f/Rsubread’
+      -----------------------------------
+ERROR: package installation failed

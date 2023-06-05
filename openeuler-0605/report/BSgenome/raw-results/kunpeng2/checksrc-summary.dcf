@@ -1,0 +1,10 @@
+Package: BSgenome
+Version: 1.69.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:BSgenome.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings BSgenome_1.69.0.tar.gz
+StartedAt: 2023-06-04 13:51:24 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 14:02:10 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 646.2 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: BSgenome.Rcheck
+Warnings: 3

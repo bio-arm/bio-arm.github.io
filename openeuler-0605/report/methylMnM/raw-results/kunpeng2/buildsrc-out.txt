@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data methylMnM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘methylMnM/DESCRIPTION’ ... OK
+* preparing ‘methylMnM’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘methylMnM’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c CpGcount.c -o CpGcount.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c calculatecount.c -o calculatecount.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c calculatecount1.c -o calculatecount1.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c calculatecountneg.c -o calculatecountneg.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pmultinom.c -o pmultinom.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pvalueclassify.c -o pvalueclassify.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c register.c -o register.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o methylMnM.so CpGcount.o calculatecount.o calculatecount1.o calculatecountneg.o pmultinom.o pvalueclassify.o register.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpN9AF1g/Rinst3e7f6a247468b1/00LOCK-methylMnM/00new/methylMnM/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘methylMnM’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpN9AF1g/Rinst3e7f6a247468b1/00LOCK-methylMnM/00new/methylMnM/libs/methylMnM.so':
+  /tmp/RtmpN9AF1g/Rinst3e7f6a247468b1/00LOCK-methylMnM/00new/methylMnM/libs/methylMnM.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpN9AF1g/Rinst3e7f6a247468b1/methylMnM’
+      -----------------------------------
+ERROR: package installation failed

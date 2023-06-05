@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rcwl
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Rcwl/DESCRIPTION’ ... OK
+* preparing ‘Rcwl’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘Rcwl’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/Rtmp1Yz7Sx/Rinst8d2d6f2a9e02/Rcwl’
+      -----------------------------------
+ERROR: package installation failed

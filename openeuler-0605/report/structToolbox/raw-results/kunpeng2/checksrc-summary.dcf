@@ -1,0 +1,10 @@
+Package: structToolbox
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:structToolbox.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings structToolbox_1.13.0.tar.gz
+StartedAt: 2023-06-05 00:54:16 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 01:20:17 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 1561.3 seconds
+RetCode: 0
+Status: OK
+CheckDir: structToolbox.Rcheck
+Warnings: 0

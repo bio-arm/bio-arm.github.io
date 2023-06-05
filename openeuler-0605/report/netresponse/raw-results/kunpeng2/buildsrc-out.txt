@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data netresponse
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘netresponse/DESCRIPTION’ ... OK
+* preparing ‘netresponse’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘netresponse’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c netresponse.c -o netresponse.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o netresponse.so netresponse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpqHO8QQ/Rinst3f275b2948d9d3/00LOCK-netresponse/00new/netresponse/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘netresponse’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpqHO8QQ/Rinst3f275b2948d9d3/00LOCK-netresponse/00new/netresponse/libs/netresponse.so':
+  /tmp/RtmpqHO8QQ/Rinst3f275b2948d9d3/00LOCK-netresponse/00new/netresponse/libs/netresponse.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpqHO8QQ/Rinst3f275b2948d9d3/netresponse’
+      -----------------------------------
+ERROR: package installation failed

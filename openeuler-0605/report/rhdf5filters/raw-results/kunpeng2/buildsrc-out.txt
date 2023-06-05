@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rhdf5filters
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rhdf5filters/DESCRIPTION’ ... OK
+* preparing ‘rhdf5filters’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘rhdf5filters’ ...
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpN7Bao5/Rinstb9d965083fc/rhdf5filters’
+      -----------------------------------
+ERROR: package installation failed

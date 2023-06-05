@@ -1,0 +1,49 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GeoDiff
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GeoDiff/DESCRIPTION’ ... OK
+* preparing ‘GeoDiff’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GeoDiff’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c NBthDEOptPara.cpp -o NBthDEOptPara.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c NBthmDEGrad.cpp -o NBthmDEGrad.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c NBthmDEMH.cpp -o NBthmDEMH.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c NBthmDEOptPara.cpp -o NBthmDEOptPara.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c NBthmDEOptU.cpp -o NBthmDEOptU.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c PoisthNormOptPara.cpp -o PoisthNormOptPara.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I'/home/biocbuild/R/R-4.3.0/site-library/roptim/include' -I/usr/local/include   -fopenmp  -fPIC  -g -O2  -c dnbinom_mu_vec.cpp -o dnbinom_mu_vec.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GeoDiff.so NBthDEOptPara.o NBthmDEGrad.o NBthmDEMH.o NBthmDEOptPara.o NBthmDEOptU.o PoisthNormOptPara.o RcppExports.o dnbinom_mu_vec.o -fopenmp -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp8rM3X1/Rinst3c8104451ff0b6/00LOCK-GeoDiff/00new/GeoDiff/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GeoDiff’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp8rM3X1/Rinst3c8104451ff0b6/00LOCK-GeoDiff/00new/GeoDiff/libs/GeoDiff.so':
+  /tmp/Rtmp8rM3X1/Rinst3c8104451ff0b6/00LOCK-GeoDiff/00new/GeoDiff/libs/GeoDiff.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp8rM3X1/Rinst3c8104451ff0b6/GeoDiff’
+      -----------------------------------
+ERROR: package installation failed

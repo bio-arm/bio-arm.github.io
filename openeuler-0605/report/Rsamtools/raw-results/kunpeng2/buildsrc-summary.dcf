@@ -1,0 +1,10 @@
+Package: Rsamtools
+Version: 2.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rsamtools
+StartedAt: 2023-06-04 11:04:43 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 11:05:32 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 49.1 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data cn.farms
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘cn.farms/DESCRIPTION’ ... OK
+* preparing ‘cn.farms’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘cn.farms’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c R_init_cnfarms.c -o R_init_cnfarms.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c laplace.cpp -o laplace.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c sparse_farms.c -o sparse_farms.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o cn.farms.so R_init_cnfarms.o laplace.o sparse_farms.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp2a5jyi/Rinst3ac44ce13df56/00LOCK-cn.farms/00new/cn.farms/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘cn.farms’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp2a5jyi/Rinst3ac44ce13df56/00LOCK-cn.farms/00new/cn.farms/libs/cn.farms.so':
+  /tmp/Rtmp2a5jyi/Rinst3ac44ce13df56/00LOCK-cn.farms/00new/cn.farms/libs/cn.farms.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp2a5jyi/Rinst3ac44ce13df56/cn.farms’
+      -----------------------------------
+ERROR: package installation failed

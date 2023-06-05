@@ -1,0 +1,10 @@
+Package: diggit
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:diggit.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings diggit_1.33.0.tar.gz
+StartedAt: 2023-06-04 15:54:14 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 16:06:23 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 729.0 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: diggit.Rcheck
+Warnings: 3

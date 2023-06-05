@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rfPred
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rfPred/DESCRIPTION’ ... OK
+* preparing ‘rfPred’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘rfPred’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c outstring.c -o outstring.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o rfPred.so outstring.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpxOW5Gv/Rinstb1e2dbdbcf6/00LOCK-rfPred/00new/rfPred/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘rfPred’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpxOW5Gv/Rinstb1e2dbdbcf6/00LOCK-rfPred/00new/rfPred/libs/rfPred.so':
+  /tmp/RtmpxOW5Gv/Rinstb1e2dbdbcf6/00LOCK-rfPred/00new/rfPred/libs/rfPred.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpxOW5Gv/Rinstb1e2dbdbcf6/rfPred’
+      -----------------------------------
+ERROR: package installation failed

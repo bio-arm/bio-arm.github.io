@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DifferentialRegulation
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DifferentialRegulation/DESCRIPTION’ ... OK
+* preparing ‘DifferentialRegulation’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘DifferentialRegulation’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c Rcpp_MCMC.cpp -o Rcpp_MCMC.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c Rcpp_MCMC_EC_US.cpp -o Rcpp_MCMC_EC_US.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o DifferentialRegulation.so RcppExports.o Rcpp_MCMC.o Rcpp_MCMC_EC_US.o -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp36teND/Rinst3b709b9364f37/00LOCK-DifferentialRegulation/00new/DifferentialRegulation/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘DifferentialRegulation’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp36teND/Rinst3b709b9364f37/00LOCK-DifferentialRegulation/00new/DifferentialRegulation/libs/DifferentialRegulation.so':
+  /tmp/Rtmp36teND/Rinst3b709b9364f37/00LOCK-DifferentialRegulation/00new/DifferentialRegulation/libs/DifferentialRegulation.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp36teND/Rinst3b709b9364f37/DifferentialRegulation’
+      -----------------------------------
+ERROR: package installation failed

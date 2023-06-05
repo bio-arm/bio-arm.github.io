@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data FuseSOM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘FuseSOM/DESCRIPTION’ ... OK
+* preparing ‘FuseSOM’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘FuseSOM’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c FuseSOM.c -o FuseSOM.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c bmu.c -o bmu.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c relational.c -o relational.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c som.c -o som.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o FuseSOM.so FuseSOM.o bmu.o relational.o som.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpRrSvHa/Rinst3c303e4c133f0a/00LOCK-FuseSOM/00new/FuseSOM/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘FuseSOM’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpRrSvHa/Rinst3c303e4c133f0a/00LOCK-FuseSOM/00new/FuseSOM/libs/FuseSOM.so':
+  /tmp/RtmpRrSvHa/Rinst3c303e4c133f0a/00LOCK-FuseSOM/00new/FuseSOM/libs/FuseSOM.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpRrSvHa/Rinst3c303e4c133f0a/FuseSOM’
+      -----------------------------------
+ERROR: package installation failed

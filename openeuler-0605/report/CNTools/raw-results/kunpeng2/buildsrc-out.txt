@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CNTools
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CNTools/DESCRIPTION’ ... OK
+* preparing ‘CNTools’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘CNTools’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c getratios.c -o getratios.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o CNTools.so getratios.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpBn0nfO/Rinst3ac92c2ab4a5b8/00LOCK-CNTools/00new/CNTools/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘start’ in package ‘CNTools’
+Creating a new generic function for ‘end’ in package ‘CNTools’
+Creating a generic function for ‘genefilter’ from package ‘genefilter’ in package ‘CNTools’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘CNTools’:
+ .onLoad failed in loadNamespace() for 'CNTools', details:
+  call: dyn.load(file, DLLpath = DLLpath, ...)
+  error: unable to load shared object '/tmp/RtmpBn0nfO/Rinst3ac92c2ab4a5b8/00LOCK-CNTools/00new/CNTools/libs/CNTools.so':
+  /tmp/RtmpBn0nfO/Rinst3ac92c2ab4a5b8/00LOCK-CNTools/00new/CNTools/libs/CNTools.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpBn0nfO/Rinst3ac92c2ab4a5b8/CNTools’
+      -----------------------------------
+ERROR: package installation failed

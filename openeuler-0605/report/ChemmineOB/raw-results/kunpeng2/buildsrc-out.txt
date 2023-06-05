@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ChemmineOB
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ChemmineOB/DESCRIPTION’ ... OK
+* preparing ‘ChemmineOB’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ChemmineOB’ ...
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/Rtmp8fkIIn/Rinst3a999767344af9/ChemmineOB’
+      -----------------------------------
+ERROR: package installation failed

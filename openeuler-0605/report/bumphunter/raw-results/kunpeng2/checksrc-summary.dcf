@@ -1,0 +1,10 @@
+Package: bumphunter
+Version: 1.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:bumphunter.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings bumphunter_1.43.0.tar.gz
+StartedAt: 2023-06-04 13:55:19 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 14:05:23 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 604.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: bumphunter.Rcheck
+Warnings: NA

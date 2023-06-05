@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CytoML
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CytoML/DESCRIPTION’ ... OK
+* preparing ‘CytoML’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘CytoML’ ...
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpIVyJcL/Rinst3b2cc28d5c74c/CytoML’
+      -----------------------------------
+ERROR: package installation failed

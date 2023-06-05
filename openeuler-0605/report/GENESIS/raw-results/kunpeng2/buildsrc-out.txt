@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GENESIS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GENESIS/DESCRIPTION’ ... OK
+* preparing ‘GENESIS’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GENESIS’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c fht.c -o fht.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GENESIS.so fht.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpLCgvWa/Rinst3c6dc74a393b1d/00LOCK-GENESIS/00new/GENESIS/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GENESIS’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpLCgvWa/Rinst3c6dc74a393b1d/00LOCK-GENESIS/00new/GENESIS/libs/GENESIS.so':
+  /tmp/RtmpLCgvWa/Rinst3c6dc74a393b1d/00LOCK-GENESIS/00new/GENESIS/libs/GENESIS.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpLCgvWa/Rinst3c6dc74a393b1d/GENESIS’
+      -----------------------------------
+ERROR: package installation failed

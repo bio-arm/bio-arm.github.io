@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scDDboost
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘scDDboost/DESCRIPTION’ ... OK
+* preparing ‘scDDboost’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘scDDboost’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c DATA.cpp -o DATA.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c Header.cpp -o Header.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c derived.cpp -o derived.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c main.cpp -o main.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppEigen/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include    -fPIC  -g -O2  -c scDDboost_init.c -o scDDboost_init.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o scDDboost.so DATA.o Header.o derived.o main.o scDDboost_init.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpnITCKs/Rinst1257663d99ef6/00LOCK-scDDboost/00new/scDDboost/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘scDDboost’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpnITCKs/Rinst1257663d99ef6/00LOCK-scDDboost/00new/scDDboost/libs/scDDboost.so':
+  /tmp/RtmpnITCKs/Rinst1257663d99ef6/00LOCK-scDDboost/00new/scDDboost/libs/scDDboost.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpnITCKs/Rinst1257663d99ef6/scDDboost’
+      -----------------------------------
+ERROR: package installation failed

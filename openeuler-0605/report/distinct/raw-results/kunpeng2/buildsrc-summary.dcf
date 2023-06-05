@@ -1,0 +1,10 @@
+Package: distinct
+Version: 1.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data distinct
+StartedAt: 2023-06-04 08:18:12 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 08:20:08 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 116.2 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

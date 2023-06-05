@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GSReg
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GSReg/DESCRIPTION’ ... OK
+* preparing ‘GSReg’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GSReg’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c kendallTauDistance.cc -o kendallTauDistance.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c kendallTauDistanceFromTemp.cc -o kendallTauDistanceFromTemp.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c kendallTauDistanceRestricted.cc -o kendallTauDistanceRestricted.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c nij.cc -o nij.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c vect2compC.cc -o vect2compC.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GSReg.so init.o kendallTauDistance.o kendallTauDistanceFromTemp.o kendallTauDistanceRestricted.o nij.o vect2compC.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpelocO3/Rinst3ceff13d1b80de/00LOCK-GSReg/00new/GSReg/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GSReg’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpelocO3/Rinst3ceff13d1b80de/00LOCK-GSReg/00new/GSReg/libs/GSReg.so':
+  /tmp/RtmpelocO3/Rinst3ceff13d1b80de/00LOCK-GSReg/00new/GSReg/libs/GSReg.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpelocO3/Rinst3ceff13d1b80de/GSReg’
+      -----------------------------------
+ERROR: package installation failed

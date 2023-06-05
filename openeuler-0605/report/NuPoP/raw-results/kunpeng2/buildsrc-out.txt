@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data NuPoP
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘NuPoP/DESCRIPTION’ ... OK
+* preparing ‘NuPoP’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘NuPoP’ ...
+** using staged installation
+** libs
+using Fortran compiler: ‘GNU Fortran (GCC) 10.3.1’
+gfortran  -fPIC  -g -O2  -c  cvtbfb.f90 -o cvtbfb.o
+gfortran  -fPIC  -g -O2  -c  cvtbfbNL4.f90 -o cvtbfbNL4.o
+gfortran  -fPIC  -g -O2  -c  vtbfb.f90 -o vtbfb.o
+gfortran  -fPIC  -g -O2  -c  vtbfbNL4.f90 -o vtbfbNL4.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o NuPoP.so cvtbfb.o cvtbfbNL4.o vtbfb.o vtbfbNL4.o -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmprMjst6/Rinst3f480a76c0788a/00LOCK-NuPoP/00new/NuPoP/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘NuPoP’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmprMjst6/Rinst3f480a76c0788a/00LOCK-NuPoP/00new/NuPoP/libs/NuPoP.so':
+  /tmp/RtmprMjst6/Rinst3f480a76c0788a/00LOCK-NuPoP/00new/NuPoP/libs/NuPoP.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmprMjst6/Rinst3f480a76c0788a/NuPoP’
+      -----------------------------------
+ERROR: package installation failed

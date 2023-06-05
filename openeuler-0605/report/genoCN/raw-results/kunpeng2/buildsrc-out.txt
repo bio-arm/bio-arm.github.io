@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data genoCN
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘genoCN/DESCRIPTION’ ... OK
+* preparing ‘genoCN’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘genoCN’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c tnorm_mle.c -o tnorm_mle.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c utility.c -o utility.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c xCNV.c -o xCNV.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o genoCN.so tnorm_mle.o utility.o xCNV.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpQntvwS/Rinst3c74331676d5b3/00LOCK-genoCN/00new/genoCN/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘genoCN’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpQntvwS/Rinst3c74331676d5b3/00LOCK-genoCN/00new/genoCN/libs/genoCN.so':
+  /tmp/RtmpQntvwS/Rinst3c74331676d5b3/00LOCK-genoCN/00new/genoCN/libs/genoCN.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpQntvwS/Rinst3c74331676d5b3/genoCN’
+      -----------------------------------
+ERROR: package installation failed

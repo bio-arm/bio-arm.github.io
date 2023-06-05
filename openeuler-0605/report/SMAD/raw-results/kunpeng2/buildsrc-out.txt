@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SMAD
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SMAD/DESCRIPTION’ ... OK
+* preparing ‘SMAD’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SMAD’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c GetDICE.cpp -o GetDICE.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c GetPPN.cpp -o GetPPN.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o SMAD.so GetDICE.o GetPPN.o RcppExports.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpjPgKnE/Rinst40c80b8d9b0b/00LOCK-SMAD/00new/SMAD/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+sh: line 1: /bin/kstat: No such file or directory
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+sh: line 1: /bin/kstat: No such file or directory
+Error: package or namespace load failed for ‘SMAD’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpjPgKnE/Rinst40c80b8d9b0b/00LOCK-SMAD/00new/SMAD/libs/SMAD.so':
+  /tmp/RtmpjPgKnE/Rinst40c80b8d9b0b/00LOCK-SMAD/00new/SMAD/libs/SMAD.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpjPgKnE/Rinst40c80b8d9b0b/SMAD’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DSS
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DSS/DESCRIPTION’ ... OK
+* preparing ‘DSS’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘DSS’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c compute_var_smooth.c -o compute_var_smooth.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c filter.c -o filter.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c nitem.c -o nitem.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o DSS.so compute_var_smooth.o filter.o nitem.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmphfh0UU/Rinst3b966f539a3d49/00LOCK-DSS/00new/DSS/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘DSS’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmphfh0UU/Rinst3b966f539a3d49/00LOCK-DSS/00new/DSS/libs/DSS.so':
+  /tmp/Rtmphfh0UU/Rinst3b966f539a3d49/00LOCK-DSS/00new/DSS/libs/DSS.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmphfh0UU/Rinst3b966f539a3d49/DSS’
+      -----------------------------------
+ERROR: package installation failed

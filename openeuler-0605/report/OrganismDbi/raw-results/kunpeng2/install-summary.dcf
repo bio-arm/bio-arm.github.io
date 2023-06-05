@@ -1,0 +1,8 @@
+Package: OrganismDbi
+Version: 1.43.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL OrganismDbi
+StartedAt: 2023-06-04 05:45:23 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:46:20 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 57.4 seconds
+RetCode: 0
+Status: OK

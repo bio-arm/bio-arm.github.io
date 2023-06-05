@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data alabaster.base
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘alabaster.base/DESCRIPTION’ ... OK
+* preparing ‘alabaster.base’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘alabaster.base’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++17
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c check_csv.cpp -o check_csv.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c check_list.cpp -o check_list.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c load_csv.cpp -o load_csv.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c load_list.cpp -o load_list.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I../inst/include -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include' -I/usr/local/include    -fPIC  -g -O2  -c write_scalar.cpp -o write_scalar.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o alabaster.base.so RcppExports.o check_csv.o check_list.o load_csv.o load_list.o write_scalar.o /home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/lib/libhdf5_cpp.a /home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/lib/libhdf5.a -lcrypto -lcurl -lsz -laec -lz -ldl -lm -lz -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp6olldx/Rinst2ca61e7d2a7642/00LOCK-alabaster.base/00new/alabaster.base/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘alabaster.base’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp6olldx/Rinst2ca61e7d2a7642/00LOCK-alabaster.base/00new/alabaster.base/libs/alabaster.base.so':
+  /tmp/Rtmp6olldx/Rinst2ca61e7d2a7642/00LOCK-alabaster.base/00new/alabaster.base/libs/alabaster.base.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp6olldx/Rinst2ca61e7d2a7642/alabaster.base’
+      -----------------------------------
+ERROR: package installation failed

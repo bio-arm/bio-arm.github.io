@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DEScan2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DEScan2/DESCRIPTION’ ... OK
+* preparing ‘DEScan2’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+Warning: saveGRangesAsTsv.Rd:34: unknown macro '\t'
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘DEScan2’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include    -fPIC  -g -O2  -c rcpparma_max_win.cpp -o rcpparma_max_win.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o DEScan2.so RcppExports.o rcpparma_max_win.o -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp7fAI5q/Rinst3b680833ddb4d0/00LOCK-DEScan2/00new/DEScan2/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+Warning: saveGRangesAsTsv.Rd:34: unknown macro '\t'
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘DEScan2’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp7fAI5q/Rinst3b680833ddb4d0/00LOCK-DEScan2/00new/DEScan2/libs/DEScan2.so':
+  /tmp/Rtmp7fAI5q/Rinst3b680833ddb4d0/00LOCK-DEScan2/00new/DEScan2/libs/DEScan2.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp7fAI5q/Rinst3b680833ddb4d0/DEScan2’
+      -----------------------------------
+ERROR: package installation failed

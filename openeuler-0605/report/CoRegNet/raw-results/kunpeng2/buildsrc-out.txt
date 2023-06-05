@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CoRegNet
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CoRegNet/DESCRIPTION’ ... OK
+* preparing ‘CoRegNet’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘CoRegNet’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c comblicorn.c -o comblicorn.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o CoRegNet.so comblicorn.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp9QTKoA/Rinst3b0b259ab6780/00LOCK-CoRegNet/00new/CoRegNet/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘CoRegNet’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp9QTKoA/Rinst3b0b259ab6780/00LOCK-CoRegNet/00new/CoRegNet/libs/CoRegNet.so':
+  /tmp/Rtmp9QTKoA/Rinst3b0b259ab6780/00LOCK-CoRegNet/00new/CoRegNet/libs/CoRegNet.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp9QTKoA/Rinst3b0b259ab6780/CoRegNet’
+      -----------------------------------
+ERROR: package installation failed

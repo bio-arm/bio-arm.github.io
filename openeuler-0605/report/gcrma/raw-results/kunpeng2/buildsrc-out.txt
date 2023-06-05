@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data gcrma
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘gcrma/DESCRIPTION’ ... OK
+* preparing ‘gcrma’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘gcrma’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c baseProfile.c -o baseProfile.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c computeAffinities.c -o computeAffinities.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c postmean.c -o postmean.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o gcrma.so baseProfile.o computeAffinities.o postmean.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmptDTzig/Rinst3c3a3f65bcd2ec/00LOCK-gcrma/00new/gcrma/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘gcrma’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmptDTzig/Rinst3c3a3f65bcd2ec/00LOCK-gcrma/00new/gcrma/libs/gcrma.so':
+  /tmp/RtmptDTzig/Rinst3c3a3f65bcd2ec/00LOCK-gcrma/00new/gcrma/libs/gcrma.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmptDTzig/Rinst3c3a3f65bcd2ec/gcrma’
+      -----------------------------------
+ERROR: package installation failed

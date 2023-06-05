@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data multiscan
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘multiscan/DESCRIPTION’ ... OK
+* preparing ‘multiscan’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘multiscan’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c multiscan.c -o multiscan.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o multiscan.so multiscan.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpUSwcr3/Rinst3f0b8e25b472fd/00LOCK-multiscan/00new/multiscan/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘multiscan’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpUSwcr3/Rinst3f0b8e25b472fd/00LOCK-multiscan/00new/multiscan/libs/multiscan.so':
+  /tmp/RtmpUSwcr3/Rinst3f0b8e25b472fd/00LOCK-multiscan/00new/multiscan/libs/multiscan.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpUSwcr3/Rinst3f0b8e25b472fd/multiscan’
+      -----------------------------------
+ERROR: package installation failed

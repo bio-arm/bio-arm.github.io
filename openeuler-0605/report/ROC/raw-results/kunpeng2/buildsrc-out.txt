@@ -1,0 +1,40 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ROC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ROC/DESCRIPTION’ ... OK
+* preparing ‘ROC’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ROC’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c ROC.cc -o ROC.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ROC.so ROC.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpQzLzdB/Rinste26839612a7a/00LOCK-ROC/00new/ROC/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ROC’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpQzLzdB/Rinste26839612a7a/00LOCK-ROC/00new/ROC/libs/ROC.so':
+  /tmp/RtmpQzLzdB/Rinste26839612a7a/00LOCK-ROC/00new/ROC/libs/ROC.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpQzLzdB/Rinste26839612a7a/ROC’
+      -----------------------------------
+ERROR: package installation failed

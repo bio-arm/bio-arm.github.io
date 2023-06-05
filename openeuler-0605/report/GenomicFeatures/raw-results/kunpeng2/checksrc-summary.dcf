@@ -1,0 +1,10 @@
+Package: GenomicFeatures
+Version: 1.53.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GenomicFeatures.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GenomicFeatures_1.53.0.tar.gz
+StartedAt: 2023-06-04 17:15:03 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 17:55:04 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 2400.2 seconds
+RetCode: None
+Status: TIMEOUT
+CheckDir: GenomicFeatures.Rcheck
+Warnings: NA

@@ -1,0 +1,8 @@
+Package: CexoR
+Version: 1.39.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL CexoR
+StartedAt: 2023-06-04 05:45:48 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:46:38 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 50.6 seconds
+RetCode: 0
+Status: OK

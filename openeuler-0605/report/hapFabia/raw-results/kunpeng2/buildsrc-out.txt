@@ -1,0 +1,52 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data hapFabia
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘hapFabia/DESCRIPTION’ ... OK
+* preparing ‘hapFabia’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘hapFabia’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c interfaceR.c -o interfaceR.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c split_sparse_matrixB.c -o split_sparse_matrixB.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c vcftoFABIAB.c -o vcftoFABIAB.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o hapFabia.so interfaceR.o split_sparse_matrixB.o vcftoFABIAB.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+gcc -c ./commandLine/split_sparse_matrix.c -o ./commandLine/split_sparse_matrix.o -g -O2 
+gcc -c split_sparse_matrixB.c -o ./commandLine/split_sparse_matrixB.o -g -O2 
+gcc ./commandLine/split_sparse_matrix.o ./commandLine/split_sparse_matrixB.o -o ./commandLine/split_sparse_matrix
+mv ./commandLine/split_sparse_matrix ../inst/commandLine/
+gcc -c ./commandLine/vcftoFABIA.c -o ./commandLine/vcftoFABIA.o -g -O2 
+gcc -c vcftoFABIAB.c -o ./commandLine/vcftoFABIAB.o -g -O2 
+gcc ./commandLine/vcftoFABIA.o ./commandLine/vcftoFABIAB.o -o ./commandLine/vcftoFABIA
+mv ./commandLine/vcftoFABIA ../inst/commandLine/
+installing to /tmp/RtmpyySqip/Rinst3d07c357152d1b/00LOCK-hapFabia/00new/hapFabia/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘hapFabia’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpyySqip/Rinst3d07c357152d1b/00LOCK-hapFabia/00new/hapFabia/libs/hapFabia.so':
+  /tmp/RtmpyySqip/Rinst3d07c357152d1b/00LOCK-hapFabia/00new/hapFabia/libs/hapFabia.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpyySqip/Rinst3d07c357152d1b/hapFabia’
+      -----------------------------------
+ERROR: package installation failed

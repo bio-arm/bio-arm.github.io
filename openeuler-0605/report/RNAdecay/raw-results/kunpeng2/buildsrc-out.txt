@@ -1,0 +1,144 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RNAdecay
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RNAdecay/DESCRIPTION’ ... OK
+* preparing ‘RNAdecay’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘RNAdecay’ ...
+** using staged installation
+** libs
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_dExp_1sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_dExp_1sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_dExp_1sse.cpp -o general_dExp_1sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_dExp_1sse.so general_dExp_1sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_Exp_1sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_Exp_1sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_Exp_1sse.cpp -o general_Exp_1sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_Exp_1sse.so general_Exp_1sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_dExp_2sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_dExp_2sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_dExp_2sse.cpp -o general_dExp_2sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_dExp_2sse.so general_dExp_2sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_Exp_2sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_Exp_2sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_Exp_2sse.cpp -o general_Exp_2sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_Exp_2sse.so general_Exp_2sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_dExp_3sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_dExp_3sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_dExp_3sse.cpp -o general_dExp_3sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_dExp_3sse.so general_dExp_3sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_Exp_3sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_Exp_3sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_Exp_3sse.cpp -o general_Exp_3sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_Exp_3sse.so general_Exp_3sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_dExp_4sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_dExp_4sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_dExp_4sse.cpp -o general_dExp_4sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_dExp_4sse.so general_dExp_4sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+/home/biocbuild/R/R-4.3.0/bin/Rscript --vanilla -e "TMB::compile('general_Exp_4sse.cpp',safebounds=FALSE,safeunload=FALSE)"
+Note: Using Makevars in /home/biocbuild/.R/Makevars 
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+make[1]: Entering directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -I"/home/biocbuild/R/R-4.3.0/library/TMB/include" -I"/home/biocbuild/R/R-4.3.0/library/RcppEigen/include"   -DTMB_EIGEN_DISABLE_WARNINGS   -DTMB_LIB_INIT=R_init_general_Exp_4sse  -DCPPAD_FRAMEWORK  -I/usr/local/include    -fPIC  -g -O2  -c general_Exp_4sse.cpp -o general_Exp_4sse.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o general_Exp_4sse.so general_Exp_4sse.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+make[1]: Leaving directory '/tmp/RtmpMrd8us/Rbuildd28e2b8a2cf7/RNAdecay/src'
+[1] 0
+Warning message:
+In checkMatrixPackageVersion() : Package version inconsistency detected.
+TMB was built with Matrix version 1.5.4
+Current Matrix version is 1.5.4.1
+Please re-install 'TMB' from source using install.packages('TMB', type = 'source') or ask CRAN for a binary version of 'TMB' matching CRAN's 'Matrix' package
+installing to /tmp/RtmpMrd8us/Rinstd28e39ed5d1d/00LOCK-RNAdecay/00new/RNAdecay/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘RNAdecay’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpMrd8us/Rinstd28e39ed5d1d/00LOCK-RNAdecay/00new/RNAdecay/libs/general_Exp_1sse.so':
+  /tmp/RtmpMrd8us/Rinstd28e39ed5d1d/00LOCK-RNAdecay/00new/RNAdecay/libs/general_Exp_1sse.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpMrd8us/Rinstd28e39ed5d1d/RNAdecay’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data switchBox
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘switchBox/DESCRIPTION’ ... OK
+* preparing ‘switchBox’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘switchBox’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c CalculateSignedScoreCore.cc -o CalculateSignedScoreCore.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c CalculateSignedScoreCoreTieHandler.cc -o CalculateSignedScoreCoreTieHandler.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c CalculateSignedScoreRestrictedPairsCore.cc -o CalculateSignedScoreRestrictedPairsCore.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c CalculateSignedScoreRestrictedPairsCoreTieHandler.cc -o CalculateSignedScoreRestrictedPairsCoreTieHandler.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c rinit.c -o rinit.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c vect2compC.cc -o vect2compC.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o switchBox.so CalculateSignedScoreCore.o CalculateSignedScoreCoreTieHandler.o CalculateSignedScoreRestrictedPairsCore.o CalculateSignedScoreRestrictedPairsCoreTieHandler.o rinit.o vect2compC.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp2hWpsk/Rinst4b76d7fbbe15d/00LOCK-switchBox/00new/switchBox/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘switchBox’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp2hWpsk/Rinst4b76d7fbbe15d/00LOCK-switchBox/00new/switchBox/libs/switchBox.so':
+  /tmp/Rtmp2hWpsk/Rinst4b76d7fbbe15d/00LOCK-switchBox/00new/switchBox/libs/switchBox.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp2hWpsk/Rinst4b76d7fbbe15d/switchBox’
+      -----------------------------------
+ERROR: package installation failed

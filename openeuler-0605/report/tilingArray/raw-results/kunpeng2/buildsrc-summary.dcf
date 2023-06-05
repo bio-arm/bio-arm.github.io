@@ -1,0 +1,10 @@
+Package: tilingArray
+Version: 1.79.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data tilingArray
+StartedAt: 2023-06-04 12:05:59 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 12:06:22 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 23.0 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

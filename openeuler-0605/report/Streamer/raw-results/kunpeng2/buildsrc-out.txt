@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Streamer
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Streamer/DESCRIPTION’ ... OK
+* preparing ‘Streamer’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘Streamer’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c R_init_Streamer.c -o R_init_Streamer.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c raw_input.c -o raw_input.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o Streamer.so R_init_Streamer.o raw_input.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpFwHoyp/Rinst4a2f31ab31c1d/00LOCK-Streamer/00new/Streamer/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘Streamer’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpFwHoyp/Rinst4a2f31ab31c1d/00LOCK-Streamer/00new/Streamer/libs/Streamer.so':
+  /tmp/RtmpFwHoyp/Rinst4a2f31ab31c1d/00LOCK-Streamer/00new/Streamer/libs/Streamer.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpFwHoyp/Rinst4a2f31ab31c1d/Streamer’
+      -----------------------------------
+ERROR: package installation failed

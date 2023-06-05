@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ChIPseqR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ChIPseqR/DESCRIPTION’ ... OK
+* preparing ‘ChIPseqR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ChIPseqR’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c startScore.c -o startScore.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ChIPseqR.so startScore.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpjJLCih/Rinst3aa50b52728ffa/00LOCK-ChIPseqR/00new/ChIPseqR/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ChIPseqR’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpjJLCih/Rinst3aa50b52728ffa/00LOCK-ChIPseqR/00new/ChIPseqR/libs/ChIPseqR.so':
+  /tmp/RtmpjJLCih/Rinst3aa50b52728ffa/00LOCK-ChIPseqR/00new/ChIPseqR/libs/ChIPseqR.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpjJLCih/Rinst3aa50b52728ffa/ChIPseqR’
+      -----------------------------------
+ERROR: package installation failed

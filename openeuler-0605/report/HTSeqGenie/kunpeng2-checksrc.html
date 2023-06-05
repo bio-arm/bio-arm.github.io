@@ -1,0 +1,1394 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for HTSeqGenie on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><B>[<A href="..#H">H</A>]</B></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-05 06:03:01 -0000 (Mon, 05 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for HTSeqGenie on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the HTSeqGenie package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/HTSeqGenie.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard ok">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>939</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">HTSeqGenie</A>&nbsp;4.31.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/HTSeqGenie">landing page</A>)</SPAN><BR>Jens Reeder<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-03&nbsp;10:56:11&nbsp;-0000&nbsp;(Sat,&nbsp;03&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/HTSeqGenie</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">6787c4b</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:24:28&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: HTSeqGenie</TD></TR>
+<TR><TD><B>Version</B>: 4.31.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HTSeqGenie.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HTSeqGenie_4.31.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-04 18:17:18 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-04 18:36:10 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 1131.7 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: HTSeqGenie.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 0</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HTSeqGenie.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HTSeqGenie_4.31.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/HTSeqGenie.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘HTSeqGenie/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘HTSeqGenie’ version ‘4.31.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘HTSeqGenie’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Malformed Title field: should not end in a period.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... NOTE
+Unexported objects imported by &#x27;:::&#x27; calls:
+  ‘ShortRead:::.set_omp_threads’ ‘gmapR:::..gsnap’ ‘gmapR:::GeneGenome’
+  ‘gmapR:::checkPackageInstalled’ ‘gmapR:::getDefaultGmapGenomePath’
+  ‘gmapR:::getGeneRoi’ ‘gmapR:::subsetRegion’ ‘parallel:::mckill’
+  See the note in ?`:::` about the use of this operator.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... NOTE
+Foreign function call to a different package:
+  .Call(ShortRead:::.set_omp_threads, ...)
+See chapter ‘System and foreign language interfaces’ in the ‘Writing R
+Extensions’ manual.
+* checking R code for possible problems ... NOTE
+.makePreprocessAlignPlots: no visible binding for global variable
+  ‘data’
+.plot.in.out.min.max.readlength: no visible global function definition
+  for ‘median’
+FastQStreamer.init: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to
+  ‘FastQStreamer.lfqs’
+FastQStreamer.init: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to
+  ‘FastQStreamer.chunkid’
+FastQStreamer.init: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to
+  ‘FastQStreamer.subsampling_filter’
+FastQStreamer.init: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to
+  ‘FastQStreamer.max_nbchunks’
+addHandler: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to
+  ‘logging.handlers’
+addHandler: no visible binding for global variable ‘logging.handlers’
+addHandler: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to ‘logging.file’
+buildAnyFastaGenome: no visible global function definition for ‘getSeq’
+buildGenomicFeaturesFromTxDb: no visible global function definition for
+  ‘gaps’
+buildGenomicFeaturesFromTxDb: no visible global function definition for
+  ‘ranges’
+buildTP53FastaGenome: no visible global function definition for
+  ‘getSeq’
+buildTallyParam: no visible global function definition for ‘seqinfo’
+computeCoverage: no visible global function definition for ‘resize’
+computeCoverage: no visible global function definition for ‘coverage’
+estimateCutoffs : &lt;anonymous&gt;: no visible binding for global variable
+  ‘quantile’
+getGenomeSegments: no visible global function definition for ‘seqinfo’
+hashVariants: no visible global function definition for ‘ranges’
+isAboveQualityThresh: no visible global function definition for ‘Views’
+isAboveQualityThresh: no visible global function definition for
+  ‘viewMeans’
+listIterator.init: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to
+  ‘listIterator.n’
+listIterator.init: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to
+  ‘listIterator.x’
+logReset: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to ‘logging.handlers’
+logReset: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to ‘logging.loglevel’
+logReset: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to ‘logging.file’
+loglevel: no visible binding for global variable ‘logging.loglevel’
+loglevel: no visible binding for global variable ‘logging.handlers’
+processChunks : tracefun: no visible binding for global variable
+  ‘sjobs’
+processChunks : tracefun: no visible binding for global variable
+  ‘chunkid’
+setLevel: no visible binding for &#x27;&lt;&lt;-&#x27; assignment to ‘logging.loglevel’
+statCountFeatures: no visible global function definition for ‘quantile’
+truncateReads: no visible global function definition for ‘subseq’
+vcfStat: no visible global function definition for ‘quantile’
+writeToFile: no visible binding for global variable ‘logging.file’
+Undefined global functions or variables:
+  Views chunkid coverage data gaps getSeq logging.file logging.handlers
+  logging.loglevel median quantile ranges resize seqinfo sjobs subseq
+  viewMeans
+Consider adding
+  importFrom(&quot;stats&quot;, &quot;median&quot;, &quot;quantile&quot;)
+  importFrom(&quot;utils&quot;, &quot;data&quot;)
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘doRUnit.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘HTSeqGenie.Rnw’... OK
+ OK
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 5 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/HTSeqGenie.Rcheck/00check.log’
+for details.
+
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">HTSeqGenie.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL HTSeqGenie
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘HTSeqGenie’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (HTSeqGenie)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">HTSeqGenie.Rcheck/tests/doRUnit.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(&quot;HTSeqGenie&quot;)
+Loading required package: gmapR
+Loading required package: GenomeInfoDb
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: &#x27;S4Vectors&#x27;
+
+The following object is masked from &#x27;package:utils&#x27;:
+
+    findMatches
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    I, expand.grid, unname
+
+Loading required package: IRanges
+Loading required package: GenomicRanges
+Loading required package: Rsamtools
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: &#x27;Biostrings&#x27;
+
+The following object is masked from &#x27;package:base&#x27;:
+
+    strsplit
+
+Loading required package: ShortRead
+Loading required package: BiocParallel
+Loading required package: GenomicAlignments
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: &#x27;MatrixGenerics&#x27;
+
+The following objects are masked from &#x27;package:matrixStats&#x27;:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+
+Attaching package: &#x27;Biobase&#x27;
+
+The following object is masked from &#x27;package:MatrixGenerics&#x27;:
+
+    rowMedians
+
+The following objects are masked from &#x27;package:matrixStats&#x27;:
+
+    anyMissing, rowMedians
+
+Loading required package: VariantAnnotation
+
+Attaching package: &#x27;VariantAnnotation&#x27;
+
+The following object is masked from &#x27;package:base&#x27;:
+
+    tabulate
+
+&gt; 
+&gt; source(getPackageFile(&quot;unitTests/runTests.R&quot;))
+Loading required package: GenomicFeatures
+Loading required package: AnnotationDbi
+did not source anything in dirname= ./R 
+
+
+Executing test function test.alignReads  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:24:59.246264 INFO::preprocessReads.R/preprocessReads: starting...
+2023-06-04 18:24:59.255363 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:24:59.260708 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+2023-06-04 18:24:59.263462 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:25:02.385798 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:25:02.387835 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:25:05.235869 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.047 minutes
+2023-06-04 18:25:05.237695 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/chunks/chunk_000002/logs/progress.log
+2023-06-04 18:25:08.088302 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.048 minutes
+2023-06-04 18:25:08.09012 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/chunks/chunk_000003/logs/progress.log
+2023-06-04 18:25:10.951463 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.048 minutes
+2023-06-04 18:25:10.99387 DEBUG::tools.R/processChunks: done
+2023-06-04 18:25:10.998772 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:25:11.001936 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/results/test_pe.adapter_contaminated_1.RData
+2023-06-04 18:25:11.005779 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_2 ...
+2023-06-04 18:25:11.008241 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/results/test_pe.adapter_contaminated_2.RData
+2023-06-04 18:25:11.020595 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=26 highqual_reads=25 adapter_contam=1 read_length=75 rRNA_contam_reads=0 processed_reads=25 input_min_read_length=75 input_max_read_length=75 processed_min_read_length=75 processed_max_read_length=75
+2023-06-04 18:25:11.023695 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/results/test_pe.summary_preprocess.tab
+2023-06-04 18:25:11.028035 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/bams/processed.aligner_input_1.fastq ...
+2023-06-04 18:25:11.034636 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/bams/processed.aligner_input_2.fastq ...
+2023-06-04 18:25:11.040007 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/reports/shortReadReport_1 ...
+2023-06-04 18:25:12.862594 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/reports/shortReadReport_2 ...
+2023-06-04 18:25:15.833475 INFO::preprocessReads.R/preprocessReads: done
+2023-06-04 18:25:15.882238 INFO::alignReads.R/alignReads: starting alignment...
+2023-06-04 18:25:15.888587 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:25:18.988452 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:25:18.990568 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:25:22.007121 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.05 minutes
+2023-06-04 18:25:22.009258 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/chunks/chunk_000002/logs/progress.log
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInManyTxsOfMultiTxGene:1:1:1:16#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1MicrobialPE2MultimappingIntergenic:1:1:1:19#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInOneTxOfMultiTxGene:1:1:1:15#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1UniqueUtrPE2MultimappingIntergenic:1:1:1:18#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:25:24.685037 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.045 minutes
+2023-06-04 18:25:24.68715 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/chunks/chunk_000003/logs/progress.log
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1GeneFusionMidExonDiffChrPE2MultimappingIntergenic:1:1:1:25#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:25:27.359132 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.045 minutes
+2023-06-04 18:25:27.36232 DEBUG::tools.R/processChunks: done
+2023-06-04 18:25:27.364136 INFO::alignReads.R/mergeBAMsAcrossDirs: starting...
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualAdapterContamIn3PrimeEnd:1:1:1:7#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInManyTxsOfMultiTxGene:1:1:1:16#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1MicrobialPE2MultimappingIntergenic:1:1:1:19#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1GeneFusionMidExonDiffChrPE2MultimappingIntergenic:1:1:1:25#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1UniqueUtrPE2MultimappingIntergenic:1:1:1:18#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInOneTxOfMultiTxGene:1:1:1:15#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:25:27.67767 INFO::alignReads.R/mergeBAMsAcrossDirs: done
+2023-06-04 18:25:27.688823 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/results/test_pe.summary_alignment.tab
+2023-06-04 18:25:27.699126 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/results/test_pe.summary_analyzed_bamstats.tab
+2023-06-04 18:25:27.701459 INFO::reportPipelineQA.R/writePreprocessAlignReport: creating joint preprocess-alignment report...
+2023-06-04 18:25:27.962674 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.11bcd92eedbfa9/results/test_pe.summary_target_lengths.tab
+2023-06-04 18:25:28.02062 INFO::reportPipelineQA.R/writePreprocessAlignReport: done
+2023-06-04 18:25:28.02196 INFO::alignReads.R/alignReads: done
+ done successfully.
+
+
+
+Executing test function test.alignReads.sparsechunks  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:25:28.317019 INFO::preprocessReads.R/preprocessReads: starting...
+2023-06-04 18:25:28.320364 INFO::io.R/FastQStreamer.init: counting number of reads in file= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:25:28.405437 INFO::io.R/FastQStreamer.init: subsampling_filter set (subsampled reads= 2 , totnbreads= 26 )
+2023-06-04 18:25:28.411744 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:25:28.41581 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+2023-06-04 18:25:28.418267 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:25:32.748697 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:25:32.750723 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:25:35.545874 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.047 minutes
+2023-06-04 18:25:35.547739 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/chunks/chunk_000002/logs/progress.log
+2023-06-04 18:25:38.323327 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.046 minutes
+2023-06-04 18:25:38.325414 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/chunks/chunk_000003/logs/progress.log
+2023-06-04 18:25:41.239188 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.049 minutes
+2023-06-04 18:25:41.241071 DEBUG::tools.R/processChunks: starting chunkid= 4 ; see logfile= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/chunks/chunk_000004/logs/progress.log
+2023-06-04 18:25:44.044423 DEBUG::tools.R/processChunks: done with chunkid= 4 ; elapsed.time= 0.047 minutes
+2023-06-04 18:25:44.085649 DEBUG::tools.R/processChunks: done
+2023-06-04 18:25:44.090001 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:25:44.093176 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/results/test_pe.adapter_contaminated_1.RData
+2023-06-04 18:25:44.097235 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_2 ...
+2023-06-04 18:25:44.099809 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/results/test_pe.adapter_contaminated_2.RData
+2023-06-04 18:25:44.114093 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=2 highqual_reads=1 adapter_contam=0 read_length=75 rRNA_contam_reads=0 processed_reads=1 input_min_read_length=75 input_max_read_length=75 processed_min_read_length=75 processed_max_read_length=75
+2023-06-04 18:25:44.117228 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/results/test_pe.summary_preprocess.tab
+2023-06-04 18:25:44.121988 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/bams/processed.aligner_input_1.fastq ...
+2023-06-04 18:25:44.12876 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/bams/processed.aligner_input_2.fastq ...
+2023-06-04 18:25:44.134114 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/reports/shortReadReport_1 ...
+2023-06-04 18:25:45.98875 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.alignReads.sparsechunks.11bcd9493668d6/reports/shortReadReport_2 ...
+2023-06-04 18:25:48.962205 INFO::preprocessReads.R/preprocessReads: done
+ done successfully.
+
+
+
+Executing test function test.alignReadsOneSingleEnd  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:25:49.187395 INFO::alignReads.R/alignReadsChunk: running gsnap...
+2023-06-04 18:25:49.193639 INFO::alignReads.R/alignReadsChunk: calling gsnap (from gmapR) with args= -D /home/biocbuild/.local/share/gmap -t 1 -d TP53_demo_3.2.2 --quality-protocol=illumina  -A sam --read-group-id=test_se -m 0 --split-output /tmp/RtmpjeQy50/test.alignReadsOneSingleEnd.11bcd91f8888be/bams/test.alignReads /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq 2&gt;&amp;1
+2023-06-04 18:25:49.333233 INFO::alignReads.R/createSummaryAlignment: counting unique bam reads...
+2023-06-04 18:25:49.464964 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReadsOneSingleEnd.11bcd91f8888be/results/test.alignReads.summary_alignment.tab
+2023-06-04 18:25:49.514644 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.alignReadsOneSingleEnd.11bcd91f8888be/results/test.alignReads.summary_analyzed_bamstats.tab
+2023-06-04 18:25:49.516784 INFO::alignReads.R/alignReadsChunk: done
+ done successfully.
+
+
+
+Executing test function test.annotateVariants  ... Timing stopped at: 0.001 0.002 0.004
+Error in DEACTIVATED(&quot;Skipped annotateVariants() test&quot;) : 
+  Skipped annotateVariants() test
+In addition: There were 11 warnings (use warnings() to see them)
+ done successfully.
+
+
+
+Executing test function test.callVariantsVariantTools.genotype  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:25:49.943459 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.genotype.11bcd925c22d74/results/test_pe.coverage.RData
+2023-06-04 18:25:49.94619 INFO::coverage.R/saveCoverage: saving file= /tmp/RtmpjeQy50/test.genotype.11bcd925c22d74/results/test_pe.coverage.bw
+2023-06-04 18:25:50.127128 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.genotype.11bcd925c22d74/results/test_pe.summary_coverage.tab
+2023-06-04 18:25:50.129547 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:26:01.947017 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:26:02.059974 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:26:02.082575 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:26:02.08445 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.genotype.11bcd925c22d74/results/test_pe.raw_variants.RData
+2023-06-04 18:26:02.08719 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.genotype.11bcd925c22d74/results/test_pe.filtered_variants.RData
+2023-06-04 18:26:02.088773 INFO::analyzeVariants.R/wrap.callVariants: ...done
+2023-06-04 18:26:02.090259 INFO::analyzeVariants.R/writeVCF: writing vcf file...
+2023-06-04 18:26:02.59316 INFO::analyzeVariants.R/writeVCF: ...done
+2023-06-04 18:26:02.594496 INFO::analyzeVariants.R/.callGenotypes: calling genotypes...
+2023-06-04 18:27:10.384099 INFO::analyzeVariants.R/writeVCF: writing vcf file...
+2023-06-04 18:27:11.020971 INFO::analyzeVariants.R/writeVCF: ...done
+2023-06-04 18:27:11.022306 INFO::analyzeVariants.R/.callGenotypes: done
+[W::bcf_hdr_check_sanity] PL should be declared as Number=G
+ done successfully.
+
+
+
+Executing test function test.wrap.callVariants  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:27:11.640151 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:27:23.628617 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:27:23.736045 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:27:23.760304 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:27:23.762214 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.11bcd95023ac07/results/test_pe.raw_variants.RData
+2023-06-04 18:27:23.765241 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.11bcd95023ac07/results/test_pe.filtered_variants.RData
+2023-06-04 18:27:23.767159 INFO::analyzeVariants.R/wrap.callVariants: ...done
+ done successfully.
+
+
+
+Executing test function test.wrap.callVariants.filters  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:27:23.949528 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:27:35.961021 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:27:36.041512 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:27:36.065642 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:27:36.067549 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.filters.11bcd96b500525/results/test_pe.raw_variants.RData
+2023-06-04 18:27:36.070369 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.filters.11bcd96b500525/results/test_pe.filtered_variants.RData
+2023-06-04 18:27:36.072024 INFO::analyzeVariants.R/wrap.callVariants: ...done
+2023-06-04 18:27:36.073728 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:27:47.838259 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:27:47.893845 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:27:47.919491 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:27:47.921559 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.filters.11bcd96b500525/results/test_pe.raw_variants.RData
+2023-06-04 18:27:47.924767 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.filters.11bcd96b500525/results/test_pe.filtered_variants.RData
+2023-06-04 18:27:47.927356 INFO::analyzeVariants.R/wrap.callVariants: ...done
+ done successfully.
+
+
+
+Executing test function test.wrap.callVariants.which  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:27:48.141885 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:27:48.143868 INFO::analyzeVariants.R/buildTallyParam: restricting variant calls using &#x27;which&#x27;
+2023-06-04 18:27:50.877054 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:27:50.976265 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:27:50.999471 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:27:51.001254 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.which.11bcd95a9ec5e3/results/test_pe.raw_variants.RData
+2023-06-04 18:27:51.003331 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.wrap.callVariants.which.11bcd95a9ec5e3/results/test_pe.filtered_variants.RData
+2023-06-04 18:27:51.004941 INFO::analyzeVariants.R/wrap.callVariants: ...done
+ done successfully.
+
+
+
+Executing test function test.writeVCF.NULL  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:27:51.173266 INFO::analyzeVariants.R/writeVCF: writing vcf file...
+2023-06-04 18:27:51.174845 INFO::analyzeVariants.R/writeVCF: ...done
+ done successfully.
+
+
+
+Executing test function test.writeVCF.vcfStat  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:27:51.404935 INFO::analyzeVariants.R/writeVCF: writing vcf file...
+2023-06-04 18:27:51.698132 INFO::analyzeVariants.R/writeVCF: ...done
+ done successfully.
+
+
+
+Executing test function test.isFirstFragment  ...  done successfully.
+
+
+
+Executing test function test.buildCountsGRangesList  ...   403 genes were dropped because they have exons located on both strands
+  of the same reference sequence or on more than one reference sequence,
+  so cannot be represented by a single genomic range.
+  Use &#x27;single.strand.genes.only=FALSE&#x27; to get all the genes in a
+  GRangesList object, or use suppressMessages() to suppress this message.
+ done successfully.
+
+
+
+Executing test function test.generateSingleGeneDERs  ...  done successfully.
+
+
+
+Executing test function test.computeCoverage  ...  done successfully.
+
+
+
+Executing test function test.isSparse  ...  done successfully.
+
+
+
+Executing test function test.mergeCoverage  ... 2023-06-04 18:29:02.40268 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/jiqbapyt/merged/results/bla.coverage.RData
+2023-06-04 18:29:02.405907 INFO::coverage.R/saveCoverage: saving file= /tmp/RtmpjeQy50/jiqbapyt/merged/results/bla.coverage.bw
+2023-06-04 18:29:02.510966 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/jiqbapyt/merged/results/bla.summary_coverage.tab
+ done successfully.
+
+
+
+Executing test function test.mergeCoverage.sparse  ... 2023-06-04 18:29:03.837602 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/yjzmxrnv/merged/results/bla.coverage.RData
+2023-06-04 18:29:03.839474 INFO::coverage.R/saveCoverage: saving file= /tmp/RtmpjeQy50/yjzmxrnv/merged/results/bla.coverage.bw
+2023-06-04 18:29:03.854088 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/yjzmxrnv/merged/results/bla.summary_coverage.tab
+ done successfully.
+
+
+
+Executing test function test.checkConfig.analyzeVariants  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+ done successfully.
+
+
+
+Executing test function test.findTemplate  ...  done successfully.
+
+
+
+Executing test function test.checkConfig  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+ done successfully.
+
+
+
+Executing test function test.checkConfig.alignReads  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+ done successfully.
+
+
+
+Executing test function test.getConfig  ...  done successfully.
+
+
+
+Executing test function test.loadConfig  ...  done successfully.
+
+
+
+Executing test function test.parseDCF  ...  done successfully.
+
+
+
+Executing test function test.updateConfig  ...  done successfully.
+
+
+
+Executing test function test.getAdapterSeqs  ...  done successfully.
+
+
+
+Executing test function test.isAdapter  ...  done successfully.
+
+
+
+Executing test function test.isAdapter3.primeEnd  ...  done successfully.
+
+
+
+Executing test function test.detectRRNA  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:05.577005 INFO::detectRRNA.R/detectRRNA: searching for rRNA contamination...
+2023-06-04 18:29:05.578424 INFO::io.R/writeFastQFiles: writing filename= /tmp/RtmpjeQy50/test.detectRRNA.11bcd962a65684/bams/rRNA_contam/input1.fastq
+2023-06-04 18:29:05.582893 INFO::alignReads.R/alignReadsChunk: calling gsnap (from gmapR) with args= -t 0 -D /home/biocbuild/.local/share/gmap -n 1 -d TP53_demo_3.2.2 -A sam -B 2 --pairmax-rna=200000 --split-output /tmp/RtmpjeQy50/test.detectRRNA.11bcd962a65684/bams/rRNA_contam/test_se /tmp/RtmpjeQy50/test.detectRRNA.11bcd962a65684/bams/rRNA_contam/input1.fastq 2&gt;&amp;1
+2023-06-04 18:29:05.685009 INFO::detectRRNA.R/detectRRNA: contaminated fraction= 1
+2023-06-04 18:29:05.686397 INFO::detectRRNA.R/detectRRNA: done
+ done successfully.
+
+
+
+Executing test function test.detectRRNA.paired_end  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:05.850984 INFO::detectRRNA.R/detectRRNA: searching for rRNA contamination...
+2023-06-04 18:29:05.852282 INFO::io.R/writeFastQFiles: writing filename= /tmp/RtmpjeQy50/test.detectRRNA.paired_end.11bcd97fc76b98/bams/rRNA_contam/input1.fastq
+2023-06-04 18:29:05.854397 INFO::io.R/writeFastQFiles: writing filename= /tmp/RtmpjeQy50/test.detectRRNA.paired_end.11bcd97fc76b98/bams/rRNA_contam/input2.fastq
+2023-06-04 18:29:05.8576 INFO::alignReads.R/alignReadsChunk: calling gsnap (from gmapR) with args= -t 0 -D /home/biocbuild/.local/share/gmap -n 1 -d TP53_demo_3.2.2 -A sam -B 2 --pairmax-rna=200000 --split-output /tmp/RtmpjeQy50/test.detectRRNA.paired_end.11bcd97fc76b98/bams/rRNA_contam/test_pe /tmp/RtmpjeQy50/test.detectRRNA.paired_end.11bcd97fc76b98/bams/rRNA_contam/input1.fastq -a paired /tmp/RtmpjeQy50/test.detectRRNA.paired_end.11bcd97fc76b98/bams/rRNA_contam/input2.fastq 2&gt;&amp;1
+2023-06-04 18:29:06.152125 INFO::detectRRNA.R/detectRRNA: contaminated fraction= 1
+2023-06-04 18:29:06.153543 INFO::detectRRNA.R/detectRRNA: done
+ done successfully.
+
+
+
+Executing test function test.getRRNAIds  ... 2023-06-04 18:29:06.181728 INFO::alignReads.R/alignReadsChunk: calling gsnap (from gmapR) with args= -t 0 -D /home/biocbuild/.local/share/gmap -n 1 -d TP53_demo_3.2.2 -A sam -B 2 --pairmax-rna=200000 --split-output /tmp/RtmpjeQy50/test_get_rRNA_idslisgxcfh/test_pe /tmp/RtmpjeQy50/test_get_rRNA_idslisgxcfh/1.fastq -a paired /tmp/RtmpjeQy50/test_get_rRNA_idslisgxcfh/2.fastq 2&gt;&amp;1
+ done successfully.
+
+
+
+Executing test function test.getRRNAIds_random  ... 2023-06-04 18:29:06.463619 INFO::alignReads.R/alignReadsChunk: calling gsnap (from gmapR) with args= -t 0 -D /home/biocbuild/.local/share/gmap -n 1 -d TP53_demo_3.2.2 -A sam -B 2 --pairmax-rna=200000 --split-output /tmp/RtmpjeQy50/test_get_rRNAIds_randomejasbqhp/test_pe /tmp/RtmpjeQy50/test_get_rRNAIds_randomejasbqhp/1.fastq 2&gt;&amp;1
+ done successfully.
+
+
+
+Executing test function test.filterByLength  ... 2023-06-04 18:29:06.622049 INFO::filterQuality.R/filterQuality: filterByLength...
+2023-06-04 18:29:06.624122 INFO::filterQuality.R/filterByLength: fraction of filtered short reads= 0.5
+2023-06-04 18:29:06.625423 INFO::filterQuality.R/filterByLength: done
+2023-06-04 18:29:06.694012 INFO::filterQuality.R/filterQuality: filterByLength...
+2023-06-04 18:29:06.695354 INFO::filterQuality.R/filterByLength: fraction of filtered short reads= 1
+2023-06-04 18:29:06.696637 INFO::filterQuality.R/filterByLength: done
+ done successfully.
+
+
+
+Executing test function test.isAboveQualityThresh  ...  done successfully.
+
+
+
+Executing test function test.trimTailsByQuality  ... 2023-06-04 18:29:06.772011 INFO::preprocessReads.R/preprocessReadsChunk: Starting trimTailsByQuality ...
+2023-06-04 18:29:06.784945 INFO::preprocessReads.R/preprocessReadsChunk: done
+2023-06-04 18:29:06.786509 INFO::preprocessReads.R/preprocessReadsChunk: Starting trimTailsByQuality ...
+2023-06-04 18:29:06.793292 INFO::preprocessReads.R/preprocessReadsChunk: done
+2023-06-04 18:29:06.794817 INFO::preprocessReads.R/preprocessReadsChunk: Starting trimTailsByQuality ...
+2023-06-04 18:29:06.801535 INFO::preprocessReads.R/preprocessReadsChunk: done
+2023-06-04 18:29:06.803022 INFO::preprocessReads.R/preprocessReadsChunk: Starting trimTailsByQuality ...
+2023-06-04 18:29:06.809716 INFO::preprocessReads.R/preprocessReadsChunk: done
+ done successfully.
+
+
+
+Executing test function test.callVariantsGATK  ... Timing stopped at: 0 0 0
+Error in DEACTIVATED(&quot;callVariantsGATK() tests need gatk.path option set&quot;) : 
+  callVariantsGATK() tests need gatk.path option set
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+ done successfully.
+
+
+
+Executing test function test.callVariantsGATK.withFiltering  ... Timing stopped at: 0 0 0
+Error in DEACTIVATED(&quot;callVariantsGATK() tests need gatk.path option set&quot;) : 
+  callVariantsGATK() tests need gatk.path option set
+ done successfully.
+
+
+
+Executing test function test.checkGATKJar  ... Timing stopped at: 0 0 0.001
+Error in DEACTIVATED(&quot;checkGATKJar() test needs gatk.path option set&quot;) : 
+  checkGATKJar() test needs gatk.path option set
+ done successfully.
+
+
+
+Executing test function test.excludeVariantsByRegion  ...  done successfully.
+
+
+
+Executing test function test.gatk  ... Timing stopped at: 0 0 0
+Error in DEACTIVATED(&quot;gatk() tests need gatk.path option set&quot;) : 
+  gatk() tests need gatk.path option set
+ done successfully.
+
+
+
+Executing test function test.realignIndels  ... Timing stopped at: 0.001 0 0
+Error in DEACTIVATED(&quot;test.realignIndels() tests need gatk.path option set&quot;) : 
+  test.realignIndels() tests need gatk.path option set
+ done successfully.
+
+
+
+Executing test function test.realignIndelsGATK  ... Timing stopped at: 0 0 0
+Error in DEACTIVATED(&quot;realignIndelsGATK() tests need gatk.path option set&quot;) : 
+  realignIndelsGATK() tests need gatk.path option set
+ done successfully.
+
+
+
+Executing test function test.realignIndelsGATK.parallel  ... Timing stopped at: 0 0 0
+Error in DEACTIVATED(&quot;realignIndelsGATK() tests need gatk.path option set&quot;) : 
+  realignIndelsGATK() tests need gatk.path option set
+ done successfully.
+
+
+
+Executing test function test_zipUp  ...  done successfully.
+
+
+
+Executing test function test.FastQStreamer.getReads.pefq  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:07.189501 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:07.193016 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+ done successfully.
+
+
+
+Executing test function test.FastQStreamer.getReads.pefq.subsample  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:07.454996 INFO::io.R/FastQStreamer.init: counting number of reads in file= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:07.564283 INFO::io.R/FastQStreamer.init: subsampling_filter set (subsampled reads= 17 , totnbreads= 26 )
+2023-06-04 18:29:07.568417 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:07.57199 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+ done successfully.
+
+
+
+Executing test function test.FastQStreamer.getReads.segz  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:09.133307 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/reads.fastq.gz
+ done successfully.
+
+
+
+Executing test function test.FastQStreamer.getReads.truncated  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:09.336166 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/truncated.fastq.gz
+ done successfully.
+
+
+
+Executing test function test.FastQStreamer.subsampler.isdeterministic  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:09.527141 INFO::io.R/FastQStreamer.init: counting number of reads in file= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:09.594689 INFO::io.R/FastQStreamer.init: subsampling_filter set (subsampled reads= 17 , totnbreads= 26 )
+2023-06-04 18:29:09.598254 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:09.601539 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:09.869574 INFO::io.R/FastQStreamer.init: counting number of reads in file= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:09.937681 INFO::io.R/FastQStreamer.init: subsampling_filter set (subsampled reads= 17 , totnbreads= 26 )
+2023-06-04 18:29:09.941264 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:09.944598 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+ done successfully.
+
+
+
+Executing test function test.createTmpDir  ...  done successfully.
+
+
+
+Executing test function test.detectQualityInFASTQFile  ...  done successfully.
+
+
+
+Executing test function test.getObjectFilename  ...  done successfully.
+
+
+
+Executing test function test.safeUnlink  ...  done successfully.
+
+
+
+Executing test function test.writeAudit  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+ done successfully.
+
+
+
+Executing test function test.mergeLanes  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:29:10.83868 INFO::preprocessReads.R/preprocessReads: starting...
+2023-06-04 18:29:10.845247 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:29:10.849946 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+2023-06-04 18:29:10.852922 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:29:15.342655 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:29:15.344791 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:29:18.074641 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.045 minutes
+2023-06-04 18:29:18.07655 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000002/logs/progress.log
+2023-06-04 18:29:20.876624 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.047 minutes
+2023-06-04 18:29:20.878523 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000003/logs/progress.log
+2023-06-04 18:29:23.63656 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.046 minutes
+2023-06-04 18:29:23.708938 DEBUG::tools.R/processChunks: done
+2023-06-04 18:29:23.712469 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:29:23.714736 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.adapter_contaminated_1.RData
+2023-06-04 18:29:23.717667 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_2 ...
+2023-06-04 18:29:23.719853 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.adapter_contaminated_2.RData
+2023-06-04 18:29:23.730956 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=26 highqual_reads=25 adapter_contam=1 read_length=75 rRNA_contam_reads=0 processed_reads=25 input_min_read_length=75 input_max_read_length=75 processed_min_read_length=75 processed_max_read_length=75
+2023-06-04 18:29:23.733724 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.summary_preprocess.tab
+2023-06-04 18:29:23.737244 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/bams/processed.aligner_input_1.fastq ...
+2023-06-04 18:29:23.743376 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/bams/processed.aligner_input_2.fastq ...
+2023-06-04 18:29:23.748439 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/reports/shortReadReport_1 ...
+2023-06-04 18:29:25.566165 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/reports/shortReadReport_2 ...
+2023-06-04 18:29:27.088348 INFO::preprocessReads.R/preprocessReads: done
+2023-06-04 18:29:27.174628 INFO::alignReads.R/alignReads: starting alignment...
+2023-06-04 18:29:27.179389 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:29:30.647218 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:29:30.6496 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:29:33.278656 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.044 minutes
+2023-06-04 18:29:33.281124 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000002/logs/progress.log
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInManyTxsOfMultiTxGene:1:1:1:16#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1MicrobialPE2MultimappingIntergenic:1:1:1:19#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInOneTxOfMultiTxGene:1:1:1:15#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1UniqueUtrPE2MultimappingIntergenic:1:1:1:18#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:29:35.908942 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.044 minutes
+2023-06-04 18:29:35.911206 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000003/logs/progress.log
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1GeneFusionMidExonDiffChrPE2MultimappingIntergenic:1:1:1:25#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:29:38.516851 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.043 minutes
+2023-06-04 18:29:38.520233 DEBUG::tools.R/processChunks: done
+2023-06-04 18:29:38.52225 INFO::alignReads.R/mergeBAMsAcrossDirs: starting...
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualAdapterContamIn3PrimeEnd:1:1:1:7#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInManyTxsOfMultiTxGene:1:1:1:16#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1MicrobialPE2MultimappingIntergenic:1:1:1:19#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1GeneFusionMidExonDiffChrPE2MultimappingIntergenic:1:1:1:25#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1UniqueUtrPE2MultimappingIntergenic:1:1:1:18#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInOneTxOfMultiTxGene:1:1:1:15#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:29:38.812408 INFO::alignReads.R/mergeBAMsAcrossDirs: done
+2023-06-04 18:29:38.82302 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.summary_alignment.tab
+2023-06-04 18:29:38.833423 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.summary_analyzed_bamstats.tab
+2023-06-04 18:29:38.836098 INFO::reportPipelineQA.R/writePreprocessAlignReport: creating joint preprocess-alignment report...
+2023-06-04 18:29:39.080184 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.summary_target_lengths.tab
+2023-06-04 18:29:39.139972 INFO::reportPipelineQA.R/writePreprocessAlignReport: done
+2023-06-04 18:29:39.141385 INFO::alignReads.R/alignReads: done
+2023-06-04 18:29:39.216831 INFO::countGenomicFeatures.R/countGenomicFeatures: starting...
+2023-06-04 18:29:39.236841 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:29:42.635838 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:29:42.6381 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:29:45.208767 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.043 minutes
+2023-06-04 18:29:45.211179 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000002/logs/progress.log
+2023-06-04 18:29:47.772283 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.043 minutes
+2023-06-04 18:29:47.774518 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000003/logs/progress.log
+2023-06-04 18:29:50.314643 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.042 minutes
+2023-06-04 18:29:50.317874 DEBUG::tools.R/processChunks: done
+2023-06-04 18:29:50.319971 INFO::countGenomicFeatures.R/mergeCounts: starting...
+2023-06-04 18:29:50.336851 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.counts_exon.tab
+2023-06-04 18:29:50.350586 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.counts_exon_disjoint.tab
+2023-06-04 18:29:50.359667 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.counts_gene.tab
+2023-06-04 18:29:50.366906 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.counts_gene_coding.tab
+2023-06-04 18:29:50.374198 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.counts_gene_exonic.tab
+2023-06-04 18:29:50.381654 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.counts_intergenic.tab
+2023-06-04 18:29:50.393388 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.counts_intron.tab
+2023-06-04 18:29:50.396994 INFO::countGenomicFeatures.R/mergeCounts: done
+2023-06-04 18:29:50.404861 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.summary_counts.tab
+2023-06-04 18:29:50.407177 INFO::reportPipelineQA.R/writeGenomicFeaturesReport: creating report of genomic features counts...
+2023-06-04 18:29:50.739982 INFO::reportPipelineQA.R/writeGenomicFeaturesReport: done
+2023-06-04 18:29:50.741216 INFO::countGenomicFeatures.R/countGenomicFeatures: done...
+2023-06-04 18:29:50.815151 INFO::coverage.R/calculateCoverage: starting...
+2023-06-04 18:29:50.819515 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:29:55.495861 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:29:55.498315 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:29:57.690029 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.037 minutes
+2023-06-04 18:29:57.692175 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000002/logs/progress.log
+2023-06-04 18:29:59.896684 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.037 minutes
+2023-06-04 18:29:59.898871 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/chunks/chunk_000003/logs/progress.log
+2023-06-04 18:30:02.09759 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.037 minutes
+2023-06-04 18:30:02.101033 DEBUG::tools.R/processChunks: done
+2023-06-04 18:30:03.977625 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.coverage.RData
+2023-06-04 18:30:03.979753 INFO::coverage.R/saveCoverage: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.coverage.bw
+2023-06-04 18:30:03.995224 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.summary_coverage.tab
+2023-06-04 18:30:03.997055 INFO::coverage.R/calculateCoverage: done
+2023-06-04 18:30:03.999285 INFO::analyzeVariants/analyzeVariants: starting ...
+2023-06-04 18:30:04.075243 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:30:07.35184 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:30:07.45165 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:30:07.474104 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:30:07.475921 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.raw_variants.RData
+2023-06-04 18:30:07.478024 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.filtered_variants.RData
+2023-06-04 18:30:07.47966 INFO::analyzeVariants.R/wrap.callVariants: ...done
+2023-06-04 18:30:07.481089 INFO::analyzeVariants.R/writeVCF: writing vcf file...
+2023-06-04 18:30:07.779521 INFO::analyzeVariants.R/writeVCF: ...done
+2023-06-04 18:30:07.906312 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/results/test_pe.summary_variants.tab
+2023-06-04 18:30:07.90879 INFO::analyzeVariants/analyzeVariants: done
+2023-06-04 18:30:07.912465 INFO::Pipeline run successful.
+2023-06-04 18:30:08.087611 INFO::mergeLanes.R/doMergeLanes: starting...
+2023-06-04 18:30:08.166502 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:30:08.16952 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.adapter_contaminated_1.RData
+2023-06-04 18:30:08.173202 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_2 ...
+2023-06-04 18:30:08.175864 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.adapter_contaminated_2.RData
+2023-06-04 18:30:08.189801 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=26 highqual_reads=25 adapter_contam=1 read_length=75 rRNA_contam_reads=0 processed_reads=25 input_min_read_length=75 input_max_read_length=75 processed_min_read_length=75 processed_max_read_length=75
+2023-06-04 18:30:08.193059 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.summary_preprocess.tab
+2023-06-04 18:30:08.195946 INFO::alignReads.R/mergeBAMsAcrossDirs: starting...
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualAdapterContamIn3PrimeEnd:1:1:1:7#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInManyTxsOfMultiTxGene:1:1:1:16#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1MicrobialPE2MultimappingIntergenic:1:1:1:19#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1GeneFusionMidExonDiffChrPE2MultimappingIntergenic:1:1:1:25#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPE1UniqueUtrPE2MultimappingIntergenic:1:1:1:18#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;highqualPEsInOneTxOfMultiTxGene:1:1:1:15#0&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:30:08.516308 INFO::alignReads.R/mergeBAMsAcrossDirs: done
+2023-06-04 18:30:08.52561 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.summary_alignment.tab
+2023-06-04 18:30:08.53952 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.summary_analyzed_bamstats.tab
+2023-06-04 18:30:08.542405 INFO::reportPipelineQA.R/writePreprocessAlignReport: creating joint preprocess-alignment report...
+2023-06-04 18:30:08.791846 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.summary_target_lengths.tab
+2023-06-04 18:30:08.853601 INFO::reportPipelineQA.R/writePreprocessAlignReport: done
+2023-06-04 18:30:08.892201 INFO::countGenomicFeatures.R/mergeCounts: starting...
+2023-06-04 18:30:08.91613 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.counts_exon.tab
+2023-06-04 18:30:08.931489 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.counts_exon_disjoint.tab
+2023-06-04 18:30:08.940995 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.counts_gene.tab
+2023-06-04 18:30:08.94855 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.counts_gene_coding.tab
+2023-06-04 18:30:08.956129 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.counts_gene_exonic.tab
+2023-06-04 18:30:08.964213 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.counts_intergenic.tab
+2023-06-04 18:30:08.978409 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.counts_intron.tab
+2023-06-04 18:30:08.982184 INFO::countGenomicFeatures.R/mergeCounts: done
+2023-06-04 18:30:08.990955 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.summary_counts.tab
+2023-06-04 18:30:08.993467 INFO::reportPipelineQA.R/writeGenomicFeaturesReport: creating report of genomic features counts...
+2023-06-04 18:30:09.260709 INFO::reportPipelineQA.R/writeGenomicFeaturesReport: done
+2023-06-04 18:30:11.491772 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.coverage.RData
+2023-06-04 18:30:11.494104 INFO::coverage.R/saveCoverage: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.coverage.bw
+2023-06-04 18:30:11.509773 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.summary_coverage.tab
+2023-06-04 18:30:11.547117 INFO::analyzeVariants/analyzeVariants: starting ...
+2023-06-04 18:30:11.628602 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:30:15.3086 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:30:15.404673 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:30:15.426205 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:30:15.427958 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.raw_variants.RData
+2023-06-04 18:30:15.429947 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.filtered_variants.RData
+2023-06-04 18:30:15.431476 INFO::analyzeVariants.R/wrap.callVariants: ...done
+2023-06-04 18:30:15.432751 INFO::analyzeVariants.R/writeVCF: writing vcf file...
+2023-06-04 18:30:15.716558 INFO::analyzeVariants.R/writeVCF: ...done
+2023-06-04 18:30:15.836186 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.mergeLanes.11bcd96f282288/merged/results/merged.summary_variants.tab
+2023-06-04 18:30:15.838545 INFO::analyzeVariants/analyzeVariants: done
+2023-06-04 18:30:15.841715 INFO::mergeLanes.R/doMergeLanes: merge lanes successful.
+ done successfully.
+
+
+
+Executing test function test.markDuplicates  ... Timing stopped at: 0 0 0
+Error in DEACTIVATED(&quot;Skipped markDuplicates() test&quot;) : 
+  Skipped markDuplicates() test
+In addition: There were 28 warnings (use warnings() to see them)
+ done successfully.
+
+
+
+Executing test function test.markDuplicates_w_outfile  ... Timing stopped at: 0 0 0
+Error in DEACTIVATED(&quot;Skipped markDuplicates() test&quot;) : 
+  Skipped markDuplicates() test
+ done successfully.
+
+
+
+Executing test function test.preprocessReads  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:30:16.1844 INFO::preprocessReads.R/preprocessReads: starting...
+2023-06-04 18:30:16.205662 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:30:16.225146 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+2023-06-04 18:30:16.228063 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:30:20.505486 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:30:20.50754 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:30:23.266812 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.046 minutes
+2023-06-04 18:30:23.334336 DEBUG::tools.R/processChunks: done
+2023-06-04 18:30:23.337284 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:30:23.339384 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/results/test_pe.adapter_contaminated_1.RData
+2023-06-04 18:30:23.341609 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_2 ...
+2023-06-04 18:30:23.343517 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/results/test_pe.adapter_contaminated_2.RData
+2023-06-04 18:30:23.351383 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=26 highqual_reads=25 adapter_contam=1 read_length=75 rRNA_contam_reads=0 processed_reads=25 input_min_read_length=75 input_max_read_length=75 processed_min_read_length=75 processed_max_read_length=75
+2023-06-04 18:30:23.353787 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/results/test_pe.summary_preprocess.tab
+2023-06-04 18:30:23.356525 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/bams/processed.aligner_input_1.fastq ...
+2023-06-04 18:30:23.362186 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/bams/processed.aligner_input_2.fastq ...
+2023-06-04 18:30:23.367747 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/reports/shortReadReport_1 ...
+2023-06-04 18:30:25.163331 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.preprocessReads.11bcd91f7e3b76/reports/shortReadReport_2 ...
+2023-06-04 18:30:26.618756 INFO::preprocessReads.R/preprocessReads: done
+ done successfully.
+
+
+
+Executing test function test.preprocessReads.minichunks  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:30:26.934646 INFO::preprocessReads.R/preprocessReads: starting...
+2023-06-04 18:30:26.941166 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:30:26.945544 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_2.fastq
+2023-06-04 18:30:26.94824 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:30:30.420063 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:30:30.422151 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:30:33.145698 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.045 minutes
+2023-06-04 18:30:33.14762 DEBUG::tools.R/processChunks: starting chunkid= 2 ; see logfile= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/chunks/chunk_000002/logs/progress.log
+2023-06-04 18:30:35.878088 DEBUG::tools.R/processChunks: done with chunkid= 2 ; elapsed.time= 0.045 minutes
+2023-06-04 18:30:35.880205 DEBUG::tools.R/processChunks: starting chunkid= 3 ; see logfile= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/chunks/chunk_000003/logs/progress.log
+2023-06-04 18:30:38.63165 DEBUG::tools.R/processChunks: done with chunkid= 3 ; elapsed.time= 0.046 minutes
+2023-06-04 18:30:38.707635 DEBUG::tools.R/processChunks: done
+2023-06-04 18:30:38.711609 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:30:38.71403 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/results/test_pe.adapter_contaminated_1.RData
+2023-06-04 18:30:38.716976 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_2 ...
+2023-06-04 18:30:38.719233 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/results/test_pe.adapter_contaminated_2.RData
+2023-06-04 18:30:38.730249 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=26 highqual_reads=25 adapter_contam=1 read_length=75 rRNA_contam_reads=0 processed_reads=25 input_min_read_length=75 input_max_read_length=75 processed_min_read_length=75 processed_max_read_length=75
+2023-06-04 18:30:38.732974 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/results/test_pe.summary_preprocess.tab
+2023-06-04 18:30:38.736448 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/bams/processed.aligner_input_1.fastq ...
+2023-06-04 18:30:38.742847 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/bams/processed.aligner_input_2.fastq ...
+2023-06-04 18:30:38.748255 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/reports/shortReadReport_1 ...
+2023-06-04 18:30:40.604518 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.preprocessReads.minichunks.11bcd94be2674/reports/shortReadReport_2 ...
+2023-06-04 18:30:42.144286 INFO::preprocessReads.R/preprocessReads: done
+ done successfully.
+
+
+
+Executing test function test.preprocessReads_single_end  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:30:42.40674 INFO::preprocessReads.R/preprocessReads: starting...
+2023-06-04 18:30:42.42779 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/test-data/unit_tests_1.fastq
+2023-06-04 18:30:42.430743 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:30:46.008299 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:30:46.010428 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= /tmp/RtmpjeQy50/test.preprocessReads_single_end.11bcd91da1fd78/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:30:48.460776 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.041 minutes
+2023-06-04 18:30:48.520446 DEBUG::tools.R/processChunks: done
+2023-06-04 18:30:48.52383 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:30:48.526531 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads_single_end.11bcd91da1fd78/results/test_se.adapter_contaminated_1.RData
+2023-06-04 18:30:48.535522 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=26 highqual_reads=25 adapter_contam=1 read_length=75 rRNA_contam_reads=0 processed_reads=25 input_min_read_length=75 input_max_read_length=75 processed_min_read_length=75 processed_max_read_length=75
+2023-06-04 18:30:48.53815 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.preprocessReads_single_end.11bcd91da1fd78/results/test_se.summary_preprocess.tab
+2023-06-04 18:30:48.540964 INFO::preprocessReads.R/mergePreprocessedReads: merging file= /tmp/RtmpjeQy50/test.preprocessReads_single_end.11bcd91da1fd78/bams/processed.aligner_input_1.fastq ...
+2023-06-04 18:30:48.546322 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= /tmp/RtmpjeQy50/test.preprocessReads_single_end.11bcd91da1fd78/reports/shortReadReport_1 ...
+2023-06-04 18:30:50.382168 INFO::preprocessReads.R/preprocessReads: done
+ done successfully.
+
+
+
+Executing test function test.readRNASeqEnds  ...  done successfully.
+
+
+
+Executing test function test.readRNASeqEnds.dupmark  ...  done successfully.
+
+
+
+Executing test function test.how_many  ...  done successfully.
+
+
+
+Executing test function test.plotDF  ...  done successfully.
+
+
+
+Executing test function test.relativeBarPlot  ...  done successfully.
+
+
+
+Executing test function test.runPipeline  ... checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:30:51.131128 INFO::preprocessReads.R/preprocessReads: starting...
+2023-06-04 18:30:51.154426 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/extdata/H1993_TP53_subset2500_1.fastq.gz
+2023-06-04 18:30:51.176455 INFO::io.R/FastQStreamer.init: initialised FastQ streamer for filename= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/extdata/H1993_TP53_subset2500_2.fastq.gz
+2023-06-04 18:30:51.179502 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:30:54.826831 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:30:54.82895 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= test/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:30:57.822891 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.05 minutes
+2023-06-04 18:30:57.887403 DEBUG::tools.R/processChunks: done
+2023-06-04 18:30:57.890254 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_1 ...
+2023-06-04 18:30:57.892295 INFO::io.R/saveWithID: saving file= test/results/test.adapter_contaminated_1.RData
+2023-06-04 18:30:57.894605 INFO::detectAdapterContam.R/mergeDetectAdapterContam: merging file= adapter_contaminated_2 ...
+2023-06-04 18:30:57.89661 INFO::io.R/saveWithID: saving file= test/results/test.adapter_contaminated_2.RData
+2023-06-04 18:30:57.90479 INFO::preprocessReads.R/mergeSummaryPreprocess: total_reads=2500 highqual_reads=2500 adapter_contam=0 read_length=100 rRNA_contam_reads=0 processed_reads=2500 input_min_read_length=100 input_max_read_length=100 processed_min_read_length=71 processed_max_read_length=100
+2023-06-04 18:30:57.907347 INFO::io.R/saveWithID: saving file= test/results/test.summary_preprocess.tab
+2023-06-04 18:30:57.910297 INFO::preprocessReads.R/mergePreprocessedReads: merging file= test/bams/processed.aligner_input_1.fastq ...
+2023-06-04 18:30:57.916703 INFO::preprocessReads.R/mergePreprocessedReads: merging file= test/bams/processed.aligner_input_2.fastq ...
+2023-06-04 18:30:57.924837 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= test/reports/shortReadReport_1 ...
+2023-06-04 18:30:59.948092 INFO::preprocessReads.R/buildShortReadReports: generating report_dir= test/reports/shortReadReport_2 ...
+2023-06-04 18:31:01.655175 INFO::preprocessReads.R/preprocessReads: done
+2023-06-04 18:31:01.726901 INFO::alignReads.R/alignReads: starting alignment...
+2023-06-04 18:31:01.731478 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:31:05.269459 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:31:05.271844 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= test/chunks/chunk_000001/logs/progress.log
+[bam_translate] PG tag &quot;A&quot; on read &quot;HISEQ1:109:D093LACXX:4:2205:16499:6611&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;HISEQ1:109:D093LACXX:4:1206:17367:135118&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;HISEQ1:109:D093LACXX:4:1304:1838:53573&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;A&quot; on read &quot;HISEQ1:109:D093LACXX:4:2303:2956:116587&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;M&quot; on read &quot;HISEQ1:109:D093LACXX:4:2205:16499:6611&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;T&quot; on read &quot;HISEQ1:109:D093LACXX:4:1206:20028:108227&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;T&quot; on read &quot;HISEQ1:109:D093LACXX:4:1207:19518:143960&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+[bam_translate] PG tag &quot;T&quot; on read &quot;HISEQ1:109:D093LACXX:4:2207:4065:173048&quot; encountered with no corresponding entry in header, tag lost. Unknown tags are only reported once per input file for each tag ID.
+2023-06-04 18:31:10.937845 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.094 minutes
+2023-06-04 18:31:10.941037 DEBUG::tools.R/processChunks: done
+2023-06-04 18:31:10.942841 INFO::alignReads.R/mergeBAMsAcrossDirs: starting...
+2023-06-04 18:31:10.977606 INFO::alignReads.R/mergeBAMsAcrossDirs: done
+2023-06-04 18:31:10.985638 INFO::io.R/saveWithID: saving file= test/results/test.summary_alignment.tab
+2023-06-04 18:31:10.993004 INFO::io.R/saveWithID: saving file= test/results/test.summary_analyzed_bamstats.tab
+2023-06-04 18:31:10.995811 INFO::reportPipelineQA.R/writePreprocessAlignReport: creating joint preprocess-alignment report...
+2023-06-04 18:31:11.184518 INFO::io.R/saveWithID: saving file= test/results/test.summary_target_lengths.tab
+2023-06-04 18:31:11.243671 INFO::reportPipelineQA.R/writePreprocessAlignReport: done
+2023-06-04 18:31:11.245025 INFO::alignReads.R/alignReads: done
+2023-06-04 18:31:11.319881 INFO::countGenomicFeatures.R/countGenomicFeatures: starting...
+2023-06-04 18:31:11.338411 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:31:14.85921 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:31:14.861511 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= test/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:31:17.459578 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.043 minutes
+2023-06-04 18:31:17.462871 DEBUG::tools.R/processChunks: done
+2023-06-04 18:31:17.464981 INFO::countGenomicFeatures.R/mergeCounts: starting...
+2023-06-04 18:31:17.476868 INFO::io.R/saveWithID: saving file= test/results/test.counts_exon.tab
+2023-06-04 18:31:17.486923 INFO::io.R/saveWithID: saving file= test/results/test.counts_exon_disjoint.tab
+2023-06-04 18:31:17.494374 INFO::io.R/saveWithID: saving file= test/results/test.counts_gene.tab
+2023-06-04 18:31:17.499729 INFO::io.R/saveWithID: saving file= test/results/test.counts_gene_coding.tab
+2023-06-04 18:31:17.505013 INFO::io.R/saveWithID: saving file= test/results/test.counts_gene_exonic.tab
+2023-06-04 18:31:17.510249 INFO::io.R/saveWithID: saving file= test/results/test.counts_intergenic.tab
+2023-06-04 18:31:17.51799 INFO::io.R/saveWithID: saving file= test/results/test.counts_intron.tab
+2023-06-04 18:31:17.521953 INFO::countGenomicFeatures.R/mergeCounts: done
+2023-06-04 18:31:17.526939 INFO::io.R/saveWithID: saving file= test/results/test.summary_counts.tab
+2023-06-04 18:31:17.529295 INFO::reportPipelineQA.R/writeGenomicFeaturesReport: creating report of genomic features counts...
+2023-06-04 18:31:17.796147 INFO::reportPipelineQA.R/writeGenomicFeaturesReport: done
+2023-06-04 18:31:17.797462 INFO::countGenomicFeatures.R/countGenomicFeatures: done...
+2023-06-04 18:31:17.870077 INFO::coverage.R/calculateCoverage: starting...
+2023-06-04 18:31:17.87445 DEBUG::tools.R/processChunks: starting...
+2023-06-04 18:31:21.404903 DEBUG::tools.R/processChunks: waiting for chunkid=[  ] ...
+2023-06-04 18:31:21.407114 DEBUG::tools.R/processChunks: starting chunkid= 1 ; see logfile= test/chunks/chunk_000001/logs/progress.log
+2023-06-04 18:31:23.759218 DEBUG::tools.R/processChunks: done with chunkid= 1 ; elapsed.time= 0.039 minutes
+2023-06-04 18:31:23.762461 DEBUG::tools.R/processChunks: done
+2023-06-04 18:31:25.470786 INFO::io.R/saveWithID: saving file= test/results/test.coverage.RData
+2023-06-04 18:31:25.472895 INFO::coverage.R/saveCoverage: saving file= test/results/test.coverage.bw
+2023-06-04 18:31:25.570351 INFO::io.R/saveWithID: saving file= test/results/test.summary_coverage.tab
+2023-06-04 18:31:25.572225 INFO::coverage.R/calculateCoverage: done
+2023-06-04 18:31:25.573938 INFO::analyzeVariants/analyzeVariants: starting ...
+2023-06-04 18:31:25.649217 INFO::analyzeVariants.R/wrap.callVariants: Tallying variants...
+2023-06-04 18:31:38.329421 INFO::analyzeVariants.R/wrap.callVariants: calling variants...
+2023-06-04 18:31:38.426769 INFO::analyzeVariants.R/wrap.postFilerVariants: post filtering variants...
+2023-06-04 18:31:38.448372 INFO::analyzeVariants.R/wrap.callVariants: Saving GRanges of raw and filtered variants...
+2023-06-04 18:31:38.450096 INFO::io.R/saveWithID: saving file= test/results/test.raw_variants.RData
+2023-06-04 18:31:38.45298 INFO::io.R/saveWithID: saving file= test/results/test.filtered_variants.RData
+2023-06-04 18:31:38.454663 INFO::analyzeVariants.R/wrap.callVariants: ...done
+2023-06-04 18:31:38.455997 INFO::analyzeVariants.R/writeVCF: writing vcf file...
+2023-06-04 18:31:38.755102 INFO::analyzeVariants.R/writeVCF: ...done
+2023-06-04 18:31:38.883585 INFO::io.R/saveWithID: saving file= test/results/test.summary_variants.tab
+2023-06-04 18:31:38.886187 INFO::analyzeVariants/analyzeVariants: done
+2023-06-04 18:31:38.891738 INFO::Pipeline run successful.
+ done successfully.
+
+
+
+Executing test function test.calculateTargetLength  ... checkConfig.R/checkConfig.template: loading template config= //tmp/RtmpjeQy50/tp53-config.txt 
+checkConfig.R/checkConfig.template: loading template config= /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/config/default-config.txt 
+2023-06-04 18:31:39.196177 INFO::io.R/saveWithID: saving file= /tmp/RtmpjeQy50/test.calcTargetLengths.11bcd964fa290c/results/test_pe.summary_target_lengths.tab
+ done successfully.
+
+
+
+Executing test function test.sclapply  ...  done successfully.
+
+
+
+Executing test function test.tryKeepTraceback  ...  done successfully.
+
+
+
+Executing test function test.truncateReads  ...  done successfully.
+
+
+
+Executing test function test.truncateReads.trim5  ...  done successfully.
+
+RUNIT TEST PROTOCOL -- Sun Jun  4 18:31:54 2023 
+*********************************************** 
+Number of test functions: 61 
+Number of deactivated test functions: 10 
+Number of errors: 0 
+Number of failures: 0 
+
+ 
+1 Test Suite : 
+HTSeqGenie unit testing - 61 test functions, 0 errors, 0 failures
+
+
+
+Details 
+*************************** 
+Test Suite: HTSeqGenie unit testing 
+Test function regexp: ^test.+ 
+Test file regexp: ^runit.+\.[rR]$ 
+Involved directory: 
+/home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests 
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.alignReads.R 
+test.alignReads: (2 checks) ... OK (30.45 seconds)
+test.alignReads.sparsechunks: (2 checks) ... OK (20.94 seconds)
+test.alignReadsOneSingleEnd: (2 checks) ... OK (0.55 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.analyzeVariants.R 
+test.annotateVariants : DEACTIVATED, Skipped annotateVariants() test
+test.callVariantsVariantTools.genotype: (2 checks) ... OK (81.93 seconds)
+test.wrap.callVariants: (4 checks) ... OK (12.31 seconds)
+test.wrap.callVariants.filters: (2 checks) ... OK (24.16 seconds)
+test.wrap.callVariants.which: (1 checks) ... OK (3.08 seconds)
+test.writeVCF.NULL: (1 checks) ... OK (0.17 seconds)
+test.writeVCF.vcfStat: (4 checks) ... OK (0.65 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.bamUtils.R 
+test.isFirstFragment: (5 checks) ... OK (0 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.buildGenomicFeatures.R 
+test.buildCountsGRangesList: (3 checks) ... OK (37.31 seconds)
+test.generateSingleGeneDERs: (4 checks) ... OK (30.32 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.calculateCoverage.R 
+test.computeCoverage: (9 checks) ... OK (1.02 seconds)
+test.isSparse: (5 checks) ... OK (0.14 seconds)
+test.mergeCoverage: (1 checks) ... OK (1.88 seconds)
+test.mergeCoverage.sparse: (2 checks) ... OK (1.37 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.checkConfig.R 
+test.checkConfig.analyzeVariants: (5 checks) ... OK (0.21 seconds)
+test.findTemplate: (5 checks) ... OK (0.01 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.config.R 
+test.checkConfig: (5 checks) ... OK (0.43 seconds)
+test.checkConfig.alignReads: (5 checks) ... OK (0.5 seconds)
+test.getConfig: (14 checks) ... OK (0 seconds)
+test.loadConfig: (2 checks) ... OK (0 seconds)
+test.parseDCF: (7 checks) ... OK (0 seconds)
+test.updateConfig: (1 checks) ... OK (0 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.detectAdapterContam.R 
+test.getAdapterSeqs: (5 checks) ... OK (0.05 seconds)
+test.isAdapter: (5 checks) ... OK (0.16 seconds)
+test.isAdapter3.primeEnd: (1 checks) ... OK (0.11 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.detectRRNA.R 
+test.detectRRNA: (1 checks) ... OK (0.32 seconds)
+test.detectRRNA.paired_end: (1 checks) ... OK (0.47 seconds)
+test.getRRNAIds: (1 checks) ... OK (0.28 seconds)
+test.getRRNAIds_random: (1 checks) ... OK (0.18 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.filterQuality.R 
+test.filterByLength: (2 checks) ... OK (0.08 seconds)
+test.isAboveQualityThresh: (3 checks) ... OK (0.06 seconds)
+test.trimTailsByQuality: (4 checks) ... OK (0.05 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.gatk.R 
+test.callVariantsGATK : DEACTIVATED, callVariantsGATK() tests need gatk.path option set
+test.callVariantsGATK.withFiltering : DEACTIVATED, callVariantsGATK() tests need gatk.path option set
+test.checkGATKJar : DEACTIVATED, checkGATKJar() test needs gatk.path option set
+test.excludeVariantsByRegion: (3 checks) ... OK (0.22 seconds)
+test.gatk : DEACTIVATED, gatk() tests need gatk.path option set
+test.realignIndels : DEACTIVATED, test.realignIndels() tests need gatk.path option set
+test.realignIndelsGATK : DEACTIVATED, realignIndelsGATK() tests need gatk.path option set
+test.realignIndelsGATK.parallel : DEACTIVATED, realignIndelsGATK() tests need gatk.path option set
+test_zipUp: (3 checks) ... OK (0 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.io.R 
+test.FastQStreamer.getReads.pefq: (1 checks) ... OK (0.22 seconds)
+test.FastQStreamer.getReads.pefq.subsample: (1 checks) ... OK (0.4 seconds)
+test.FastQStreamer.getReads.segz: (1 checks) ... OK (1.48 seconds)
+test.FastQStreamer.getReads.truncated: (1 checks) ... OK (0.19 seconds)
+test.FastQStreamer.subsampler.isdeterministic: (3 checks) ... OK (0.68 seconds)
+test.createTmpDir: (4 checks) ... OK (0 seconds)
+test.detectQualityInFASTQFile: (3 checks) ... OK (0.16 seconds)
+test.getObjectFilename: (4 checks) ... OK (0.01 seconds)
+test.safeUnlink: (2 checks) ... OK (0.01 seconds)
+test.writeAudit: (0 checks) ... OK (0.24 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.mergeLanes.R 
+test.mergeLanes: (6 checks) ... OK (65.49 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.picard.R 
+test.markDuplicates : DEACTIVATED, Skipped markDuplicates() test
+test.markDuplicates_w_outfile : DEACTIVATED, Skipped markDuplicates() test
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.preprocessReads.R 
+test.preprocessReads: (5 checks) ... OK (10.68 seconds)
+test.preprocessReads.minichunks: (5 checks) ... OK (15.53 seconds)
+test.preprocessReads_single_end: (5 checks) ... OK (8.24 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.readRNASeqEnds.R 
+test.readRNASeqEnds: (6 checks) ... OK (0.12 seconds)
+test.readRNASeqEnds.dupmark: (2 checks) ... OK (0.19 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.reportPipelineQA.R 
+test.how_many: (3 checks) ... OK (0 seconds)
+test.plotDF: (3 checks) ... OK (0.14 seconds)
+test.relativeBarPlot: (2 checks) ... OK (0.05 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.runPipeline.R 
+test.runPipeline: (1 checks) ... OK (48.01 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.targetLengths.R 
+test.calculateTargetLength: (4 checks) ... OK (0.31 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.tools.R 
+test.sclapply: (10 checks) ... OK (15.01 seconds)
+test.tryKeepTraceback: (3 checks) ... OK (0.01 seconds)
+--------------------------- 
+Test file: /home/biocbuild/R/R-4.3.0/site-library/HTSeqGenie/unitTests/runit.trimReads.R 
+test.truncateReads: (7 checks) ... OK (0.08 seconds)
+test.truncateReads.trim5: (15 checks) ... OK (0.25 seconds) 
+
+runTests.R: OK !
+There were 50 or more warnings (use warnings() to see the first 50)
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+316.846  71.906 437.960 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">HTSeqGenie.Rcheck/HTSeqGenie-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>HTSeqGenie</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>buildGenomicFeaturesFromTxDb</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>runPipeline</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

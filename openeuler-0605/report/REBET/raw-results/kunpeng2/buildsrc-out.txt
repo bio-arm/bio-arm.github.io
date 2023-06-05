@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data REBET
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘REBET/DESCRIPTION’ ... OK
+* preparing ‘REBET’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘REBET’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c source.c -o source.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o REBET.so source.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpppEjpc/Rinst960b7f1dfb1d/00LOCK-REBET/00new/REBET/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘REBET’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpppEjpc/Rinst960b7f1dfb1d/00LOCK-REBET/00new/REBET/libs/REBET.so':
+  /tmp/RtmpppEjpc/Rinst960b7f1dfb1d/00LOCK-REBET/00new/REBET/libs/REBET.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpppEjpc/Rinst960b7f1dfb1d/REBET’
+      -----------------------------------
+ERROR: package installation failed

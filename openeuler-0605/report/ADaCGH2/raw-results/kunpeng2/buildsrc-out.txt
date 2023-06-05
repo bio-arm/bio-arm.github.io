@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ADaCGH2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ADaCGH2/DESCRIPTION’ ... OK
+* preparing ‘ADaCGH2’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ADaCGH2’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c r_haarseg.c -o r_haarseg.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ADaCGH2.so init.o r_haarseg.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpnTi6pS/Rinst2c91f0775d7eb0/00LOCK-ADaCGH2/00new/ADaCGH2/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ADaCGH2’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpnTi6pS/Rinst2c91f0775d7eb0/00LOCK-ADaCGH2/00new/ADaCGH2/libs/ADaCGH2.so':
+  /tmp/RtmpnTi6pS/Rinst2c91f0775d7eb0/00LOCK-ADaCGH2/00new/ADaCGH2/libs/ADaCGH2.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpnTi6pS/Rinst2c91f0775d7eb0/ADaCGH2’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,51 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SynExtend
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SynExtend/DESCRIPTION’ ... OK
+* preparing ‘SynExtend’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SynExtend’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c CDend.c -o CDend.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c CShuffle.c -o CShuffle.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c HungarianAlgo.c -o HungarianAlgo.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c MoranI.c -o MoranI.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c NucleotideCounts.c -o NucleotideCounts.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c R_init_synextend.c -o R_init_synextend.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c SEutils.c -o SEutils.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c XORRand.c -o XORRand.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c calcMIR2C.c -o calcMIR2C.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c dendrapply.c -o dendrapply.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o SynExtend.so CDend.o CShuffle.o HungarianAlgo.o MoranI.o NucleotideCounts.o R_init_synextend.o SEutils.o XORRand.o calcMIR2C.o dendrapply.o -fopenmp -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpTdAFKa/Rinst4ba783c9ce6d8/00LOCK-SynExtend/00new/SynExtend/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘SynExtend’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpTdAFKa/Rinst4ba783c9ce6d8/00LOCK-SynExtend/00new/SynExtend/libs/SynExtend.so':
+  /tmp/RtmpTdAFKa/Rinst4ba783c9ce6d8/00LOCK-SynExtend/00new/SynExtend/libs/SynExtend.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpTdAFKa/Rinst4ba783c9ce6d8/SynExtend’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BufferedMatrix
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BufferedMatrix/DESCRIPTION’ ... OK
+* preparing ‘BufferedMatrix’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘BufferedMatrix’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c RBufferedMatrix.c -o RBufferedMatrix.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c doubleBufferedMatrix.c -o doubleBufferedMatrix.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c doubleBufferedMatrix_C_tests.c -o doubleBufferedMatrix_C_tests.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init_package.c -o init_package.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o BufferedMatrix.so RBufferedMatrix.o doubleBufferedMatrix.o doubleBufferedMatrix_C_tests.o init_package.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpLT9Tmf/Rinst3a64a9155d23d2/00LOCK-BufferedMatrix/00new/BufferedMatrix/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘rowMeans’ in package ‘BufferedMatrix’
+Creating a new generic function for ‘rowSums’ in package ‘BufferedMatrix’
+Creating a new generic function for ‘colMeans’ in package ‘BufferedMatrix’
+Creating a new generic function for ‘colSums’ in package ‘BufferedMatrix’
+Creating a generic function for ‘ncol’ from package ‘base’ in package ‘BufferedMatrix’
+Creating a generic function for ‘nrow’ from package ‘base’ in package ‘BufferedMatrix’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘BufferedMatrix’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpLT9Tmf/Rinst3a64a9155d23d2/00LOCK-BufferedMatrix/00new/BufferedMatrix/libs/BufferedMatrix.so':
+  /tmp/RtmpLT9Tmf/Rinst3a64a9155d23d2/00LOCK-BufferedMatrix/00new/BufferedMatrix/libs/BufferedMatrix.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpLT9Tmf/Rinst3a64a9155d23d2/BufferedMatrix’
+      -----------------------------------
+ERROR: package installation failed

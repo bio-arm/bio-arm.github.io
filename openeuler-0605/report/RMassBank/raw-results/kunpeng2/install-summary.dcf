@@ -1,0 +1,8 @@
+Package: RMassBank
+Version: 3.11.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL RMassBank
+StartedAt: 2023-06-04 06:10:58 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 06:10:59 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 1.0 seconds
+RetCode: 1
+Status: ERROR

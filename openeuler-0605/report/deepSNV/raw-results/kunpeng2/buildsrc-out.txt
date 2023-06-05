@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data deepSNV
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘deepSNV/DESCRIPTION’ ... OK
+* preparing ‘deepSNV’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘deepSNV’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c bam2R.cpp -o bam2R.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c betabinom.c -o betabinom.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o deepSNV.so bam2R.o betabinom.o /home/biocbuild/R/R-4.3.0/site-library/Rhtslib/usrlib/libhts.a -lcurl -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpDSLdRJ/Rinst3b44a146d24d79/00LOCK-deepSNV/00new/deepSNV/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘deepSNV’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpDSLdRJ/Rinst3b44a146d24d79/00LOCK-deepSNV/00new/deepSNV/libs/deepSNV.so':
+  /tmp/RtmpDSLdRJ/Rinst3b44a146d24d79/00LOCK-deepSNV/00new/deepSNV/libs/deepSNV.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpDSLdRJ/Rinst3b44a146d24d79/deepSNV’
+      -----------------------------------
+ERROR: package installation failed

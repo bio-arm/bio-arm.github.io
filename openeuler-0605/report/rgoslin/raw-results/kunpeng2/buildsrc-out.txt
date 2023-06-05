@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rgoslin
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rgoslin/DESCRIPTION’ ... OK
+* preparing ‘rgoslin’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘rgoslin’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+The name of the shared library to be created is: rgoslin.so
+make[1]: Entering directory '/tmp/Rtmpp0117C/Rbuildb52212bcad52/rgoslin/src/cppgoslin'
+rm -f "cppgoslin/parser/KnownGrammars.h"
+rm -f "src/domain/LipidClasses.cpp"
+rm -f "cppgoslin/domain/ClassesEnum.h"
+rm -f cppgoslin/domain/*.o
+rm -f cppgoslin/parser/*.o
+rm -f cppgoslin/tests/*.o
+rm -f libcppGoslin.so
+rm -f *Test
+rm -f writeGrammarsHeader
+rm -f writeLipidEnums
+rm -f libcppGoslin.a
+make[1]: Leaving directory '/tmp/Rtmpp0117C/Rbuildb52212bcad52/rgoslin/src/cppgoslin'
+make[1]: Entering directory '/tmp/Rtmpp0117C/Rbuildb52212bcad52/rgoslin/src/cppgoslin'
+g++ -std=gnu++11 -g -O2  -I . -o writeGrammarsHeader writeGrammarsHeader.cpp && "./writeGrammarsHeader" "cppgoslin/parser/KnownGrammars.h"
+/bin/sh: line 1: ./writeGrammarsHeader: Permission denied
+make[1]: *** [makefile:50: cppgoslin/parser/KnownGrammars.h] Error 126
+make[1]: Leaving directory '/tmp/Rtmpp0117C/Rbuildb52212bcad52/rgoslin/src/cppgoslin'
+make: *** [Makevars:25: sublibraries] Error 1
+ERROR: compilation failed for package ‘rgoslin’
+* removing ‘/tmp/Rtmpp0117C/Rinstb5224cd61848/rgoslin’
+      -----------------------------------
+ERROR: package installation failed

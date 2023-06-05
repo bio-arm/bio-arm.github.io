@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data beadarray
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘beadarray/DESCRIPTION’ ... OK
+* preparing ‘beadarray’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘beadarray’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c BASH.c -o BASH.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c HULK.c -o HULK.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c determiningGridPositions.c -o determiningGridPositions.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c findAllOutliers.c -o findAllOutliers.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c imageProcessing.c -o imageProcessing.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o beadarray.so BASH.o HULK.o determiningGridPositions.o findAllOutliers.o imageProcessing.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpkFgLv2/Rinst2d00ab3c26e867/00LOCK-beadarray/00new/beadarray/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘beadarray’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpkFgLv2/Rinst2d00ab3c26e867/00LOCK-beadarray/00new/beadarray/libs/beadarray.so':
+  /tmp/RtmpkFgLv2/Rinst2d00ab3c26e867/00LOCK-beadarray/00new/beadarray/libs/beadarray.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpkFgLv2/Rinst2d00ab3c26e867/beadarray’
+      -----------------------------------
+ERROR: package installation failed

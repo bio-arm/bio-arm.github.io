@@ -1,0 +1,10 @@
+Package: mimager
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data mimager
+StartedAt: 2023-06-04 09:50:24 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 09:51:41 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 77.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: mimager_1.25.0.tar.gz
+PackageFileSize: 651.5 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

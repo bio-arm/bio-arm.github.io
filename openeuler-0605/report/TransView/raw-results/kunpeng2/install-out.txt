@@ -1,0 +1,37 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL TransView
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘TransView’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c R_init_TransView.c -o R_init_TransView.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c bam_plbuf.c -o bam_plbuf.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c bin_density.c -o bin_density.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c construct_dc.c -o construct_dc.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c parse_sam.c -o parse_sam.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c slice_dc.c -o slice_dc.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/R/R-4.3.0/site-library/Rhtslib/include' -I/usr/local/include    -fPIC  -g -O2  -c visuals.c -o visuals.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o TransView.so R_init_TransView.o bam_plbuf.o bin_density.o construct_dc.o parse_sam.o slice_dc.o visuals.o /home/biocbuild/R/R-4.3.0/site-library/Rhtslib/usrlib/libhts.a -lcurl -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/site-library/00LOCK-TransView/00new/TransView/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (TransView)

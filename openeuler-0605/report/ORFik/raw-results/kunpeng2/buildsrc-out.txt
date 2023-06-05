@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ORFik
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ORFik/DESCRIPTION’ ... OK
+* preparing ‘ORFik’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ORFik’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c findORFsHelpers.cpp -o findORFsHelpers.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c findOrfs.cpp -o findOrfs.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c findOrfsFasta.cpp -o findOrfsFasta.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c pmapFromTranscripts.cpp -o pmapFromTranscripts.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c pmapToTranscripts.cpp -o pmapToTranscripts.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ORFik.so RcppExports.o findORFsHelpers.o findOrfs.o findOrfsFasta.o pmapFromTranscripts.o pmapToTranscripts.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpOcp0TB/Rinst3f868019093e28/00LOCK-ORFik/00new/ORFik/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a new generic function for ‘symbols’ in package ‘ORFik’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ORFik’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpOcp0TB/Rinst3f868019093e28/00LOCK-ORFik/00new/ORFik/libs/ORFik.so':
+  /tmp/RtmpOcp0TB/Rinst3f868019093e28/00LOCK-ORFik/00new/ORFik/libs/ORFik.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpOcp0TB/Rinst3f868019093e28/ORFik’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data edge
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘edge/DESCRIPTION’ ... OK
+* preparing ‘edge’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘edge’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c edge-init.c -o edge-init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c edgeKLODP.c -o edgeKLODP.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o edge.so edge-init.o edgeKLODP.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpxhJsvj/Rinst3ba0b0192b230a/00LOCK-edge/00new/edge/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘edge’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpxhJsvj/Rinst3ba0b0192b230a/00LOCK-edge/00new/edge/libs/edge.so':
+  /tmp/RtmpxhJsvj/Rinst3ba0b0192b230a/00LOCK-edge/00new/edge/libs/edge.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpxhJsvj/Rinst3ba0b0192b230a/edge’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data blima
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘blima/DESCRIPTION’ ... OK
+* preparing ‘blima’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘blima’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c interpolateSortedVector.cpp -o interpolateSortedVector.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o blima.so RcppExports.o interpolateSortedVector.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpDttsai/Rinst3a59f22d73b420/00LOCK-blima/00new/blima/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘blima’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpDttsai/Rinst3a59f22d73b420/00LOCK-blima/00new/blima/libs/blima.so':
+  /tmp/RtmpDttsai/Rinst3a59f22d73b420/00LOCK-blima/00new/blima/libs/blima.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpDttsai/Rinst3a59f22d73b420/blima’
+      -----------------------------------
+ERROR: package installation failed

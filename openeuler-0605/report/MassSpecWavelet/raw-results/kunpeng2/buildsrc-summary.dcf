@@ -1,0 +1,10 @@
+Package: MassSpecWavelet
+Version: 1.67.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MassSpecWavelet
+StartedAt: 2023-06-04 09:34:08 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 09:34:12 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 4.0 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

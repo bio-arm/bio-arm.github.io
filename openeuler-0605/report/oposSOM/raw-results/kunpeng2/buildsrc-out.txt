@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data oposSOM
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘oposSOM/DESCRIPTION’ ... OK
+* preparing ‘oposSOM’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘oposSOM’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c DeltaMatrix.cpp -o DeltaMatrix.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c DistanceCalculator.cpp -o DistanceCalculator.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c NeighborhoodMatrix.cpp -o NeighborhoodMatrix.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/library/RcppParallel/include' -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o oposSOM.so DeltaMatrix.o DistanceCalculator.o NeighborhoodMatrix.o RcppExports.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpvuelGH/Rinst3f7a2d2054ceb3/00LOCK-oposSOM/00new/oposSOM/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘oposSOM’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpvuelGH/Rinst3f7a2d2054ceb3/00LOCK-oposSOM/00new/oposSOM/libs/oposSOM.so':
+  /tmp/RtmpvuelGH/Rinst3f7a2d2054ceb3/00LOCK-oposSOM/00new/oposSOM/libs/oposSOM.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpvuelGH/Rinst3f7a2d2054ceb3/oposSOM’
+      -----------------------------------
+ERROR: package installation failed

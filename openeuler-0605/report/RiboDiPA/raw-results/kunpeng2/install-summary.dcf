@@ -1,0 +1,8 @@
+Package: RiboDiPA
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL RiboDiPA
+StartedAt: 2023-06-04 05:45:14 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:46:30 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 76.1 seconds
+RetCode: 0
+Status: OK

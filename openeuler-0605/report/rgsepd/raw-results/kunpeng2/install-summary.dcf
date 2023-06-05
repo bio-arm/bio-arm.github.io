@@ -1,0 +1,8 @@
+Package: rgsepd
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL rgsepd
+StartedAt: 2023-06-04 05:46:18 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:48:43 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 144.1 seconds
+RetCode: 0
+Status: OK

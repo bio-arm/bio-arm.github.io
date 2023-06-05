@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ramwas
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ramwas/DESCRIPTION’ ... OK
+* preparing ‘ramwas’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ramwas’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c rw_c_code.c -o rw_c_code.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ramwas.so rw_c_code.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpW6lqXQ/Rinst6cbd3616973e/00LOCK-ramwas/00new/ramwas/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ramwas’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpW6lqXQ/Rinst6cbd3616973e/00LOCK-ramwas/00new/ramwas/libs/ramwas.so':
+  /tmp/RtmpW6lqXQ/Rinst6cbd3616973e/00LOCK-ramwas/00new/ramwas/libs/ramwas.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpW6lqXQ/Rinst6cbd3616973e/ramwas’
+      -----------------------------------
+ERROR: package installation failed

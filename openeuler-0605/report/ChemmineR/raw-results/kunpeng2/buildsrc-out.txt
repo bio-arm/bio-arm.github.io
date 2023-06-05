@@ -1,0 +1,73 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ChemmineR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘ChemmineR/DESCRIPTION’ ... OK
+* preparing ‘ChemmineR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘ChemmineR’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c DisjointSets.cpp -o DisjointSets.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c cluster.cc -o cluster.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c cstrsplit.cc -o cstrsplit.o
+In file included from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/bind/mem_fn.hpp:25,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/mem_fn.hpp:22,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/function/detail/prologue.hpp:18,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/function.hpp:30,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/detail/find_iterator.hpp:18,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/find_iterator.hpp:24,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/iter_find.hpp:27,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string/split.hpp:16,
+                 from /home/biocbuild/R/R-4.3.0/library/BH/include/boost/algorithm/string.hpp:23,
+                 from cstrsplit.cc:7:
+/home/biocbuild/R/R-4.3.0/library/BH/include/boost/get_pointer.hpp:48:40: warning: ‘template<class> class std::auto_ptr’ is deprecated [-Wdeprecated-declarations]
+   48 | template<class T> T * get_pointer(std::auto_ptr<T> const& p)
+      |                                        ^~~~~~~~
+In file included from /usr/include/c++/10.3.1/bits/locale_conv.h:41,
+                 from /usr/include/c++/10.3.1/locale:43,
+                 from /usr/include/c++/10.3.1/iomanip:43,
+                 from /home/biocbuild/R/R-4.3.0/site-library/Rcpp/include/RcppCommon.h:53,
+                 from /home/biocbuild/R/R-4.3.0/site-library/Rcpp/include/Rcpp.h:27,
+                 from cstrsplit.cc:2:
+/usr/include/c++/10.3.1/bits/unique_ptr.h:57:28: note: declared here
+   57 |   template<typename> class auto_ptr;
+      |                            ^~~~~~~~
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c desc.cc -o desc.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c fingerprints.cc -o fingerprints.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c formats.cc -o formats.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c molecule.cc -o molecule.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c r_wrap.cc -o r_wrap.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c script.cc -o script.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/BH/include' -I/usr/local/include   -DNO_MAIN -DNO_DEBUG -fPIC  -g -O2  -c similarity.cc -o similarity.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o ChemmineR.so DisjointSets.o cluster.o cstrsplit.o desc.o fingerprints.o formats.o molecule.o r_wrap.o script.o similarity.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpvK5dQr/Rinst3a99b624260b7b/00LOCK-ChemmineR/00new/ChemmineR/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘ChemmineR’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpvK5dQr/Rinst3a99b624260b7b/00LOCK-ChemmineR/00new/ChemmineR/libs/ChemmineR.so':
+  /tmp/RtmpvK5dQr/Rinst3a99b624260b7b/00LOCK-ChemmineR/00new/ChemmineR/libs/ChemmineR.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpvK5dQr/Rinst3a99b624260b7b/ChemmineR’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,10 @@
+Package: magrene
+Version: 1.3.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:magrene.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings magrene_1.3.0.tar.gz
+StartedAt: 2023-06-04 19:07:58 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 19:10:03 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 125.2 seconds
+RetCode: 0
+Status: OK
+CheckDir: magrene.Rcheck
+Warnings: 0

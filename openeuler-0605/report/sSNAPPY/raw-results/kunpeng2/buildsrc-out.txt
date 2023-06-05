@@ -1,0 +1,72 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data sSNAPPY
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘sSNAPPY/DESCRIPTION’ ... OK
+* preparing ‘sSNAPPY’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘sSNAPPY’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c GenePertScore.cpp -o GenePertScore.o
+In file included from /home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo:26,
+                 from /home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:57,
+                 from /home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/RcppArmadillo.h:29,
+                 from GenePertScore.cpp:2:
+/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo_bits/config.hpp:338:86: note: ‘#pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed’
+  338 |   #pragma message ("INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed")
+      |                                                                                      ^
+/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo_bits/config.hpp:343:75: note: ‘#pragma message: INFO: suggest to use ARMA_WARN_LEVEL option instead’
+  343 |     #pragma message ("INFO: suggest to use ARMA_WARN_LEVEL option instead")
+      |                                                                           ^
+/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo_bits/config.hpp:346:61: note: ‘#pragma message: INFO: see the documentation for details’
+  346 |   #pragma message ("INFO: see the documentation for details")
+      |                                                             ^
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c code.cpp -o code.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I'/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c normaliseByPermutation.cpp -o normaliseByPermutation.o
+In file included from /home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo:26,
+                 from /home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/RcppArmadillo/interface/RcppArmadilloForward.h:57,
+                 from /home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/RcppArmadillo.h:29,
+                 from normaliseByPermutation.cpp:2:
+/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo_bits/config.hpp:338:86: note: ‘#pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed’
+  338 |   #pragma message ("INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed")
+      |                                                                                      ^
+/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo_bits/config.hpp:343:75: note: ‘#pragma message: INFO: suggest to use ARMA_WARN_LEVEL option instead’
+  343 |     #pragma message ("INFO: suggest to use ARMA_WARN_LEVEL option instead")
+      |                                                                           ^
+/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include/armadillo_bits/config.hpp:346:61: note: ‘#pragma message: INFO: see the documentation for details’
+  346 |   #pragma message ("INFO: see the documentation for details")
+      |                                                             ^
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o sSNAPPY.so GenePertScore.o RcppExports.o code.o normaliseByPermutation.o -fopenmp -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpk0U5Ds/Rinst4752e24c3767b/00LOCK-sSNAPPY/00new/sSNAPPY/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘sSNAPPY’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpk0U5Ds/Rinst4752e24c3767b/00LOCK-sSNAPPY/00new/sSNAPPY/libs/sSNAPPY.so':
+  /tmp/Rtmpk0U5Ds/Rinst4752e24c3767b/00LOCK-sSNAPPY/00new/sSNAPPY/libs/sSNAPPY.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpk0U5Ds/Rinst4752e24c3767b/sSNAPPY’
+      -----------------------------------
+ERROR: package installation failed

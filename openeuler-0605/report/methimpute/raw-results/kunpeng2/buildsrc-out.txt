@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data methimpute
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘methimpute/DESCRIPTION’ ... OK
+* preparing ‘methimpute’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘methimpute’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c densities.cpp -o densities.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c fitHMM.cpp -o fitHMM.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c fitHMM_context.cpp -o fitHMM_context.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c hmm_context.cpp -o hmm_context.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c methimpute_init.c -o methimpute_init.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c scalehmm.cpp -o scalehmm.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o methimpute.so RcppExports.o densities.o fitHMM.o fitHMM_context.o hmm_context.o methimpute_init.o scalehmm.o -fopenmp -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp4e4EYm/Rinst3e793f1b0080d6/00LOCK-methimpute/00new/methimpute/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘methimpute’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp4e4EYm/Rinst3e793f1b0080d6/00LOCK-methimpute/00new/methimpute/libs/methimpute.so':
+  /tmp/Rtmp4e4EYm/Rinst3e793f1b0080d6/00LOCK-methimpute/00new/methimpute/libs/methimpute.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp4e4EYm/Rinst3e793f1b0080d6/methimpute’
+      -----------------------------------
+ERROR: package installation failed

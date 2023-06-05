@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data cosmiq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘cosmiq/DESCRIPTION’ ... OK
+* preparing ‘cosmiq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘cosmiq’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c util.c -o util.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o cosmiq.so util.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpLsToy0/Rinst3b0eb7561d3d82/00LOCK-cosmiq/00new/cosmiq/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘cosmiq’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpLsToy0/Rinst3b0eb7561d3d82/00LOCK-cosmiq/00new/cosmiq/libs/cosmiq.so':
+  /tmp/RtmpLsToy0/Rinst3b0eb7561d3d82/00LOCK-cosmiq/00new/cosmiq/libs/cosmiq.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpLsToy0/Rinst3b0eb7561d3d82/cosmiq’
+      -----------------------------------
+ERROR: package installation failed

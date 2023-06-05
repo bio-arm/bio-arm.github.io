@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BioQC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BioQC/DESCRIPTION’ ... OK
+* preparing ‘BioQC’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘BioQC’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG `/home/biocbuild/R/R-4.3.0/bin/Rscript -e 'Rcpp:::CxxFlags()'` -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c gini.c -o gini.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG `/home/biocbuild/R/R-4.3.0/bin/Rscript -e 'Rcpp:::CxxFlags()'` -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG `/home/biocbuild/R/R-4.3.0/bin/Rscript -e 'Rcpp:::CxxFlags()'` -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c read_gmt.cpp -o read_gmt.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG `/home/biocbuild/R/R-4.3.0/bin/Rscript -e 'Rcpp:::CxxFlags()'` -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c stat_rank.c -o stat_rank.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG `/home/biocbuild/R/R-4.3.0/bin/Rscript -e 'Rcpp:::CxxFlags()'` -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c wmw_test.c -o wmw_test.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o BioQC.so gini.o init.o read_gmt.o stat_rank.o wmw_test.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpMxepJX/Rinst36ca76142c02ef/00LOCK-BioQC/00new/BioQC/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘BioQC’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpMxepJX/Rinst36ca76142c02ef/00LOCK-BioQC/00new/BioQC/libs/BioQC.so':
+  /tmp/RtmpMxepJX/Rinst36ca76142c02ef/00LOCK-BioQC/00new/BioQC/libs/BioQC.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpMxepJX/Rinst36ca76142c02ef/BioQC’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data flowPeaks
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘flowPeaks/DESCRIPTION’ ... OK
+* preparing ‘flowPeaks’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘flowPeaks’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c Rpack.cpp -o Rpack.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c Rregistrate.cpp -o Rregistrate.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c VoronoiDiagramGenerator.cpp -o VoronoiDiagramGenerator.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c flowPeaks.cpp -o flowPeaks.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c func_collect.cpp -o func_collect.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c func_collect_supp.cpp -o func_collect_supp.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c gvector_gmatrix.cpp -o gvector_gmatrix.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c kd_tree.cpp -o kd_tree.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   `gsl-config --cflags`  -fPIC  -g -O2  -c kmns.cpp -o kmns.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o flowPeaks.so Rpack.o Rregistrate.o VoronoiDiagramGenerator.o flowPeaks.o func_collect.o func_collect_supp.o gvector_gmatrix.o kd_tree.o kmns.o -L/usr/local/lib -lgsl -lgslcblas -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpIoVt4z/Rinst3c14b0287e7da5/00LOCK-flowPeaks/00new/flowPeaks/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘flowPeaks’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpIoVt4z/Rinst3c14b0287e7da5/00LOCK-flowPeaks/00new/flowPeaks/libs/flowPeaks.so':
+  /tmp/RtmpIoVt4z/Rinst3c14b0287e7da5/00LOCK-flowPeaks/00new/flowPeaks/libs/flowPeaks.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpIoVt4z/Rinst3c14b0287e7da5/flowPeaks’
+      -----------------------------------
+ERROR: package installation failed

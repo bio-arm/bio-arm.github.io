@@ -1,0 +1,265 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EnrichmentBrowser.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EnrichmentBrowser_2.31.1.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/EnrichmentBrowser.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘EnrichmentBrowser/DESCRIPTION’ ... OK
+* this is package ‘EnrichmentBrowser’ version ‘2.31.1’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘EnrichmentBrowser’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... NOTE
+Unexported object imported by a ':::' call: 'pathview:::parseKGML2Graph2'
+  See the note in ?`:::` about the use of this operator.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+.getGOFromBiomart: no visible binding for global variable
+  ‘go_linkage_type’
+Undefined global functions or variables:
+  go_linkage_type
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘EnrichmentBrowser-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: ebrowser
+> ### Title: Seamless navigation through enrichment analysis results
+> ### Aliases: ebrowser
+> 
+> ### ** Examples
+> 
+> 
+>     # expression data from file
+>     exprs.file <- system.file("extdata/exprs.tab", package="EnrichmentBrowser")
+>     cdat.file <- system.file("extdata/colData.tab", package="EnrichmentBrowser")
+>     rdat.file <- system.file("extdata/rowData.tab", package="EnrichmentBrowser")
+>     
+>     # getting all human KEGG gene sets
+>     # hsa.gs <- getGenesets(org="hsa", db="kegg")
+>     gs.file <- system.file("extdata/hsa_kegg_gs.gmt", package="EnrichmentBrowser")
+>     hsa.gs <- getGenesets(gs.file)
+> 
+>     # output destination 
+>     out.dir <- configEBrowser("OUTDIR.DEFAULT") 
+> 
+>     # set-based enrichment analysis
+>     ebrowser( meth="ora", perm=0,
++             exprs=exprs.file, cdat=cdat.file, rdat=rdat.file, 
++             gs=hsa.gs, org="hsa", nr.show=3,
++             out.dir=out.dir, report.name="oraReport")
+Read expression data ...
+Normalize ...
+Excluding 211 genes not satisfying min.cpm threshold
+Corresponding software package not found: EDASeq
+Make sure that you have it installed.
+Bioconductor version 3.18 (BiocManager 1.30.20), R 4.3.0 (2023-04-21)
+Installing package(s) 'EDASeq'
+also installing the dependencies 'jpeg', 'latticeExtra', 'ShortRead', 'aroma.light'
+
+trying URL 'https://cloud.r-project.org/src/contrib/jpeg_0.1-10.tar.gz'
+Content type 'application/x-gzip' length 18667 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/latticeExtra_0.6-30.tar.gz'
+Content type 'application/x-gzip' length 1292936 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.59.0.tar.gz'
+Content type 'application/x-gzip' length 5223367 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/aroma.light_3.31.0.tar.gz'
+Content type 'application/x-gzip' length 388121 bytes (379 KB)
+==================================================
+downloaded 379 KB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/EDASeq_2.35.0.tar.gz'
+Content type 'application/x-gzip' length 1036783 bytes (1012 KB)
+==================================================
+downloaded 1012 KB
+
+* installing *source* package ‘jpeg’ ...
+** package ‘jpeg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c read.c -o read.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c reg.c -o reg.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c write.c -o write.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o jpeg.so read.o reg.o write.o -ljpeg -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘jpeg’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so':
+  /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/jpeg’
+installation of package 'jpeg' had non-zero exit status
+* installing *source* package ‘aroma.light’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (aroma.light)
+ERROR: dependency ‘jpeg’ is not available for package ‘latticeExtra’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/latticeExtra’
+installation of package 'latticeExtra' had non-zero exit status
+ERROR: dependency ‘latticeExtra’ is not available for package ‘ShortRead’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/ShortRead’
+installation of package 'ShortRead' had non-zero exit status
+ERROR: dependency ‘ShortRead’ is not available for package ‘EDASeq’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/EDASeq’
+installation of package 'EDASeq' had non-zero exit status
+
+The downloaded source packages are in
+	'/tmp/Rtmp9RbtQQ/downloaded_packages'
+Error in betweenLaneNormalization(assay(se), which = norm.method) : 
+  could not find function "betweenLaneNormalization"
+Calls: ebrowser -> normalize
+Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘EnrichmentBrowser.Rnw’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘EnrichmentBrowser.Rnw’ using knitr
+trying URL 'https://cloud.r-project.org/src/contrib/jpeg_0.1-10.tar.gz'
+Content type 'application/x-gzip' length 18667 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL 'https://cloud.r-project.org/src/contrib/latticeExtra_0.6-30.tar.gz'
+Content type 'application/x-gzip' length 1292936 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.59.0.tar.gz'
+Content type 'application/x-gzip' length 5223367 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL 'https://bioconductor.org/packages/3.18/bioc/src/contrib/EDASeq_2.35.0.tar.gz'
+Content type 'application/x-gzip' length 1036783 bytes (1012 KB)
+==================================================
+downloaded 1012 KB
+
+* installing *source* package ‘jpeg’ ...
+** package ‘jpeg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c read.c -o read.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c reg.c -o reg.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c write.c -o write.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o jpeg.so read.o reg.o write.o -ljpeg -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘jpeg’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so':
+  /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/jpeg’
+ERROR: dependency ‘jpeg’ is not available for package ‘latticeExtra’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/latticeExtra’
+ERROR: dependency ‘latticeExtra’ is not available for package ‘ShortRead’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/ShortRead’
+ERROR: dependency ‘ShortRead’ is not available for package ‘EDASeq’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/EDASeq’
+
+The downloaded source packages are in
+	'/tmp/Rtmp6MVzOS/downloaded_packages'
+
+Quitting from lines 267-268 [norm-rseq] (EnrichmentBrowser.Rnw)
+Error: processing vignette 'EnrichmentBrowser.Rnw' failed with diagnostics:
+could not find function "betweenLaneNormalization"
+--- failed re-building ‘EnrichmentBrowser.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘EnrichmentBrowser.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 2 ERRORs, 2 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/EnrichmentBrowser.Rcheck/00check.log’
+for details.
+

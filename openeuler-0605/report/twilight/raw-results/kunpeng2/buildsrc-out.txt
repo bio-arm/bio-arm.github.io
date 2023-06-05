@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data twilight
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘twilight/DESCRIPTION’ ... OK
+* preparing ‘twilight’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘twilight’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c confidence.line.c -o confidence.line.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c correlation.c -o correlation.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c kstest.c -o kstest.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c sep.c -o sep.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c twosample.perm.c -o twosample.perm.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c twosample.single.c -o twosample.single.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o twilight.so confidence.line.o correlation.o kstest.o sep.o twosample.perm.o twosample.single.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpWRB7jU/Rinst518eb3e2a139c/00LOCK-twilight/00new/twilight/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘twilight’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpWRB7jU/Rinst518eb3e2a139c/00LOCK-twilight/00new/twilight/libs/twilight.so':
+  /tmp/RtmpWRB7jU/Rinst518eb3e2a139c/00LOCK-twilight/00new/twilight/libs/twilight.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpWRB7jU/Rinst518eb3e2a139c/twilight’
+      -----------------------------------
+ERROR: package installation failed

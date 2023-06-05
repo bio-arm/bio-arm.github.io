@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data chromstaR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘chromstaR/DESCRIPTION’ ... OK
+* preparing ‘chromstaR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘chromstaR’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c R_interface.cpp -o R_interface.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c densities.cpp -o densities.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c init.cpp -o init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c scalehmm.cpp -o scalehmm.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c utility.cpp -o utility.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o chromstaR.so R_interface.o densities.o init.o scalehmm.o utility.o -fopenmp -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpKLB6mP/Rinst3aaaee4ee05b47/00LOCK-chromstaR/00new/chromstaR/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘chromstaR’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpKLB6mP/Rinst3aaaee4ee05b47/00LOCK-chromstaR/00new/chromstaR/libs/chromstaR.so':
+  /tmp/RtmpKLB6mP/Rinst3aaaee4ee05b47/00LOCK-chromstaR/00new/chromstaR/libs/chromstaR.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpKLB6mP/Rinst3aaaee4ee05b47/chromstaR’
+      -----------------------------------
+ERROR: package installation failed

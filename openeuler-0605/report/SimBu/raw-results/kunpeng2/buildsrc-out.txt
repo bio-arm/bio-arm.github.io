@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SimBu
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SimBu/DESCRIPTION’ ... OK
+* preparing ‘SimBu’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SimBu’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpvGoHzR/Rinst3fe415747e2cc/SimBu’
+      -----------------------------------
+ERROR: package installation failed

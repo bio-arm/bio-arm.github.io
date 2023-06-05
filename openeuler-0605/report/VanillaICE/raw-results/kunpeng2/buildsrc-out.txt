@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data VanillaICE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘VanillaICE/DESCRIPTION’ ... OK
+* preparing ‘VanillaICE’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘VanillaICE’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c rinit.c -o rinit.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c viterbi.c -o viterbi.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o VanillaICE.so rinit.o viterbi.o -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpdcdamo/Rinst565ef1c719906/00LOCK-VanillaICE/00new/VanillaICE/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘oligoClasses’ for request: ‘mean’ when loading ‘crlmm’
+Creating a new generic function for ‘distance’ in package ‘VanillaICE’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘oligoClasses’ for request: ‘mean’ when loading ‘crlmm’
+Error: package or namespace load failed for ‘VanillaICE’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpdcdamo/Rinst565ef1c719906/00LOCK-VanillaICE/00new/VanillaICE/libs/VanillaICE.so':
+  /tmp/Rtmpdcdamo/Rinst565ef1c719906/00LOCK-VanillaICE/00new/VanillaICE/libs/VanillaICE.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpdcdamo/Rinst565ef1c719906/VanillaICE’
+      -----------------------------------
+ERROR: package installation failed

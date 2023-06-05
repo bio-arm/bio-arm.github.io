@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data aCGH
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘aCGH/DESCRIPTION’ ... OK
+* preparing ‘aCGH’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘aCGH’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -DUSEDOUBLE -g3  -I/usr/local/include    -fPIC  -g -O2  -c hmm.cpp -o hmm.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o aCGH.so hmm.o -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpNRWmZW/Rinst2c91ec1cbe132f/00LOCK-aCGH/00new/aCGH/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘aCGH’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpNRWmZW/Rinst2c91ec1cbe132f/00LOCK-aCGH/00new/aCGH/libs/aCGH.so':
+  /tmp/RtmpNRWmZW/Rinst2c91ec1cbe132f/00LOCK-aCGH/00new/aCGH/libs/aCGH.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpNRWmZW/Rinst2c91ec1cbe132f/aCGH’
+      -----------------------------------
+ERROR: package installation failed

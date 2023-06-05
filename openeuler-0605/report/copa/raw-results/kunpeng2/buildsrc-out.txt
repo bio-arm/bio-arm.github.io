@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data copa
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘copa/DESCRIPTION’ ... OK
+* preparing ‘copa’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘copa’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c copa.c -o copa.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o copa.so copa.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp7Ffet9/Rinst3afbd05c5a65f6/00LOCK-copa/00new/copa/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘copa’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp7Ffet9/Rinst3afbd05c5a65f6/00LOCK-copa/00new/copa/libs/copa.so':
+  /tmp/Rtmp7Ffet9/Rinst3afbd05c5a65f6/00LOCK-copa/00new/copa/libs/copa.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp7Ffet9/Rinst3afbd05c5a65f6/copa’
+      -----------------------------------
+ERROR: package installation failed

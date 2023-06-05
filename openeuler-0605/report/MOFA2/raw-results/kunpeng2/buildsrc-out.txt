@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MOFA2
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MOFA2/DESCRIPTION’ ... OK
+* preparing ‘MOFA2’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘MOFA2’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/Rtmp6kDb1A/Rinst3eb4ae45de6654/MOFA2’
+      -----------------------------------
+ERROR: package installation failed

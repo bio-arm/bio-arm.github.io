@@ -1,0 +1,8 @@
+Package: CancerInSilico
+Version: 2.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL CancerInSilico
+StartedAt: 2023-06-04 05:28:41 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 05:30:06 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 85.6 seconds
+RetCode: 1
+Status: ERROR

@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data R453Plus1Toolbox
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘R453Plus1Toolbox/DESCRIPTION’ ... OK
+* preparing ‘R453Plus1Toolbox’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘R453Plus1Toolbox’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c readSFF.c -o readSFF.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c writeSFF.c -o writeSFF.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o R453Plus1Toolbox.so readSFF.o writeSFF.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpWjJj4T/Rinst673779473c73/00LOCK-R453Plus1Toolbox/00new/R453Plus1Toolbox/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘R453Plus1Toolbox’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpWjJj4T/Rinst673779473c73/00LOCK-R453Plus1Toolbox/00new/R453Plus1Toolbox/libs/R453Plus1Toolbox.so':
+  /tmp/RtmpWjJj4T/Rinst673779473c73/00LOCK-R453Plus1Toolbox/00new/R453Plus1Toolbox/libs/R453Plus1Toolbox.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpWjJj4T/Rinst673779473c73/R453Plus1Toolbox’
+      -----------------------------------
+ERROR: package installation failed

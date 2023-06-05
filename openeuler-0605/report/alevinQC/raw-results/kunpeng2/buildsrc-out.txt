@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data alevinQC
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘alevinQC/DESCRIPTION’ ... OK
+* preparing ‘alevinQC’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘alevinQC’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c convert_permit_freq.cpp -o convert_permit_freq.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o alevinQC.so RcppExports.o convert_permit_freq.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpIX1jkf/Rinst2cae0621668b35/00LOCK-alevinQC/00new/alevinQC/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘alevinQC’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpIX1jkf/Rinst2cae0621668b35/00LOCK-alevinQC/00new/alevinQC/libs/alevinQC.so':
+  /tmp/RtmpIX1jkf/Rinst2cae0621668b35/00LOCK-alevinQC/00new/alevinQC/libs/alevinQC.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpIX1jkf/Rinst2cae0621668b35/alevinQC’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,55 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GeneSelectMMD
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GeneSelectMMD/DESCRIPTION’ ... OK
+* preparing ‘GeneSelectMMD’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* checking whether ‘INDEX’ is up-to-date ... NO
+* use ‘--force’ to remove the existing ‘INDEX’
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GeneSelectMMD’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using Fortran compiler: ‘GNU Fortran (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c GeneSelectMMD_init.c -o GeneSelectMMD_init.o
+gfortran  -fPIC  -g -O2  -c Qfunc.f -o Qfunc.o
+gfortran  -fPIC  -g -O2  -c blas.f -o blas.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c isnan.c -o isnan.o
+gfortran  -fPIC  -g -O2  -c lbfgsb.f -o lbfgsb.o
+gfortran  -fPIC  -g -O2  -c lbfgsbDriver.f -o lbfgsbDriver.o
+gfortran  -fPIC  -g -O2  -c linpack.f -o linpack.o
+gfortran  -fPIC  -g -O2  -c llkhFun.f -o llkhFun.o
+gfortran  -fPIC  -g -O2  -c myTtest.f -o myTtest.o
+gfortran  -fPIC  -g -O2  -c paraEstLoop.f -o paraEstLoop.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pt.c -o pt.o
+gfortran  -fPIC  -g -O2  -c timer.f -o timer.o
+gfortran  -fPIC  -g -O2  -c wiFun.f -o wiFun.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GeneSelectMMD.so GeneSelectMMD_init.o Qfunc.o blas.o isnan.o lbfgsb.o lbfgsbDriver.o linpack.o llkhFun.o myTtest.o paraEstLoop.o pt.o timer.o wiFun.o -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpKFXxWc/Rinst3c6da0c8723ce/00LOCK-GeneSelectMMD/00new/GeneSelectMMD/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GeneSelectMMD’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpKFXxWc/Rinst3c6da0c8723ce/00LOCK-GeneSelectMMD/00new/GeneSelectMMD/libs/GeneSelectMMD.so':
+  /tmp/RtmpKFXxWc/Rinst3c6da0c8723ce/00LOCK-GeneSelectMMD/00new/GeneSelectMMD/libs/GeneSelectMMD.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpKFXxWc/Rinst3c6da0c8723ce/GeneSelectMMD’
+      -----------------------------------
+ERROR: package installation failed

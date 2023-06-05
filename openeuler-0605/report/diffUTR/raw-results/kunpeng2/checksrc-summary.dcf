@@ -1,0 +1,10 @@
+Package: diffUTR
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:diffUTR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings diffUTR_1.9.0.tar.gz
+StartedAt: 2023-06-04 15:52:34 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 15:59:48 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 433.6 seconds
+RetCode: 0
+Status: OK
+CheckDir: diffUTR.Rcheck
+Warnings: 0

@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data densvis
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘densvis/DESCRIPTION’ ... OK
+* preparing ‘densvis’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘densvis’ ...
+** using non-staged installation via StagedInstall field
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpiIsZMG/Rinst3b60da5a9dba05/densvis’
+      -----------------------------------
+ERROR: package installation failed

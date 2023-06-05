@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EventPointer
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EventPointer/DESCRIPTION’ ... OK
+* preparing ‘EventPointer’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘EventPointer’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c dgl.c -o dgl.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c params.c -o params.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pgl.c -o pgl.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c qdgl.c -o qdgl.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c qgl.c -o qgl.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c rgl.c -o rgl.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o EventPointer.so dgl.o params.o pgl.o qdgl.o qgl.o rgl.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpBofAZD/Rinst3be80f928d1b4/00LOCK-EventPointer/00new/EventPointer/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘EventPointer’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpBofAZD/Rinst3be80f928d1b4/00LOCK-EventPointer/00new/EventPointer/libs/EventPointer.so':
+  /tmp/RtmpBofAZD/Rinst3be80f928d1b4/00LOCK-EventPointer/00new/EventPointer/libs/EventPointer.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpBofAZD/Rinst3be80f928d1b4/EventPointer’
+      -----------------------------------
+ERROR: package installation failed

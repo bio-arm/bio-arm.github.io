@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data flowFP
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘flowFP/DESCRIPTION’ ... OK
+* preparing ‘flowFP’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘flowFP’ ...
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/Rtmpp0mymP/Rinst3c0f294d3e4a14/flowFP’
+      -----------------------------------
+ERROR: package installation failed

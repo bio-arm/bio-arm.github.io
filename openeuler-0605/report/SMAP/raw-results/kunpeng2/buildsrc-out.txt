@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SMAP
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SMAP/DESCRIPTION’ ... OK
+* preparing ‘SMAP’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SMAP’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c gradient.c -o gradient.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c overlap.c -o overlap.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c prob.c -o prob.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c viterbi.c -o viterbi.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o SMAP.so gradient.o init.o overlap.o prob.o viterbi.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpnMvh7y/Rinst40e0f68ec8b4b/00LOCK-SMAP/00new/SMAP/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘SMAP’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpnMvh7y/Rinst40e0f68ec8b4b/00LOCK-SMAP/00new/SMAP/libs/SMAP.so':
+  /tmp/RtmpnMvh7y/Rinst40e0f68ec8b4b/00LOCK-SMAP/00new/SMAP/libs/SMAP.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpnMvh7y/Rinst40e0f68ec8b4b/SMAP’
+      -----------------------------------
+ERROR: package installation failed

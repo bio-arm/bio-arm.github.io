@@ -1,0 +1,22 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL trena
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘trena’ ...
+** using staged installation
+** R
+Error in parse(...) : 
+  /home/biocbuild/bbs-3.18-bioc/meat/trena/R/EnsembleSolver.R:20:29: unexpected ')'
+19:                                       )
+20:                             )
+                                ^
+ERROR: unable to collate and parse R files for package ‘trena’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/trena’

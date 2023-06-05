@@ -1,0 +1,44 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data MSstatsLiP
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘MSstatsLiP/DESCRIPTION’ ... OK
+* preparing ‘MSstatsLiP’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘MSstatsLiP’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c model_adjustment.cpp -o model_adjustment.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o MSstatsLiP.so RcppExports.o model_adjustment.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpEA82gH/Rinst3f00f762120598/00LOCK-MSstatsLiP/00new/MSstatsLiP/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘MSstatsLiP’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpEA82gH/Rinst3f00f762120598/00LOCK-MSstatsLiP/00new/MSstatsLiP/libs/MSstatsLiP.so':
+  /tmp/RtmpEA82gH/Rinst3f00f762120598/00LOCK-MSstatsLiP/00new/MSstatsLiP/libs/MSstatsLiP.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpEA82gH/Rinst3f00f762120598/MSstatsLiP’
+      -----------------------------------
+ERROR: package installation failed

@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CNORdt
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CNORdt/DESCRIPTION’ ... OK
+* preparing ‘CNORdt’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘CNORdt’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c simulatorDT.c -o simulatorDT.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o CNORdt.so simulatorDT.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpYkSQBl/Rinst3ac85f1facc4c9/00LOCK-CNORdt/00new/CNORdt/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘CNORdt’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpYkSQBl/Rinst3ac85f1facc4c9/00LOCK-CNORdt/00new/CNORdt/libs/CNORdt.so':
+  /tmp/RtmpYkSQBl/Rinst3ac85f1facc4c9/00LOCK-CNORdt/00new/CNORdt/libs/CNORdt.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpYkSQBl/Rinst3ac85f1facc4c9/CNORdt’
+      -----------------------------------
+ERROR: package installation failed

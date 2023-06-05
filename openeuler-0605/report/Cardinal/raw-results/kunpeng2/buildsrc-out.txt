@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Cardinal
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Cardinal/DESCRIPTION’ ... OK
+* preparing ‘Cardinal’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘Cardinal’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c DIP.cpp -o DIP.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c imzML.cpp -o imzML.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.cpp -o init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c pugixml.cpp -o pugixml.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c spatial.cpp -o spatial.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c utils.cpp -o utils.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o Cardinal.so DIP.o imzML.o init.o pugixml.o spatial.o utils.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpRGrPjo/Rinst3a73633e9c94be/00LOCK-Cardinal/00new/Cardinal/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘Cardinal’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpRGrPjo/Rinst3a73633e9c94be/00LOCK-Cardinal/00new/Cardinal/libs/Cardinal.so':
+  /tmp/RtmpRGrPjo/Rinst3a73633e9c94be/00LOCK-Cardinal/00new/Cardinal/libs/Cardinal.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpRGrPjo/Rinst3a73633e9c94be/Cardinal’
+      -----------------------------------
+ERROR: package installation failed

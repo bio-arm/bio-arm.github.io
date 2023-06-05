@@ -1,0 +1,47 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data GOSim
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘GOSim/DESCRIPTION’ ... OK
+* preparing ‘GOSim’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘GOSim’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   `/home/biocbuild/R/R-4.3.0/bin/Rscript -e "require(Rcpp); Rcpp:::CxxFlags()"` -fPIC  -g -O2  -c OAWrapper.cpp -o OAWrapper.o
+Loading required package: Rcpp
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c hungarian2.c -o hungarian2.o
+Loading required package: Rcpp
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o GOSim.so OAWrapper.o hungarian2.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+Loading required package: Rcpp
+installing to /tmp/Rtmpm98sOB/Rinst3cd1a75d5a65d2/00LOCK-GOSim/00new/GOSim/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘GOSim’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpm98sOB/Rinst3cd1a75d5a65d2/00LOCK-GOSim/00new/GOSim/libs/GOSim.so':
+  /tmp/Rtmpm98sOB/Rinst3cd1a75d5a65d2/00LOCK-GOSim/00new/GOSim/libs/GOSim.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpm98sOB/Rinst3cd1a75d5a65d2/GOSim’
+      -----------------------------------
+ERROR: package installation failed

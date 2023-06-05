@@ -1,0 +1,10 @@
+Package: standR
+Version: 1.5.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:standR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings standR_1.5.1.tar.gz
+StartedAt: 2023-06-05 00:48:33 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 00:57:09 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 515.8 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: standR.Rcheck
+Warnings: NA

@@ -1,0 +1,10 @@
+Package: SC3
+Version: 1.29.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SC3
+StartedAt: 2023-06-04 11:08:49 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 11:09:43 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 54.1 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

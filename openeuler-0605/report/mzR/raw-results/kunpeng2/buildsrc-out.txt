@@ -1,0 +1,23 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data mzR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘mzR/DESCRIPTION’ ... OK
+* preparing ‘mzR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘mzR’ ...
+** using staged installation
+ERROR: 'configure' exists but is not executable -- see the 'R Installation and Administration Manual'
+* removing ‘/tmp/RtmpPMCjOg/Rinst3f16be43bbe445/mzR’
+      -----------------------------------
+ERROR: package installation failed

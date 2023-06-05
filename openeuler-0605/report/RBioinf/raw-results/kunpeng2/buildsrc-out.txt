@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data RBioinf
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘RBioinf/DESCRIPTION’ ... OK
+* preparing ‘RBioinf’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘RBioinf’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c Rinit.c -o Rinit.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c rand.c -o rand.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o RBioinf.so Rinit.o rand.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpxYhoOb/Rinst7a171c8a878d/00LOCK-RBioinf/00new/RBioinf/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘RBioinf’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpxYhoOb/Rinst7a171c8a878d/00LOCK-RBioinf/00new/RBioinf/libs/RBioinf.so':
+  /tmp/RtmpxYhoOb/Rinst7a171c8a878d/00LOCK-RBioinf/00new/RBioinf/libs/RBioinf.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpxYhoOb/Rinst7a171c8a878d/RBioinf’
+      -----------------------------------
+ERROR: package installation failed

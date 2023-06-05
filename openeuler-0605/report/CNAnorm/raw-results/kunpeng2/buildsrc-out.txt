@@ -1,0 +1,48 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data CNAnorm
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘CNAnorm/DESCRIPTION’ ... OK
+* preparing ‘CNAnorm’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘CNAnorm’ ...
+** using staged installation
+** libs
+using Fortran compiler: ‘GNU Fortran (GCC) 10.3.1’
+gfortran  -fPIC  -g -O2  -c daxpy.f -o daxpy.o
+gfortran  -fPIC  -g -O2  -c ddot.f -o ddot.o
+gfortran  -fPIC  -g -O2  -c dgbfa.f -o dgbfa.o
+gfortran  -fPIC  -g -O2  -c dgbsl.f -o dgbsl.o
+gfortran  -fPIC  -g -O2  -c dscal.f -o dscal.o
+gfortran  -fPIC  -g -O2  -c dsmooth.f -o dsmooth.o
+gfortran  -fPIC  -g -O2  -c idamax.f -o idamax.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o CNAnorm.so daxpy.o ddot.o dgbfa.o dgbsl.o dscal.o dsmooth.o idamax.o -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpvwveRY/Rinst3ac5fa559a253e/00LOCK-CNAnorm/00new/CNAnorm/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘CNAnorm’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpvwveRY/Rinst3ac5fa559a253e/00LOCK-CNAnorm/00new/CNAnorm/libs/CNAnorm.so':
+  /tmp/RtmpvwveRY/Rinst3ac5fa559a253e/00LOCK-CNAnorm/00new/CNAnorm/libs/CNAnorm.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpvwveRY/Rinst3ac5fa559a253e/CNAnorm’
+      -----------------------------------
+ERROR: package installation failed

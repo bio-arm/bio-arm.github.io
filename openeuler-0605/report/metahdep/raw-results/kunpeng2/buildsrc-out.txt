@@ -1,0 +1,54 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data metahdep
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘metahdep/DESCRIPTION’ ... OK
+* preparing ‘metahdep’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘metahdep’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c metahdep.c -o metahdep.o
+In file included from metahdep.c:3:
+metahdep.c: In function ‘get_row_indices2’:
+/home/biocbuild/R/R-4.3.0/include/Rinternals.h:197:17: warning: passing argument 5 of ‘metan_binary_search_unique’ makes integer from pointer without a cast [-Wint-conversion]
+  197 | #define CHAR(x) R_CHAR(x)
+      |                 ^~~~~~~~~
+      |                 |
+      |                 const char *
+metahdep.c:471:79: note: in expansion of macro ‘CHAR’
+  471 |     index = metan_binary_search_unique(name_list, sort_index, R_old_names, j, CHAR(STRING_ELT(R_old_chipsets, j)), i);
+      |                                                                               ^~~~
+metahdep.c:372:103: note: expected ‘char’ but argument is of type ‘const char *’
+  372 | SEXP metan_binary_search_unique(SEXP name_list, SEXP sort_index, SEXP gene_name, int gene_index, char chipset_name, int study_num)
+      |                                                                                                  ~~~~~^~~~~~~~~~~~
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o metahdep.so metahdep.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpxgeMSU/Rinst3e6f1a1b3d2df1/00LOCK-metahdep/00new/metahdep/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘metahdep’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpxgeMSU/Rinst3e6f1a1b3d2df1/00LOCK-metahdep/00new/metahdep/libs/metahdep.so':
+  /tmp/RtmpxgeMSU/Rinst3e6f1a1b3d2df1/00LOCK-metahdep/00new/metahdep/libs/metahdep.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpxgeMSU/Rinst3e6f1a1b3d2df1/metahdep’
+      -----------------------------------
+ERROR: package installation failed

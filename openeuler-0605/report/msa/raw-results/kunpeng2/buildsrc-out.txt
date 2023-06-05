@@ -1,0 +1,50 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data msa
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘msa/DESCRIPTION’ ... OK
+* preparing ‘msa’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘msa’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -I"./gc-8.2.2/include" -I"./Muscle/" -I"./ClustalW/src" -I"./ClustalOmega/src" -fPIC  -g -O2  -c R_init_msa.cpp -o R_init_msa.o
+In file included from ./Muscle/RMuscle.h:4,
+                 from R_init_msa.cpp:3:
+./Muscle/muscle.h:54: warning: "assert" redefined
+   54 | #define assert(exp)     ((void)0)
+      | 
+In file included from /usr/include/c++/10.3.1/cassert:44,
+                 from /home/biocbuild/R/R-4.3.0/site-library/Rcpp/include/Rcpp/utils/tinyformat/tinyformat.h:137,
+                 from /home/biocbuild/R/R-4.3.0/site-library/Rcpp/include/Rcpp/utils/tinyformat.h:40,
+                 from /home/biocbuild/R/R-4.3.0/site-library/Rcpp/include/RcppCommon.h:73,
+                 from /home/biocbuild/R/R-4.3.0/site-library/Rcpp/include/Rcpp.h:27,
+                 from ./ClustalOmega/src/RClustalOmega.h:4,
+                 from R_init_msa.cpp:1:
+/usr/include/assert.h:50: note: this is the location of the previous definition
+   50 | # define assert(expr)  (__ASSERT_VOID_CAST (0))
+      | 
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -I"./gc-8.2.2/include" -I"./Muscle/" -I"./ClustalW/src" -I"./ClustalOmega/src" -fPIC  -g -O2  -c SplitCharVector2List.cpp -o SplitCharVector2List.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include   -I"./gc-8.2.2/include" -I"./Muscle/" -I"./ClustalW/src" -I"./ClustalOmega/src" -fPIC  -g -O2  -c SplitCharVector2Matrix.cpp -o SplitCharVector2Matrix.o
+make --file=msaMakefile --directory=gc-8.2.2
+make[1]: Entering directory '/tmp/RtmpHUKonX/Rbuild3eea9a706036ff/msa/src/gc-8.2.2'
+./configure --enable-cplusplus --enable-threads=pthreads --enable-shared=no --with-pic
+make[1]: ./configure: Permission denied
+make[1]: *** [msaMakefile:4: build_gc] Error 127
+make[1]: Leaving directory '/tmp/RtmpHUKonX/Rbuild3eea9a706036ff/msa/src/gc-8.2.2'
+make: *** [Makevars:12: build_gc] Error 2
+ERROR: compilation failed for package ‘msa’
+* removing ‘/tmp/RtmpHUKonX/Rinst3eea9a552556a2/msa’
+      -----------------------------------
+ERROR: package installation failed

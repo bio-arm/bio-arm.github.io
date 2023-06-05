@@ -1,0 +1,10 @@
+Package: OmnipathR
+Version: 3.9.3
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data OmnipathR
+StartedAt: 2023-06-04 10:18:06 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 10:58:06 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 2400.2 seconds
+RetCode: None
+Status: TIMEOUT
+PackageFile: None
+PackageFileSize: NA

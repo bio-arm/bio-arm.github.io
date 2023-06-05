@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data vsclust
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘vsclust/DESCRIPTION’ ... OK
+* preparing ‘vsclust’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘vsclust’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG  -I'/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2  -c vsclust_algo.cpp -o vsclust_algo.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o vsclust.so RcppExports.o vsclust_algo.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmplMn9O7/Rinst570c069f624c6/00LOCK-vsclust/00new/vsclust/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘vsclust’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmplMn9O7/Rinst570c069f624c6/00LOCK-vsclust/00new/vsclust/libs/vsclust.so':
+  /tmp/RtmplMn9O7/Rinst570c069f624c6/00LOCK-vsclust/00new/vsclust/libs/vsclust.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmplMn9O7/Rinst570c069f624c6/vsclust’
+      -----------------------------------
+ERROR: package installation failed

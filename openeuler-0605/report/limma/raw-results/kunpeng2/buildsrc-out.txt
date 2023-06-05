@@ -1,0 +1,45 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data limma
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘limma/DESCRIPTION’ ... OK
+* preparing ‘limma’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘limma’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.c -o init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c normexp.c -o normexp.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c weighted_lowess.c -o weighted_lowess.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o limma.so init.o normexp.o weighted_lowess.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpPwDN0K/Rinst3e18a449b340da/00LOCK-limma/00new/limma/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘limma’:
+ .onLoad failed in loadNamespace() for 'limma', details:
+  call: dyn.load(file, DLLpath = DLLpath, ...)
+  error: unable to load shared object '/tmp/RtmpPwDN0K/Rinst3e18a449b340da/00LOCK-limma/00new/limma/libs/limma.so':
+  /tmp/RtmpPwDN0K/Rinst3e18a449b340da/00LOCK-limma/00new/limma/libs/limma.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpPwDN0K/Rinst3e18a449b340da/limma’
+      -----------------------------------
+ERROR: package installation failed

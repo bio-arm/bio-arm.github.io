@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SICtools
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SICtools/DESCRIPTION’ ... OK
+* preparing ‘SICtools’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘SICtools.Rmd’ using rmarkdown
+sh: line 1: /tmp/RtmpdFDQVO/Rinst3ebb73d4cc084/SICtools/etc/samtools2SIC: Permission denied
+
+Quitting from lines 89-92 [unnamed-chunk-4] (SICtools.Rmd)
+Error: processing vignette 'SICtools.Rmd' failed with diagnostics:
+argument 1 is not a vector
+--- failed re-building ‘SICtools.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘SICtools.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,8 @@
+Package: enrichTF
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL enrichTF
+StartedAt: 2023-06-04 06:14:28 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 06:15:37 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 69.4 seconds
+RetCode: 0
+Status: OK

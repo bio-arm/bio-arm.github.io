@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data iCARE
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘iCARE/DESCRIPTION’ ... OK
+* preparing ‘iCARE’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘iCARE’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c source.c -o source.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o iCARE.so source.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmpty9YQ8/Rinst3d3e296b384db7/00LOCK-iCARE/00new/iCARE/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘iCARE’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmpty9YQ8/Rinst3d3e296b384db7/00LOCK-iCARE/00new/iCARE/libs/iCARE.so':
+  /tmp/Rtmpty9YQ8/Rinst3d3e296b384db7/00LOCK-iCARE/00new/iCARE/libs/iCARE.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmpty9YQ8/Rinst3d3e296b384db7/iCARE’
+      -----------------------------------
+ERROR: package installation failed

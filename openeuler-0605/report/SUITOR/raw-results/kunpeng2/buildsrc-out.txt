@@ -1,0 +1,43 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data SUITOR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘SUITOR/DESCRIPTION’ ... OK
+* preparing ‘SUITOR’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘SUITOR’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c SUITOR_init.c -o SUITOR_init.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c source.c -o source.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o SUITOR.so SUITOR_init.o source.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp2asiyk/Rinst4a6b03bcb91d0/00LOCK-SUITOR/00new/SUITOR/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘SUITOR’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp2asiyk/Rinst4a6b03bcb91d0/00LOCK-SUITOR/00new/SUITOR/libs/SUITOR.so':
+  /tmp/Rtmp2asiyk/Rinst4a6b03bcb91d0/00LOCK-SUITOR/00new/SUITOR/libs/SUITOR.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp2asiyk/Rinst4a6b03bcb91d0/SUITOR’
+      -----------------------------------
+ERROR: package installation failed

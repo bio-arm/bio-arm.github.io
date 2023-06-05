@@ -1,0 +1,41 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data DEGseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘DEGseq/DESCRIPTION’ ... OK
+* preparing ‘DEGseq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘DEGseq’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c getGeneExp.cpp -o getGeneExp.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o DEGseq.so getGeneExp.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpYepWHS/Rinst3b47286718a042/00LOCK-DEGseq/00new/DEGseq/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘DEGseq’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpYepWHS/Rinst3b47286718a042/00LOCK-DEGseq/00new/DEGseq/libs/DEGseq.so':
+  /tmp/RtmpYepWHS/Rinst3b47286718a042/00LOCK-DEGseq/00new/DEGseq/libs/DEGseq.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpYepWHS/Rinst3b47286718a042/DEGseq’
+      -----------------------------------
+ERROR: package installation failed

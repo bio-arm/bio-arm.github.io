@@ -1,0 +1,10 @@
+Package: DMCFB
+Version: 1.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DMCFB.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DMCFB_1.15.0.tar.gz
+StartedAt: 2023-06-04 15:57:50 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 16:04:52 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 422.6 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: DMCFB.Rcheck
+Warnings: NA

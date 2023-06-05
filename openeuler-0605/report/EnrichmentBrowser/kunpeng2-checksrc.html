@@ -1,0 +1,386 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for EnrichmentBrowser on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><B>[<A href="..#E">E</A>]</B></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-05 06:02:59 -0000 (Mon, 05 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for EnrichmentBrowser on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the EnrichmentBrowser package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/EnrichmentBrowser.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>623</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">EnrichmentBrowser</A>&nbsp;2.31.1</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/EnrichmentBrowser">landing page</A>)</SPAN><BR>Ludwig Geistlinger<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-03&nbsp;10:56:11&nbsp;-0000&nbsp;(Sat,&nbsp;03&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/EnrichmentBrowser</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">4f332d3</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-05-13&nbsp;18:27:30&nbsp;-0000&nbsp;(Sat,&nbsp;13&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: EnrichmentBrowser</TD></TR>
+<TR><TD><B>Version</B>: 2.31.1</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EnrichmentBrowser.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EnrichmentBrowser_2.31.1.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-04 16:14:50 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-04 16:21:12 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 381.5 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: EnrichmentBrowser.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EnrichmentBrowser.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EnrichmentBrowser_2.31.1.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/EnrichmentBrowser.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘EnrichmentBrowser/DESCRIPTION’ ... OK
+* this is package ‘EnrichmentBrowser’ version ‘2.31.1’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘EnrichmentBrowser’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... NOTE
+Unexported object imported by a &#x27;:::&#x27; call: &#x27;pathview:::parseKGML2Graph2&#x27;
+  See the note in ?`:::` about the use of this operator.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+.getGOFromBiomart: no visible binding for global variable
+  ‘go_linkage_type’
+Undefined global functions or variables:
+  go_linkage_type
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘EnrichmentBrowser-Ex.R’ failed
+The error most likely occurred in:
+
+&gt; base::assign(&quot;.ptime&quot;, proc.time(), pos = &quot;CheckExEnv&quot;)
+&gt; ### Name: ebrowser
+&gt; ### Title: Seamless navigation through enrichment analysis results
+&gt; ### Aliases: ebrowser
+&gt; 
+&gt; ### ** Examples
+&gt; 
+&gt; 
+&gt;     # expression data from file
+&gt;     exprs.file &lt;- system.file(&quot;extdata/exprs.tab&quot;, package=&quot;EnrichmentBrowser&quot;)
+&gt;     cdat.file &lt;- system.file(&quot;extdata/colData.tab&quot;, package=&quot;EnrichmentBrowser&quot;)
+&gt;     rdat.file &lt;- system.file(&quot;extdata/rowData.tab&quot;, package=&quot;EnrichmentBrowser&quot;)
+&gt;     
+&gt;     # getting all human KEGG gene sets
+&gt;     # hsa.gs &lt;- getGenesets(org=&quot;hsa&quot;, db=&quot;kegg&quot;)
+&gt;     gs.file &lt;- system.file(&quot;extdata/hsa_kegg_gs.gmt&quot;, package=&quot;EnrichmentBrowser&quot;)
+&gt;     hsa.gs &lt;- getGenesets(gs.file)
+&gt; 
+&gt;     # output destination 
+&gt;     out.dir &lt;- configEBrowser(&quot;OUTDIR.DEFAULT&quot;) 
+&gt; 
+&gt;     # set-based enrichment analysis
+&gt;     ebrowser( meth=&quot;ora&quot;, perm=0,
++             exprs=exprs.file, cdat=cdat.file, rdat=rdat.file, 
++             gs=hsa.gs, org=&quot;hsa&quot;, nr.show=3,
++             out.dir=out.dir, report.name=&quot;oraReport&quot;)
+Read expression data ...
+Normalize ...
+Excluding 211 genes not satisfying min.cpm threshold
+Corresponding software package not found: EDASeq
+Make sure that you have it installed.
+Bioconductor version 3.18 (BiocManager 1.30.20), R 4.3.0 (2023-04-21)
+Installing package(s) &#x27;EDASeq&#x27;
+also installing the dependencies &#x27;jpeg&#x27;, &#x27;latticeExtra&#x27;, &#x27;ShortRead&#x27;, &#x27;aroma.light&#x27;
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/jpeg_0.1-10.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 18667 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/latticeExtra_0.6-30.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1292936 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.59.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 5223367 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/aroma.light_3.31.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 388121 bytes (379 KB)
+==================================================
+downloaded 379 KB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/EDASeq_2.35.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1036783 bytes (1012 KB)
+==================================================
+downloaded 1012 KB
+
+* installing *source* package ‘jpeg’ ...
+** package ‘jpeg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c read.c -o read.o
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c reg.c -o reg.o
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c write.c -o write.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o jpeg.so read.o reg.o write.o -ljpeg -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘jpeg’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object &#x27;/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so&#x27;:
+  /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/jpeg’
+installation of package &#x27;jpeg&#x27; had non-zero exit status
+* installing *source* package ‘aroma.light’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (aroma.light)
+ERROR: dependency ‘jpeg’ is not available for package ‘latticeExtra’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/latticeExtra’
+installation of package &#x27;latticeExtra&#x27; had non-zero exit status
+ERROR: dependency ‘latticeExtra’ is not available for package ‘ShortRead’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/ShortRead’
+installation of package &#x27;ShortRead&#x27; had non-zero exit status
+ERROR: dependency ‘ShortRead’ is not available for package ‘EDASeq’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/EDASeq’
+installation of package &#x27;EDASeq&#x27; had non-zero exit status
+
+The downloaded source packages are in
+	&#x27;/tmp/Rtmp9RbtQQ/downloaded_packages&#x27;
+Error in betweenLaneNormalization(assay(se), which = norm.method) : 
+  could not find function &quot;betweenLaneNormalization&quot;
+Calls: ebrowser -&gt; normalize
+Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘EnrichmentBrowser.Rnw’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘EnrichmentBrowser.Rnw’ using knitr
+trying URL &#x27;https://cloud.r-project.org/src/contrib/jpeg_0.1-10.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 18667 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+trying URL &#x27;https://cloud.r-project.org/src/contrib/latticeExtra_0.6-30.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1292936 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.59.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 5223367 bytes (5.0 MB)
+==================================================
+downloaded 5.0 MB
+
+trying URL &#x27;https://bioconductor.org/packages/3.18/bioc/src/contrib/EDASeq_2.35.0.tar.gz&#x27;
+Content type &#x27;application/x-gzip&#x27; length 1036783 bytes (1012 KB)
+==================================================
+downloaded 1012 KB
+
+* installing *source* package ‘jpeg’ ...
+** package ‘jpeg’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c read.c -o read.o
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c reg.c -o reg.o
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c write.c -o write.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o jpeg.so read.o reg.o write.o -ljpeg -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘jpeg’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object &#x27;/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so&#x27;:
+  /tmp/RtmpJSCt8H/RLIBS_d1b916e079684/00LOCK-jpeg/00new/jpeg/libs/jpeg.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/jpeg’
+ERROR: dependency ‘jpeg’ is not available for package ‘latticeExtra’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/latticeExtra’
+ERROR: dependency ‘latticeExtra’ is not available for package ‘ShortRead’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/ShortRead’
+ERROR: dependency ‘ShortRead’ is not available for package ‘EDASeq’
+* removing ‘/tmp/RtmpJSCt8H/RLIBS_d1b916e079684/EDASeq’
+
+The downloaded source packages are in
+	&#x27;/tmp/Rtmp6MVzOS/downloaded_packages&#x27;
+
+Quitting from lines 267-268 [norm-rseq] (EnrichmentBrowser.Rnw)
+Error: processing vignette &#x27;EnrichmentBrowser.Rnw&#x27; failed with diagnostics:
+could not find function &quot;betweenLaneNormalization&quot;
+--- failed re-building ‘EnrichmentBrowser.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘EnrichmentBrowser.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 2 ERRORs, 2 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/EnrichmentBrowser.Rcheck/00check.log’
+for details.
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">EnrichmentBrowser.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL EnrichmentBrowser
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘EnrichmentBrowser’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (EnrichmentBrowser)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">EnrichmentBrowser.Rcheck/EnrichmentBrowser-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>combResults</TD><TD style="text-align: right;">1.399</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">1.402</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>compileGRN</TD><TD style="text-align: right;">5.302</TD><TD style="text-align: right;">0.067</TD><TD style="text-align: right;">5.383</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>configEBrowser</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>deAna</TD><TD style="text-align: right;">5.776</TD><TD style="text-align: right;">0.040</TD><TD style="text-align: right;">5.828</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>downloadPathways</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>eaBrowse</TD><TD style="text-align: right;">19.271</TD><TD style="text-align: right;"> 0.746</TD><TD style="text-align: right;">20.141</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

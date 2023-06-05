@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BUSseq
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BUSseq/DESCRIPTION’ ... OK
+* preparing ‘BUSseq’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘BUSseq’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+/home/biocbuild/R/R-4.3.0/share/make/shlib.mk:10: warning: overriding recipe for target 'BUSseq.so'
+Makevars:9: warning: ignoring old recipe for target 'BUSseq.so'
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c BUSseq.cpp -o BUSseq.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include   -fopenmp -fPIC  -g -O2  -c rngstream.cpp -o rngstream.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o BUSseq.so BUSseq.o rngstream.o -fopenmp -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpHqrv6K/Rinst3a69d527e39140/00LOCK-BUSseq/00new/BUSseq/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘BUSseq’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpHqrv6K/Rinst3a69d527e39140/00LOCK-BUSseq/00new/BUSseq/libs/BUSseq.so':
+  /tmp/RtmpHqrv6K/Rinst3a69d527e39140/00LOCK-BUSseq/00new/BUSseq/libs/BUSseq.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpHqrv6K/Rinst3a69d527e39140/BUSseq’
+      -----------------------------------
+ERROR: package installation failed

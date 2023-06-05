@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data AneuFinder
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘AneuFinder/DESCRIPTION’ ... OK
+* preparing ‘AneuFinder’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘AneuFinder’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c R_interface.cpp -o R_interface.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c densities.cpp -o densities.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c init.cpp -o init.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c loghmm.cpp -o loghmm.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c scalehmm.cpp -o scalehmm.o
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c utility.cpp -o utility.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o AneuFinder.so R_interface.o densities.o init.o loghmm.o scalehmm.o utility.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp7kQMcB/Rinst2cb335354c1314/00LOCK-AneuFinder/00new/AneuFinder/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘AneuFinder’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp7kQMcB/Rinst2cb335354c1314/00LOCK-AneuFinder/00new/AneuFinder/libs/AneuFinder.so':
+  /tmp/Rtmp7kQMcB/Rinst2cb335354c1314/00LOCK-AneuFinder/00new/AneuFinder/libs/AneuFinder.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp7kQMcB/Rinst2cb335354c1314/AneuFinder’
+      -----------------------------------
+ERROR: package installation failed

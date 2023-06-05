@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BUScorrect
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘BUScorrect/DESCRIPTION’ ... OK
+* preparing ‘BUScorrect’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to process help pages
+      -----------------------------------
+* installing *source* package ‘BUScorrect’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c BUS_Cfunctions.c -o BUS_Cfunctions.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o BUScorrect.so BUS_Cfunctions.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/RtmpDGL0B7/Rinst3a67ee52583bf6/00LOCK-BUScorrect/00new/BUScorrect/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘BUScorrect’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/RtmpDGL0B7/Rinst3a67ee52583bf6/00LOCK-BUScorrect/00new/BUScorrect/libs/BUScorrect.so':
+  /tmp/RtmpDGL0B7/Rinst3a67ee52583bf6/00LOCK-BUScorrect/00new/BUScorrect/libs/BUScorrect.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpDGL0B7/Rinst3a67ee52583bf6/BUScorrect’
+      -----------------------------------
+ERROR: package installation failed

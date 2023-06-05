@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for autonomics on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><B>[<A href="..#A">A</A>]</B></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-05 06:02:55 -0000 (Mon, 05 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for autonomics on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the autonomics package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/autonomics.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard warnings">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>109</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">autonomics</A>&nbsp;1.9.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/autonomics">landing page</A>)</SPAN><BR>Aditya Bhagwat<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-03&nbsp;10:56:11&nbsp;-0000&nbsp;(Sat,&nbsp;03&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/autonomics</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">b7118ef</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;15:27:21&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph WARNINGS">&nbsp;&nbsp;WARNINGS&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: autonomics</TD></TR>
+<TR><TD><B>Version</B>: 1.9.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:autonomics.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings autonomics_1.9.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-04 13:04:58 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-04 13:22:19 -0000 (Sun, 04 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 1040.4 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph WARNINGS">&nbsp;&nbsp;WARNINGS&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: autonomics.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 1</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:autonomics.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings autonomics_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘autonomics/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘autonomics’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘autonomics’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object &#x27;normimpute&#x27;
+  ‘ref’ ‘pos’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                          user system elapsed
+read_rnaseq_counts      24.924  0.152  24.624
+is_sig                  17.500  0.092  17.381
+filter_medoid           17.031  0.100  17.104
+pca                     16.735  0.031  16.790
+explore_imputations     16.589  0.138  16.497
+plot_detections         12.513  0.128  12.314
+fit_limma               12.502  0.032  12.432
+read_somascan           11.750  0.068  11.792
+biplot_covariates       10.973  0.203  11.197
+summarize_fit           10.238  0.100   9.905
+read_metabolon           9.696  0.035   9.710
+read_rectangles          8.578  0.192   8.787
+plot_venn                7.269  0.040   7.232
+plot_features            7.269  0.028   7.309
+plot_boxplots            6.677  0.048   6.733
+analyze                  6.551  0.169   6.692
+subtract_baseline        6.651  0.020   6.656
+explore_transformations  6.529  0.032   6.400
+read_proteingroups       6.287  0.020   6.059
+plot_violins             6.297  0.008   6.314
+log2transform            5.970  0.040   5.840
+sumexp_to_long_dt        5.742  0.064   5.444
+biplot_corrections       5.194  0.148   5.351
+biplot                   5.142  0.188   5.339
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘using_autonomics.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 WARNING, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/autonomics.Rcheck/00check.log’
+for details.
+
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">autonomics.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL autonomics
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘autonomics’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+Note: wrong number of arguments to &#x27;/&#x27; 
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (autonomics)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">autonomics.Rcheck/tests/testthat.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(testthat)
+&gt; library(autonomics)
+
+Attaching package: &#x27;autonomics&#x27;
+
+The following object is masked from &#x27;package:stats&#x27;:
+
+    biplot
+
+&gt; 
+&gt; test_check(&quot;autonomics&quot;)
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 102 ]
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+154.439   3.093 154.733 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">autonomics.Rcheck/autonomics-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>AUTONOMICS_DATASETS</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MAXQUANT_PATTERNS_PEPCOUNTS</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MAXQUANT_PATTERNS_QUANTITY</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>TESTS</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>add_smiles</TD><TD style="text-align: right;">2.401</TD><TD style="text-align: right;">0.092</TD><TD style="text-align: right;">4.196</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>analysis</TD><TD style="text-align: right;">2.250</TD><TD style="text-align: right;">0.099</TD><TD style="text-align: right;">2.252</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>analyze</TD><TD style="text-align: right;">6.551</TD><TD style="text-align: right;">0.169</TD><TD style="text-align: right;">6.692</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>assert_is_valid_sumexp</TD><TD style="text-align: right;">1.864</TD><TD style="text-align: right;">0.063</TD><TD style="text-align: right;">1.939</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>biplot</TD><TD style="text-align: right;">5.142</TD><TD style="text-align: right;">0.188</TD><TD style="text-align: right;">5.339</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>biplot_corrections</TD><TD style="text-align: right;">5.194</TD><TD style="text-align: right;">0.148</TD><TD style="text-align: right;">5.351</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>biplot_covariates</TD><TD style="text-align: right;">10.973</TD><TD style="text-align: right;"> 0.203</TD><TD style="text-align: right;">11.197</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>center</TD><TD style="text-align: right;">2.905</TD><TD style="text-align: right;">0.064</TD><TD style="text-align: right;">2.857</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>contrast_subgroup_cols</TD><TD style="text-align: right;">0.941</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.967</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>contrastdefs</TD><TD style="text-align: right;">2.650</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">2.501</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>counts</TD><TD style="text-align: right;">2.237</TD><TD style="text-align: right;">0.044</TD><TD style="text-align: right;">2.309</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>counts2cpm</TD><TD style="text-align: right;">1.895</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">1.879</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>counts2tpm</TD><TD style="text-align: right;">0.981</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.941</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>cpm</TD><TD style="text-align: right;">2.858</TD><TD style="text-align: right;">0.044</TD><TD style="text-align: right;">2.849</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>create_design</TD><TD style="text-align: right;">2.998</TD><TD style="text-align: right;">0.044</TD><TD style="text-align: right;">2.992</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>create_sfile</TD><TD style="text-align: right;">1.711</TD><TD style="text-align: right;">0.040</TD><TD style="text-align: right;">1.568</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>default_formula</TD><TD style="text-align: right;">0.960</TD><TD style="text-align: right;">0.048</TD><TD style="text-align: right;">1.010</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>default_sfile</TD><TD style="text-align: right;">0.174</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.179</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>download_data</TD><TD style="text-align: right;">1.565</TD><TD style="text-align: right;">0.112</TD><TD style="text-align: right;">1.810</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>download_gtf</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>dt2mat</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>explore_imputations</TD><TD style="text-align: right;">16.589</TD><TD style="text-align: right;"> 0.138</TD><TD style="text-align: right;">16.497</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>explore_transformations</TD><TD style="text-align: right;">6.529</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">6.400</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>extract_features</TD><TD style="text-align: right;">1.363</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">1.256</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>extract_rectangle</TD><TD style="text-align: right;">0.964</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.989</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>fdata</TD><TD style="text-align: right;">2.284</TD><TD style="text-align: right;">0.064</TD><TD style="text-align: right;">2.212</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>filter_exprs_replicated_in_some_subgroup</TD><TD style="text-align: right;">2.632</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">2.641</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>filter_features</TD><TD style="text-align: right;">1.160</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">1.183</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>filter_medoid</TD><TD style="text-align: right;">17.031</TD><TD style="text-align: right;"> 0.100</TD><TD style="text-align: right;">17.104</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>filter_replicated</TD><TD style="text-align: right;">1.792</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">1.637</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>filter_samples</TD><TD style="text-align: right;">1.218</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">1.237</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>fit_limma</TD><TD style="text-align: right;">12.502</TD><TD style="text-align: right;"> 0.032</TD><TD style="text-align: right;">12.432</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>flevels</TD><TD style="text-align: right;">1.352</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.218</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>fnames</TD><TD style="text-align: right;">1.323</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">1.193</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>formula2str</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>fvalues</TD><TD style="text-align: right;">1.339</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.213</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>fvars</TD><TD style="text-align: right;">1.364</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">1.245</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>guess_maxquant_quantity</TD><TD style="text-align: right;">2.612</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">2.372</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>guess_sep</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>halfnormimpute</TD><TD style="text-align: right;">1.989</TD><TD style="text-align: right;">0.088</TD><TD style="text-align: right;">2.080</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>impute_systematic_nondetects</TD><TD style="text-align: right;">3.625</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">3.473</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>invert</TD><TD style="text-align: right;">2.075</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">1.913</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>is_imputed</TD><TD style="text-align: right;">1.338</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.213</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>is_sig</TD><TD style="text-align: right;">17.500</TD><TD style="text-align: right;"> 0.092</TD><TD style="text-align: right;">17.381</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>limma</TD><TD style="text-align: right;">2.635</TD><TD style="text-align: right;">0.048</TD><TD style="text-align: right;">2.506</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>log2counts</TD><TD style="text-align: right;">2.125</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">2.096</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>log2countsratios</TD><TD style="text-align: right;">2.066</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">2.015</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>log2cpm</TD><TD style="text-align: right;">2.918</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">2.877</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>log2cpmratios</TD><TD style="text-align: right;">2.027</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.977</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>log2tpm</TD><TD style="text-align: right;">2.032</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">1.994</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>log2tpmratios</TD><TD style="text-align: right;">2.001</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.950</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>log2transform</TD><TD style="text-align: right;">5.97</TD><TD style="text-align: right;">0.04</TD><TD style="text-align: right;">5.84</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>make_volcano_dt</TD><TD style="text-align: right;">2.672</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">2.450</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>matrix2sumexp</TD><TD style="text-align: right;">1.888</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.904</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>merge_sdata</TD><TD style="text-align: right;">0.939</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.957</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>merge_sfile</TD><TD style="text-align: right;">2.248</TD><TD style="text-align: right;">0.073</TD><TD style="text-align: right;">2.015</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>message_df</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>occupancies</TD><TD style="text-align: right;">1.821</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">1.661</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>pca</TD><TD style="text-align: right;">16.735</TD><TD style="text-align: right;"> 0.031</TD><TD style="text-align: right;">16.790</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_boxplots</TD><TD style="text-align: right;">6.677</TD><TD style="text-align: right;">0.048</TD><TD style="text-align: right;">6.733</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_contrastogram</TD><TD style="text-align: right;">1.664</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.668</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_data</TD><TD style="text-align: right;">2.162</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">2.182</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_densities</TD><TD style="text-align: right;">3.271</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">3.332</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_detections</TD><TD style="text-align: right;">12.513</TD><TD style="text-align: right;"> 0.128</TD><TD style="text-align: right;">12.314</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_features</TD><TD style="text-align: right;">7.269</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">7.309</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_venn</TD><TD style="text-align: right;">7.269</TD><TD style="text-align: right;">0.040</TD><TD style="text-align: right;">7.232</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_violins</TD><TD style="text-align: right;">6.297</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">6.314</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_volcano</TD><TD style="text-align: right;">3.366</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">3.164</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>preprocess_rnaseq_counts</TD><TD style="text-align: right;">3.128</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">3.096</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>proteingroups</TD><TD style="text-align: right;">1.887</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.713</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>read_affymetrix</TD><TD style="text-align: right;">1.123</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">1.143</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>read_metabolon</TD><TD style="text-align: right;">9.696</TD><TD style="text-align: right;">0.035</TD><TD style="text-align: right;">9.710</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>read_proteingroups</TD><TD style="text-align: right;">6.287</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">6.059</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>read_rectangles</TD><TD style="text-align: right;">8.578</TD><TD style="text-align: right;">0.192</TD><TD style="text-align: right;">8.787</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>read_rnaseq_counts</TD><TD style="text-align: right;">24.924</TD><TD style="text-align: right;"> 0.152</TD><TD style="text-align: right;">24.624</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>read_somascan</TD><TD style="text-align: right;">11.750</TD><TD style="text-align: right;"> 0.068</TD><TD style="text-align: right;">11.792</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>rm_singleton_samples</TD><TD style="text-align: right;">1.058</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.064</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>scaledlibsizes</TD><TD style="text-align: right;">1.838</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.788</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>sdata</TD><TD style="text-align: right;">1.423</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.288</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>slevels</TD><TD style="text-align: right;">1.329</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">1.197</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>snames</TD><TD style="text-align: right;">1.430</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.300</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>split_by_svar</TD><TD style="text-align: right;">1.322</TD><TD style="text-align: right;">0.011</TD><TD style="text-align: right;">1.158</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>split_extract</TD><TD style="text-align: right;">0.902</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.929</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>standardize_maxquant_snames</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>subgroup_matrix</TD><TD style="text-align: right;">0.925</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.943</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>subtract_baseline</TD><TD style="text-align: right;">6.651</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">6.656</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>sumexp2mae</TD><TD style="text-align: right;">2.346</TD><TD style="text-align: right;">0.056</TD><TD style="text-align: right;">2.407</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>sumexp_to_long_dt</TD><TD style="text-align: right;">5.742</TD><TD style="text-align: right;">0.064</TD><TD style="text-align: right;">5.444</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>summarize_fit</TD><TD style="text-align: right;">10.238</TD><TD style="text-align: right;"> 0.100</TD><TD style="text-align: right;"> 9.905</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>svalues</TD><TD style="text-align: right;">2.333</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">2.221</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>svars</TD><TD style="text-align: right;">1.321</TD><TD style="text-align: right;">0.027</TD><TD style="text-align: right;">1.209</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>tpm</TD><TD style="text-align: right;">1.998</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.945</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>values</TD><TD style="text-align: right;">1.357</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.230</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>venn_detects</TD><TD style="text-align: right;">1.375</TD><TD style="text-align: right;">0.025</TD><TD style="text-align: right;">1.234</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>weights</TD><TD style="text-align: right;">2.431</TD><TD style="text-align: right;">0.055</TD><TD style="text-align: right;">2.103</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>zero_to_na</TD><TD style="text-align: right;">0.019</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.019</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

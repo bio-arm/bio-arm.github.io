@@ -1,0 +1,10 @@
+Package: RNAsense
+Version: 1.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:RNAsense.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings RNAsense_1.15.0.tar.gz
+StartedAt: 2023-06-04 22:53:38 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 23:17:20 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 1422.0 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: RNAsense.Rcheck
+Warnings: 1

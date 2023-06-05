@@ -1,0 +1,10 @@
+Package: EpiTxDb
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EpiTxDb.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EpiTxDb_1.13.0.tar.gz
+StartedAt: 2023-06-04 16:21:37 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 17:01:37 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 2400.4 seconds
+RetCode: None
+Status: TIMEOUT
+CheckDir: EpiTxDb.Rcheck
+Warnings: NA

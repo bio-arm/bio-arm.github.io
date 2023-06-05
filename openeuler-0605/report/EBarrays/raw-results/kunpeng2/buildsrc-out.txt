@@ -1,0 +1,42 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data EBarrays
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘EBarrays/DESCRIPTION’ ... OK
+* preparing ‘EBarrays’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘EBarrays’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c ebarrays.c -o ebarrays.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o EBarrays.so ebarrays.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp06zT2a/Rinst3b9ce31720effa/00LOCK-EBarrays/00new/EBarrays/libs
+** R
+** data
+** demo
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘EBarrays’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp06zT2a/Rinst3b9ce31720effa/00LOCK-EBarrays/00new/EBarrays/libs/EBarrays.so':
+  /tmp/Rtmp06zT2a/Rinst3b9ce31720effa/00LOCK-EBarrays/00new/EBarrays/libs/EBarrays.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp06zT2a/Rinst3b9ce31720effa/EBarrays’
+      -----------------------------------
+ERROR: package installation failed

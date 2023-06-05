@@ -1,0 +1,46 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data girafe
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘girafe/DESCRIPTION’ ... OK
+* preparing ‘girafe’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘girafe’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+g++ -std=gnu++17 -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c coverage.cpp -o coverage.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c girafe_init.c -o girafe_init.o
+g++ -std=gnu++17 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o girafe.so coverage.o girafe_init.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /tmp/Rtmp74kkqc/Rinst3cbff459414a5e/00LOCK-girafe/00new/girafe/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+No methods found in package ‘IRanges’ for requests: ‘score’, ‘score<-’, ‘sort’ when loading ‘girafe’
+Creating a generic function for ‘sample’ from package ‘base’ in package ‘girafe’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+No methods found in package ‘IRanges’ for requests: ‘score’, ‘score<-’, ‘sort’ when loading ‘girafe’
+Error: package or namespace load failed for ‘girafe’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/tmp/Rtmp74kkqc/Rinst3cbff459414a5e/00LOCK-girafe/00new/girafe/libs/girafe.so':
+  /tmp/Rtmp74kkqc/Rinst3cbff459414a5e/00LOCK-girafe/00new/girafe/libs/girafe.so: failed to map segment from shared object
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/Rtmp74kkqc/Rinst3cbff459414a5e/girafe’
+      -----------------------------------
+ERROR: package installation failed

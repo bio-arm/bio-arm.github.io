@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/extraChIPs
+git_branch: devel
+git_last_commit: d3b1dd4
+git_last_commit_date: 2023-06-02 17:01:34 -0000 (Fri, 02 Jun 2023)
+Package: extraChIPs
+Version: 1.5.2
+Maintainer: Stephen Pederson
+MaintainerEmail: stephen.pederson.au at gmail.com

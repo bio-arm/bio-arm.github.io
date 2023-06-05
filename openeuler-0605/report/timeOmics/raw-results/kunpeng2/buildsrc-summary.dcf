@@ -1,0 +1,10 @@
+Package: timeOmics
+Version: 1.13.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data timeOmics
+StartedAt: 2023-06-04 12:06:22 -0000 (Sun, 04 Jun 2023)
+EndedAt: 2023-06-04 12:07:10 -0000 (Sun, 04 Jun 2023)
+EllapsedTime: 48.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: timeOmics_1.13.0.tar.gz
+PackageFileSize: 3.827 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>
