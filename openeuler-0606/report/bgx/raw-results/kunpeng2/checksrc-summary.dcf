@@ -1,0 +1,10 @@
+Package: bgx
+Version: 1.67.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:bgx.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings bgx_1.67.0.tar.gz
+StartedAt: 2023-06-05 17:58:54 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 18:01:37 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 163.2 seconds
+RetCode: 0
+Status: OK
+CheckDir: bgx.Rcheck
+Warnings: 0

@@ -1,0 +1,10 @@
+Package: ideal
+Version: 1.25.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ideal
+StartedAt: 2023-06-05 12:16:54 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 12:16:55 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 1.0 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

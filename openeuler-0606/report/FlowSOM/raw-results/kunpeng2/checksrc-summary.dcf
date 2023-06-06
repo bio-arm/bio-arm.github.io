@@ -1,0 +1,10 @@
+Package: FlowSOM
+Version: 2.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:FlowSOM.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings FlowSOM_2.9.0.tar.gz
+StartedAt: 2023-06-05 22:33:26 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 22:49:25 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 958.5 seconds
+RetCode: 0
+Status: OK
+CheckDir: FlowSOM.Rcheck
+Warnings: 0

@@ -1,0 +1,10 @@
+Package: cellHTS2
+Version: 2.65.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:cellHTS2.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings cellHTS2_2.65.0.tar.gz
+StartedAt: 2023-06-05 19:04:45 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 19:16:01 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 676.0 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: cellHTS2.Rcheck
+Warnings: 1

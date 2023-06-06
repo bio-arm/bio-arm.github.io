@@ -1,0 +1,132 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:mixOmics.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings mixOmics_6.25.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/mixOmics.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘mixOmics/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘mixOmics’ version ‘6.25.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘mixOmics’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is  8.2Mb
+  sub-directories of 1Mb or more:
+    R      1.4Mb
+    data   3.3Mb
+    doc    1.9Mb
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking installed files from ‘inst/doc’ ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                     user system elapsed
+biplot             18.149  0.128  18.307
+image.tune.rcc     15.140  0.044  15.200
+tune.rcc           15.075  0.008  15.101
+background.predict 11.286  0.104  11.412
+circosPlot         10.220  0.099  10.342
+block.splsda        8.789  0.044   8.848
+block.spls          7.131  0.056   7.201
+tune                6.598  0.016   6.626
+perf                6.276  0.016   6.302
+pca                 6.153  0.076   6.240
+tune.splsda         5.762  0.068   5.840
+plotArrow           5.784  0.024   5.816
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘vignette.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘vignette.Rmd’ using rmarkdown
+The magick package is required to crop "Figures/Getting-Started02-pca-nutrimouse-1.png" but not available.
+The magick package is required to crop "Figures/Getting-Started02-pca-nutrimouse-2.png" but not available.
+The magick package is required to crop "Figures/Getting-Started02-spca-nutrimouse-1.png" but not available.
+The magick package is required to crop "Figures/Getting-Started02-spca-nutrimouse-2.png" but not available.
+The magick package is required to crop "Figures/PCA/03-screeplot-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-pca-sample-plot-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-pca-variable-plot-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-pca-biplot-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-pca-boxplot-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-spca-tuning-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-spca-sample-plot-1.png" but not available.
+Warning: ggrepel: 1 unlabeled data points (too many overlaps). Consider increasing max.overlaps
+The magick package is required to crop "Figures/PCA/03-spca-biplot-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-spca-variable-plot-1.png" but not available.
+The magick package is required to crop "Figures/PCA/03-spca-loading-plot-1.png" but not available.
+
+Quitting from lines 684-688 [04-load-data2] (vignette.Rmd)
+Error: processing vignette 'vignette.Rmd' failed with diagnostics:
+there is no package called 'devtools'
+--- failed re-building ‘vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/mixOmics.Rcheck/00check.log’
+for details.
+

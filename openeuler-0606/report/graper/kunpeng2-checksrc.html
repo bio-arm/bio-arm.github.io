@@ -1,0 +1,2246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for graper on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><B>[<A href="..#G">G</A>]</B></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:33 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for graper on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the graper package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/graper.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard ok">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>863</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">graper</A>&nbsp;1.17.1</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/graper">landing page</A>)</SPAN><BR>Britta Velten<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/graper</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">d5500b4</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-05-02&nbsp;13:47:40&nbsp;-0000&nbsp;(Tue,&nbsp;02&nbsp;May&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: graper</TD></TR>
+<TR><TD><B>Version</B>: 1.17.1</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:graper.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings graper_1.17.1.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-05 23:39:20 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-05 23:41:13 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 113.1 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: graper.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 0</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:graper.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings graper_1.17.1.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/graper.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘graper/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘graper’ version ‘1.17.1’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘graper’ can be installed ... OK
+* used C++ compiler: ‘g++ (GCC) 10.3.1’
+* checking C++ specification ... NOTE
+  Specified C++11: please drop specification unless essential
+* checking installed package size ... NOTE
+  installed size is  7.7Mb
+  sub-directories of 1Mb or more:
+    libs   7.5Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... NOTE
+Note: information on .o files is not available
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘example_linear.Rmd’ using ‘UTF-8’... OK
+  ‘example_logistic.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/graper.Rcheck/00check.log’
+for details.
+
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">graper.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL graper
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘graper’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG  -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rcpp/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/RcppArmadillo/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c fit_graper.cpp -o fit_graper.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o graper.so RcppExports.o fit_graper.o -llapack -lblas -lgfortran -lm -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/site-library/00LOCK-graper/00new/graper/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (graper)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">graper.Rcheck/tests/testthat.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(testthat)
+&gt; library(graper)
+&gt; 
+&gt; test_check(&quot;graper&quot;)
+iteration 1
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-900.099
+ELB improved by inf
+
+iteration 2
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-575.976
+ELB improved by 324.123
+
+iteration 3
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-515.75
+ELB improved by 60.2258
+
+iteration 4
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-485.1
+ELB improved by 30.6498
+
+iteration 5
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-472.559
+ELB improved by 12.5415
+
+iteration 6
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-465.632
+ELB improved by 6.92664
+
+iteration 7
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-459.846
+ELB improved by 5.78586
+
+iteration 8
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-453.79
+ELB improved by 6.0558
+
+iteration 9
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-447.248
+ELB improved by 6.54248
+
+iteration 10
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-441.027
+ELB improved by 6.22103
+
+iteration 11
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-436.295
+ELB improved by 4.73134
+
+iteration 12
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-433.388
+ELB improved by 2.90758
+
+iteration 13
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-431.753
+ELB improved by 1.63466
+
+iteration 14
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-430.781
+ELB improved by 0.971874
+
+iteration 15
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-430.133
+ELB improved by 0.648188
+
+iteration 16
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-429.655
+ELB improved by 0.477797
+
+iteration 17
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-429.278
+ELB improved by 0.377287
+
+iteration 18
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-428.967
+ELB improved by 0.310674
+
+iteration 19
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-428.706
+ELB improved by 0.261594
+
+iteration 20
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-428.483
+ELB improved by 0.222933
+
+iteration 21
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-428.291
+ELB improved by 0.191962
+
+iteration 22
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-428.124
+ELB improved by 0.167307
+
+iteration 23
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.976
+ELB improved by 0.147634
+
+iteration 24
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.844
+ELB improved by 0.131608
+
+iteration 25
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.726
+ELB improved by 0.118161
+
+iteration 26
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.62
+ELB improved by 0.106583
+
+iteration 27
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.523
+ELB improved by 0.0964678
+
+iteration 28
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.436
+ELB improved by 0.087611
+
+iteration 29
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.356
+ELB improved by 0.0798996
+
+iteration 30
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.282
+ELB improved by 0.0732392
+
+iteration 31
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.215
+ELB improved by 0.0675176
+
+iteration 32
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.152
+ELB improved by 0.0626038
+
+iteration 33
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.094
+ELB improved by 0.0583623
+
+iteration 34
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.039
+ELB improved by 0.0546679
+
+iteration 35
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.988
+ELB improved by 0.0514151
+
+iteration 36
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.939
+ELB improved by 0.0485189
+
+iteration 37
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.893
+ELB improved by 0.0459135
+
+iteration 38
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.85
+ELB improved by 0.0435478
+
+iteration 39
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.808
+ELB improved by 0.0413825
+
+iteration 40
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.769
+ELB improved by 0.0393867
+
+iteration 41
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.732
+ELB improved by 0.037536
+
+iteration 42
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.696
+ELB improved by 0.0358109
+
+iteration 43
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.662
+ELB improved by 0.0341954
+
+iteration 44
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.629
+ELB improved by 0.0326767
+
+iteration 45
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.598
+ELB improved by 0.031244
+
+iteration 46
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.568
+ELB improved by 0.0298887
+
+iteration 47
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.539
+ELB improved by 0.0286035
+
+iteration 48
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.512
+ELB improved by 0.0273824
+
+iteration 49
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.486
+ELB improved by 0.0262205
+
+iteration 50
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.46
+ELB improved by 0.0251136
+
+iteration 51
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.436
+ELB improved by 0.0240582
+
+iteration 52
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.413
+ELB improved by 0.0230515
+
+iteration 53
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.391
+ELB improved by 0.0220908
+
+iteration 54
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.37
+ELB improved by 0.0211739
+
+iteration 55
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.35
+ELB improved by 0.0202989
+
+iteration 56
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.33
+ELB improved by 0.019464
+
+iteration 57
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.312
+ELB improved by 0.0186675
+
+iteration 58
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.294
+ELB improved by 0.017908
+
+iteration 59
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.277
+ELB improved by 0.0171839
+
+iteration 60
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.26
+ELB improved by 0.0164938
+
+iteration 61
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.244
+ELB improved by 0.0158365
+
+iteration 62
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.229
+ELB improved by 0.0152105
+
+iteration 63
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.214
+ELB improved by 0.0146146
+
+iteration 64
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.2
+ELB improved by 0.0140474
+
+iteration 65
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.187
+ELB improved by 0.0135078
+
+iteration 66
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.174
+ELB improved by 0.0129946
+
+iteration 67
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.161
+ELB improved by 0.0125064
+
+iteration 68
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.149
+ELB improved by 0.0120422
+
+iteration 69
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.138
+ELB improved by 0.0116007
+
+iteration 70
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.126
+ELB improved by 0.011181
+
+iteration 71
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.116
+ELB improved by 0.0107818
+
+iteration 72
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.105
+ELB improved by 0.0104023
+
+iteration 73
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.095
+ELB improved by 0.0100413
+
+iteration 74
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.086
+ELB improved by 0.00969801
+
+ELB converged
+iteration 1
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-834.91
+ELB improved by inf
+
+iteration 2
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-600.488
+ELB improved by 234.422
+
+iteration 3
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-541.783
+ELB improved by 58.7048
+
+iteration 4
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-485.398
+ELB improved by 56.3849
+
+iteration 5
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-448.846
+ELB improved by 36.552
+
+iteration 6
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-433.827
+ELB improved by 15.0191
+
+iteration 7
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.07
+ELB improved by 6.75684
+
+iteration 8
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-422.604
+ELB improved by 4.46554
+
+iteration 9
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-418.903
+ELB improved by 3.70151
+
+iteration 10
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.396
+ELB improved by 3.50707
+
+iteration 11
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-411.832
+ELB improved by 3.56351
+
+iteration 12
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-408.1
+ELB improved by 3.73216
+
+iteration 13
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-404.168
+ELB improved by 3.9318
+
+iteration 14
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-400.102
+ELB improved by 4.06619
+
+iteration 15
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-396.118
+ELB improved by 3.98376
+
+iteration 16
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-392.597
+ELB improved by 3.52149
+
+iteration 17
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-389.891
+ELB improved by 2.7061
+
+iteration 18
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-388.07
+ELB improved by 1.82083
+
+iteration 19
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-386.929
+ELB improved by 1.14103
+
+iteration 20
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-386.212
+ELB improved by 0.71719
+
+iteration 21
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-385.738
+ELB improved by 0.474246
+
+iteration 22
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-385.402
+ELB improved by 0.335412
+
+iteration 23
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-385.15
+ELB improved by 0.252326
+
+iteration 24
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.951
+ELB improved by 0.199027
+
+iteration 25
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.788
+ELB improved by 0.162375
+
+iteration 26
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.653
+ELB improved by 0.13575
+
+iteration 27
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.537
+ELB improved by 0.115687
+
+iteration 28
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.437
+ELB improved by 0.100237
+
+iteration 29
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.349
+ELB improved by 0.088186
+
+iteration 30
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.27
+ELB improved by 0.078714
+
+iteration 31
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.199
+ELB improved by 0.0712336
+
+iteration 32
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.133
+ELB improved by 0.0653153
+
+iteration 33
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.073
+ELB improved by 0.0606416
+
+iteration 34
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-384.016
+ELB improved by 0.0569773
+
+iteration 35
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.962
+ELB improved by 0.0541466
+
+iteration 36
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.91
+ELB improved by 0.0520173
+
+iteration 37
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.859
+ELB improved by 0.0504884
+
+iteration 38
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.81
+ELB improved by 0.049482
+
+iteration 39
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.761
+ELB improved by 0.0489373
+
+iteration 40
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.712
+ELB improved by 0.0488058
+
+iteration 41
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.663
+ELB improved by 0.0490486
+
+iteration 42
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.613
+ELB improved by 0.0496337
+
+iteration 43
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.563
+ELB improved by 0.0505339
+
+iteration 44
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.511
+ELB improved by 0.0517257
+
+iteration 45
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.458
+ELB improved by 0.0531876
+
+iteration 46
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.403
+ELB improved by 0.0548994
+
+iteration 47
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.346
+ELB improved by 0.0568414
+
+iteration 48
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.287
+ELB improved by 0.0589938
+
+iteration 49
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.226
+ELB improved by 0.0613364
+
+iteration 50
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.162
+ELB improved by 0.0638485
+
+iteration 51
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.095
+ELB improved by 0.0665092
+
+iteration 52
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-383.026
+ELB improved by 0.0692971
+
+iteration 53
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.954
+ELB improved by 0.0721913
+
+iteration 54
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.879
+ELB improved by 0.0751711
+
+iteration 55
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.8
+ELB improved by 0.0782165
+
+iteration 56
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.719
+ELB improved by 0.0813076
+
+iteration 57
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.635
+ELB improved by 0.0844246
+
+iteration 58
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.547
+ELB improved by 0.0875466
+
+iteration 59
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.456
+ELB improved by 0.09065
+
+iteration 60
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.363
+ELB improved by 0.093708
+
+iteration 61
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.266
+ELB improved by 0.0966882
+
+iteration 62
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.167
+ELB improved by 0.0995525
+
+iteration 63
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-382.064
+ELB improved by 0.102256
+
+iteration 64
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.96
+ELB improved by 0.104747
+
+iteration 65
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.853
+ELB improved by 0.106969
+
+iteration 66
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.744
+ELB improved by 0.108863
+
+iteration 67
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.633
+ELB improved by 0.110368
+
+iteration 68
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.522
+ELB improved by 0.111426
+
+iteration 69
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.41
+ELB improved by 0.111984
+
+iteration 70
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.298
+ELB improved by 0.112001
+
+iteration 71
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.186
+ELB improved by 0.111442
+
+iteration 72
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-381.076
+ELB improved by 0.11029
+
+iteration 73
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.968
+ELB improved by 0.108534
+
+iteration 74
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.861
+ELB improved by 0.106175
+
+iteration 75
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.758
+ELB improved by 0.103216
+
+iteration 76
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.659
+ELB improved by 0.0996646
+
+iteration 77
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.563
+ELB improved by 0.095528
+
+iteration 78
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.472
+ELB improved by 0.0908219
+
+iteration 79
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.387
+ELB improved by 0.0855784
+
+iteration 80
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.307
+ELB improved by 0.0798577
+
+iteration 81
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.233
+ELB improved by 0.0737561
+
+iteration 82
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.166
+ELB improved by 0.0674055
+
+iteration 83
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.105
+ELB improved by 0.0609626
+
+iteration 84
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.05
+ELB improved by 0.0545917
+
+iteration 85
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-380.002
+ELB improved by 0.0484451
+
+iteration 86
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.959
+ELB improved by 0.0426476
+
+iteration 87
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.922
+ELB improved by 0.0372891
+
+iteration 88
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.889
+ELB improved by 0.0324227
+
+iteration 89
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.861
+ELB improved by 0.0280692
+
+iteration 90
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.837
+ELB improved by 0.0242231
+
+iteration 91
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.816
+ELB improved by 0.0208605
+
+iteration 92
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.798
+ELB improved by 0.0179448
+
+iteration 93
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.783
+ELB improved by 0.0154333
+
+iteration 94
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.769
+ELB improved by 0.013281
+
+iteration 95
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.758
+ELB improved by 0.0114433
+
+iteration 96
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-379.748
+ELB improved by 0.00987852
+
+ELB converged
+iteration 1
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-898.11
+ELB improved by inf
+
+iteration 2
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-567.882
+ELB improved by 330.228
+
+iteration 3
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-509.75
+ELB improved by 58.1315
+
+iteration 4
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-477.629
+ELB improved by 32.1214
+
+iteration 5
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-464.378
+ELB improved by 13.2507
+
+iteration 6
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-457.941
+ELB improved by 6.43724
+
+iteration 7
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-453.63
+ELB improved by 4.31111
+
+iteration 8
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-449.907
+ELB improved by 3.72253
+
+iteration 9
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-446.285
+ELB improved by 3.6217
+
+iteration 10
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-442.655
+ELB improved by 3.62995
+
+iteration 11
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-439.062
+ELB improved by 3.59363
+
+iteration 12
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-435.631
+ELB improved by 3.43124
+
+iteration 13
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-432.522
+ELB improved by 3.10814
+
+iteration 14
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-429.887
+ELB improved by 2.63496
+
+iteration 15
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-427.811
+ELB improved by 2.07653
+
+iteration 16
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.271
+ELB improved by 1.53959
+
+iteration 17
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-425.168
+ELB improved by 1.10301
+
+iteration 18
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-424.385
+ELB improved by 0.7831
+
+iteration 19
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-423.821
+ELB improved by 0.563912
+
+iteration 20
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-423.399
+ELB improved by 0.422193
+
+iteration 21
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-423.066
+ELB improved by 0.333351
+
+iteration 22
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-422.789
+ELB improved by 0.276965
+
+iteration 23
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-422.549
+ELB improved by 0.239652
+
+iteration 24
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-422.335
+ELB improved by 0.2138
+
+iteration 25
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-422.14
+ELB improved by 0.19529
+
+iteration 26
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-421.958
+ELB improved by 0.181866
+
+iteration 27
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-421.786
+ELB improved by 0.172234
+
+iteration 28
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-421.62
+ELB improved by 0.165616
+
+iteration 29
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-421.459
+ELB improved by 0.161522
+
+iteration 30
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-421.299
+ELB improved by 0.159636
+
+iteration 31
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-421.139
+ELB improved by 0.159763
+
+iteration 32
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-420.978
+ELB improved by 0.161795
+
+iteration 33
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-420.812
+ELB improved by 0.16569
+
+iteration 34
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-420.64
+ELB improved by 0.171472
+
+iteration 35
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-420.461
+ELB improved by 0.179224
+
+iteration 36
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-420.272
+ELB improved by 0.189094
+
+iteration 37
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-420.071
+ELB improved by 0.201309
+
+iteration 38
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-419.855
+ELB improved by 0.216196
+
+iteration 39
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-419.62
+ELB improved by 0.234223
+
+iteration 40
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-419.364
+ELB improved by 0.256074
+
+iteration 41
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-419.082
+ELB improved by 0.282765
+
+iteration 42
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-418.766
+ELB improved by 0.31583
+
+iteration 43
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-418.408
+ELB improved by 0.357539
+
+iteration 44
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-417.997
+ELB improved by 0.410736
+
+iteration 45
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-417.521
+ELB improved by 0.476751
+
+iteration 46
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.972
+ELB improved by 0.548813
+
+iteration 47
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.365
+ELB improved by 0.606728
+
+iteration 48
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.733
+ELB improved by 0.632339
+
+iteration 49
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.104
+ELB improved by 0.629156
+
+iteration 50
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-414.494
+ELB improved by 0.609854
+
+iteration 51
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-413.91
+ELB improved by 0.584029
+
+iteration 52
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-413.348
+ELB improved by 0.562199
+
+iteration 53
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-412.79
+ELB improved by 0.5576
+
+iteration 54
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-412.216
+ELB improved by 0.573725
+
+iteration 55
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-411.641
+ELB improved by 0.575459
+
+iteration 56
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-411.128
+ELB improved by 0.512806
+
+iteration 57
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-410.722
+ELB improved by 0.406155
+
+iteration 58
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-410.415
+ELB improved by 0.306392
+
+iteration 59
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-410.183
+ELB improved by 0.232011
+
+iteration 60
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-410.001
+ELB improved by 0.182797
+
+iteration 61
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-409.844
+ELB improved by 0.15685
+
+iteration 62
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-409.687
+ELB improved by 0.156345
+
+iteration 63
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-409.499
+ELB improved by 0.18877
+
+iteration 64
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-409.241
+ELB improved by 0.257603
+
+iteration 65
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-408.899
+ELB improved by 0.34252
+
+iteration 66
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-408.48
+ELB improved by 0.41896
+
+iteration 67
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-408.01
+ELB improved by 0.469705
+
+iteration 68
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-407.552
+ELB improved by 0.458285
+
+iteration 69
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-407.155
+ELB improved by 0.39647
+
+iteration 70
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.839
+ELB improved by 0.316186
+
+iteration 71
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.608
+ELB improved by 0.230867
+
+iteration 72
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.452
+ELB improved by 0.155576
+
+iteration 73
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.352
+ELB improved by 0.100281
+
+iteration 74
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.288
+ELB improved by 0.064587
+
+iteration 75
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.245
+ELB improved by 0.0430583
+
+iteration 76
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.214
+ELB improved by 0.0302811
+
+iteration 77
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.192
+ELB improved by 0.0225482
+
+iteration 78
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.174
+ELB improved by 0.0176851
+
+iteration 79
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.16
+ELB improved by 0.0144872
+
+iteration 80
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.147
+ELB improved by 0.0122883
+
+iteration 81
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.137
+ELB improved by 0.0107101
+
+iteration 82
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-406.127
+ELB improved by 0.00953041
+
+ELB converged
+iteration 1
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-849.006
+ELB improved by inf
+
+iteration 2
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-568.474
+ELB improved by 280.533
+
+iteration 3
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-507.433
+ELB improved by 61.0407
+
+iteration 4
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-467.016
+ELB improved by 40.4174
+
+iteration 5
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-448.932
+ELB improved by 18.0834
+
+iteration 6
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-442.133
+ELB improved by 6.79909
+
+iteration 7
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-438.921
+ELB improved by 3.21169
+
+iteration 8
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-436.812
+ELB improved by 2.10923
+
+iteration 9
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-435.145
+ELB improved by 1.66766
+
+iteration 10
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-433.668
+ELB improved by 1.47684
+
+iteration 11
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-432.264
+ELB improved by 1.40361
+
+iteration 12
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-430.875
+ELB improved by 1.38909
+
+iteration 13
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-429.469
+ELB improved by 1.40622
+
+iteration 14
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-428.029
+ELB improved by 1.44026
+
+iteration 15
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-426.549
+ELB improved by 1.47939
+
+iteration 16
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-425.038
+ELB improved by 1.51113
+
+iteration 17
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-423.517
+ELB improved by 1.52076
+
+iteration 18
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-422.029
+ELB improved by 1.48816
+
+iteration 19
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-420.642
+ELB improved by 1.38723
+
+iteration 20
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-419.44
+ELB improved by 1.20196
+
+iteration 21
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-418.487
+ELB improved by 0.952509
+
+iteration 22
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-417.795
+ELB improved by 0.692032
+
+iteration 23
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-417.324
+ELB improved by 0.471226
+
+iteration 24
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-417.013
+ELB improved by 0.311568
+
+iteration 25
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.805
+ELB improved by 0.207806
+
+iteration 26
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.661
+ELB improved by 0.144121
+
+iteration 27
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.555
+ELB improved by 0.105676
+
+iteration 28
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.473
+ELB improved by 0.0821647
+
+iteration 29
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.405
+ELB improved by 0.0673195
+
+iteration 30
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.348
+ELB improved by 0.0575365
+
+iteration 31
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.297
+ELB improved by 0.0507777
+
+iteration 32
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.251
+ELB improved by 0.0458842
+
+iteration 33
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.209
+ELB improved by 0.0421844
+
+iteration 34
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.17
+ELB improved by 0.0392796
+
+iteration 35
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.133
+ELB improved by 0.0369258
+
+iteration 36
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.098
+ELB improved by 0.0349684
+
+iteration 37
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.065
+ELB improved by 0.0333066
+
+iteration 38
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.033
+ELB improved by 0.0318721
+
+iteration 39
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-416.002
+ELB improved by 0.030617
+
+iteration 40
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.973
+ELB improved by 0.0295069
+
+iteration 41
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.944
+ELB improved by 0.028516
+
+iteration 42
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.916
+ELB improved by 0.0276247
+
+iteration 43
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.89
+ELB improved by 0.0268174
+
+iteration 44
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.864
+ELB improved by 0.0260815
+
+iteration 45
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.838
+ELB improved by 0.0254067
+
+iteration 46
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.813
+ELB improved by 0.0247839
+
+iteration 47
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.789
+ELB improved by 0.0242054
+
+iteration 48
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.766
+ELB improved by 0.0236645
+
+iteration 49
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.742
+ELB improved by 0.0231549
+
+iteration 50
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.72
+ELB improved by 0.0226711
+
+iteration 51
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.697
+ELB improved by 0.0222078
+
+iteration 52
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.676
+ELB improved by 0.0217604
+
+iteration 53
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.654
+ELB improved by 0.0213242
+
+iteration 54
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.634
+ELB improved by 0.0208954
+
+iteration 55
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.613
+ELB improved by 0.0204702
+
+iteration 56
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.593
+ELB improved by 0.0200454
+
+iteration 57
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.573
+ELB improved by 0.0196181
+
+iteration 58
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.554
+ELB improved by 0.0191861
+
+iteration 59
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.535
+ELB improved by 0.0187476
+
+iteration 60
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.517
+ELB improved by 0.0183015
+
+iteration 61
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.499
+ELB improved by 0.0178469
+
+iteration 62
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.482
+ELB improved by 0.017384
+
+iteration 63
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.465
+ELB improved by 0.0169132
+
+iteration 64
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.449
+ELB improved by 0.0164352
+
+iteration 65
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.433
+ELB improved by 0.0159515
+
+iteration 66
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.417
+ELB improved by 0.0154637
+
+iteration 67
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.402
+ELB improved by 0.0149736
+
+iteration 68
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.388
+ELB improved by 0.0144832
+
+iteration 69
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.374
+ELB improved by 0.0139945
+
+iteration 70
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.36
+ELB improved by 0.0135098
+
+iteration 71
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.347
+ELB improved by 0.0130308
+
+iteration 72
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.335
+ELB improved by 0.0125596
+
+iteration 73
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.322
+ELB improved by 0.0120977
+
+iteration 74
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.311
+ELB improved by 0.0116469
+
+iteration 75
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.3
+ELB improved by 0.0112083
+
+iteration 76
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.289
+ELB improved by 0.0107831
+
+iteration 77
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.278
+ELB improved by 0.0103722
+
+iteration 78
+Updating parameters of variational distributions...
+Calculating ELB..
+ELB=-415.269
+ELB improved by 0.00997617
+
+ELB converged
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 24 ]
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+  2.817   0.107   2.918 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">graper.Rcheck/graper-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>coef.graper</TD><TD style="text-align: right;">0.083</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.091</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getPIPs</TD><TD style="text-align: right;">0.075</TD><TD style="text-align: right;">0.010</TD><TD style="text-align: right;">0.086</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>graper</TD><TD style="text-align: right;">0.143</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.147</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>makeExampleData</TD><TD style="text-align: right;">0.013</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.013</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>makeExampleDataWithUnequalGroups</TD><TD style="text-align: right;">0.015</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.015</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotELBO</TD><TD style="text-align: right;">0.294</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.303</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotGroupPenalties</TD><TD style="text-align: right;">1.159</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">1.177</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotPosterior</TD><TD style="text-align: right;">0.759</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.773</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>predict.graper</TD><TD style="text-align: right;">3.151</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">3.176</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>print.graper</TD><TD style="text-align: right;">0.077</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.089</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

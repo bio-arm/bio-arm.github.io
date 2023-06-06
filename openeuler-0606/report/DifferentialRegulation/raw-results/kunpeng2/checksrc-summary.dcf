@@ -1,0 +1,10 @@
+Package: DifferentialRegulation
+Version: 1.99.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DifferentialRegulation.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DifferentialRegulation_1.99.0.tar.gz
+StartedAt: 2023-06-05 21:18:33 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 21:29:07 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 633.9 seconds
+RetCode: 0
+Status: OK
+CheckDir: DifferentialRegulation.Rcheck
+Warnings: 0

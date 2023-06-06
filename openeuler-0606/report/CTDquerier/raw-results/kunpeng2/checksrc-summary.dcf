@@ -1,0 +1,10 @@
+Package: CTDquerier
+Version: 2.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CTDquerier.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CTDquerier_2.9.0.tar.gz
+StartedAt: 2023-06-05 20:32:42 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 20:34:42 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 120.2 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: CTDquerier.Rcheck
+Warnings: 1

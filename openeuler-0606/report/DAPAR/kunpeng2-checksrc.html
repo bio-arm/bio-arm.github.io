@@ -1,0 +1,664 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for DAPAR on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><B>[<A href="..#D">D</A>]</B></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:29 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for DAPAR on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the DAPAR package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/DAPAR.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard ok">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>485</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">DAPAR</A>&nbsp;1.33.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/DAPAR">landing page</A>)</SPAN><BR>Samuel Wieczorek<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/DAPAR</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">b88ad62</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:41:46&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: DAPAR</TD></TR>
+<TR><TD><B>Version</B>: 1.33.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DAPAR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DAPAR_1.33.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-05 20:45:48 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-05 20:52:27 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 398.6 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: DAPAR.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 0</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DAPAR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DAPAR_1.33.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/DAPAR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘DAPAR/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘DAPAR’ version ‘1.33.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘DAPAR’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+OWAnova: no visible global function definition for ‘aov’
+aggregateIterParallel: no visible binding for global variable ‘cond’
+averageIntensities: no visible binding for global variable ‘condition’
+averageIntensities: no visible binding for global variable ‘feature’
+averageIntensities: no visible binding for global variable ‘intensity’
+createMSnset: no visible global function definition for
+  ‘installed.packages’
+createMSnset: no visible binding for global variable ‘Prostar.loc’
+diffAnaVolcanoplot_rCharts: no visible binding for global variable ‘x’
+diffAnaVolcanoplot_rCharts: no visible binding for global variable ‘y’
+diffAnaVolcanoplot_rCharts: no visible binding for global variable ‘g’
+display.CC.visNet: no visible binding for global variable
+  ‘layout_nicely’
+getTextForGOAnalysis: no visible binding for global variable
+  ‘textGOParams’
+getTextForGOAnalysis: no visible binding for global variable ‘input’
+globalAdjPval: no visible global function definition for ‘stack’
+heatmapForMissingValues: no visible binding for global variable ‘par’
+limmaCompleteTest: no visible binding for global variable ‘A’
+limmaCompleteTest: no visible binding for global variable ‘B’
+limmaCompleteTest: no visible binding for global variable ‘P.Value’
+pepa.test: no visible global function definition for ‘nodes&lt;-’
+testAnovaModels : &lt;anonymous&gt;: no visible global function definition
+  for ‘TukeyHSD’
+visualizeClusters: no visible binding for global variable
+  ‘adjusted_pvalues’
+visualizeClusters: no visible binding for global variable ‘Condition’
+visualizeClusters: no visible binding for global variable ‘Intensity’
+visualizeClusters: no visible binding for global variable
+  ‘FDR_threshold’
+visualizeClusters: no visible binding for global variable ‘feature’
+wrapperClassic1wayAnova: no visible binding for global variable
+  ‘Pr(&gt;F)1’
+wrapperRunClustering: no visible global function definition for ‘str_c’
+Undefined global functions or variables:
+  A B Condition FDR_threshold Intensity P.Value Pr(&gt;F)1 Prostar.loc
+  TukeyHSD adjusted_pvalues aov cond condition feature g input
+  installed.packages intensity layout_nicely nodes&lt;- par stack str_c
+  textGOParams x y
+Consider adding
+  importFrom(&quot;graphics&quot;, &quot;par&quot;)
+  importFrom(&quot;stats&quot;, &quot;TukeyHSD&quot;, &quot;aov&quot;)
+  importFrom(&quot;utils&quot;, &quot;installed.packages&quot;, &quot;stack&quot;)
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                                   user system elapsed
+wrapper.compareNormalizationD_HC 46.850  3.486  50.427
+wrapper.dapar.impute.mi          20.158  0.164  20.364
+barplotEnrichGO_HC               10.354  0.671  11.050
+barplotGroupGO_HC                 6.402  0.224   6.638
+enrich_GO                         6.147  0.192   6.349
+group_GO                          5.454  0.219   5.681
+scatterplotEnrichGO_HC            5.272  0.227   5.509
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/DAPAR.Rcheck/00check.log’
+for details.
+
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">DAPAR.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL DAPAR
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘DAPAR’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (DAPAR)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">DAPAR.Rcheck/tests/testthat.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(testthat)
+&gt; library(DAPAR)
+
+This is the &#x27;DAPAR&#x27; version 1.33.0.
+
+  To get started, visit
+    http://www.prostar-proteomics.org/
+
+
+&gt; 
+&gt; test_check(&quot;DAPAR&quot;)
+
+ Iterations: 
+
+ 1 / 1  - Imputation MNAR OK - 
+Imputation MCAR in progress - 
+3 % - 6 % - 9 % - 12 % - 15 % - 18 % - 21 % - 24 % - 27 % - 30 % - 33 % - 36 % - 39 % - 42 % - 45 % - 48 % - 51 % - 54 % - 57 % - 60 % - 63 % - 66 % - 69 % - 72 % - 75 % - 78 % - 81 % - 84 % - 87 % - 90 % - 93 % - 96 % - 99 % - 
+ Iterations: 
+
+ 1 / 1  - Imputation MNAR OK - 
+Imputation MCAR in progress - 
+3 % - 6 % - 9 % - 12 % - 15 % - 18 % - 21 % - 24 % - 27 % - 30 % - 33 % - 36 % - 39 % - 42 % - 45 % - 48 % - 51 % - 54 % - 57 % - 60 % - 63 % - 66 % - 69 % - 72 % - 75 % - 78 % - 81 % - 84 % - 87 % - 90 % - 93 % - 96 % - 99 % - 
+ Imputation in condition  1 ...
+ In progress: 10 % - 20 % - 30 % - 40 % - 50 % - 60 % - 70 % - 80 % - 90 % - 100 % - 
+ Imputation in condition  2 ...
+ In progress: 10 % - 20 % - 30 % - 40 % - 50 % - 60 % - 70 % - 80 % - 90 % - 100 % - [ FAIL 0 | WARN 18 | SKIP 0 | PASS 66 ]
+
+[ FAIL 0 | WARN 18 | SKIP 0 | PASS 66 ]
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 30.185   0.519  30.753 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">DAPAR.Rcheck/DAPAR-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>AggregateMetacell</TD><TD style="text-align: right;">2.212</TD><TD style="text-align: right;">0.096</TD><TD style="text-align: right;">2.313</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>BuildAdjacencyMatrix</TD><TD style="text-align: right;">0.860</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">0.893</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>BuildColumnToProteinDataset</TD><TD style="text-align: right;">0.400</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.408</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>BuildMetaCell</TD><TD style="text-align: right;">1.185</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">1.196</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>CVDistD_HC</TD><TD style="text-align: right;">3.485</TD><TD style="text-align: right;">0.075</TD><TD style="text-align: right;">3.613</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Children</TD><TD style="text-align: right;">0.007</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.007</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>CountPep</TD><TD style="text-align: right;">0.326</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.342</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>ExtendPalette</TD><TD style="text-align: right;">0.025</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.037</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GOAnalysisSave</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetCC</TD><TD style="text-align: right;">1.703</TD><TD style="text-align: right;">0.050</TD><TD style="text-align: right;">1.755</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetColorsForConditions</TD><TD style="text-align: right;">0.276</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.276</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetDetailedNbPeptides</TD><TD style="text-align: right;">0.307</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.308</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetDetailedNbPeptidesUsed</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetIndices_BasedOnConditions</TD><TD style="text-align: right;">0.284</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.296</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetIndices_MetacellFiltering</TD><TD style="text-align: right;">0.311</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.311</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetIndices_WholeLine</TD><TD style="text-align: right;">0.295</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.299</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetIndices_WholeMatrix</TD><TD style="text-align: right;">0.291</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.295</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetKeyId</TD><TD style="text-align: right;">0.283</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.288</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMatAdj</TD><TD style="text-align: right;">0.337</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.345</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMetacell</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMetacellTags</TD><TD style="text-align: right;">0.295</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.296</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetNbPeptidesUsed</TD><TD style="text-align: right;">0.298</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.303</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetSoftAvailables</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetTypeofData</TD><TD style="text-align: right;">0.269</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.269</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Get_AllComparisons</TD><TD style="text-align: right;">0.288</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GlobalQuantileAlignment</TD><TD style="text-align: right;">0.305</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.306</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GraphPepProt</TD><TD style="text-align: right;">0.296</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.298</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>LH0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>LH0.lm</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>LH1</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>LH1.lm</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>LOESS</TD><TD style="text-align: right;">1.710</TD><TD style="text-align: right;">0.040</TD><TD style="text-align: right;">1.752</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MeanCentering</TD><TD style="text-align: right;">0.306</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.322</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MetaCellFiltering</TD><TD style="text-align: right;">0.490</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.515</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MetacellFilteringScope</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Metacell_DIA_NN</TD><TD style="text-align: right;">0.534</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.535</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Metacell_generic</TD><TD style="text-align: right;">0.534</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.558</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Metacell_maxquant</TD><TD style="text-align: right;">0.529</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.538</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Metacell_proline</TD><TD style="text-align: right;">0.514</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.526</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>NumericalFiltering</TD><TD style="text-align: right;">0.408</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.412</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>NumericalgetIndicesOfLinesToRemove</TD><TD style="text-align: right;">0.309</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.314</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>OWAnova</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.009</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>QuantileCentering</TD><TD style="text-align: right;">0.296</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.305</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>SetCC</TD><TD style="text-align: right;">1.533</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">1.595</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>SetMatAdj</TD><TD style="text-align: right;">0.325</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.337</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Set_POV_MEC_tags</TD><TD style="text-align: right;">0.293</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.297</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>StringBasedFiltering</TD><TD style="text-align: right;">0.332</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.332</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>StringBasedFiltering2</TD><TD style="text-align: right;">0.323</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.335</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>SumByColumns</TD><TD style="text-align: right;">1.678</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">1.741</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>SymFilteringOperators</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>UpdateMetacellAfterImputation</TD><TD style="text-align: right;">0.310</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.315</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>aggregateIter</TD><TD style="text-align: right;">0.525</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.534</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>aggregateIterParallel</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>aggregateMean</TD><TD style="text-align: right;">0.436</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.441</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>aggregateSum</TD><TD style="text-align: right;">0.434</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.438</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>aggregateTopn</TD><TD style="text-align: right;">0.389</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.390</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>applyAnovasOnProteins</TD><TD style="text-align: right;">0.094</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.093</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>averageIntensities</TD><TD style="text-align: right;">0.523</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">0.556</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>barplotEnrichGO_HC</TD><TD style="text-align: right;">10.354</TD><TD style="text-align: right;"> 0.671</TD><TD style="text-align: right;">11.050</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>barplotGroupGO_HC</TD><TD style="text-align: right;">6.402</TD><TD style="text-align: right;">0.224</TD><TD style="text-align: right;">6.638</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>boxPlotD_HC</TD><TD style="text-align: right;">0.238</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.262</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>buildGraph</TD><TD style="text-align: right;">1.446</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">1.485</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>check.conditions</TD><TD style="text-align: right;">0.264</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.265</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>check.design</TD><TD style="text-align: right;">0.266</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.266</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>checkClusterability</TD><TD style="text-align: right;">3.086</TD><TD style="text-align: right;">0.255</TD><TD style="text-align: right;">3.350</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>classic1wayAnova</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>compareNormalizationD_HC</TD><TD style="text-align: right;">0.123</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.127</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>compute.selection.table</TD><TD style="text-align: right;">0.797</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.823</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>compute_t_tests</TD><TD style="text-align: right;">1.234</TD><TD style="text-align: right;">0.056</TD><TD style="text-align: right;">1.292</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>corrMatrixD_HC</TD><TD style="text-align: right;">0.412</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.425</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>createMSnset</TD><TD style="text-align: right;">2.021</TD><TD style="text-align: right;">0.052</TD><TD style="text-align: right;">2.076</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>dapar_hc_ExportMenu</TD><TD style="text-align: right;">0.146</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.166</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>dapar_hc_chart</TD><TD style="text-align: right;">0.065</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.069</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>deleteLinesFromIndices</TD><TD style="text-align: right;">0.317</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.317</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>densityPlotD_HC</TD><TD style="text-align: right;">2.737</TD><TD style="text-align: right;">0.187</TD><TD style="text-align: right;">2.929</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>diffAnaComputeFDR</TD><TD style="text-align: right;">0.138</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.146</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>diffAnaGetSignificant</TD><TD style="text-align: right;">0.242</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.246</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>diffAnaSave</TD><TD style="text-align: right;">0.226</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.230</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>diffAnaVolcanoplot</TD><TD style="text-align: right;">0.134</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.138</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>diffAnaVolcanoplot_rCharts</TD><TD style="text-align: right;">0.395</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">0.433</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>display.CC.visNet</TD><TD style="text-align: right;">1.383</TD><TD style="text-align: right;">0.088</TD><TD style="text-align: right;">1.476</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>enrich_GO</TD><TD style="text-align: right;">6.147</TD><TD style="text-align: right;">0.192</TD><TD style="text-align: right;">6.349</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>finalizeAggregation</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>findMECBlock</TD><TD style="text-align: right;">0.314</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.317</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>formatHSDResults</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>formatLimmaResult</TD><TD style="text-align: right;">0.125</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.133</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>formatPHResults</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>formatPHTResults</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>fudge2LRT</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>get.pep.prot.cc</TD><TD style="text-align: right;">1.236</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">1.245</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getIndicesConditions</TD><TD style="text-align: right;">0.260</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.264</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getIndicesOfLinesToRemove</TD><TD style="text-align: right;">0.281</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.285</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getListNbValuesInLines</TD><TD style="text-align: right;">0.264</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.264</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getNumberOf</TD><TD style="text-align: right;">0.291</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.295</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getNumberOfEmptyLines</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getPourcentageOfMV</TD><TD style="text-align: right;">0.288</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.289</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getProcessingInfo</TD><TD style="text-align: right;">0.263</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.264</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getProteinsStats</TD><TD style="text-align: right;">0.318</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.321</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getQuantile4Imp</TD><TD style="text-align: right;">0.056</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForAggregation</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForAnaDiff</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForFiltering</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForGOAnalysis</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForHypothesisTest</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForNewDataset</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForNormalization</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForpeptideImputation</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getTextForproteinImputation</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>globalAdjPval</TD><TD style="text-align: right;">0.481</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.490</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>group_GO</TD><TD style="text-align: right;">5.454</TD><TD style="text-align: right;">0.219</TD><TD style="text-align: right;">5.681</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>hc_logFC_DensityPlot</TD><TD style="text-align: right;">0.541</TD><TD style="text-align: right;">0.068</TD><TD style="text-align: right;">0.610</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>hc_mvTypePlot2</TD><TD style="text-align: right;">0.827</TD><TD style="text-align: right;">0.064</TD><TD style="text-align: right;">0.892</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>heatmapD</TD><TD style="text-align: right;">0.561</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.574</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>heatmapForMissingValues</TD><TD style="text-align: right;">0.151</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.159</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>histPValue_HC</TD><TD style="text-align: right;">0.199</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.206</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>impute.pa2</TD><TD style="text-align: right;">0.337</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.341</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>inner.aggregate.iter</TD><TD style="text-align: right;">0.405</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.409</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>inner.aggregate.topn</TD><TD style="text-align: right;">0.316</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.321</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>inner.mean</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>inner.sum</TD><TD style="text-align: right;">0.312</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.316</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>is.subset</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>limmaCompleteTest</TD><TD style="text-align: right;">1.950</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.965</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>listSheets</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>make.contrast</TD><TD style="text-align: right;">0.277</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.285</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>make.design.1</TD><TD style="text-align: right;">0.281</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.285</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>make.design.2</TD><TD style="text-align: right;">0.282</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.287</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>make.design.3</TD><TD style="text-align: right;">0.284</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.289</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>make.design</TD><TD style="text-align: right;">0.286</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.287</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>match.metacell</TD><TD style="text-align: right;">0.314</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.315</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>metacell.def</TD><TD style="text-align: right;">0.005</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.005</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>metacellHisto_HC</TD><TD style="text-align: right;">0.350</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.354</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>metacellPerLinesHistoPerCondition_HC</TD><TD style="text-align: right;">0.530</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">0.555</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>metacellPerLinesHisto_HC</TD><TD style="text-align: right;">0.612</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">0.633</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>metacombine</TD><TD style="text-align: right;">0.080</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.084</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>mvImage</TD><TD style="text-align: right;">2.810</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">2.839</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>my_hc_ExportMenu</TD><TD style="text-align: right;">0.145</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">0.165</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>my_hc_chart</TD><TD style="text-align: right;">0.159</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.162</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nonzero</TD><TD style="text-align: right;">0.021</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.021</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>normalizeMethods.dapar</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>pepa.test</TD><TD style="text-align: right;">0.312</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>pkgs.require</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotJitter</TD><TD style="text-align: right;">1.365</TD><TD style="text-align: right;">0.080</TD><TD style="text-align: right;">1.446</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotJitter_rCharts</TD><TD style="text-align: right;">1.252</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">1.262</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotPCA_Eigen</TD><TD style="text-align: right;">0.361</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.369</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotPCA_Eigen_hc</TD><TD style="text-align: right;">0.268</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.269</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotPCA_Ind</TD><TD style="text-align: right;">0.274</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.275</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotPCA_Var</TD><TD style="text-align: right;">0.266</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.267</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>postHocTest</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>proportionConRev_HC</TD><TD style="text-align: right;">0.054</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.055</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>rbindMSnset</TD><TD style="text-align: right;">0.350</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">0.371</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>reIntroduceMEC</TD><TD style="text-align: right;">0.331</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.332</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>readExcel</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>removeLines</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.314</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>samLRT</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>saveParameters</TD><TD style="text-align: right;">0.264</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.268</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>scatterplotEnrichGO_HC</TD><TD style="text-align: right;">5.272</TD><TD style="text-align: right;">0.227</TD><TD style="text-align: right;">5.509</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>search.metacell.tags</TD><TD style="text-align: right;">0.009</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>separateAdjPval</TD><TD style="text-align: right;">0.183</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.184</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>splitAdjacencyMat</TD><TD style="text-align: right;">0.313</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.322</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>test.design</TD><TD style="text-align: right;">0.292</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.292</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>testAnovaModels</TD><TD style="text-align: right;">0.085</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.098</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>thresholdpval4fdr</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>translatedRandomBeta</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>univ_AnnotDbPkg</TD><TD style="text-align: right;">0.165</TD><TD style="text-align: right;">0.030</TD><TD style="text-align: right;">0.195</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>violinPlotD</TD><TD style="text-align: right;">0.254</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.259</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>visualizeClusters</TD><TD style="text-align: right;">1.565</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">1.592</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>vsn</TD><TD style="text-align: right;">0.675</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.684</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.CVDistD_HC</TD><TD style="text-align: right;">1.969</TD><TD style="text-align: right;">0.191</TD><TD style="text-align: right;">2.165</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.compareNormalizationD_HC</TD><TD style="text-align: right;">46.850</TD><TD style="text-align: right;"> 3.486</TD><TD style="text-align: right;">50.427</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.corrMatrixD_HC</TD><TD style="text-align: right;">0.408</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">0.429</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.dapar.impute.mi</TD><TD style="text-align: right;">20.158</TD><TD style="text-align: right;"> 0.164</TD><TD style="text-align: right;">20.364</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.heatmapD</TD><TD style="text-align: right;">0.530</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.548</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.impute.KNN</TD><TD style="text-align: right;">0.309</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.310</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.impute.detQuant</TD><TD style="text-align: right;">0.340</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.349</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.impute.fixedValue</TD><TD style="text-align: right;">0.342</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.355</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.impute.mle</TD><TD style="text-align: right;">0.369</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.373</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.impute.pa</TD><TD style="text-align: right;">0.095</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.108</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.impute.pa2</TD><TD style="text-align: right;">0.310</TD><TD style="text-align: right;">0.007</TD><TD style="text-align: right;">0.318</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.impute.slsa</TD><TD style="text-align: right;">0.481</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.490</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.mvImage</TD><TD style="text-align: right;">0.128</TD><TD style="text-align: right;">0.007</TD><TD style="text-align: right;">0.137</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.normalizeD</TD><TD style="text-align: right;">0.347</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.352</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapper.pca</TD><TD style="text-align: right;">0.122</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.127</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapperCalibrationPlot</TD><TD style="text-align: right;">0.166</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.167</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapperClassic1wayAnova</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>wrapperRunClustering</TD><TD style="text-align: right;">2.470</TD><TD style="text-align: right;">0.090</TD><TD style="text-align: right;">2.566</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>write.excel</TD><TD style="text-align: right;">0.761</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.778</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>writeMSnsetToCSV</TD><TD style="text-align: right;">0.299</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.306</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>writeMSnsetToExcel</TD><TD style="text-align: right;">0.910</TD><TD style="text-align: right;">0.033</TD><TD style="text-align: right;">0.944</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

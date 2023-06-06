@@ -1,0 +1,10 @@
+Package: zellkonverter
+Version: 1.11.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:zellkonverter.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings zellkonverter_1.11.1.tar.gz
+StartedAt: 2023-06-06 09:35:50 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 09:49:10 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 800.6 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: zellkonverter.Rcheck
+Warnings: NA

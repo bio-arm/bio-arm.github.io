@@ -1,0 +1,106 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:eiR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings eiR_1.41.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/eiR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘eiR/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘eiR’ version ‘1.41.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘eiR’ can be installed ... OK
+* used C++ compiler: ‘g++ (GCC) 10.3.1’
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Packages listed in more than one of Depends, Imports, Suggests, Enhances:
+  ‘methods’ ‘ChemmineR’
+A package should be listed in only one of these fields.
+* checking top-level files ... NOTE
+File
+  LICENSE
+is not mentioned in the DESCRIPTION file.
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... WARNING
+Invalid citation information in ‘inst/CITATION’:
+  Error in (function (bibtype, textVersion = NULL, header = NULL, footer = NULL,     key = NULL, ..., other = list(), mheader = NULL, mfooter = NULL) {    BibTeX_names <- names(BibLaTeX_entry_field_db)    args <- c(list(...), other)    if (!length(args))         return(structure(list(), class = "bibentry"))    if (any(vapply(names(args), .is_not_nonempty_text, FALSE)))         stop("all fields have to be named")    args <- c(list(bibtype = bibtype, textVersion = textVersion,         header = header, footer = footer, key = key), list(...))    args <- lapply(args, .listify)    other <- lapply(other, .listify)    max_length <- max(vapply(c(args, other), length, 0L))    args_length <- vapply(args, length, 0L)    if (!all(args_length_ok <- args_length %in% c(1L, max_length)))         warning(gettextf("Not all arguments are of the same length, %s: %s",             "the following need to be recycled", paste(names(args)[!args_length_ok],                 collapse = ", ")), domain = NA)    args <- lapply(args, function(x) rep(x, length.out = max_length))    other_length <- vapply(other, length, 0L)    if (!all(other_length_ok <- other_length %in% c(1L, max_length)))         warning(gettextf("Not all arguments are of the same length, %s: %s",             "the following need to be recycled", paste(names(other)[!other_length_ok],                 collapse = ", ")), domain = NA)    other <- lapply(other, function(x) rep(x, length.out = max_length))    bibentry1 <- function(bibtype, textVersion, header = NULL,         footer = NULL, key = NULL, ..., other = list()) {        bibtype <- as.character(bibtype)        stopifnot(length(bibtype) == 1L)        pos <- match(tolower(bibtype), tolower(BibTeX_names))        if (is.na(pos))             stop(gettextf("%s has to be one of %s", sQuote("bibtype"),                 paste(BibTeX_names, collapse = ", ")), domain = NA)        bibtype <- BibTeX_names[pos]        rval <- c(list(...), other)        rval <- rval[!vapply(rval, .is_not_nonempty_text, FALSE)]        fields <- tolower(names(rval))        names(rval) <- fields        attr(rval, "bibtype") <- bibtype        .BibEntryCheckBibEntry1(rval)        pos <- fields %in% .BibEntryNameList        if (any(pos)) {            for (i in which(pos)) if (!inherits(rval[[i]], "person"))                 rval[[i]] <- ArrangeAuthors(rval[[i]])        }        pos <- fields %in% c("dateobj") | pos        if (any(!pos)) {            for (i in which(!pos)) rval[[i]] <- as.character(rval[[i]])        }        attr(rval, "key") <- if (is.null(key))             NULL        else as.character(key)        if (is.null(rval[["dateobj"]])) {            tdate <- try(ProcessDates(rval), TRUE)            if (!inherits(tdate, "try-error"))                 attr(rval, "dateobj") <- tdate        }        else {            attr(rval, "dateobj") <- rval[["dateobj"]]            rval[["dateobj"]] <- NULL        }        if (!is.null(textVersion))             attr(rval, "textVersion") <- as.character(textVersion)        if (!.is_not_nonempty_text(header))             attr(rval, "header") <- paste(header, collapse = "\n")        if (!.is_not_nonempty_text(footer))             attr(rval, "footer") <- paste(footer, collapse = "\n")        return(rval)    }    rval <- lapply(seq_along(args$bibtype), function(i) do.call("bibentry1",         c(lapply(args, "[[", i), list(other = lapply(other, "[[",             i)))))    if (!.is_not_nonempty_text(mheader))         attr(rval, "mheader") <- paste(mheader, collapse = "\n")    if (!.is_not_nonempty_text(mfooter))         attr(rval, "mfooter") <- paste(mfooter, collapse = "\n")    class(rval) <- c("BibEntry", "bibentry")    rval})(year = "2023", key = "_2023"): argument "bibtype" is missing, with no default
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Namespaces in Imports field not imported from:
+  ‘BiocGenerics’ ‘RCurl’ ‘RUnit’
+  All declared Imports should be used.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+insertEmbeddedDescriptors: no visible global function definition for
+  ‘postgresqlWriteTable’
+insertEmbeddedDescriptorsByCompoundId: no visible global function
+  definition for ‘postgresqlWriteTable’
+insertGroupMembers: no visible global function definition for
+  ‘postgresqlWriteTable’
+Undefined global functions or variables:
+  postgresqlWriteTable
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... NOTE
+Note: information on .o files is not available
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘runTests.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘eiR.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 WARNING, 5 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/eiR.Rcheck/00check.log’
+for details.
+
+

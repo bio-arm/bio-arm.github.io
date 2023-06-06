@@ -1,0 +1,10 @@
+Package: GRridge
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GRridge.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GRridge_1.25.0.tar.gz
+StartedAt: 2023-06-05 23:44:38 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 23:47:04 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 146.2 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: GRridge.Rcheck
+Warnings: 2

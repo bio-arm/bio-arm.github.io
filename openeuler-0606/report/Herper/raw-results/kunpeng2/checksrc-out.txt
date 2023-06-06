@@ -1,0 +1,173 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Herper.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Herper_1.11.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/Herper.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘Herper/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘Herper’ version ‘1.11.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘Herper’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘Herper-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: list_CondaEnv
+> ### Title: List Conda environments.
+> ### Aliases: list_CondaEnv
+> 
+> ### ** Examples
+> 
+> condaPaths <- install_CondaTools("salmon", "herper_env")
+* No Miniconda found at: /home/biocbuild/.local/share/r-miniconda
+* Installing Miniconda along with core packages -- please wait a moment ...
+* Downloading 'https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh' ...
+trying URL 'https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh'
+Content type 'application/x-sh' length 52786938 bytes (50.3 MB)
+==================================================
+downloaded 50.3 MB
+
+PREFIX=/home/biocbuild/.local/share/r-miniconda
+Unpacking payload ...
+
+  0%|          | 0/49 [00:00<?, ?it/s]
+Extracting : jsonpointer-2.1-pyhd3eb1b0_0.conda:   0%|          | 0/49 [00:00<?, ?it/s]
+Extracting : jsonpointer-2.1-pyhd3eb1b0_0.conda:   2%|▏         | 1/49 [00:00<00:06,  7.37it/s]
+Extracting : pycosat-0.6.4-py310h998d150_0.conda:   2%|▏         | 1/49 [00:00<00:06,  7.37it/s]
+Extracting : ncurses-6.4-h419075a_0.conda:   4%|▍         | 2/49 [00:00<00:06,  7.37it/s]       
+Extracting : ncurses-6.4-h419075a_0.conda:   6%|▌         | 3/49 [00:00<00:16,  2.87it/s]
+Extracting : brotlipy-0.7.0-py310h2f4d8fa_1002.conda:   6%|▌         | 3/49 [00:00<00:16,  2.87it/s]
+Extracting : requests-2.28.1-py310hd43f75c_1.conda:   8%|▊         | 4/49 [00:00<00:15,  2.87it/s]  
+Extracting : _libgcc_mutex-0.1-main.conda:  10%|█         | 5/49 [00:00<00:15,  2.87it/s]         
+Extracting : conda-package-streaming-0.7.0-py310hd43f75c_0.conda:  12%|█▏        | 6/49 [00:00<00:14,  2.87it/s]
+Extracting : libstdcxx-ng-11.2.0-h1234567_1.conda:  14%|█▍        | 7/49 [00:00<00:14,  2.87it/s]               
+Extracting : six-1.16.0-pyhd3eb1b0_1.conda:  16%|█▋        | 8/49 [00:00<00:14,  2.87it/s]       
+Extracting : tzdata-2023c-h04d1e81_0.conda:  18%|█▊        | 9/49 [00:00<00:13,  2.87it/s]
+Extracting : pluggy-1.0.0-py310hd43f75c_1.conda:  20%|██        | 10/49 [00:00<00:13,  2.87it/s]
+Extracting : _openmp_mutex-5.1-51_gnu.conda:  22%|██▏       | 11/49 [00:00<00:13,  2.87it/s]    
+Extracting : cffi-1.15.1-py310h998d150_3.conda:  24%|██▍       | 12/49 [00:00<00:12,  2.87it/s]
+Extracting : conda-content-trust-0.1.3-py310hd43f75c_0.conda:  27%|██▋       | 13/49 [00:00<00:12,  2.87it/s]
+Extracting : ruamel.yaml.clib-0.2.6-py310h998d150_1.conda:  29%|██▊       | 14/49 [00:00<00:12,  2.87it/s]   
+Extracting : xz-5.2.10-h998d150_1.conda:  31%|███       | 15/49 [00:00<00:11,  2.87it/s]                  
+Extracting : libuuid-1.41.5-h998d150_0.conda:  33%|███▎      | 16/49 [00:00<00:11,  2.87it/s]
+Extracting : idna-3.4-py310hd43f75c_0.conda:  35%|███▍      | 17/49 [00:00<00:11,  2.87it/s] 
+Extracting : setuptools-65.6.3-py310hd43f75c_0.conda:  37%|███▋      | 18/49 [00:00<00:10,  2.87it/s]
+Extracting : ruamel.yaml-0.17.21-py310h998d150_0.conda:  39%|███▉      | 19/49 [00:00<00:10,  2.87it/s]
+Extracting : packaging-23.0-py310hd43f75c_0.conda:  41%|████      | 20/49 [00:00<00:10,  2.87it/s]     
+Extracting : toolz-0.12.0-py310hd43f75c_0.conda:  43%|████▎     | 21/49 [00:00<00:09,  2.87it/s]  
+Extracting : charset-normalizer-2.0.4-pyhd3eb1b0_0.conda:  45%|████▍     | 22/49 [00:00<00:09,  2.87it/s]
+Extracting : openssl-1.1.1t-h2f4d8fa_0.conda:  47%|████▋     | 23/49 [00:00<00:09,  2.87it/s]            
+Extracting : libgcc-ng-11.2.0-h1234567_1.conda:  49%|████▉     | 24/49 [00:00<00:08,  2.87it/s]
+Extracting : conda-package-handling-2.0.2-py310hd43f75c_0.conda:  51%|█████     | 25/49 [00:00<00:08,  2.87it/s]
+Extracting : conda-23.3.1-py310hd43f75c_0.conda:  53%|█████▎    | 26/49 [00:00<00:08,  2.87it/s]                
+Extracting : certifi-2022.12.7-py310hd43f75c_0.conda:  55%|█████▌    | 27/49 [00:00<00:07,  2.87it/s]
+Extracting : pip-23.0.1-py310hd43f75c_0.conda:  57%|█████▋    | 28/49 [00:00<00:07,  2.87it/s]       
+Extracting : zlib-1.2.13-h998d150_0.conda:  59%|█████▉    | 29/49 [00:00<00:06,  2.87it/s]    
+Extracting : libffi-3.4.2-h419075a_6.conda:  61%|██████    | 30/49 [00:00<00:06,  2.87it/s]
+Extracting : tk-8.6.12-h241ca14_0.conda:  63%|██████▎   | 31/49 [00:00<00:06,  2.87it/s]   
+Extracting : ld_impl_linux-aarch64-2.38-h8131f2d_1.conda:  65%|██████▌   | 32/49 [00:00<00:05,  2.87it/s]
+Extracting : bzip2-1.0.8-hfd63f10_2.conda:  67%|██████▋   | 33/49 [00:00<00:05,  2.87it/s]               
+Extracting : zstandard-0.19.0-py310h998d150_0.conda:  69%|██████▉   | 34/49 [00:00<00:05,  2.87it/s]
+Extracting : python-3.10.10-h89984f6_2.conda:  71%|███████▏  | 35/49 [00:01<00:04,  2.87it/s]       
+Extracting : python-3.10.10-h89984f6_2.conda:  73%|███████▎  | 36/49 [00:01<00:00, 37.94it/s]
+Extracting : libgomp-11.2.0-h1234567_1.conda:  73%|███████▎  | 36/49 [00:01<00:00, 37.94it/s]
+Extracting : cryptography-39.0.1-py310h3d58568_0.conda:  76%|███████▌  | 37/49 [00:01<00:00, 37.94it/s]
+Extracting : boltons-23.0.0-py310hd43f75c_0.conda:  78%|███████▊  | 38/49 [00:01<00:00, 37.94it/s]     
+Extracting : wheel-0.38.4-py310hd43f75c_0.conda:  80%|███████▉  | 39/49 [00:01<00:00, 37.94it/s]  
+Extracting : readline-8.2-h998d150_0.conda:  82%|████████▏ | 40/49 [00:01<00:00, 37.94it/s]     
+Extracting : urllib3-1.26.15-py310hd43f75c_0.conda:  84%|████████▎ | 41/49 [00:01<00:00, 37.94it/s]
+Extracting : jsonpatch-1.32-pyhd3eb1b0_0.conda:  86%|████████▌ | 42/49 [00:01<00:00, 37.94it/s]    
+Extracting : pyopenssl-23.0.0-py310hd43f75c_0.conda:  88%|████████▊ | 43/49 [00:01<00:00, 37.94it/s]
+Extracting : pysocks-1.7.1-py310hd43f75c_0.conda:  90%|████████▉ | 44/49 [00:01<00:00, 37.94it/s]   
+Extracting : tqdm-4.65.0-py310ha5ee653_0.conda:  92%|█████████▏| 45/49 [00:01<00:00, 37.94it/s]  
+Extracting : sqlite-3.41.1-h998d150_0.conda:  94%|█████████▍| 46/49 [00:01<00:00, 37.94it/s]   
+Extracting : ca-certificates-2023.01.10-hd43f75c_0.conda:  96%|█████████▌| 47/49 [00:01<00:00, 37.94it/s]
+Extracting : pycparser-2.21-pyhd3eb1b0_0.conda:  98%|█████████▊| 48/49 [00:01<00:00, 37.94it/s]          
+                                                                                               
+Installing base environment...
+
+
+Downloading and Extracting Packages
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: ...working... done
+Executing transaction: ...working... done
+installation finished.
+* Making sure Miniconda is up to date ...
+* Miniconda has been successfully installed at /home/biocbuild/.local/share/r-miniconda
+* The environment 'herper_env' does not currently exist.
+* Creating the environment 'herper_env' and installing tools ...
+Error: one or more Python packages failed to install [error code 1]
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘QuickStart.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/Herper.Rcheck/00check.log’
+for details.
+

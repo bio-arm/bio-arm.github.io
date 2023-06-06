@@ -1,0 +1,10 @@
+Package: agilp
+Version: 3.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:agilp.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings agilp_3.33.0.tar.gz
+StartedAt: 2023-06-05 16:55:57 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 16:56:15 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 18.0 seconds
+RetCode: 0
+Status: OK
+CheckDir: agilp.Rcheck
+Warnings: 0

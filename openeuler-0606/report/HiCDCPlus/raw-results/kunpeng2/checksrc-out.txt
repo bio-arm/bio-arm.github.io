@@ -1,0 +1,142 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HiCDCPlus.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HiCDCPlus_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/HiCDCPlus.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘HiCDCPlus/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘HiCDCPlus’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘HiCDCPlus’ can be installed ... OK
+* used C++ compiler: ‘g++ (GCC) 10.3.1’
+* checking C++ specification ... NOTE
+  Specified C++11: please drop specification unless essential
+* checking installed package size ... NOTE
+  installed size is  5.9Mb
+  sub-directories of 1Mb or more:
+    extdata   3.3Mb
+    libs      2.0Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... NOTE
+Note: information on .o files is not available
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                              user system elapsed
+construct_features           9.673  0.751  10.443
+HTClist2gi_list             10.096  0.236  10.351
+construct_features_chr       7.388  0.815   9.768
+HiCDCPlus_parallel           0.547  0.012  17.402
+construct_features_parallel  0.011  0.009  26.413
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘runTests.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘HiCDCPlus.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘HiCDCPlus.Rmd’ using rmarkdown
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+WARN [2023-06-06T00:10:59,155]  [Globals.java:138] [main]  Development mode is enabled
+Using 1 CPU thread(s) for primary task
+Using 10 CPU thread(s) for secondary task
+Not including fragment map
+Start preprocess
+Writing header
+Writing body
+java.lang.NumberFormatException: For input string: "score"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+	at java.base/java.lang.Float.parseFloat(Float.java:476)
+	at juicebox.tools.utils.original.mnditerator.MNDLineParser.updatePairScoreIfNeeded(MNDLineParser.java:88)
+	at juicebox.tools.utils.original.mnditerator.MNDFileParser.parseShortFormat(MNDFileParser.java:105)
+	at juicebox.tools.utils.original.mnditerator.MNDFileParser.parse(MNDFileParser.java:87)
+	at juicebox.tools.utils.original.mnditerator.GenericPairIterator.advance(GenericPairIterator.java:56)
+	at juicebox.tools.utils.original.mnditerator.AsciiPairIterator.<init>(AsciiPairIterator.java:55)
+	at juicebox.tools.utils.original.mnditerator.PairIterator.getIterator(PairIterator.java:54)
+	at juicebox.tools.utils.original.Preprocessor.computeWholeGenomeMatrix(Preprocessor.java:583)
+	at juicebox.tools.utils.original.Preprocessor.writeBody(Preprocessor.java:674)
+	at juicebox.tools.utils.original.Preprocessor.preprocess(Preprocessor.java:436)
+	at juicebox.tools.clt.old.PreProcessing.run(PreProcessing.java:165)
+	at juicebox.tools.HiCTools.main(HiCTools.java:94)
+Warning: stack imbalance in '$', 45 then 48
+Error: processing vignette 'HiCDCPlus.Rmd' failed with diagnostics:
+cannot get ALTVEC DATAPTR during GC
+--- failed re-building ‘HiCDCPlus.Rmd’
+
+SUMMARY: processing the following file failed:
+
+ *** caught segfault ***
+address 0x800010, cause 'memory not mapped'
+Warning: stack imbalance in 'lazyLoadDBfetch', 10 then 18
+Error in paste(.pretty_format(fails), collapse = "\n") : bad value
+Calls: <Anonymous> -> message -> paste -> .pretty_format
+Error: bad value
+Error: segfault from C stack overflow
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR, 3 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/HiCDCPlus.Rcheck/00check.log’
+for details.
+

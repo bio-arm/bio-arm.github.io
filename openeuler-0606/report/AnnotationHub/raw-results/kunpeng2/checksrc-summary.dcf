@@ -1,0 +1,10 @@
+Package: AnnotationHub
+Version: 3.9.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AnnotationHub.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AnnotationHub_3.9.1.tar.gz
+StartedAt: 2023-06-05 17:10:19 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 17:21:46 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 687.1 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: AnnotationHub.Rcheck
+Warnings: 2

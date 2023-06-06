@@ -1,0 +1,130 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DECIPHER.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DECIPHER_2.29.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/DECIPHER.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘DECIPHER/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘DECIPHER’ version ‘2.29.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘DECIPHER’ can be installed ... OK
+* used C compiler: ‘gcc (GCC) 10.3.1’
+* checking installed package size ... NOTE
+  installed size is 13.3Mb
+  sub-directories of 1Mb or more:
+    R         1.3Mb
+    data      7.5Mb
+    extdata   2.3Mb
+    libs      1.8Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+DesignSignatures: no visible binding for global variable ‘deltaHrules’
+FindGenes: no visible binding for global variable ‘deltaHrulesRNA’
+FindNonCoding: no visible binding for global variable ‘deltaHrulesRNA’
+LearnNonCoding: no visible binding for global variable ‘deltaHrulesRNA’
+PredictDBN: no visible binding for global variable ‘deltaGrulesRNA’
+TreeLine: multiple local function definitions for ‘.minimize’ with
+  different formal arguments
+Undefined global functions or variables:
+  deltaGrulesRNA deltaHrules deltaHrulesRNA
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... NOTE
+Note: information on .o files is not available
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                      user system elapsed
+MapCharacters      109.332  0.220 109.773
+FindNonCoding      100.025  0.615 100.836
+LearnNonCoding      75.676  1.239  77.023
+ExtractGenes        51.759  0.228  52.061
+WriteGenes          49.997  0.088  50.181
+Genes-class         49.793  0.088  49.957
+FindGenes           47.955  0.052  48.090
+BrowseSeqs          28.699  0.212  28.962
+AlignSeqs           27.097  0.395  27.541
+DetectRepeats       22.749  0.096  22.878
+CorrectFrameshifts  20.559  0.099  20.694
+StaggerAlignment    17.755  0.095  17.884
+LearnTaxa           16.171  0.207  16.405
+AlignTranslation    14.603  0.100  14.732
+Taxa-class          13.079  0.044  13.150
+IdTaxa              11.627  0.043  11.688
+TreeLine            10.815  0.044  10.883
+Clusterize           9.129  0.068   9.213
+ScoreAlignment       6.944  0.044   7.001
+TileSeqs             5.996  0.008   6.018
+Array2Matrix         5.342  0.052   5.403
+DesignArray          5.221  0.008   5.237
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘ArtOfAlignmentInR.Rnw’... OK
+  ‘ClassifySequences.Rnw’... OK
+  ‘ClusteringSequences.Rnw’... OK
+  ‘DECIPHERing.Rnw’... OK
+  ‘DesignMicroarray.Rnw’... OK
+  ‘DesignPrimers.Rnw’... OK
+  ‘DesignProbes.Rnw’... OK
+  ‘DesignSignatures.Rnw’... OK
+  ‘FindChimeras.Rnw’... OK
+  ‘FindingGenes.Rnw’... OK
+  ‘FindingNonCodingRNAs.Rnw’... OK
+  ‘GrowingTrees.Rnw’... OK
+  ‘RepeatRepeat.Rnw’... OK
+ OK
+* checking re-building of vignette outputs ...

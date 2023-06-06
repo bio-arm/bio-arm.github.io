@@ -1,0 +1,10 @@
+Package: synergyfinder
+Version: 3.9.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:synergyfinder.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings synergyfinder_3.9.2.tar.gz
+StartedAt: 2023-06-06 08:17:31 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 08:21:31 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 240.1 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: synergyfinder.Rcheck
+Warnings: 1

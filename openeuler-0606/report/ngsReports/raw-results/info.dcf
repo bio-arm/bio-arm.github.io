@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/ngsReports
+git_branch: devel
+git_last_commit: 86b5edd
+git_last_commit_date: 2023-06-04 16:18:33 -0000 (Sun, 04 Jun 2023)
+Package: ngsReports
+Version: 2.3.4
+Maintainer: Stevie Pederson
+MaintainerEmail: stephen.pederson.au at gmail.com

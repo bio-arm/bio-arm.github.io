@@ -1,0 +1,38 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data rawrr
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘rawrr/DESCRIPTION’ ... OK
+* preparing ‘rawrr’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+      -----------------------------------
+* installing *source* package ‘rawrr’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘rawrr’:
+ .onLoad failed in loadNamespace() for 'rawrr', details:
+  call: fun(libname, pkgname)
+  error: The cross platform, open source .NET framework (mono) is not available.
+Consider to install 'apt-get install mono-runtime' on Linux
+or download/install from https://www.mono-project.com/.
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/tmp/RtmpXr1AHL/Rinstbb2cf75dada9b/rawrr’
+      -----------------------------------
+ERROR: package installation failed

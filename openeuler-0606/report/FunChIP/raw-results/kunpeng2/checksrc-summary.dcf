@@ -1,0 +1,10 @@
+Package: FunChIP
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:FunChIP.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings FunChIP_1.27.0.tar.gz
+StartedAt: 2023-06-05 22:38:57 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 22:43:19 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 262.4 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: FunChIP.Rcheck
+Warnings: 1

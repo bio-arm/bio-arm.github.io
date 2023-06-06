@@ -1,0 +1,8 @@
+Package: GDCRNATools
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL GDCRNATools
+StartedAt: 2023-06-05 08:57:14 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:58:36 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 82.0 seconds
+RetCode: 0
+Status: OK

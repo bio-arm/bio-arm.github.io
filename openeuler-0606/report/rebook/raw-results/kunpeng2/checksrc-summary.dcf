@@ -1,0 +1,10 @@
+Package: rebook
+Version: 1.11.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:rebook.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings rebook_1.11.1.tar.gz
+StartedAt: 2023-06-06 05:03:30 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 05:05:54 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 144.2 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: rebook.Rcheck
+Warnings: 2

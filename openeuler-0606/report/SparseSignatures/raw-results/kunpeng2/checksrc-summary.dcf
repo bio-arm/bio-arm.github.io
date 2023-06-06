@@ -1,0 +1,10 @@
+Package: SparseSignatures
+Version: 2.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:SparseSignatures.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings SparseSignatures_2.11.0.tar.gz
+StartedAt: 2023-06-06 07:24:10 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 07:41:06 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 1015.4 seconds
+RetCode: 0
+Status: OK
+CheckDir: SparseSignatures.Rcheck
+Warnings: 0

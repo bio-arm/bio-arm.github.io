@@ -1,0 +1,10 @@
+Package: ATACseqQC
+Version: 1.25.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ATACseqQC.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ATACseqQC_1.25.0.tar.gz
+StartedAt: 2023-06-05 17:26:27 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 17:41:28 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 901.3 seconds
+RetCode: 0
+Status: OK
+CheckDir: ATACseqQC.Rcheck
+Warnings: 0

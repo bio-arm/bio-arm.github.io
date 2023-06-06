@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/EBSeq
+git_branch: devel
+git_last_commit: 0301428
+git_last_commit_date: 2023-06-05 03:15:36 -0000 (Mon, 05 Jun 2023)
+Package: EBSeq
+Version: 1.41.1
+Maintainer: Ning Leng <lengning1@gmail.com> Xiuyu Ma
+MaintainerEmail: watsonforfun at gmail.com

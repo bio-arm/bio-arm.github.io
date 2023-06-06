@@ -1,0 +1,222 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HDF5Array.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HDF5Array_1.29.3.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/HDF5Array.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘HDF5Array/DESCRIPTION’ ... OK
+* this is package ‘HDF5Array’ version ‘1.29.3’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘HDF5Array’ can be installed ... OK
+* used C compiler: ‘gcc (GCC) 10.3.1’
+* checking installed package size ... NOTE
+  installed size is 26.1Mb
+  sub-directories of 1Mb or more:
+    extdata   7.7Mb
+    libs     17.4Mb
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... NOTE
+Unexported object imported by a ':::' call: ‘rhdf5:::h5checktypeOrOpenLocS3’
+  See the note in ?`:::` about the use of this operator.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... NOTE
+GNU make is a SystemRequirements.
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... WARNING
+Note: information on .o files is not available
+File ‘/home/biocbuild/R/R-4.3.0/site-library/HDF5Array/libs/HDF5Array.so’:
+  Found ‘abort’, possibly from ‘abort’ (C)
+  Found ‘exit’, possibly from ‘exit’ (C)
+  Found ‘printf’, possibly from ‘printf’ (C)
+  Found ‘rand_r’, possibly from ‘rand_r’ (C)
+  Found ‘sprintf’, possibly from ‘sprintf’ (C)
+  Found ‘stderr’, possibly from ‘stderr’ (C)
+  Found ‘stdout’, possibly from ‘stdout’ (C)
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs nor [v]sprintf. The detected symbols are linked into
+the code but might come from libraries and not actually be called.
+
+See ‘Writing portable packages’ in the ‘Writing R Extensions’ manual.
+* checking examples ... ERROR
+Running examples in ‘HDF5Array-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: h5mread
+> ### Title: An alternative to 'rhdf5::h5read'
+> ### Aliases: get_h5mread_returned_type h5mread
+> ### Keywords: utilities
+> 
+> ### ** Examples
+> 
+> ## ---------------------------------------------------------------------
+> ## BASIC USAGE
+> ## ---------------------------------------------------------------------
+> m0 <- matrix((runif(600) - 0.5) * 10, ncol=12)
+> M0 <- writeHDF5Array(m0, name="M0")
+> 
+> m <- h5mread(path(M0), "M0")
+> stopifnot(identical(m0, m))
+> 
+> m <- h5mread(path(M0), "M0", starts=list(NULL, c(3, 12:8)))
+> stopifnot(identical(m0[ , c(3, 12:8)], m))
+> 
+> m <- h5mread(path(M0), "M0", starts=list(integer(0), c(3, 12:8)))
+> stopifnot(identical(m0[NULL , c(3, 12:8)], m))
+> 
+> m <- h5mread(path(M0), "M0", starts=list(1:5, NULL), as.integer=TRUE)
+> storage.mode(m0) <- "integer"
+> stopifnot(identical(m0[1:5, ], m))
+> 
+> a0 <- array(1:350, c(10, 5, 7))
+> A0 <- writeHDF5Array(a0, filepath=path(M0), name="A0")
+> h5ls(path(A0))
+  group name       otype  dclass        dim
+0     /   A0 H5I_DATASET INTEGER 10 x 5 x 7
+1     /   M0 H5I_DATASET   FLOAT    50 x 12
+> 
+> a <- h5mread(path(A0), "A0", starts=list(c(2, 7), NULL, 6),
++                              counts=list(c(4, 2), NULL, NULL))
+> stopifnot(identical(a0[c(2:5, 7:8), , 6, drop=FALSE], a))
+> 
+> ## Load the data in a sparse array representation:
+> 
+> m1 <- matrix(c(5:-2, rep.int(c(0L, 99L), 11)), ncol=6)
+> M1 <- writeHDF5Array(m1, name="M1", chunkdim=c(3L, 2L))
+> 
+> index <- list(5:3, NULL)
+> m <- h5mread(path(M1), "M1", starts=index)
+> sas <- h5mread(path(M1), "M1", starts=index, as.sparse=TRUE)
+> class(sas)  # SparseArraySeed object (see ?SparseArraySeed)
+[1] "SparseArraySeed"
+attr(,"package")
+[1] "DelayedArray"
+> as(sas, "dgCMatrix")
+3 x 6 sparse Matrix of class "dgCMatrix"
+                     
+[1,] 1 99  . 99  . 99
+[2,] 2  . 99  . 99  .
+[3,] 3 -2  . 99  . 99
+> stopifnot(identical(m, sparse2dense(sas)))
+> 
+> ## ---------------------------------------------------------------------
+> ## PERFORMANCE
+> ## ---------------------------------------------------------------------
+> library(ExperimentHub)
+Loading required package: AnnotationHub
+Loading required package: BiocFileCache
+Loading required package: dbplyr
+> hub <- ExperimentHub()
+> 
+> ## With the "sparse" TENxBrainData dataset
+> ## ---------------------------------------
+> fname0 <- hub[["EH1039"]]
+see ?TENxBrainData and browseVignettes('TENxBrainData') for documentation
+loading from cache
+> h5ls(fname0)  # all datasets are 1D datasets
+  group       name       otype  dclass        dim
+0     /       mm10   H5I_GROUP                   
+1 /mm10   barcodes H5I_DATASET  STRING    1306127
+2 /mm10       data H5I_DATASET INTEGER 2624828308
+3 /mm10 gene_names H5I_DATASET  STRING      27998
+4 /mm10      genes H5I_DATASET  STRING      27998
+5 /mm10    indices H5I_DATASET INTEGER 2624828308
+6 /mm10     indptr H5I_DATASET INTEGER    1306128
+7 /mm10      shape H5I_DATASET INTEGER          2
+> 
+> index <- list(77 * sample(34088679, 5000, replace=TRUE))
+> ## h5mread() is about 4x faster than h5read():
+> system.time(a <- h5mread(fname0, "mm10/data", index))
+   user  system elapsed 
+  1.696   0.251   4.366 
+> system.time(b <- h5read(fname0, "mm10/data", index=index))
+   user  system elapsed 
+ 16.932   0.248  17.210 
+> stopifnot(identical(a, b))
+> 
+> index <- list(sample(1306127, 7500, replace=TRUE))
+> ## h5mread() is about 20x faster than h5read():
+> system.time(a <- h5mread(fname0, "mm10/barcodes", index))
+   user  system elapsed 
+  0.142   0.000   0.142 
+> system.time(b <- h5read(fname0, "mm10/barcodes", index=index))
+   user  system elapsed 
+  6.349   0.168   6.530 
+> stopifnot(identical(a, b))
+> 
+> ## With the "dense" TENxBrainData dataset
+> ## --------------------------------------
+> fname1 <- hub[["EH1040"]]
+see ?TENxBrainData and browseVignettes('TENxBrainData') for documentation
+loading from cache
+> h5ls(fname1)  # "counts" is a 2D dataset
+Error in H5Fopen(file, flags = flags, fapl = fapl, native = native) : 
+  HDF5. File accessibility. Unable to open file.
+Calls: h5ls -> <Anonymous> -> h5checktypeOrOpenLoc -> H5Fopen
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘run_unitTests.R’
+ OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR, 1 WARNING, 4 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/HDF5Array.Rcheck/00check.log’
+for details.
+

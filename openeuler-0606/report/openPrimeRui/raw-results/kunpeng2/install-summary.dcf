@@ -1,0 +1,8 @@
+Package: openPrimeRui
+Version: 1.23.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL openPrimeRui
+StartedAt: 2023-06-05 08:55:38 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:55:57 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 19.2 seconds
+RetCode: 0
+Status: OK

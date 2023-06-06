@@ -1,0 +1,14 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL TileDBArray
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+ERROR: dependency ‘tiledb’ is not available for package ‘TileDBArray’
+* removing ‘/home/biocbuild/R/R-4.3.0/site-library/TileDBArray’

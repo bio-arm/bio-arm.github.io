@@ -1,0 +1,8 @@
+Package: TileDBArray
+Version: 1.11.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL TileDBArray
+StartedAt: 2023-06-05 08:16:19 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:16:24 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 5.0 seconds
+RetCode: 1
+Status: ERROR

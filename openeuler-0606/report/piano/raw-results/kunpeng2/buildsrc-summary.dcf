@@ -1,0 +1,10 @@
+Package: piano
+Version: 2.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data piano
+StartedAt: 2023-06-05 13:52:16 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 13:53:04 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 48.1 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

@@ -1,0 +1,110 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:sitadela.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings sitadela_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/sitadela.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘sitadela/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘sitadela’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘sitadela’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... NOTE
+sitadela database found at /home/biocbuild/.local/share/R/sitadela directory
+
+It looks like this package (or a package it requires) has a startup
+message which cannot be suppressed: see ?packageStartupMessage.
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... ERROR
+Running examples in ‘sitadela-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: getAnnotation
+> ### Title: Annotation downloader
+> ### Aliases: getAnnotation
+> 
+> ### ** Examples
+> 
+> mm10Genes <- getAnnotation("mm10","gene")
+Using Ensembl host https://www.ensembl.org
+Error in textConnection(text, encoding = "UTF-8") : 
+  invalid 'text' argument
+Calls: getAnnotation ... .getFilters -> .getAttrFilt -> read.table -> textConnection
+Execution halted
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘runTests.R’
+ ERROR
+Running the tests in ‘tests/runTests.R’ failed.
+Last 13 lines of output:
+  1 Test Suite : 
+  sitadela RUnit Tests - 8 test functions, 0 errors, 1 failure
+  FAILURE in test_sitadela_ensembl_often: Error in checkTrue(is.null(f2)) : Test not TRUE
+  
+  
+  Test files with failing tests
+  
+     test_sitadela.R 
+       test_sitadela_ensembl_often 
+  
+  
+  Error in BiocGenerics:::testPackage("sitadela") : 
+    unit tests failed for package sitadela
+  In addition: There were 17 warnings (use warnings() to see them)
+  Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘sitadela.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ...

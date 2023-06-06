@@ -1,0 +1,10 @@
+Package: mygene
+Version: 1.37.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:mygene.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings mygene_1.37.0.tar.gz
+StartedAt: 2023-06-06 02:55:06 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 03:01:10 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 364.7 seconds
+RetCode: 0
+Status: OK
+CheckDir: mygene.Rcheck
+Warnings: 0

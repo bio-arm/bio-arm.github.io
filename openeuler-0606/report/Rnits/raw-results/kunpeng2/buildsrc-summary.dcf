@@ -1,0 +1,10 @@
+Package: Rnits
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rnits
+StartedAt: 2023-06-05 14:31:00 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 14:32:56 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 116.2 seconds
+RetCode: 0
+Status: OK
+PackageFile: Rnits_1.35.0.tar.gz
+PackageFileSize: 640 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

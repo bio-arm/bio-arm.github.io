@@ -1,0 +1,10 @@
+Package: DAPAR
+Version: 1.33.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DAPAR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DAPAR_1.33.0.tar.gz
+StartedAt: 2023-06-05 20:45:48 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 20:52:27 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 398.6 seconds
+RetCode: 0
+Status: OK
+CheckDir: DAPAR.Rcheck
+Warnings: 0

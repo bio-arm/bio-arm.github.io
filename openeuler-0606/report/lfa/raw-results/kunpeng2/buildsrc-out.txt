@@ -1,0 +1,39 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data lfa
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘lfa/DESCRIPTION’ ... OK
+* preparing ‘lfa’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘lfa.Rnw’ using knitr
+Error: processing vignette 'lfa.Rnw' failed with diagnostics:
+Running 'texi2dvi' on 'lfa.tex' failed.
+LaTeX errors:
+! LaTeX Error: File `gensymb.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+! Emergency stop.
+<read *> 
+         
+l.59 \usepackage
+                {times}^^M
+!  ==> Fatal error occurred, no output PDF file produced!
+--- failed re-building ‘lfa.Rnw’
+
+SUMMARY: processing the following file failed:
+  ‘lfa.Rnw’
+
+Error: Vignette re-building failed.
+Execution halted

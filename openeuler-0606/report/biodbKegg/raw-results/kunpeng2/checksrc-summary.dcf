@@ -1,0 +1,10 @@
+Package: biodbKegg
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:biodbKegg.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings biodbKegg_1.7.0.tar.gz
+StartedAt: 2023-06-05 18:16:24 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 18:34:05 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 1061.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: biodbKegg.Rcheck
+Warnings: NA

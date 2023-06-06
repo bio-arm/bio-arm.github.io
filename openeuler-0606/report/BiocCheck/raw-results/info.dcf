@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/BiocCheck
+git_branch: devel
+git_last_commit: da64011
+git_last_commit_date: 2023-06-01 20:16:53 -0000 (Thu, 01 Jun 2023)
+Package: BiocCheck
+Version: 1.37.2
+Maintainer: Marcel Ramos
+MaintainerEmail: marcel.ramos at roswellpark.org

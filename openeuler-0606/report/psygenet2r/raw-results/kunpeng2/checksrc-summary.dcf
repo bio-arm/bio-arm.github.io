@@ -1,0 +1,10 @@
+Package: psygenet2r
+Version: 1.33.4
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:psygenet2r.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings psygenet2r_1.33.4.tar.gz
+StartedAt: 2023-06-06 04:32:34 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 04:37:55 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 320.4 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: psygenet2r.Rcheck
+Warnings: NA

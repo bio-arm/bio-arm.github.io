@@ -1,0 +1,10 @@
+Package: ORFik
+Version: 1.21.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ORFik
+StartedAt: 2023-06-05 13:38:29 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 13:51:04 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 755.2 seconds
+RetCode: 0
+Status: OK
+PackageFile: ORFik_1.21.1.tar.gz
+PackageFileSize: 3.736 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

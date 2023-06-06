@@ -1,0 +1,2920 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for HPiP on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><B>[<A href="..#H">H</A>]</B></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:33 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for HPiP on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the HPiP package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/HPiP.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard ok">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>937</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">HPiP</A>&nbsp;1.7.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/HPiP">landing page</A>)</SPAN><BR>Matineh Rahmatbakhsh<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/HPiP</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">9fb6dd0</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;15:32:43&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: HPiP</TD></TR>
+<TR><TD><B>Version</B>: 1.7.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HPiP.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HPiP_1.7.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-06 00:10:31 -0000 (Tue, 06 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-06 00:26:32 -0000 (Tue, 06 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 961.4 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: HPiP.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 0</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:HPiP.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings HPiP_1.7.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/HPiP.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘HPiP/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘HPiP’ version ‘1.7.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘HPiP’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... NOTE
+Package unavailable to check Rd xrefs: ‘ftrCOOL’
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking R/sysdata.rda ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                user system elapsed
+var_imp       39.933  0.717  40.755
+corr_plot     38.268  0.415  38.748
+FSmethod      37.730  0.455  38.248
+pred_ensembel 18.076  0.294  16.057
+enrichfindP    0.426  0.012  15.856
+getFASTA       0.074  0.008   7.451
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘runTests.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘HPiP_tutorial.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/HPiP.Rcheck/00check.log’
+for details.
+
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">HPiP.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL HPiP
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘HPiP’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (HPiP)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">HPiP.Rcheck/tests/runTests.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; BiocGenerics:::testPackage(&#x27;HPiP&#x27;)
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+avNNet
+Loading required package: ggplot2
+Loading required package: lattice
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 101.873314 
+final  value 94.484211 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 96.874924 
+final  value 94.484211 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 116.484083 
+final  value 94.252921 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 104.946891 
+final  value 94.466823 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 98.548644 
+final  value 94.484211 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 103.429637 
+iter  10 value 92.001576
+iter  20 value 90.085107
+iter  30 value 90.077844
+final  value 90.077811 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 102.017425 
+final  value 94.484211 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 103.487676 
+iter  10 value 91.034768
+iter  20 value 85.999363
+iter  30 value 84.435385
+iter  40 value 84.429523
+final  value 84.429415 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 97.006879 
+final  value 94.484212 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 95.269624 
+final  value 94.466823 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 97.057565 
+final  value 94.484211 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 97.599126 
+final  value 94.484211 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 95.961469 
+iter  10 value 93.496112
+iter  20 value 93.484136
+final  value 93.484123 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 124.788664 
+final  value 94.252920 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 102.122426 
+final  value 94.484211 
+converged
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 98.545384 
+iter  10 value 94.233853
+iter  20 value 94.040394
+iter  30 value 93.394982
+iter  40 value 90.054907
+iter  50 value 89.203255
+iter  60 value 87.344259
+iter  70 value 87.090929
+iter  80 value 87.031849
+final  value 87.031733 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 103.545236 
+iter  10 value 94.488529
+iter  20 value 93.935490
+iter  30 value 91.286991
+iter  40 value 89.916365
+iter  50 value 89.542259
+iter  60 value 89.306235
+iter  70 value 85.510224
+iter  80 value 85.050598
+iter  90 value 84.646082
+final  value 84.646016 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 96.881867 
+iter  10 value 94.406695
+iter  20 value 88.203458
+iter  30 value 85.963596
+iter  40 value 85.519748
+iter  50 value 85.269325
+iter  60 value 84.717005
+iter  70 value 84.646019
+final  value 84.646016 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 99.501462 
+iter  10 value 94.486436
+iter  20 value 93.927018
+iter  30 value 93.733266
+iter  40 value 88.093362
+iter  50 value 87.499146
+iter  60 value 86.884407
+iter  70 value 86.348265
+iter  80 value 86.313150
+iter  90 value 86.308457
+final  value 86.308445 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 97.689977 
+iter  10 value 94.452089
+iter  20 value 93.859069
+iter  30 value 93.729373
+iter  40 value 91.996842
+iter  50 value 90.079738
+iter  60 value 89.627788
+iter  70 value 89.409521
+iter  80 value 86.538500
+iter  90 value 86.322908
+iter 100 value 86.308531
+final  value 86.308531 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 110.486181 
+iter  10 value 90.952345
+iter  20 value 89.112802
+iter  30 value 87.869995
+iter  40 value 87.563366
+iter  50 value 85.667270
+iter  60 value 85.091589
+iter  70 value 84.971554
+iter  80 value 84.192274
+iter  90 value 84.069117
+iter 100 value 84.064568
+final  value 84.064568 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 101.831221 
+iter  10 value 94.546793
+iter  20 value 94.425315
+iter  30 value 94.097141
+iter  40 value 90.227950
+iter  50 value 86.912409
+iter  60 value 86.128852
+iter  70 value 84.780192
+iter  80 value 84.154645
+iter  90 value 84.052474
+iter 100 value 83.965281
+final  value 83.965281 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 103.708597 
+iter  10 value 94.432507
+iter  20 value 88.794123
+iter  30 value 86.283452
+iter  40 value 84.965763
+iter  50 value 84.775092
+iter  60 value 84.540298
+iter  70 value 84.517625
+final  value 84.517504 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 109.905775 
+iter  10 value 94.493216
+iter  20 value 87.911246
+iter  30 value 86.981597
+iter  40 value 86.230550
+iter  50 value 85.965652
+iter  60 value 85.952643
+iter  70 value 85.613152
+iter  80 value 84.249373
+iter  90 value 84.128425
+iter 100 value 84.087089
+final  value 84.087089 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 103.304240 
+iter  10 value 94.309854
+iter  20 value 92.583526
+iter  30 value 87.926337
+iter  40 value 84.847410
+iter  50 value 84.442683
+iter  60 value 84.323639
+iter  70 value 84.234089
+iter  80 value 83.958524
+iter  90 value 83.530450
+iter 100 value 83.265098
+final  value 83.265098 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 105.609773 
+iter  10 value 94.713513
+iter  20 value 93.554529
+iter  30 value 91.199179
+iter  40 value 88.833469
+iter  50 value 87.988002
+iter  60 value 85.260207
+iter  70 value 84.814795
+iter  80 value 84.500316
+iter  90 value 83.690236
+iter 100 value 83.278427
+final  value 83.278427 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 119.632214 
+iter  10 value 94.276562
+iter  20 value 91.816405
+iter  30 value 85.981396
+iter  40 value 84.308574
+iter  50 value 83.362788
+iter  60 value 83.188245
+iter  70 value 83.006530
+iter  80 value 82.887623
+iter  90 value 82.804972
+iter 100 value 82.762184
+final  value 82.762184 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 134.930961 
+iter  10 value 94.604303
+iter  20 value 94.089816
+iter  30 value 91.891233
+iter  40 value 85.346048
+iter  50 value 84.476522
+iter  60 value 84.055256
+iter  70 value 83.736240
+iter  80 value 83.575043
+iter  90 value 83.470994
+iter 100 value 83.168602
+final  value 83.168602 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 104.252912 
+iter  10 value 94.387274
+iter  20 value 90.500537
+iter  30 value 88.413259
+iter  40 value 87.017545
+iter  50 value 86.537109
+iter  60 value 86.043638
+iter  70 value 85.628228
+iter  80 value 84.528009
+iter  90 value 84.370781
+iter 100 value 84.284199
+final  value 84.284199 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 106.706797 
+iter  10 value 94.527160
+iter  20 value 93.581998
+iter  30 value 93.326309
+iter  40 value 92.146970
+iter  50 value 91.572601
+iter  60 value 89.176480
+iter  70 value 87.379910
+iter  80 value 84.826119
+iter  90 value 83.787060
+iter 100 value 83.394817
+final  value 83.394817 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 95.528867 
+final  value 94.485975 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 103.368465 
+final  value 94.485843 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 105.557710 
+final  value 94.486049 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 95.737729 
+final  value 94.485921 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 106.001633 
+final  value 94.485962 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 99.067294 
+iter  10 value 94.489409
+iter  20 value 94.484476
+iter  30 value 94.264865
+iter  40 value 93.881478
+iter  50 value 87.074193
+iter  60 value 86.736057
+final  value 86.736004 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 103.699669 
+iter  10 value 94.269266
+iter  20 value 94.262009
+iter  30 value 93.905031
+iter  40 value 87.530675
+final  value 86.944500 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 115.884394 
+iter  10 value 94.257629
+iter  20 value 94.244347
+iter  30 value 93.967778
+iter  40 value 93.915499
+iter  50 value 93.904945
+final  value 93.904916 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 99.298202 
+iter  10 value 94.489156
+iter  20 value 94.451026
+iter  30 value 92.930905
+iter  40 value 92.366738
+final  value 92.365244 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 96.449114 
+iter  10 value 91.514085
+iter  20 value 91.340548
+iter  30 value 91.217060
+iter  40 value 91.212964
+iter  50 value 91.193554
+iter  60 value 91.178916
+iter  70 value 91.175899
+iter  80 value 90.946826
+final  value 90.877550 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 123.063067 
+iter  10 value 94.474712
+iter  20 value 94.467206
+iter  30 value 94.148033
+iter  40 value 93.444303
+iter  50 value 93.418229
+iter  60 value 92.582452
+iter  70 value 92.527505
+iter  80 value 92.527391
+final  value 92.527165 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 100.137535 
+iter  10 value 94.474845
+iter  20 value 94.468089
+iter  30 value 94.462755
+iter  40 value 89.942485
+iter  50 value 89.487274
+final  value 89.325445 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 100.592256 
+iter  10 value 93.668740
+iter  20 value 89.770402
+iter  30 value 85.202141
+iter  40 value 84.778253
+iter  50 value 84.751507
+iter  60 value 84.050144
+iter  70 value 83.822445
+iter  80 value 83.811645
+iter  90 value 82.830902
+iter 100 value 82.604113
+final  value 82.604113 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 98.462886 
+iter  10 value 94.474230
+iter  20 value 94.405029
+iter  30 value 92.295968
+iter  40 value 92.067324
+iter  50 value 91.862267
+final  value 91.862250 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 96.073761 
+iter  10 value 94.474670
+iter  20 value 94.169222
+iter  30 value 93.977196
+iter  40 value 90.533093
+iter  50 value 86.961385
+iter  60 value 86.944278
+iter  70 value 86.858479
+iter  80 value 86.679317
+iter  90 value 86.331884
+iter 100 value 86.214214
+final  value 86.214214 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 103.260013 
+final  value 94.484211 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 95.526112 
+final  value 94.026542 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 105.806013 
+final  value 94.484211 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 96.890866 
+iter  10 value 94.026542
+iter  10 value 94.026542
+iter  10 value 94.026542
+final  value 94.026542 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 98.218205 
+final  value 94.484211 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 127.065383 
+final  value 94.484211 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 100.861639 
+iter  10 value 94.499627
+final  value 94.484135 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 103.196230 
+iter  10 value 94.474338
+final  value 94.474336 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 108.884633 
+final  value 94.484211 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 99.141746 
+final  value 94.484211 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 131.104731 
+final  value 94.484211 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 102.855313 
+final  value 94.461207 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 114.594012 
+final  value 94.484211 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 99.678164 
+final  value 94.484211 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 103.435634 
+final  value 94.484211 
+converged
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 99.347229 
+iter  10 value 94.489066
+iter  20 value 94.243106
+iter  30 value 94.213388
+iter  40 value 94.188069
+iter  50 value 87.947838
+iter  60 value 86.425139
+iter  70 value 85.911287
+iter  80 value 85.807005
+iter  90 value 85.747443
+iter 100 value 85.643484
+final  value 85.643484 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 96.573364 
+iter  10 value 94.490181
+iter  20 value 93.328141
+iter  30 value 86.737433
+iter  40 value 84.103515
+iter  50 value 83.835076
+iter  60 value 83.732504
+iter  70 value 83.490628
+iter  80 value 83.361281
+iter  90 value 83.323890
+iter 100 value 83.319510
+final  value 83.319510 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 98.803550 
+iter  10 value 94.486328
+iter  20 value 89.160550
+iter  30 value 87.429763
+iter  40 value 85.452376
+iter  50 value 84.655768
+iter  60 value 83.667282
+iter  70 value 83.385988
+iter  80 value 83.333392
+iter  90 value 83.319596
+final  value 83.319493 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 96.663129 
+iter  10 value 94.449545
+iter  20 value 94.127454
+iter  30 value 94.125946
+iter  40 value 93.790957
+iter  50 value 87.330329
+iter  60 value 86.524997
+iter  70 value 86.436371
+iter  80 value 86.392465
+iter  90 value 86.339403
+iter 100 value 84.189298
+final  value 84.189298 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 102.856613 
+iter  10 value 92.156911
+iter  20 value 88.349722
+iter  30 value 87.721957
+iter  40 value 86.802583
+iter  50 value 84.834152
+iter  60 value 83.620277
+iter  70 value 83.468482
+iter  80 value 83.321890
+iter  90 value 83.319510
+final  value 83.319493 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 99.325228 
+iter  10 value 94.445984
+iter  20 value 89.985486
+iter  30 value 88.529604
+iter  40 value 86.197930
+iter  50 value 82.224467
+iter  60 value 81.934975
+iter  70 value 81.489589
+iter  80 value 81.322533
+iter  90 value 80.659648
+iter 100 value 80.281436
+final  value 80.281436 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 118.640688 
+iter  10 value 93.285321
+iter  20 value 88.782471
+iter  30 value 86.810535
+iter  40 value 85.938865
+iter  50 value 85.820380
+iter  60 value 85.788853
+iter  70 value 85.587546
+iter  80 value 82.681832
+iter  90 value 81.705270
+iter 100 value 80.996327
+final  value 80.996327 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 101.500224 
+iter  10 value 91.525686
+iter  20 value 86.762820
+iter  30 value 86.197679
+iter  40 value 85.903945
+iter  50 value 84.832322
+iter  60 value 83.712212
+iter  70 value 83.299594
+iter  80 value 83.193643
+iter  90 value 83.042488
+iter 100 value 82.933548
+final  value 82.933548 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 100.462654 
+iter  10 value 94.578551
+iter  20 value 91.484183
+iter  30 value 89.297354
+iter  40 value 84.034763
+iter  50 value 83.725841
+iter  60 value 83.390202
+iter  70 value 82.206792
+iter  80 value 82.134774
+iter  90 value 82.005280
+iter 100 value 81.486417
+final  value 81.486417 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 99.690500 
+iter  10 value 94.516524
+iter  20 value 88.383560
+iter  30 value 84.687386
+iter  40 value 83.843324
+iter  50 value 83.612710
+iter  60 value 83.496058
+iter  70 value 83.407601
+iter  80 value 83.289274
+iter  90 value 83.266554
+iter 100 value 82.186152
+final  value 82.186152 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 126.332748 
+iter  10 value 94.212212
+iter  20 value 94.093091
+iter  30 value 92.859714
+iter  40 value 84.859550
+iter  50 value 83.510727
+iter  60 value 81.565453
+iter  70 value 80.586131
+iter  80 value 80.402974
+iter  90 value 80.264976
+iter 100 value 80.151184
+final  value 80.151184 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 123.999615 
+iter  10 value 94.621664
+iter  20 value 91.606845
+iter  30 value 88.497783
+iter  40 value 87.675340
+iter  50 value 83.200795
+iter  60 value 81.927443
+iter  70 value 81.424137
+iter  80 value 81.214423
+iter  90 value 80.889256
+iter 100 value 80.802670
+final  value 80.802670 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 117.088808 
+iter  10 value 94.660584
+iter  20 value 94.122746
+iter  30 value 87.008399
+iter  40 value 86.165144
+iter  50 value 85.116275
+iter  60 value 84.275236
+iter  70 value 83.682135
+iter  80 value 83.107184
+iter  90 value 82.952728
+iter 100 value 82.860564
+final  value 82.860564 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 104.908625 
+iter  10 value 94.514732
+iter  20 value 93.330556
+iter  30 value 87.321678
+iter  40 value 84.508632
+iter  50 value 84.071948
+iter  60 value 82.571199
+iter  70 value 81.817080
+iter  80 value 81.499370
+iter  90 value 81.163540
+iter 100 value 80.825501
+final  value 80.825501 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 110.742703 
+iter  10 value 90.725031
+iter  20 value 87.919620
+iter  30 value 83.099509
+iter  40 value 81.688494
+iter  50 value 81.151501
+iter  60 value 80.875413
+iter  70 value 80.624715
+iter  80 value 80.446417
+iter  90 value 80.345588
+iter 100 value 80.298430
+final  value 80.298430 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 96.223639 
+iter  10 value 94.486048
+final  value 94.485966 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 100.027608 
+final  value 94.485862 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 99.901229 
+final  value 94.485939 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 97.617481 
+final  value 94.486111 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 101.227208 
+final  value 94.485677 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 97.315371 
+iter  10 value 94.475384
+iter  20 value 94.030770
+iter  30 value 94.028465
+iter  40 value 94.026710
+iter  50 value 94.026365
+final  value 94.026345 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 133.672760 
+iter  10 value 94.488675
+iter  20 value 94.264974
+iter  30 value 94.031265
+iter  40 value 94.027312
+iter  50 value 93.794517
+iter  60 value 89.126286
+iter  70 value 88.531812
+iter  80 value 88.524033
+iter  90 value 88.523706
+final  value 88.523668 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 111.302048 
+iter  10 value 94.087672
+iter  20 value 94.081951
+iter  30 value 94.079895
+iter  40 value 94.046129
+iter  50 value 94.027908
+final  value 94.027882 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 96.347823 
+iter  10 value 94.488207
+iter  20 value 94.484183
+iter  30 value 94.278203
+iter  40 value 91.854618
+iter  50 value 86.495293
+iter  60 value 84.408043
+iter  70 value 83.872903
+final  value 83.812634 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 98.106293 
+iter  10 value 94.489066
+iter  20 value 94.139967
+final  value 94.026774 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 98.785316 
+iter  10 value 94.034425
+iter  20 value 94.029214
+iter  30 value 93.880677
+iter  40 value 89.870134
+iter  50 value 85.534732
+iter  60 value 81.913933
+iter  70 value 81.865751
+iter  80 value 81.584688
+iter  90 value 81.347107
+iter 100 value 81.344513
+final  value 81.344513 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 99.506332 
+iter  10 value 92.845492
+iter  20 value 92.845249
+iter  20 value 92.845249
+final  value 92.845246 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 94.714513 
+iter  10 value 85.777413
+iter  20 value 84.794382
+iter  30 value 84.766359
+iter  40 value 84.422126
+iter  50 value 84.360275
+iter  60 value 84.328500
+final  value 84.324554 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 100.840918 
+iter  10 value 94.491764
+iter  20 value 94.361981
+iter  30 value 92.075577
+iter  40 value 87.365692
+iter  50 value 87.141520
+iter  60 value 82.765973
+iter  70 value 82.163614
+iter  80 value 82.025069
+iter  90 value 81.736341
+iter 100 value 81.713540
+final  value 81.713540 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 96.892203 
+iter  10 value 94.489494
+iter  20 value 94.425184
+iter  30 value 94.025022
+iter  40 value 87.228163
+iter  50 value 86.938724
+iter  60 value 85.978708
+iter  70 value 83.731306
+iter  80 value 83.697281
+iter  90 value 83.494580
+iter 100 value 82.893393
+final  value 82.893393 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 98.818418 
+final  value 94.052910 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 100.698502 
+final  value 94.052910 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 104.220112 
+final  value 94.052910 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 105.599530 
+final  value 94.052910 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 103.255768 
+final  value 94.052910 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 102.540250 
+final  value 94.052910 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 107.993040 
+iter  10 value 93.454489
+final  value 93.288889 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 107.856430 
+iter  10 value 94.008696
+iter  10 value 94.008696
+iter  10 value 94.008696
+final  value 94.008696 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 108.889396 
+final  value 94.052910 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 91.794749 
+iter  10 value 82.048034
+iter  20 value 81.844503
+iter  30 value 81.830138
+final  value 81.829860 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 99.839076 
+final  value 94.052910 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 104.575326 
+final  value 94.052910 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 100.936577 
+final  value 94.052910 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 131.458200 
+iter  10 value 94.052910
+iter  10 value 94.052910
+iter  10 value 94.052910
+final  value 94.052910 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 106.064877 
+final  value 94.052910 
+converged
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 104.075635 
+iter  10 value 93.969735
+iter  20 value 93.074554
+iter  30 value 85.177836
+iter  40 value 80.375241
+iter  50 value 79.574719
+iter  60 value 79.030595
+iter  70 value 78.948485
+iter  80 value 78.946670
+iter  80 value 78.946669
+iter  80 value 78.946669
+final  value 78.946669 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 98.784256 
+iter  10 value 93.893389
+iter  20 value 91.146818
+iter  30 value 89.793145
+iter  40 value 89.695469
+iter  50 value 89.658739
+iter  60 value 82.387262
+iter  70 value 79.870917
+iter  80 value 78.804009
+iter  90 value 77.908737
+iter 100 value 77.512651
+final  value 77.512651 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 96.062781 
+iter  10 value 93.689936
+iter  20 value 86.774088
+iter  30 value 80.781939
+iter  40 value 78.609353
+iter  50 value 78.176449
+iter  60 value 77.559188
+iter  70 value 77.287600
+iter  80 value 77.259540
+iter  90 value 77.155732
+final  value 77.113791 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 95.905320 
+iter  10 value 93.942202
+iter  20 value 81.729947
+iter  30 value 80.299390
+iter  40 value 80.163315
+iter  50 value 79.877103
+iter  60 value 79.103467
+iter  70 value 78.698020
+iter  80 value 78.689009
+final  value 78.689004 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 105.466195 
+iter  10 value 94.014876
+iter  20 value 89.387647
+iter  30 value 82.595518
+iter  40 value 81.800584
+iter  50 value 81.484023
+iter  60 value 81.362901
+iter  70 value 81.353512
+iter  80 value 81.343491
+final  value 81.343333 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 100.551753 
+iter  10 value 91.119304
+iter  20 value 81.961376
+iter  30 value 80.107727
+iter  40 value 78.276667
+iter  50 value 76.322380
+iter  60 value 76.056506
+iter  70 value 75.573628
+iter  80 value 75.376379
+iter  90 value 75.266750
+iter 100 value 75.241262
+final  value 75.241262 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 105.975565 
+iter  10 value 94.180062
+iter  20 value 92.898339
+iter  30 value 91.000364
+iter  40 value 88.849258
+iter  50 value 88.649210
+final  value 88.571758 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 105.712628 
+iter  10 value 94.992970
+iter  20 value 94.052548
+iter  30 value 91.051425
+iter  40 value 90.784015
+iter  50 value 90.619641
+iter  60 value 89.755852
+iter  70 value 88.541709
+iter  80 value 88.276595
+iter  90 value 81.792187
+iter 100 value 79.553061
+final  value 79.553061 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 106.098261 
+iter  10 value 94.928169
+iter  20 value 81.286483
+iter  30 value 79.165719
+iter  40 value 76.843588
+iter  50 value 76.283045
+iter  60 value 76.038274
+iter  70 value 75.725776
+iter  80 value 75.690695
+iter  90 value 75.660748
+iter 100 value 75.624377
+final  value 75.624377 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 113.098150 
+iter  10 value 93.050364
+iter  20 value 83.268068
+iter  30 value 82.500991
+iter  40 value 81.489294
+iter  50 value 80.524900
+iter  60 value 78.498029
+iter  70 value 78.068222
+iter  80 value 77.570510
+iter  90 value 77.468093
+iter 100 value 77.277266
+final  value 77.277266 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 121.306357 
+iter  10 value 94.892340
+iter  20 value 87.034204
+iter  30 value 79.998727
+iter  40 value 78.667542
+iter  50 value 76.401028
+iter  60 value 75.916486
+iter  70 value 75.601780
+iter  80 value 75.369712
+iter  90 value 75.180261
+iter 100 value 75.081178
+final  value 75.081178 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 115.281750 
+iter  10 value 96.868487
+iter  20 value 85.906864
+iter  30 value 83.779869
+iter  40 value 82.483835
+iter  50 value 81.150689
+iter  60 value 80.659794
+iter  70 value 80.320307
+iter  80 value 79.793089
+iter  90 value 77.483619
+iter 100 value 77.036722
+final  value 77.036722 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 104.349415 
+iter  10 value 94.059160
+iter  20 value 93.278860
+iter  30 value 91.926994
+iter  40 value 91.706966
+iter  50 value 91.347457
+iter  60 value 91.146378
+iter  70 value 86.744539
+iter  80 value 82.420074
+iter  90 value 78.789698
+iter 100 value 76.942332
+final  value 76.942332 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 107.325041 
+iter  10 value 94.025532
+iter  20 value 88.151140
+iter  30 value 81.628042
+iter  40 value 79.431942
+iter  50 value 78.878490
+iter  60 value 78.656592
+iter  70 value 78.436359
+iter  80 value 78.306183
+iter  90 value 78.154363
+iter 100 value 77.770661
+final  value 77.770661 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 121.777041 
+iter  10 value 99.991514
+iter  20 value 91.164177
+iter  30 value 85.740968
+iter  40 value 81.125932
+iter  50 value 79.428294
+iter  60 value 78.907973
+iter  70 value 78.850813
+iter  80 value 78.706496
+iter  90 value 78.249842
+iter 100 value 77.638192
+final  value 77.638192 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 97.424574 
+final  value 94.054774 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 98.759938 
+final  value 94.010280 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 96.667778 
+final  value 94.054375 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 94.414507 
+final  value 94.054530 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 108.603724 
+iter  10 value 94.082226
+iter  20 value 94.077583
+final  value 94.052913 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 105.644216 
+iter  10 value 94.057791
+iter  20 value 94.029635
+iter  30 value 89.381060
+iter  40 value 89.004380
+iter  50 value 88.995266
+iter  60 value 88.988621
+iter  70 value 88.988088
+iter  70 value 88.988088
+final  value 88.988088 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 105.370636 
+iter  10 value 93.989446
+iter  20 value 93.985607
+iter  30 value 92.862338
+iter  40 value 90.658502
+iter  40 value 90.658502
+iter  40 value 90.658502
+final  value 90.658502 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 105.466386 
+iter  10 value 94.058019
+iter  20 value 94.052987
+iter  30 value 92.496839
+iter  40 value 83.990780
+iter  50 value 83.889531
+iter  60 value 83.888664
+iter  70 value 83.886497
+iter  80 value 83.885445
+iter  90 value 83.885236
+final  value 83.884951 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 98.151790 
+iter  10 value 94.057810
+iter  20 value 93.732641
+iter  30 value 89.456356
+final  value 89.454663 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 96.785898 
+iter  10 value 94.013646
+iter  20 value 94.009748
+iter  30 value 91.711993
+iter  40 value 91.656756
+final  value 91.656703 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 97.936324 
+iter  10 value 94.060072
+iter  20 value 94.041961
+iter  30 value 93.532863
+iter  40 value 81.419832
+iter  50 value 81.314532
+iter  60 value 81.313561
+final  value 81.313430 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 102.380894 
+iter  10 value 94.061101
+iter  20 value 81.843363
+iter  30 value 81.606003
+iter  40 value 77.484374
+iter  50 value 77.458236
+iter  60 value 77.304208
+iter  70 value 76.554237
+iter  80 value 76.467723
+iter  90 value 76.439773
+iter 100 value 76.347191
+final  value 76.347191 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 113.475228 
+iter  10 value 94.061690
+iter  20 value 94.003676
+iter  30 value 92.257451
+iter  40 value 92.252674
+iter  50 value 90.721203
+iter  60 value 90.478557
+iter  70 value 90.477590
+iter  80 value 90.466204
+iter  90 value 90.390988
+final  value 90.390630 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 119.528707 
+iter  10 value 94.061853
+iter  20 value 94.015176
+iter  30 value 94.011127
+iter  40 value 93.933179
+iter  50 value 82.307392
+iter  60 value 82.165326
+iter  70 value 82.064944
+iter  80 value 80.867801
+iter  90 value 80.858352
+iter 100 value 80.214401
+final  value 80.214401 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 97.639987 
+iter  10 value 93.219528
+iter  20 value 93.216595
+iter  30 value 90.414645
+iter  40 value 87.578674
+iter  50 value 87.315663
+iter  60 value 84.636035
+iter  70 value 84.590121
+iter  80 value 83.487605
+iter  90 value 78.453477
+iter 100 value 78.345964
+final  value 78.345964 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 95.992312 
+final  value 94.484211 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 97.941917 
+final  value 94.275362 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 112.553930 
+final  value 94.484211 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 97.712384 
+final  value 94.484211 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 95.649266 
+final  value 94.484211 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 102.224021 
+final  value 94.484211 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 96.636621 
+final  value 94.275362 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 94.563362 
+final  value 94.484211 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 102.980942 
+iter  10 value 81.786715
+iter  20 value 81.582194
+iter  30 value 81.392884
+iter  40 value 81.379346
+final  value 81.377468 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 99.797847 
+final  value 94.484211 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 108.334400 
+final  value 94.275362 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 108.094945 
+final  value 94.275363 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 108.180895 
+iter  10 value 91.903864
+iter  20 value 85.394034
+final  value 85.393874 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 109.334289 
+iter  10 value 93.053542
+iter  20 value 92.935006
+iter  30 value 91.764228
+iter  40 value 91.614909
+final  value 91.614716 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 103.246526 
+iter  10 value 94.144736
+iter  20 value 93.695232
+iter  30 value 93.691074
+final  value 93.691059 
+converged
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 107.343265 
+iter  10 value 94.234691
+iter  20 value 86.920171
+iter  30 value 86.188561
+iter  40 value 83.412303
+iter  50 value 82.565038
+iter  60 value 82.395260
+iter  70 value 82.381699
+final  value 82.381424 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 104.739939 
+iter  10 value 94.347706
+iter  20 value 94.329913
+iter  30 value 91.763813
+iter  40 value 88.265998
+iter  50 value 85.853657
+iter  60 value 83.832642
+iter  70 value 83.321065
+iter  80 value 82.591692
+iter  90 value 82.382719
+final  value 82.382481 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 97.409546 
+iter  10 value 94.491847
+iter  20 value 94.040151
+iter  30 value 93.734597
+iter  40 value 93.684126
+iter  50 value 92.646724
+iter  60 value 83.185873
+iter  70 value 81.922674
+iter  80 value 81.311302
+iter  90 value 80.240479
+iter 100 value 80.054603
+final  value 80.054603 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 97.987027 
+iter  10 value 94.367367
+iter  20 value 90.537615
+iter  30 value 86.464845
+iter  40 value 83.505379
+iter  50 value 83.336062
+iter  60 value 83.137287
+iter  70 value 82.635369
+iter  80 value 82.460716
+iter  90 value 82.382796
+final  value 82.381424 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 99.661920 
+iter  10 value 93.620703
+iter  20 value 92.857635
+iter  30 value 88.236906
+iter  40 value 87.067106
+iter  50 value 85.826086
+iter  60 value 83.250047
+iter  70 value 82.662294
+iter  80 value 82.395883
+final  value 82.382524 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 107.038562 
+iter  10 value 94.487407
+iter  20 value 93.111353
+iter  30 value 86.392376
+iter  40 value 81.255805
+iter  50 value 80.278273
+iter  60 value 80.100960
+iter  70 value 79.583202
+iter  80 value 79.547035
+iter  90 value 79.532182
+iter 100 value 79.507274
+final  value 79.507274 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 108.175087 
+iter  10 value 94.350316
+iter  20 value 93.099778
+iter  30 value 86.820596
+iter  40 value 84.410735
+iter  50 value 81.909339
+iter  60 value 81.242806
+iter  70 value 79.954998
+iter  80 value 79.486945
+iter  90 value 79.420893
+iter 100 value 79.216307
+final  value 79.216307 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 100.035988 
+iter  10 value 94.505003
+iter  20 value 93.946617
+iter  30 value 85.593584
+iter  40 value 82.297854
+iter  50 value 81.743196
+iter  60 value 80.711006
+iter  70 value 79.523310
+iter  80 value 79.334857
+iter  90 value 79.190370
+iter 100 value 79.110472
+final  value 79.110472 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 136.193111 
+iter  10 value 94.537199
+iter  20 value 94.359642
+iter  30 value 87.635231
+iter  40 value 81.715053
+iter  50 value 80.086472
+iter  60 value 79.575463
+iter  70 value 78.859438
+iter  80 value 78.817546
+iter  90 value 78.812053
+iter 100 value 78.707601
+final  value 78.707601 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 113.096783 
+iter  10 value 94.067085
+iter  20 value 84.980485
+iter  30 value 82.967070
+iter  40 value 82.020667
+iter  50 value 80.276146
+iter  60 value 79.384052
+iter  70 value 78.794990
+iter  80 value 78.555644
+iter  90 value 78.438836
+iter 100 value 78.405944
+final  value 78.405944 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 113.645102 
+iter  10 value 97.270931
+iter  20 value 87.752670
+iter  30 value 84.692125
+iter  40 value 83.480730
+iter  50 value 82.251988
+iter  60 value 79.395717
+iter  70 value 79.100285
+iter  80 value 78.923169
+iter  90 value 78.806641
+iter 100 value 78.792361
+final  value 78.792361 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 107.003542 
+iter  10 value 94.344470
+iter  20 value 90.718581
+iter  30 value 85.731339
+iter  40 value 85.076613
+iter  50 value 84.899410
+iter  60 value 84.818978
+iter  70 value 83.358290
+iter  80 value 82.934821
+iter  90 value 82.546938
+iter 100 value 82.067735
+final  value 82.067735 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 116.889750 
+iter  10 value 93.298303
+iter  20 value 92.270820
+iter  30 value 84.759936
+iter  40 value 82.398229
+iter  50 value 81.793523
+iter  60 value 81.262987
+iter  70 value 80.633614
+iter  80 value 79.197299
+iter  90 value 78.953416
+iter 100 value 78.943658
+final  value 78.943658 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 107.738511 
+iter  10 value 93.739883
+iter  20 value 91.807005
+iter  30 value 85.617908
+iter  40 value 84.526387
+iter  50 value 82.956141
+iter  60 value 81.020411
+iter  70 value 80.028238
+iter  80 value 79.508416
+iter  90 value 79.381198
+iter 100 value 79.366735
+final  value 79.366735 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 107.446663 
+iter  10 value 94.544864
+iter  20 value 93.963342
+iter  30 value 91.777526
+iter  40 value 86.457173
+iter  50 value 85.766193
+iter  60 value 84.743410
+iter  70 value 81.692379
+iter  80 value 80.004664
+iter  90 value 79.574052
+iter 100 value 78.997183
+final  value 78.997183 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 94.743831 
+iter  10 value 88.842996
+iter  20 value 84.372292
+iter  30 value 84.370809
+iter  40 value 82.138358
+iter  50 value 81.638195
+iter  60 value 81.629605
+iter  70 value 81.580726
+iter  80 value 81.548570
+final  value 81.548401 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 102.525360 
+final  value 94.277038 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 96.965425 
+iter  10 value 94.485908
+iter  20 value 94.484249
+final  value 94.484217 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 96.337498 
+final  value 94.485838 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 97.817801 
+iter  10 value 94.485868
+iter  20 value 94.484267
+iter  30 value 93.863592
+iter  40 value 93.542228
+final  value 93.542223 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 98.062221 
+iter  10 value 94.489188
+iter  20 value 94.484228
+iter  30 value 93.519093
+iter  40 value 93.181114
+iter  50 value 86.299004
+iter  60 value 85.574623
+iter  70 value 85.560415
+final  value 85.560410 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 114.542159 
+iter  10 value 94.281038
+iter  20 value 94.279723
+iter  30 value 90.546570
+iter  40 value 84.183800
+iter  50 value 83.840553
+final  value 83.840476 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 101.742177 
+iter  10 value 94.180668
+iter  20 value 94.110368
+iter  30 value 94.107129
+iter  40 value 84.423315
+iter  50 value 84.365570
+iter  60 value 84.351310
+iter  70 value 84.311928
+iter  80 value 83.817903
+iter  90 value 81.479823
+iter 100 value 80.587653
+final  value 80.587653 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 110.397008 
+iter  10 value 94.489209
+iter  20 value 94.282728
+iter  30 value 88.596706
+iter  40 value 84.380665
+iter  50 value 84.373452
+iter  60 value 84.302910
+iter  70 value 81.565258
+iter  80 value 81.474641
+final  value 81.474616 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 112.506702 
+iter  10 value 94.488883
+iter  20 value 94.244440
+iter  30 value 85.432139
+iter  40 value 83.158626
+iter  50 value 80.605025
+iter  60 value 79.998720
+iter  70 value 79.258743
+iter  80 value 78.385297
+iter  90 value 77.259802
+iter 100 value 77.212641
+final  value 77.212641 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 101.955734 
+iter  10 value 92.332147
+iter  20 value 92.026433
+iter  30 value 91.200508
+iter  40 value 91.199359
+iter  50 value 84.906143
+iter  60 value 84.594866
+iter  70 value 81.312818
+iter  80 value 78.912404
+iter  90 value 78.683902
+iter 100 value 78.024147
+final  value 78.024147 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 104.952327 
+iter  10 value 94.283723
+iter  20 value 94.109689
+iter  30 value 89.047584
+iter  40 value 83.894248
+iter  50 value 83.850688
+iter  60 value 83.831876
+iter  60 value 83.831875
+iter  60 value 83.831875
+final  value 83.831875 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 96.885382 
+iter  10 value 93.566894
+iter  20 value 93.530938
+iter  30 value 88.038996
+iter  40 value 86.268524
+iter  50 value 86.267738
+final  value 86.267670 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 98.270026 
+iter  10 value 94.283616
+iter  20 value 93.420640
+iter  30 value 88.406477
+iter  40 value 88.392955
+iter  50 value 88.391443
+final  value 88.390796 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 98.083567 
+iter  10 value 94.492921
+iter  20 value 94.444610
+iter  30 value 81.634459
+final  value 81.633554 
+converged
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 95.915272 
+final  value 94.052910 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 101.237281 
+final  value 94.032967 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 96.529782 
+final  value 94.052910 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 94.135511 
+final  value 94.052910 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 96.101280 
+final  value 94.052910 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 107.523576 
+iter  10 value 93.856181
+final  value 93.855784 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 96.636282 
+final  value 94.052910 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 97.367552 
+final  value 94.052910 
+converged
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 102.023028 
+iter  10 value 93.008970
+final  value 93.008966 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 113.845969 
+final  value 94.052910 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 94.221938 
+final  value 94.052910 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 99.894295 
+iter  10 value 92.748826
+iter  20 value 86.013420
+iter  30 value 84.997753
+iter  40 value 84.770848
+final  value 84.768825 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 97.897580 
+final  value 94.032967 
+converged
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 101.731932 
+final  value 94.052910 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 106.246164 
+iter  10 value 90.680421
+iter  20 value 85.583093
+iter  30 value 84.713751
+iter  40 value 83.902404
+iter  50 value 83.718230
+iter  60 value 82.320204
+iter  70 value 81.802143
+iter  80 value 81.053890
+iter  90 value 80.778169
+iter 100 value 80.720172
+final  value 80.720172 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 96.544569 
+iter  10 value 94.055887
+iter  20 value 89.184321
+iter  30 value 87.175357
+iter  40 value 85.352100
+iter  50 value 85.170796
+iter  60 value 84.151517
+iter  70 value 83.713039
+iter  80 value 83.272422
+iter  90 value 82.746692
+iter 100 value 82.679888
+final  value 82.679888 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 101.994582 
+iter  10 value 94.051685
+iter  20 value 88.641568
+iter  30 value 86.440551
+iter  40 value 85.492547
+iter  50 value 84.890727
+iter  60 value 84.463492
+final  value 84.463377 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 100.082730 
+iter  10 value 93.117675
+iter  20 value 87.741781
+iter  30 value 86.057628
+iter  40 value 85.640514
+iter  50 value 85.593775
+final  value 85.593619 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 100.126580 
+iter  10 value 94.056149
+iter  20 value 87.934931
+iter  30 value 87.159390
+iter  40 value 85.413295
+iter  50 value 85.307812
+iter  60 value 85.210266
+iter  70 value 85.194116
+final  value 85.194067 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 96.101593 
+iter  10 value 94.058305
+iter  20 value 93.982031
+iter  30 value 93.404334
+iter  40 value 88.215860
+iter  50 value 86.994194
+iter  60 value 86.314374
+iter  70 value 84.367918
+iter  80 value 83.210426
+iter  90 value 82.766235
+iter 100 value 82.582467
+final  value 82.582467 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 99.588967 
+iter  10 value 94.082609
+iter  20 value 93.890229
+iter  30 value 93.043853
+iter  40 value 90.274894
+iter  50 value 87.101490
+iter  60 value 85.301068
+iter  70 value 84.238870
+iter  80 value 83.306975
+iter  90 value 82.577618
+iter 100 value 81.857058
+final  value 81.857058 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 110.598240 
+iter  10 value 96.189965
+iter  20 value 92.524587
+iter  30 value 90.252644
+iter  40 value 89.089560
+iter  50 value 86.270405
+iter  60 value 85.923435
+iter  70 value 85.585012
+iter  80 value 84.672859
+iter  90 value 82.819829
+iter 100 value 82.482044
+final  value 82.482044 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 117.627073 
+iter  10 value 93.600892
+iter  20 value 88.696425
+iter  30 value 85.925940
+iter  40 value 83.405918
+iter  50 value 82.736805
+iter  60 value 82.090239
+iter  70 value 81.962479
+iter  80 value 81.937191
+iter  90 value 81.817616
+iter 100 value 81.566527
+final  value 81.566527 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 105.209468 
+iter  10 value 93.173604
+iter  20 value 86.943726
+iter  30 value 86.485218
+iter  40 value 86.069593
+iter  50 value 85.332502
+iter  60 value 84.641274
+iter  70 value 83.535422
+iter  80 value 83.080984
+iter  90 value 82.560767
+iter 100 value 82.093989
+final  value 82.093989 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 106.556388 
+iter  10 value 94.069021
+iter  20 value 91.960175
+iter  30 value 86.794488
+iter  40 value 85.718244
+iter  50 value 85.598674
+iter  60 value 85.545436
+iter  70 value 85.044560
+iter  80 value 84.532362
+iter  90 value 83.376147
+iter 100 value 82.643302
+final  value 82.643302 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 119.435207 
+iter  10 value 94.255118
+iter  20 value 91.896195
+iter  30 value 87.083337
+iter  40 value 86.415375
+iter  50 value 86.031509
+iter  60 value 85.528287
+iter  70 value 85.343305
+iter  80 value 84.909185
+iter  90 value 83.891001
+iter 100 value 82.661303
+final  value 82.661303 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 118.037356 
+iter  10 value 93.995052
+iter  20 value 91.707468
+iter  30 value 86.467049
+iter  40 value 86.210136
+iter  50 value 85.552988
+iter  60 value 82.811301
+iter  70 value 82.146399
+iter  80 value 82.008083
+iter  90 value 81.892948
+iter 100 value 81.683588
+final  value 81.683588 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 103.603045 
+iter  10 value 93.992929
+iter  20 value 89.812607
+iter  30 value 85.797663
+iter  40 value 83.390816
+iter  50 value 82.994558
+iter  60 value 82.479268
+iter  70 value 82.221703
+iter  80 value 81.884092
+iter  90 value 81.687318
+iter 100 value 81.566125
+final  value 81.566125 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 126.057573 
+iter  10 value 94.291019
+iter  20 value 90.546477
+iter  30 value 88.136305
+iter  40 value 85.642593
+iter  50 value 84.498437
+iter  60 value 83.339429
+iter  70 value 83.215150
+iter  80 value 82.822323
+iter  90 value 82.294088
+iter 100 value 81.775107
+final  value 81.775107 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 106.304310 
+iter  10 value 94.077838
+iter  20 value 93.101509
+iter  30 value 88.992876
+iter  40 value 84.512008
+iter  50 value 83.585376
+iter  60 value 82.477830
+iter  70 value 81.994653
+iter  80 value 81.613037
+iter  90 value 81.047766
+iter 100 value 80.883109
+final  value 80.883109 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  103
+initial  value 105.020357 
+final  value 94.054680 
+converged
+Fitting Repeat 2 
+
+# weights:  103
+initial  value 96.869312 
+final  value 94.054613 
+converged
+Fitting Repeat 3 
+
+# weights:  103
+initial  value 96.283055 
+final  value 94.054556 
+converged
+Fitting Repeat 4 
+
+# weights:  103
+initial  value 101.421218 
+iter  10 value 94.034917
+iter  20 value 94.032361
+iter  30 value 90.257308
+iter  40 value 86.948421
+final  value 86.938454 
+converged
+Fitting Repeat 5 
+
+# weights:  103
+initial  value 94.438013 
+final  value 94.054870 
+converged
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 97.879645 
+iter  10 value 94.057697
+iter  20 value 94.052997
+iter  30 value 87.395788
+iter  40 value 87.378004
+iter  50 value 87.377189
+iter  60 value 87.249762
+iter  70 value 87.248680
+iter  70 value 87.248680
+final  value 87.248680 
+converged
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 97.561259 
+iter  10 value 94.057699
+iter  20 value 94.023087
+iter  30 value 89.065464
+iter  40 value 87.119045
+iter  50 value 86.931389
+iter  60 value 86.930345
+iter  70 value 86.930308
+iter  70 value 86.930308
+iter  70 value 86.930308
+final  value 86.930308 
+converged
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 98.654342 
+iter  10 value 94.056843
+iter  20 value 94.052908
+iter  30 value 93.769688
+iter  40 value 93.766238
+iter  50 value 92.910757
+iter  60 value 90.874139
+iter  70 value 90.859700
+iter  80 value 88.372396
+iter  90 value 87.544089
+iter 100 value 87.509102
+final  value 87.509102 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 98.274494 
+iter  10 value 94.057586
+iter  20 value 91.552735
+iter  30 value 86.809311
+iter  40 value 86.784642
+iter  50 value 86.783318
+final  value 86.781628 
+converged
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 108.054619 
+iter  10 value 94.057738
+iter  20 value 94.024664
+iter  30 value 93.383295
+final  value 93.371986 
+converged
+Fitting Repeat 1 
+
+# weights:  507
+initial  value 97.824087 
+iter  10 value 94.041272
+iter  20 value 94.034466
+final  value 94.034083 
+converged
+Fitting Repeat 2 
+
+# weights:  507
+initial  value 99.252485 
+iter  10 value 94.041330
+iter  20 value 94.032552
+iter  30 value 87.479140
+iter  40 value 87.377278
+iter  50 value 87.218161
+iter  60 value 87.066513
+iter  70 value 87.042218
+iter  70 value 87.042218
+iter  70 value 87.042218
+final  value 87.042218 
+converged
+Fitting Repeat 3 
+
+# weights:  507
+initial  value 99.613791 
+iter  10 value 94.060063
+iter  20 value 94.020603
+iter  30 value 92.041400
+iter  40 value 90.508148
+iter  50 value 90.431836
+iter  60 value 90.431079
+iter  70 value 90.259793
+iter  80 value 89.731184
+iter  90 value 89.077036
+iter 100 value 84.549665
+final  value 84.549665 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  507
+initial  value 109.295644 
+iter  10 value 87.618905
+iter  20 value 87.616425
+iter  30 value 87.259920
+iter  40 value 87.259439
+iter  50 value 87.256994
+iter  60 value 87.232772
+final  value 87.232582 
+converged
+Fitting Repeat 5 
+
+# weights:  507
+initial  value 110.697138 
+iter  10 value 93.207282
+iter  20 value 90.954945
+iter  30 value 90.729492
+iter  40 value 90.727587
+iter  50 value 90.721321
+iter  60 value 90.716076
+iter  70 value 90.714643
+iter  80 value 90.714541
+iter  90 value 90.714401
+iter 100 value 90.713065
+final  value 90.713065 
+stopped after 100 iterations
+Fitting Repeat 1 
+
+# weights:  305
+initial  value 128.913221 
+iter  10 value 122.838249
+iter  20 value 118.444788
+iter  30 value 112.871781
+iter  40 value 111.896981
+iter  50 value 109.352753
+iter  60 value 108.363050
+iter  70 value 105.668210
+iter  80 value 105.015793
+iter  90 value 104.466541
+iter 100 value 103.229909
+final  value 103.229909 
+stopped after 100 iterations
+Fitting Repeat 2 
+
+# weights:  305
+initial  value 134.023610 
+iter  10 value 117.961111
+iter  20 value 117.772695
+iter  30 value 110.274748
+iter  40 value 109.808670
+iter  50 value 106.836114
+iter  60 value 105.948349
+iter  70 value 105.439870
+iter  80 value 105.212146
+iter  90 value 104.988340
+iter 100 value 104.937333
+final  value 104.937333 
+stopped after 100 iterations
+Fitting Repeat 3 
+
+# weights:  305
+initial  value 140.070119 
+iter  10 value 117.786477
+iter  20 value 113.886030
+iter  30 value 110.512080
+iter  40 value 109.751493
+iter  50 value 104.570209
+iter  60 value 103.861541
+iter  70 value 102.711026
+iter  80 value 101.315311
+iter  90 value 100.902068
+iter 100 value 100.842487
+final  value 100.842487 
+stopped after 100 iterations
+Fitting Repeat 4 
+
+# weights:  305
+initial  value 123.841837 
+iter  10 value 118.051263
+iter  20 value 114.636914
+iter  30 value 109.459812
+iter  40 value 108.750509
+iter  50 value 108.501026
+iter  60 value 108.361308
+iter  70 value 104.943987
+iter  80 value 103.960291
+iter  90 value 101.808046
+iter 100 value 101.355854
+final  value 101.355854 
+stopped after 100 iterations
+Fitting Repeat 5 
+
+# weights:  305
+initial  value 137.663242 
+iter  10 value 117.807336
+iter  20 value 117.594623
+iter  30 value 109.067876
+iter  40 value 107.939425
+iter  50 value 104.676817
+iter  60 value 102.975415
+iter  70 value 102.229714
+iter  80 value 101.917442
+iter  90 value 101.701760
+iter 100 value 101.646323
+final  value 101.646323 
+stopped after 100 iterations
+svmRadial
+ranger
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &lt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &lt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &lt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &lt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &lt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &lt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &lt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+Setting levels: control = Positive, case = Negative
+Setting direction: controls &gt; cases
+
+
+RUNIT TEST PROTOCOL -- Tue Jun  6 00:16:15 2023 
+*********************************************** 
+Number of test functions: 7 
+Number of errors: 0 
+Number of failures: 0 
+
+ 
+1 Test Suite : 
+HPiP RUnit Tests - 7 test functions, 0 errors, 0 failures
+Number of test functions: 7 
+Number of errors: 0 
+Number of failures: 0 
+Warning messages:
+1: `repeats` has no meaning for this resampling method. 
+2: executing %dopar% sequentially: no parallel backend registered 
+&gt; 
+&gt; 
+&gt; 
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 54.131   1.516  68.765 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">HPiP.Rcheck/HPiP-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>FSmethod</TD><TD style="text-align: right;">37.730</TD><TD style="text-align: right;"> 0.455</TD><TD style="text-align: right;">38.248</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>FreqInteractors</TD><TD style="text-align: right;">0.301</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.303</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateAAC</TD><TD style="text-align: right;">0.040</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.043</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateAutocor</TD><TD style="text-align: right;">0.712</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">0.734</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateCTDC</TD><TD style="text-align: right;">0.106</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.106</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateCTDD</TD><TD style="text-align: right;">0.835</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.840</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateCTDT</TD><TD style="text-align: right;">0.271</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.287</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateCTriad</TD><TD style="text-align: right;">0.436</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">0.449</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateDC</TD><TD style="text-align: right;">0.128</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.132</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateF</TD><TD style="text-align: right;">0.429</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.430</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateKSAAP</TD><TD style="text-align: right;">0.140</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.144</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateQD_Sm</TD><TD style="text-align: right;">2.307</TD><TD style="text-align: right;">0.048</TD><TD style="text-align: right;">2.360</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateTC</TD><TD style="text-align: right;">2.403</TD><TD style="text-align: right;">0.040</TD><TD style="text-align: right;">2.447</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>calculateTC_Sm</TD><TD style="text-align: right;">0.314</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.314</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>corr_plot</TD><TD style="text-align: right;">38.268</TD><TD style="text-align: right;"> 0.415</TD><TD style="text-align: right;">38.748</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>enrichfindP</TD><TD style="text-align: right;"> 0.426</TD><TD style="text-align: right;"> 0.012</TD><TD style="text-align: right;">15.856</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>enrichfind_hp</TD><TD style="text-align: right;">0.051</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">1.144</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>enrichplot</TD><TD style="text-align: right;">0.358</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.374</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>filter_missing_values</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getFASTA</TD><TD style="text-align: right;">0.074</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">7.451</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getHPI</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>get_negativePPI</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>get_positivePPI</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>impute_missing_data</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotPPI</TD><TD style="text-align: right;">0.076</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.076</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>pred_ensembel</TD><TD style="text-align: right;">18.076</TD><TD style="text-align: right;"> 0.294</TD><TD style="text-align: right;">16.057</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>var_imp</TD><TD style="text-align: right;">39.933</TD><TD style="text-align: right;"> 0.717</TD><TD style="text-align: right;">40.755</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

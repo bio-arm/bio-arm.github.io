@@ -1,0 +1,467 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for ReUseData on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><B>[<A href="..#R">R</A>]</B></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:40 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for ReUseData on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the ReUseData package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/ReUseData.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard error">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>1667</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">ReUseData</A>&nbsp;1.1.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/ReUseData">landing page</A>)</SPAN><BR>Qian Liu<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/ReUseData</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">3a1df6c</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;15:42:19&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: ReUseData</TD></TR>
+<TR><TD><B>Version</B>: 1.1.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ReUseData.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ReUseData_1.1.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-06 05:14:11 -0000 (Tue, 06 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-06 05:17:35 -0000 (Tue, 06 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 203.3 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 1</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph ERROR">&nbsp;&nbsp;ERROR&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: ReUseData.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: NA</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ReUseData.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ReUseData_1.1.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/ReUseData.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘ReUseData/DESCRIPTION’ ... OK
+* this is package ‘ReUseData’ version ‘1.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘ReUseData’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                user system elapsed
+dataUpdate    16.421  0.764  17.220
+getCloudData   9.928  0.267  15.628
+dataHub-class  8.907  0.339   9.268
+getData        4.866  0.156   5.025
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘ReUseData_data.Rmd’ using ‘UTF-8’... OK
+  ‘ReUseData_quickStart.Rmd’ using ‘UTF-8’... OK
+  ‘ReUseData_recipe.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+  ...
+--- re-building ‘ReUseData_data.Rmd’ using rmarkdown
+Error: processing vignette &#x27;ReUseData_data.Rmd&#x27; failed with diagnostics:
+there is no package called ‘BiocStyle’
+--- failed re-building ‘ReUseData_data.Rmd’
+
+--- re-building ‘ReUseData_quickStart.Rmd’ using rmarkdown
+Error: processing vignette &#x27;ReUseData_quickStart.Rmd&#x27; failed with diagnostics:
+there is no package called ‘BiocStyle’
+--- failed re-building ‘ReUseData_quickStart.Rmd’
+
+--- re-building ‘ReUseData_recipe.Rmd’ using rmarkdown
+Error: processing vignette &#x27;ReUseData_recipe.Rmd&#x27; failed with diagnostics:
+there is no package called ‘BiocStyle’
+--- failed re-building ‘ReUseData_recipe.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘ReUseData_data.Rmd’ ‘ReUseData_quickStart.Rmd’
+  ‘ReUseData_recipe.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR, 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/ReUseData.Rcheck/00check.log’
+for details.
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">ReUseData.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL ReUseData
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘ReUseData’ ...
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ReUseData)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">ReUseData.Rcheck/tests/testthat.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(testthat)
+&gt; library(ReUseData)
+&gt; 
+&gt; test_check(&quot;ReUseData&quot;)
+Note: you need to assign a name for the recipe: rcpName &lt;- recipeLoad(&#x27;xx&#x27;)
+Data recipe loaded!
+Use inputs() to check required input parameters before evaluation.
+Check here: https://rcwl.org/dataRecipes/echo_out.html
+for user instructions (e.g., eligible input values, data source, etc.)
+
+}[1;30mINFO[0m Final process status is success
+
+Updating data record...
+outfile.txt added
+
+Updating data record...
+c6e4b468ca95b_GRCh38.primary_assembly.genome.fa.1.bt2 added
+c6e4b3e4e22ed_GRCh38.primary_assembly.genome.fa.2.bt2 added
+c6e4b656dde0d_GRCh38.primary_assembly.genome.fa.3.bt2 added
+c6e4b33607daa_GRCh38.primary_assembly.genome.fa.4.bt2 added
+c6e4b75b244c_GRCh38.primary_assembly.genome.fa.rev.1.bt2 added
+c6e4b555cbf88_GRCh38.primary_assembly.genome.fa.rev.2.bt2 added
+c6e4b64d2d31f_outfile.txt added
+c6e4b452c439a_GRCh37_to_GRCh38.chain added
+c6e4b2a859869_GRCh37_to_NCBI34.chain added
+c6e4b55aaa415_GRCh37_to_NCBI35.chain added
+c6e4b130084c4_GRCh37_to_NCBI36.chain added
+c6e4b523e9ffc_GRCh38_to_GRCh37.chain added
+c6e4bba92ed4_GRCh38_to_NCBI34.chain added
+c6e4b19ba0cbc_GRCh38_to_NCBI35.chain added
+c6e4b1299a50c_GRCh38_to_NCBI36.chain added
+c6e4b4db40e6_NCBI34_to_GRCh37.chain added
+c6e4b391fdadc_NCBI34_to_GRCh38.chain added
+c6e4b52c1c150_NCBI35_to_GRCh37.chain added
+c6e4b87b70a1_NCBI35_to_GRCh38.chain added
+c6e4b710ba99d_NCBI36_to_GRCh37.chain added
+c6e4b61681fb7_NCBI36_to_GRCh38.chain added
+c6e4b7b174ea3_GRCm38_to_NCBIM36.chain added
+c6e4b62b3d01_GRCm38_to_NCBIM37.chain added
+c6e4b4a7955b_NCBIM36_to_GRCm38.chain added
+c6e4b7c85481e_NCBIM37_to_GRCm38.chain added
+c6e4b52ab016e_1000G_omni2.5.b37.vcf.gz added
+c6e4b58f624d4_1000G_omni2.5.b37.vcf.gz.tbi added
+c6e4b64673adc_Mills_and_1000G_gold_standard.indels.b37.vcf.gz added
+c6e4b3922bb94_Mills_and_1000G_gold_standard.indels.b37.vcf.gz.tbi added
+c6e4b1bddf15_1000G_omni2.5.hg38.vcf.gz added
+c6e4b3586669f_1000G_omni2.5.hg38.vcf.gz.tbi added
+c6e4b7faf64ef_Mills_and_1000G_gold_standard.indels.hg38.vcf.gz added
+c6e4b400c0202_Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi added
+c6e4b1af444ac_af-only-gnomad.raw.sites.vcf added
+c6e4b330fe29a_af-only-gnomad.raw.sites.vcf.idx added
+c6e4b4767264e_Mutect2-exome-panel.vcf.idx added
+c6e4b70510435_Mutect2-WGS-panel-b37.vcf added
+c6e4b17e2b5b9_Mutect2-WGS-panel-b37.vcf.idx added
+c6e4bc9369e9_small_exac_common_3.vcf added
+c6e4b1ad69c9e_small_exac_common_3.vcf.idx added
+c6e4b6d8d59ce_1000g_pon.hg38.vcf.gz added
+c6e4b1f93eead_1000g_pon.hg38.vcf.gz.tbi added
+c6e4b6d153c9b_af-only-gnomad.hg38.vcf.gz added
+c6e4b793688a2_af-only-gnomad.hg38.vcf.gz.tbi added
+c6e4b394dfb6a_small_exac_common_3.hg38.vcf.gz added
+c6e4b7faee1a7_small_exac_common_3.hg38.vcf.gz.tbi added
+c6e4b7e11c988_gencode.v41.annotation.gtf added
+c6e4b726dd646_gencode.v42.annotation.gtf added
+c6e4b5270a2f7_gencode.vM30.annotation.gtf added
+c6e4b68d3a29_gencode.vM31.annotation.gtf added
+c6e4b63797fe3_gencode.v41.transcripts.fa added
+c6e4b33d8c2ae_gencode.v41.transcripts.fa.fai added
+c6e4b1a488cc_gencode.v42.transcripts.fa added
+c6e4b69a4bce5_gencode.v42.transcripts.fa.fai added
+c6e4b38805809_gencode.vM30.pc_transcripts.fa added
+c6e4b7e29d0ea_gencode.vM30.pc_transcripts.fa.fai added
+c6e4b3c4fbe53_gencode.vM31.pc_transcripts.fa added
+c6e4b11767cdd_gencode.vM31.pc_transcripts.fa.fai added
+c6e4b62910bc7_GRCh38.primary_assembly.genome.fa.1.ht2 added
+c6e4b757279e7_GRCh38.primary_assembly.genome.fa.2.ht2 added
+c6e4b13345bf3_GRCh38.primary_assembly.genome.fa.3.ht2 added
+c6e4b18177266_GRCh38.primary_assembly.genome.fa.4.ht2 added
+c6e4b7521ded7_GRCh38.primary_assembly.genome.fa.5.ht2 added
+c6e4b53405df5_GRCh38.primary_assembly.genome.fa.6.ht2 added
+c6e4b330bb713_GRCh38.primary_assembly.genome.fa.7.ht2 added
+c6e4b2831c171_GRCh38.primary_assembly.genome.fa.8.ht2 added
+c6e4b1aa78444_GRCh38_full_analysis_set_plus_decoy_hla.fa.fai added
+c6e4b235cbb48_GRCh38_full_analysis_set_plus_decoy_hla.fa.amb added
+c6e4b4014772a_GRCh38_full_analysis_set_plus_decoy_hla.fa.ann added
+c6e4b273aee2d_GRCh38_full_analysis_set_plus_decoy_hla.fa.bwt added
+c6e4b3e3357e6_GRCh38_full_analysis_set_plus_decoy_hla.fa.pac added
+c6e4b2da1d0f8_GRCh38_full_analysis_set_plus_decoy_hla.fa.sa added
+c6e4b46cedcda_GRCh38_full_analysis_set_plus_decoy_hla.fa added
+c6e4b2b489481_GRCh38.primary_assembly.genome.fa.fai added
+c6e4b26d8599a_GRCh38.primary_assembly.genome.fa.amb added
+c6e4b1cd844_GRCh38.primary_assembly.genome.fa.ann added
+c6e4b2af77628_GRCh38.primary_assembly.genome.fa.bwt added
+c6e4b24ea2322_GRCh38.primary_assembly.genome.fa.pac added
+c6e4b728aae8a_GRCh38.primary_assembly.genome.fa.sa added
+c6e4b7d68191f_GRCh38.primary_assembly.genome.fa added
+c6e4b2b775d4c_hs37d5.fa.fai added
+c6e4b56042e6e_hs37d5.fa.amb added
+c6e4b3140dbce_hs37d5.fa.ann added
+c6e4b2d1be618_hs37d5.fa.bwt added
+c6e4b3fa8eb53_hs37d5.fa.pac added
+c6e4b69c133d7_hs37d5.fa.sa added
+c6e4b2b45b703_hs37d5.fa added
+c6e4b7bf8a9a6_complete_ref_lens.bin added
+c6e4b7b37b0b5_ctable.bin added
+c6e4bdd6c2ca_ctg_offsets.bin added
+c6e4b716b238e_duplicate_clusters.tsv added
+c6e4be6c0ca8_info.json added
+c6e4b25ee3530_mphf.bin added
+c6e4b668d0265_pos.bin added
+c6e4b61ac6a9d_pre_indexing.log added
+c6e4b58f9ec43_rank.bin added
+c6e4bebec3d6_ref_indexing.log added
+c6e4b7c53eee1_refAccumLengths.bin added
+c6e4b7c56a78b_reflengths.bin added
+c6e4b4ed33b00_refseq.bin added
+c6e4b238edd0e_seq.bin added
+c6e4b3a89ff72_versionInfo.json added
+c6e4b7c750bf8_salmon_index added
+c6e4b6a5db9e9_chrLength.txt added
+c6e4b65d293f3_chrName.txt added
+c6e4b234d6592_chrNameLength.txt added
+c6e4b6a7a922d_chrStart.txt added
+c6e4b10ca0a1c_exonGeTrInfo.tab added
+c6e4b483788b4_exonInfo.tab added
+c6e4b5d0540b8_geneInfo.tab added
+c6e4be32233b_Genome added
+c6e4b73aee600_genomeParameters.txt added
+c6e4b33096f26_Log.out added
+c6e4b3f72ff09_SA added
+c6e4b20cacc19_SAindex added
+c6e4b72b25a79_sjdbInfo.txt added
+c6e4b293432e1_sjdbList.fromGTF.out.tab added
+c6e4b4c10831c_sjdbList.out.tab added
+c6e4b6eab041f_transcriptInfo.tab added
+c6e4b246be396_GRCh38.GENCODE.v42_100 added
+c6e4b59e745e6_knownGene_hg38.sql added
+c6e4b601627ad_knownGene_hg38.txt added
+c6e4b32d7f03e_refGene_hg38.sql added
+c6e4b7fd57b16_refGene_hg38.txt added
+c6e4b46a32a12_knownGene_mm39.sql added
+c6e4b14845adb_knownGene_mm39.txt added
+c6e4b58cf675a_refGene_mm39.sql added
+c6e4b5561ede8_refGene_mm39.txt added
+trying URL &#x27;https://storage.googleapis.com/reusedata/echo/outfile.txt&#x27;
+Content type &#x27;text/plain&#x27; length 30 bytes
+==================================================
+downloaded 30 bytes
+
+trying URL &#x27;https://storage.googleapis.com/reusedata/echo/echo_out_Hello_World!_outfile.yml&#x27;
+Content type &#x27;application/x-yaml&#x27; length 151 bytes
+==================================================
+downloaded 151 bytes
+
+trying URL &#x27;https://storage.googleapis.com/reusedata/echo/echo_out_Hello_World!_outfile.cwl&#x27;
+Content type &#x27;application/octet-stream&#x27; length 1152 bytes
+==================================================
+downloaded 1152 bytes
+
+trying URL &#x27;https://storage.googleapis.com/reusedata/echo/echo_out_Hello_World!_outfile.md5&#x27;
+Content type &#x27;application/octet-stream&#x27; length 45 bytes
+==================================================
+downloaded 45 bytes
+
+trying URL &#x27;https://storage.googleapis.com/reusedata/echo/echo_out_Hello_World!_outfile.sh&#x27;
+Content type &#x27;application/x-shellscript&#x27; length 68 bytes
+==================================================
+downloaded 68 bytes
+
+Data is downloaded: 
+/tmp/RtmpA3sjxN/test_gcpData/outfile.txt
+}[1;30mINFO[0m Final process status is success
+NOTE: existing caches will be removed and regenerated!
+Updating recipes...
+STAR_index.R added
+bowtie2_index.R added
+echo_out.R added
+ensembl_liftover.R added
+gcp_broad_gatk_hg19.R added
+gcp_broad_gatk_hg38.R added
+gcp_gatk_mutect2_b37.R added
+gcp_gatk_mutect2_hg38.R added
+gencode_annotation.R added
+gencode_genome_grch38.R added
+gencode_transcripts.R added
+hisat2_index.R added
+reference_genome.R added
+salmon_index.R added
+ucsc_database.R added
+
+Data recipe loaded!
+Use inputs(ensembl_liftover) to check required input parameters before evaluation.
+Check here: https://rcwl.org/dataRecipes/ensembl_liftover.html
+for user instructions (e.g., eligible input values, data source, etc.)
+
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 44 ]
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 30.472   1.628  36.943 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">ReUseData.Rcheck/ReUseData-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>dataHub-class</TD><TD style="text-align: right;">8.907</TD><TD style="text-align: right;">0.339</TD><TD style="text-align: right;">9.268</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>dataSearch</TD><TD style="text-align: right;">1.387</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">1.401</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>dataUpdate</TD><TD style="text-align: right;">16.421</TD><TD style="text-align: right;"> 0.764</TD><TD style="text-align: right;">17.220</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getCloudData</TD><TD style="text-align: right;"> 9.928</TD><TD style="text-align: right;"> 0.267</TD><TD style="text-align: right;">15.628</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getData</TD><TD style="text-align: right;">4.866</TD><TD style="text-align: right;">0.156</TD><TD style="text-align: right;">5.025</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>meta_data</TD><TD style="text-align: right;">0.01</TD><TD style="text-align: right;">0.00</TD><TD style="text-align: right;">0.01</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>recipeHub-class</TD><TD style="text-align: right;">0.235</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.236</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>recipeLoad</TD><TD style="text-align: right;">1.502</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.511</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>recipeMake</TD><TD style="text-align: right;">4.575</TD><TD style="text-align: right;">0.201</TD><TD style="text-align: right;">4.777</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>recipeSearch</TD><TD style="text-align: right;">0.678</TD><TD style="text-align: right;">0.031</TD><TD style="text-align: right;">0.711</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>recipeUpdate</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

@@ -1,0 +1,10 @@
+Package: phemd
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:phemd.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings phemd_1.17.0.tar.gz
+StartedAt: 2023-06-06 04:03:34 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 04:12:05 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 510.8 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: phemd.Rcheck
+Warnings: NA

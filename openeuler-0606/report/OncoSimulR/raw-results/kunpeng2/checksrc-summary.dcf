@@ -1,0 +1,10 @@
+Package: OncoSimulR
+Version: 4.3.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:OncoSimulR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings OncoSimulR_4.3.2.tar.gz
+StartedAt: 2023-06-06 03:29:18 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 03:41:17 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 719.2 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: OncoSimulR.Rcheck
+Warnings: NA

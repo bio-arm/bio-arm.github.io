@@ -1,0 +1,445 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for AlpsNMR on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><B>[<A href="..#A">A</A>]</B></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:25 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for AlpsNMR on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the AlpsNMR package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/AlpsNMR.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard ok">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>54</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">AlpsNMR</A>&nbsp;4.3.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/AlpsNMR">landing page</A>)</SPAN><BR>Sergio Oller Moreno<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/AlpsNMR</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">2a21cd0</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;15:24:59&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: AlpsNMR</TD></TR>
+<TR><TD><B>Version</B>: 4.3.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AlpsNMR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AlpsNMR_4.3.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-05 17:03:52 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-05 17:10:05 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 373.5 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: AlpsNMR.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 0</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AlpsNMR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AlpsNMR_4.3.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/AlpsNMR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘AlpsNMR/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘AlpsNMR’ version ‘4.3.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘AlpsNMR’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                                      user system elapsed
+Peak_detection                      11.735  2.011   9.676
+SummarizedExperiment_to_nmr_data_1r  9.162  0.644   9.449
+nmr_pca_outliers_robust              8.147  0.725   8.439
+plot_interactive                     5.226  1.105   1.095
+bp_kfold_VIP_analysis                4.143  1.853   0.801
+nmr_pca_build_model                  4.189  1.738   4.935
+filter.nmr_dataset_family            3.350  1.874   3.443
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘Vig01-introduction-to-alpsnmr.Rmd’ using ‘UTF-8’... OK
+  ‘Vig01b-introduction-to-alpsnmr-old-api.Rmd’ using ‘UTF-8’... OK
+  ‘Vig02-handling-metadata-and-annotations.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: OK
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">AlpsNMR.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL AlpsNMR
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘AlpsNMR’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (AlpsNMR)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">AlpsNMR.Rcheck/tests/testthat.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(testthat)
+&gt; library(AlpsNMR)
+Loading required package: future
+
+Attaching package: &#x27;AlpsNMR&#x27;
+
+The following object is masked from &#x27;package:stats&#x27;:
+
+    filter
+
+&gt; 
+&gt; test_check(&quot;AlpsNMR&quot;)
+[ FAIL 0 | WARN 0 | SKIP 1 | PASS 91 ]
+
+══ Skipped tests ═══════════════════════════════════════════════════════════════
+• On Bioconductor (1)
+
+[ FAIL 0 | WARN 0 | SKIP 1 | PASS 91 ]
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 20.536   5.088  19.800 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">AlpsNMR.Rcheck/AlpsNMR-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>AlpsNMR-package</TD><TD style="text-align: right;">2.381</TD><TD style="text-align: right;">0.334</TD><TD style="text-align: right;">2.383</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>HMDB_blood</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>HMDB_cell</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>HMDB_urine</TD><TD style="text-align: right;">0.005</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.005</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Parameters_blood</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Parameters_cell</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Parameters_urine</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Peak_detection</TD><TD style="text-align: right;">11.735</TD><TD style="text-align: right;"> 2.011</TD><TD style="text-align: right;"> 9.676</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Pipelines</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>ROI_blood</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.005</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>ROI_cell</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>ROI_urine</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>SummarizedExperiment_to_nmr_data_1r</TD><TD style="text-align: right;">9.162</TD><TD style="text-align: right;">0.644</TD><TD style="text-align: right;">9.449</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>SummarizedExperiment_to_nmr_dataset_peak_table</TD><TD style="text-align: right;">1.454</TD><TD style="text-align: right;">0.419</TD><TD style="text-align: right;">1.435</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>bp_VIP_analysis</TD><TD style="text-align: right;">0.373</TD><TD style="text-align: right;">0.318</TD><TD style="text-align: right;">2.700</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>bp_kfold_VIP_analysis</TD><TD style="text-align: right;">4.143</TD><TD style="text-align: right;">1.853</TD><TD style="text-align: right;">0.801</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>download_MTBLS242</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>file_lister</TD><TD style="text-align: right;">0.085</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.094</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>files_to_rDolphin</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>filter.nmr_dataset_family</TD><TD style="text-align: right;">3.350</TD><TD style="text-align: right;">1.874</TD><TD style="text-align: right;">3.443</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>format.nmr_dataset</TD><TD style="text-align: right;">0.917</TD><TD style="text-align: right;">0.397</TD><TD style="text-align: right;">0.885</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>format.nmr_dataset_1D</TD><TD style="text-align: right;">1.014</TD><TD style="text-align: right;">0.462</TD><TD style="text-align: right;">0.994</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>format.nmr_dataset_peak_table</TD><TD style="text-align: right;">1.133</TD><TD style="text-align: right;">0.404</TD><TD style="text-align: right;">1.086</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>get_integration_with_metadata</TD><TD style="text-align: right;">0.033</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.037</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>hmdb</TD><TD style="text-align: right;">0.062</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.062</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>is.nmr_dataset</TD><TD style="text-align: right;">0.908</TD><TD style="text-align: right;">0.410</TD><TD style="text-align: right;">0.879</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>is.nmr_dataset_1D</TD><TD style="text-align: right;">1.039</TD><TD style="text-align: right;">0.453</TD><TD style="text-align: right;">1.041</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>is.nmr_dataset_peak_table</TD><TD style="text-align: right;">1.140</TD><TD style="text-align: right;">0.475</TD><TD style="text-align: right;">1.160</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>load_and_save_functions</TD><TD style="text-align: right;">0.957</TD><TD style="text-align: right;">0.422</TD><TD style="text-align: right;">0.945</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>models_stability_plot_bootstrap</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>models_stability_plot_plsda</TD><TD style="text-align: right;">0.476</TD><TD style="text-align: right;">0.358</TD><TD style="text-align: right;">0.469</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>new_nmr_dataset</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>new_nmr_dataset_1D</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>new_nmr_dataset_peak_table</TD><TD style="text-align: right;">1.066</TD><TD style="text-align: right;">0.475</TD><TD style="text-align: right;">1.115</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_baseline_estimation</TD><TD style="text-align: right;">0.152</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">0.190</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_baseline_removal</TD><TD style="text-align: right;">0.006</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.005</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_baseline_threshold</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_baseline_threshold_plot</TD><TD style="text-align: right;">0.270</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.286</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_batman</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_batman_options</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_build_peak_table</TD><TD style="text-align: right;">0.062</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.062</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_data</TD><TD style="text-align: right;">0.069</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.073</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_data_1r_to_SummarizedExperiment</TD><TD style="text-align: right;">1.385</TD><TD style="text-align: right;">0.370</TD><TD style="text-align: right;">1.368</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_data_analysis</TD><TD style="text-align: right;">0.476</TD><TD style="text-align: right;">0.447</TD><TD style="text-align: right;">0.513</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_dataset</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_dataset_1D</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_dataset_peak_table_to_SummarizedExperiment</TD><TD style="text-align: right;">1.388</TD><TD style="text-align: right;">0.509</TD><TD style="text-align: right;">1.420</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_exclude_region</TD><TD style="text-align: right;">0.007</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_export_data_1r</TD><TD style="text-align: right;">1.037</TD><TD style="text-align: right;">0.520</TD><TD style="text-align: right;">1.084</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_get_peak_distances</TD><TD style="text-align: right;">0.014</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.014</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_identify_regions_blood</TD><TD style="text-align: right;">0.018</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.021</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_identify_regions_cell</TD><TD style="text-align: right;">0.014</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.014</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_identify_regions_urine</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.021</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_integrate_regions</TD><TD style="text-align: right;">0.02</TD><TD style="text-align: right;">0.00</TD><TD style="text-align: right;">0.02</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_interpolate_1D</TD><TD style="text-align: right;">2.243</TD><TD style="text-align: right;">0.885</TD><TD style="text-align: right;">2.180</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_meta_add</TD><TD style="text-align: right;">2.520</TD><TD style="text-align: right;">1.132</TD><TD style="text-align: right;">2.723</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_meta_export</TD><TD style="text-align: right;">0.920</TD><TD style="text-align: right;">0.461</TD><TD style="text-align: right;">0.952</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_meta_get</TD><TD style="text-align: right;">1.013</TD><TD style="text-align: right;">0.509</TD><TD style="text-align: right;">1.038</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_meta_get_column</TD><TD style="text-align: right;">0.945</TD><TD style="text-align: right;">0.584</TD><TD style="text-align: right;">1.036</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_meta_groups</TD><TD style="text-align: right;">1.024</TD><TD style="text-align: right;">0.483</TD><TD style="text-align: right;">0.984</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_normalize</TD><TD style="text-align: right;">0.335</TD><TD style="text-align: right;">0.056</TD><TD style="text-align: right;">0.392</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_pca_build_model</TD><TD style="text-align: right;">4.189</TD><TD style="text-align: right;">1.738</TD><TD style="text-align: right;">4.935</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_pca_outliers</TD><TD style="text-align: right;">1.236</TD><TD style="text-align: right;">0.455</TD><TD style="text-align: right;">1.235</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_pca_outliers_filter</TD><TD style="text-align: right;">1.257</TD><TD style="text-align: right;">0.469</TD><TD style="text-align: right;">1.268</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_pca_outliers_plot</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_pca_outliers_robust</TD><TD style="text-align: right;">8.147</TD><TD style="text-align: right;">0.725</TD><TD style="text-align: right;">8.439</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_pca_plots</TD><TD style="text-align: right;">0.538</TD><TD style="text-align: right;">0.040</TD><TD style="text-align: right;">0.578</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_peak_clustering</TD><TD style="text-align: right;">0.099</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.103</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_ppm_resolution</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.009</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_read_bruker_fid</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_read_samples</TD><TD style="text-align: right;">1.983</TD><TD style="text-align: right;">0.923</TD><TD style="text-align: right;">1.947</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>nmr_zip_bruker_samples</TD><TD style="text-align: right;">0.229</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">0.252</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>peaklist_accept_peaks</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.005</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>permutation_test_model</TD><TD style="text-align: right;">2.487</TD><TD style="text-align: right;">0.739</TD><TD style="text-align: right;">2.915</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>permutation_test_plot</TD><TD style="text-align: right;">2.592</TD><TD style="text-align: right;">0.784</TD><TD style="text-align: right;">2.853</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot.nmr_dataset_1D</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_bootstrap_multimodel</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_interactive</TD><TD style="text-align: right;">5.226</TD><TD style="text-align: right;">1.105</TD><TD style="text-align: right;">1.095</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_plsda_multimodel</TD><TD style="text-align: right;">0.225</TD><TD style="text-align: right;">0.275</TD><TD style="text-align: right;">0.317</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_plsda_samples</TD><TD style="text-align: right;">0.137</TD><TD style="text-align: right;">0.186</TD><TD style="text-align: right;">0.244</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_vip_scores</TD><TD style="text-align: right;">0.031</TD><TD style="text-align: right;">0.055</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot_webgl</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plsda_auroc_vip_compare</TD><TD style="text-align: right;">0.616</TD><TD style="text-align: right;">0.400</TD><TD style="text-align: right;">0.854</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plsda_auroc_vip_method</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>ppm_resolution</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>print.nmr_dataset</TD><TD style="text-align: right;">0.949</TD><TD style="text-align: right;">0.492</TD><TD style="text-align: right;">0.984</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>print.nmr_dataset_1D</TD><TD style="text-align: right;">1.131</TD><TD style="text-align: right;">0.566</TD><TD style="text-align: right;">1.225</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>print.nmr_dataset_peak_table</TD><TD style="text-align: right;">1.169</TD><TD style="text-align: right;">0.549</TD><TD style="text-align: right;">1.195</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>random_subsampling</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>save_files_to_rDolphin</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>save_profiling_output</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>sub-.nmr_dataset</TD><TD style="text-align: right;">1.029</TD><TD style="text-align: right;">0.511</TD><TD style="text-align: right;">0.986</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>sub-.nmr_dataset_1D</TD><TD style="text-align: right;">1.019</TD><TD style="text-align: right;">0.586</TD><TD style="text-align: right;">1.130</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>sub-.nmr_dataset_peak_table</TD><TD style="text-align: right;">1.215</TD><TD style="text-align: right;">0.666</TD><TD style="text-align: right;">1.311</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>tidy.nmr_dataset_1D</TD><TD style="text-align: right;">1.226</TD><TD style="text-align: right;">0.597</TD><TD style="text-align: right;">1.328</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>to_ChemoSpec</TD><TD style="text-align: right;">1.215</TD><TD style="text-align: right;">0.667</TD><TD style="text-align: right;">1.373</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>validate_nmr_dataset</TD><TD style="text-align: right;">2.159</TD><TD style="text-align: right;">0.901</TD><TD style="text-align: right;">2.100</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>validate_nmr_dataset_family</TD><TD style="text-align: right;">1.191</TD><TD style="text-align: right;">0.546</TD><TD style="text-align: right;">1.193</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>validate_nmr_dataset_peak_table</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>zzz</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">2.002</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

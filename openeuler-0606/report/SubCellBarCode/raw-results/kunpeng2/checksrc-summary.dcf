@@ -1,0 +1,10 @@
+Package: SubCellBarCode
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:SubCellBarCode.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings SubCellBarCode_1.17.0.tar.gz
+StartedAt: 2023-06-06 08:07:29 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 08:19:52 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 743.1 seconds
+RetCode: 0
+Status: OK
+CheckDir: SubCellBarCode.Rcheck
+Warnings: 0

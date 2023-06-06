@@ -1,0 +1,10 @@
+Package: DepecheR
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:DepecheR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings DepecheR_1.17.0.tar.gz
+StartedAt: 2023-06-05 21:06:48 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 21:10:01 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 193.2 seconds
+RetCode: 0
+Status: OK
+CheckDir: DepecheR.Rcheck
+Warnings: 0

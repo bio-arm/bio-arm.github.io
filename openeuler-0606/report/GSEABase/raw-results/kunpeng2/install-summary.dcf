@@ -1,0 +1,8 @@
+Package: GSEABase
+Version: 1.63.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL GSEABase
+StartedAt: 2023-06-05 08:24:28 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:24:55 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 26.8 seconds
+RetCode: 0
+Status: OK

@@ -1,0 +1,109 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:peakPantheR.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings peakPantheR_1.15.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/peakPantheR.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘peakPantheR/DESCRIPTION’ ... OK
+* this is package ‘peakPantheR’ version ‘1.15.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘peakPantheR’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                                                          user system elapsed
+peakPantheR_ROIStatistics                               23.686  0.227  23.991
+peakPantheR_parallelAnnotation                          17.627  0.172  17.843
+outputAnnotationDiagnostic-peakPantheRAnnotation-method 17.207  0.227  17.552
+outputAnnotationResult-peakPantheRAnnotation-method     16.944  0.120  17.103
+EICs-peakPantheRAnnotation-method                       14.738  0.713  15.578
+retentionTimeCorrection-peakPantheRAnnotation-method    11.656  0.060  11.744
+peakPantheR_singleFileSearch                             5.911  0.031   5.955
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ ERROR
+Running the tests in ‘tests/testthat.R’ failed.
+Last 13 lines of output:
+  Error: Test failures
+  In addition: Warning messages:
+  1: In .Internal(gc(verbose, reset, full)) :
+    closing unused connection 10 (/tmp/RtmpWPb0vl/notValidXML.mzML)
+  2: In .Internal(gc(verbose, reset, full)) :
+    closing unused connection 9 (/tmp/RtmpWPb0vl/notValidXML.mzML)
+  3: In .Internal(gc(verbose, reset, full)) :
+    closing unused connection 8 (/tmp/RtmpWPb0vl/notValidXML.mzML)
+  4: In .Internal(gc(verbose, reset, full)) :
+    closing unused connection 7 (/tmp/RtmpWPb0vl/notValidXML.mzML)
+  5: In .Internal(gc(verbose, reset, full)) :
+    closing unused connection 6 (/home/biocbuild/R/R-4.3.0/site-library/peakPantheR/extdata/test_fakemzML.mzML)
+  6: In .Internal(gc(verbose, reset, full)) :
+    closing unused connection 5 (/home/biocbuild/R/R-4.3.0/site-library/peakPantheR/extdata/test_fakemzML.mzML)
+  Execution halted
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘getting-started.Rmd’ using ‘UTF-8’... OK
+  ‘parallel-annotation.Rmd’ using ‘UTF-8’... OK
+  ‘peakPantheR-GUI.Rmd’ using ‘UTF-8’... OK
+  ‘real-time-annotation.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/peakPantheR.Rcheck/00check.log’
+for details.
+

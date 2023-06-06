@@ -1,0 +1,8 @@
+Package: fastseg
+Version: 1.47.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL fastseg
+StartedAt: 2023-06-05 08:15:28 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:15:44 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 16.0 seconds
+RetCode: 0
+Status: OK

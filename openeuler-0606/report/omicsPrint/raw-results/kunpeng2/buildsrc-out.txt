@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data omicsPrint
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘omicsPrint/DESCRIPTION’ ... OK
+* preparing ‘omicsPrint’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘omicsPrint.Rmd’ using rmarkdown
+trying URL 'ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100940/matrix/GSE100940_series_matrix.txt.gz'
+Content type 'unknown' length 50832972 bytes (48.5 MB)
+==================================================
+
+Quitting from lines 251-261 [downloadretry] (omicsPrint.Rmd)
+Error: processing vignette 'omicsPrint.Rmd' failed with diagnostics:
+cannot open URL 'ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100940/matrix/GSE100940_series_matrix.txt.gz'
+--- failed re-building ‘omicsPrint.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘omicsPrint.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

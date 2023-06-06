@@ -1,0 +1,10 @@
+Package: bambu
+Version: 3.3.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data bambu
+StartedAt: 2023-06-05 09:24:02 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 10:04:02 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 2400.5 seconds
+RetCode: None
+Status: TIMEOUT
+PackageFile: None
+PackageFileSize: NA

@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data hipathia
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘hipathia/DESCRIPTION’ ... OK
+* preparing ‘hipathia’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘hipathia-vignette.Rmd’ using rmarkdown
+! Dimension too large.
+\fb@put@frame ...p \ifdim \dimen@ >\ht \@tempboxa 
+                                                  \fb@putboxa #1\fb@afterfra...
+l.2938 \end{Shaded}
+
+Error: processing vignette 'hipathia-vignette.Rmd' failed with diagnostics:
+LaTeX failed to compile /tmp/RtmppgL4Qu/Rbuild76f1720cd1a9/hipathia/vignettes/hipathia-vignette.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See hipathia-vignette.log for more info.
+--- failed re-building ‘hipathia-vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘hipathia-vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

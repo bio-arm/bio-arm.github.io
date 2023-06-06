@@ -1,0 +1,8 @@
+Package: biocGraph
+Version: 1.63.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL biocGraph
+StartedAt: 2023-06-05 08:32:41 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:33:00 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 19.1 seconds
+RetCode: 0
+Status: OK

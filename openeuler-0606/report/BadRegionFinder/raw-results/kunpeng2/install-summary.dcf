@@ -1,0 +1,8 @@
+Package: BadRegionFinder
+Version: 1.29.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL BadRegionFinder
+StartedAt: 2023-06-05 08:29:28 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:30:24 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 56.8 seconds
+RetCode: 0
+Status: OK

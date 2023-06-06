@@ -1,0 +1,10 @@
+Package: crisprseekplus
+Version: 1.27.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:crisprseekplus.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings crisprseekplus_1.27.0.tar.gz
+StartedAt: 2023-06-05 20:24:15 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 20:31:23 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 427.6 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: crisprseekplus.Rcheck
+Warnings: NA

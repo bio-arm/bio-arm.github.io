@@ -1,0 +1,10 @@
+Package: ReactomeContentService4R
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data ReactomeContentService4R
+StartedAt: 2023-06-05 14:14:22 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 14:16:04 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 101.2 seconds
+RetCode: 0
+Status: OK
+PackageFile: ReactomeContentService4R_1.9.0.tar.gz
+PackageFileSize: 2.28 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

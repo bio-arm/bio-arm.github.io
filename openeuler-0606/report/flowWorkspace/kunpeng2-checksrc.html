@@ -1,0 +1,707 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for flowWorkspace on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><B>[<A href="..#F">F</A>]</B></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:31 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for flowWorkspace on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the flowWorkspace package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/flowWorkspace.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard warnings">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>725</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">flowWorkspace</A>&nbsp;4.13.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/flowWorkspace">landing page</A>)</SPAN><BR>Greg Finak <greg@ozette.com>, Mike Jiang<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/flowWorkspace</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">ba22296</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:19:50&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph WARNINGS">&nbsp;&nbsp;WARNINGS&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: flowWorkspace</TD></TR>
+<TR><TD><B>Version</B>: 4.13.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:flowWorkspace.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings flowWorkspace_4.13.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-05 22:35:28 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-05 22:39:55 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 267.4 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph WARNINGS">&nbsp;&nbsp;WARNINGS&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: flowWorkspace.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 5</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:flowWorkspace.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings flowWorkspace_4.13.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/flowWorkspace.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘flowWorkspace/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘flowWorkspace’ version ‘4.13.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘flowWorkspace’ can be installed ... OK
+* used C++ compiler: ‘g++ (GCC) 10.3.1’
+* checking C++ specification ... NOTE
+  Specified C++11: please drop specification unless essential
+* checking installed package size ... NOTE
+  installed size is 75.3Mb
+  sub-directories of 1Mb or more:
+    libs  73.9Mb
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Malformed Title field: should not end in a period.
+Non-standard license specification:
+  AGPL-3.0-only
+Standardizable: FALSE
+* checking top-level files ... NOTE
+File
+  LICENSE
+is not mentioned in the DESCRIPTION file.
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... NOTE
+Namespaces in Imports field not imported from:
+  ‘RBGL’ ‘RProtoBufLib’ ‘ggplot2’ ‘grDevices’ ‘graphics’ ‘utils’
+  All declared Imports should be used.
+Unexported objects imported by &#x27;:::&#x27; calls:
+  ‘DelayedArray:::simplify_NULL_dimnames’ ‘flowCore:::.estimateLogicle’
+  ‘flowCore:::.spillover_pattern’ ‘flowCore:::checkClass’
+  ‘flowCore:::guid’ ‘flowCore:::logicle_transform’
+  ‘flowCore:::parse_pd_for_read_fs’ ‘flowCore:::txt2spillmatrix’
+  ‘flowCore:::updateTransformKeywords’
+  ‘flowCore:::validFilterResultList’ ‘graph:::.makeEdgeKeys’
+  ‘ncdfFlow:::.isValidSamples’ ‘stats:::.splinefun’
+  See the note in ?`:::` about the use of this operator.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+generate_gatingset_example_archive: warning in list.files(dataDir,
+  pattern = &quot;gs_manual&quot;, full = TRUE): partial argument match of &#x27;full&#x27;
+  to &#x27;full.names&#x27;
+.computeCV : &lt;anonymous&gt;: no visible binding for global variable
+  ‘xml.count’
+.computeCV : &lt;anonymous&gt;: no visible binding for global variable
+  ‘openCyto.count’
+.computeCV : &lt;anonymous&gt; : &lt;anonymous&gt;: no visible global function
+  definition for ‘IQR’
+.computeCV : &lt;anonymous&gt; : &lt;anonymous&gt;: no visible global function
+  definition for ‘median’
+.computeCV_gh : &lt;anonymous&gt;: no visible global function definition for
+  ‘IQR’
+.computeCV_gh : &lt;anonymous&gt;: no visible global function definition for
+  ‘median’
+.graph_handler : asGraphNEL: no visible global function definition for
+  ‘new’
+.graph_handler : asGraphNEL: no visible global function definition for
+  ‘validObject’
+.load_legacy: no visible global function definition for ‘is’
+.load_legacy: no visible global function definition for ‘new’
+.load_legacy: no visible global function definition for ‘.hasSlot’
+.load_legacy : &lt;anonymous&gt;: no visible global function definition for
+  ‘is’
+.mergeGates : &lt;anonymous&gt;: no visible global function definition for
+  ‘extends’
+.preprocessMap: no visible binding for global variable ‘old’
+.preprocessMap: no visible binding for global variable ‘.’
+GatingSetList: no visible global function definition for ‘as’
+GatingSetList: no visible global function definition for ‘validObject’
+booleanFilter: no visible global function definition for ‘new’
+booleanFilter: no visible global function definition for ‘is’
+cf_append_cols: no visible global function definition for ‘new’
+cf_flush_meta: no visible global function definition for ‘is’
+cf_get_uri: no visible global function definition for ‘is’
+cf_keyword_delete: no visible global function definition for ‘is’
+cf_keyword_insert: no visible global function definition for ‘is’
+cf_keyword_rename: no visible global function definition for ‘is’
+cf_keyword_rename: no visible binding for global variable ‘na_idx’
+cf_keyword_set: no visible global function definition for ‘is’
+cf_load_meta: no visible global function definition for ‘is’
+cf_lock: no visible global function definition for ‘is’
+cf_rename_channel: no visible global function definition for ‘is’
+cf_rename_marker: no visible global function definition for ‘is’
+cf_rename_marker: no visible binding for global variable ‘desc’
+cf_scale_time_channel: no visible global function definition for ‘is’
+cf_unlock: no visible global function definition for ‘is’
+cf_write_disk: no visible global function definition for ‘is’
+char2booleanFilter: no visible global function definition for ‘new’
+check_comp: no visible global function definition for ‘is’
+convert_backend: no visible binding for global variable ‘output’
+convert_backend: no visible global function definition for
+  ‘cf_write_tile’
+copy_view.cytoframe: no visible global function definition for ‘new’
+copy_view.cytoset: no visible global function definition for ‘new’
+cs_add_cytoframe: no visible global function definition for ‘is’
+cs_get_cytoframe: no visible global function definition for ‘is’
+cs_get_cytoframe: no visible global function definition for ‘new’
+cs_get_uri: no visible global function definition for ‘is’
+cs_keyword_delete: no visible global function definition for ‘is’
+cs_keyword_insert: no visible global function definition for ‘is’
+cs_keyword_rename: no visible global function definition for ‘is’
+cs_keyword_rename : &lt;anonymous&gt;: no visible binding for global variable
+  ‘keys’
+cs_keyword_set: no visible global function definition for ‘is’
+cs_set_cytoframe: no visible global function definition for ‘is’
+cytoframe_to_flowFrame: no visible global function definition for ‘as’
+cytoset: no visible global function definition for ‘new’
+cytoset_to_flowSet: no visible global function definition for ‘as’
+get_cytoframe_from_cs: no visible global function definition for ‘is’
+get_cytoframe_from_cs: no visible global function definition for ‘new’
+gh_apply_to_cs: no visible global function definition for ‘new’
+gh_plot_pop_count_cv: no visible global function definition for
+  ‘barchart’
+gh_plot_pop_count_cv: no visible binding for global variable
+  ‘ggplot2like’
+gh_pop_compare_stats: no visible binding for global variable ‘node’
+gh_pop_get_count: no visible binding for global variable ‘count’
+gh_pop_get_proportion: no visible binding for global variable ‘percent’
+gh_pop_get_stats_tfilter: no visible global function definition for
+  ‘is’
+gh_pop_get_stats_tfilter : &lt;anonymous&gt;: no visible binding for global
+  variable ‘Population’
+gh_pop_set_gate: no visible global function definition for ‘is’
+gs_clone: no visible global function definition for ‘new’
+gs_copy_tree_only: no visible global function definition for ‘new’
+gs_get_singlecell_expression: no visible global function definition for
+  ‘is’
+gs_get_singlecell_expression: no visible binding for global variable
+  ‘parallel’
+gs_pop_add: no visible global function definition for ‘is’
+gs_pop_get_count_fast: no visible global function definition for ‘is’
+gs_pop_get_count_with_meta: no visible binding for global variable
+  ‘sampleName’
+gs_pop_get_data: no visible global function definition for ‘new’
+gs_pop_set_gate: no visible global function definition for ‘is’
+gs_remove_redundant_nodes : &lt;anonymous&gt;: no visible global function
+  definition for ‘is’
+gslist_to_gs: no visible global function definition for ‘new’
+load_cytoframe: no visible global function definition for ‘new’
+load_cytoframe_from_fcs: no visible global function definition for
+  ‘new’
+load_cytoset_from_fcs: no visible global function definition for ‘new’
+load_gs: no visible global function definition for ‘new’
+load_gslist : &lt;anonymous&gt;: no visible global function definition for
+  ‘is’
+merge_list_to_gs: no visible global function definition for ‘is’
+merge_list_to_gs: no visible global function definition for ‘new’
+parse_transformer: no visible global function definition for ‘is’
+pop.MFI: no visible binding for global variable ‘desc’
+realize_view.cytoframe: no visible global function definition for ‘new’
+realize_view.cytoset: no visible global function definition for ‘new’
+transformerList: no visible global function definition for ‘is’
+transformerList: no visible binding for global variable ‘is’
+validitycheck: no visible global function definition for ‘is’
+GatingSet,cytoset-ANY: no visible global function definition for ‘new’
+Subset,cytoset-filterResultList : &lt;anonymous&gt;: no visible global
+  function definition for ‘as’
+Subset,cytoset-list: no visible global function definition for ‘is’
+[,GatingSet-ANY: no visible global function definition for ‘extends’
+[,GatingSet-ANY: no visible global function definition for ‘new’
+[,GatingSetList-ANY: no visible global function definition for
+  ‘callNextMethod’
+[,GatingSetList-ANY: no visible global function definition for ‘as’
+[[,GatingSet-character: no visible global function definition for ‘as’
+compensate,GatingSet-ANY: no visible global function definition for
+  ‘selectMethod’
+compensate,cytoset-ANY: no visible global function definition for
+  ‘selectMethod’
+flowData,GatingSet: no visible binding for global variable ‘obj’
+fsApply,cytoset: no visible global function definition for
+  ‘callNextMethod’
+gs_cyto_data,GatingSet: no visible global function definition for ‘new’
+keyword,GatingSetList-character: no visible global function definition
+  for ‘selectMethod’
+keyword,GatingSetList-missing: no visible global function definition
+  for ‘selectMethod’
+keyword&lt;-,cytoframe-list: no visible binding for global variable
+  ‘kwdError’
+pData&lt;-,GatingSetList-data.frame: no visible global function definition
+  for ‘callNextMethod’
+pData&lt;-,GatingSetList-data.frame: no visible global function definition
+  for ‘as’
+parameters,cytoframe: no visible global function definition for ‘new’
+phenoData,cytoset: no visible global function definition for ‘new’
+sampleNames&lt;-,cytoset-ANY: no visible global function definition for
+  ‘selectMethod’
+setNode,GatingSet-character-ANY: no visible global function definition
+  for ‘is’
+show,cytoframe: no visible global function definition for
+  ‘selectMethod’
+transform,GatingSet: no visible global function definition for ‘is’
+transform,GatingSet : &lt;anonymous&gt;: no visible global function
+  definition for ‘is’
+transform,cytoframe: no visible global function definition for ‘is’
+transform,cytoset: no visible global function definition for ‘is’
+transform,cytoset : &lt;anonymous&gt;: no visible global function definition
+  for ‘is’
+Undefined global functions or variables:
+  . .hasSlot IQR Population as barchart callNextMethod cf_write_tile
+  count desc extends ggplot2like is keys kwdError median na_idx new
+  node obj old openCyto.count output parallel percent sampleName
+  selectMethod validObject xml.count
+Consider adding
+  importFrom(&quot;methods&quot;, &quot;.hasSlot&quot;, &quot;as&quot;, &quot;callNextMethod&quot;, &quot;extends&quot;,
+             &quot;is&quot;, &quot;new&quot;, &quot;selectMethod&quot;, &quot;validObject&quot;)
+  importFrom(&quot;stats&quot;, &quot;IQR&quot;, &quot;median&quot;)
+to your NAMESPACE file (and ensure that your DESCRIPTION Imports field
+contains &#x27;methods&#x27;).
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  ‘gs_clone’ ‘gs_copy_tree_only’
+Undocumented S4 methods:
+  generic &#x27;dimnames&#x27; and siglist &#x27;cytoframe&#x27;
+  generic &#x27;rownames&#x27; and siglist &#x27;cytoframe&#x27;
+  generic &#x27;rownames&lt;-&#x27; and siglist &#x27;cytoframe&#x27;
+  generic &#x27;show&#x27; and siglist &#x27;cytoframe&#x27;
+  generic &#x27;transform&#x27; and siglist &#x27;cytoframe&#x27;
+All user-level objects in a package (including S4 classes and methods)
+should have documentation entries.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Documented arguments not in \usage in documentation object &#x27;GatingSet-methods&#x27;:
+  ‘...’
+
+Undocumented arguments in documentation object &#x27;convert&#x27;
+  ‘backend’
+
+Undocumented arguments in documentation object &#x27;cs_get_uri&#x27;
+  ‘x’
+
+Undocumented arguments in documentation object &#x27;gh_apply_to_new_fcs&#x27;
+  ‘files’
+
+Undocumented arguments in documentation object &#x27;keyword-mutators&#x27;
+  ‘cs’
+
+Undocumented arguments in documentation object &#x27;load_cytoframe_from_fcs&#x27;
+  ‘backend’ ‘uri’
+
+Undocumented arguments in documentation object &#x27;load_cytoset_from_fcs&#x27;
+  ‘backend’ ‘backend_dir’
+
+Undocumented arguments in documentation object &#x27;save_gs&#x27;
+  ‘cdf’ ‘backend_readonly’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... WARNING
+Non-portable flags in variable &#x27;PKG_CPPFLAGS&#x27;:
+  -Wno-pedantic
+* checking for GNU extensions in Makefiles ... NOTE
+GNU make is a SystemRequirements.
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... WARNING
+  apparently using $(BLAS_LIBS) without following $(FLIBS) in ‘src/Makevars’
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... WARNING
+Note: information on .o files is not available
+File ‘/home/biocbuild/R/R-4.3.0/site-library/flowWorkspace/libs/flowWorkspace.so’:
+  Found ‘_ZSt4cerr’, possibly from ‘std::cerr’ (C++)
+  Found ‘_ZSt4cout’, possibly from ‘std::cout’ (C++)
+  Found ‘abort’, possibly from ‘abort’ (C)
+  Found ‘exit’, possibly from ‘exit’ (C)
+  Found ‘rand’, possibly from ‘rand’ (C)
+  Found ‘rand_r’, possibly from ‘rand_r’ (C)
+  Found ‘sprintf’, possibly from ‘sprintf’ (C)
+  Found ‘srand’, possibly from ‘srand’ (C)
+  Found ‘stderr’, possibly from ‘stderr’ (C)
+  Found ‘stdout’, possibly from ‘stdout’ (C)
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs nor [v]sprintf. The detected symbols are linked into
+the code but might come from libraries and not actually be called.
+
+See ‘Writing portable packages’ in the ‘Writing R Extensions’ manual.
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘HowToMergeGatingSet.Rmd’ using ‘UTF-8’... OK
+  ‘flowWorkspace-Introduction.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 5 WARNINGs, 7 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/flowWorkspace.Rcheck/00check.log’
+for details.
+
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">flowWorkspace.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL flowWorkspace
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘flowWorkspace’ ...
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (GCC) 10.3.1’
+using C++11
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c R_API.cpp -o R_API.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c R_GatingHierarchy.cpp -o R_GatingHierarchy.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c R_GatingSet.cpp -o R_GatingSet.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c cpp11.cpp -o cpp11.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c cytoframeAPI.cpp -o cytoframeAPI.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c cytosetAPI.cpp -o cytosetAPI.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c getDescendants.cpp -o getDescendants.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c getPopStats.cpp -o getPopStats.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c getSingleCellExpression.cpp -o getSingleCellExpression.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c h5_error_r_handler.cpp -o h5_error_r_handler.o
+g++ -std=gnu++11 -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG -DROUT -I../inst/include -DBOOST_NO_AUTO_PTR -Wno-pedantic -I&#x27;/home/biocbuild/R/R-4.3.0/library/cpp11/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/library/BH/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/RProtoBufLib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/cytolib/include&#x27; -I&#x27;/home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/include&#x27; -I/usr/local/include    -fPIC  -g -O2  -c setCounts.cpp -o setCounts.o
+g++ -std=gnu++11 -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o flowWorkspace.so R_API.o R_GatingHierarchy.o R_GatingSet.o cpp11.o cytoframeAPI.o cytosetAPI.o getDescendants.o getPopStats.o getSingleCellExpression.o h5_error_r_handler.o setCounts.o /home/biocbuild/R/R-4.3.0/site-library/cytolib/lib/libcytolib.a /home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/lib/libhdf5_cpp.a /home/biocbuild/R/R-4.3.0/site-library/Rhdf5lib/lib/libhdf5.a -lcrypto -lcurl -lsz -laec -lz -ldl -lm -llapack -lblas -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/site-library/00LOCK-flowWorkspace/00new/flowWorkspace/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (flowWorkspace)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">flowWorkspace.Rcheck/tests/testthat.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(testthat)
+&gt; library(flowWorkspace)
+As part of improvements to flowWorkspace, some behavior of
+GatingSet objects has changed. For details, please read the section
+titled &quot;The cytoframe and cytoset classes&quot; in the package vignette:
+
+  vignette(&quot;flowWorkspace-Introduction&quot;, &quot;flowWorkspace&quot;)
+&gt; 
+&gt; test_check(&quot;flowWorkspace&quot;)
+
+Attaching package: &#x27;dplyr&#x27;
+
+The following objects are masked from &#x27;package:data.table&#x27;:
+
+    between, first, last
+
+The following object is masked from &#x27;package:testthat&#x27;:
+
+    matches
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    filter, lag
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following object is masked from &#x27;package:flowCore&#x27;:
+
+    normalize
+
+The following objects are masked from &#x27;package:dplyr&#x27;:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+/home/biocbuild/R/R-4.3.0/site-library/flowWorkspaceData/extdata/legacy_gs/v2/gs_bcell_auto seems to be the legacy archive and it is recommended to convert to the new format by saving it to the new folder!
+[ FAIL 0 | WARN 3 | SKIP 23 | PASS 1645 ]
+
+══ Skipped tests ═══════════════════════════════════════════════════════════════
+• dir.exists(legacy) is not TRUE (2)
+• edge case no longer works under cpp11 .needs to be investigated (2)
+• get_default_backend() != &quot;h5&quot; is TRUE (1)
+• get_default_backend() != &quot;mem&quot; is TRUE (1)
+• get_default_backend() == &quot;mem&quot; is TRUE (13)
+• get_default_backend() == &quot;tile&quot; is not TRUE (2)
+• rownames feature is to be deprecated (2)
+
+[ FAIL 0 | WARN 3 | SKIP 23 | PASS 1645 ]
+&gt; 
+&gt; # test_file(&quot;/home/wjiang2/rglab/workspace/flowWorkspace/tests/testthat/test-main.R&quot;)
+&gt; # test_file(&quot;/home/wjiang2/rglab/workspace/flowWorkspace/tests/testthat/GatingSet-testSuite.R&quot;)
+&gt; # test_file(&quot;/home/wjiang2/rglab/workspace/flowWorkspace/tests/testthat/GatingHierarchy-testSuite.R&quot;)
+&gt; 
+&gt; 
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 96.910   4.401 101.530 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">flowWorkspace.Rcheck/flowWorkspace-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>GatingHierarchy-class</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GatingSet-class</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GatingSet-methods</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GatingSetList-class</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>asinh_Gml2</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>asinhtGml2_trans</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>booleanFilter-class</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>cf_append_cols</TD><TD style="text-align: right;">1.682</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">1.705</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>compensate</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>convert</TD><TD style="text-align: right;">2.274</TD><TD style="text-align: right;">0.108</TD><TD style="text-align: right;">2.387</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>convert_legacy</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>estimateLogicle</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>extract_cluster_pop_name_from_node</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>flow_breaks</TD><TD style="text-align: right;">1.413</TD><TD style="text-align: right;">0.088</TD><TD style="text-align: right;">1.504</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>flowjo_biexp</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>flowjo_biexp_trans</TD><TD style="text-align: right;">1.294</TD><TD style="text-align: right;">0.106</TD><TD style="text-align: right;">1.403</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>flowjo_fasinh</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>flowjo_fasinh_trans</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>flowjo_log_trans</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_copy_gate</TD><TD style="text-align: right;">0.112</TD><TD style="text-align: right;">0.043</TD><TD style="text-align: right;">0.156</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_get_compensations</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_get_transformations</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_pop_get_data</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_pop_get_descendants</TD><TD style="text-align: right;">0.015</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">0.018</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_pop_get_indices</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_pop_move</TD><TD style="text-align: right;">0.064</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.071</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_pop_set_indices</TD><TD style="text-align: right;">0.338</TD><TD style="text-align: right;">0.076</TD><TD style="text-align: right;">0.414</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gh_pop_set_xml_count</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_check_redundant_nodes</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_get_pop_paths</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_get_singlecell_expression</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_plot_diff_tree</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_plot_pop_count_cv</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_add</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_get_children</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_get_count_fast</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_get_gate</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_get_stats</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_set_gate</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_set_name</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_pop_set_visibility</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_remove_redundant_channels</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_remove_redundant_nodes</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_split_by_channels</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_split_by_tree</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>gs_update_channels</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>keyword-mutators</TD><TD style="text-align: right;">2.080</TD><TD style="text-align: right;">0.056</TD><TD style="text-align: right;">2.139</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>keyword</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>logicleGml2_trans</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>logicle_trans</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.003</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>loglevel</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>logtGml2_trans</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>markernames</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot-methods</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>prettyAxis</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>rotate_gate</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>sampleNames</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>save_cytoset</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>save_gs</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>scale_gate</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>shift_gate</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>swap_data_cols</TD><TD style="text-align: right;">2.072</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">2.103</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>transform</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>transform_gate</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>transformerList</TD><TD style="text-align: right;">0.019</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.027</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

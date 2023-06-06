@@ -1,0 +1,10 @@
+Package: Rtreemix
+Version: 1.63.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Rtreemix.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Rtreemix_1.63.0.tar.gz
+StartedAt: 2023-06-06 05:52:53 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 05:54:03 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 70.1 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: Rtreemix.Rcheck
+Warnings: 1

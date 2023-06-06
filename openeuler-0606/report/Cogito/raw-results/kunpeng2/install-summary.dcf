@@ -1,0 +1,8 @@
+Package: Cogito
+Version: 1.7.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL Cogito
+StartedAt: 2023-06-05 08:37:23 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:38:15 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 52.2 seconds
+RetCode: 0
+Status: OK

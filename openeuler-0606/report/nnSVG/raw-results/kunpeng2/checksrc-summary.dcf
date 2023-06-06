@@ -1,0 +1,10 @@
+Package: nnSVG
+Version: 1.5.4
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:nnSVG.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings nnSVG_1.5.4.tar.gz
+StartedAt: 2023-06-06 03:12:48 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 03:31:53 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 1144.8 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: nnSVG.Rcheck
+Warnings: NA

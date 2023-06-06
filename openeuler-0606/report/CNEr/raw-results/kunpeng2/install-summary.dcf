@@ -1,0 +1,8 @@
+Package: CNEr
+Version: 1.37.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL CNEr
+StartedAt: 2023-06-05 08:24:45 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:25:55 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 70.0 seconds
+RetCode: 0
+Status: OK

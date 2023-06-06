@@ -1,0 +1,10 @@
+Package: Ringo
+Version: 1.65.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Ringo.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Ringo_1.65.0.tar.gz
+StartedAt: 2023-06-06 05:23:29 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 05:27:12 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 223.3 seconds
+RetCode: 0
+Status: OK
+CheckDir: Ringo.Rcheck
+Warnings: 0

@@ -1,0 +1,10 @@
+Package: CytoML
+Version: 2.13.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:CytoML.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings CytoML_2.13.1.tar.gz
+StartedAt: 2023-06-05 20:42:54 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 20:46:42 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 228.3 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: CytoML.Rcheck
+Warnings: 5

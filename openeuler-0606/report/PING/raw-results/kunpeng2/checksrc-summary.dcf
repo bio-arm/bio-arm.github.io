@@ -1,0 +1,10 @@
+Package: PING
+Version: 2.45.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:PING.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings PING_2.45.0.tar.gz
+StartedAt: 2023-06-06 04:10:12 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 04:16:36 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 383.6 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: PING.Rcheck
+Warnings: 3

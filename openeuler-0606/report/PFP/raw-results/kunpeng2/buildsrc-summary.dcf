@@ -1,0 +1,10 @@
+Package: PFP
+Version: 1.9.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data PFP
+StartedAt: 2023-06-05 13:49:31 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 13:50:34 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 63.2 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

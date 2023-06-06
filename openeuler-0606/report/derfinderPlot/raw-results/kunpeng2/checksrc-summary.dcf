@@ -1,0 +1,10 @@
+Package: derfinderPlot
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:derfinderPlot.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings derfinderPlot_1.35.0.tar.gz
+StartedAt: 2023-06-05 21:10:01 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 21:24:19 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 858.2 seconds
+RetCode: 0
+Status: OK
+CheckDir: derfinderPlot.Rcheck
+Warnings: 0

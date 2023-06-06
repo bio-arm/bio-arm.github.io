@@ -1,0 +1,10 @@
+Package: scCB2
+Version: 1.11.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:scCB2.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings scCB2_1.11.0.tar.gz
+StartedAt: 2023-06-06 06:10:04 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 06:24:03 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 839.1 seconds
+RetCode: 0
+Status: OK
+CheckDir: scCB2.Rcheck
+Warnings: 0

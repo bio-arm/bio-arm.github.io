@@ -1,0 +1,95 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data projectR
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘projectR/DESCRIPTION’ ... OK
+* preparing ‘projectR’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘projectR.Rmd’ using rmarkdown
+trying URL 'https://cloud.r-project.org/src/contrib/jsonlite_1.8.5.tar.gz'
+Content type 'application/x-gzip' length 1053106 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+* installing *source* package ‘jsonlite’ ...
+** package ‘jsonlite’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c base64.c -o base64.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c collapse_array.c -o collapse_array.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c collapse_object.c -o collapse_object.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c collapse_pretty.c -o collapse_pretty.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c escape_chars.c -o escape_chars.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c integer64_to_na.c -o integer64_to_na.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c is_datelist.c -o is_datelist.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c is_recordlist.c -o is_recordlist.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c is_scalarlist.c -o is_scalarlist.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c modp_numtoa.c -o modp_numtoa.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c null_to_na.c -o null_to_na.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c num_to_char.c -o num_to_char.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c parse.c -o parse.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c prettify.c -o prettify.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c push_parser.c -o push_parser.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c r-base64.c -o r-base64.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c register.c -o register.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c row_collapse.c -o row_collapse.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c transpose_list.c -o transpose_list.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c validate.c -o validate.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl.c -o yajl/yajl.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl_alloc.c -o yajl/yajl_alloc.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl_buf.c -o yajl/yajl_buf.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl_encode.c -o yajl/yajl_encode.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl_gen.c -o yajl/yajl_gen.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl_lex.c -o yajl/yajl_lex.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl_parser.c -o yajl/yajl_parser.o
+gcc -I"/home/biocbuild/R/R-4.3.0/include" -DNDEBUG -Iyajl/api  -I/usr/local/include   -fvisibility=hidden  -fPIC  -g -O2  -c yajl/yajl_tree.c -o yajl/yajl_tree.o
+ar rcs yajl/libstatyajl.a yajl/yajl.o yajl/yajl_alloc.o yajl/yajl_buf.o yajl/yajl_encode.o yajl/yajl_gen.o yajl/yajl_lex.o yajl/yajl_parser.o yajl/yajl_tree.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o jsonlite.so base64.o collapse_array.o collapse_object.o collapse_pretty.o escape_chars.o integer64_to_na.o is_datelist.o is_recordlist.o is_scalarlist.o modp_numtoa.o null_to_na.o num_to_char.o parse.o prettify.o push_parser.o r-base64.o register.o row_collapse.o transpose_list.o validate.o -Lyajl -lstatyajl -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/library/00LOCK-jsonlite/00new/jsonlite/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+in method for ‘asJSON’ with signature ‘"AsIs"’: no definition for class “AsIs”
+in method for ‘asJSON’ with signature ‘"ITime"’: no definition for class “ITime”
+in method for ‘asJSON’ with signature ‘"hms"’: no definition for class “hms”
+in method for ‘asJSON’ with signature ‘"json"’: no definition for class “json”
+in method for ‘asJSON’ with signature ‘"integer64"’: no definition for class “integer64”
+in method for ‘asJSON’ with signature ‘"pairlist"’: no definition for class “pairlist”
+in method for ‘asJSON’ with signature ‘"blob"’: no definition for class “blob”
+in method for ‘asJSON’ with signature ‘"scalar"’: no definition for class “scalar”
+in method for ‘asJSON’ with signature ‘"sf"’: no definition for class “sf”
+in method for ‘asJSON’ with signature ‘"sfc"’: no definition for class “sfc”
+in method for ‘asJSON’ with signature ‘"vctrs_vctr"’: no definition for class “vctrs_vctr”
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (jsonlite)
+
+The downloaded source packages are in
+	'/tmp/RtmpworsV6/downloaded_packages'
+
+Quitting from lines 21-26 [unnamed-chunk-1] (projectR.Rmd)
+Error: processing vignette 'projectR.Rmd' failed with diagnostics:
+error in running command
+--- failed re-building ‘projectR.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘projectR.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

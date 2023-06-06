@@ -1,0 +1,116 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:TOP.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings TOP_1.1.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/TOP.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘TOP/DESCRIPTION’ ... OK
+* this is package ‘TOP’ version ‘1.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘TOP’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+Surv_TOP_CI: no visible binding for global variable ‘offset’
+TOP_coefPlot: no visible binding for global variable ‘lambda.min’
+TOP_coefPlot: no visible binding for global variable ‘Features’
+TOP_lambdaPlot: no visible binding for global variable ‘variable’
+TOP_lambdaPlot: no visible binding for global variable ‘value’
+TOP_lambdaPlot: no visible binding for global variable ‘Feature’
+TOP_model: no visible binding for global variable ‘value’
+TOP_model: no visible binding for global variable ‘SampleGroup’
+TOP_model: no visible binding for global variable ‘n’
+TOP_model: no visible binding for global variable ‘freq’
+TOP_model: no visible binding for global variable ‘sd’
+TOP_survival: no visible binding for global variable ‘coef’
+TOP_survival: no visible binding for global variable ‘value’
+TOP_survival: no visible binding for global variable ‘freq’
+TOP_survival: no visible binding for global variable ‘sd’
+TOP_survival: no visible binding for global variable ‘.’
+TOP_survival: no visible binding for global variable ‘SampleGroup’
+TOP_survival: no visible binding for global variable ‘n’
+TOP_survivalPrediction: no visible binding for global variable ‘offset’
+coefNetworkPlot: no visible binding for global variable ‘Features’
+coefNetworkPlot: no visible binding for global variable ‘lambda.min’
+coefNetworkPlot: no visible binding for global variable ‘score’
+colCoxTests_combine: no visible binding for global variable ‘coef’
+extractAUC: no visible binding for global variable ‘variable’
+extractAUC: no visible binding for global variable ‘value’
+simplenetworkPlot: no visible binding for global variable ‘Features’
+simplenetworkPlot: no visible binding for global variable ‘lambda.min’
+simplenetworkPlot: no visible binding for global variable ‘coef_abs’
+simplenetworkPlot: no visible binding for global variable ‘from’
+simplenetworkPlot: no visible binding for global variable ‘to’
+simplenetworkPlot: no visible binding for global variable ‘name’
+Undefined global functions or variables:
+  . Feature Features SampleGroup coef coef_abs freq from lambda.min n
+  name offset score sd to value variable
+Consider adding
+  importFrom("stats", "coef", "offset", "sd")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘BuildingATOPModel.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/TOP.Rcheck/00check.log’
+for details.
+
+

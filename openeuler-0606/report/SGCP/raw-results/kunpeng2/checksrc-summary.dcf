@@ -1,0 +1,10 @@
+Package: SGCP
+Version: 1.1.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:SGCP.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings SGCP_1.1.0.tar.gz
+StartedAt: 2023-06-06 06:49:50 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 06:56:35 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 404.6 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: SGCP.Rcheck
+Warnings: NA

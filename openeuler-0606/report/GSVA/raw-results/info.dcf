@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/GSVA
+git_branch: devel
+git_last_commit: 6cceb58
+git_last_commit_date: 2023-06-01 09:38:07 -0000 (Thu, 01 Jun 2023)
+Package: GSVA
+Version: 1.49.1
+Maintainer: Robert Castelo
+MaintainerEmail: robert.castelo at upf.edu

@@ -1,0 +1,10 @@
+Package: dcanr
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data dcanr
+StartedAt: 2023-06-05 10:49:19 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 10:50:45 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 86.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: dcanr_1.17.0.tar.gz
+PackageFileSize: 1.668 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

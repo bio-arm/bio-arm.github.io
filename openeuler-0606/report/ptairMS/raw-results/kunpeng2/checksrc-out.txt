@@ -1,0 +1,111 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:ptairMS.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings ptairMS_1.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/ptairMS.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘ptairMS/DESCRIPTION’ ... OK
+* this is package ‘ptairMS’ version ‘1.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘ptairMS’ can be installed ... OK
+* used C++ compiler: ‘g++ (GCC) 10.3.1’
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... NOTE
+Note: information on .o files is not available
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                        user system elapsed
+detectPeak           118.560  0.467 119.244
+alignSamples          24.890  0.195  25.192
+imputeMat             23.786  0.068  23.898
+writeEset             22.584  0.048  22.675
+impute                21.904  0.052  21.998
+getPeakList           21.439  0.091  21.570
+annotation            21.147  0.084  21.271
+plotTIC               17.026  0.056  17.116
+plot                  16.938  0.032  17.002
+plotRaw               16.872  0.048  16.954
+plotFeatures          16.005  0.048  16.084
+plotCalib             15.369  0.031  15.429
+resetSampleMetadata   15.132  0.032  15.194
+defineKnots           14.855  0.168  15.045
+getDirectory          14.886  0.016  14.930
+importSampleMetadata  14.789  0.056  14.872
+updatePtrSet          14.717  0.028  14.773
+getSampleMetadata     14.702  0.028  14.756
+setSampleMetadata     14.640  0.048  14.718
+rmPeakList            14.505  0.044  14.577
+exportSampleMetada    14.512  0.032  14.571
+getFileNames          14.341  0.044  14.412
+changeTimeLimits      14.318  0.016  14.356
+createPtrSet          12.325  0.041  12.442
+convert_to_mzML        7.415  0.077   7.504
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘ptairMS.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 NOTE
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/ptairMS.Rcheck/00check.log’
+for details.
+
+

@@ -1,0 +1,10 @@
+Package: GEOmetadb
+Version: 1.63.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:GEOmetadb.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings GEOmetadb_1.63.0.tar.gz
+StartedAt: 2023-06-05 23:10:38 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 23:17:36 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 418.6 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: GEOmetadb.Rcheck
+Warnings: 1

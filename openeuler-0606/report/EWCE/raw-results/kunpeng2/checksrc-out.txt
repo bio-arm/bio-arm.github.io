@@ -1,0 +1,104 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EWCE.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EWCE_1.9.2.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/EWCE.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘EWCE/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘EWCE’ version ‘1.9.2’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘EWCE’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                                             user system elapsed
+controlled_geneset_enrichment              37.266  0.627  41.848
+generate_bootstrap_plots                   28.301  0.428  30.615
+merged_ewce                                25.014  1.215  29.130
+generate_bootstrap_plots_for_transcriptome 17.619  0.391  20.375
+filter_nonorthologs                        16.205  0.379  17.943
+filter_genes_without_1to1_homolog          15.127  0.303  16.817
+sct_normalize                              13.207  0.670  14.896
+bootstrap_enrichment_test                  13.236  0.558  16.297
+ewce_expression_data                       13.002  0.383  16.002
+check_ewce_genelist_inputs                 12.048  0.331  14.719
+merge_ctd                                   9.337  0.456  10.809
+standardise_ctd                             8.673  0.208  10.331
+filter_ctd_genes                            8.451  0.248  10.072
+bin_specificity_into_quantiles              7.014  0.152   8.839
+add_res_to_merging_list                     6.497  0.260  12.300
+fix_bad_mgi_symbols                         6.395  0.249   9.526
+merge_sce                                   6.211  0.179   7.855
+ctd_to_sce                                  6.122  0.171   7.739
+generate_celltype_data                      5.408  0.183   7.067
+bin_columns_into_quantiles                  4.896  0.123   6.022
+drop_uninformative_genes                    4.850  0.158   6.515
+plot_ctd                                    4.668  0.124   6.466
+get_celltype_table                          3.892  0.295   5.670
+merge_two_expfiles                          3.864  0.256   5.601
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘EWCE.Rmd’ using ‘UTF-8’... OK
+  ‘extended.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: OK
+

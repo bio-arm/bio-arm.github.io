@@ -1,0 +1,10 @@
+Package: HilbertVis
+Version: 1.59.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data HilbertVis
+StartedAt: 2023-06-05 12:12:16 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 12:12:24 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 8.0 seconds
+RetCode: 0
+Status: OK
+PackageFile: HilbertVis_1.59.0.tar.gz
+PackageFileSize: 1.195 <A href="http://en.wikipedia.org/wiki/MiB" target="_blank">MiB</A>

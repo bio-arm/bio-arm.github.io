@@ -1,0 +1,145 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:EpiMix.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings EpiMix_1.3.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/EpiMix.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘EpiMix/DESCRIPTION’ ... OK
+* this is package ‘EpiMix’ version ‘1.3.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... NOTE
+Found the following hidden files and directories:
+  .BBSoptions
+These were most likely included in error. See section ‘Package
+structure’ in the ‘Writing R Extensions’ manual.
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘EpiMix’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... NOTE
+Problems with news in ‘NEWS.md’:
+No news entries found.
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... WARNING
+'::' or ':::' imports not declared from:
+  'miRBaseConverter' 'multiMiR'
+'loadNamespace' or 'requireNamespace' calls not declared from:
+  'miRBaseConverter' 'multiMiR'
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... WARNING
+'library' or 'require' calls not declared from:
+  ‘miRBaseConverter’ ‘multiMiR’
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time > 5s
+                            user system elapsed
+Preprocess_DNAMethylation 38.643   2.77  79.202
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘runTests.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘Methylation_Modeling.Rmd’ using ‘UTF-8’... OK
+ NONE
+* checking re-building of vignette outputs ... ERROR
+Error(s) in re-building vignettes:
+--- re-building ‘Methylation_Modeling.Rmd’ using rmarkdown
+trying URL 'https://egg2.wustl.edu/roadmap/data/byFileType/chromhmmSegmentations/ChmmModels/core_K27ac/jointModel/final/E096_18_core_K27ac_hg38lift_mnemonics.bed.gz'
+Content type 'application/x-gzip' length 3835377 bytes (3.7 MB)
+==================================================
+downloaded 3.7 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.Merge_methylation__humanmethylation27__jhu_usc_edu__Level_3__within_bioassay_data_set_function__data.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 152968396 bytes (145.9 MB)
+==================================================
+downloaded 145.9 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.Merge_methylation__humanmethylation450__jhu_usc_edu__Level_3__within_bioassay_data_set_function__data.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 51525820 bytes (49.1 MB)
+==================================================
+downloaded 49.1 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.Merge_transcriptome__agilentg4502a_07_3__unc_edu__Level_3__unc_lowess_normalization_gene_level__data.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 36996192 bytes (35.3 MB)
+==================================================
+downloaded 35.3 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/OV/20160128/gdac.broadinstitute.org_OV.miRseq_Preprocess.Level_3.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 2663096 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+Warning in doTryCatch(return(expr), name, parentenv, handler) :
+  "offest" is not a graphical parameter
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/LUAD/20160128/gdac.broadinstitute.org_LUAD.Merge_Clinical.Level_1.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 1777018 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://gdac.broadinstitute.org/runs/stddata__latest/data/LUAD/20160128/gdac.broadinstitute.org_LUAD.Merge_Clinical.Level_1.2016012800.0.0.tar.gz'
+Content type 'application/x-gzip' length 1777018 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+
+Quitting from lines 579-586 [unnamed-chunk-40] (Methylation_Modeling.Rmd)
+Error: processing vignette 'Methylation_Modeling.Rmd' failed with diagnostics:
+there is no package called 'multiMiR'
+--- failed re-building ‘Methylation_Modeling.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Methylation_Modeling.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted
+
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 1 ERROR, 2 WARNINGs, 2 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/EpiMix.Rcheck/00check.log’
+for details.
+

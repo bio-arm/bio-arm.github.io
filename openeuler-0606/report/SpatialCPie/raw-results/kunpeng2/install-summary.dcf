@@ -1,0 +1,8 @@
+Package: SpatialCPie
+Version: 1.17.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL SpatialCPie
+StartedAt: 2023-06-05 08:34:32 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:35:07 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 34.6 seconds
+RetCode: 0
+Status: OK

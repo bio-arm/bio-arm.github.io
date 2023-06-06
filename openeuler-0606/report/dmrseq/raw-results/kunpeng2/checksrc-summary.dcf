@@ -1,0 +1,10 @@
+Package: dmrseq
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:dmrseq.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings dmrseq_1.21.0.tar.gz
+StartedAt: 2023-06-05 21:28:52 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 21:38:34 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 581.9 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: dmrseq.Rcheck
+Warnings: NA

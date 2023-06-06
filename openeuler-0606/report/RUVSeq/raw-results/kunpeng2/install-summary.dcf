@@ -1,0 +1,8 @@
+Package: RUVSeq
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL RUVSeq
+StartedAt: 2023-06-05 08:34:57 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:35:54 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 56.8 seconds
+RetCode: 0
+Status: OK

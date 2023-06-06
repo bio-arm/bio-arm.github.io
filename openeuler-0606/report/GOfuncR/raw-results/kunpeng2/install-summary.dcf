@@ -1,0 +1,8 @@
+Package: GOfuncR
+Version: 1.21.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL GOfuncR
+StartedAt: 2023-06-05 08:20:49 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 08:24:43 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 233.8 seconds
+RetCode: 0
+Status: OK

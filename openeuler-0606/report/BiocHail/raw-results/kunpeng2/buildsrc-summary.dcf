@@ -1,0 +1,10 @@
+Package: BiocHail
+Version: 1.1.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data BiocHail
+StartedAt: 2023-06-05 09:42:52 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 09:43:19 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 27.0 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

@@ -1,0 +1,10 @@
+Package: iterativeBMAsurv
+Version: 1.59.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:iterativeBMAsurv.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings iterativeBMAsurv_1.59.0.tar.gz
+StartedAt: 2023-06-06 00:46:59 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 00:49:05 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 126.2 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: iterativeBMAsurv.Rcheck
+Warnings: 1

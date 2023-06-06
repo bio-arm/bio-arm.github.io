@@ -1,0 +1,10 @@
+Package: bugsigdbr
+Version: 1.7.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:bugsigdbr.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings bugsigdbr_1.7.2.tar.gz
+StartedAt: 2023-06-05 18:41:12 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 18:43:38 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 146.2 seconds
+RetCode: 0
+Status: OK
+CheckDir: bugsigdbr.Rcheck
+Warnings: 0

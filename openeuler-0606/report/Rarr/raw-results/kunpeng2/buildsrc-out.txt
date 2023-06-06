@@ -1,0 +1,30 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rarr
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘Rarr/DESCRIPTION’ ... OK
+* preparing ‘Rarr’:
+* checking DESCRIPTION meta-information ... OK
+* cleaning src
+* running ‘cleanup’
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘Rarr.Rmd’ using rmarkdown
+
+Quitting from lines 107-112 [unnamed-chunk-3] (Rarr.Rmd)
+Error: processing vignette 'Rarr.Rmd' failed with diagnostics:
+SlowDown (HTTP 503). Resource requested is unreadable, please reduce your request rate
+--- failed re-building ‘Rarr.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘Rarr.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

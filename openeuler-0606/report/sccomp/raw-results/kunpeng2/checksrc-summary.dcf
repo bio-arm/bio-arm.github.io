@@ -1,0 +1,10 @@
+Package: sccomp
+Version: 1.5.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:sccomp.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings sccomp_1.5.0.tar.gz
+StartedAt: 2023-06-06 06:10:56 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 06:50:37 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 2380.3 seconds
+RetCode: 0
+Status: OK
+CheckDir: sccomp.Rcheck
+Warnings: 0

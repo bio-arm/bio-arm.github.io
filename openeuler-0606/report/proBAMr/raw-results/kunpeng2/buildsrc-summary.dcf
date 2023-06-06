@@ -1,0 +1,10 @@
+Package: proBAMr
+Version: 1.35.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data proBAMr
+StartedAt: 2023-06-05 13:57:28 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 13:58:54 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 86.1 seconds
+RetCode: 0
+Status: OK
+PackageFile: proBAMr_1.35.0.tar.gz
+PackageFileSize: 809.8 <A href="http://en.wikipedia.org/wiki/KiB" target="_blank">KiB</A>

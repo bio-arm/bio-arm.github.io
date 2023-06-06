@@ -1,0 +1,31 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data hca
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘hca/DESCRIPTION’ ... OK
+* preparing ‘hca’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘hca_manifest_vignette.Rmd’ using rmarkdown
+--- finished re-building ‘hca_manifest_vignette.Rmd’
+
+--- re-building ‘hca_vignette.Rmd’ using rmarkdown
+
+Quitting from lines 290-294 [unnamed-chunk-21] (hca_vignette.Rmd)
+Error: processing vignette 'hca_vignette.Rmd' failed with diagnostics:
+In row 6, can't recycle input of size 35 to size 18.
+--- failed re-building ‘hca_vignette.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘hca_vignette.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

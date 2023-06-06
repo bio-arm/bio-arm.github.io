@@ -1,0 +1,54 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data scDblFinder
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘scDblFinder/DESCRIPTION’ ... OK
+* preparing ‘scDblFinder’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘computeDoubletDensity.Rmd’ using rmarkdown
+Warning: call dbDisconnect() when finished working with a connection
+
+Quitting from lines 27-32 [unnamed-chunk-2] (computeDoubletDensity.Rmd)
+Error: processing vignette 'computeDoubletDensity.Rmd' failed with diagnostics:
+failed to load resource
+  name: AH73905
+  title: Ensembl 97 EnsDb for Mus musculus
+  reason: database disk image is malformed
+--- failed re-building ‘computeDoubletDensity.Rmd’
+
+--- re-building ‘findDoubletClusters.Rmd’ using rmarkdown
+
+Quitting from lines 27-32 [unnamed-chunk-2] (findDoubletClusters.Rmd)
+Error: processing vignette 'findDoubletClusters.Rmd' failed with diagnostics:
+failed to load resource
+  name: AH73905
+  title: Ensembl 97 EnsDb for Mus musculus
+  reason: database disk image is malformed
+--- failed re-building ‘findDoubletClusters.Rmd’
+
+--- re-building ‘introduction.Rmd’ using rmarkdown
+--- finished re-building ‘introduction.Rmd’
+
+--- re-building ‘recoverDoublets.Rmd’ using rmarkdown
+--- finished re-building ‘recoverDoublets.Rmd’
+
+--- re-building ‘scATAC.Rmd’ using rmarkdown
+--- finished re-building ‘scATAC.Rmd’
+
+--- re-building ‘scDblFinder.Rmd’ using rmarkdown
+--- finished re-building ‘scDblFinder.Rmd’
+
+SUMMARY: processing the following files failed:
+  ‘computeDoubletDensity.Rmd’ ‘findDoubletClusters.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

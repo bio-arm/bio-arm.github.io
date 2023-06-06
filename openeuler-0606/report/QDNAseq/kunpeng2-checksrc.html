@@ -1,0 +1,1797 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for QDNAseq on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><A href="..#F">F</A></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><B>[<A href="..#Q">Q</A>]</B></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:39 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for QDNAseq on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the QDNAseq package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/QDNAseq.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard ok">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>1569</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">QDNAseq</A>&nbsp;1.37.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/QDNAseq">landing page</A>)</SPAN><BR>Daoud Sie<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/QDNAseq</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">9f21c56</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:30:57&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: QDNAseq</TD></TR>
+<TR><TD><B>Version</B>: 1.37.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:QDNAseq.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings QDNAseq_1.37.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-06 04:39:31 -0000 (Tue, 06 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-06 04:48:24 -0000 (Tue, 06 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 532.8 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: QDNAseq.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 0</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:QDNAseq.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings QDNAseq_1.37.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/QDNAseq.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘QDNAseq/DESCRIPTION’ ... OK
+* this is package ‘QDNAseq’ version ‘1.37.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘QDNAseq’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking contents of ‘data’ directory ... OK
+* checking data for non-ASCII characters ... OK
+* checking data for ASCII and uncompressed saves ... OK
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                         user system elapsed
+callBins               22.527  1.010  23.583
+frequencyPlot          22.585  0.035  22.666
+normalizeSegmentedBins  9.314  0.012   9.345
+segmentBins             9.119  0.008   9.138
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘QDNAseq,copyneutral.R’
+  Running ‘QDNAseq,gain-copyneutral-gain.R’
+  Running ‘QDNAseq,parallel-reproducibility.R’
+  Running ‘QDNAseq.R’
+  Running ‘binReadCounts.R’
+ OK
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘QDNAseq.Rnw’... OK
+ OK
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: OK
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">QDNAseq.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL QDNAseq
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘QDNAseq’ ...
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (QDNAseq)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<P><SPAN class="filename">QDNAseq.Rcheck/tests/binReadCounts.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(QDNAseq)
+&gt; 
+&gt; if (requireNamespace(&quot;QDNAseq.hg19&quot;, quietly = TRUE)) {
++   bins &lt;- getBinAnnotations(500, genome = &quot;hg19&quot;)
++   print(bins)
++ 
++   bam &lt;- system.file(&quot;extdata&quot;, &quot;ex1.bam&quot;, package = &quot;Rsamtools&quot;)
++   print(bam)
++ 
++   counts &lt;- binReadCounts(bins, bamfiles = bam)
++   print(counts)
++ 
++   ## BUG: https://github.com/ccagc/QDNAseq/issues/89
++   counts2 &lt;- binReadCounts(bins, bamfiles = bam, chunkSize = 10e3)
++   print(counts2)
++ }
+Loaded bin annotations for genome &#x27;hg19&#x27;, bin size 500 kbp, and experiment type &#x27;SR50&#x27; from annotation package QDNAseq.hg19 v1.31.0
+QDNAseq bin annotations for Hsapiens, build hg19.
+Created by Ilari Scheinin with QDNAseq 0.7.5, 2014-02-06 14:20:46.041402.
+An object of class &#x27;AnnotatedDataFrame&#x27;
+  rowNames: 1:1-500000 1:500001-1000000 ... Y:59000001-59373566 (6206
+    total)
+  varLabels: chromosome start ... use (9 total)
+  varMetadata: labelDescription
+[1] &quot;/home/biocbuild/R/R-4.3.0/site-library/Rsamtools/extdata/ex1.bam&quot;
+    ex1 (1 of 1): extracting reads ... binning ...
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 6206 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: ex1
+  varLabels: name total.reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 1:1-500000 1:500001-1000000 ... Y:59000001-59373566
+    (6206 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+    ex1 (1 of 1): extracting reads ...
+binning chunk - seq1:1:10001
+binning chunk - seq2:1:10001
+
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 6206 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: ex1
+  varLabels: name total.reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 1:1-500000 1:500001-1000000 ... Y:59000001-59373566
+    (6206 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; 
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+  7.600   0.253   7.860 
+</PRE>
+</DIV><P><SPAN class="filename">QDNAseq.Rcheck/tests/QDNAseq,copyneutral.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(QDNAseq)
+&gt; library(Biobase)
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+&gt; set.seed(0xBEEF)
+&gt; 
+&gt; data(LGG150)
+&gt; data &lt;- LGG150
+&gt; print(data)
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; dataF &lt;- applyFilters(data, residual=TRUE, blacklist=TRUE)
+38,819	total bins
+38,819	of which in selected chromosomes
+36,722	of which with reference sequence
+33,347	final bins
+&gt; print(dataF)
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; dataC &lt;- correctBins(dataF)
+Calculating correction for GC content and mappability
+    Calculating fit for sample LGG150 (1 of 1) ...
+Done.
+&gt; 
+&gt; ## Force all copy neutral data
+&gt; cn &lt;- assayDataElement(dataC, &quot;copynumber&quot;)
+&gt; cn[,1] &lt;- rnorm(nrow(cn), mean = 1.0, sd = 0.05)
+&gt; assayDataElement(dataC, &quot;copynumber&quot;) &lt;- cn
+&gt; 
+&gt; print(dataC)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; dataN &lt;- normalizeBins(dataC)
+Applying median normalization ...
+&gt; print(dataN)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; fit &lt;- segmentBins(dataN)
+Performing segmentation:
+    Segmenting: LGG150 (1 of 1) ...
+&gt; print(fit)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber, segmented 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; fitC &lt;- callBins(fit)
+EM algorithm started ... 
+
+[1] &quot;Total number of segments present in the data: 4&quot;
+[1] &quot;Number of segments used for fitting the model: 4&quot;
+39960638172811213.562.4804136515588216429.5119804136512442318429.595
+Calling iteration1:
+
+optim results
+time: 0
+minimum: 16682.0890247004
+116682.0890247004-0.825303675797091-0.323169506423803-0.001754401929814960.2970863141060160.5078724084702190.9928769615298530.1100346090918040.0003692713871108020.0111811691191362-0.0001065348234756080.1102701734224670.145866377811007
+39975688176232213.562.4804136515588216429.5119804136512442318429.595
+Calling iteration2:
+
+optim results
+time: 0
+minimum: 16682.0888522346
+116682.0888522346-0.816384144994661-0.31848916294222-0.00167850977268490.292952991143050.5008064461942260.9819310567480430.1311557982956840.0002223141320088620.01118096583020170.0001872099918784220.1313921659017140.175722206269368
+EM algorithm done ...
+
+Computing posterior probabilities for all segments ...
+
+Total time:0minutes
+
+Adjusting segmented data for cellularity ... 
+
+Cellularity sample1: 1
+
+Adjusting normalized data for cellularity ... 
+
+Cellularity sample1: 1
+
+1
+40002368397986213.764.1804136515588216429.5119804136512442318429.595
+40002558564732213.765.4804136515588216429.5119804136512442318429.595
+40002528564726213.765.4804136515588216429.5119804136512442318429.595
+40002808831506213.767.4804136515588216429.5119804136512442318429.595
+40007078832461213.767.4804136515588216429.5119804136512442318429.595
+40007168832465213.767.4804136515588216429.5119804136512442318429.595
+40007258832469213.767.4804136515588216429.5119804136512442318429.595
+40007348832473213.767.4804136515588216429.5119804136512442318429.595
+40007438832477213.767.4804136515588216429.5119804136512442318429.595
+40007498832480213.767.4804136515588216429.5119804136512442318429.595
+40007688899210213.767.9804136515588216429.5119804136512442318429.595
+40011858899533213.767.9804136515588216429.5119804136512442318429.595
+FINISHED!
+
+Total time:0minutes
+
+There were 24 warnings (use warnings() to see them)
+&gt; print(fitC)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: calls, copynumber, probamp, probdloss, probgain, probloss, probnorm, segmented 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; 
+&gt; ## Assert that everything is called copy-neutral
+&gt; calls &lt;- assayDataElement(fitC, &quot;calls&quot;)
+&gt; stopifnot(all(is.na(calls) | calls == 0))
+&gt; 
+&gt; formats &lt;- c(&quot;tsv&quot;, &quot;igv&quot;, &quot;bed&quot;, &quot;seg&quot;, &quot;vcf&quot;)
+&gt; types &lt;- c(&quot;copynumber&quot;, &quot;segments&quot;, &quot;calls&quot;)
+&gt; for (format in formats) {
++   for (type in types) {
++     fileext &lt;- sprintf(&quot;.%s.%s&quot;, type, format)
++     file &lt;- tempfile(pattern =  &quot;QDNAseq-%s&quot;, fileext = fileext)
++     message(sprintf(&quot;  - exportBins(&lt;%d samples&gt;, format=\&quot;%s\&quot;, type=\&quot;%s\&quot;)&quot;, ncol(fitC), format, type))
++     file &lt;- exportBins(fitC, format = format, type = type, file = file)
++     message(sprintf(&quot;    File(s) written: [n=%d] %s&quot;,
++             length(file), paste(sQuote(file), collapse = &quot;, &quot;)))
++     stopifnot(all(file_test(&quot;-f&quot;, file)))
++     if (format == &quot;seg&quot;) {
++       segs &lt;- read.table(file, sep = &quot;\t&quot;, header = TRUE)
++       print(segs)
++       stopifnot(nrow(segs) == 0L)
++     } else if (format == &quot;vcf&quot;) {
++       rows &lt;- readLines(file)
++       rows &lt;- grep(&quot;^#&quot;, rows, invert = TRUE, value = TRUE)
++       print(rows)
++       stopifnot(length(rows) == 0L)
++     }
++     file.remove(file)
++     stopifnot(!any(file_test(&quot;-f&quot;, file)))
++   }
++ }
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-%sb317041112d96.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-%sb317038fcb13b.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-%sb31702b8a561a.calls.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-%sb3170ebde937.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-%sb317078d001fb.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-%sb317021ef99e3.calls.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b317038a488b6.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b3170623f0731.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b31702e3a60f3.calls.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b31707e842265.copynumber.seg&#x27;
+[1] SAMPLE_NAME     CHROMOSOME      START           STOP           
+[5] DATAPOINTS      LOG2_RATIO_MEAN
+&lt;0 rows&gt; (or 0-length row.names)
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b31704a335767.segments.seg&#x27;
+[1] SAMPLE_NAME     CHROMOSOME      START           STOP           
+[5] DATAPOINTS      LOG2_RATIO_MEAN
+&lt;0 rows&gt; (or 0-length row.names)
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b31701db2d87c.calls.seg&#x27;
+[1] SAMPLE_NAME     CHROMOSOME      START           STOP           
+[5] DATAPOINTS      LOG2_RATIO_MEAN
+&lt;0 rows&gt; (or 0-length row.names)
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b31703216c542.copynumber.vcf&#x27;
+character(0)
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b31702787d7ed.segments.vcf&#x27;
+character(0)
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/Rtmp1VNsdQ/QDNAseq-LGG150b3170697e6e6c.calls.vcf&#x27;
+character(0)
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 23.775   0.332  24.137 
+</PRE>
+</DIV><P><SPAN class="filename">QDNAseq.Rcheck/tests/QDNAseq,gain-copyneutral-gain.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(QDNAseq)
+&gt; library(Biobase)
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+&gt; library(utils)
+&gt; set.seed(0xBEEF)
+&gt; 
+&gt; data(LGG150)
+&gt; data &lt;- LGG150
+&gt; print(data)
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; dataF &lt;- applyFilters(data, residual=TRUE, blacklist=TRUE)
+38,819	total bins
+38,819	of which in selected chromosomes
+36,722	of which with reference sequence
+33,347	final bins
+&gt; print(dataF)
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; dataC &lt;- correctBins(dataF)
+Calculating correction for GC content and mappability
+    Calculating fit for sample LGG150 (1 of 1) ...
+Done.
+&gt; 
+&gt; ## Force results to have segments gain, copy neutral, and gain.
+&gt; cnAll &lt;- assayDataElement(dataC, &quot;copynumber&quot;)
+&gt; cnAll[,1] &lt;- rnorm(nrow(cnAll), mean = 1.0, sd = 0.05)
+&gt; chr7 &lt;- (chromosomes(dataC) == &quot;7&quot;)
+&gt; cn &lt;- cnAll[chr7, , drop = FALSE]
+&gt; n &lt;- nrow(cn)
+&gt; idxs &lt;- seq(from=1/3*n - 0.1*n, to=1/3*n + 0.1*n)
+&gt; cn[idxs,1] &lt;- rnorm(length(idxs), mean = 2.0, sd = 0.05)
+&gt; idxs &lt;- seq(from=2/3*n - 0.1*n, to=2/3*n + 0.1*n)
+&gt; cn[idxs,1] &lt;- rnorm(length(idxs), mean = 2.0, sd = 0.05)
+&gt; cnAll[chr7, ] &lt;- cn
+&gt; assayDataElement(dataC, &quot;copynumber&quot;) &lt;- cnAll
+&gt; print(dataC)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; dataN &lt;- normalizeBins(dataC)
+Applying median normalization ...
+&gt; print(dataN)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; fit &lt;- segmentBins(dataN)
+Performing segmentation:
+    Segmenting: LGG150 (1 of 1) ...
+&gt; print(fit)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber, segmented 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; fitC &lt;- callBins(fit)
+EM algorithm started ... 
+
+[1] &quot;Total number of segments present in the data: 8&quot;
+[1] &quot;Number of segments used for fitting the model: 8&quot;
+39963738216390213.562.7804136515588216429.5119804136512853561429.598.1
+Calling iteration1:
+
+optim results
+time: 0
+minimum: 16691.936015802
+116691.936015802-0.76889026698241-0.310183146024425-0.01185150972096230.2885943760685340.4933553445096880.9879385470392230.0299884700901994-0.0005485736219481460.0111821966975442-4.08995447325668e-050.01000052582656670.0100005260086061
+EM algorithm done ...
+
+Computing posterior probabilities for all segments ...
+
+Total time:0minutes
+
+Adjusting segmented data for cellularity ... 
+
+Cellularity sample1: 1
+
+Adjusting normalized data for cellularity ... 
+
+Cellularity sample1: 1
+
+1
+40005468441373213.764.5804136515588216429.5119804136512853561429.598.1
+40005658608119213.765.7804136515588216429.5119804136512853561429.598.1
+40005628608113213.765.7804136515588216429.5119804136512853561429.598.1
+40005908876643213.767.8804136515588216429.5119804136512853561429.598.1
+40010178877598213.767.8804136515588216429.5119804136512853561429.598.1
+40010268877602213.767.8804136515588216429.5119804136512853561429.598.1
+40010358877606213.767.8804136515588216429.5119804136512853561429.598.1
+40010448877610213.767.8804136515588216429.5119804136512853561429.598.1
+40010538877614213.767.8804136515588216429.5119804136512853561429.598.1
+40010598877617213.767.8804136515588216429.5119804136512853561429.598.1
+40010788944347213.768.3804136515588216429.5119804136512853561429.598.1
+40014958944670213.868.3804136515588216429.5119804136512853561429.598.1
+FINISHED!
+
+Total time:0minutes
+
+There were 32 warnings (use warnings() to see them)
+&gt; print(fitC)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: calls, copynumber, probamp, probdloss, probgain, probloss, probnorm, segmented 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; 
+&gt; ## Assert that everything is called copy-neutral
+&gt; calls &lt;- assayDataElement(fitC, &quot;calls&quot;)
+&gt; stopifnot(all(is.na(calls) | calls %in% c(0, 2)))
+&gt; 
+&gt; formats &lt;- c(&quot;tsv&quot;, &quot;igv&quot;, &quot;bed&quot;, &quot;seg&quot;, &quot;vcf&quot;)
+&gt; types &lt;- c(&quot;copynumber&quot;, &quot;segments&quot;, &quot;calls&quot;)
+&gt; for (format in formats) {
++   for (type in types) {
++     fileext &lt;- sprintf(&quot;.%s.%s&quot;, type, format)
++     file &lt;- tempfile(pattern =  &quot;QDNAseq-%s&quot;, fileext = fileext)
++     message(sprintf(&quot;  - exportBins(&lt;%d samples&gt;, format=\&quot;%s\&quot;, type=\&quot;%s\&quot;)&quot;, ncol(fitC), format, type))
++     file &lt;- exportBins(fitC, format = format, type = type, file = file)
++     message(sprintf(&quot;    File(s) written: [n=%d] %s&quot;,
++             length(file), paste(sQuote(file), collapse = &quot;, &quot;)))
++     stopifnot(all(file_test(&quot;-f&quot;, file)))
++ 
++     if (format == &quot;seg&quot;) {
++       segs &lt;- read.table(file, sep = &quot;\t&quot;, header = TRUE)
++       print(segs)
++       stopifnot(all(segs$CHROMOSOME == &quot;7&quot;), nrow(segs) == 2L)
++     } else if (format == &quot;vcf&quot;) {
++       segs &lt;- read.table(file, sep = &quot;\t&quot;, header = FALSE)
++       print(segs)
++       stopifnot(all(segs$V1 == &quot;7&quot;), nrow(segs) == 2L)
++     }
++ 
++     file.remove(file)
++     stopifnot(!any(file_test(&quot;-f&quot;, file)))
++   }
++ }
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-%sb3b629d2e3c1.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-%sb3b622a8e783b.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-%sb3b621ebbe97.calls.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-%sb3b6231dd8f25.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-%sb3b6213657e30.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-%sb3b62cc904f9.calls.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b622b7adacb.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b628350c62.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b626007fcf.calls.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b623a9e0818.copynumber.seg&#x27;
+                                                 SAMPLE_NAME CHROMOSOME
+1 /tmp/RtmplArBXa/QDNAseq-LGG150b3b623a9e0818.copynumber.seg          7
+2 /tmp/RtmplArBXa/QDNAseq-LGG150b3b623a9e0818.copynumber.seg          7
+     START      STOP DATAPOINTS LOG2_RATIO_MEAN
+1 37110001  68955000       1487            0.99
+2 90165001 122010000       2012            0.99
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b62628da5b2.segments.seg&#x27;
+                                               SAMPLE_NAME CHROMOSOME    START
+1 /tmp/RtmplArBXa/QDNAseq-LGG150b3b62628da5b2.segments.seg          7 37110001
+2 /tmp/RtmplArBXa/QDNAseq-LGG150b3b62628da5b2.segments.seg          7 90165001
+       STOP DATAPOINTS LOG2_RATIO_MEAN
+1  68955000       1487            0.99
+2 122010000       2012            0.99
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b62507ed64d.calls.seg&#x27;
+                                            SAMPLE_NAME CHROMOSOME    START
+1 /tmp/RtmplArBXa/QDNAseq-LGG150b3b62507ed64d.calls.seg          7 37110001
+2 /tmp/RtmplArBXa/QDNAseq-LGG150b3b62507ed64d.calls.seg          7 90165001
+       STOP DATAPOINTS LOG2_RATIO_MEAN
+1  68955000       1487            0.99
+2 122010000       2012            0.99
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b622959ec7f.copynumber.vcf&#x27;
+  V1       V2 V3    V4    V5   V6   V7
+1  7 37110001  . &lt;DIP&gt; &lt;DUP&gt; 1000 PASS
+2  7 90165001  . &lt;DIP&gt; &lt;DUP&gt; 1000 PASS
+                                                                      V8 V9 V10
+1  SVTYPE=DUP;END=68955000;SVLEN=31845000;BINS=1487;SCORE=2;LOG2CNT=0.99 GT 0/1
+2 SVTYPE=DUP;END=122010000;SVLEN=31845000;BINS=2012;SCORE=2;LOG2CNT=0.99 GT 0/1
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b626d443373.segments.vcf&#x27;
+  V1       V2 V3    V4    V5   V6   V7
+1  7 37110001  . &lt;DIP&gt; &lt;DUP&gt; 1000 PASS
+2  7 90165001  . &lt;DIP&gt; &lt;DUP&gt; 1000 PASS
+                                                                      V8 V9 V10
+1  SVTYPE=DUP;END=68955000;SVLEN=31845000;BINS=1487;SCORE=2;LOG2CNT=0.99 GT 0/1
+2 SVTYPE=DUP;END=122010000;SVLEN=31845000;BINS=2012;SCORE=2;LOG2CNT=0.99 GT 0/1
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmplArBXa/QDNAseq-LGG150b3b624811fee8.calls.vcf&#x27;
+  V1       V2 V3    V4    V5   V6   V7
+1  7 37110001  . &lt;DIP&gt; &lt;DUP&gt; 1000 PASS
+2  7 90165001  . &lt;DIP&gt; &lt;DUP&gt; 1000 PASS
+                                                                      V8 V9 V10
+1  SVTYPE=DUP;END=68955000;SVLEN=31845000;BINS=1487;SCORE=2;LOG2CNT=0.99 GT 0/1
+2 SVTYPE=DUP;END=122010000;SVLEN=31845000;BINS=2012;SCORE=2;LOG2CNT=0.99 GT 0/1
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 24.094   0.357  24.484 
+</PRE>
+</DIV><P><SPAN class="filename">QDNAseq.Rcheck/tests/QDNAseq,parallel-reproducibility.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; ######################################################################
+&gt; # This scripts asserts that for each processing step of QDNAseq
+&gt; # the output/results are reproducible (numerically equal).
+&gt; ######################################################################
+&gt; library(&quot;QDNAseq&quot;)
+&gt; options(&quot;QDNAseq::verbose&quot;=FALSE)
+&gt; 
+&gt; # Load data
+&gt; data(LGG150)
+&gt; data &lt;- LGG150
+&gt; 
+&gt; # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+&gt; # TRUTH
+&gt; # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+&gt; # Filter out &quot;bad&quot; bins
+&gt; dataF &lt;- applyFilters(data, residual=TRUE, blacklist=TRUE)
+&gt; 
+&gt; # Correct read counts as a function of GC content and mappability
+&gt; dataC &lt;- correctBins(dataF)
+&gt; 
+&gt; # Normalize binned read counts to have diploid normal copy number
+&gt; dataN &lt;- normalizeBins(dataC)
+&gt; 
+&gt; # Segment copy numbers
+&gt; set.seed(42)  ## segmentBins() relies on RNG via DNAcopy::segment()
+&gt; fit &lt;- segmentBins(dataN)
+&gt; 
+&gt; # Call copy-number segments
+&gt; fitC &lt;- callBins(fit)
+There were 50 or more warnings (use warnings() to see the first 50)
+&gt; 
+&gt; 
+&gt; # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+&gt; # REPRODUCIBILITY
+&gt; # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+&gt; strategies &lt;- c(&quot;sequential&quot;, &quot;multisession&quot;)
+&gt; if (parallelly::supportsMulticore()) strategies &lt;- c(strategies, &quot;multicore&quot;)
+&gt; 
+&gt; oplan &lt;- future::plan(&quot;list&quot;)
+&gt; for (strategy in strategies) {
++   message(sprintf(&quot;Reproducibility with plan(\&quot;%s\&quot;) ...&quot;, strategy))
++   
++   future::plan(strategy)
++   
++   dataFr &lt;- applyFilters(data, residual=TRUE, blacklist=TRUE)
++   stopifnot(all.equal(dataFr, dataF))
++   
++   dataCr &lt;- correctBins(dataF)
++   stopifnot(all.equal(dataCr, dataC))
++   
++   dataNr &lt;- normalizeBins(dataC)
++   stopifnot(all.equal(dataNr, dataN))
++   
++   set.seed(42)  ## segmentBins() relies on RNG via DNAcopy::segment()
++   fitr &lt;- segmentBins(dataNr)
++   stopifnot(all.equal(fitr, fit))
++   
++   fitCr &lt;- callBins(fitr)
++   stopifnot(all.equal(fitCr, fitC))
++   
++   message(sprintf(&quot;Reproducibility with plan(\&quot;%s\&quot;) ... done&quot;, strategy))
++ }
+Reproducibility with plan(&quot;sequential&quot;) ...
+Reproducibility with plan(&quot;sequential&quot;) ... done
+Reproducibility with plan(&quot;multisession&quot;) ...
+    Calculating fit for sample LGG150 (1 of 1) ...
+    Segmenting: LGG150 (1 of 1) ...
+Reproducibility with plan(&quot;multisession&quot;) ... done
+Reproducibility with plan(&quot;multicore&quot;) ...
+Reproducibility with plan(&quot;multicore&quot;) ... done
+There were 50 or more warnings (use warnings() to see the first 50)
+&gt; 
+&gt; future::plan(oplan)
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 83.170   2.050  96.777 
+</PRE>
+</DIV><P><SPAN class="filename">QDNAseq.Rcheck/tests/QDNAseq.Rout</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+
+R version 4.3.0 (2023-04-21) -- &quot;Already Tomorrow&quot;
+Copyright (C) 2023 The R Foundation for Statistical Computing
+Platform: aarch64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type &#x27;license()&#x27; or &#x27;licence()&#x27; for distribution details.
+
+R is a collaborative project with many contributors.
+Type &#x27;contributors()&#x27; for more information and
+&#x27;citation()&#x27; on how to cite R or R packages in publications.
+
+Type &#x27;demo()&#x27; for some demos, &#x27;help()&#x27; for on-line help, or
+&#x27;help.start()&#x27; for an HTML browser interface to help.
+Type &#x27;q()&#x27; to quit R.
+
+&gt; library(QDNAseq)
+&gt; library(Biobase) ## combine(), sampleNames()
+Loading required package: BiocGenerics
+
+Attaching package: &#x27;BiocGenerics&#x27;
+
+The following objects are masked from &#x27;package:stats&#x27;:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from &#x27;package:base&#x27;:
+
+    Filter, Find, Map, Position, Reduce, anyDuplicated, aperm, append,
+    as.data.frame, basename, cbind, colnames, dirname, do.call,
+    duplicated, eval, evalq, get, grep, grepl, intersect, is.unsorted,
+    lapply, mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+    pmin.int, rank, rbind, rownames, sapply, setdiff, sort, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    &#x27;browseVignettes()&#x27;. To cite Bioconductor, see
+    &#x27;citation(&quot;Biobase&quot;)&#x27;, and for packages &#x27;citation(&quot;pkgname&quot;)&#x27;.
+
+&gt; library(utils)
+&gt; 
+&gt; # Load data
+&gt; data(LGG150)
+&gt; data &lt;- LGG150
+&gt; print(data)
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; stopifnot(inherits(data, &quot;QDNAseqReadCounts&quot;))
+&gt; 
+&gt; # Plot isobars of read counts
+&gt; isobarPlot(data)
+Plotting sample LGG150 median read counts
+&gt; 
+&gt; # Plot copy number profile
+&gt; plot(data, ylim=c(-100, 200))
+Plotting sample LGG150 (1 of 1) ...
+&gt; highlightFilters(data, residual=TRUE, blacklist=TRUE)
+Highlighted 3,375 bins.
+&gt; 
+&gt; # Filter out &quot;bad&quot; bins
+&gt; dataF &lt;- applyFilters(data, residual=TRUE, blacklist=TRUE)
+38,819	total bins
+38,819	of which in selected chromosomes
+36,722	of which with reference sequence
+33,347	final bins
+&gt; print(dataF)
+QDNAseqReadCounts (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: counts 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads used.reads expected.variance
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; plot(dataF, ylim=c(-100, 200))
+Plotting sample LGG150 (1 of 1) ...
+&gt; stopifnot(inherits(dataF, &quot;QDNAseqReadCounts&quot;))
+&gt; 
+&gt; # Correct read counts as a function of GC content and mappability
+&gt; dataC &lt;- correctBins(dataF)
+Calculating correction for GC content and mappability
+    Calculating fit for sample LGG150 (1 of 1) ...
+Done.
+&gt; print(dataC)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; plot(dataC, ylim=c(-100, 200))
+Plotting sample LGG150 (1 of 1) ...
+&gt; stopifnot(inherits(dataC, &quot;QDNAseqCopyNumbers&quot;))
+&gt; 
+&gt; # Normalize binned read counts to have diploid normal copy number
+&gt; dataN &lt;- normalizeBins(dataC)
+Applying median normalization ...
+&gt; print(dataN)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; plot(dataN)
+Plotting sample LGG150 (1 of 1) ...
+&gt; stopifnot(inherits(dataN, &quot;QDNAseqCopyNumbers&quot;))
+&gt; 
+&gt; # Plot noise
+&gt; noisePlot(dataF)
+Calculating correction for GC content and mappability
+    Calculating fit for sample LGG150 (1 of 1) ...
+Done.
+&gt; 
+&gt; # Segment copy numbers
+&gt; fit &lt;- segmentBins(dataN)
+Performing segmentation:
+    Segmenting: LGG150 (1 of 1) ...
+&gt; print(fit)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: copynumber, segmented 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; plot(fit)
+Plotting sample LGG150 (1 of 1) ...
+&gt; stopifnot(inherits(fit, &quot;QDNAseqCopyNumbers&quot;))
+&gt; 
+&gt; # Call copy-number segments
+&gt; fitC &lt;- callBins(fit)
+EM algorithm started ... 
+
+[1] &quot;Total number of segments present in the data: 10&quot;
+[1] &quot;Number of segments used for fitting the model: 9&quot;
+40103048179322214.262.5802571716529540428.7126.2802571713707950428.7104.6
+Calling iteration1:
+
+optim results
+time: 1
+minimum: 16445.6418287481
+116443.1634295677-0.939948404909663-0.535115871634710.04999922851584940.1357341814220170.2320391157632851.492692224927890.46336036623653-0.0007447487965531030.0111894143724591-0.000962583906213420.3145629342085070.798554843389167
+40118098182773214.362.5802571716529540428.7126.2802571713707950428.7104.6
+Calling iteration2:
+
+optim results
+time: 0
+minimum: 16445.5781374328
+116443.1331012469-0.932876677515082-0.5359433038809890.0499979048415910.1114729434735370.1905642555481931.861013902305770.4314700360573740.00014406876840850.01118427659401560.0007568920162792620.2061088124299370.874022351578009
+40118098182773214.362.5802571716529540428.7126.2802571713707950428.7104.6
+Calling iteration3:
+
+optim results
+time: 0
+minimum: 16445.5975371627
+116443.1273697069-0.9240128530996-0.5365177469718860.04999923288882760.108573194240180.1856071014916831.753751992204390.4694950401327692.93313204149379e-050.0111878614439676-0.0001759851682342870.07360543573369820.943675664015282
+EM algorithm done ...
+
+Computing posterior probabilities for all segments ...
+
+Total time:0minutes
+
+Adjusting segmented data for cellularity ... 
+
+Cellularity sample1: 1
+
+Adjusting normalized data for cellularity ... 
+
+Cellularity sample1: 1
+
+1
+40144778404007214.464.2802571716529540428.7126.2802571713707950428.7104.6
+40144968570753214.465.4802571716529540428.7126.2802571713707950428.7104.6
+40144938570747214.465.4802571716529540428.7126.2802571713707950428.7104.6
+40145218837762214.467.5802571716529540428.7126.2802571713707950428.7104.6
+40149488838717214.567.5802571716529540428.7126.2802571713707950428.7104.6
+40149578838721214.567.5802571716529540428.7126.2802571713707950428.7104.6
+40149668838725214.567.5802571716529540428.7126.2802571713707950428.7104.6
+40149758838729214.567.5802571716529540428.7126.2802571713707950428.7104.6
+40149848838733214.567.5802571716529540428.7126.2802571713707950428.7104.6
+40149908838736214.567.5802571716529540428.7126.2802571713707950428.7104.6
+40150098905466214.568802571716529540428.7126.2802571713707950428.7104.6
+40154268905789214.568802571716529540428.7126.2802571713707950428.7104.6
+FINISHED!
+
+Total time:0minutes
+
+There were 50 or more warnings (use warnings() to see the first 50)
+&gt; print(fitC)
+QDNAseqCopyNumbers (storageMode: lockedEnvironment)
+assayData: 38819 features, 1 samples 
+  element names: calls, copynumber, probamp, probdloss, probgain, probloss, probnorm, segmented 
+protocolData: none
+phenoData
+  sampleNames: LGG150
+  varLabels: name reads ... loess.family (6 total)
+  varMetadata: labelDescription
+featureData
+  featureNames: 7:1-15000 7:15001-30000 ... 10:135525001-135534747
+    (38819 total)
+  fvarLabels: chromosome start ... use (9 total)
+  fvarMetadata: labelDescription
+experimentData: use &#x27;experimentData(object)&#x27;
+Annotation:  
+&gt; plot(fitC)
+Plotting sample LGG150 (1 of 1) ...
+&gt; 
+&gt; 
+&gt; # ---------------------------------------------------------------
+&gt; # Exporting
+&gt; # ---------------------------------------------------------------
+&gt; message(&quot;* exportBins() ...&quot;)
+* exportBins() ...
+&gt; 
+&gt; sets &lt;- list(data = data, dataC = dataC, fit = fit, fitC = fitC)
+&gt; for (name in names(sets)) {
++   set &lt;- sets[[name]]
++   formats &lt;- c(&quot;tsv&quot;, &quot;igv&quot;, &quot;bed&quot;)
++   if (name == &quot;fitC&quot;) formats &lt;- c(formats, &quot;vcf&quot;, &quot;seg&quot;)
++   for (format in formats) {
++     types &lt;- c(&quot;copynumber&quot;)
++     if (name %in% c(&quot;fit&quot;, &quot;fitC&quot;)) types &lt;- c(types, &quot;segments&quot;)
++     if (name == &quot;fitC&quot;) types &lt;- c(types, &quot;calls&quot;)
++     for (type in types) {
++       fileext &lt;- sprintf(&quot;.%s.%s&quot;, type, format)
++       templates &lt;- c(&quot;QDNAseq-%s.&quot;, &quot;QDNAseq-%i.&quot;, &quot;QDNAseq-%03i.&quot;)
++       if (ncol(set) == 1L || !(format %in% c(&quot;bed&quot;, &quot;seg&quot;, &quot;vcf&quot;))) {
++         templates &lt;- c(&quot;QDNAseq.&quot;, templates)
++       }
++       for (template in templates) {
++         file &lt;- tempfile(pattern = template, fileext = fileext)
++         message(sprintf(&quot;  - exportBins(&lt;%d samples&gt;, format=\&quot;%s\&quot;, type=\&quot;%s\&quot;, file=\&quot;%s\&quot;)&quot;, ncol(set), format, type, template))
++         file &lt;- exportBins(set, file = file, format = format, type = type)
++         message(sprintf(&quot;    File(s) written: [n=%d] %s&quot;,
++                 length(file), paste(sQuote(file), collapse = &quot;, &quot;)))
++         stopifnot(all(file_test(&quot;-f&quot;, file)))
++         file.remove(file)
++         stopifnot(!any(file_test(&quot;-f&quot;, file)))
++       }
++     }
++   }
++ }
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e295c8cca3f.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2976240a3.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e29765443da.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e295dbc97bc.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2936d56493.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2949a12b1f.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2979c9372.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2944231338.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29590d6bbf.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e297a255ba3.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e291823eae5.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29bcf1969.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29bb38927.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2918a54eb4.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e295b1c5c79.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e294f62b295.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e292bfc04a8.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e292798fe01.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2932c5522a.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2931668950.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e293e276dd4.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e297c39a0b4.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e291ce7be92.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e293502b7df.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e297a4caffe.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2916b51021.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e291d23a535.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e293f105cd1.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e297db013cf.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e29714e483a.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e294af44ebe.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e295a3cde0f.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2978b088dd.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2941489298.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2937f975cb.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e292f85ed70.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29ae9bdb7.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e293f96093d.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2973a900a8.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2963f72977.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2939bb64e1.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e29bcceb8d.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e296fc642e0.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29456eee08.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2924723a41.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e294ae29f5a.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e2914d1a09e.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29506e3eea.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29727b9d5b.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e294796f2c8.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e291d4c83a.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2930a30b2f.copynumber.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2943d0937d.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e291ebc86cc.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2965a5c30f.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e293e1d437b.segments.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29357196ee.calls.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e292c96844.calls.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e297d2da04c.calls.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e293321aabd.calls.tsv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e297417b07e.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e294821ef0a.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e29d5e88cc.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e296cc8395b.copynumber.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2996a81a2.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e294557fe98.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e291c4e26cb.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2914543f5a.segments.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e294ee07d5.calls.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e29ff72773.calls.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e29784b68d1.calls.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e293ea96cb6.calls.igv&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e291bc41300.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e296811abb1.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e294185abf.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e2940364d42.copynumber.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2932f44b0b.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e2918e9fb5d.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e2910a48c2c.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29256fe867.segments.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e296080ee25.calls.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e2912795466.calls.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e295612f396.calls.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29245181a2.calls.bed&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e293135db33.copynumber.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e293bb8b6a5.copynumber.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29626ec51e.copynumber.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e2966a77221.copynumber.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e293e821eea.segments.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e295f9c656a.segments.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e2919c91cde.segments.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e293299cf68.segments.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2927be5475.calls.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e292727a5ab.calls.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e291f6208c4.calls.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e293128d617.calls.vcf&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e296c7fa443.copynumber.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e293bb02f8f.copynumber.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29457d1571.copynumber.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29716dac18.copynumber.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e294ba75703.segments.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e293dc87e42.segments.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29301718cf.segments.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29676b6a03.segments.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2925da29f4.calls.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150.b4e29342f738e.calls.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e2927a1b745.calls.seg&#x27;
+  - exportBins(&lt;1 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e2958ce74ff.calls.seg&#x27;
+&gt; 
+&gt; sets &lt;- list(data = data, dataC = dataC, fit = fit, fitC = fitC)
+&gt; sets &lt;- lapply(sets, FUN = function(set) {
++   stopifnot(ncol(set) == 1L)
++   name &lt;- sampleNames(set)
++   setA &lt;- set
++   sampleNames(setA) &lt;- sprintf(&quot;%sa&quot;, name)
++   setB &lt;- set
++   sampleNames(setB) &lt;- sprintf(&quot;%sb&quot;, name)
++   combine(setA, setB)
++ })
+&gt; 
+&gt; for (name in names(sets)) {
++   set &lt;- sets[[name]]
++   stopifnot(ncol(set) == 2L)
++   formats &lt;- c(&quot;tsv&quot;, &quot;igv&quot;, &quot;bed&quot;)
++   if (name == &quot;fitC&quot;) formats &lt;- c(formats, &quot;vcf&quot;, &quot;seg&quot;)
++   for (format in formats) {
++     types &lt;- c(&quot;copynumber&quot;)
++     if (name %in% c(&quot;fit&quot;, &quot;fitC&quot;)) types &lt;- c(types, &quot;segments&quot;)
++     if (name == &quot;fitC&quot;) types &lt;- c(types, &quot;calls&quot;)
++     for (type in types) {
++       fileext &lt;- sprintf(&quot;.%s.%s&quot;, type, format)
++       templates &lt;- c(&quot;QDNAseq-%s.&quot;, &quot;QDNAseq-%i.&quot;, &quot;QDNAseq-%03i.&quot;)
++       if (ncol(set) == 1L || !(format %in% c(&quot;bed&quot;, &quot;seg&quot;, &quot;vcf&quot;))) {
++         templates &lt;- c(&quot;QDNAseq.&quot;, templates)
++       }
++       for (template in templates) {
++         file &lt;- tempfile(pattern = template, fileext = fileext)
++         message(sprintf(&quot;  - exportBins(&lt;%d samples&gt;, format=\&quot;%s\&quot;, type=\&quot;%s\&quot;, file=\&quot;%s\&quot;)&quot;, ncol(set), format, type, template))
++         file &lt;- exportBins(set, file = file, format = format, type = type)
++         message(sprintf(&quot;    File(s) written: [n=%d] %s&quot;,
++                 length(file), paste(sQuote(file), collapse = &quot;, &quot;)))
++         stopifnot(all(file_test(&quot;-f&quot;, file)))
++         file.remove(file)
++         stopifnot(!any(file_test(&quot;-f&quot;, file)))
++       }
++     }
++   }
++ }
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e294d196eeb.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2938464371.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e297e3e5d66.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e292d9a5d10.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e294abf97d8.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e29545150fd.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2951ebdeb3.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e297bf5730b.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e29100a07a2.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e29100a07a2.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29345aa3d1.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e29345aa3d1.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29629ce52c.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e29629ce52c.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e294e8c268c.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2913f7093b.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e297c66020a.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e29125f5f5.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e293bb55db0.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e29238da7b5.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e292087feb9.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e296cde33c8.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e29100d4bf8.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e29100d4bf8.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e295c382e48.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e295c382e48.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29325b4939.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e29325b4939.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2917af811.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2927df854b.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e297023c77c.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e29319210e0.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29f4aef4f.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2915fdf170.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2965c1846e.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2936eca694.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e296ecc666f.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2932daf359.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e296f32ea06.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e296d0ac3d6.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2960755069.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2939f281de.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e29415c14d3.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2932612f1c.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e2935e7f4e9.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e2935e7f4e9.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e2951661c75.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e2951661c75.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e2966bbd2ed.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e2966bbd2ed.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e291884da15.segments.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e291884da15.segments.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e291ff24302.segments.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e291ff24302.segments.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e297ab2dc29.segments.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e297ab2dc29.segments.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2914eadc1f.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e29211838f7.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e29366839d9.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e29387883d5.copynumber.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2941a037b0.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2923466da1.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e294885cfcd.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e291dd865f8.segments.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e2955a1b6db.calls.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e294a00c7de.calls.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e2945b7eb44.calls.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;tsv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2945c57e57.calls.tsv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e297b92d8be.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e295502da93.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e295bc36fc7.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2961545d2c.copynumber.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29bef8127.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e294a8fd636.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e29142f5085.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e297b226b2d.segments.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq.b4e29379a9a0c.calls.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%s.b4e2974a4a0ef.calls.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%i.b4e293514ed0b.calls.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;igv&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=1] &#x27;/tmp/RtmpVOlnCE/QDNAseq-%03i.b4e2978f6aedf.calls.igv&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e292705d00b.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e292705d00b.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e296afce1f4.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e296afce1f4.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e294a5ccb55.copynumber.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e294a5ccb55.copynumber.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e29dc1a2f9.segments.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e29dc1a2f9.segments.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29381bc09.segments.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e29381bc09.segments.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e296a4f0e57.segments.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e296a4f0e57.segments.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e298747f22.calls.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e298747f22.calls.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29186c9829.calls.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e29186c9829.calls.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;bed&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29b67474e.calls.bed&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e29b67474e.calls.bed&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e293edcb8fb.copynumber.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e293edcb8fb.copynumber.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e2950e51bfe.copynumber.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e2950e51bfe.copynumber.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e294d077efe.copynumber.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e294d077efe.copynumber.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e296223269d.segments.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e296223269d.segments.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29196aebcb.segments.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e29196aebcb.segments.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e296adfe4f6.segments.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e296adfe4f6.segments.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e2937c4dd78.calls.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e2937c4dd78.calls.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e29636bb3aa.calls.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e29636bb3aa.calls.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;vcf&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e293097d03a.calls.vcf&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e293097d03a.calls.vcf&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e297d8a5bcf.copynumber.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e297d8a5bcf.copynumber.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e295efe8c68.copynumber.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e295efe8c68.copynumber.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;copynumber&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e2959aaacd.copynumber.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e2959aaacd.copynumber.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e29594dcb96.segments.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e29594dcb96.segments.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e294052e995.segments.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e294052e995.segments.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;segments&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29118a2bf5.segments.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e29118a2bf5.segments.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%s.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150a.b4e2923dda1cc.calls.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-LGG150b.b4e2923dda1cc.calls.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-1.b4e2954823a1a.calls.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-2.b4e2954823a1a.calls.seg&#x27;
+  - exportBins(&lt;2 samples&gt;, format=&quot;seg&quot;, type=&quot;calls&quot;, file=&quot;QDNAseq-%03i.&quot;)
+    File(s) written: [n=2] &#x27;/tmp/RtmpVOlnCE/QDNAseq-001.b4e29cac9722.calls.seg&#x27;, &#x27;/tmp/RtmpVOlnCE/QDNAseq-002.b4e29cac9722.calls.seg&#x27;
+&gt; 
+&gt; message(&quot;* exportBins() ... done&quot;)
+* exportBins() ... done
+&gt; 
+&gt; proc.time()
+   user  system elapsed 
+ 76.920   1.529  78.567 
+</PRE>
+</DIV><HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">QDNAseq.Rcheck/QDNAseq-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>addPhenodata</TD><TD style="text-align: right;">0.113</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.121</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>applyFilters</TD><TD style="text-align: right;">0.641</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.642</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>binReadCounts</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>callBins</TD><TD style="text-align: right;">22.527</TD><TD style="text-align: right;"> 1.010</TD><TD style="text-align: right;">23.583</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>compareToReference</TD><TD style="text-align: right;">2.701</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">2.739</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>correctBins</TD><TD style="text-align: right;">2.482</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">2.487</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>createBins</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>estimateCorrection</TD><TD style="text-align: right;">2.439</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">2.448</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>exportBins</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>frequencyPlot</TD><TD style="text-align: right;">22.585</TD><TD style="text-align: right;"> 0.035</TD><TD style="text-align: right;">22.666</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>getBinAnnotations</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">0</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>highlightFilters</TD><TD style="text-align: right;">0.714</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">0.724</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>isobarPlot</TD><TD style="text-align: right;">0.961</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.969</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>makeCgh</TD><TD style="text-align: right;">3.057</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">3.071</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>noisePlot</TD><TD style="text-align: right;">2.395</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">2.399</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>normalizeBins</TD><TD style="text-align: right;">2.501</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">2.510</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>normalizeSegmentedBins</TD><TD style="text-align: right;">9.314</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">9.345</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plot</TD><TD style="text-align: right;">3.136</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">3.146</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>poolRuns</TD><TD style="text-align: right;">0.136</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.136</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>segmentBins</TD><TD style="text-align: right;">9.119</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">9.138</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>smoothOutlierBins</TD><TD style="text-align: right;">2.558</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">2.567</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

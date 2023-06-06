@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/bluster
+git_branch: devel
+git_last_commit: 37f5e18
+git_last_commit_date: 2023-06-04 18:11:04 -0000 (Sun, 04 Jun 2023)
+Package: bluster
+Version: 1.11.1
+Maintainer: Aaron Lun
+MaintainerEmail: infinite.monkeys.with.keyboards at gmail.com

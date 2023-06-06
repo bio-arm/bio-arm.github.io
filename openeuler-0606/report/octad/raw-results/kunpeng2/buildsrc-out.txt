@@ -1,0 +1,28 @@
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data octad
+###
+##############################################################################
+##############################################################################
+
+
+* checking for file ‘octad/DESCRIPTION’ ... OK
+* preparing ‘octad’:
+* checking DESCRIPTION meta-information ... OK
+* installing the package to build vignettes
+* creating vignettes ... ERROR
+--- re-building ‘octad.Rmd’ using rmarkdown
+
+Quitting from lines 94-97 [unnamed-chunk-7] (octad.Rmd)
+Error: processing vignette 'octad.Rmd' failed with diagnostics:
+error in evaluating the argument 'x' in selecting a method for function 'as.matrix': no method for coercing this S4 class to a vector
+--- failed re-building ‘octad.Rmd’
+
+SUMMARY: processing the following file failed:
+  ‘octad.Rmd’
+
+Error: Vignette re-building failed.
+Execution halted

@@ -1,0 +1,10 @@
+Package: proDA
+Version: 1.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:proDA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings proDA_1.15.0.tar.gz
+StartedAt: 2023-06-06 04:26:10 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 04:33:45 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 454.7 seconds
+RetCode: 0
+Status: OK
+CheckDir: proDA.Rcheck
+Warnings: 0

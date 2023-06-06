@@ -1,0 +1,10 @@
+Package: AgiMicroRna
+Version: 2.51.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:AgiMicroRna.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings AgiMicroRna_2.51.0.tar.gz
+StartedAt: 2023-06-05 16:56:15 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 17:07:13 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 658.0 seconds
+RetCode: 0
+Status: WARNINGS
+CheckDir: AgiMicroRna.Rcheck
+Warnings: 1

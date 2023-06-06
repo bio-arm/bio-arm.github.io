@@ -1,0 +1,10 @@
+Package: scPCA
+Version: 1.15.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:scPCA.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings scPCA_1.15.0.tar.gz
+StartedAt: 2023-06-06 06:27:55 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 06:39:27 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 691.9 seconds
+RetCode: 1
+Status: ERROR
+CheckDir: scPCA.Rcheck
+Warnings: NA

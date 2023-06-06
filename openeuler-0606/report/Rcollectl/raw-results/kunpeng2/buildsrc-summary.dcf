@@ -1,0 +1,10 @@
+Package: Rcollectl
+Version: 1.1.1
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD build --keep-empty-dirs --no-resave-data Rcollectl
+StartedAt: 2023-06-05 14:13:23 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-05 14:13:44 -0000 (Mon, 05 Jun 2023)
+EllapsedTime: 21.0 seconds
+RetCode: 1
+Status: ERROR
+PackageFile: None
+PackageFileSize: NA

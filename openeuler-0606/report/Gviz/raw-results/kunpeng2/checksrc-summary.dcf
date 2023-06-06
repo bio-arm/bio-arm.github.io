@@ -1,0 +1,10 @@
+Package: Gviz
+Version: 1.45.0
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:Gviz.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings Gviz_1.45.0.tar.gz
+StartedAt: 2023-06-05 23:52:09 -0000 (Mon, 05 Jun 2023)
+EndedAt: 2023-06-06 00:06:06 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 836.2 seconds
+RetCode: 0
+Status: OK
+CheckDir: Gviz.Rcheck
+Warnings: 0

@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>Build/check report for BioC 3.18 - CHECK results for FlowSOM on kunpeng2</TITLE>
+<LINK rel="stylesheet" href="../report.css" type="text/css">
+<SCRIPT type="text/javascript" src="../report.js"></SCRIPT>
+</HEAD>
+<BODY onLoad="initialize();">
+<TABLE class="grid_layout" style="width: 100%; background: #EEE;"><TR><TD style="text-align: left; padding: 5px; vertical-align: middle;"><I>Back to <B>Build/check report for BioC 3.18</B>:&nbsp;&nbsp;&nbsp;<A href="../">simplified</A>&nbsp;&nbsp;&nbsp;<A href="../long-report.html">long</A></I></TD><TD><TABLE class="abc_dispatcher"><TR><TD><A href="..#A">A</A></TD><TD><A href="..#B">B</A></TD><TD><A href="..#C">C</A></TD><TD><A href="..#D">D</A></TD><TD><A href="..#E">E</A></TD><TD><B>[<A href="..#F">F</A>]</B></TD><TD><A href="..#G">G</A></TD><TD><A href="..#H">H</A></TD><TD><A href="..#I">I</A></TD><TD><A href="..#J">J</A></TD><TD><A href="..#K">K</A></TD><TD><A href="..#L">L</A></TD><TD><A href="..#M">M</A></TD><TD><A href="..#N">N</A></TD><TD><A href="..#O">O</A></TD><TD><A href="..#P">P</A></TD><TD><A href="..#Q">Q</A></TD><TD><A href="..#R">R</A></TD><TD><A href="..#S">S</A></TD><TD><A href="..#T">T</A></TD><TD><A href="..#U">U</A></TD><TD><A href="..#V">V</A></TD><TD><A href="..#W">W</A></TD><TD><A href="..#X">X</A></TD><TD><A href="..#Y">Y</A></TD><TD><A href="..#Z">Z</A></TD></TR></TABLE></TD></TR></TABLE>
+<P class="time_stamp">
+This page was generated on 2023-06-06 11:00:31 -0000 (Tue, 06 Jun 2023).
+</P>
+<TABLE class="node_specs">
+<TR><TH>Hostname</TH><TH>OS</TH><TH>Arch&nbsp;(*)</TH><TH>R&nbsp;version</TH><TH style="text-align: right;">Installed&nbsp;pkgs</TH></TR>
+<TR class="kunpeng2"><TD><B><A href="../kunpeng2-NodeInfo.html"><B>kunpeng2</B></A></B></TD><TD>Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)</TD><TD>aarch64</TD><TD>4.3.0&nbsp;(2023-04-21)&nbsp;--&nbsp;"Already&nbsp;Tomorrow"
+</TD><TD style="text-align: right;"><A href="../kunpeng2-R-instpkgs.html">4366</A></TD></TR>
+<TR><TD COLSPAN="5" style="font-size: smaller;"><I>Click on any hostname to see more info about the system (e.g. compilers) &nbsp;&nbsp;&nbsp;&nbsp; (*) as reported by 'uname -p', except on Windows and Mac OS X</I></TD></TR>
+</TABLE>
+<BR>
+<H2><SPAN class="kunpeng2">CHECK results for FlowSOM on kunpeng2</SPAN></H2>
+<BR>
+<DIV class="motd">
+<TABLE><TR><TD>
+To the developers/maintainers of the FlowSOM package:<BR>
+- Allow up to 24 hours (and sometimes 48 hours) for your latest push to git@git.bioconductor.org:packages/FlowSOM.git to reflect on this report. See <A href="%s">Troubleshooting Build Report</A> for more information.<BR><BR>
+- Use the following <A href="../Renviron.bioc">Renviron settings</A> to reproduce errors and warnings.<BR><BR>
+Note: If "R CMD check" recently failed on the Linux builder over a missing dependency, add the missing dependency to "Suggests" in your DESCRIPTION file. See the <A href="../Renviron.bioc">Renviron.bioc</A> for details.
+</TD></TR></TABLE>
+</DIV>
+<P style="text-align: center;"><A href="raw-results/">raw results</A><P>
+<TABLE class="gcard_list">
+<TBODY class="gcard ok">
+<TR class="header"><TD class="leftmost top_left_corner"></TD><TD>Package <B>718</B>/2199</TD><TD style="width: 75px;">Hostname</TD><TD style="width: 225px;">OS&nbsp;/&nbsp;Arch</TD><TD class="STAGE install">INSTALL</TD><TD class="STAGE buildsrc">BUILD</TD><TD class="STAGE checksrc selected">CHECK</TD><TD class="STAGE buildbin">BUILD BIN</TD><TD style="width: 12px;"></TD><TD class="rightmost top_right_corner"></TD></TR>
+<TR class="selected_row"><TD ROWSPAN="2" class="leftmost bottom_left_corner"></TD><TD ROWSPAN="1" style="vertical-align: top;"><B><A href="./">FlowSOM</A>&nbsp;2.9.0</B>&nbsp;&nbsp;<SPAN style="font-size: smaller; font-style: italic;">(<A href="/packages/3.18/FlowSOM">landing page</A>)</SPAN><BR>Sofie Van Gassen<BR><TABLE class="svn_info">
+<TR><TD class="svn_info">Snapshot&nbsp;Date:&nbsp;<SPAN class="svn_info">2023-06-05&nbsp;06:35:06&nbsp;-0000&nbsp;(Mon,&nbsp;05&nbsp;Jun&nbsp;2023)</SPAN></TD></TR>
+<TR><TD class="svn_info">git_url:&nbsp;<SPAN class="svn_info">https://git.bioconductor.org/packages/FlowSOM</SPAN></TD></TR>
+<TR><TD class="svn_info">git_branch:&nbsp;<SPAN class="svn_info">devel</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit:&nbsp;<SPAN class="svn_info">fe9d38b</SPAN></TD></TR>
+<TR><TD class="svn_info">git_last_commit_date:&nbsp;<SPAN class="svn_info">2023-04-25&nbsp;14:36:54&nbsp;-0000&nbsp;(Tue,&nbsp;25&nbsp;Apr&nbsp;2023)</SPAN></TD></TR>
+</TABLE>
+</TD><TD class="kunpeng2 selected"><B>kunpeng2</B></TD><TD class="kunpeng2"><SPAN style="font-size: smaller;">Linux&nbsp;(openEuler&nbsp;22.03&nbsp;LTS-SP1)&nbsp;/&nbsp;aarch64</SPAN></TD><TD class="status kunpeng2 install"><A href="./kunpeng2-install.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 buildsrc"><A href="./kunpeng2-buildsrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2 checksrc selected"><A href="./kunpeng2-checksrc.html" onmouseover="add_class_mouseover(this);" onmouseout="remove_class_mouseover(this);"><SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></A></TD><TD class="status kunpeng2"></TD><TD class="status kunpeng2"></TD><TD ROWSPAN="2" class="rightmost bottom_right_corner"></TD></TR>
+<TR class="footer"><TD COLSPAN="8"></TD></TR>
+</TBODY>
+</TABLE>
+<HR>
+<H3>Summary</H3>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD><B>Package</B>: FlowSOM</TD></TR>
+<TR><TD><B>Version</B>: 2.9.0</TD></TR>
+<TR><TD><B>Command</B>: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:FlowSOM.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings FlowSOM_2.9.0.tar.gz</TD></TR>
+<TR><TD><B>StartedAt</B>: 2023-06-05 22:33:26 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EndedAt</B>: 2023-06-05 22:49:25 -0000 (Mon, 05 Jun 2023)</TD></TR>
+<TR><TD><B>EllapsedTime</B>: 958.5 seconds</TD></TR>
+<TR><TD><B>RetCode</B>: 0</TD></TR>
+<TR><TD><B>Status</B>: <SPAN class="glyph OK">&nbsp;&nbsp;OK&nbsp;&nbsp;</SPAN></TD></TR>
+<TR><TD><B>CheckDir</B>: FlowSOM.Rcheck</TD></TR>
+<TR><TD><B>Warnings</B>: 0</TD></TR>
+</TABLE>
+</DIV>
+<HR>
+<H3>Command output</H3>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:FlowSOM.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings FlowSOM_2.9.0.tar.gz
+###
+##############################################################################
+##############################################################################
+
+
+* using log directory ‘/home/biocbuild/bbs-3.18-bioc/meat/FlowSOM.Rcheck’
+* using R version 4.3.0 (2023-04-21)
+* using platform: aarch64-unknown-linux-gnu (64-bit)
+* R was compiled by
+    gcc (GCC) 10.3.1
+    GNU Fortran (GCC) 10.3.1
+* running under: openEuler 22.03 (LTS-SP1)
+* using session charset: UTF-8
+* checking for file ‘FlowSOM/DESCRIPTION’ ... OK
+* this is package ‘FlowSOM’ version ‘2.9.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘FlowSOM’ can be installed ... OK
+* used C compiler: ‘gcc (GCC) 10.3.1’
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking ‘build’ directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking startup messages can be suppressed ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+PlotManualBars: no visible binding for global variable ‘MC’
+PlotManualBars: no visible binding for global variable ‘Manual’
+Undefined global functions or variables:
+  MC Manual
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking compiled code ... NOTE
+Note: information on .o files is not available
+* checking files in ‘vignettes’ ... OK
+* checking examples ... OK
+Examples with CPU (user + system) or elapsed time &gt; 5s
+                                    user system elapsed
+PlotDimRed                        85.734  0.164  86.011
+FlowSOMmary                       78.766  0.287  79.031
+PlotOutliers                      22.855  0.020  22.925
+UpdateMetaclusters                21.999  0.052  22.096
+PlotMarker                        21.891  0.084  22.017
+PlotStars                         19.266  0.044  19.349
+GroupStats                        17.061  0.267  17.362
+FlowSOM                           16.150  0.080  16.260
+PlotGroups                        15.331  0.040  15.401
+AddAnnotation                     12.232  0.124  12.379
+QueryMultiple                     11.609  0.020  11.650
+query_multiple                    11.330  0.032  11.388
+PlotManualBars                    11.108  0.040  11.171
+Plot2DScatters                    10.782  0.100  10.897
+GetFlowJoLabels                    9.881  0.092   9.993
+CountGroups                        9.341  0.064   9.422
+PlotNode                           9.203  0.027   9.247
+PlotNumbers                        9.125  0.060   9.203
+QueryStarPlot                      8.922  0.012   8.950
+PlotVariable                       8.831  0.020   8.868
+PlotPies                           8.743  0.048   8.807
+UpdateNodeSize                     7.998  0.028   8.043
+PlotFlowSOM                        7.921  0.028   7.966
+SaveClustersToFCS                  7.782  0.024   7.821
+GetFeatures                        7.604  0.019   7.639
+PlotLabels                         7.572  0.008   7.594
+NClusters                          7.392  0.076   7.483
+MetaclusterMFIs                    7.039  0.076   7.130
+NMetaclusters                      7.021  0.067   7.102
+TestOutliers                       6.833  0.004   6.851
+GetMetaclusterPercentagesPositive  6.570  0.008   6.589
+PlotOverview2D                     6.416  0.024   6.452
+MetaclusterCVs                     6.293  0.128   6.433
+GetMetaclusterCVs                  6.367  0.004   6.382
+GetMFIs                            6.327  0.008   6.347
+GetMetaclusterMFIs                 6.220  0.004   6.236
+GetPercentages                     6.204  0.012   6.227
+print.FlowSOM                      6.207  0.008   6.227
+GetMetaclusters                    6.137  0.060   6.206
+GetCounts                          5.897  0.032   5.940
+GetClusterMFIs                     5.847  0.076   5.935
+FlowSOMSubset                      5.847  0.060   5.919
+GetClusterPercentagesPositive      5.868  0.036   5.915
+GetClusters                        5.835  0.067   5.915
+NewData                            5.146  0.024   5.179
+* checking for unstated dependencies in vignettes ... OK
+* checking package vignettes in ‘inst/doc’ ... OK
+* checking running R code from vignettes ...
+  ‘FlowSOM.Rnw’ using ‘latin-9’... OK
+ OK
+* checking re-building of vignette outputs ... OK
+* checking PDF version of manual ... OK
+* DONE
+
+Status: 2 NOTEs
+See
+  ‘/home/biocbuild/bbs-3.18-bioc/meat/FlowSOM.Rcheck/00check.log’
+for details.
+
+
+</PRE>
+</DIV><HR>
+<H3>Installation output</H3>
+<P><SPAN class="filename">FlowSOM.Rcheck/00install.out</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<PRE style="padding: 3px;">
+##############################################################################
+##############################################################################
+###
+### Running command:
+###
+###   /home/biocbuild/R/R-4.3.0/bin/R CMD INSTALL FlowSOM
+###
+##############################################################################
+##############################################################################
+
+
+* installing to library ‘/home/biocbuild/R/R-4.3.0/site-library’
+* installing *source* package ‘FlowSOM’ ...
+** using staged installation
+** libs
+using C compiler: ‘gcc (GCC) 10.3.1’
+gcc -I&quot;/home/biocbuild/R/R-4.3.0/include&quot; -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2  -c som.c -o som.o
+gcc -shared -L/home/biocbuild/R/R-4.3.0/lib -L/usr/local/lib -o FlowSOM.so som.o -L/home/biocbuild/R/R-4.3.0/lib -lR
+installing to /home/biocbuild/R/R-4.3.0/site-library/00LOCK-FlowSOM/00new/FlowSOM/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (FlowSOM)
+</PRE>
+</DIV><HR>
+<H3>Tests output</H3>
+<HR>
+<H3>Example timings</H3>
+<P><SPAN class="filename">FlowSOM.Rcheck/FlowSOM-Ex.timings</SPAN></P>
+<DIV class="kunpeng2 hscrollable">
+<TABLE>
+<TR><TD>name</TD><TD style="text-align: right;">user</TD><TD style="text-align: right;">system</TD><TD style="text-align: right;">elapsed
+</TD><TR>
+<TR><TD>AddAnnotation</TD><TD style="text-align: right;">12.232</TD><TD style="text-align: right;"> 0.124</TD><TD style="text-align: right;">12.379</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>AggregateFlowFrames</TD><TD style="text-align: right;">0.084</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">0.100</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>BuildMST</TD><TD style="text-align: right;">1.976</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">2.014</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>BuildSOM</TD><TD style="text-align: right;">1.919</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">1.931</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>CountGroups</TD><TD style="text-align: right;">9.341</TD><TD style="text-align: right;">0.064</TD><TD style="text-align: right;">9.422</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>FMeasure</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>FlowSOM</TD><TD style="text-align: right;">16.15</TD><TD style="text-align: right;"> 0.08</TD><TD style="text-align: right;">16.26</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>FlowSOMSubset</TD><TD style="text-align: right;">5.847</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">5.919</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>FlowSOMmary</TD><TD style="text-align: right;">78.766</TD><TD style="text-align: right;"> 0.287</TD><TD style="text-align: right;">79.031</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetChannels</TD><TD style="text-align: right;">0.029</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.034</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetClusterMFIs</TD><TD style="text-align: right;">5.847</TD><TD style="text-align: right;">0.076</TD><TD style="text-align: right;">5.935</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetClusterPercentagesPositive</TD><TD style="text-align: right;">5.868</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">5.915</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetClusters</TD><TD style="text-align: right;">5.835</TD><TD style="text-align: right;">0.067</TD><TD style="text-align: right;">5.915</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetCounts</TD><TD style="text-align: right;">5.897</TD><TD style="text-align: right;">0.032</TD><TD style="text-align: right;">5.940</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetFeatures</TD><TD style="text-align: right;">7.604</TD><TD style="text-align: right;">0.019</TD><TD style="text-align: right;">7.639</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetFlowJoLabels</TD><TD style="text-align: right;">9.881</TD><TD style="text-align: right;">0.092</TD><TD style="text-align: right;">9.993</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMFIs</TD><TD style="text-align: right;">6.327</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">6.347</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMarkers</TD><TD style="text-align: right;">0.035</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.035</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMetaclusterCVs</TD><TD style="text-align: right;">6.367</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">6.382</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMetaclusterMFIs</TD><TD style="text-align: right;">6.220</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">6.236</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMetaclusterPercentagesPositive</TD><TD style="text-align: right;">6.570</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">6.589</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetMetaclusters</TD><TD style="text-align: right;">6.137</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">6.206</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GetPercentages</TD><TD style="text-align: right;">6.204</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">6.227</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>GroupStats</TD><TD style="text-align: right;">17.061</TD><TD style="text-align: right;"> 0.267</TD><TD style="text-align: right;">17.362</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Initialize_KWSP</TD><TD style="text-align: right;">0.002</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">0.006</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Initialize_PCA</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MetaClustering</TD><TD style="text-align: right;">4.637</TD><TD style="text-align: right;">0.126</TD><TD style="text-align: right;">4.773</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MetaclusterCVs</TD><TD style="text-align: right;">6.293</TD><TD style="text-align: right;">0.128</TD><TD style="text-align: right;">6.433</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>MetaclusterMFIs</TD><TD style="text-align: right;">7.039</TD><TD style="text-align: right;">0.076</TD><TD style="text-align: right;">7.130</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>NClusters</TD><TD style="text-align: right;">7.392</TD><TD style="text-align: right;">0.076</TD><TD style="text-align: right;">7.483</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>NMetaclusters</TD><TD style="text-align: right;">7.021</TD><TD style="text-align: right;">0.067</TD><TD style="text-align: right;">7.102</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>NewData</TD><TD style="text-align: right;">5.146</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">5.179</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Plot2DScatters</TD><TD style="text-align: right;">10.782</TD><TD style="text-align: right;"> 0.100</TD><TD style="text-align: right;">10.897</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotCenters</TD><TD style="text-align: right;">1.861</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">1.882</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotClusters2D</TD><TD style="text-align: right;">1.811</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">1.818</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotDimRed</TD><TD style="text-align: right;">85.734</TD><TD style="text-align: right;"> 0.164</TD><TD style="text-align: right;">86.011</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotFileScatters</TD><TD style="text-align: right;">1.394</TD><TD style="text-align: right;">0.036</TD><TD style="text-align: right;">1.432</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotFlowSOM</TD><TD style="text-align: right;">7.921</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">7.966</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotGroups</TD><TD style="text-align: right;">15.331</TD><TD style="text-align: right;"> 0.040</TD><TD style="text-align: right;">15.401</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotLabels</TD><TD style="text-align: right;">7.572</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">7.594</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotManualBars</TD><TD style="text-align: right;">11.108</TD><TD style="text-align: right;"> 0.040</TD><TD style="text-align: right;">11.171</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotMarker</TD><TD style="text-align: right;">21.891</TD><TD style="text-align: right;"> 0.084</TD><TD style="text-align: right;">22.017</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotNode</TD><TD style="text-align: right;">9.203</TD><TD style="text-align: right;">0.027</TD><TD style="text-align: right;">9.247</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotNumbers</TD><TD style="text-align: right;">9.125</TD><TD style="text-align: right;">0.060</TD><TD style="text-align: right;">9.203</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotOutliers</TD><TD style="text-align: right;">22.855</TD><TD style="text-align: right;"> 0.020</TD><TD style="text-align: right;">22.925</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotOverview2D</TD><TD style="text-align: right;">6.416</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">6.452</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotPies</TD><TD style="text-align: right;">8.743</TD><TD style="text-align: right;">0.048</TD><TD style="text-align: right;">8.807</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotSD</TD><TD style="text-align: right;">2.913</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">2.926</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotStars</TD><TD style="text-align: right;">19.266</TD><TD style="text-align: right;"> 0.044</TD><TD style="text-align: right;">19.349</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>PlotVariable</TD><TD style="text-align: right;">8.831</TD><TD style="text-align: right;">0.020</TD><TD style="text-align: right;">8.868</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>Purity</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.001</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>QueryMultiple</TD><TD style="text-align: right;">11.609</TD><TD style="text-align: right;"> 0.020</TD><TD style="text-align: right;">11.650</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>QueryStarPlot</TD><TD style="text-align: right;">8.922</TD><TD style="text-align: right;">0.012</TD><TD style="text-align: right;">8.950</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>ReadInput</TD><TD style="text-align: right;">4.753</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">4.786</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>SaveClustersToFCS</TD><TD style="text-align: right;">7.782</TD><TD style="text-align: right;">0.024</TD><TD style="text-align: right;">7.821</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>TestOutliers</TD><TD style="text-align: right;">6.833</TD><TD style="text-align: right;">0.004</TD><TD style="text-align: right;">6.851</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>UpdateMetaclusters</TD><TD style="text-align: right;">21.999</TD><TD style="text-align: right;"> 0.052</TD><TD style="text-align: right;">22.096</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>UpdateNodeSize</TD><TD style="text-align: right;">7.998</TD><TD style="text-align: right;">0.028</TD><TD style="text-align: right;">8.043</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>get_channels</TD><TD style="text-align: right;">0.035</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.034</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>get_markers</TD><TD style="text-align: right;">0.451</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.451</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>metaClustering_consensus</TD><TD style="text-align: right;">3.661</TD><TD style="text-align: right;">0.016</TD><TD style="text-align: right;">3.685</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>plotStarLegend</TD><TD style="text-align: right;">0.421</TD><TD style="text-align: right;">0.000</TD><TD style="text-align: right;">0.422</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>print.FlowSOM</TD><TD style="text-align: right;">6.207</TD><TD style="text-align: right;">0.008</TD><TD style="text-align: right;">6.227</TD><TD style="text-align: right;">
+</TD><TR>
+<TR><TD>query_multiple</TD><TD style="text-align: right;">11.330</TD><TD style="text-align: right;"> 0.032</TD><TD style="text-align: right;">11.388</TD><TD style="text-align: right;">
+</TD><TR>
+</TABLE>
+</DIV></BODY>
+</HTML>

@@ -1,0 +1,8 @@
+git_url: https://git.bioconductor.org/packages/OncoSimulR
+git_branch: devel
+git_last_commit: bee9979
+git_last_commit_date: 2023-06-03 07:46:51 -0000 (Sat, 03 Jun 2023)
+Package: OncoSimulR
+Version: 4.3.2
+Maintainer: Ramon Diaz-Uriarte
+MaintainerEmail: rdiaz02 at gmail.com

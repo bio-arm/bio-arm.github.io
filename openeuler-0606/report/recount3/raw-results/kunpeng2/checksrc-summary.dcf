@@ -1,0 +1,10 @@
+Package: recount3
+Version: 1.11.2
+Command: /home/biocbuild/R/R-4.3.0/bin/R CMD check --install=check:recount3.install-out.txt --library=/home/biocbuild/R/R-4.3.0/site-library --timings recount3_1.11.2.tar.gz
+StartedAt: 2023-06-06 05:04:18 -0000 (Tue, 06 Jun 2023)
+EndedAt: 2023-06-06 05:19:44 -0000 (Tue, 06 Jun 2023)
+EllapsedTime: 925.4 seconds
+RetCode: 0
+Status: OK
+CheckDir: recount3.Rcheck
+Warnings: 0
